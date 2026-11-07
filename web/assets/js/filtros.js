@@ -23,6 +23,14 @@ export const PERFIS = [
 
 export const UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
 
+export const TIPOS_APOIO = [
+  { id: "fomento_em_dinheiro", rotulo: "Fomento em dinheiro" },
+  { id: "premio", rotulo: "Prêmio" },
+  { id: "patrocinio_incentivado", rotulo: "Patrocínio incentivado" },
+  { id: "cessao_de_espaco", rotulo: "Cessão de espaço" },
+  { id: "credenciamento", rotulo: "Credenciamento" },
+];
+
 export const ORDENS = [
   { id: "prazo", rotulo: "Prazo mais próximo" },
   { id: "teto", rotulo: "Maior teto por projeto" },
@@ -36,6 +44,7 @@ export function estadoInicial() {
     linguagens: [],
     abrangencia: "", // "" | "nacional"
     uf: "",
+    tipoApoio: "",
     apenasAbertas: true,
     ordem: "prazo",
     aba: "todos", // "todos" | "favoritos"
@@ -69,6 +78,8 @@ export function filtrar(editais, estado, agora = new Date(), chavesServidor = nu
     if (estado.abrangencia === "nacional" && e.abrangencia !== "nacional") return false;
     // Com UF escolhida aparecem os editais da UF e também os nacionais.
     if (estado.uf && e.uf !== estado.uf && e.abrangencia !== "nacional") return false;
+    // Tipo de apoio nulo = não informado no resumo: some sob o filtro (não dá para afirmar nada).
+    if (estado.tipoApoio && e.tipo_apoio !== estado.tipoApoio) return false;
     return bateComBusca(e, termos, chavesServidor);
   });
 }
@@ -114,5 +125,8 @@ export function filtrosAtivos(estado) {
   for (const l of estado.linguagens) ativos.push({ id: `ling:${l}`, rotulo: l });
   if (estado.abrangencia) ativos.push({ id: "abrangencia", rotulo: "Nacional" });
   if (estado.uf) ativos.push({ id: "uf", rotulo: estado.uf });
+  if (estado.tipoApoio) {
+    ativos.push({ id: "tipoApoio", rotulo: TIPOS_APOIO.find((t) => t.id === estado.tipoApoio)?.rotulo ?? estado.tipoApoio });
+  }
   return ativos;
 }

@@ -1,5 +1,6 @@
 // Card de edital (leitura em 5 segundos) e blocos compartilhados com o painel.
 import {
+  ROTULOS_TIPO_APOIO,
   NAO_INFORMADO,
   el,
   formatarMoeda,
@@ -62,6 +63,11 @@ export function pilulas(edital) {
   if (quem.length) for (const q of quem) itens.push(el("li", { class: "pilula" }, q));
   else itens.push(el("li", { class: "pilula aviso" }, "Elegibilidade não informada"));
   if (edital.marco_legal) itens.push(el("li", { class: "pilula marco" }, edital.marco_legal));
+  // Requisito que elimina proponentes (ex.: projeto já aprovado na Lei Rouanet): sempre visível.
+  for (const requisito of edital.requisitos ?? []) itens.push(el("li", { class: "pilula requisito" }, requisito));
+  if (edital.tipo_apoio && edital.tipo_apoio !== "cessao_de_espaco") {
+    itens.push(el("li", { class: "pilula" }, ROTULOS_TIPO_APOIO[edital.tipo_apoio] ?? edital.tipo_apoio));
+  }
   return el("ul", { class: "pilulas", "aria-label": "Elegibilidade e marco legal" }, itens);
 }
 
@@ -100,6 +106,7 @@ export function criarCard(edital, { favorito, aoAbrir, aoAlternarFavorito, agora
       { class: "card", dataset: { chave: edital.chave } },
       el("h3", {}, titulo),
       el("p", { class: "orgao" }, edital.orgao_fomento, local ? ` · ${local}` : ""),
+      edital.via ? el("p", { class: "via" }, `via ${edital.via}`) : null,
       badgePrazo(edital, agora),
       raioX(edital),
       pilulas(edital),

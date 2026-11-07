@@ -1,47 +1,57 @@
 {
- "gerado_em": "2026-11-07T03:31:27.631710+00:00",
+ "gerado_em": "2026-11-07T11:53:21.452394+00:00",
  "fontes_ok": [
+  "cultbr-pnab",
   "curadoria",
   "mapas:aracaju",
   "mapas:br",
+  "mapas:campinas",
   "mapas:ce",
+  "mapas:cim-amfri",
+  "mapas:es",
   "mapas:natal",
   "mapas:pa",
-  "mapas:pb"
+  "mapas:parauapebas",
+  "mapas:pb",
+  "mapas:pe",
+  "mapas:se",
+  "minc-inscricoes-abertas",
+  "radar-clube-emma",
+  "vigia-claro-patrocinios",
+  "vigia-funarte-editais",
+  "vigia-instituto-cultural-vale",
+  "vigia-petrobras-cultural",
+  "vigia-renner-patrocinios",
+  "vigia-riofilme-chamadas",
+  "vigia-rj-incentivo-cultura",
+  "vigia-sesc-pr-editais",
+  "vigia-sesc-rj-pulsar",
+  "vigia-sesi-sp-editais",
+  "vigia-spcine-fomento"
  ],
- "fontes_falharam": [
-  {
-   "fonte": "mapas:pe",
-   "erro": "falha após 3 tentativas em https://mapacultural.pe.gov.br/api/opportunity/find: ConnectTimeout"
-  },
-  {
-   "fonte": "mapas:se",
-   "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout"
-  },
-  {
-   "fonte": "mapas:campinas",
-   "erro": "falha após 3 tentativas em https://mapacultural.campinas.sp.gov.br/api/opportunity/find: ConnectTimeout"
-  }
- ],
+ "fontes_falharam": [],
  "editais": [
   {
-   "fonte": "mapas:br",
-   "id_externo": "12667",
-   "url_origem": "https://mapa.cultura.gov.br/oportunidade/12667/",
-   "url_inscricao": null,
-   "url_edital_pdf": "https://mapa.cultura.gov.br/files/opportunity/12667/sei-3193023-edital-minc-mec-n-13.pdf",
-   "titulo": "Programa Ciclos de Saberes e Conhecimentos Tradicionais, Populares e das Artes",
-   "orgao_fomento": "Secretaria de Formação Artística e Cultural, Livro e Leitura (SEFLI/MinC)",
-   "resumo_original": "O Programa Ciclo de Saberes selecionará projetos de Instituições Federais de Ensino Superior (IFES) para promover e valorizar os conhecimentos de mestras e mestres das culturas tradicionais, populares e das artes, aproximando seus saberes das universidades, escolas públicas e comunidades por meio de atividades educativas e culturais",
-   "resumo_simples": "O Programa Ciclo de Saberes selecionará projetos de Instituições Federais de Ensino Superior (IFES) para promover e valorizar os conhecimentos de mestras e mestres das culturas tradicionais, populares e das artes, aproximando seus saberes das universidades, escolas públicas e…",
+   "fonte": "minc-inscricoes-abertas",
+   "id_externo": "programa-ciclo-de-saberes-com-mestras-e-mestres-das-culturas-tradicionais-e-populares-e-das-artes",
+   "url_origem": "https://www.gov.br/cultura/pt-br/assuntos/editais/inscricoes-abertas/programa-ciclo-de-saberes-com-mestras-e-mestres-das-culturas-tradicionais-e-populares-e-das-artes/programa-ciclo-de-saberes-com-mestras-e-mestres-das-culturas-tradicionais-e-populares-e-das-artes",
+   "url_inscricao": "https://mapa.cultura.gov.br/oportunidade/12667/#info",
+   "url_edital_pdf": "https://www.gov.br/cultura/pt-br/assuntos/editais/inscricoes-abertas/programa-ciclo-de-saberes-com-mestras-e-mestres-das-culturas-tradicionais-e-populares-e-das-artes/edital-minc-mec-no-13-sei_3193023",
+   "titulo": "Programa Ciclo de Saberes com Mestras e Mestres das Culturas Tradicionais e Populares e das Artes",
+   "orgao_fomento": "Ministério da Cultura",
+   "resumo_original": "Programa Ciclo de Saberes com Mestras e Mestres das Culturas Tradicionais e Populares e das Artes — Ministério da Cultura Info Compartilhe: Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de transferência Publicado em 19/10/2026 14h19 Atualizado em 05/11/2026 15h54 Edital Programa Ciclo de Saberes com Mestras e Mestres das Culturas Tradicionais e Populares e das Artes Publicação DOU - Edital MinC/MEC Nº 13, de 16 de outubro de 2026 - Inscrição – Mapa da Cultura Perguntas Frequentes ANEXOS Anexo I – Cronograma Anexo IV – Matriz de Avaliação Anexo II – Modelo de Termo de Execução Descentralizada (TED) e Plano de Trabalho Anexo V – Distribuição Regional das Vagas Anexo III – Declaração de Inexistência de Duplicidade de Financiamento O que é? O Programa Ciclo de Saberes com Mestras e Mestres das Culturas Tradicionais e Populares e das Artes busca aproximar as Instituições Federais de Ensino Superior, as comunidades detentoras de saberes tradicionais e populares e as escolas públicas de educação básica, promovendo o intercâmbio entre conhecimentos científicos, saberes tradicionais e práticas culturais. As ações apoiadas deverão observar o princípio constitucional da indissociabilidade entre ensino, pesquisa e extensão, além das diretrizes de interação dialógica, impacto na formação estudantil e transformação social. Para o edital, são consideradas culturas tradicionais e populares o conjunto de criações culturais transmitidas predominantemente pela oralidade e baseadas na tradição, que expressam identidades socioculturais por meio de valores, práticas, conhecimentos e tecnologias. O edital também considera como notório saber o reconhecimento institucional dos conhecimentos das mestras e dos mestres produzidos fora das instituições de ensino formal e transmitidos coletivamente por meio da oralidade, da prática, do fazer cotidiano e da relação com o território. Qual o objetivo? Selecionar e…",
+   "resumo_simples": "Programa Ciclo de Saberes com Mestras e Mestres das Culturas Tradicionais e Populares e das Artes — Ministério da Cultura Info Compartilhe: Compartilhe por Facebook Compartilhe por Twitter Compartilhe por LinkedIn Compartilhe por WhatsApp link para Copiar para área de…",
    "linguagens": [
     "Multiáreas"
    ],
-   "abrangencia": null,
+   "abrangencia": "nacional",
    "uf": null,
    "municipio": null,
-   "proponentes": null,
-   "valor_total": 5000000.0,
+   "proponentes": [
+    "PJ_SEM_FINS",
+    "COLETIVO"
+   ],
+   "valor_total": null,
    "teto_por_projeto": 500000.0,
    "num_cotas": null,
    "exige_contrapartida": null,
@@ -51,28 +61,37 @@
    "tipo_apoio": null,
    "verificado_em": null,
    "pendencias": null,
-   "inscricao_inicio": "2026-10-19T19:00:00Z",
+   "inscricao_inicio": null,
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
-   "publicado_em": "2026-10-16T15:47:47Z",
-   "coletado_em": "2026-11-07T03:00:11.288001Z",
-   "atualizado_em": "2026-11-07T03:00:11.288001Z",
-   "hash_conteudo": "1867303ac79489dcde12135acb8b0b7db03d0b5e0f85bac418f80851255459e9",
+   "publicado_em": null,
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "4d0d17f949512832149f15610b79789cade61a3b217ffde0cf8895288286058f",
    "proveniencia": {
-    "linguagens": {
-     "via": "api",
-     "trecho": "Cultura e Educação"
-    },
-    "valor_total": {
+    "inscricao_fim": {
      "via": "regex",
-     "trecho": "pelas comunidades ao longo das gerações. Serão destinados R$ 5 milhões à iniciativa, distribuídos em duas categorias de apoio: projetos de"
+     "trecho": "inscrições: no período de 19 de outubro a 8 de novembro de 2026"
     },
     "teto_por_projeto": {
      "via": "regex",
-     "trecho": "de apoio: projetos de maior abrangência poderão receber até R$ 500 mil, e projetos de atuação mais localizada, até R$ 250 mil. Pelo menos"
+     "trecho": "A – Escala Ampliada de Impacto Até 7 projetos, com valor de até R$ 500 mil por projeto. As propostas deverão prever, no mínimo: contratação de"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "ou por intermédio de associações, coletivos, organizações da sociedade civil, Pontos de Cultura ou Escolas Livres que os | diretamente ou por intermédio de associações, coletivos, organizações da sociedade civil, Pontos de"
     }
    },
-   "chave": "mapas:br:12667"
+   "via": null,
+   "fontes_alternativas": [
+    {
+     "fonte": "mapas:br",
+     "url": "https://mapa.cultura.gov.br/oportunidade/12667/",
+     "via": "Mapas Culturais (BR)"
+    }
+   ],
+   "requisitos": null,
+   "chave": "minc-inscricoes-abertas:programa-ciclo-de-saberes-com-mestras-e-mestres-das-culturas-tradicionais-e-populares-e-das-artes"
   },
   {
    "fonte": "mapas:ce",
@@ -105,9 +124,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T15:35:52Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "8a7363d369531f998051e59ed58c3c1226d876b1d6d1b9648d5c33c979585676",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "649f7a9529ed1ef5cc201ede0b94de77987093ccef61493973e1a7c58ec5553c",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -118,6 +137,9 @@
      "trecho": "EDITAL Nº 002/2026 - PNAB CLICLO II - SELEÇÃO DE OFINEIROS"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8443"
   },
   {
@@ -144,26 +166,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-21T03:00:00Z",
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T17:35:41Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "323fe1cb40c4e673c1581749d07139488667aa2c3d940fc3f047bfe251ea84d1",
+   "coletado_em": "2026-11-07T11:53:21.452394Z",
+   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "hash_conteudo": "a2f8bec806ab7aea877b0b1b6eb8b7763e7332bdb0a4b7d4484a43b09aa501ae",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE Selecionar e apoiar"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8447"
   },
   {
@@ -202,16 +231,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-23T12:00:00Z",
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-13T20:00:00Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "f0b59a228b0976e94ff28a4e1a3455575a2ab53015cac39e46c63c8dd0ef426a",
+   "coletado_em": "2026-11-07T11:53:21.452394Z",
+   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "hash_conteudo": "d4e55f840500f8f59d191d07f22612bd849bb2e84fca485899931358bb4e8ee1",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -233,12 +262,364 @@
      "via": "regex",
      "trecho": "edital. QUEM PODE PARTICIPAR Poderão participar pessoas físicas maiores de 18 anos, grupos ou coletivos sem | privado, com ou sem fins lucrativos, inclusive microempreendedores individuais — MEI, observados os requisitos e os impedimentos | de representação e trajetória cultural. As pessoas jurídicas deverão comprovar sede e funcionamento no | grupos ou coletivos sem personalidade jurídica e pessoas jurídicas de direito privado, com ou sem fins lucrativos, | pessoas físicas maiores de 18 anos, grupos ou coletivos sem personalidade jurídica e pessoas jurídicas de"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 001/2026 – FOMENTO CULTURAL – CRIAÇÃO E FORMAÇÃO – PNAB – CICLO 2 –"
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "FOMENTO CULTURAL – CRIAÇÃO E FORMAÇÃO – PNAB – CICLO 2 – PETROLÂNDIA/PE Este edital"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:3447"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "60358",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12948",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12948/edital-03-premiacao-cultural-pncv-e-seus-anexos-para-diagramacao-docx-1.pdf",
+   "titulo": "PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA | Edital de Chamamento Público Nº 03/2026 do Funcultura para Firmar Termo de Premiação Cultural - Rede Municipal de Pontos e Pontões de Cultura de Campos dos Goytacazes - RJ | Política Nacional Cultura Viva",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 03/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é a premiação de 06 (seis) iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura no município, valorizando a cultura de base comunitária, a cidadania e a diversidade cultural no âmbito da Política Nacional Cultura Viva (PNCV). Para quem é? Este edital é destinado a entidades e",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 03/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "premio",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-13T23:12:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-03-29T22:26:44Z",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "f6af6aee30698ca72d2c3b822b3764a575f5dcff7830bf0fc4cfe59442bb7c11",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 60000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA | Edital de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:60358"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "58081",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12611",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12611/edital-05-de-2026-do-funcultura-apoio-direto-a-projetos-e-seus-anexos-docx.pdf",
+   "titulo": "FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS | Edital de Chamamento Público Nº 05/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 05/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo central é selecionar propostas para firmar Termos de Execução Cultural, garantindo apoio financeiro direto a projetos que incentivem a criação, produção, circulação e publicação de diversas manifestações artísticas em nosso município. Para quem é? Este edital é voltado para agentes culturais responsáveis por",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 05/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-09T03:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-19T22:36:18Z",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "4c9b7fbf4b442784b1723b638b09d65e5da95d3cbb229031680e1782d9b114fb",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 660000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS | Edital de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:58081"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "56464",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12488",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12488/edital-06-de-eventos-culturais-e-seus-anexos-docx.pdf",
+   "titulo": "FOMENTO À EXECUÇÃO DE EVENTOS CULTURAIS | Edital de Chamamento Público Nº 06/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 06/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo central é selecionar propostas para firmar Termos de Execução Cultural, garantindo apoio financeiro direto a projetos que incentivem a criação, produção, circulação e publicação de diversas manifestações artísticas em nosso município. Para quem é? Este edital é voltado para agentes culturais responsáveis por",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 06/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-09T00:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T01:00:35Z",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "e772f4b8df828957f7c9a54153616b24818e82a6854a1fb8f2d00ab12dd66db1",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 640000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO À EXECUÇÃO DE EVENTOS CULTURAIS | Edital de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:56464"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "55210",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12290",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12290/edital-04-de-formacao-cultural-e-seus-anexos-pdf.pdf",
+   "titulo": "FOMENTO A CAPACITAÇÃO CULTURAL | Edital de Chamamento Público Nº 04/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 04/2026 é voltado para o Fomento à Capacitação Cultural. É uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executado com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é apoiar financeiramente projetos culturais voltados à capacitação, pesquisa e formação, incentivando o aprimoramento e a difusão das diversas manifestações artísticas do município. Para quem é? Este edital é destinado a agentes culturais responsáv",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 04/2026 é voltado para o Fomento à Capacitação Cultural.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-05T21:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-06T23:16:25Z",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "6727f75246d02c46323bdb35f66d9ea8f161d84ba62631a6ed51d886642ee1d8",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 260000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO A CAPACITAÇÃO CULTURAL | Edital de Chamamento"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:55210"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "51877",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/11909",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/11909/edital-02-fomento-a-projetos-continuados-de-pontos-de-cultura.pdf",
+   "titulo": "FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA | Edital De Chamamento Público nº 02/2026 do Funcultura - Termo de Compromisso Cultural – Rede Municipal de Pontos de Cultura de Campos dos Goytacazes/RJ",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 02/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é selecionar propostas culturais para firmar Termos de Compromisso Cultural (TCC), garantindo apoio financeiro continuado para entidades que fortalecem a base comunitária e a diversidade artística do nosso município no âmbito da Política Nacional Cultura Viva (PNCV). Para quem é? Este edital é destinad",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 02/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-06T11:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-06-17T19:18:50Z",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "c00b399e5379b356c61fa1a8d6a02974a7f7d5f6bd5c69ab27d4e18b1b1e6bcb",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 720000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA |"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:51877"
   },
   {
    "fonte": "mapas:ce",
@@ -271,15 +652,18 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-30T18:12:55Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "5e569c5145173118c2eee3b40f0b62c3ef76c63b37c81c8bb61491b726073b91",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "35fdf7b9435ddbda3e6856d925aacb33839819c67315b84a3c0fe02b6cb54484",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8467"
   },
   {
@@ -315,9 +699,9 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T17:06:21Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "7686a630913f82c9bfbf1d55a316b9fc4dccb9103a9632396102d06ecad2fa4f",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "4c30f19a859d622245045b630e19efafd660d72699d89734742ef8657b66934c",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -336,6 +720,9 @@
      "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8445"
   },
   {
@@ -362,26 +749,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-28T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T16:58:15Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "ea149686ec22619a1a3d4f94ecf85f62368eae9ecba4dedc498fb46446eee764",
+   "coletado_em": "2026-11-07T11:53:21.452394Z",
+   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "hash_conteudo": "6651a674f954178b02bd3c2f5125cdb5f3f58c6a02480ff4355bdff886934201",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO N° 09.004/2026 (FOMENTO À CULTURA) - CELEBRAÇÃO DE TERMO DE EXECUÇÃO"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC (LEI Nº 14.399/2022) - AQUIRAZ-CE Este"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8444"
   },
   {
@@ -411,16 +805,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "premio",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-28T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T17:13:15Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "a3639e8f79f420990c57fa4884528668a379d2a5bf78369b346c5f417d87a9d2",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "6cbd0b8061a56c42a127403805e505c5b8056e4370d43795b78712dd4d7152b3",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -430,11 +824,18 @@
      "via": "regex",
      "trecho": "Pontos e Pontões de Cultura, entidades culturais sem fins lucrativos e coletivos culturais de base comunitária | entidades culturais sem fins lucrativos e coletivos culturais de base comunitária atuantes em"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "DE PONTOS E PONTÕES DE CULTURA DE AQUIRAZ/CE PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA."
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.006/2026 (PONTOS E PONTÕES) -"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8446"
   },
   {
@@ -461,16 +862,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-28T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-28T17:40:01Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "f8692cccdafb8bc3967ce90ddde9db5105b6d56db7e284ef68fa2307e51e3144",
+   "coletado_em": "2026-11-07T11:53:21.452394Z",
+   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "hash_conteudo": "6481e43fe1ec125f9f45b3d018f77bbec805ccdc81921c660c7f78f7fc66d160",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -480,11 +881,18 @@
      "via": "regex",
      "trecho": "MÚSICA"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 016/2026 – MÚSICA - SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO"
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:137"
   },
   {
@@ -511,26 +919,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-26T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-25T21:21:23Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "d7e09cae3a617f46115a80eff579641497c7226a572d25f80a9caad513cedb84",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "e7f5fb85f7c6cd678103a846fcece92af2ae1cf94073aeb416b52da8ae6eef81",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "BLANC DE APOIO A AÇÕES CONTINUADAS - ARACAJU SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PLURIANUAL"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "CULTURAL PLURIANUAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA SELEÇÃO DE"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:130"
   },
   {
@@ -557,16 +972,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-26T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-26T03:07:58Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "4a547319999b0a09a8ba23605d6ec525b4fb6a023eae42edb16acdca263f7058",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "11daf53ff4ed48c38797e6fbfecb04069f0ca1911828b94a0fbca70fdc6dd37e",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -576,11 +991,18 @@
      "via": "regex",
      "trecho": "AUDIOVISUAL"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 014/2026 – AUDIOVISUAL SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM AUDIOVISUAL PARA"
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 –"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:134"
   },
   {
@@ -607,16 +1029,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-26T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-26T03:00:22Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "4bc1f0e979689a873028b3be3206c576dd199526e2b1d577c98a426b95de70f0",
+   "coletado_em": "2026-11-07T11:53:21.452394Z",
+   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "hash_conteudo": "5eb24ee17b5e236bb60bf26661bfe40f3ff2396b722f26c349e6c03700cae057",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -626,11 +1048,18 @@
      "via": "regex",
      "trecho": "ARTES CÊNICAS"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO"
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:133"
   },
   {
@@ -657,26 +1086,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-28T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-28T17:10:36Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "a70974e0dd56eb71aa5de61309b5d41dba944534d06319761bb7e25345ac70f3",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "7adc87776b9cd597ea3ad9d1c7cb7f14bb82dfe3fa9547526faf7786891e7b44",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 015/2026 – SELEÇÃO DE PROJETOS CULTURAIS PARA REALIZAÇÃO DE FESTIVAIS CULTURAIS"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 –"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:136"
   },
   {
@@ -703,16 +1139,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-26T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-26T02:55:28Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "9db247028c34bbb66d6b98360f1504ad4ac4f4a7ddeefc2d149416fac21202cd",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "11c99bb305d7e0967d1a688b1c938326cf143eeb5ef23dce449e58a30f84d029",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -722,11 +1158,18 @@
      "via": "regex",
      "trecho": "LITERATUR"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 012/ 2026 - LITERATURA SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM LITERATURA COM RECURSOS DA"
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "NA LINGUAGEM LITERATURA COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 –"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:132"
   },
   {
@@ -760,9 +1203,9 @@
    "inscricao_fim": "2026-11-10T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-09-22T18:34:53Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "73f655fdc13cc01160b4aadcd4a42d4086f2f6e195f314c187331f5f65c8c83d",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "53da59ab03510e7f7a4ce15be400f4e6f200b10ec0de07efe8487115b0e7b87a",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -773,6 +1216,9 @@
      "trecho": "Carnaval; Festejos Juninos"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:3410"
   },
   {
@@ -799,26 +1245,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "premio",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-29T03:00:00Z",
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-29T15:56:42Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "4414d20791229fa5883deffd1aedc8d9ca2d386e5e93a429faa1715d95f4c429",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "8072061e5389256698d3dd7e0a31251165f231189cd8190c750a0a1a34cba663",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 – PREMIAÇÃO DE MESTRES E MESTRAS DA CULTURA POPULAR DE"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "PREMIAÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8465"
   },
   {
@@ -852,9 +1305,9 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-27T17:53:57Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "bb2e15fa29390f596825dfd21f0742f44771524457a9b081298decea8f433fe8",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "3d553be63c3ec33fee1dd49bc72464e1954fb35b9156d9c54e80ac998d810c53",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -865,7 +1318,148 @@
      "trecho": "Artes Visuais"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8461"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "60721",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12962",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12962/edital-de-chamamento-publico-no-013-2026-premiacao-para-povos-e-comunidades-tradicionais-pnab-lei-no-14-399-2022-diario-oficial-dos-municipios-do-estado-do-rio-grande-do-sul-1.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 013/2026 - PREMIAÇÃO PARA POVOS E COMUNIDADES TRADICIONAIS PNAB (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Município de Pelotas",
+   "resumo_original": "O objeto deste Edital é a premiação de agentes culturais pertencentes a povos e comunidades tradicionais indígenas ou quilombolas que tenham contribuição ao desenvolvimento artístico ou cultural do Município de Pelotas.",
+   "resumo_simples": "O objeto deste Edital é a premiação de agentes culturais pertencentes a povos e comunidades tradicionais indígenas ou quilombolas que tenham contribuição ao desenvolvimento artístico ou cultural do Município de Pelotas.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RS",
+   "municipio": "Pelotas",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "premio",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-27T03:01:00Z",
+   "inscricao_fim": "2026-11-11T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-27T17:40:09Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "0505ded76562869e4c694f8eac339013803a6908d265fd1ceef0f72869c92043",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-10T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, coletivos_e_grupos_informais_sem_cnpj"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 73200.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RS"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO Nº 013/2026 - PREMIAÇÃO PARA POVOS E COMUNIDADES TRADICIONAIS PNAB (LEI"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "PARA POVOS E COMUNIDADES TRADICIONAIS PNAB (LEI Nº 14.399/2022) O objeto deste"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:60721"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "60688",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12959",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12959/edital-de-chamamento-publico-no-012-2026-apoio-a-projetos-de-desenvolvimento-de-roteiros-audiovisuais-pnab-lei-no-14-399-2022-diario-oficial-dos-municipios-do-estado-do-rio-grande-do-sul.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 012/2026 APOIO A PROJETOS DE DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS PNAB (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Município de Pelotas",
+   "resumo_original": "O presente Edital tem por objeto a seleção de 6 (seis) projetos de Desenvolvimento de Roteiros Audiovisuais, nas modalidades de curta-metragem, longa-metragem ou série, de ficção, documentário, animação ou híbrido. Com o objetivo de incentivar o fortalecimento do setor audiovisual, promovendo a criação, o desenvolvimento criativo e a qualificação de propostas concebidas no Município de Pelotas.",
+   "resumo_simples": "O presente Edital tem por objeto a seleção de 6 (seis) projetos de Desenvolvimento de Roteiros Audiovisuais, nas modalidades de curta-metragem, longa-metragem ou série, de ficção, documentário, animação ou híbrido.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RS",
+   "municipio": "Pelotas",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-27T03:01:00Z",
+   "inscricao_fim": "2026-11-11T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-27T16:05:46Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "3cbdffb1765b28256553b920a1174b6ed99f90f6eec2f70e02f707d9c047034f",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-10T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 180000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RS"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "A; u; d; i; o; v; i; s; u; a; l"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO Nº 012/2026 APOIO A PROJETOS DE DESENVOLVIMENTO DE ROTEIROS AUDIOVISUAIS PNAB"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE ROTEIROS AUDIOVISUAIS PNAB (LEI Nº 14.399/2022) O presente Edital"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:60688"
   },
   {
    "fonte": "mapas:ce",
@@ -893,16 +1487,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-11-06T03:00:00Z",
    "inscricao_fim": "2026-11-13T01:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-11-05T13:18:56Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "ad3ee4abc6322431f6115862b6387749f105d15787301cb04df6a3ead7b51e20",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "f107261e22fb516c84f487ba0bc36e71e9f2f111a517e81f61a06ac9c06cc82c",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -915,9 +1509,142 @@
     "proponentes": {
      "via": "regex",
      "trecho": "culturais apresentados por agentes culturais, pessoas físicas, que tenham como finalidade a realização de"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "Nº 006/2026 – PATRIMÔNIO CULTURAL E MEMÓRIA: FOMENTO A PROJETOS DE PESQUISA, DOCUMENTAÇÃO E REGISTRO"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8473"
+  },
+  {
+   "fonte": "mapas:cim-amfri",
+   "id_externo": "323",
+   "url_origem": "https://mapacultural.cim-amfri.sc.gov.br/oportunidade/323/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.cim-amfri.sc.gov.br/files/opportunity/323/edital-vilma-mafra-2026-assinado.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO 13/2026 - VILMA MAFRA",
+   "orgao_fomento": "Marcelo Leal",
+   "resumo_original": "EDITAL DE CHAMAMENTO PÚBLICO Nº 13/2026 SELEÇÃO PARA TERMO DE EXECUÇÃO CULTURAL (LEI Nº 14.903/2024)",
+   "resumo_simples": "EDITAL DE CHAMAMENTO PÚBLICO Nº 13/2026 SELEÇÃO PARA TERMO DE EXECUÇÃO CULTURAL (LEI Nº 14.903/2024)",
+   "linguagens": [
+    "Música",
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Artes Visuais",
+    "Patrimônio"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SC",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-23T17:00:00Z",
+   "inscricao_fim": "2026-11-13T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-09-09T19:28:52Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "7302f6ff14062fbcaf5e1fff7df2ac8e3e354d3905ff3c7759e4419ef06784b5",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.cim-amfri.sc.gov.br (SC)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Artes Visuais; Artesanato; Produção Audiovisual; Música Popular; Patrimônio Cultural; Patrimônio Cultural Imaterial; Patrimônio Cultural Material; Cultura Hip Hop; Teatro; Humanidades"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "tem por objeto o CHAMAMENTO PÚBLICO VISANDO A SELEÇÃO DE PROJETOS QUE CONTRIBUAM PARA A PRODUÇÃO ARTÍSTICA,"
+    }
+   },
+   "via": "Mapas Culturais (CIM-AMFRI (SC))",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:cim-amfri:323"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "64219",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/13103",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/13103/1-edital-no-004-2026-ciclo-natalino-2.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 – CICLO NATALINO SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Município de Agrestina",
+   "resumo_original": "Constitui objetivo desta Convocatória a habilitação e seleção de propostas para compor a Programação Artística do Ciclo Natalino de Agrestina - 2026, tendo a cultura popular como base fundamental para o fortalecimento das manifestações artísticas e culturais comuns a esta época do ano, compreendido o período entre 19 a 23/12/2026, a ser executada pela Secretaria de Cultura e Turismo. inscrições de 03/11 a 12/11",
+   "resumo_simples": "Constitui objetivo desta Convocatória a habilitação e seleção de propostas para compor a Programação Artística do Ciclo Natalino de Agrestina - 2026, tendo a cultura popular como base fundamental para o fortalecimento das manifestações artísticas e culturais comuns a esta época…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "PE",
+   "municipio": "Agrestina",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-03T16:00:00Z",
+   "inscricao_fim": "2026-11-13T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-06T18:04:11Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "1353041d429d58829c8167854468b09b0ee39db7d45e07c175ea89a46b913288",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-12T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 16500.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: PE"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "CHAMAMENTO PÚBLICO Nº 004/2026 – CICLO NATALINO SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:64219"
   },
   {
    "fonte": "mapas:pe",
@@ -950,9 +1677,9 @@
    "inscricao_fim": "2026-11-13T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-06-08T20:07:28Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "dd26368bfe2cc4c491ac739bc765a44ab86dae91b58026a4bebafeed9cbc0922",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "636dcc673d8888626cea6adf66594a9db400396be8597616e4fc37552ef4cc47",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -963,7 +1690,67 @@
      "trecho": "Outra"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:3240"
+  },
+  {
+   "fonte": "mapas:cim-amfri",
+   "id_externo": "222",
+   "url_origem": "https://mapacultural.cim-amfri.sc.gov.br/oportunidade/222/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.cim-amfri.sc.gov.br/files/opportunity/222/1-extrato-de-publicacao-edital-credenciamento-servicos-artisticos-e-culturais-2026-dom.pdf",
+   "titulo": "BOMBINHAS | EDITAL DE CHAMAMENTO PÚBLICO 06/FMCB/2026 - CREDENCIAMENTO DE SERVIÇOS ARTÍSTICOS E CULTURAIS",
+   "orgao_fomento": "Fundação Municipal de Cultura de Bombinhas",
+   "resumo_original": "A Fundação Municipal de Cultura de Bombinhas (FMCB), localizada na Rua Parati, 203, Centro, Bombinhas – SC, torna público o período de inscrições para o “Credenciamento de Serviços Artísticos e Culturais” do município de Bombinhas/SC, doravante denominado Edital. O credenciamento segue o artigo 23 da Constituição Federal, a Lei Municipal 1363/2013, o Decreto Municipal nº 2013/2014, a Lei nº 14.017",
+   "resumo_simples": "A Fundação Municipal de Cultura de Bombinhas (FMCB), localizada na Rua Parati, 203, Centro, Bombinhas – SC, torna público o período de inscrições para o “Credenciamento de Serviços Artísticos e Culturais” do município de Bombinhas/SC, doravante denominado Edital.",
+   "linguagens": [
+    "Música",
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Artes Visuais",
+    "Patrimônio"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SC",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "credenciamento",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-04-10T15:00:00Z",
+   "inscricao_fim": "2026-11-13T20:00:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-04-02T19:12:10Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "b09b3b16bed001f22a7cd549c4443d2d54435876f2fea25835b2e370eb59740e",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.cim-amfri.sc.gov.br (SC)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Artes Visuais; Audiovisual e Mídias Interativas; Patrimônio Cultural; Dança; Música; Teatro; Artes Circenses; Contação de histórias; Grafite; Performance"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "| EDITAL DE CHAMAMENTO PÚBLICO 06/FMCB/2026 - CREDENCIAMENTO DE SERVIÇOS ARTÍSTICOS E CULTURAIS"
+    }
+   },
+   "via": "Mapas Culturais (CIM-AMFRI (SC))",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:cim-amfri:222"
   },
   {
    "fonte": "mapas:ce",
@@ -998,9 +1785,9 @@
    "inscricao_fim": "2026-11-14T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-22T17:30:32Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "b70f4899fdcd90c543df7d9df3e8783886fa596bf4bff0d202a5354c41069498",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "0a5cbfa3d5e230675664ab3e7ef123544f2798fcd9b2a526ec2dc6b34bc415a1",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1015,6 +1802,9 @@
      "trecho": "Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8453"
   },
   {
@@ -1041,26 +1831,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-29T03:00:00Z",
    "inscricao_fim": "2026-11-14T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-29T14:21:51Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "bb785cbf3d6fbd66f882328afddd79e25a4f31b3e7588d4395e03d21e615ef44",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "175cf435372986a62c512bfc67f3c70981d42b55434b7bc19b392ec6b16ef601",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "CHAMAMENTO PÚBLICO Nº 003/2026-LINGUAGENS GERAIS SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8464"
   },
   {
@@ -1094,15 +1891,18 @@
    "inscricao_fim": "2026-11-14T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-22T13:06:54Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "e476eb287912577b750ca705af386a8a6e3a00079e95b2b16585364ea565986d",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "a5968950123db241582c80c29cb8d5d16bdf32f6e70f1d76b7c91db83b96f031",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8450"
   },
   {
@@ -1136,15 +1936,18 @@
    "inscricao_fim": "2026-11-16T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-17T22:03:42Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "a99f2dbcc038ae01295dc9f8b9a1da276dea08980002879ce1c4e702c6758123",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "c11073e796918115eae58953e1f83524e975c4f000296f1938924372cad5bb66",
    "proveniencia": {
     "linguagens": {
      "via": "api",
      "trecho": "Música; Música Eletrônica"
     }
    },
+   "via": "Mapas Culturais (BR)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:br:12706"
   },
   {
@@ -1171,22 +1974,29 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "premio",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-21T03:00:00Z",
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-19T12:42:23Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "93148889ad99a1ed853916f030e8dd45162a7e9aaf5aee78cbfe7885a9122f85",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "40fd2ae58be883777c9349ef09852a004ac0c47be6579fa416c9be509622fde6",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE RECONHECIMENTO E PREMIAÇÃO DOS MESTRES E MESTRAS DA CULTURA POPULAR DE"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8432"
   },
   {
@@ -1213,22 +2023,29 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-11-06T03:00:00Z",
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-06T16:42:35Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "f1d225e58732a9f3704b5c85d7c490c5f32f363e810c8ea9d6721fc5ad583a9f",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "cef58117768a95996e4d7566f0ffce7b6e09618095f584f4f53cfbe603e7f1b4",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "PÚBLICO Nº 01/2026- SECULT-HIDROLÂNDIA EDITAL DE FOMENTO À ORGANIZAÇÃO, PROMOÇÃO DE EVENTOS E"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8485"
   },
   {
@@ -1255,27 +2072,346 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "premio",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-11-06T03:00:00Z",
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-05T14:04:08Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "3e85b13bf9804d74992f220ee1fc8688334fc3df09bd8578e4ab6c8e745f94fb",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "dd8468d49e772f21db582aa95e8dc5bf9e72575b8acbd290b43fcabf63dc700c",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 05/2026 – PREMIAÇÃO POLÍTICA NACIONAL CULTURA VIVA DE MORADA NOVA"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "que constitui uma das etapas da Política Nacional Aldir Blanc de Fomento à Cultura, no âmbito da Lei"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8474"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "61251",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12983",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12983/edital-n-01-2026-para-selecao-de-projetos-culturais-da-politica-nacional-aldir-blanc-de-fomento-a-cultura-no-municipio-de-parana-to-v1-1.pdf",
+   "titulo": "Edital de Seleção de Projetos Culturais da Política Nacional Aldir Blanc - 2º Ciclo",
+   "orgao_fomento": "Município de Parana",
+   "resumo_original": "O presente edital tem por finalidade selecionar e fomentar projetos culturais de fomento direto, no âmbito da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), para a produção e realização de atividades nas áreas de Audiovisual, Música, Artesanato, Literatura e Cultura Popular no município de Paranã - TO. O certame contempla 24 vagas distribuídas entre as categorias, com reserva de cotas para negros e indígenas, além de bônus de pontuação para grupos específicos e contrapartidas presenciais abertas à comunidade na Feira Coberta Municipal.",
+   "resumo_simples": "O presente edital tem por finalidade selecionar e fomentar projetos culturais de fomento direto, no âmbito da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), para a produção e realização de atividades nas áreas de Audiovisual, Música, Artesanato, Literatura e Cultura…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "TO",
+   "municipio": "Paranã",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-29T23:00:00Z",
+   "inscricao_fim": "2026-11-17T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-29T21:32:10Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "2eccc3beeef43e306f4c7410378b95e649cadf8e81fb3605d831e10e5ce18518",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-16T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 63070.32"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: TO"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "A; u; d; i; o; v; i; s; u; a; l; ,;  ; A; r; t; e; s; a; n; a; t; o; ,;  ; C; u; l; t; u; r; a; s;  ; T; r; a; d; i; c; i; o; n; a; i; s;  ; e;  ; P; o; p; u; l; a; r; e; s; ,;  ; L; i; t; e; r; a; t; u; r; a; ,;  ; M; ú; s; i; c; a"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "Edital de Seleção de Projetos Culturais da Política Nacional Aldir Blanc - 2º"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Seleção de Projetos Culturais da Política Nacional Aldir Blanc - 2º Ciclo O presente edital tem por"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:61251"
+  },
+  {
+   "fonte": "mapas:es",
+   "id_externo": "2695",
+   "url_origem": "https://mapa.cultura.es.gov.br/oportunidade/2695/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapa.cultura.es.gov.br/files/opportunity/2695/edital-04-2026-projetos-termo-de-execucao-cultural.pdf",
+   "titulo": "PNAB DIVINO SÃO LOURENÇO - 04/2026 - Seleção de projetos para firmar termo de execução cultural",
+   "orgao_fomento": "Secretaria Municipal de Cultura de Divino São Lourenço",
+   "resumo_original": "O objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro na categoria de Múltiplas Linguagens, com o objetivo de incentivar as diversas formas de manifestações culturais do Município de Divino de São Lourenço.",
+   "resumo_simples": "O objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro na categoria de Múltiplas Linguagens, com o objetivo de incentivar as diversas formas de manifestações culturais do Município de Divino de São Lourenço.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "ES",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-03T03:00:00Z",
+   "inscricao_fim": "2026-11-17T21:00:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-10-29T16:31:51Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "24584ac07b01beaa7a103e9e8c9c091eb08f7d3b1206c04c0595e74426c97758",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapa.cultura.es.gov.br (ES)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Outra"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "PNAB DIVINO SÃO LOURENÇO - 04/2026 - Seleção de projetos para firmar termo de execução cultural"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "PNAB DIVINO SÃO LOURENÇO - 04/2026 - Seleção"
+    }
+   },
+   "via": "Mapas Culturais (ES)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:es:2695"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "63295",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/13077",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/13077/edital-chamada-publica-no03-2026.pdf",
+   "titulo": "SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL",
+   "orgao_fomento": "Município de Davinopolis",
+   "resumo_original": "Pode se inscrever no Edital qualquer agente cultural que atua ou reside no município de Davinópolis - MA há pelo menos 2 (dois) anos. Agente Cultural é toda pessoa ou grupo de pessoas responsável por criar, produzir e promover manifestações culturais, como artistas, músicos, escritores, cineastas, dançarinos, artesãos, curadores, produtores culturais, gestores de espaços culturais, entre outros.",
+   "resumo_simples": "Pode se inscrever no Edital qualquer agente cultural que atua ou reside no município de Davinópolis - MA há pelo menos 2 (dois) anos.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "MA",
+   "municipio": "Davinópolis",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-06T03:00:00Z",
+   "inscricao_fim": "2026-11-19T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-06T17:36:36Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "6a91a74dece2b1f3a56b9837edc362e2a0e34ddc769b5b9896958345abae480a",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-18T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 109229.30"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: MA"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:63295"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "53726",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12038",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12038/edital-subsidio-cultural-diario-oficial.pdf",
+   "titulo": "SUBSÍDIO PARA MANUTENÇÃO DE ESPAÇOS, AMBIENTES E INICIATIVAS ARTÍSTICO-CULTURAIS",
+   "orgao_fomento": "Município de Teresopolis",
+   "resumo_original": "O objeto deste Edital é a seleção de espaços, ambientes e iniciativas artístico-culturais para receberem subsídio para manutenção, com o objetivo de incentivar as diversas formas de manifestações culturais do município de Teresópolis/RJ",
+   "resumo_simples": "O objeto deste Edital é a seleção de espaços, ambientes e iniciativas artístico-culturais para receberem subsídio para manutenção, com o objetivo de incentivar as diversas formas de manifestações culturais do município de Teresópolis/RJ",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Teresópolis",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-04T14:00:00Z",
+   "inscricao_fim": "2026-11-20T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-04T14:02:58Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "f539c664065385a8aea6c608ed214da5a224d78645c085af6beaa09fc56479bc",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-19T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 144000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:53726"
+  },
+  {
+   "fonte": "mapas:es",
+   "id_externo": "2700",
+   "url_origem": "https://mapa.cultura.es.gov.br/oportunidade/2700/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapa.cultura.es.gov.br/files/opportunity/2700/edital-de-premiacao-de-pontos-e-pontoes-de-cultura-no-006-2026.pdf",
+   "titulo": "EDITAL DE PREMIAÇÃO DE PONTOS DE CULTURA Nº 0062026 DE VILA VELHA - ES",
+   "orgao_fomento": "Secretaria Municipal de Cultura de Vila Velha",
+   "resumo_original": "Este Edital tem por objeto a premiação de 07 (sete) iniciativas, atividades ou ações já realizadas por Pontos de Cultura, nos termos da Política Nacional de Cultura Viva, sendo 02 (duas) na modalidade ampla concorrência e 5 (cinco) na modalidade Bandas de Congo.",
+   "resumo_simples": "Este Edital tem por objeto a premiação de 07 (sete) iniciativas, atividades ou ações já realizadas por Pontos de Cultura, nos termos da Política Nacional de Cultura Viva, sendo 02 (duas) na modalidade ampla concorrência e 5 (cinco) na modalidade Bandas de Congo.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "ES",
+   "municipio": null,
+   "proponentes": [
+    "PJ_SEM_FINS",
+    "COLETIVO"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "premio",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-06T11:00:00Z",
+   "inscricao_fim": "2026-11-21T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-05T18:37:09Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "9b7c4c4e660d02820695fb456ce682661429073c45f473c5ad5d1e1a68da0781",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapa.cultura.es.gov.br (ES)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Culturas Tradicionais; Culturas Populares; Culturas Tradicionais e Populares"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "Cultura: entidades jurídicas de direito privado sem fins lucrativos, grupos ou coletivos sem constituição jurídica, | de direito privado sem fins lucrativos, grupos ou coletivos sem constituição jurídica, de natureza ou"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE PREMIAÇÃO DE PONTOS DE CULTURA Nº 0062026 DE VILA VELHA -"
+    }
+   },
+   "via": "Mapas Culturais (ES)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:es:2700"
   },
   {
    "fonte": "mapas:ce",
@@ -1301,22 +2437,29 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "premio",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-10-22T03:00:00Z",
    "inscricao_fim": "2026-11-23T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-22T14:23:30Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "b774c2c1cfd2735bf3d058339eb4f9641d80125ad7ee5166fbd4bd60a1282037",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "c1ec2e7efc0344a91685380f758a0f3497123fe8fef64934ccb021151903d191",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "SANTO - CE CULTURA VIVA DO TAMANHO DO BRASIL! PREMIAÇÃO DE PONTOS DE CULTURA"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8451"
   },
   {
@@ -1350,9 +2493,9 @@
    "inscricao_fim": "2026-11-23T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-05T17:19:26Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "51ba13da22aa336d188dbfece5cdc7a58d547c9884c7c8250f41329856656fd6",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "b11f2136e6e00f72a8e21647b2c6df62489805f6af86a6e77d20625e12c994f4",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1363,7 +2506,152 @@
      "trecho": "Arte de Plásticas; Artes Visuais"
     }
    },
+   "via": "Mapas Culturais (Natal)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:natal:316"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "58217",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12830",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12830/edital-pnab-ciclo2-colinas-rs-assinado-2.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026 SELEÇÃO DE PROJETOS CULTURAIS PARA RECEBER APOIO FINANCEIRO",
+   "orgao_fomento": "Município de Colinas",
+   "resumo_original": "O Município de Colinas/RS, por meio do órgão municipal responsável pela cultura, torna público este Edital para seleção de projetos culturais a serem apoiados com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB, Ciclo 2. 1.2. Serão selecionados 9 (nove) projetos, distribuídos em duas categorias, conforme o Anexo I: 5 (cinco) projetos de pessoas jurídicas, no valor de R$ 4.000,00 cada e 4 (quatro) projetos de pessoas físicas, no valor de R$ 1.000,00 cada. 1.3. O valor total destinado a este Edital é de R$ 24.000,00 (vinte e quatro mil reais).",
+   "resumo_simples": "O Município de Colinas/RS, por meio do órgão municipal responsável pela cultura, torna público este Edital para seleção de projetos culturais a serem apoiados com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB, Ciclo 2. 1.2.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RS",
+   "municipio": "Colinas",
+   "proponentes": [
+    "PF",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": 24000.0,
+   "teto_por_projeto": 4000.0,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-22T11:00:00Z",
+   "inscricao_fim": "2026-11-23T20:00:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-10-21T14:29:15Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "aee72f1c19d5cefc7448851cd6e90212a978390b6e8ee5c427dc267b2f00cd22",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-23T17:00:00"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "de R$ 4.000,00 cada e 4 (quatro) projetos de pessoas físicas, no valor de R$ 1.000,00 cada. 1.3. O valor total | conforme o Anexo I: 5 (cinco) projetos de pessoas jurídicas, no valor de R$ 4.000,00 cada e 4 (quatro) | conforme o Anexo I: 5 (cinco) projetos de pessoas jurídicas, no valor de R$ 4.000,00 cada e 4 (quatro)"
+    },
+    "valor_total": {
+     "via": "regex",
+     "trecho": "de R$ 1.000,00 cada. 1.3. O valor total destinado a este Edital é de R$ 24.000,00 (vinte e quatro mil reais). O Município de Colinas/RS, por meio do"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RS"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "teto_por_projeto": {
+     "via": "regex",
+     "trecho": "o Anexo I: 5 (cinco) projetos de pessoas jurídicas, no valor de R$ 4.000,00 cada e 4 (quatro) projetos de pessoas físicas, no valor de R$"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026 SELEÇÃO DE PROJETOS CULTURAIS PARA RECEBER APOIO FINANCEIRO"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "a serem apoiados com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB, Ciclo 2."
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:58217"
+  },
+  {
+   "fonte": "mapas:cim-amfri",
+   "id_externo": "178",
+   "url_origem": "https://mapacultural.cim-amfri.sc.gov.br/oportunidade/178/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.cim-amfri.sc.gov.br/files/opportunity/178/1-extrato-de-publicacao-edital-captacao-de-recursos-via-lei-rouanet-festival-do-mar-dom.pdf",
+   "titulo": "BOMBINHAS - EDITAL DE CHAMAMENTO PÚBLICO 01/FMCB/2026 – CAPTAÇÃO DE RECURSOS VIA LEI ROUANET - FESTIVAL DO MAR",
+   "orgao_fomento": "Fundação Municipal de Cultura de Bombinhas",
+   "resumo_original": "O presente Edital de Chamamento Público tem por objeto o CREDENCIAMENTO de pessoas jurídicas de natureza cultural especializadas na prestação de serviços de captação de recursos de incentivos fiscais junto a pessoas físicas ou jurídicas nos termos da Lei n.º 8.313/91 (Lei Rouanet), de acordo com as especificações, exigências e condições estabelecidas e demais anexos deste Instrumento Convocatório.",
+   "resumo_simples": "O presente Edital de Chamamento Público tem por objeto o CREDENCIAMENTO de pessoas jurídicas de natureza cultural especializadas na prestação de serviços de captação de recursos de incentivos fiscais junto a pessoas físicas ou jurídicas nos termos da Lei n.º 8.313/91 (Lei…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SC",
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "Rouanet",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "patrocinio_incentivado",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-01-26T15:00:00Z",
+   "inscricao_fim": "2026-11-27T20:00:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-01-13T22:23:52Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "e79a10e63c88560085efae7efd37ed05606ff418044563fd59be62b9c610aca7",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.cim-amfri.sc.gov.br (SC)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Gestão Cultural"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "de recursos de incentivos fiscais junto a pessoas físicas ou jurídicas nos termos da Lei n.º 8.313/91 (Lei | Público tem por objeto o CREDENCIAMENTO de pessoas jurídicas de natureza cultural especializadas na prestação | Público tem por objeto o CREDENCIAMENTO de pessoas jurídicas de natureza cultural especializadas na prestação"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "PÚBLICO 01/FMCB/2026 – CAPTAÇÃO DE RECURSOS VIA LEI ROUANET - FESTIVAL DO MAR"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "– CAPTAÇÃO DE RECURSOS VIA LEI ROUANET - FESTIVAL DO MAR O presente Edital de"
+    }
+   },
+   "via": "Mapas Culturais (CIM-AMFRI (SC))",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:cim-amfri:178"
   },
   {
    "fonte": "mapas:pe",
@@ -1391,16 +2679,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2024-12-04T17:00:00Z",
    "inscricao_fim": "2026-11-30T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2024-11-26T17:18:26Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "d818c7c3fe4d5bcbef8c0cc12062a016661acb272ab78ec1f45852d37d1a9591",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "784d988da4e2b9454a02fd3a8c29bf98cea2fc3be16e48b29f84646172c07100",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1413,8 +2701,15 @@
     "proponentes": {
      "via": "regex",
      "trecho": "chamada pública visa credenciar profissionais, pessoa física ou MEIs, para integrar o BANCO DE PARECERISTAS da"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "CREDENCIAMENTO NACIONAL DE PARECERISTAS FUNDARPE EDITAL Nº"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:2491"
   },
   {
@@ -1441,26 +2736,33 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-09-16T03:00:00Z",
    "inscricao_fim": "2026-12-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-09-16T20:33:21Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "309139d7749cc4e1d8ecad3c8496209f33455071456052504a0da1a47ac05a18",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "884f33d29f24ef3502c9c6a11108cdaa5af00e6829250ddded1600475a1392f8",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "Banco de Pareceristas a fim de atuar na análise e seleção de Projetos Culturais inscritos nos editais de chamamento a"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "pela Lei nº 14.399/2022 – Política Nacional Aldir Blanc de Fomento à Cultura, na Lei nº"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8365"
   },
   {
@@ -1495,16 +2797,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-08-01T18:11:00Z",
    "inscricao_fim": "2027-01-02T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-08-06T18:09:38Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "8522058e4a661ae96bc70348f05fd3f33edad4369cda11279353f7a470a5a53a",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "dc3b759033db603a4981b841e74be4b69854dc7e55f22f1808bf0f3d34123f09",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1517,8 +2819,15 @@
     "proponentes": {
      "via": "regex",
      "trecho": "pública a abertura de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar | poderá requerer sua inscrição na condição de Microempreendedor individual – MEI ou como pessoa física. Os profissionais | de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar profissionais. | de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar profissionais."
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PARA CREDENCIAMENTO DE PARECERISTAS"
     }
    },
+   "via": "Mapas Culturais (SE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:se:59"
   },
   {
@@ -1552,15 +2861,18 @@
    "inscricao_fim": "2027-01-17T02:22:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-10-26T02:58:04Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "911ca588bb3cb6388ac989e22e70865554d6a24942d51979dbf5899357d2b221",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "ff524809b32bf42cde7f99586d80011666acb30b67cc068b738b9612fdffd0f3",
    "proveniencia": {
     "linguagens": {
      "via": "api",
      "trecho": "Literatura; Criação literária; Letras e Literatura (Humanidades); Livro, Leitura e Literatura"
     }
    },
+   "via": "Mapas Culturais (BR)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:br:12927"
   },
   {
@@ -1595,16 +2907,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2025-03-17T12:00:00Z",
    "inscricao_fim": "2027-03-17T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2025-02-18T18:36:38Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "f5b11a6a5773831e5ac63919c5961160439a3c405b925c8babf4f18156420870",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "54646ecaa6e6654a92381cc113cb7d004745a17065e70e38403f434b828901d1",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1617,8 +2929,15 @@
     "proponentes": {
      "via": "regex",
      "trecho": "tem como objetivo credenciar profissionais, pessoas físicas e/ou MEIs, residentes ou não em Pernambuco, para"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "Edital de Credenciamento Nacional de Pareceristas - Funcultura"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:2571"
   },
   {
@@ -1645,16 +2964,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2025-03-27T13:05:00Z",
    "inscricao_fim": "2027-03-19T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2025-03-12T11:39:45Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "31a4514e164d1acb4af1e9c4f9fc79771a6c6a2a65b7054107b66f38d1dbfa00",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "e9d3006f06bd6c733c41822bce722164eaa24a7182d721d88a4fd3a4f8223891",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1663,8 +2982,15 @@
     "linguagens": {
      "via": "api",
      "trecho": "Outra"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "CREDENCIAMENTO DE PARECERISTAS - SECRETARIA DE CULTURA DE"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:2581"
   },
   {
@@ -1698,15 +3024,18 @@
    "inscricao_fim": "2027-04-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-07T17:25:13Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "eb2da9af87af0aba1b6f13cc025e8490c51441c16d907fe6afb5135bc9f6b847",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "4021b43ebd70bbd007c493815280ab77bf74f5ed76b631d71677d01607e92100",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8416"
   },
   {
@@ -1736,16 +3065,16 @@
    "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-04-22T03:00:00Z",
    "inscricao_fim": "2027-04-23T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-04-20T20:04:24Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "fc361a727bed355431bfe2e0d43315bd979e2f4baef258bb6ed8dde3ce8429a5",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "41bfde75a3667b7b6fd17abdcbf39100c4e4ec02822f26705cc3abbdc7694eac",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -1755,11 +3084,18 @@
      "via": "regex",
      "trecho": "como objeto o credenciamento de profissionais, pessoas físicas ou jurídicas de natureza cultural enquadradas | jurídicas de natureza cultural enquadradas como Microempreendedor Individual (MEI), para formação de banco de pareceristas que"
     },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "DE CHAMAMENTO PÚBLICO Nº 006/2026- SECULT - PARA CREDENCIAMENTO DE PARECERISTAS PARA AVALIAÇÃO DE PROJETOS"
+    },
     "marco_legal": {
      "via": "regex",
      "trecho": "PARA AVALIAÇÃO DE PROJETOS CULTURAIS – POLITICA NACIONAL ALDIR BLANC-PNAB – MARACANAÚ-CE O presente edital"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:7758"
   },
   {
@@ -1805,9 +3141,9 @@
    "inscricao_fim": "2027-04-30T20:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "b61add4adabe6787243a05fe7ddb7d72592b470fc35d68932854cdbf19928db1",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "fb6edbcbdeda00a18e690cbb9b4129b6ecfc8fd3e8fe8dc0193eb6346dc823a8",
    "proveniencia": {
     "inscricao_fim": {
      "via": "curadoria",
@@ -1830,6 +3166,9 @@
      "trecho": null
     }
    },
+   "via": null,
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "curadoria:funarte-aberta-2026-cta"
   },
   {
@@ -1875,9 +3214,9 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "808b9923ad688bf9880c6215fd8b6bc171f7200ffd848194053cbc98b99738ff",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "f6284c4ad68ca507b2a141bc63d17a433bde281d2e31b170ba21f60b99441f28",
    "proveniencia": {
     "inscricao_fim": {
      "via": "curadoria",
@@ -1900,6 +3239,9 @@
      "trecho": null
     }
    },
+   "via": null,
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "curadoria:funarte-aberta-2026-complexo-mg"
   },
   {
@@ -1941,9 +3283,9 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "e72720369a0293eb48a0657d27571d015cd516704dedf5180848a7b046629fe9",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "0ff432a2c3c22832aada8703066e6f705b6bb5e32dde086cd9a1be0d315df629",
    "proveniencia": {
     "inscricao_fim": {
      "via": "curadoria",
@@ -1966,6 +3308,9 @@
      "trecho": "Pessoas Físicas (maiores de 18 anos), Pessoas Jurídicas de direito privado (com ou sem fins lucrativos), Microempreendedores Individuais (MEIs) e Empresários Individuais (EIs)"
     }
    },
+   "via": null,
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "curadoria:funarte-aberta-2026-complexo-sp"
   },
   {
@@ -2008,9 +3353,9 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "3cf67905714e82f84f6b2377010a5bc2b0785c2b059731d7dcd2abb24e9fda95",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "e13089317fc0d2fde359786dcba06a781f7f000104077b6c77478c585d849998",
    "proveniencia": {
     "inscricao_fim": {
      "via": "curadoria",
@@ -2029,6 +3374,9 @@
      "trecho": null
     }
    },
+   "via": null,
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "curadoria:funarte-aberta-2026-livraria-mario-de-andrade"
   },
   {
@@ -2067,9 +3415,9 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "48b36c08368a76b199d4e0c1c1702cdfa96a3122024b4e14c65825f32bf6eaca",
+   "coletado_em": "2026-11-07T11:48:53.945712Z",
+   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "hash_conteudo": "54f907cafc1c06833c8338f22c52bf199720a60da34f800ed444607fec167f28",
    "proveniencia": {
     "inscricao_fim": {
      "via": "curadoria",
@@ -2080,6 +3428,9 @@
      "trecho": "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
     }
    },
+   "via": null,
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "curadoria:funarte-aberta-2026-centro-de-teatro"
   },
   {
@@ -2113,16 +3464,83 @@
    "inscricao_fim": "2027-06-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-07-02T13:42:45Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "d7a2c9a70f1cc7125bbfca04ddb41ad4580c4b058e013761f636d923553fcce4",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "0aa13f1ebb8b16c34320b7a1986f6cbf6569099ba5b14aa7d5e55fbe15e4a90c",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
     }
    },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:ce:8086"
+  },
+  {
+   "fonte": "mapas:cim-amfri",
+   "id_externo": "329",
+   "url_origem": "https://mapacultural.cim-amfri.sc.gov.br/oportunidade/329/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.cim-amfri.sc.gov.br/files/opportunity/329/edital-credenciamento.pdf",
+   "titulo": "Edital de Chamamento Público 02/2026 - Credenciamento para Empresas Captadoras - Lei Rouanet",
+   "orgao_fomento": "CIM-AMFRI",
+   "resumo_original": "Credenciamento eletrônico e permanente de pessoas jurídicas de natureza cultural especializadas na captação de recursos por meio da Lei Rouanet, para atuação em projetos culturais dos municípios consorciados ao CIM-AMFRI. A remuneração será vinculada aos recursos efetivamente captados.",
+   "resumo_simples": "Credenciamento eletrônico e permanente de pessoas jurídicas de natureza cultural especializadas na captação de recursos por meio da Lei Rouanet, para atuação em projetos culturais dos municípios consorciados ao CIM-AMFRI.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SC",
+   "municipio": null,
+   "proponentes": [
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "Rouanet",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "credenciamento",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-07-20T03:00:00Z",
+   "inscricao_fim": "2027-07-21T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-09-22T11:44:25Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "2ecd4e3d6375f3e261f9e448cb94e5b6929fd0574e6b1023192ca1454d3f415c",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.cim-amfri.sc.gov.br (SC)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Gestão Cultural"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "Rouanet Credenciamento eletrônico e permanente de pessoas jurídicas de natureza cultural especializadas na captação | Rouanet Credenciamento eletrônico e permanente de pessoas jurídicas de natureza cultural especializadas na captação"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "Edital de Chamamento Público 02/2026 - Credenciamento para Empresas Captadoras - Lei Rouanet"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "para Empresas Captadoras - Lei Rouanet Credenciamento eletrônico e permanente"
+    }
+   },
+   "via": "Mapas Culturais (CIM-AMFRI (SC))",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:cim-amfri:329"
   },
   {
    "fonte": "mapas:se",
@@ -2152,16 +3570,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-07-31T14:30:00Z",
    "inscricao_fim": "2027-08-11T23:04:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-07-30T22:03:56Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "cf6d8b6d10e8bf81a540b3769513acd3c549ebc0320f861d40f6535fc38ee9b8",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "e96e6189df6d59cca1b6d524b29ae26dcd4f3b59fe5da431477db4808d2f6d54",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -2174,8 +3592,15 @@
     "proponentes": {
      "via": "regex",
      "trecho": "Este Edital tem por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação | por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação de serviços de | por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação de serviços de"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "Edital n° 19/2026 - Credenciamento de Prestadores de Serviços para Execução de"
     }
    },
+   "via": "Mapas Culturais (SE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:se:57"
   },
   {
@@ -2209,9 +3634,9 @@
    "inscricao_fim": "2027-08-30T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2025-08-13T19:10:30Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "8a04d9cfc3e1e2c109552fe36a2f9c40cf0b430a04c266967735a3cc92e9fd22",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "ce4452f2c774b137b54252965dc007e6238ac9b02c6b4fcb098a98fac3c67594",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -2226,6 +3651,9 @@
      "trecho": "PNAB 2024 - Solicitação de Alteração Este"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:2753"
   },
   {
@@ -2252,22 +3680,29 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "credenciamento",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-01-26T03:00:00Z",
    "inscricao_fim": "2028-01-27T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-01-26T12:53:30Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "00ef7d43783f17793a6d4129c5befae7133e3ce18b68b25027bed3b6b58d79c2",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "22a191846f2ecf127489d0fc4fe23da92ff43468aa98f7bc3f7a220bd1bb8f7b",
    "proveniencia": {
     "uf": {
      "via": "api",
      "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE N.º 003/2026 - CREDENCIAMENTO ANUAL DA FUNDAÇÃO CULTURAL CIDADE DE ARACAJU -"
     }
    },
+   "via": "Mapas Culturais (Aracaju (Funcaju))",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:aracaju:123"
   },
   {
@@ -2296,16 +3731,16 @@
    "marco_legal": null,
    "documentos_exigidos": null,
    "cronograma": null,
-   "tipo_apoio": null,
+   "tipo_apoio": "fomento_em_dinheiro",
    "verificado_em": null,
    "pendencias": null,
    "inscricao_inicio": "2026-06-16T12:30:00Z",
    "inscricao_fim": "2028-06-16T19:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-05-20T13:26:53Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "617db6d7475fd1e299012eba30417c9a0012af25e9fa9d140155ecda2fc848b8",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "1f69b5994111923c5b2679d8931e659e83d2011a46575ff7ecd3c5478ee20ca0",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -2318,9 +3753,74 @@
     "proponentes": {
      "via": "regex",
      "trecho": "ações afirmativas da SECULT/PE. Podem participar pessoas físicas maiores de 18 anos que pertençam a um ou mais"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "políticas afirmativas previstas nos mecanismos de fomento cultural do Estado. O Cadastro Afirmativo da"
     }
    },
+   "via": "Mapas Culturais (PE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
    "chave": "mapas:pe:3207"
+  },
+  {
+   "fonte": "mapas:es",
+   "id_externo": "2297",
+   "url_origem": "https://mapa.cultura.es.gov.br/oportunidade/2297/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapa.cultura.es.gov.br/files/opportunity/2297/edita-de-credenciamento-de-parecerista.pdf",
+   "titulo": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS Nº 08/2025 - CACHOEIRO DE ITRAPEMIRIM",
+   "orgao_fomento": "Secretaria Municipal de Cultura de Cachoeiro de Itapemirim",
+   "resumo_original": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS Nº 08/2025 - CREDENCIAMENTO DE AVALIADORES/PARECERISTAS DE MÉRITO CULTURAL PARA PROJETOS SUBMETIDOS NOS EDITAIS DE INCENTIVO CULTURAL DO MUNICIPIO DE CACHOEIRO DE ITAPEMIRIM",
+   "resumo_simples": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS Nº 08/2025 - CREDENCIAMENTO DE AVALIADORES/PARECERISTAS DE MÉRITO CULTURAL PARA PROJETOS SUBMETIDOS NOS EDITAIS DE INCENTIVO CULTURAL DO MUNICIPIO DE CACHOEIRO DE ITAPEMIRIM",
+   "linguagens": [
+    "Música",
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Artes Visuais",
+    "Literatura",
+    "Patrimônio"
+   ],
+   "abrangencia": "estadual",
+   "uf": "ES",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "credenciamento",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2025-12-22T19:00:00Z",
+   "inscricao_fim": "2049-01-02T14:30:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2025-12-22T14:34:01Z",
+   "coletado_em": "2026-11-07T11:47:45.814614Z",
+   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "hash_conteudo": "bbe53e3121f07d42e35f3b6276616cca29bbecde2db8b1ebba7e8ff05e0d77b1",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapa.cultura.es.gov.br (ES)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Acervos; Acessibilidade Cultural; Animação; Antropologia; Arquitetura e Urbanismo; Arquivos; Arte Digital; Arte Gráfica; Arte de Plásticas; Arte Santeira; Arte de Rua; Artes Circenses; Artes Visuais; Artesanato; Audiolivro; Audiovisual e Mídias Interativas; Cinema; Cultura dos Povos Originários; Cul"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "EDITAL DE CREDENCIAMENTO DE PARECERISTAS Nº 08/2025 - CACHOEIRO DE"
+    }
+   },
+   "via": "Mapas Culturais (ES)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:es:2297"
   }
  ],
  "radar": [
@@ -2407,6 +3907,764 @@
     "Literatura"
    ],
    "verificado_em": "2026-11-06"
+  }
+ ],
+ "fontes": [
+  {
+   "fonte": "mapas:br",
+   "nome": "Mapa Cultural do Brasil (MinC)",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapa.cultura.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 3,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:ce",
+   "nome": "Mapa Cultural do Ceará (Secult-CE)",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.secult.ce.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 20,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:pe",
+   "nome": "Mapa Cultural de Pernambuco",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.pe.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 8,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:se",
+   "nome": "Mapa Cultural de Sergipe",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.se.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 2,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:pa",
+   "nome": "Mapa Cultural do Pará",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.pa.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:pb",
+   "nome": "Mapa Cultural da Paraíba",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.pb.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "nome": "Mapa Cultural de Aracaju (Funcaju)",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.aracaju.se.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 7,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:natal",
+   "nome": "Mapa Cultural de Natal",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.natal.rn.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 1,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:campinas",
+   "nome": "Mapa Cultural de Campinas",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.campinas.sp.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "mapas:es",
+   "nome": "Mapa Cultural do Espírito Santo",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapa.cultura.es.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 3,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": "https://mapa.cultura.es.gov.br/",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "mapas:cim-amfri",
+   "nome": "Mapa Cultural do CIM-AMFRI (SC)",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.cim-amfri.sc.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 4,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": "https://mapacultural.cim-amfri.sc.gov.br/",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "mapas:parauapebas",
+   "nome": "Mapa Cultural de Parauapebas (PA)",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapacultural.parauapebas.pa.gov.br",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": "https://mapacultural.parauapebas.pa.gov.br/",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "mapas:df",
+   "nome": "Mapa Cultural do Distrito Federal",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://mapa.cultura.df.gov.br",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "HTTP 403 em /api/opportunity/find na sondagem de 06/11/2026 (bloqueia clientes automatizados).",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
+  },
+  {
+   "fonte": "prosas-central-de-editais",
+   "nome": "Prosas: Central de Editais",
+   "tipo": "plataforma",
+   "metodo": "html",
+   "url": "https://produtos.prosas.com.br/editais",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Os termos de uso proíbem 'métodos de prospecção ou semelhantes de extração de dados' e o robots.txt pede Crawl-Delay de 30 s. Não coletamos. Os editais do Prosas que importam entram pela curadoria, com link para a página de inscrição.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": "https://produtos.prosas.com.br/termos-de-uso",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "culteditais",
+   "nome": "CultEditais (MinC)",
+   "tipo": "oficial",
+   "metodo": "html",
+   "url": "https://culteditais.cultura.gov.br/",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "O site responde com desafio anti-bot do Cloudflare ('Just a moment') para robôs. Não contornamos. É uma instância de Mapas Culturais; os editais dela chegam estruturados pela API pública do CultBR.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "shell-premio-teatro",
+   "nome": "Prêmio Shell de Teatro",
+   "tipo": "oficial",
+   "metodo": "html",
+   "url": "https://www.shell.com.br/sustentabilidade/sociedade/premio-shell-de-teatro",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Sem inscrição aberta ao público: o júri acompanha as temporadas. Só a categoria Destaque Nacional exige inscrição por formulário, divulgado a partir de agosto. Está no radar (fontes_curadas.yaml); a página é montada por JavaScript.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "bb-patrocinios",
+   "nome": "Banco do Brasil: patrocínios",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.bb.com.br/site/patrocinios/",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Página montada por JavaScript: só 150 caracteres de texto para um robô.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "caixa-patrocinios",
+   "nome": "Caixa: patrocínios",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.caixa.gov.br/patrocinios/Paginas/default.aspx",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Página montada por JavaScript: 19 caracteres de texto.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "bndes-patrocinios",
+   "nome": "BNDES: patrocínios",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.bndes.gov.br/wps/portal/site/home/desenvolvimento-sustentavel/patrocinios",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Página sem texto útil sem JavaScript.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "porto-seguro-patrocinio",
+   "nome": "Porto Seguro: patrocínio",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.portoseguro.com.br/institucional/patrocinio",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Página montada por JavaScript: 24 caracteres de texto.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "natura-musical",
+   "nome": "Natura Musical",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.natura.com.br/natura-musical",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "HTTP 403 para o robô e página em JavaScript. Não contornamos. Edição bienal: próxima provavelmente em 2027 (suposição, não confirmada).",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "santander-patrocinios",
+   "nome": "Santander: patrocínios",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.santander.com.br/patrocinios",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "HTTP 403 para o robô. Não contornamos.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "smc-sp-editais",
+   "nome": "Prefeitura de SP: SMC Editais",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://smceditais.prefeitura.sp.gov.br",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Sistema de página única (JavaScript): 18 caracteres de texto.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "ancine-fsa",
+   "nome": "Ancine/FSA: chamadas públicas",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://fsa.ancine.gov.br/",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "fsa.ancine.gov.br deu ConnectTimeout e o caminho de chamadas públicas em gov.br/ancine respondeu 404 em 07/11/2026. URL estável não encontrada.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "descentra-mg",
+   "nome": "Descentra Cultura (Secult-MG)",
+   "tipo": "plataforma",
+   "metodo": "html",
+   "url": "https://www.secult.mg.gov.br/",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "A plataforma exige cadastro e login para ver e enviar editais; não coletamos. A Secult-MG divulga os editais da PNAB em notícias; os que passam pelo CultBR entram por lá.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "itau-cultural",
+   "nome": "Itaú Cultural",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.itaucultural.org.br/",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "Não achei página estável só de editais (/chamadas dá 404); a home muda todo dia e geraria falso alarme. Segue no radar da curadoria.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "oi-futuro",
+   "nome": "Oi Futuro",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://oifuturo.org.br/",
+   "ativa": false,
+   "status": "desativada",
+   "erro": null,
+   "motivo": "ConnectTimeout em 07/11/2026.",
+   "ultima_execucao": null,
+   "ultimo_sucesso": null,
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-petrobras-cultural",
+   "nome": "Petrobras Cultural: seleções públicas",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://petrobras.com.br/pt/cultural/selecoes-publicas-culturais",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 267,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-rj-incentivo-cultura",
+   "nome": "Secult-RJ: Lei de Incentivo à Cultura",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 287,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-claro-patrocinios",
+   "nome": "Claro: patrocínios",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.claro.com.br/institucional/patrocinios",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 325,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-spcine-fomento",
+   "nome": "Spcine: editais de fomento",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://spcine.com.br/editais-de-fomento/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 462,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-sesc-rj-pulsar",
+   "nome": "Sesc RJ: Edital de Cultura Pulsar",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.sescrio.org.br/pulsar/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 773,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-sesi-sp-editais",
+   "nome": "Sesi-SP: editais de cultura",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.sesisp.org.br/cultura/editais",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 854,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-sesc-pr-editais",
+   "nome": "Sesc Paraná: editais",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.sescpr.com.br/editais/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 1700,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-renner-patrocinios",
+   "nome": "Lojas Renner: patrocínios e projetos",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.lojasrennersa.com.br/patrocinios-e-projetos/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 2310,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-funarte-editais",
+   "nome": "Funarte: editais",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.gov.br/funarte/pt-br/editais-1",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 2389,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-riofilme-chamadas",
+   "nome": "Riofilme: chamadas",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://riofilme.com.br/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 3682,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "minc-inscricoes-abertas",
+   "nome": "Ministério da Cultura: editais abertos",
+   "tipo": "oficial",
+   "metodo": "html",
+   "url": "https://www.gov.br/cultura/pt-br/assuntos/editais/inscricoes-abertas",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 1,
+   "candidatos_criados": 2,
+   "duracao_ms": 10215,
+   "termos_url": "https://www.gov.br/cultura/pt-br/acesso-a-informacao",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-instituto-cultural-vale",
+   "nome": "Instituto Cultural Vale: chamada",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.institutoculturalvale.org/editais/chamada-instituto-cultural-vale/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 11688,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "nome": "CultBR (MinC): editais da Política Nacional Aldir Blanc",
+   "tipo": "plataforma",
+   "metodo": "api",
+   "url": "https://back.portal.cultbr.cultura.gov.br/v1/public/par/editais",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 12,
+   "candidatos_criados": 16,
+   "duracao_ms": 31050,
+   "termos_url": "https://portal.cultbr.cultura.gov.br/oportunidades",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "radar-clube-emma",
+   "nome": "Radar de Editais (Clube Emma), só para descobrir links",
+   "tipo": "descoberta",
+   "metodo": "html",
+   "url": "https://radareditais.clubemma.com.br/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 228,
+   "candidatos_criados": 20,
+   "duracao_ms": 48603,
+   "termos_url": "https://radareditais.clubemma.com.br/termos",
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "curadoria",
+   "nome": "Curadoria manual (fontes_curadas.yaml e fila)",
+   "tipo": "oficial",
+   "metodo": "html",
+   "url": "https://github.com/JkFa/editais-culturais/issues?q=label%3Aaprovado",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "total_coletado": 5,
+   "candidatos_criados": 0,
+   "duracao_ms": 0,
+   "termos_url": null,
+   "termos_conferidos_em": null
   }
  ]
 }

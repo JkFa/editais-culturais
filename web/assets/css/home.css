@@ -548,3 +548,53 @@
     font-size: 0.75rem;
   }
 }
+
+/* Lista de fontes em "sobre" */
+.fontes-lista h3 {
+  margin: 1.5rem 0 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cor-texto-suave);
+}
+
+.fontes-lista ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fonte-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.2rem 1rem;
+  padding: 0.6rem 0;
+  border-top: var(--regua);
+  line-height: 1.4;
+}
+
+.fonte-item .meta {
+  grid-column: 1 / -1;
+  font-size: 0.8125rem;
+  color: var(--cor-texto-suave);
+}
+
+.fonte-item .saude {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.saude.ok {
+  color: var(--cor-aberto);
+}
+
+.saude.problema {
+  color: var(--cor-urgente);
+}
+
+.saude.inativa {
+  color: var(--cor-texto-suave);
+}
