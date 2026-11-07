@@ -366,3 +366,27 @@ original conflitava com o repositório (aprovadas pelo usuário em 07/11/2026):
   sem login e sem cookies; a sessão do assistente fica em `localStorage`). É a única alteração em página existente além
   do botão no painel do edital.
 - **Seções 6 a 11** existem só como placeholders `ativo: false` ("em breve").
+
+### Assistente: verificação em produção (07/11/2026)
+
+- **Publicação:** migração `20261108000000_assistente.sql` aplicada (8 tabelas com RLS; `anon` recebe 401 em todas e na RPC
+  do limite), função `assistente` v1 com `verify_jwt = false`, segredos `GEMINI_API_KEY`, `LLM_PROVIDER`, `LLM_MODEL=gemini-3.6-flash`
+  e `LIMITE_DIARIO=60`. Auth: só `site_url` e as URLs de redirecionamento foram enviados.
+- **`supabase config push` não deve ser usado às cegas:** o `config.toml` do repositório divergia da produção
+  (confirmação de e-mail, intervalo mínimo de 1 min entre e-mails, OTP de 8 dígitos e MFA TOTP). O arquivo foi alinhado
+  à produção antes do push, e o diff final continha só `site_url` e `additional_redirect_urls`. Rode `echo n | supabase config push`
+  para ver o diff antes de qualquer envio.
+- **Gemini real:** o modelo `gemini-3.6-flash` e o `responseSchema` (com `fatos_novos_ficha` como lista de pares) foram aceitos.
+  Respostas: perguntas adaptadas ao edital; rascunho só com fatos informados e `[COMPLETAR: ...]` onde faltou (4 pontos num
+  teste com 3 dados informados); filtro de LGPD tirou o e-mail do texto antes de IA e banco (conferido na tabela `mensagens`).
+- **Fluxos conferidos no navegador:** login (link de confirmação do primeiro acesso), botão no painel do edital, criar projeto
+  vinculado, chat, rascunho, aprovação com pontos pendentes, edição que tira a aprovação e grava a versão anterior, limite diário
+  (429 com mensagem amigável; `LIMITE_DIARIO` voltou para 60) e exclusão em cascata (todas as tabelas ficaram zeradas).
+- **`.docx`:** gerado com a biblioteca real (`docx@9.5.0` do jsDelivr) em Deno com `--unsafe-proto` (restrição do Deno, não do
+  navegador): arquivo válido, capa com proponente, edital e linguagem, seções em ordem e só os `[COMPLETAR]` em amarelo.
+- **Defeitos achados só em produção e corrigidos (PRs #83, #84, #85):** a palavra "null" escrita na tela (`replaceChildren`
+  com `null`), a linha "Edital:" vazia (mesmo nó de link em dois lugares) e o contador da lista desatualizado ao excluir. Cada um
+  ganhou teste de regressão que falha no código antigo.
+- **E-mail do login:** o SMTP padrão do Supabase só entrega para membros do projeto. Resend foi avaliado e **não resolve sem
+  domínio próprio verificado** (a conta não tem domínio; sem ele só envia para o e-mail do dono). Para o público geral entrar é
+  preciso um domínio com DNS (Resend, Brevo ou outro) e configurar *Authentication → SMTP Settings*.
