@@ -9,6 +9,7 @@ estruturados e são publicados. Os demais trazem só um link: viram candidatos (
 from __future__ import annotations
 
 import logging
+import re
 from datetime import UTC, datetime
 from decimal import Decimal, InvalidOperation
 from typing import Any
@@ -39,6 +40,22 @@ def nome_legivel(nome: str) -> str:
     palavras = [p.lower() if p.lower() in pequenas else p.capitalize() for p in nome.split()]
     texto = " ".join(palavras)
     return texto.replace("Municipio", "Município")
+
+
+def _areas_de(segmentos: Any) -> list[str]:
+    """A API ora devolve lista, ora um texto ("A, B" ou "Edital não se direciona a ...")."""
+    if not segmentos:
+        return []
+    if isinstance(segmentos, str):
+        partes = [x.strip() for x in re.split(r"[,;]", segmentos)]
+    else:
+        partes = [
+            x.strip()
+            if isinstance(x, str)
+            else str((x or {}).get("label") or (x or {}).get("nome") or "").strip()
+            for x in segmentos
+        ]
+    return [x for x in partes if x and not x.lower().startswith("edital não se direciona")]
 
 
 def converter(
@@ -81,11 +98,7 @@ def converter(
     uf = item.get("uf_ente_recebedor_plano_acao") or None
     if uf:
         prov["uf"] = Proveniencia(via="api", trecho=f"uf_ente_recebedor_plano_acao: {uf}")
-    segmentos = j.get("segmentos_artistico_culturais") or []
-    areas = [
-        s if isinstance(s, str) else str(s.get("label") or s.get("nome") or "") for s in segmentos
-    ]
-    areas = [a for a in areas if a]
+    areas = _areas_de(j.get("segmentos_artistico_culturais"))
     municipio = (
         nome_legivel(limpar_texto(item.get("nome_municipio_ente_recebedor_plano_acao"))) or None
     )
