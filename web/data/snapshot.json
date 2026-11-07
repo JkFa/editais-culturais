@@ -1,11 +1,10 @@
 {
- "gerado_em": "2026-11-07T11:53:21.452394+00:00",
+ "gerado_em": "2026-11-07T17:10:03.940988+00:00",
  "fontes_ok": [
   "cultbr-pnab",
   "curadoria",
   "mapas:aracaju",
   "mapas:br",
-  "mapas:campinas",
   "mapas:ce",
   "mapas:cim-amfri",
   "mapas:es",
@@ -13,8 +12,6 @@
   "mapas:pa",
   "mapas:parauapebas",
   "mapas:pb",
-  "mapas:pe",
-  "mapas:se",
   "minc-inscricoes-abertas",
   "radar-clube-emma",
   "vigia-claro-patrocinios",
@@ -24,12 +21,28 @@
   "vigia-renner-patrocinios",
   "vigia-riofilme-chamadas",
   "vigia-rj-incentivo-cultura",
-  "vigia-sesc-pr-editais",
   "vigia-sesc-rj-pulsar",
   "vigia-sesi-sp-editais",
   "vigia-spcine-fomento"
  ],
- "fontes_falharam": [],
+ "fontes_falharam": [
+  {
+   "fonte": "mapas:pe",
+   "erro": "falha após 3 tentativas em https://mapacultural.pe.gov.br/api/opportunity/find: ConnectTimeout"
+  },
+  {
+   "fonte": "mapas:se",
+   "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout"
+  },
+  {
+   "fonte": "mapas:campinas",
+   "erro": "falha após 3 tentativas em https://mapacultural.campinas.sp.gov.br/api/opportunity/find: ConnectTimeout"
+  },
+  {
+   "fonte": "vigia-sesc-pr-editais",
+   "erro": "HTTP 403 em www.sescpr.com.br"
+  }
+ ],
  "editais": [
   {
    "fonte": "minc-inscricoes-abertas",
@@ -65,8 +78,8 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "4d0d17f949512832149f15610b79789cade61a3b217ffde0cf8895288286058f",
    "proveniencia": {
     "inscricao_fim": {
@@ -124,8 +137,8 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T15:35:52Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "649f7a9529ed1ef5cc201ede0b94de77987093ccef61493973e1a7c58ec5553c",
    "proveniencia": {
     "uf": {
@@ -173,8 +186,8 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T17:35:41Z",
-   "coletado_em": "2026-11-07T11:53:21.452394Z",
-   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "a2f8bec806ab7aea877b0b1b6eb8b7763e7332bdb0a4b7d4484a43b09aa501ae",
    "proveniencia": {
     "uf": {
@@ -194,6 +207,351 @@
    "fontes_alternativas": null,
    "requisitos": null,
    "chave": "mapas:ce:8447"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "60358",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12948",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12948/edital-03-premiacao-cultural-pncv-e-seus-anexos-para-diagramacao-docx-1.pdf",
+   "titulo": "PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA | Edital de Chamamento Público Nº 03/2026 do Funcultura para Firmar Termo de Premiação Cultural - Rede Municipal de Pontos e Pontões de Cultura de Campos dos Goytacazes - RJ | Política Nacional Cultura Viva",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 03/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é a premiação de 06 (seis) iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura no município, valorizando a cultura de base comunitária, a cidadania e a diversidade cultural no âmbito da Política Nacional Cultura Viva (PNCV). Para quem é? Este edital é destinado a entidades e",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 03/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "premio",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-13T23:12:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-03-29T22:26:44Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "f6af6aee30698ca72d2c3b822b3764a575f5dcff7830bf0fc4cfe59442bb7c11",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 60000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA | Edital de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:60358"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "58081",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12611",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12611/edital-05-de-2026-do-funcultura-apoio-direto-a-projetos-e-seus-anexos-docx.pdf",
+   "titulo": "FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS | Edital de Chamamento Público Nº 05/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 05/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo central é selecionar propostas para firmar Termos de Execução Cultural, garantindo apoio financeiro direto a projetos que incentivem a criação, produção, circulação e publicação de diversas manifestações artísticas em nosso município. Para quem é? Este edital é voltado para agentes culturais responsáveis por",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 05/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-09T03:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-19T22:36:18Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "4c9b7fbf4b442784b1723b638b09d65e5da95d3cbb229031680e1782d9b114fb",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 660000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS | Edital de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:58081"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "56464",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12488",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12488/edital-06-de-eventos-culturais-e-seus-anexos-docx.pdf",
+   "titulo": "FOMENTO À EXECUÇÃO DE EVENTOS CULTURAIS | Edital de Chamamento Público Nº 06/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 06/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo central é selecionar propostas para firmar Termos de Execução Cultural, garantindo apoio financeiro direto a projetos que incentivem a criação, produção, circulação e publicação de diversas manifestações artísticas em nosso município. Para quem é? Este edital é voltado para agentes culturais responsáveis por",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 06/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-09T00:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T01:00:35Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "e772f4b8df828957f7c9a54153616b24818e82a6854a1fb8f2d00ab12dd66db1",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 640000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO À EXECUÇÃO DE EVENTOS CULTURAIS | Edital de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:56464"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "55210",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12290",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12290/edital-04-de-formacao-cultural-e-seus-anexos-pdf.pdf",
+   "titulo": "FOMENTO A CAPACITAÇÃO CULTURAL | Edital de Chamamento Público Nº 04/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 04/2026 é voltado para o Fomento à Capacitação Cultural. É uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executado com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é apoiar financeiramente projetos culturais voltados à capacitação, pesquisa e formação, incentivando o aprimoramento e a difusão das diversas manifestações artísticas do município. Para quem é? Este edital é destinado a agentes culturais responsáv",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 04/2026 é voltado para o Fomento à Capacitação Cultural.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-05T21:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-06T23:16:25Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "6727f75246d02c46323bdb35f66d9ea8f161d84ba62631a6ed51d886642ee1d8",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 260000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO A CAPACITAÇÃO CULTURAL | Edital de Chamamento"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:55210"
+  },
+  {
+   "fonte": "cultbr-pnab",
+   "id_externo": "51877",
+   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/11909",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/11909/edital-02-fomento-a-projetos-continuados-de-pontos-de-cultura.pdf",
+   "titulo": "FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA | Edital De Chamamento Público nº 02/2026 do Funcultura - Termo de Compromisso Cultural – Rede Municipal de Pontos de Cultura de Campos dos Goytacazes/RJ",
+   "orgao_fomento": "Município de Campos dos Goytacazes",
+   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 02/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é selecionar propostas culturais para firmar Termos de Compromisso Cultural (TCC), garantindo apoio financeiro continuado para entidades que fortalecem a base comunitária e a diversidade artística do nosso município no âmbito da Política Nacional Cultura Viva (PNCV). Para quem é? Este edital é destinad",
+   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 02/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RJ",
+   "municipio": "Campos dos Goytacazes",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "fomento_em_dinheiro",
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-06T11:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-06-17T19:18:50Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "c00b399e5379b356c61fa1a8d6a02974a7f7d5f6bd5c69ab27d4e18b1b1e6bcb",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "api",
+     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
+    },
+    "proponentes": {
+     "via": "api",
+     "trecho": "tipos_proponentes: pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
+    },
+    "valor_total": {
+     "via": "api",
+     "trecho": "valor_total_edital: 720000.00"
+    },
+    "uf": {
+     "via": "api",
+     "trecho": "uf_ente_recebedor_plano_acao: RJ"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
+    },
+    "tipo_apoio": {
+     "via": "regex",
+     "trecho": "FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA |"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo"
+    }
+   },
+   "via": "CultBR (MinC)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "cultbr-pnab:51877"
   },
   {
    "fonte": "mapas:pe",
@@ -277,351 +635,6 @@
    "chave": "mapas:pe:3447"
   },
   {
-   "fonte": "cultbr-pnab",
-   "id_externo": "60358",
-   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12948",
-   "url_inscricao": null,
-   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12948/edital-03-premiacao-cultural-pncv-e-seus-anexos-para-diagramacao-docx-1.pdf",
-   "titulo": "PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA | Edital de Chamamento Público Nº 03/2026 do Funcultura para Firmar Termo de Premiação Cultural - Rede Municipal de Pontos e Pontões de Cultura de Campos dos Goytacazes - RJ | Política Nacional Cultura Viva",
-   "orgao_fomento": "Município de Campos dos Goytacazes",
-   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 03/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é a premiação de 06 (seis) iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura no município, valorizando a cultura de base comunitária, a cidadania e a diversidade cultural no âmbito da Política Nacional Cultura Viva (PNCV). Para quem é? Este edital é destinado a entidades e",
-   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 03/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "municipal",
-   "uf": "RJ",
-   "municipio": "Campos dos Goytacazes",
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": "premio",
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-13T23:12:00Z",
-   "inscricao_fim": "2026-11-09T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-03-29T22:26:44Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
-   "hash_conteudo": "f6af6aee30698ca72d2c3b822b3764a575f5dcff7830bf0fc4cfe59442bb7c11",
-   "proveniencia": {
-    "inscricao_fim": {
-     "via": "api",
-     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
-    },
-    "proponentes": {
-     "via": "api",
-     "trecho": "tipos_proponentes: coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
-    },
-    "valor_total": {
-     "via": "api",
-     "trecho": "valor_total_edital: 60000.00"
-    },
-    "uf": {
-     "via": "api",
-     "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
-    },
-    "tipo_apoio": {
-     "via": "regex",
-     "trecho": "PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA | Edital de"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo"
-    }
-   },
-   "via": "CultBR (MinC)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "cultbr-pnab:60358"
-  },
-  {
-   "fonte": "cultbr-pnab",
-   "id_externo": "58081",
-   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12611",
-   "url_inscricao": null,
-   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12611/edital-05-de-2026-do-funcultura-apoio-direto-a-projetos-e-seus-anexos-docx.pdf",
-   "titulo": "FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS | Edital de Chamamento Público Nº 05/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
-   "orgao_fomento": "Município de Campos dos Goytacazes",
-   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 05/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo central é selecionar propostas para firmar Termos de Execução Cultural, garantindo apoio financeiro direto a projetos que incentivem a criação, produção, circulação e publicação de diversas manifestações artísticas em nosso município. Para quem é? Este edital é voltado para agentes culturais responsáveis por",
-   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 05/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "municipal",
-   "uf": "RJ",
-   "municipio": "Campos dos Goytacazes",
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": "fomento_em_dinheiro",
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-09T03:00:00Z",
-   "inscricao_fim": "2026-11-09T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-19T22:36:18Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
-   "hash_conteudo": "4c9b7fbf4b442784b1723b638b09d65e5da95d3cbb229031680e1782d9b114fb",
-   "proveniencia": {
-    "inscricao_fim": {
-     "via": "api",
-     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
-    },
-    "proponentes": {
-     "via": "api",
-     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
-    },
-    "valor_total": {
-     "via": "api",
-     "trecho": "valor_total_edital: 660000.00"
-    },
-    "uf": {
-     "via": "api",
-     "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
-    },
-    "tipo_apoio": {
-     "via": "regex",
-     "trecho": "FOMENTO À EXECUÇÃO DE AÇÕES CULTURAIS | Edital de"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
-    }
-   },
-   "via": "CultBR (MinC)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "cultbr-pnab:58081"
-  },
-  {
-   "fonte": "cultbr-pnab",
-   "id_externo": "56464",
-   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12488",
-   "url_inscricao": null,
-   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12488/edital-06-de-eventos-culturais-e-seus-anexos-docx.pdf",
-   "titulo": "FOMENTO À EXECUÇÃO DE EVENTOS CULTURAIS | Edital de Chamamento Público Nº 06/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
-   "orgao_fomento": "Município de Campos dos Goytacazes",
-   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 06/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo central é selecionar propostas para firmar Termos de Execução Cultural, garantindo apoio financeiro direto a projetos que incentivem a criação, produção, circulação e publicação de diversas manifestações artísticas em nosso município. Para quem é? Este edital é voltado para agentes culturais responsáveis por",
-   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 06/2026 é uma ação do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executada com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "municipal",
-   "uf": "RJ",
-   "municipio": "Campos dos Goytacazes",
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": "fomento_em_dinheiro",
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-09T00:00:00Z",
-   "inscricao_fim": "2026-11-09T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-20T01:00:35Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
-   "hash_conteudo": "e772f4b8df828957f7c9a54153616b24818e82a6854a1fb8f2d00ab12dd66db1",
-   "proveniencia": {
-    "inscricao_fim": {
-     "via": "api",
-     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
-    },
-    "proponentes": {
-     "via": "api",
-     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
-    },
-    "valor_total": {
-     "via": "api",
-     "trecho": "valor_total_edital: 640000.00"
-    },
-    "uf": {
-     "via": "api",
-     "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
-    },
-    "tipo_apoio": {
-     "via": "regex",
-     "trecho": "FOMENTO À EXECUÇÃO DE EVENTOS CULTURAIS | Edital de"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
-    }
-   },
-   "via": "CultBR (MinC)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "cultbr-pnab:56464"
-  },
-  {
-   "fonte": "cultbr-pnab",
-   "id_externo": "55210",
-   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/12290",
-   "url_inscricao": null,
-   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/12290/edital-04-de-formacao-cultural-e-seus-anexos-pdf.pdf",
-   "titulo": "FOMENTO A CAPACITAÇÃO CULTURAL | Edital de Chamamento Público Nº 04/2026 do Funcultura - Seleção de Projetos para firmar Termo de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº 14.399/2022)",
-   "orgao_fomento": "Município de Campos dos Goytacazes",
-   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 04/2026 é voltado para o Fomento à Capacitação Cultural. É uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), executado com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é apoiar financeiramente projetos culturais voltados à capacitação, pesquisa e formação, incentivando o aprimoramento e a difusão das diversas manifestações artísticas do município. Para quem é? Este edital é destinado a agentes culturais responsáv",
-   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 04/2026 é voltado para o Fomento à Capacitação Cultural.",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "municipal",
-   "uf": "RJ",
-   "municipio": "Campos dos Goytacazes",
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": "fomento_em_dinheiro",
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-05T21:00:00Z",
-   "inscricao_fim": "2026-11-09T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-06T23:16:25Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
-   "hash_conteudo": "6727f75246d02c46323bdb35f66d9ea8f161d84ba62631a6ed51d886642ee1d8",
-   "proveniencia": {
-    "inscricao_fim": {
-     "via": "api",
-     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
-    },
-    "proponentes": {
-     "via": "api",
-     "trecho": "tipos_proponentes: pessoa_fisica, mei_microempreendedor_individual, coletivos_e_grupos_informais_sem_cnpj, pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
-    },
-    "valor_total": {
-     "via": "api",
-     "trecho": "valor_total_edital: 260000.00"
-    },
-    "uf": {
-     "via": "api",
-     "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
-    },
-    "tipo_apoio": {
-     "via": "regex",
-     "trecho": "FOMENTO A CAPACITAÇÃO CULTURAL | Edital de Chamamento"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "de Execução Cultural com recursos da Política Nacional Aldir Blanc de Fomento à Cultura – PNAB (Lei nº"
-    }
-   },
-   "via": "CultBR (MinC)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "cultbr-pnab:55210"
-  },
-  {
-   "fonte": "cultbr-pnab",
-   "id_externo": "51877",
-   "url_origem": "https://culteditais.cultura.gov.br/oportunidade/11909",
-   "url_inscricao": null,
-   "url_edital_pdf": "https://culteditais.cultura.gov.br/files/opportunity/11909/edital-02-fomento-a-projetos-continuados-de-pontos-de-cultura.pdf",
-   "titulo": "FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA | Edital De Chamamento Público nº 02/2026 do Funcultura - Termo de Compromisso Cultural – Rede Municipal de Pontos de Cultura de Campos dos Goytacazes/RJ",
-   "orgao_fomento": "Município de Campos dos Goytacazes",
-   "resumo_original": "O que é este Edital? O Edital de Chamamento Público Nº 02/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo principal é selecionar propostas culturais para firmar Termos de Compromisso Cultural (TCC), garantindo apoio financeiro continuado para entidades que fortalecem a base comunitária e a diversidade artística do nosso município no âmbito da Política Nacional Cultura Viva (PNCV). Para quem é? Este edital é destinad",
-   "resumo_simples": "O que é este Edital? O Edital de Chamamento Público Nº 02/2026 é uma iniciativa do Fundo Municipal de Cultura de Campos dos Goytacazes (FUNCULTURA), com recursos repassados pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "municipal",
-   "uf": "RJ",
-   "municipio": "Campos dos Goytacazes",
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": "fomento_em_dinheiro",
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-06T11:00:00Z",
-   "inscricao_fim": "2026-11-09T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-06-17T19:18:50Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
-   "hash_conteudo": "c00b399e5379b356c61fa1a8d6a02974a7f7d5f6bd5c69ab27d4e18b1b1e6bcb",
-   "proveniencia": {
-    "inscricao_fim": {
-     "via": "api",
-     "trecho": "data_final_prazo_inscricao: 2026-11-08T23:59:00"
-    },
-    "proponentes": {
-     "via": "api",
-     "trecho": "tipos_proponentes: pessoa_juridica_com_fins_lucrativos_empresas, pessoa_juridica_sem_fins_lucrativos"
-    },
-    "valor_total": {
-     "via": "api",
-     "trecho": "valor_total_edital: 720000.00"
-    },
-    "uf": {
-     "via": "api",
-     "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
-    },
-    "tipo_apoio": {
-     "via": "regex",
-     "trecho": "FOMENTO A PROJETOS CONTINUADOS DE PONTOS DE CULTURA |"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "pelo Governo Federal por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB). O objetivo"
-    }
-   },
-   "via": "CultBR (MinC)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "cultbr-pnab:51877"
-  },
-  {
    "fonte": "mapas:ce",
    "id_externo": "8467",
    "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8467/",
@@ -652,8 +665,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-30T18:12:55Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "35fdf7b9435ddbda3e6856d925aacb33839819c67315b84a3c0fe02b6cb54484",
    "proveniencia": {
     "uf": {
@@ -665,65 +678,6 @@
    "fontes_alternativas": null,
    "requisitos": null,
    "chave": "mapas:ce:8467"
-  },
-  {
-   "fonte": "mapas:ce",
-   "id_externo": "8445",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8445/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS CULTURA VIVA A MESTRAS E MESTRES DAS CULTURAS TRADICIONAIS E POPULARES - AQUIRAZ/CE",
-   "orgao_fomento": "SECRETARIA DE CULTURA DE AQUIRAZ",
-   "resumo_original": "O objeto deste Edital é a concessão de 3 (três) Bolsas Cultura Viva a Mestras e Mestres das Culturas Tradicionais e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista. As bolsas destinam-se exclusivamente a pessoas físicas que, vinculadas a pelo menos um Ponto ou Pontão de Cultura certificado pelo Ministério da Cultura, desenvolvam atividades culturais que contribuam para as finalidades da Política Nacional de Cultura Viva.",
-   "resumo_simples": "O objeto deste Edital é a concessão de 3 (três) Bolsas Cultura Viva a Mestras e Mestres das Culturas Tradicionais e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista.",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": [
-    "PF"
-   ],
-   "valor_total": null,
-   "teto_por_projeto": 12600.0,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-28T03:00:00Z",
-   "inscricao_fim": "2026-11-10T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-20T17:06:21Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
-   "hash_conteudo": "4c30f19a859d622245045b630e19efafd660d72699d89734742ef8657b66934c",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    },
-    "teto_por_projeto": {
-     "via": "regex",
-     "trecho": "e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista. As bolsas destinam-se exclusivamente a pessoas físicas"
-    },
-    "proponentes": {
-     "via": "regex",
-     "trecho": "bolsista. As bolsas destinam-se exclusivamente a pessoas físicas que, vinculadas a pelo menos um Ponto ou Pontão"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS"
-    }
-   },
-   "via": "Mapas Culturais (CE)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "mapas:ce:8445"
   },
   {
    "fonte": "mapas:ce",
@@ -756,8 +710,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T16:58:15Z",
-   "coletado_em": "2026-11-07T11:53:21.452394Z",
-   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "6651a674f954178b02bd3c2f5125cdb5f3f58c6a02480ff4355bdff886934201",
    "proveniencia": {
     "uf": {
@@ -812,8 +766,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T17:13:15Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "6cbd0b8061a56c42a127403805e505c5b8056e4370d43795b78712dd4d7152b3",
    "proveniencia": {
     "uf": {
@@ -837,6 +791,65 @@
    "fontes_alternativas": null,
    "requisitos": null,
    "chave": "mapas:ce:8446"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8445",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8445/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS CULTURA VIVA A MESTRAS E MESTRES DAS CULTURAS TRADICIONAIS E POPULARES - AQUIRAZ/CE",
+   "orgao_fomento": "SECRETARIA DE CULTURA DE AQUIRAZ",
+   "resumo_original": "O objeto deste Edital é a concessão de 3 (três) Bolsas Cultura Viva a Mestras e Mestres das Culturas Tradicionais e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista. As bolsas destinam-se exclusivamente a pessoas físicas que, vinculadas a pelo menos um Ponto ou Pontão de Cultura certificado pelo Ministério da Cultura, desenvolvam atividades culturais que contribuam para as finalidades da Política Nacional de Cultura Viva.",
+   "resumo_simples": "O objeto deste Edital é a concessão de 3 (três) Bolsas Cultura Viva a Mestras e Mestres das Culturas Tradicionais e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": 12600.0,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T17:06:21Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "4c30f19a859d622245045b630e19efafd660d72699d89734742ef8657b66934c",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "teto_por_projeto": {
+     "via": "regex",
+     "trecho": "e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista. As bolsas destinam-se exclusivamente a pessoas físicas"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "bolsista. As bolsas destinam-se exclusivamente a pessoas físicas que, vinculadas a pelo menos um Ponto ou Pontão"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS"
+    }
+   },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:ce:8445"
   },
   {
    "fonte": "mapas:aracaju",
@@ -869,8 +882,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-28T17:40:01Z",
-   "coletado_em": "2026-11-07T11:53:21.452394Z",
-   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "6481e43fe1ec125f9f45b3d018f77bbec805ccdc81921c660c7f78f7fc66d160",
    "proveniencia": {
     "uf": {
@@ -926,8 +939,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-25T21:21:23Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "e7f5fb85f7c6cd678103a846fcece92af2ae1cf94073aeb416b52da8ae6eef81",
    "proveniencia": {
     "uf": {
@@ -979,8 +992,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-26T03:07:58Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "11daf53ff4ed48c38797e6fbfecb04069f0ca1911828b94a0fbca70fdc6dd37e",
    "proveniencia": {
     "uf": {
@@ -1036,8 +1049,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-26T03:00:22Z",
-   "coletado_em": "2026-11-07T11:53:21.452394Z",
-   "atualizado_em": "2026-11-07T11:53:21.452394Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "5eb24ee17b5e236bb60bf26661bfe40f3ff2396b722f26c349e6c03700cae057",
    "proveniencia": {
     "uf": {
@@ -1093,8 +1106,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-28T17:10:36Z",
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "7adc87776b9cd597ea3ad9d1c7cb7f14bb82dfe3fa9547526faf7786891e7b44",
    "proveniencia": {
     "uf": {
@@ -1146,8 +1159,8 @@
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-26T02:55:28Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "11c99bb305d7e0967d1a688b1c938326cf143eeb5ef23dce449e58a30f84d029",
    "proveniencia": {
     "uf": {
@@ -1252,8 +1265,8 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-29T15:56:42Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "8072061e5389256698d3dd7e0a31251165f231189cd8190c750a0a1a34cba663",
    "proveniencia": {
     "uf": {
@@ -1305,8 +1318,8 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-27T17:53:57Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "3d553be63c3ec33fee1dd49bc72464e1954fb35b9156d9c54e80ac998d810c53",
    "proveniencia": {
     "uf": {
@@ -1354,8 +1367,8 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-27T17:40:09Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "0505ded76562869e4c694f8eac339013803a6908d265fd1ceef0f72869c92043",
    "proveniencia": {
     "inscricao_fim": {
@@ -1423,8 +1436,8 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-27T16:05:46Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "3cbdffb1765b28256553b920a1174b6ed99f90f6eec2f70e02f707d9c047034f",
    "proveniencia": {
     "inscricao_fim": {
@@ -1494,8 +1507,8 @@
    "inscricao_fim": "2026-11-13T01:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-11-05T13:18:56Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "f107261e22fb516c84f487ba0bc36e71e9f2f111a517e81f61a06ac9c06cc82c",
    "proveniencia": {
     "uf": {
@@ -1555,8 +1568,8 @@
    "inscricao_fim": "2026-11-13T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-09-09T19:28:52Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "7302f6ff14062fbcaf5e1fff7df2ac8e3e354d3905ff3c7759e4419ef06784b5",
    "proveniencia": {
     "uf": {
@@ -1608,8 +1621,8 @@
    "inscricao_fim": "2026-11-13T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-06T18:04:11Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "1353041d429d58829c8167854468b09b0ee39db7d45e07c175ea89a46b913288",
    "proveniencia": {
     "inscricao_fim": {
@@ -1730,8 +1743,8 @@
    "inscricao_fim": "2026-11-13T20:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-04-02T19:12:10Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "b09b3b16bed001f22a7cd549c4443d2d54435876f2fea25835b2e370eb59740e",
    "proveniencia": {
     "uf": {
@@ -1751,61 +1764,6 @@
    "fontes_alternativas": null,
    "requisitos": null,
    "chave": "mapas:cim-amfri:222"
-  },
-  {
-   "fonte": "mapas:ce",
-   "id_externo": "8453",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8453/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO",
-   "orgao_fomento": "Secretaria da Cultura do Estado do Ceará - SECULTCE",
-   "resumo_original": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO -- O presente chamamento público integra as ações de formação e qualificação de maestras e maestros, desenvolvidas pela SECULT/CE no âmbito do SEBAM-CE, com vistas ao fortalecimento, valorização e difusão das tradições musicais das bandas de música no Estado do Ceará. Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso de formação “Aperfeiçoamento para maestras e maestros de bandas de música e orquestras de sopros”, das 14 macrorregiões do Ceará, em parceria com a Fundação de Apoio à Cultura, à Pesquisa e ao Desenvolvimento Institucional, Científico e Tecnológico - Fundação CETREDE.",
-   "resumo_simples": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO -- O presente chamamento público integra as ações de formação e…",
-   "linguagens": [
-    "Música"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": [
-    "PF"
-   ],
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": null,
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-24T03:00:00Z",
-   "inscricao_fim": "2026-11-14T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-22T17:30:32Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
-   "hash_conteudo": "0a5cbfa3d5e230675664ab3e7ef123544f2798fcd9b2a526ec2dc6b34bc415a1",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    },
-    "linguagens": {
-     "via": "regex",
-     "trecho": "MÚSICA"
-    },
-    "proponentes": {
-     "via": "regex",
-     "trecho": "Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso"
-    }
-   },
-   "via": "Mapas Culturais (CE)",
-   "fontes_alternativas": null,
-   "requisitos": null,
-   "chave": "mapas:ce:8453"
   },
   {
    "fonte": "mapas:ce",
@@ -1838,8 +1796,8 @@
    "inscricao_fim": "2026-11-14T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-29T14:21:51Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "175cf435372986a62c512bfc67f3c70981d42b55434b7bc19b392ec6b16ef601",
    "proveniencia": {
     "uf": {
@@ -1891,8 +1849,8 @@
    "inscricao_fim": "2026-11-14T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-22T13:06:54Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "a5968950123db241582c80c29cb8d5d16bdf32f6e70f1d76b7c91db83b96f031",
    "proveniencia": {
     "uf": {
@@ -1936,8 +1894,8 @@
    "inscricao_fim": "2026-11-16T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-17T22:03:42Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "c11073e796918115eae58953e1f83524e975c4f000296f1938924372cad5bb66",
    "proveniencia": {
     "linguagens": {
@@ -1949,6 +1907,61 @@
    "fontes_alternativas": null,
    "requisitos": null,
    "chave": "mapas:br:12706"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8453",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8453/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO",
+   "orgao_fomento": "Secretaria da Cultura do Estado do Ceará - SECULTCE",
+   "resumo_original": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO -- O presente chamamento público integra as ações de formação e qualificação de maestras e maestros, desenvolvidas pela SECULT/CE no âmbito do SEBAM-CE, com vistas ao fortalecimento, valorização e difusão das tradições musicais das bandas de música no Estado do Ceará. Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso de formação “Aperfeiçoamento para maestras e maestros de bandas de música e orquestras de sopros”, das 14 macrorregiões do Ceará, em parceria com a Fundação de Apoio à Cultura, à Pesquisa e ao Desenvolvimento Institucional, Científico e Tecnológico - Fundação CETREDE.",
+   "resumo_simples": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO -- O presente chamamento público integra as ações de formação e…",
+   "linguagens": [
+    "Música"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-24T03:00:00Z",
+   "inscricao_fim": "2026-11-16T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-22T17:30:32Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
+   "hash_conteudo": "ade12d7eb585a66922cb883121947ab9a2ee69a4bdab38bb4301e900f490f560",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "MÚSICA"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso"
+    }
+   },
+   "via": "Mapas Culturais (CE)",
+   "fontes_alternativas": null,
+   "requisitos": null,
+   "chave": "mapas:ce:8453"
   },
   {
    "fonte": "mapas:ce",
@@ -1981,8 +1994,8 @@
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-19T12:42:23Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "40fd2ae58be883777c9349ef09852a004ac0c47be6579fa416c9be509622fde6",
    "proveniencia": {
     "uf": {
@@ -2030,8 +2043,8 @@
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-06T16:42:35Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "cef58117768a95996e4d7566f0ffce7b6e09618095f584f4f53cfbe603e7f1b4",
    "proveniencia": {
     "uf": {
@@ -2079,8 +2092,8 @@
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-05T14:04:08Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "dd8468d49e772f21db582aa95e8dc5bf9e72575b8acbd290b43fcabf63dc700c",
    "proveniencia": {
     "uf": {
@@ -2132,8 +2145,8 @@
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-29T21:32:10Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "2eccc3beeef43e306f4c7410378b95e649cadf8e81fb3605d831e10e5ce18518",
    "proveniencia": {
     "inscricao_fim": {
@@ -2201,8 +2214,8 @@
    "inscricao_fim": "2026-11-17T21:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-10-29T16:31:51Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "24584ac07b01beaa7a103e9e8c9c091eb08f7d3b1206c04c0595e74426c97758",
    "proveniencia": {
     "uf": {
@@ -2258,8 +2271,8 @@
    "inscricao_fim": "2026-11-19T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-06T17:36:36Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "6a91a74dece2b1f3a56b9837edc362e2a0e34ddc769b5b9896958345abae480a",
    "proveniencia": {
     "inscricao_fim": {
@@ -2323,8 +2336,8 @@
    "inscricao_fim": "2026-11-20T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-04T14:02:58Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "f539c664065385a8aea6c608ed214da5a224d78645c085af6beaa09fc56479bc",
    "proveniencia": {
     "inscricao_fim": {
@@ -2387,8 +2400,8 @@
    "inscricao_fim": "2026-11-21T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-05T18:37:09Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "9b7c4c4e660d02820695fb456ce682661429073c45f473c5ad5d1e1a68da0781",
    "proveniencia": {
     "uf": {
@@ -2444,8 +2457,8 @@
    "inscricao_fim": "2026-11-23T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-22T14:23:30Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "c1ec2e7efc0344a91685380f758a0f3497123fe8fef64934ccb021151903d191",
    "proveniencia": {
     "uf": {
@@ -2493,8 +2506,8 @@
    "inscricao_fim": "2026-11-23T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-05T17:19:26Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "b11f2136e6e00f72a8e21647b2c6df62489805f6af86a6e77d20625e12c994f4",
    "proveniencia": {
     "uf": {
@@ -2546,8 +2559,8 @@
    "inscricao_fim": "2026-11-23T20:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-10-21T14:29:15Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "aee72f1c19d5cefc7448851cd6e90212a978390b6e8ee5c427dc267b2f00cd22",
    "proveniencia": {
     "inscricao_fim": {
@@ -2623,8 +2636,8 @@
    "inscricao_fim": "2026-11-27T20:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-01-13T22:23:52Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "e79a10e63c88560085efae7efd37ed05606ff418044563fd59be62b9c610aca7",
    "proveniencia": {
     "uf": {
@@ -2743,8 +2756,8 @@
    "inscricao_fim": "2026-12-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-09-16T20:33:21Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "884f33d29f24ef3502c9c6a11108cdaa5af00e6829250ddded1600475a1392f8",
    "proveniencia": {
     "uf": {
@@ -2861,8 +2874,8 @@
    "inscricao_fim": "2027-01-17T02:22:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-10-26T02:58:04Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "ff524809b32bf42cde7f99586d80011666acb30b67cc068b738b9612fdffd0f3",
    "proveniencia": {
     "linguagens": {
@@ -3024,8 +3037,8 @@
    "inscricao_fim": "2027-04-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-07T17:25:13Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "4021b43ebd70bbd007c493815280ab77bf74f5ed76b631d71677d01607e92100",
    "proveniencia": {
     "uf": {
@@ -3072,8 +3085,8 @@
    "inscricao_fim": "2027-04-23T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-04-20T20:04:24Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "41bfde75a3667b7b6fd17abdcbf39100c4e4ec02822f26705cc3abbdc7694eac",
    "proveniencia": {
     "uf": {
@@ -3141,8 +3154,8 @@
    "inscricao_fim": "2027-04-30T20:59:00Z",
    "fim_tem_horario": true,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "fb6edbcbdeda00a18e690cbb9b4129b6ecfc8fd3e8fe8dc0193eb6346dc823a8",
    "proveniencia": {
     "inscricao_fim": {
@@ -3214,8 +3227,8 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "f6284c4ad68ca507b2a141bc63d17a433bde281d2e31b170ba21f60b99441f28",
    "proveniencia": {
     "inscricao_fim": {
@@ -3283,8 +3296,8 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "0ff432a2c3c22832aada8703066e6f705b6bb5e32dde086cd9a1be0d315df629",
    "proveniencia": {
     "inscricao_fim": {
@@ -3353,8 +3366,8 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "e13089317fc0d2fde359786dcba06a781f7f000104077b6c77478c585d849998",
    "proveniencia": {
     "inscricao_fim": {
@@ -3415,8 +3428,8 @@
    "inscricao_fim": "2027-05-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": null,
-   "coletado_em": "2026-11-07T11:48:53.945712Z",
-   "atualizado_em": "2026-11-07T11:48:53.945712Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "54f907cafc1c06833c8338f22c52bf199720a60da34f800ed444607fec167f28",
    "proveniencia": {
     "inscricao_fim": {
@@ -3464,8 +3477,8 @@
    "inscricao_fim": "2027-06-01T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-07-02T13:42:45Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "0aa13f1ebb8b16c34320b7a1986f6cbf6569099ba5b14aa7d5e55fbe15e4a90c",
    "proveniencia": {
     "uf": {
@@ -3512,8 +3525,8 @@
    "inscricao_fim": "2027-07-21T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-09-22T11:44:25Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "2ecd4e3d6375f3e261f9e448cb94e5b6929fd0574e6b1023192ca1454d3f415c",
    "proveniencia": {
     "uf": {
@@ -3687,8 +3700,8 @@
    "inscricao_fim": "2028-01-27T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-01-26T12:53:30Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "22a191846f2ecf127489d0fc4fe23da92ff43468aa98f7bc3f7a220bd1bb8f7b",
    "proveniencia": {
     "uf": {
@@ -3800,8 +3813,8 @@
    "inscricao_fim": "2049-01-02T14:30:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2025-12-22T14:34:01Z",
-   "coletado_em": "2026-11-07T11:47:45.814614Z",
-   "atualizado_em": "2026-11-07T11:47:45.814614Z",
+   "coletado_em": "2026-11-07T17:10:03.940988Z",
+   "atualizado_em": "2026-11-07T17:10:03.940988Z",
    "hash_conteudo": "bbe53e3121f07d42e35f3b6276616cca29bbecde2db8b1ebba7e8ff05e0d77b1",
    "proveniencia": {
     "uf": {
@@ -3907,6 +3920,21 @@
     "Literatura"
    ],
    "verificado_em": "2026-11-06"
+  },
+  {
+   "id_externo": "premio-shell-de-teatro",
+   "titulo": "Prêmio Shell de Teatro (categoria Destaque Nacional)",
+   "orgao_fomento": "Shell Brasil",
+   "url_referencia": "https://www.shell.com.br/sustentabilidade/sociedade/premio-shell-de-teatro",
+   "ultima_edicao": "37ª edição. O prêmio principal não tem inscrição: espetáculos inéditos no Rio de Janeiro e em São Paulo são acompanhados pelo júri. Só a categoria Destaque Nacional (peças fora do eixo Rio-São Paulo) exige inscrição, por formulário no site.",
+   "janela_habitual": "a partir de agosto (formulário da categoria Destaque Nacional)",
+   "janela_mes_inicio": 8,
+   "janela_mes_fim": 8,
+   "proponentes_ultima_edicao": null,
+   "linguagens": [
+    "Teatro & Dança"
+   ],
+   "verificado_em": "2026-11-07"
   }
  ],
  "fontes": [
@@ -3920,8 +3948,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 3,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -3938,8 +3966,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 20,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -3953,12 +3981,12 @@
    "metodo": "api",
    "url": "https://mapacultural.pe.gov.br",
    "ativa": true,
-   "status": "ok",
-   "erro": null,
+   "status": "erro",
+   "erro": "falha após 3 tentativas em https://mapacultural.pe.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 8,
+   "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
    "termos_url": null,
@@ -3971,12 +3999,12 @@
    "metodo": "api",
    "url": "https://mapacultural.se.gov.br",
    "ativa": true,
-   "status": "ok",
-   "erro": null,
+   "status": "erro",
+   "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 2,
+   "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
    "termos_url": null,
@@ -3992,8 +4020,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4010,8 +4038,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4028,8 +4056,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 7,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4046,8 +4074,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 1,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4061,10 +4089,10 @@
    "metodo": "api",
    "url": "https://mapacultural.campinas.sp.gov.br",
    "ativa": true,
-   "status": "ok",
-   "erro": null,
+   "status": "erro",
+   "erro": "falha após 3 tentativas em https://mapacultural.campinas.sp.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
@@ -4082,8 +4110,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 3,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4100,8 +4128,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 4,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4118,8 +4146,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4397,92 +4425,20 @@
    "termos_conferidos_em": "2026-11-07"
   },
   {
-   "fonte": "vigia-petrobras-cultural",
-   "nome": "Petrobras Cultural: seleções públicas",
+   "fonte": "vigia-sesc-pr-editais",
+   "nome": "Sesc Paraná: editais",
    "tipo": "oficial",
    "metodo": "vigia",
-   "url": "https://petrobras.com.br/pt/cultural/selecoes-publicas-culturais",
+   "url": "https://www.sescpr.com.br/editais/",
    "ativa": true,
-   "status": "ok",
-   "erro": null,
+   "status": "bloqueada_em_ci",
+   "erro": "HTTP 403 em www.sescpr.com.br",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 267,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-rj-incentivo-cultura",
-   "nome": "Secult-RJ: Lei de Incentivo à Cultura",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 287,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-claro-patrocinios",
-   "nome": "Claro: patrocínios",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://www.claro.com.br/institucional/patrocinios",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 325,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-spcine-fomento",
-   "nome": "Spcine: editais de fomento",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://spcine.com.br/editais-de-fomento/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 462,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-sesc-rj-pulsar",
-   "nome": "Sesc RJ: Edital de Cultura Pulsar",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://www.sescrio.org.br/pulsar/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 773,
+   "duracao_ms": 219,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4496,65 +4452,83 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 854,
+   "duracao_ms": 372,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
   {
-   "fonte": "vigia-sesc-pr-editais",
-   "nome": "Sesc Paraná: editais",
+   "fonte": "vigia-rj-incentivo-cultura",
+   "nome": "Secult-RJ: Lei de Incentivo à Cultura",
    "tipo": "oficial",
    "metodo": "vigia",
-   "url": "https://www.sescpr.com.br/editais/",
+   "url": "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/",
    "ativa": true,
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 1700,
+   "duracao_ms": 904,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
   {
-   "fonte": "vigia-renner-patrocinios",
-   "nome": "Lojas Renner: patrocínios e projetos",
+   "fonte": "vigia-spcine-fomento",
+   "nome": "Spcine: editais de fomento",
    "tipo": "oficial",
    "metodo": "vigia",
-   "url": "https://www.lojasrennersa.com.br/patrocinios-e-projetos/",
+   "url": "https://spcine.com.br/editais-de-fomento/",
    "ativa": true,
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 2310,
+   "duracao_ms": 1053,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
   {
-   "fonte": "vigia-funarte-editais",
-   "nome": "Funarte: editais",
+   "fonte": "vigia-claro-patrocinios",
+   "nome": "Claro: patrocínios",
    "tipo": "oficial",
    "metodo": "vigia",
-   "url": "https://www.gov.br/funarte/pt-br/editais-1",
+   "url": "https://www.claro.com.br/institucional/patrocinios",
    "ativa": true,
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 2389,
+   "duracao_ms": 1319,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-sesc-rj-pulsar",
+   "nome": "Sesc RJ: Edital de Cultura Pulsar",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.sescrio.org.br/pulsar/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 1604,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4568,11 +4542,83 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 3682,
+   "duracao_ms": 1810,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-petrobras-cultural",
+   "nome": "Petrobras Cultural: seleções públicas",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://petrobras.com.br/pt/cultural/selecoes-publicas-culturais",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 2140,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-renner-patrocinios",
+   "nome": "Lojas Renner: patrocínios e projetos",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.lojasrennersa.com.br/patrocinios-e-projetos/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 3222,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-funarte-editais",
+   "nome": "Funarte: editais",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.gov.br/funarte/pt-br/editais-1",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 3907,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-instituto-cultural-vale",
+   "nome": "Instituto Cultural Vale: chamada",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.institutoculturalvale.org/editais/chamada-instituto-cultural-vale/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 10449,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4586,30 +4632,12 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 1,
    "candidatos_criados": 2,
-   "duracao_ms": 10215,
+   "duracao_ms": 11375,
    "termos_url": "https://www.gov.br/cultura/pt-br/acesso-a-informacao",
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-instituto-cultural-vale",
-   "nome": "Instituto Cultural Vale: chamada",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://www.institutoculturalvale.org/editais/chamada-instituto-cultural-vale/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 11688,
-   "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
   {
@@ -4622,11 +4650,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 12,
-   "candidatos_criados": 16,
-   "duracao_ms": 31050,
+   "candidatos_criados": 13,
+   "duracao_ms": 148871,
    "termos_url": "https://portal.cultbr.cultura.gov.br/oportunidades",
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4640,11 +4668,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 228,
    "candidatos_criados": 20,
-   "duracao_ms": 48603,
+   "duracao_ms": 255839,
    "termos_url": "https://radareditais.clubemma.com.br/termos",
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4658,8 +4686,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T11:53:21.452394Z",
-   "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
+   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 5,
    "candidatos_criados": 0,
    "duracao_ms": 0,
