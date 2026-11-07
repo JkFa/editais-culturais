@@ -1,0 +1,2532 @@
+{
+ "gerado_em": "2026-11-07T02:43:58.815973+00:00",
+ "fontes_ok": [
+  "curadoria",
+  "mapas:aracaju",
+  "mapas:br",
+  "mapas:campinas",
+  "mapas:ce",
+  "mapas:natal",
+  "mapas:pa",
+  "mapas:pb",
+  "mapas:pe",
+  "mapas:se"
+ ],
+ "fontes_falharam": [],
+ "editais": [
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8263",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8263/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "1º EDITAL DE CHAMAMENTO PÚBLICO PARA REALIZAÇÃO DO PROGRAMA DE ARTE E CULTURA DIGITAL NO CEARÁ",
+   "orgao_fomento": "Secretaria da Cultura do Estado do Ceará - SECULTCE",
+   "resumo_original": "Período de conhecimento pública: De 28 de agosto a 28 de setembro de 2026. Período de inscrição: De 29 de setembro a 14 de outubro de 2026. -- 1º EDITAL DE CHAMAMENTO PÚBLICO PARA REALIZAÇÃO DO PROGRAMA DE ARTE E CULTURA DIGITAL NO CEARÁ",
+   "resumo_simples": "Período de conhecimento pública: De 28 de agosto a 28 de setembro de 2026.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-09-29T03:00:00Z",
+   "inscricao_fim": "2026-11-07T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-08-26T12:39:39Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "e6c683978483ba324de4870b074848889534f8f60762a626bbcfc0c2e977e797",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8263"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8434",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8434/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE APOIO AO CICLO NATALINO – 2026 – POLITICA NACIONAL ALDIR BLANC – CHORÓ EDITAL Nº 03/2026",
+   "orgao_fomento": "Renei Benício",
+   "resumo_original": "Este edital tem por finalidade assegurar o aproveitamento de vagas remanescentes e fortalecer as manifestações culturais e os saberes tradicionais relacionados ao ciclo natalino no Município de Choró/CE.",
+   "resumo_simples": "Este edital tem por finalidade assegurar o aproveitamento de vagas remanescentes e fortalecer as manifestações culturais e os saberes tradicionais relacionados ao ciclo natalino no Município de Choró/CE.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-23T03:00:00Z",
+   "inscricao_fim": "2026-11-07T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-19T14:44:47Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "f6d8050205baadee9da11e19f8efa3e13de7ee92959a66c9cf67213a648ab9b3",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE APOIO AO CICLO NATALINO – 2026 – POLITICA NACIONAL ALDIR BLANC – CHORÓ EDITAL Nº 03/2026 Este edital"
+    }
+   },
+   "chave": "mapas:ce:8434"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8455",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8455/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "Edital 013 - Formação e Qualificação Cultural - PROSIEC Pacajus",
+   "orgao_fomento": "Secretaria de Cultura e Turismo de Pacajus",
+   "resumo_original": "O MUNICÍPIO DE PACAJUS, por intermédio da Secretaria Municipal de Cultura e Turismo, torna público o presente Edital de Chamamento Público para seleção de projeto cultural, a ser executado mediante celebração de Termo de Execução Cultural – TEC, com recursos transferidos ao Fundo Municipal de Cultura de Pacajus no âmbito do Programa de Fortalecimento do Sistema Estadual da Cultura - ProSIEC, com fundamento na Lei Estadual nº 18.012/2022, na Lei Estadual nº 18.816/2024, no Decreto Estadual nº 36.040/2024, na Instrução Normativa Secult nº 02/2026, na Lei Federal nº 14.903/2024, no Decreto Federal nº 11.453/2023 e na legislação municipal aplicável e das condições previstas neste Edital",
+   "resumo_simples": "O MUNICÍPIO DE PACAJUS, por intermédio da Secretaria Municipal de Cultura e Turismo, torna público o presente Edital de Chamamento Público para seleção de projeto cultural, a ser executado mediante celebração de Termo de Execução Cultural – TEC, com recursos transferidos ao…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-26T03:00:00Z",
+   "inscricao_fim": "2026-11-07T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-26T13:32:51Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "c522385868e56eebc9df4c501d76b61f52a78e65e5feebbd9e3e7dbdcdc1eb34",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8455"
+  },
+  {
+   "fonte": "mapas:br",
+   "id_externo": "12667",
+   "url_origem": "https://mapa.cultura.gov.br/oportunidade/12667/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "Programa Ciclos de Saberes e Conhecimentos Tradicionais, Populares e das Artes",
+   "orgao_fomento": "Secretaria de Formação Artística e Cultural, Livro e Leitura (SEFLI/MinC)",
+   "resumo_original": "O Programa Ciclo de Saberes selecionará projetos de Instituições Federais de Ensino Superior (IFES) para promover e valorizar os conhecimentos de mestras e mestres das culturas tradicionais, populares e das artes, aproximando seus saberes das universidades, escolas públicas e comunidades por meio de atividades educativas e culturais",
+   "resumo_simples": "O Programa Ciclo de Saberes selecionará projetos de Instituições Federais de Ensino Superior (IFES) para promover e valorizar os conhecimentos de mestras e mestres das culturas tradicionais, populares e das artes, aproximando seus saberes das universidades, escolas públicas e…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": null,
+   "uf": null,
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": 5000000.0,
+   "teto_por_projeto": 500000.0,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-19T19:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-16T15:47:47Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "006bec87dbe81f17bf9076a8f0d734ae4dc75a1f67d9e56c3772635ae9f23c0f",
+   "proveniencia": {
+    "linguagens": {
+     "via": "api",
+     "trecho": "Cultura e Educação"
+    },
+    "valor_total": {
+     "via": "regex",
+     "trecho": "pelas comunidades ao longo das gerações. Serão destinados R$ 5 milhões à iniciativa, distribuídos em duas categorias de apoio: projetos de"
+    },
+    "teto_por_projeto": {
+     "via": "regex",
+     "trecho": "de apoio: projetos de maior abrangência poderão receber até R$ 500 mil, e projetos de atuação mais localizada, até R$ 250 mil. Pelo menos"
+    }
+   },
+   "chave": "mapas:br:12667"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8447",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8447/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE",
+   "orgao_fomento": "Companhia Artes Cínicas de Teatro",
+   "resumo_original": "Selecionar e apoiar financeiramente 15 projetos culturais nas diversas linguagens conforme o Edital 001/2026.",
+   "resumo_simples": "Selecionar e apoiar financeiramente 15 projetos culturais nas diversas linguagens conforme o Edital 001/2026.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-21T03:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T17:35:41Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "323fe1cb40c4e673c1581749d07139488667aa2c3d940fc3f047bfe251ea84d1",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE Selecionar e apoiar"
+    }
+   },
+   "chave": "mapas:ce:8447"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8443",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8443/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 002/2026 - PNAB CLICLO II - SELEÇÃO DE OFINEIROS TAUÁ/CE",
+   "orgao_fomento": "Companhia Artes Cínicas de Teatro",
+   "resumo_original": "Selecionar até 10 profissionais, residentes no Município de Tauá/CE, para ministrar uma Oficina/Curso de formação nas diversas linguagens propostas no Edital 02/2026, Art 2.",
+   "resumo_simples": "Selecionar até 10 profissionais, residentes no Município de Tauá/CE, para ministrar uma Oficina/Curso de formação nas diversas linguagens propostas no Edital 02/2026, Art 2.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-21T03:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T15:35:52Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "8a7363d369531f998051e59ed58c3c1226d876b1d6d1b9648d5c33c979585676",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "EDITAL Nº 002/2026 - PNAB CLICLO II - SELEÇÃO DE OFINEIROS"
+    }
+   },
+   "chave": "mapas:ce:8443"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "3447",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/3447/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/edital-001-2026fomento-cultural-criacao-e-formacao-pnab-ciclo-2-petrolandia-pe.pdf",
+   "titulo": "EDITAL Nº 001/2026 – FOMENTO CULTURAL – CRIAÇÃO E FORMAÇÃO – PNAB – CICLO 2 – PETROLÂNDIA/PE",
+   "orgao_fomento": "Secretaria de Cultura, Esporte e Lazer do Município de Petrolândia, PE.",
+   "resumo_original": "Este edital tem como objetivo incentivar as diversas manifestações culturais de Petrolândia, apoiando projetos de criação, formação, circulação e difusão artística. Busca valorizar os saberes e as expressões culturais do município, estimular a produção local e ampliar o acesso da população à cultura, por meio da Política Nacional Aldir Blanc de Fomento à Cultura — PNAB, Ciclo 2.",
+   "resumo_simples": "Este edital tem como objetivo incentivar as diversas manifestações culturais de Petrolândia, apoiando projetos de criação, formação, circulação e difusão artística.",
+   "linguagens": [
+    "Música",
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Fotografia",
+    "Artes Visuais",
+    "Literatura",
+    "Patrimônio"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS",
+    "COLETIVO"
+   ],
+   "valor_total": 240000.0,
+   "teto_por_projeto": 5000.0,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-23T12:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-13T20:00:00Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "f0b59a228b0976e94ff28a4e1a3455575a2ab53015cac39e46c63c8dd0ef426a",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Artes Visuais; Artesanato; Culturas Tradicionais e Populares; Dança; Design; Design de Moda; Fotografia; Gastronomia; Literatura; Música; Patrimônio Cultural Imaterial; Patrimônio Cultural Material; Produção Audiovisual; Teatro"
+    },
+    "valor_total": {
+     "via": "regex",
+     "trecho": "com apoio financeiro de R$ 5.000,00 por projeto, totalizando R$ 240.000,00, mediante celebração de Termo de Execução Cultural. ÁREAS CULTURAIS"
+    },
+    "teto_por_projeto": {
+     "via": "regex",
+     "trecho": "O edital selecionará 48 projetos culturais, com apoio financeiro de R$ 5.000,00 por projeto, totalizando R$ 240.000,00, mediante celebração de Termo"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "edital. QUEM PODE PARTICIPAR Poderão participar pessoas físicas maiores de 18 anos, grupos ou coletivos sem | privado, com ou sem fins lucrativos, inclusive microempreendedores individuais — MEI, observados os requisitos e os impedimentos | de representação e trajetória cultural. As pessoas jurídicas deverão comprovar sede e funcionamento no | grupos ou coletivos sem personalidade jurídica e pessoas jurídicas de direito privado, com ou sem fins lucrativos, | pessoas físicas maiores de 18 anos, grupos ou coletivos sem personalidade jurídica e pessoas jurídicas de"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "FOMENTO CULTURAL – CRIAÇÃO E FORMAÇÃO – PNAB – CICLO 2 – PETROLÂNDIA/PE Este edital"
+    }
+   },
+   "chave": "mapas:pe:3447"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8445",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8445/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS CULTURA VIVA A MESTRAS E MESTRES DAS CULTURAS TRADICIONAIS E POPULARES - AQUIRAZ/CE",
+   "orgao_fomento": "SECRETARIA DE CULTURA DE AQUIRAZ",
+   "resumo_original": "O objeto deste Edital é a concessão de 3 (três) Bolsas Cultura Viva a Mestras e Mestres das Culturas Tradicionais e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista. As bolsas destinam-se exclusivamente a pessoas físicas que, vinculadas a pelo menos um Ponto ou Pontão de Cultura certificado pelo Ministério da Cultura, desenvolvam atividades culturais que contribuam para as finalidades da Política Nacional de Cultura Viva.",
+   "resumo_simples": "O objeto deste Edital é a concessão de 3 (três) Bolsas Cultura Viva a Mestras e Mestres das Culturas Tradicionais e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": 12600.0,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T17:06:21Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "7686a630913f82c9bfbf1d55a316b9fc4dccb9103a9632396102d06ecad2fa4f",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "teto_por_projeto": {
+     "via": "regex",
+     "trecho": "e Populares, com duração de 6 (seis) meses e valor total de R$ 12.600,00 por bolsista. As bolsas destinam-se exclusivamente a pessoas físicas"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "bolsista. As bolsas destinam-se exclusivamente a pessoas físicas que, vinculadas a pelo menos um Ponto ou Pontão"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.005/2026 - CONCESSÃO DE BOLSAS"
+    }
+   },
+   "chave": "mapas:ce:8445"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8444",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8444/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO N° 09.004/2026 (FOMENTO À CULTURA) - CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC (LEI Nº 14.399/2022) - AQUIRAZ-CE",
+   "orgao_fomento": "SECRETARIA DE CULTURA DE AQUIRAZ",
+   "resumo_original": "Este Edital selecionará projetos culturais para recebimento de apoio financeiro destinado à realização de FESTIVAIS e FEIRAS culturais no Município de Aquiraz/CE.",
+   "resumo_simples": "Este Edital selecionará projetos culturais para recebimento de apoio financeiro destinado à realização de FESTIVAIS e FEIRAS culturais no Município de Aquiraz/CE.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T16:58:15Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "ea149686ec22619a1a3d4f94ecf85f62368eae9ecba4dedc498fb46446eee764",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC (LEI Nº 14.399/2022) - AQUIRAZ-CE Este"
+    }
+   },
+   "chave": "mapas:ce:8444"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8446",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8446/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.006/2026 (PONTOS E PONTÕES) - CULTURA VIVA DO TAMANHO DO BRASIL - REDE MUNICIPAL DE PONTOS E PONTÕES DE CULTURA DE AQUIRAZ/CE PREMIAÇÃO DE PONTOS E PONTÕES DE CULTURA.",
+   "orgao_fomento": "SECRETARIA DE CULTURA DE AQUIRAZ",
+   "resumo_original": "Este Edital tem por objeto a premiação de 10 (dez) iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura, entidades culturais sem fins lucrativos e coletivos culturais de base comunitária atuantes em Aquiraz/CE, nos termos da Política Nacional de Cultura Viva.",
+   "resumo_simples": "Este Edital tem por objeto a premiação de 10 (dez) iniciativas, atividades ou ações já realizadas por Pontos e Pontões de Cultura, entidades culturais sem fins lucrativos e coletivos culturais de base comunitária atuantes em Aquiraz/CE, nos termos da Política Nacional de…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PJ_SEM_FINS",
+    "COLETIVO"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T17:13:15Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "a3639e8f79f420990c57fa4884528668a379d2a5bf78369b346c5f417d87a9d2",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "Pontos e Pontões de Cultura, entidades culturais sem fins lucrativos e coletivos culturais de base comunitária | entidades culturais sem fins lucrativos e coletivos culturais de base comunitária atuantes em"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "EDITAL DE CHAMAMENTO PÚBLICO PNAB Nº 09.006/2026 (PONTOS E PONTÕES) -"
+    }
+   },
+   "chave": "mapas:ce:8446"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8467",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8467/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "ATELIÊ DE INVESTIGAÇÕES POÉTICAS",
+   "orgao_fomento": "ECOA Sobral",
+   "resumo_original": "O Ateliê de Investigação Poética se dedica a pensar a criação artística como um lugar de invenção e reflexão sobre as tecnologias desenvolvidas e usadas nas artes visuais sobralenses. Como advento desta edição do Salão Sobral de Artes Visuais, propomos um eixo de pesquisa em criação e buscamos selecionar 02 (dois) artistas sobralenses com trajetórias que dialoguem com os conceitos e caminhos propostos nesse texto em suas pesquisas, poéticas e saberes.",
+   "resumo_simples": "O Ateliê de Investigação Poética se dedica a pensar a criação artística como um lugar de invenção e reflexão sobre as tecnologias desenvolvidas e usadas nas artes visuais sobralenses.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-30T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-30T18:12:55Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "5e569c5145173118c2eee3b40f0b62c3ef76c63b37c81c8bb61491b726073b91",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8467"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "130",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/130/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 010/2026 PROGRAMA NACIONAL ALDIR BLANC DE APOIO A AÇÕES CONTINUADAS - ARACAJU SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PLURIANUAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA",
+   "orgao_fomento": "Lucas de Oliveira Santana",
+   "resumo_original": "SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PLURIANUAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – (LEI Nº 14.399/2022)",
+   "resumo_simples": "SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL PLURIANUAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – (LEI Nº 14.399/2022)",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-26T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-25T21:21:23Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "d7e09cae3a617f46115a80eff579641497c7226a572d25f80a9caad513cedb84",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "CULTURAL PLURIANUAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA SELEÇÃO DE"
+    }
+   },
+   "chave": "mapas:aracaju:130"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "134",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/134/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 014/2026 – AUDIOVISUAL SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM AUDIOVISUAL PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Fundação Cultural Cidade de Aracaju - FUNCAJU",
+   "resumo_original": "EDITAL Nº 014/2026 – AUDIOVISUAL SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM AUDIOVISUAL PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE (LEI Nº 14.399/2022)",
+   "resumo_simples": "EDITAL Nº 014/2026 – AUDIOVISUAL SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM AUDIOVISUAL PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE (LEI Nº 14.399/2022)",
+   "linguagens": [
+    "Cinema & Audiovisual"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-26T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-26T03:07:58Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "4a547319999b0a09a8ba23605d6ec525b4fb6a023eae42edb16acdca263f7058",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "AUDIOVISUAL"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 –"
+    }
+   },
+   "chave": "mapas:aracaju:134"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "137",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/137/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 016/2026 – MÚSICA - SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Funcaju",
+   "resumo_original": "Seleção de projetos culturais para celebração de termo de execução cultural com recursos da política nacional Aldir Blanc de fomento à cultura – PNAB – ciclo 2 (Lei nº 14.399/2022)",
+   "resumo_simples": "Seleção de projetos culturais para celebração de termo de execução cultural com recursos da política nacional Aldir Blanc de fomento à cultura – PNAB – ciclo 2 (Lei nº 14.399/2022)",
+   "linguagens": [
+    "Música"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-28T17:40:01Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "f8692cccdafb8bc3967ce90ddde9db5105b6d56db7e284ef68fa2307e51e3144",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "MÚSICA"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
+    }
+   },
+   "chave": "mapas:aracaju:137"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "136",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/136/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 015/2026 – SELEÇÃO DE PROJETOS CULTURAIS PARA REALIZAÇÃO DE FESTIVAIS CULTURAIS E CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Fundação Cultural Cidade de Aracaju - FUNCAJU",
+   "resumo_original": "Seleção de projetos culturais para realização de festivais culturais e celebração de termo de execução cultural com recursos da política nacional Alldir Blanc de fomento à cultura – PNAB – ciclo 2 – Aracaju/se (lei nº 14.399/2022)",
+   "resumo_simples": "Seleção de projetos culturais para realização de festivais culturais e celebração de termo de execução cultural com recursos da política nacional Alldir Blanc de fomento à cultura – PNAB – ciclo 2 – Aracaju/se (lei nº 14.399/2022)",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-28T17:10:36Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "a70974e0dd56eb71aa5de61309b5d41dba944534d06319761bb7e25345ac70f3",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 –"
+    }
+   },
+   "chave": "mapas:aracaju:136"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "132",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/132/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 012/ 2026 - LITERATURA SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM LITERATURA COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE",
+   "orgao_fomento": "Lucas de Oliveira Santana",
+   "resumo_original": "EDITAL Nº 012/ 2026 - LITERATURA SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM LITERATURA COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE",
+   "resumo_simples": "EDITAL Nº 012/ 2026 - LITERATURA SELEÇÃO DE PROJETOS CULTURAIS NA LINGUAGEM LITERATURA COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 – ARACAJU/SE",
+   "linguagens": [
+    "Literatura"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-26T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-26T02:55:28Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "9db247028c34bbb66d6b98360f1504ad4ac4f4a7ddeefc2d149416fac21202cd",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "LITERATUR"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "NA LINGUAGEM LITERATURA COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 –"
+    }
+   },
+   "chave": "mapas:aracaju:132"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "133",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/133/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Lucas de Oliveira Santana",
+   "resumo_original": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "resumo_simples": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "linguagens": [
+    "Teatro & Dança"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-26T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-26T03:00:22Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "4bc1f0e979689a873028b3be3206c576dd199526e2b1d577c98a426b95de70f0",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "ARTES CÊNICAS"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
+    }
+   },
+   "chave": "mapas:aracaju:133"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "3410",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/3410/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/edital-convocatoria-para-os-ciclos-carnavalesco-e-junino-2027.pdf",
+   "titulo": "CONVOCATÓRIA PARA OS CICLOS CARNAVALESCO E JUNINO - CAJU 2027",
+   "orgao_fomento": "CICLOS CARNAVALESCO E JUNINO DE PERNAMBUCO - CAJU - FUNDARPE",
+   "resumo_original": "Esta Convocatória tem como objetivo ampliar o acesso da população às diferentes linguagens e manifestações culturais, com uma programação diversa e de qualidade. Também busca fortalecer e divulgar a cultura pernambucana, ampliar a circulação de agentes culturais em diferentes territórios e estimular a troca de experiências entre artistas, comunidades e saberes.",
+   "resumo_simples": "Esta Convocatória tem como objetivo ampliar o acesso da população às diferentes linguagens e manifestações culturais, com uma programação diversa e de qualidade.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-20T18:50:00Z",
+   "inscricao_fim": "2026-11-10T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-09-22T18:34:53Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "73f655fdc13cc01160b4aadcd4a42d4086f2f6e195f314c187331f5f65c8c83d",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Carnaval; Festejos Juninos"
+    }
+   },
+   "chave": "mapas:pe:3410"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8461",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8461/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "Salão Sobral de Artes Visuais 2026",
+   "orgao_fomento": "ECOA Sobral",
+   "resumo_original": "Ao longo de sua trajetória, o Salão Sobral extrapolou seu papel no âmbito da difusão cultural, tornando-se um importante instrumento de mobilização social, de reflexão e de formação. É considerando essa dimensão do projeto que ele traz uma abordagem das narrativas que se estabelecem no espaço urbano, do perpassar pelas gerações e como arte, vida e história se entrelaçam mirando o futuro com os pés no presente sem esquecer do passado. O Salão Sobral de Artes Visuais tem apoio cultural da Enel, com realização do Instituto ECOA, apoio institucional da Secretaria da Cultura do Estado do Ceará e Governo do Estado por meio do Edital Mecenas do Ceará através da Lei Estadual Nº 18.012 de 01 de abril de 2022.",
+   "resumo_simples": "Ao longo de sua trajetória, o Salão Sobral extrapolou seu papel no âmbito da difusão cultural, tornando-se um importante instrumento de mobilização social, de reflexão e de formação.",
+   "linguagens": [
+    "Artes Visuais"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-27T03:00:00Z",
+   "inscricao_fim": "2026-11-11T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-27T17:53:57Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "bb2e15fa29390f596825dfd21f0742f44771524457a9b081298decea8f433fe8",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "Artes Visuais"
+    }
+   },
+   "chave": "mapas:ce:8461"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8465",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8465/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026 – PREMIAÇÃO DE MESTRES E MESTRAS DA CULTURA POPULAR DE BARBALHA-CE PREMIAÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Prefeitura Municipal de Barbalha - Secretaria de Cultura.",
+   "resumo_original": "Olá, agentes culturais do município de Barbalha-CE! Estamos muito felizes com o seu interesse em participar deste chamamento público. Este Edital é realizado com recursos do Governo Federal repassados pelo Ministério da Cultura, por meio da Política Nacional Aldir Blanc de Fomento à Cultura (Lei nº. 14.399/2022), e fundamenta-se na Lei nº 14.903/2024 (Marco regulatório de fomento à cultura), no Decreto nº 11.740/2023 (Decreto de regulamentação da Política Nacional Aldir Blanc), e na Instrução Normativa de Ações Afirmativas e Acessibilidade (IN nº 10/2023). Aqui você vai encontrar as regras do edital e como fazer para se inscrever.",
+   "resumo_simples": "Olá, agentes culturais do município de Barbalha-CE! Estamos muito felizes com o seu interesse em participar deste chamamento público.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-29T03:00:00Z",
+   "inscricao_fim": "2026-11-11T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-29T15:56:42Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "4414d20791229fa5883deffd1aedc8d9ca2d386e5e93a429faa1715d95f4c429",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "PREMIAÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº"
+    }
+   },
+   "chave": "mapas:ce:8465"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8473",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8473/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 006/2026 – PATRIMÔNIO CULTURAL E MEMÓRIA: FOMENTO A PROJETOS DE PESQUISA, DOCUMENTAÇÃO E REGISTRO DAS MANIFESTAÇÕES CULTURAIS DE VÁRZEA ALEGRE – CEARÁ.",
+   "orgao_fomento": "Flávio Salviano Lima Filho",
+   "resumo_original": "O presente Edital tem por objeto a seleção de projetos culturais apresentados por agentes culturais, pessoas físicas, que tenham como finalidade a realização de pesquisas, documentação e registro das manifestações culturais de Várzea Alegre – Ceará, visando à identificação, ao reconhecimento, à valorização, à preservação e à difusão do patrimônio cultural material e imaterial do município. Serão apoiadas iniciativas que contribuam para a produção e sistematização de conhecimentos sobre a história, as tradições, os saberes, os fazeres, as celebrações, as expressões artísticas, os modos de vida, os personagens e demais referências culturais que constituem a identidade e a memória coletiva de Várzea Alegre. Os projetos poderão contemplar diferentes metodologias e linguagens de pesquisa e registro, incluindo levantamentos históricos, pesquisas documentais e bibliográficas, entrevistas, coleta de depoimentos, registros fotográficos, audiovisuais e sonoros, produção de inventários, catálogos, publicações e outros instrumentos de documentação e salvaguarda da memória cultural. O edital busca incentivar a participação dos agentes culturais na produção e preservação da memória local, assegurando o reconhecimento dos detentores dos saberes e das tradições, bem como contribuindo para a transmissão dos conhecimentos entre gerações e para a valorização da diversidade cultural do município.",
+   "resumo_simples": "O presente Edital tem por objeto a seleção de projetos culturais apresentados por agentes culturais, pessoas físicas, que tenham como finalidade a realização de pesquisas, documentação e registro das manifestações culturais de Várzea Alegre – Ceará, visando à identificação, ao…",
+   "linguagens": [
+    "Patrimônio"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-06T03:00:00Z",
+   "inscricao_fim": "2026-11-13T01:00:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-11-05T13:18:56Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "ad3ee4abc6322431f6115862b6387749f105d15787301cb04df6a3ead7b51e20",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "PATRIMÔNIO"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "culturais apresentados por agentes culturais, pessoas físicas, que tenham como finalidade a realização de"
+    }
+   },
+   "chave": "mapas:ce:8473"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "3240",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/3240/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/edital-arranjos-regionais.pdf",
+   "titulo": "ARRANJOS REGIONAIS",
+   "orgao_fomento": "ARRANJOS REGIONAIS",
+   "resumo_original": "Este Edital é realizado com recursos do Governo do Estado de Pernambuco, aportados como contrapartida no âmbito dos Arranjos Regionais 2025, em articulação com o Fundo Setorial do Audiovisual (FSA). O Edital reúne as regras de participação, inscrição, seleção, habilitação, execução, acompanhamento e prestação de informações dos projetos culturais. Boa leitura. Desejamos sucesso!",
+   "resumo_simples": "Este Edital é realizado com recursos do Governo do Estado de Pernambuco, aportados como contrapartida no âmbito dos Arranjos Regionais 2025, em articulação com o Fundo Setorial do Audiovisual (FSA).",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-13T19:55:00Z",
+   "inscricao_fim": "2026-11-13T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-06-08T20:07:28Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "dd26368bfe2cc4c491ac739bc765a44ab86dae91b58026a4bebafeed9cbc0922",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Outra"
+    }
+   },
+   "chave": "mapas:pe:3240"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8453",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8453/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO",
+   "orgao_fomento": "Secretaria da Cultura do Estado do Ceará - SECULTCE",
+   "resumo_original": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO -- O presente chamamento público integra as ações de formação e qualificação de maestras e maestros, desenvolvidas pela SECULT/CE no âmbito do SEBAM-CE, com vistas ao fortalecimento, valorização e difusão das tradições musicais das bandas de música no Estado do Ceará. Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso de formação “Aperfeiçoamento para maestras e maestros de bandas de música e orquestras de sopros”, das 14 macrorregiões do Ceará, em parceria com a Fundação de Apoio à Cultura, à Pesquisa e ao Desenvolvimento Institucional, Científico e Tecnológico - Fundação CETREDE.",
+   "resumo_simples": "EDITAL DE CHAMAMENTO PÚBLICO PARA PARTICIPAÇÃO NO CURSO DE APERFEIÇOAMENTO DE MAESTRAS E MAESTROS DE BANDAS DE MÚSICA E ORQUESTRAS DE SOPROS DO ESTADO DO CEARÁ - PROGRAMA CEARÁ SINFÔNICO - FORMAÇÃO, REDE E CONCERTO -- O presente chamamento público integra as ações de formação e…",
+   "linguagens": [
+    "Música"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-24T03:00:00Z",
+   "inscricao_fim": "2026-11-14T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-22T17:30:32Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "b70f4899fdcd90c543df7d9df3e8783886fa596bf4bff0d202a5354c41069498",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "MÚSICA"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "Constitui objeto do presente Edital a seleção de pessoas físicas para participação no Processo Seletivo do curso"
+    }
+   },
+   "chave": "mapas:ce:8453"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8464",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8464/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2026-LINGUAGENS GERAIS SELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Prefeitura Municipal de Barbalha - Secretaria de Cultura.",
+   "resumo_original": "Olá, agentes culturais do Município de Barbalha-CE! Estamos muito felizes com o seu interesse em participar deste chamamento público. Este Edital é realizado com recursos do Governo Federal repassados pelo Ministério da Cultura, por meio da Política Nacional Aldir Blanc de Fomento à Cultura. Aqui você vai encontrar as regras do edital e como fazer para se inscrever. Boa leitura. Desejamos sucesso!",
+   "resumo_simples": "Olá, agentes culturais do Município de Barbalha-CE! Estamos muito felizes com o seu interesse em participar deste chamamento público.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-29T03:00:00Z",
+   "inscricao_fim": "2026-11-14T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-29T14:21:51Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "bb785cbf3d6fbd66f882328afddd79e25a4f31b3e7588d4395e03d21e615ef44",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº"
+    }
+   },
+   "chave": "mapas:ce:8464"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8450",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8450/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "Edital Artista, Presente! 2026",
+   "orgao_fomento": "MARCELA CORDEIRO CAVALCANTE",
+   "resumo_original": "A Ação Arte e Cultura na Educação em Tempo Integral – Ceará (ACETI-CE), desenvolvida em parceria entre o ICA/UFC, a SECULT e a SEDUC, integra em seu escopo o projeto \"Artista, Presente!\". Com foco na formação e na vivência cultural no cotidiano escolar da rede pública estadual, a iniciativa aproxima artistas de diversas linguagens, bem como mestres e mestras da cultura popular e tradicional ao ambiente escolar, impulsionando outros modos de experimentar, conhecer e produzir arte.",
+   "resumo_simples": "A Ação Arte e Cultura na Educação em Tempo Integral – Ceará (ACETI-CE), desenvolvida em parceria entre o ICA/UFC, a SECULT e a SEDUC, integra em seu escopo o projeto \"Artista, Presente!\".",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-30T03:00:00Z",
+   "inscricao_fim": "2026-11-14T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-22T13:06:54Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "e476eb287912577b750ca705af386a8a6e3a00079e95b2b16585364ea565986d",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8450"
+  },
+  {
+   "fonte": "mapas:br",
+   "id_externo": "12706",
+   "url_origem": "https://mapa.cultura.gov.br/oportunidade/12706/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "LET MUSIC TRAVEL — Músicas independentes",
+   "orgao_fomento": "ARTEM CULTURA",
+   "resumo_original": "Chamada de mentoria para artistas independentes que desejam criar, finalizar, lançar ou distribuir músicas autorais, de faixas a álbuns, nas vertentes House, Techno, Trance e Vocal.",
+   "resumo_simples": "Chamada de mentoria para artistas independentes que desejam criar, finalizar, lançar ou distribuir músicas autorais, de faixas a álbuns, nas vertentes House, Techno, Trance e Vocal.",
+   "linguagens": [
+    "Música"
+   ],
+   "abrangencia": null,
+   "uf": null,
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-01T04:00:00Z",
+   "inscricao_fim": "2026-11-16T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-17T22:03:42Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "a99f2dbcc038ae01295dc9f8b9a1da276dea08980002879ce1c4e702c6758123",
+   "proveniencia": {
+    "linguagens": {
+     "via": "api",
+     "trecho": "Música; Música Eletrônica"
+    }
+   },
+   "chave": "mapas:br:12706"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8432",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8432/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE RECONHECIMENTO E PREMIAÇÃO DOS MESTRES E MESTRAS DA CULTURA POPULAR DE ARATUBA – CEARÁ",
+   "orgao_fomento": "Secretaria de Turismo e Cultura de Aratuba",
+   "resumo_original": "O Edital Mestres e Mestras da Cultura de Aratuba tem como objetivo reconhecer, valorizar e preservar os saberes, fazeres e tradições populares do município, homenageando pessoas que dedicam suas vidas à transmissão dos conhecimentos culturais e à preservação da identidade e da memória de Aratuba para as futuras gerações.",
+   "resumo_simples": "O Edital Mestres e Mestras da Cultura de Aratuba tem como objetivo reconhecer, valorizar e preservar os saberes, fazeres e tradições populares do município, homenageando pessoas que dedicam suas vidas à transmissão dos conhecimentos culturais e à preservação da identidade e da…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-21T03:00:00Z",
+   "inscricao_fim": "2026-11-17T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-19T12:42:23Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "93148889ad99a1ed853916f030e8dd45162a7e9aaf5aee78cbfe7885a9122f85",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8432"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8485",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8485/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 01/2026- SECULT-HIDROLÂNDIA",
+   "orgao_fomento": "Secretaria Municipal de Cultura e Turismo",
+   "resumo_original": "EDITAL DE FOMENTO À ORGANIZAÇÃO, PROMOÇÃO DE EVENTOS E MOVIMENTAÇÕES CULTURAIS PARA VALORIZAÇÃO DA IDENTIDADE CULTURAL DO MUNICÍPIO DE HIDROLÂNDIA – CEARÁ",
+   "resumo_simples": "EDITAL DE FOMENTO À ORGANIZAÇÃO, PROMOÇÃO DE EVENTOS E MOVIMENTAÇÕES CULTURAIS PARA VALORIZAÇÃO DA IDENTIDADE CULTURAL DO MUNICÍPIO DE HIDROLÂNDIA – CEARÁ",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-06T03:00:00Z",
+   "inscricao_fim": "2026-11-17T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-06T16:42:35Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "f1d225e58732a9f3704b5c85d7c490c5f32f363e810c8ea9d6721fc5ad583a9f",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8485"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8474",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8474/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL Nº 05/2026 – PREMIAÇÃO POLÍTICA NACIONAL CULTURA VIVA DE MORADA NOVA CEARÁ",
+   "orgao_fomento": "Luiz Ferreira Lima Neto",
+   "resumo_original": "O município de Morada Nova – CE, torna público o presente edital para premiação e o desenvolvimento da rede municipal de pontos de cultura, que constitui uma das etapas da Política Nacional Aldir Blanc de Fomento à Cultura, no âmbito da Lei nº 14.399, de 8 de julho de 2022 e da Política Nacional de Cultura Viva instituída pela lei nº 13.018, de 22 de julho de 2014. e dá outras providências.",
+   "resumo_simples": "O município de Morada Nova – CE, torna público o presente edital para premiação e o desenvolvimento da rede municipal de pontos de cultura, que constitui uma das etapas da Política Nacional Aldir Blanc de Fomento à Cultura, no âmbito da Lei nº 14.399, de 8 de julho de 2022 e da…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-11-06T03:00:00Z",
+   "inscricao_fim": "2026-11-17T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-11-05T14:04:08Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "3e85b13bf9804d74992f220ee1fc8688334fc3df09bd8578e4ab6c8e745f94fb",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "que constitui uma das etapas da Política Nacional Aldir Blanc de Fomento à Cultura, no âmbito da Lei"
+    }
+   },
+   "chave": "mapas:ce:8474"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8451",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8451/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL PADRONIZADO - CHAMAMENTO PÚBLICO 004/2026 - REDE MUNICIPAL - DE PONTOS DE CULTURA DE BREJO SANTO - CE",
+   "orgao_fomento": "Secretaria de Cultura, Turismo e Eventos de Brejo Santo - CE",
+   "resumo_original": "CULTURA VIVA DO TAMANHO DO BRASIL! PREMIAÇÃO DE PONTOS DE CULTURA",
+   "resumo_simples": "CULTURA VIVA DO TAMANHO DO BRASIL! PREMIAÇÃO DE PONTOS DE CULTURA",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-22T03:00:00Z",
+   "inscricao_fim": "2026-11-23T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-22T14:23:30Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "b774c2c1cfd2735bf3d058339eb4f9641d80125ad7ee5166fbd4bd60a1282037",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8451"
+  },
+  {
+   "fonte": "mapas:natal",
+   "id_externo": "316",
+   "url_origem": "https://mapacultural.natal.rn.gov.br/oportunidade/316/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/edital-17-salao-artes-visuais-natal-2026-revisao.pdf",
+   "titulo": "EDITAL DE SELEÇÃO PÚBLICA PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026",
+   "orgao_fomento": "Pablo Trajano Pinheiro da Silva",
+   "resumo_original": "EDITAL DA SELEÇÃO PÚBLICA Nº 19/2026-FUNCARTE PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026. PAE Nº Funcarte-20261108891",
+   "resumo_simples": "EDITAL DA SELEÇÃO PÚBLICA Nº 19/2026-FUNCARTE PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026.",
+   "linguagens": [
+    "Artes Visuais"
+   ],
+   "abrangencia": "municipal",
+   "uf": "RN",
+   "municipio": "Natal",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-06T21:00:00Z",
+   "inscricao_fim": "2026-11-23T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-05T17:19:26Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "51ba13da22aa336d188dbfece5cdc7a58d547c9884c7c8250f41329856656fd6",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.natal.rn.gov.br (RN)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Arte de Plásticas; Artes Visuais"
+    }
+   },
+   "chave": "mapas:natal:316"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "2491",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/2491/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/edital-pareceristas-fundarpe.pdf",
+   "titulo": "CREDENCIAMENTO NACIONAL DE PARECERISTAS FUNDARPE EDITAL Nº 003/2024",
+   "orgao_fomento": "CREDENCIAMENTO PARECERISTAS FUNDARPE",
+   "resumo_original": "Esta chamada pública visa credenciar profissionais, pessoa física ou MEIs, para integrar o BANCO DE PARECERISTAS da FUNDARPE. Os selecionados poderão analisar, classificar e emitir pareceres técnicos sobre propostas e ações culturais nos Editais e Chamadas Públicas de Cultura, desde que atendam aos requisitos estabelecidos.",
+   "resumo_simples": "Esta chamada pública visa credenciar profissionais, pessoa física ou MEIs, para integrar o BANCO DE PARECERISTAS da FUNDARPE.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2024-12-04T17:00:00Z",
+   "inscricao_fim": "2026-11-30T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2024-11-26T17:18:26Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "d818c7c3fe4d5bcbef8c0cc12062a016661acb272ab78ec1f45852d37d1a9591",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Outra"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "chamada pública visa credenciar profissionais, pessoa física ou MEIs, para integrar o BANCO DE PARECERISTAS da"
+    }
+   },
+   "chave": "mapas:pe:2491"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8365",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8365/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO N° 007/2026 PARA SELEÇÃO DE PARECERISTAS - SECRETARIA DE CULTURA E TURISMO DE CHOROZINHO - CEARÁ",
+   "orgao_fomento": "Amanda Carvalho",
+   "resumo_original": "Constitui objeto do presente edital a seleção de profissionais para compor Banco de Pareceristas a fim de atuar na análise e seleção de Projetos Culturais inscritos nos editais de chamamento a serem publicados pela Secretaria Municipal da Cultura e Turismo de Chorozinho para a execução dos recursos disponibilizados pela Lei nº 14.399/2022 – Política Nacional Aldir Blanc de Fomento à Cultura, na Lei nº 14.903/2024 (Marco Regulatório do Fomento à Cultura), no Decreto nº 11.740/2023 (Decreto PNAB), no Decreto nº11.453/2023 (Decreto de Fomento).",
+   "resumo_simples": "Constitui objeto do presente edital a seleção de profissionais para compor Banco de Pareceristas a fim de atuar na análise e seleção de Projetos Culturais inscritos nos editais de chamamento a serem publicados pela Secretaria Municipal da Cultura e Turismo de Chorozinho para a…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-09-16T03:00:00Z",
+   "inscricao_fim": "2026-12-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-09-16T20:33:21Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "309139d7749cc4e1d8ecad3c8496209f33455071456052504a0da1a47ac05a18",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "pela Lei nº 14.399/2022 – Política Nacional Aldir Blanc de Fomento à Cultura, na Lei nº"
+    }
+   },
+   "chave": "mapas:ce:8365"
+  },
+  {
+   "fonte": "mapas:se",
+   "id_externo": "59",
+   "url_origem": "https://mapacultural.se.gov.br/oportunidade/59/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.se.gov.br/files/opportunity/59/edital-de-chamamento-publico-para-credenciamento-de-pareceristas.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO PARA CREDENCIAMENTO DE PARECERISTAS",
+   "orgao_fomento": "FUNCAP",
+   "resumo_original": "O Estado de Sergipe, por intermédio da Fundação de Cultura e Arte Aperipê de Sergipe (FUNCAP/SE) e Secretaria Especial de Cultura - SECULT, no uso de suas atribuições e nos termos do Decreto Federal n.° 11.453/23 e da Lei n.° 14.133/2021 (Lei de Licitações), torna pública a abertura de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar profissionais.",
+   "resumo_simples": "O Estado de Sergipe, por intermédio da Fundação de Cultura e Arte Aperipê de Sergipe (FUNCAP/SE) e Secretaria Especial de Cultura - SECULT, no uso de suas atribuições e nos termos do Decreto Federal n.° 11.453/23 e da Lei n.° 14.133/2021 (Lei de Licitações), torna pública a…",
+   "linguagens": [
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Artes Visuais",
+    "Patrimônio"
+   ],
+   "abrangencia": "estadual",
+   "uf": "SE",
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-08-01T18:11:00Z",
+   "inscricao_fim": "2027-01-02T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-08-06T18:09:38Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "8522058e4a661ae96bc70348f05fd3f33edad4369cda11279353f7a470a5a53a",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Patrimônio Cultural; Teatro; Cinema; Produção Audiovisual; Audiovisual e Mídias Interativas; Audiovisual Expandido; Circo; Arte de Plásticas; Arte de Rua; Artes Circenses; Artes Visuais; Circo de Rua; Circo Itinerante; Cultura LGBTQIAPN+; Cultura Negra; Cultura Urbana"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "pública a abertura de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar | poderá requerer sua inscrição na condição de Microempreendedor individual – MEI ou como pessoa física. Os profissionais | de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar profissionais. | de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar profissionais."
+    }
+   },
+   "chave": "mapas:se:59"
+  },
+  {
+   "fonte": "mapas:br",
+   "id_externo": "12927",
+   "url_origem": "https://mapa.cultura.gov.br/oportunidade/12927/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapa.cultura.gov.br/files/opportunity/12927/apresentacao-a-republica-das-concessoes-2026.pdf",
+   "titulo": "A República das Concessões — Convite a autores",
+   "orgao_fomento": "Von Noble Arte e Cultura",
+   "resumo_original": "Convite a escritores experientes e iniciantes para criar histórias no universo de A República das Concessões, uma distopia em que a liberdade é cedida aos poucos em troca de segurança e conforto. Com personagens e conflitos próprios, os participantes poderão explorar as regras desse sistema, suas contradições e as possibilidades de resistência.",
+   "resumo_simples": "Convite a escritores experientes e iniciantes para criar histórias no universo de A República das Concessões, uma distopia em que a liberdade é cedida aos poucos em troca de segurança e conforto.",
+   "linguagens": [
+    "Literatura"
+   ],
+   "abrangencia": null,
+   "uf": null,
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-17T02:22:00Z",
+   "inscricao_fim": "2027-01-17T02:22:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-10-26T02:58:04Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "911ca588bb3cb6388ac989e22e70865554d6a24942d51979dbf5899357d2b221",
+   "proveniencia": {
+    "linguagens": {
+     "via": "api",
+     "trecho": "Literatura; Criação literária; Letras e Literatura (Humanidades); Livro, Leitura e Literatura"
+    }
+   },
+   "chave": "mapas:br:12927"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "2571",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/2571/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/edital-de-credenciamento-de-pareceristas-funcultura-2025.pdf",
+   "titulo": "Edital de Credenciamento Nacional de Pareceristas - Funcultura",
+   "orgao_fomento": "FUNCULTURA 2024/2025",
+   "resumo_original": "Este Edital tem como objetivo credenciar profissionais, pessoas físicas e/ou MEIs, residentes ou não em Pernambuco, para integrar o banco de pareceristas. Os selecionados poderão atuar na análise, classificação e emissão de parecer técnico sobre projetos culturais dos Editais do Funcultura, desde que atendam aos requisitos deste Instrumento Convocatório.",
+   "resumo_simples": "Este Edital tem como objetivo credenciar profissionais, pessoas físicas e/ou MEIs, residentes ou não em Pernambuco, para integrar o banco de pareceristas.",
+   "linguagens": [
+    "Música",
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Fotografia",
+    "Artes Visuais",
+    "Literatura",
+    "Patrimônio"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2025-03-17T12:00:00Z",
+   "inscricao_fim": "2027-03-17T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2025-02-18T18:36:38Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "f5b11a6a5773831e5ac63919c5961160439a3c405b925c8babf4f18156420870",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Audiovisual e Mídias Interativas; Artes Visuais; Artesanato; Circo; Culturas Populares; Cultura dos Povos Originários; Cultura Digital; Cultura LGBTQIAPN+; Dança; Design; Design de Moda; Fotografia; Gastronomia; Literatura; Música; Patrimônio Cultural; Teatro; Ópera"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "tem como objetivo credenciar profissionais, pessoas físicas e/ou MEIs, residentes ou não em Pernambuco, para"
+    }
+   },
+   "chave": "mapas:pe:2571"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "2581",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/2581/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-pareceristas-secult-2025.pdf",
+   "titulo": "CREDENCIAMENTO DE PARECERISTAS - SECRETARIA DE CULTURA DE PERNAMBUCO",
+   "orgao_fomento": "Secult 2025",
+   "resumo_original": "Tem por objetivo a formação de BANCO DE PARECERISTAS que possam vir a exercer as atividades de análise, classificação e emissão de Parecer Técnico sobre propostas e ações culturais no âmbito dos editais e chamadas públicas regidos pela legislação supra, com recursos sob gestão da SECULT/PE.",
+   "resumo_simples": "Tem por objetivo a formação de BANCO DE PARECERISTAS que possam vir a exercer as atividades de análise, classificação e emissão de Parecer Técnico sobre propostas e ações culturais no âmbito dos editais e chamadas públicas regidos pela legislação supra, com recursos sob gestão…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2025-03-27T13:05:00Z",
+   "inscricao_fim": "2027-03-19T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2025-03-12T11:39:45Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "31a4514e164d1acb4af1e9c4f9fc79771a6c6a2a65b7054107b66f38d1dbfa00",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Outra"
+    }
+   },
+   "chave": "mapas:pe:2581"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8416",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8416/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "MECENAS 2026: Submissão Simplificada de Projetos Não Captados no Mecenas 2025",
+   "orgao_fomento": "Coordenadoria de Economia Criativa e Fomento Cultural | COEF | SecultCE",
+   "resumo_original": "Esta oportunidade destina-se exclusivamente aos projetos autorizados e homologados no âmbito do Edital Mecenas do Ceará 2025 cuja autorização tenha sido automaticamente revogada pelo encerramento do prazo legal de captação sem o alcance do percentual mínimo necessário à formalização do Termo de Mecenato. A participação nesta oportunidade constitui nova submissão e não configura prorrogação, renovação ou restabelecimento da autorização anterior. A autorização anteriormente concedida não gera direito adquirido à nova autorização. A proposta será submetida à análise administrativa e à apreciação da Comissão Estadual de Incentivo à Cultura – CEIC, considerando a manutenção das condições que fundamentaram a decisão anterior, os fatos supervenientes, os limites de renúncia fiscal e as regras do Edital Mecenas do Ceará 2026. As inscrições estarão disponíveis até 31 de março de 2027.",
+   "resumo_simples": "Esta oportunidade destina-se exclusivamente aos projetos autorizados e homologados no âmbito do Edital Mecenas do Ceará 2025 cuja autorização tenha sido automaticamente revogada pelo encerramento do prazo legal de captação sem o alcance do percentual mínimo necessário à…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-16T03:00:00Z",
+   "inscricao_fim": "2027-04-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-07T17:25:13Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "eb2da9af87af0aba1b6f13cc025e8490c51441c16d907fe6afb5135bc9f6b847",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8416"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "7758",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/7758/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 006/2026- SECULT - PARA CREDENCIAMENTO DE PARECERISTAS PARA AVALIAÇÃO DE PROJETOS CULTURAIS – POLITICA NACIONAL ALDIR BLANC-PNAB – MARACANAÚ-CE",
+   "orgao_fomento": "Antônia Almeida",
+   "resumo_original": "O presente edital tem como objeto o credenciamento de profissionais, pessoas físicas ou jurídicas de natureza cultural enquadradas como Microempreendedor Individual (MEI), para formação de banco de pareceristas que possam exercer atividades de análise técnica, classificação e emissão de pareceres sobre projetos e ações culturais submetidos aos editais e chamadas públicas de fomento lançados pelo Município de Maracanaú/CE no âmbito da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), nos termos do art. 14 do Decreto Federal nº 11.740/2023, desde que atendidos os requisitos estabelecidos neste Edital de credenciamento de profissionais especializados para compor o banco de pareceristas da Secretaria de Cultura e Turismo de Maracanaú (SECULT).",
+   "resumo_simples": "O presente edital tem como objeto o credenciamento de profissionais, pessoas físicas ou jurídicas de natureza cultural enquadradas como Microempreendedor Individual (MEI), para formação de banco de pareceristas que possam exercer atividades de análise técnica, classificação e…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "MEI"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-04-22T03:00:00Z",
+   "inscricao_fim": "2027-04-23T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-04-20T20:04:24Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "fc361a727bed355431bfe2e0d43315bd979e2f4baef258bb6ed8dde3ce8429a5",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "como objeto o credenciamento de profissionais, pessoas físicas ou jurídicas de natureza cultural enquadradas | jurídicas de natureza cultural enquadradas como Microempreendedor Individual (MEI), para formação de banco de pareceristas que"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "PARA AVALIAÇÃO DE PROJETOS CULTURAIS – POLITICA NACIONAL ALDIR BLANC-PNAB – MARACANAÚ-CE O presente edital"
+    }
+   },
+   "chave": "mapas:ce:7758"
+  },
+  {
+   "fonte": "curadoria",
+   "id_externo": "funarte-aberta-2026-cta",
+   "url_origem": "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-tecnico-de-artes",
+   "url_inscricao": "https://prosas.com.br/editais/17664-programa-funarte-aberta-2026-centro-tecnico-de-artes",
+   "url_edital_pdf": "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-tecnico-de-artes/regulamento-funarte-aberta-cta.pdf",
+   "titulo": "Programa Funarte Aberta 2026 – Centro Técnico de Artes",
+   "orgao_fomento": "Fundação Nacional de Artes (Funarte)",
+   "resumo_original": null,
+   "resumo_simples": "Cessão gratuita da Sala Multiuso do Centro Técnico de Artes (RJ) para ensaio, criação, residência ou apresentação. Não há repasse em dinheiro.",
+   "linguagens": [
+    "Teatro & Dança",
+    "Música",
+    "Artes Visuais",
+    "Multiáreas"
+   ],
+   "abrangencia": "nacional",
+   "uf": null,
+   "municipio": "Rio de Janeiro",
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": [
+    "Anexo I – Formulário de Inscrição",
+    "Anexo II – Roteiro para apresentação oral",
+    "Anexo III – Declaração de Uso de Imagem"
+   ],
+   "cronograma": null,
+   "tipo_apoio": "cessao_de_espaco",
+   "verificado_em": "2026-11-06",
+   "pendencias": null,
+   "inscricao_inicio": "2026-03-30T03:00:00Z",
+   "inscricao_fim": "2027-04-30T20:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": null,
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "b61add4adabe6787243a05fe7ddb7d72592b470fc35d68932854cdbf19928db1",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "curadoria",
+     "trecho": "Inscrições abertas De 30/03/2026 Até 30/04/2027 (às 17h59 - horário de Brasília)"
+    },
+    "proponentes": {
+     "via": "curadoria",
+     "trecho": "Pessoas Físicas maiores de 18 anos, Pessoas Jurídicas de direito privado, com ou sem fins lucrativos, Microempreendedores(as) Individuais (MEIs) e Empresários(as) Individuais"
+    },
+    "tipo_apoio": {
+     "via": "curadoria",
+     "trecho": "disponibilizando, de modo gratuito e democrático, seus espaços"
+    },
+    "municipio": {
+     "via": "curadoria",
+     "trecho": "Centro Técnico de Artes (Rio de Janeiro RJ)"
+    },
+    "documentos_exigidos": {
+     "via": "curadoria",
+     "trecho": null
+    }
+   },
+   "chave": "curadoria:funarte-aberta-2026-cta"
+  },
+  {
+   "fonte": "curadoria",
+   "id_externo": "funarte-aberta-2026-complexo-mg",
+   "url_origem": "https://prosas.com.br/editais/17665-programa-funarte-aberta-2026-complexo-funarte-mg",
+   "url_inscricao": "https://prosas.com.br/editais/17665-programa-funarte-aberta-2026-complexo-funarte-mg",
+   "url_edital_pdf": null,
+   "titulo": "Programa Funarte Aberta 2026 – Complexo Funarte MG",
+   "orgao_fomento": "Fundação Nacional de Artes (Funarte)",
+   "resumo_original": null,
+   "resumo_simples": "Cessão gratuita dos galpões e da área externa do Complexo Funarte em Belo Horizonte para pesquisa, ensaio, residência, apresentação ou gravação. Não há repasse em dinheiro.",
+   "linguagens": [
+    "Teatro & Dança",
+    "Música",
+    "Artes Visuais",
+    "Multiáreas"
+   ],
+   "abrangencia": "nacional",
+   "uf": null,
+   "municipio": "Belo Horizonte",
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": [
+    "Anexo I – Formulário de Inscrição Complexo MG",
+    "Anexo II – Roteiro para apresentação oral",
+    "Anexo III – Declaração de Uso de Imagem"
+   ],
+   "cronograma": null,
+   "tipo_apoio": "cessao_de_espaco",
+   "verificado_em": "2026-11-06",
+   "pendencias": null,
+   "inscricao_inicio": "2026-03-30T03:00:00Z",
+   "inscricao_fim": "2027-05-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": null,
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "808b9923ad688bf9880c6215fd8b6bc171f7200ffd848194053cbc98b99738ff",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "curadoria",
+     "trecho": "Programa Funarte Aberta 2026 - Complexo Funarte MG — Inscrições até 30/04/27"
+    },
+    "linguagens": {
+     "via": "curadoria",
+     "trecho": "o programa acolhe propostas de artes visuais, artes integradas e transversais, circo, dança, música, teatro, entre outras"
+    },
+    "proponentes": {
+     "via": "curadoria",
+     "trecho": "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
+    },
+    "municipio": {
+     "via": "curadoria",
+     "trecho": "Complexo Cultural Funarte Minas Gerais (Belo Horizonte MG)"
+    },
+    "documentos_exigidos": {
+     "via": "curadoria",
+     "trecho": null
+    }
+   },
+   "chave": "curadoria:funarte-aberta-2026-complexo-mg"
+  },
+  {
+   "fonte": "curadoria",
+   "id_externo": "funarte-aberta-2026-complexo-sp",
+   "url_origem": "https://prosas.com.br/editais/17666-programa-funarte-aberta-2026-complexo-funarte-sp",
+   "url_inscricao": "https://prosas.com.br/editais/17666-programa-funarte-aberta-2026-complexo-funarte-sp",
+   "url_edital_pdf": null,
+   "titulo": "Programa Funarte Aberta 2026 – Complexo Funarte SP",
+   "orgao_fomento": "Fundação Nacional de Artes (Funarte)",
+   "resumo_original": null,
+   "resumo_simples": "Cessão gratuita dos espaços do Complexo Funarte em São Paulo. A proposta precisa ser enviada entre 30 e 120 dias antes da data pretendida. Não há repasse em dinheiro.",
+   "linguagens": [
+    "Teatro & Dança",
+    "Música",
+    "Artes Visuais",
+    "Multiáreas"
+   ],
+   "abrangencia": "nacional",
+   "uf": null,
+   "municipio": "São Paulo",
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": true,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "cessao_de_espaco",
+   "verificado_em": "2026-11-06",
+   "pendencias": null,
+   "inscricao_inicio": "2026-03-30T03:00:00Z",
+   "inscricao_fim": "2027-05-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": null,
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "e72720369a0293eb48a0657d27571d015cd516704dedf5180848a7b046629fe9",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "curadoria",
+     "trecho": "As inscrições estão abertas até o dia 30 de abril de 2027, através do link: https://prosas.com.br/editais/17666-programa-funarte-aberta-2026-complexo-funarte-sp"
+    },
+    "tipo_apoio": {
+     "via": "curadoria",
+     "trecho": "O edital prevê a cessão gratuita de espaço, não havendo repasse de recursos financeiros aos proponentes"
+    },
+    "exige_contrapartida": {
+     "via": "curadoria",
+     "trecho": "É obrigatória a apresentação de medidas de acessibilidade e democratização do acesso"
+    },
+    "antecedencia": {
+     "via": "curadoria",
+     "trecho": "Antecedência mínima de 30 dias e máxima de 120 dias em relação ao início pretendido"
+    },
+    "proponentes": {
+     "via": "curadoria",
+     "trecho": "Pessoas Físicas (maiores de 18 anos), Pessoas Jurídicas de direito privado (com ou sem fins lucrativos), Microempreendedores Individuais (MEIs) e Empresários Individuais (EIs)"
+    }
+   },
+   "chave": "curadoria:funarte-aberta-2026-complexo-sp"
+  },
+  {
+   "fonte": "curadoria",
+   "id_externo": "funarte-aberta-2026-livraria-mario-de-andrade",
+   "url_origem": "https://prosas.com.br/editais/17667-programa-funarte-aberta-2026-livraria-m-rio-de-andrade",
+   "url_inscricao": "https://prosas.com.br/editais/17667-programa-funarte-aberta-2026-livraria-m-rio-de-andrade",
+   "url_edital_pdf": null,
+   "titulo": "Programa Funarte Aberta 2026 – Livraria Mário de Andrade",
+   "orgao_fomento": "Fundação Nacional de Artes (Funarte)",
+   "resumo_original": null,
+   "resumo_simples": "Cessão gratuita da Livraria Mário de Andrade, no Palácio Gustavo Capanema, para lançamentos de livros abertos ao público.",
+   "linguagens": [
+    "Literatura"
+   ],
+   "abrangencia": "nacional",
+   "uf": null,
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": [
+    "Anexo I – Formulário de Inscrição Livraria",
+    "Anexo II – Roteiro para apresentação oral",
+    "Anexo III – Declaração de Uso de Imagem"
+   ],
+   "cronograma": null,
+   "tipo_apoio": "cessao_de_espaco",
+   "verificado_em": "2026-11-06",
+   "pendencias": null,
+   "inscricao_inicio": "2026-03-30T03:00:00Z",
+   "inscricao_fim": "2027-05-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": null,
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "3cf67905714e82f84f6b2377010a5bc2b0785c2b059731d7dcd2abb24e9fda95",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "curadoria",
+     "trecho": "Programa Funarte Aberta 2026 - Livraria Mário de Andrade — Inscrições até 30/04/27"
+    },
+    "linguagens": {
+     "via": "curadoria",
+     "trecho": "atividades abertas ao público, especificamente lançamentos de livros"
+    },
+    "proponentes": {
+     "via": "curadoria",
+     "trecho": "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
+    },
+    "documentos_exigidos": {
+     "via": "curadoria",
+     "trecho": null
+    }
+   },
+   "chave": "curadoria:funarte-aberta-2026-livraria-mario-de-andrade"
+  },
+  {
+   "fonte": "curadoria",
+   "id_externo": "funarte-aberta-2026-centro-de-teatro",
+   "url_origem": "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-de-teatro/funarte-aberta-ceteatro.pdf",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-de-teatro/funarte-aberta-ceteatro.pdf",
+   "titulo": "Programa Funarte Aberta 2026 – Centro de Teatro",
+   "orgao_fomento": "Fundação Nacional de Artes (Funarte)",
+   "resumo_original": null,
+   "resumo_simples": "Cessão gratuita dos espaços do Centro de Teatro da Funarte para ensaio, criação ou apresentação. Não há repasse em dinheiro.",
+   "linguagens": [
+    "Teatro & Dança"
+   ],
+   "abrangencia": "nacional",
+   "uf": null,
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "MEI",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": "cessao_de_espaco",
+   "verificado_em": "2026-11-06",
+   "pendencias": "Página de inscrição no Prosas não localizada; confirmar link e município.",
+   "inscricao_inicio": "2026-03-30T03:00:00Z",
+   "inscricao_fim": "2027-05-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": null,
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "48b36c08368a76b199d4e0c1c1702cdfa96a3122024b4e14c65825f32bf6eaca",
+   "proveniencia": {
+    "inscricao_fim": {
+     "via": "curadoria",
+     "trecho": "Programa Funarte Aberta 2026 - Centro de Teatro — Inscrições até 30/04/27"
+    },
+    "proponentes": {
+     "via": "curadoria",
+     "trecho": "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
+    }
+   },
+   "chave": "curadoria:funarte-aberta-2026-centro-de-teatro"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8086",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8086/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "1º EDITAL DE CIRCULAÇÃO E INTERCÂMBIO CULTURAL",
+   "orgao_fomento": "Secretaria da Cultura do Estado do Ceará - SECULTCE",
+   "resumo_original": "Edital de Circulação e Intercâmbio Cultural visa selecionar e apoiar propostas para apoio cultural e financeiro no custeio de despesas com locomoção e ajuda de custo de profissionais do setor cultural - artistas, técnicos, pesquisadores, curadores, entre outros agentes culturais do Estado do Ceará",
+   "resumo_simples": "Edital de Circulação e Intercâmbio Cultural visa selecionar e apoiar propostas para apoio cultural e financeiro no custeio de despesas com locomoção e ajuda de custo de profissionais do setor cultural - artistas, técnicos, pesquisadores, curadores, entre outros agentes…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-07-27T03:00:00Z",
+   "inscricao_fim": "2027-06-01T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-07-02T13:42:45Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "d7a2c9a70f1cc7125bbfca04ddb41ad4580c4b058e013761f636d923553fcce4",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8086"
+  },
+  {
+   "fonte": "mapas:se",
+   "id_externo": "57",
+   "url_origem": "https://mapacultural.se.gov.br/oportunidade/57/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://mapacultural.se.gov.br/files/opportunity/57/edital-credenciamento-museus.pdf",
+   "titulo": "Edital n° 19/2026 - Credenciamento de Prestadores de Serviços para Execução de Atividades de Mediação Cultural e Monitoria nos Museus da Rede Estadual Administrados Pela Funcap/Se",
+   "orgao_fomento": "FUNCAP",
+   "resumo_original": "A contratação dos credenciados buscará atender às necessidades específicas de cada unidade museológica, especialmente durante finais de semana, feriados, eventos culturais e períodos de maior fluxo de visitantes.",
+   "resumo_simples": "A contratação dos credenciados buscará atender às necessidades específicas de cada unidade museológica, especialmente durante finais de semana, feriados, eventos culturais e períodos de maior fluxo de visitantes.",
+   "linguagens": [
+    "Patrimônio"
+   ],
+   "abrangencia": "estadual",
+   "uf": "SE",
+   "municipio": null,
+   "proponentes": [
+    "PF",
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-07-31T14:30:00Z",
+   "inscricao_fim": "2027-08-11T23:04:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-07-30T22:03:56Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "cf6d8b6d10e8bf81a540b3769513acd3c549ebc0320f861d40f6535fc38ee9b8",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Museologia; Cultura e Educação"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "Este Edital tem por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação | por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação de serviços de | por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação de serviços de"
+    }
+   },
+   "chave": "mapas:se:57"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "2753",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/2753/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "PNAB 2024 - Solicitação de Alteração",
+   "orgao_fomento": "EDITAIS PNAB - CICLO I",
+   "resumo_original": "Este formulário tem como objetivo padronizar o fluxo e garantir mais agilidade na solicitação dos projetos dos editais PNAB 2024.",
+   "resumo_simples": "Este formulário tem como objetivo padronizar o fluxo e garantir mais agilidade na solicitação dos projetos dos editais PNAB 2024.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2025-08-14T11:00:00Z",
+   "inscricao_fim": "2027-08-30T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2025-08-13T19:10:30Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "8a04d9cfc3e1e2c109552fe36a2f9c40cf0b430a04c266967735a3cc92e9fd22",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Outra"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "PNAB 2024 - Solicitação de Alteração Este"
+    }
+   },
+   "chave": "mapas:pe:2753"
+  },
+  {
+   "fonte": "mapas:aracaju",
+   "id_externo": "123",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/123/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE N.º 003/2026 - CREDENCIAMENTO ANUAL DA FUNDAÇÃO CULTURAL CIDADE DE ARACAJU - FUNCAJU",
+   "orgao_fomento": "Fundação Cultural Cidade de Aracaju - FUNCAJU",
+   "resumo_original": "INSTRUMENTO DE CREDENCIAMENTO DE PROFISSIONAIS DO RAMO MUSICAL E ARTÍSTICO para possíveis eventos e apoios culturais realizados no Município de Aracaju/SE",
+   "resumo_simples": "INSTRUMENTO DE CREDENCIAMENTO DE PROFISSIONAIS DO RAMO MUSICAL E ARTÍSTICO para possíveis eventos e apoios culturais realizados no Município de Aracaju/SE",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-01-26T03:00:00Z",
+   "inscricao_fim": "2028-01-27T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-01-26T12:53:30Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "00ef7d43783f17793a6d4129c5befae7133e3ce18b68b25027bed3b6b58d79c2",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    }
+   },
+   "chave": "mapas:aracaju:123"
+  },
+  {
+   "fonte": "mapas:pe",
+   "id_externo": "3207",
+   "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/3207/",
+   "url_inscricao": null,
+   "url_edital_pdf": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/cac-secultpe.pdf",
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 007/2026 CADASTRO AFIRMATIVO DA CULTURA DA SECRETARIA DE CULTURA DO ESTADO DE PERNAMBUCO (CAC SECULT/PE)",
+   "orgao_fomento": "SECULT-PE 2026",
+   "resumo_original": "Cadastro permanente destinado a agentes culturais que se enquadrem nos critérios de ações afirmativas da Secretaria de Cultura de Pernambuco (SECULT/PE), para registro, verificação e certificação de pertencimentos afirmativos, possibilitando o acesso às políticas afirmativas previstas nos mecanismos de fomento cultural do Estado.",
+   "resumo_simples": "Cadastro permanente destinado a agentes culturais que se enquadrem nos critérios de ações afirmativas da Secretaria de Cultura de Pernambuco (SECULT/PE), para registro, verificação e certificação de pertencimentos afirmativos, possibilitando o acesso às políticas afirmativas…",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "PE",
+   "municipio": null,
+   "proponentes": [
+    "PF"
+   ],
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-06-16T12:30:00Z",
+   "inscricao_fim": "2028-06-16T19:59:00Z",
+   "fim_tem_horario": true,
+   "publicado_em": "2026-05-20T13:26:53Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "617db6d7475fd1e299012eba30417c9a0012af25e9fa9d140155ecda2fc848b8",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.pe.gov.br (PE)"
+    },
+    "linguagens": {
+     "via": "api",
+     "trecho": "Outra"
+    },
+    "proponentes": {
+     "via": "regex",
+     "trecho": "ações afirmativas da SECULT/PE. Podem participar pessoas físicas maiores de 18 anos que pertençam a um ou mais"
+    }
+   },
+   "chave": "mapas:pe:3207"
+  }
+ ],
+ "radar": [
+  {
+   "id_externo": "sesc-rj-pulsar",
+   "titulo": "Edital de Cultura Sesc RJ Pulsar",
+   "orgao_fomento": "Sesc RJ",
+   "url_referencia": "https://www.sescrio.org.br/pulsar/",
+   "ultima_edicao": "6ª edição: inscrições de 30/01 a 20/03/2026, R$ 36 milhões, projetos de todo o país",
+   "janela_habitual": "fim de janeiro a março",
+   "janela_mes_inicio": 1,
+   "janela_mes_fim": 3,
+   "proponentes_ultima_edicao": [
+    "PJ_COM_FINS",
+    "PJ_SEM_FINS"
+   ],
+   "linguagens": [
+    "Artes Visuais",
+    "Cinema & Audiovisual",
+    "Teatro & Dança",
+    "Literatura",
+    "Música"
+   ],
+   "verificado_em": "2026-11-06"
+  },
+  {
+   "id_externo": "premio-sesc-literatura",
+   "titulo": "Prêmio Sesc de Literatura",
+   "orgao_fomento": "Sesc",
+   "url_referencia": null,
+   "ultima_edicao": "2026: inscrições até 2 de março, para autores inéditos (romance, conto e poesia)",
+   "janela_habitual": "fevereiro a março",
+   "janela_mes_inicio": 2,
+   "janela_mes_fim": 3,
+   "proponentes_ultima_edicao": null,
+   "linguagens": [
+    "Literatura"
+   ],
+   "verificado_em": "2026-11-06"
+  },
+  {
+   "id_externo": "sesc-pr-artes-da-cena",
+   "titulo": "Edital Sesc Artes da Cena (Sesc Paraná)",
+   "orgao_fomento": "Sesc PR",
+   "url_referencia": "https://www.sescpr.com.br/edital/edital-sesc-artes-da-cena/",
+   "ultima_edicao": "2026: inscrições de 23/06 a 31/08/2026, artistas de todo o Brasil",
+   "janela_habitual": "junho a agosto",
+   "janela_mes_inicio": 6,
+   "janela_mes_fim": 8,
+   "proponentes_ultima_edicao": null,
+   "linguagens": [
+    "Teatro & Dança"
+   ],
+   "verificado_em": "2026-11-06"
+  },
+  {
+   "id_externo": "itau-cultural-rumos",
+   "titulo": "Rumos Itaú Cultural",
+   "orgao_fomento": "Itaú Cultural",
+   "url_referencia": "https://rumositaucultural.org.br",
+   "ultima_edicao": "Última edição localizada: 2023-2024 (inscrições de agosto a setembro de 2023, teto de R$ 100 mil por projeto, PF e PJ). Edição posterior não localizada.",
+   "janela_habitual": "agosto a setembro, em anos de edição; a periodicidade mudou ao longo do tempo",
+   "janela_mes_inicio": 8,
+   "janela_mes_fim": 9,
+   "proponentes_ultima_edicao": null,
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "verificado_em": "2026-11-06"
+  },
+  {
+   "id_externo": "itau-cultural-a-ponte",
+   "titulo": "a_ponte: cena do teatro universitário",
+   "orgao_fomento": "Itaú Cultural",
+   "url_referencia": "https://www.itaucultural.org.br",
+   "ultima_edicao": "6ª edição: inscrições até 10/04/2026 (prorrogado); pesquisas universitárias em artes cênicas, música e literatura",
+   "janela_habitual": "março a abril",
+   "janela_mes_inicio": 3,
+   "janela_mes_fim": 4,
+   "proponentes_ultima_edicao": null,
+   "linguagens": [
+    "Teatro & Dança",
+    "Música",
+    "Literatura"
+   ],
+   "verificado_em": "2026-11-06"
+  }
+ ]
+}
