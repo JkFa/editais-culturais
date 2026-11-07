@@ -132,3 +132,20 @@ Sondagem de ~70 hostnames prováveis (padrão `mapacultural.<uf>.gov.br` etc.). 
 
 Ver o README ("Testes e verificações") e a seção "Limitações conhecidas". Resultado da execução final está
 no resumo entregue ao fim do trabalho.
+
+## Deploy (07/11/2026)
+
+- **Organização do Supabase:** `veleiro-survey` (sem projetos), escolhida por não arriscar o limite de 2 projetos ativos
+  do plano gratuito (`Adapta` já estava ativo; os outros 3 estavam pausados).
+- **Chaves:** o projeto tem as chaves legadas (JWT) e as novas. A API de chaves devolve a `sb_secret_…` **mascarada**
+  (com `•`), então o primeiro run falhou com `UnicodeEncodeError` ao montar o cabeçalho. Usamos a `service_role` legada
+  como secret e a `sb_publishable_…` como variable (testada: leitura 200; POST, RPC e `heartbeat` negados com 401/42501
+  para a publishable e a anon). `persistencia.py` já aceita `sb_secret_` (só em `apikey`, sem `Authorization`) para quando
+  a pessoa cadastrar a secret key à mão; o deploy também aborta se `SUPABASE_ANON_KEY` for uma `sb_secret_`.
+- **Bug achado no primeiro run:** o worker decidia pular o upsert comparando com o *snapshot* anterior; com o banco vazio,
+  gravou 0 linhas. Agora compara só com o banco (o snapshot só serve para preservar `coletado_em`). Teste de regressão incluído.
+  Conteúdo vindo do snapshot de uma fonte que falhou também é gravado no banco, para modo ao vivo e fallback ficarem iguais.
+- **ConnectTimeout** de PE, SE, Campinas e às vezes PB nos runners do GitHub: não resolvido (bloqueio de rede do lado das
+  instâncias). Timeout subiu para 60 s e o log passou a registrar o tipo da exceção (antes a mensagem vinha vazia).
+- Erro meu no processo: a varredura de segredos no histórico e o `gh repo create --push` rodaram no mesmo comando, sem esperar
+  o resultado da varredura antes do push. O resultado foi limpo (só a string fictícia `sb_secret_de-teste` de um teste).

@@ -179,6 +179,24 @@ mantidos ao recarregar a URL, painel com teclado (foco preso, Esc, botão voltar
 exportações CSV/.ics, cópia para WhatsApp (com e sem `navigator.clipboard`), modo ao vivo simulado e
 fallback para o snapshot. Salva screenshots em 375 px e 1280 px em `verificacao/` (ignorada pelo git).
 
+## Como foi publicado
+
+Publicado em 07/11/2026, de ponta a ponta pela CLI (`gh`, `supabase`), sem expor chaves na tela:
+
+- **Site:** <https://jkfa.github.io/editais-culturais/> (GitHub Pages, origem GitHub Actions, servido em `/editais-culturais/`; todos os caminhos são relativos).
+- **Repositório:** <https://github.com/JkFa/editais-culturais> (público, necessário para o Pages gratuito).
+- **Supabase:** projeto `editais-culturais`, ref `qhendbxavdretpfcwlyn`, região `sa-east-1` (São Paulo), plano Free.
+  O schema entrou como migration (`supabase/migrations/…_init.sql`, cópia de `supabase/schema.sql`) via `supabase db push`.
+- **Secrets** do repositório: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (a `service_role` legada, passada por pipe).
+  **Variables:** `SUPABASE_URL`, `SUPABASE_ANON_KEY` (a `sb_publishable_…`, que é pública por design). `GEMINI_API_KEY`
+  não foi cadastrada: a coleta roda só com regex.
+- A senha do banco está só em `.env.local` (ignorado pelo git).
+- Verificação do site publicado: rodapé "Dados ao vivo" (lê o Supabase, sem requisitar o snapshot), 46 cards, filtro por UF
+  mudando a URL, painel lateral, radar com 5 itens e zero erros no console. Screenshots em `docs/deploy/`.
+- A coleta roda todo dia às 05h de Brasília. **Reconfira `worker/fontes_curadas.yaml` uma vez por mês.**
+
+Para reaplicar mudanças no schema, crie uma nova migration (`supabase migration new …`) e rode `supabase db push`.
+
 ## Estrutura
 
 ```
@@ -192,6 +210,7 @@ DECISIONS.md               decisões, descobertas da Fase 0 e desvios da especif
 
 ## Limitações conhecidas
 
+- **Instâncias que não respondem ao GitHub Actions**: de dentro dos runners do GitHub, PE, SE e Campinas (às vezes PB) dão `ConnectTimeout`, embora respondam normalmente de uma máquina doméstica. Quando uma fonte falha, o worker mantém no snapshot e no banco o que ela tinha na véspera (enquanto ainda aberto). Esses editais podem, portanto, ficar desatualizados. Se persistir, rode a coleta de uma máquina local (`python -m worker.scraper_worker` com `.env`).
 - **Cobertura**: só Mapas Culturais (9 instâncias) e a curadoria manual. Itaú Cultural, Sesc, Funarte e
   similares dependem de alguém manter `fontes_curadas.yaml`. Em 06/11/2026 não havia edital aberto do
   Itaú Cultural nem do Sesc; eles estão no `radar`. O Mapa Cultural do DF devolve 403 a clientes automatizados.
