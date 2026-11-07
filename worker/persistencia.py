@@ -50,6 +50,7 @@ def escrever_snapshot(
     fontes_ok: list[str],
     fontes_falharam: list[dict[str, str]],
     agora: datetime,
+    fontes: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Grava só editais abertos, ordenados por prazo. Escrita atômica."""
     abertos = sorted(
@@ -61,6 +62,8 @@ def escrever_snapshot(
         "fontes_falharam": fontes_falharam,
         "editais": [{**e.para_linha(), "chave": e.chave} for e in abertos],
         "radar": [r.model_dump(mode="json") for r in radar],
+        # Catálogo com a saúde de cada fonte (a mesma informação que vai para `fontes_status`).
+        "fontes": fontes or [],
     }
     caminho.parent.mkdir(parents=True, exist_ok=True)
     temporario = caminho.with_suffix(".tmp")
@@ -225,6 +228,18 @@ class Supabase:
                 await self._req(
                     "DELETE", "/radar_editais", params={"id_externo": f"eq.{x['id_externo']}"}
                 )
+
+    async def upsert_fontes_status(self, status: list[Any]) -> None:
+        linhas = [x.model_dump(mode="json") for x in status]
+        if not linhas:
+            return
+        await self._req(
+            "POST",
+            "/fontes_status",
+            params={"on_conflict": "fonte"},
+            headers={"Prefer": "resolution=merge-duplicates,return=minimal"},
+            content=json.dumps(linhas),
+        )
 
     async def heartbeat(self, agora: datetime) -> None:
         await self._req(

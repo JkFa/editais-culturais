@@ -7,3 +7,6 @@ select = ["E", "F", "I", "UP", "B"]
 [lint.per-file-ignores]
 # Trechos reais de editais copiados literalmente das fixtures.
 "tests/*" = ["E501"]
+# Regex longas e textos de fila (Issues) ficam legíveis em uma linha.
+"worker/*" = ["E501"]
+"worker/coletores/*" = ["E501"]
