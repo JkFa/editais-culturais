@@ -33,6 +33,15 @@ o Supabase pausar ou estourar a cota.
 Links antigos (`/?uf=MG&edital=123`) redirecionam para `/editais/` com os mesmos parâmetros. O site tem tema claro, escuro e
 "sistema" (botão no cabeçalho) e foi desenhado a partir de 360 px.
 
+## Assistente de projetos culturais (opcional, com login)
+
+Além de listar os editais, o portal tem um assistente de escrita guiada em `/projeto/`: a pessoa entra por link no
+e-mail, escolhe um edital ("Escrever projeto para este edital") e responde a perguntas, seção por seção; a IA
+(Gemini, plano gratuito) redige rascunhos **só com os fatos dados** e marca `[COMPLETAR: ...]` onde faltar
+informação. Dá para editar, aprovar, ver versões anteriores, exportar `.docx` e copiar campo a campo. Dados pessoais
+ficam num formulário à parte e nunca vão para a IA. Custo zero (Pages, Actions, Supabase e Gemini gratuitos).
+Arquitetura, segredos, deploy e como criar novas seções: [docs/assistente.md](docs/assistente.md).
+
 ## Contador de visitas (anônimo)
 
 A Edge Function `supabase/functions/registrar-visita` conta uma visita por aba e por dia, sem cookie, IP, hash de IP nem
