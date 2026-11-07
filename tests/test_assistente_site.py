@@ -651,3 +651,23 @@ def test_card_da_lista_tem_link_para_o_assistente(navegador, url, snapshot):
     link.click()
     pg.wait_for_url(re.compile(r"/projeto/\?novo=1"))
     pg.close()
+
+
+def test_menu_do_portal_tem_meus_projetos_em_todas_as_paginas(navegador, url):
+    for caminho in ["", "editais/", "sobre/", "projeto/", "404.html"]:
+        pg = nova_pagina(navegador, largura=360)
+        pg.goto(url + caminho)
+        pg.wait_for_selector("header nav")
+        link = pg.locator("header nav").get_by_role("link", name="Meus projetos")
+        assert link.count() == 1, caminho
+        assert link.evaluate("a => a.href").endswith("/projeto/"), caminho
+        # sem rolagem horizontal no celular
+        assert pg.evaluate(
+            "document.documentElement.scrollWidth <= document.documentElement.clientWidth"
+        ), caminho
+        pg.close()
+    pg = nova_pagina(navegador)
+    pg.goto(url + "editais/")
+    pg.locator("header nav").get_by_role("link", name="Meus projetos").click()
+    pg.wait_for_url(re.compile(r"/projeto/$"))
+    pg.close()
