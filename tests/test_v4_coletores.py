@@ -357,3 +357,14 @@ def test_cultbr_segmentos_como_texto_nao_vira_letras():
     assert _areas_de("Música, Teatro; Dança") == ["Música", "Teatro", "Dança"]
     assert _areas_de([{"label": "Circo"}, "Artes visuais", None]) == ["Circo", "Artes visuais"]
     assert _areas_de(None) == []
+
+
+def test_descoberta_descarta_pagina_sem_sinal_de_edital_e_acha_titulo_de_pdf():
+    from worker.descoberta import parece_edital, titulo_de_pdf
+
+    assert not parece_edital("Portal da Transparência")
+    assert not parece_edital("NoPaper: Consulta Documentos\nCarregando...")
+    assert parece_edital("Abertas as inscrições até 10/12/2026")
+    texto = "DISTRIBUIDORA DE FILMES S/A - RIOFILME\nEDITAL RIOFILME/FSA Nº 13: DISTRIBUIÇÃO"
+    assert titulo_de_pdf(texto, "x").startswith("EDITAL RIOFILME/FSA Nº 13")
+    assert titulo_de_pdf("", "fallback") == "fallback"
