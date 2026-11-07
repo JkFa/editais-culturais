@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-07T17:10:03.940988+00:00",
+ "gerado_em": "2026-11-07T17:21:37.528156+00:00",
  "fontes_ok": [
   "cultbr-pnab",
   "curadoria",
@@ -11,7 +11,6 @@
   "mapas:natal",
   "mapas:pa",
   "mapas:parauapebas",
-  "mapas:pb",
   "minc-inscricoes-abertas",
   "radar-clube-emma",
   "vigia-claro-patrocinios",
@@ -33,6 +32,10 @@
   {
    "fonte": "mapas:se",
    "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout"
+  },
+  {
+   "fonte": "mapas:pb",
+   "erro": "falha após 3 tentativas em https://mapacultural.pb.gov.br/api/opportunity/find: ConnectTimeout"
   },
   {
    "fonte": "mapas:campinas",
@@ -239,9 +242,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-03-29T22:26:44Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "f6af6aee30698ca72d2c3b822b3764a575f5dcff7830bf0fc4cfe59442bb7c11",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "0d8b5f646e8840151c7de047467158a681578b9a9c65554815ade8b4637e4ad1",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -258,10 +261,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -308,9 +307,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-19T22:36:18Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "4c9b7fbf4b442784b1723b638b09d65e5da95d3cbb229031680e1782d9b114fb",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "85bf3ee33c23a59800c9cbf0f8080b2fc5cdff98f9e9dba7bbe2d3ad54284413",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -327,10 +326,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -377,9 +372,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-20T01:00:35Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "e772f4b8df828957f7c9a54153616b24818e82a6854a1fb8f2d00ab12dd66db1",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "7d37fc07d0671f2ebb750c84dd51e2ec855373b566eaa20cf0e38817e31711d0",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -396,10 +391,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -446,9 +437,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-06T23:16:25Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "6727f75246d02c46323bdb35f66d9ea8f161d84ba62631a6ed51d886642ee1d8",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "33cd1f5df2316fc9dd68d692b88b223ec7b1fc819baddc43ee711f6a98d68596",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -465,10 +456,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -515,9 +502,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-06-17T19:18:50Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "c00b399e5379b356c61fa1a8d6a02974a7f7d5f6bd5c69ab27d4e18b1b1e6bcb",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "06a0e764681ff2fa2393f1444970fce346b8e828c3cb13b3d6386de41ff245e2",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -534,10 +521,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -1367,9 +1350,9 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-27T17:40:09Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "0505ded76562869e4c694f8eac339013803a6908d265fd1ceef0f72869c92043",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "8f91a88e9b7928cfaabb418046e4255b12df37f7d27a8d1faf2e825fe5d0b1d6",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -1386,10 +1369,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RS"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -1416,7 +1395,7 @@
    "resumo_original": "O presente Edital tem por objeto a seleção de 6 (seis) projetos de Desenvolvimento de Roteiros Audiovisuais, nas modalidades de curta-metragem, longa-metragem ou série, de ficção, documentário, animação ou híbrido. Com o objetivo de incentivar o fortalecimento do setor audiovisual, promovendo a criação, o desenvolvimento criativo e a qualificação de propostas concebidas no Município de Pelotas.",
    "resumo_simples": "O presente Edital tem por objeto a seleção de 6 (seis) projetos de Desenvolvimento de Roteiros Audiovisuais, nas modalidades de curta-metragem, longa-metragem ou série, de ficção, documentário, animação ou híbrido.",
    "linguagens": [
-    "Multiáreas"
+    "Cinema & Audiovisual"
    ],
    "abrangencia": "municipal",
    "uf": "RS",
@@ -1436,9 +1415,9 @@
    "inscricao_fim": "2026-11-11T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-27T16:05:46Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "3cbdffb1765b28256553b920a1174b6ed99f90f6eec2f70e02f707d9c047034f",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "0fae243ca1743a0ccd43ef1e66e081bb94b68a631329ee4e42785d5177a5cdaf",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -1458,7 +1437,7 @@
     },
     "linguagens": {
      "via": "api",
-     "trecho": "A; u; d; i; o; v; i; s; u; a; l"
+     "trecho": "Audiovisual"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -1621,9 +1600,9 @@
    "inscricao_fim": "2026-11-13T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-06T18:04:11Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "1353041d429d58829c8167854468b09b0ee39db7d45e07c175ea89a46b913288",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "f0c6e716ff60e3ff48d5cc70a102a85bc7003245d79493fe8c58b070ac244856",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -1640,10 +1619,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: PE"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -2125,7 +2100,9 @@
    "resumo_original": "O presente edital tem por finalidade selecionar e fomentar projetos culturais de fomento direto, no âmbito da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), para a produção e realização de atividades nas áreas de Audiovisual, Música, Artesanato, Literatura e Cultura Popular no município de Paranã - TO. O certame contempla 24 vagas distribuídas entre as categorias, com reserva de cotas para negros e indígenas, além de bônus de pontuação para grupos específicos e contrapartidas presenciais abertas à comunidade na Feira Coberta Municipal.",
    "resumo_simples": "O presente edital tem por finalidade selecionar e fomentar projetos culturais de fomento direto, no âmbito da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB), para a produção e realização de atividades nas áreas de Audiovisual, Música, Artesanato, Literatura e Cultura…",
    "linguagens": [
-    "Multiáreas"
+    "Música",
+    "Cinema & Audiovisual",
+    "Literatura"
    ],
    "abrangencia": "municipal",
    "uf": "TO",
@@ -2145,9 +2122,9 @@
    "inscricao_fim": "2026-11-17T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-29T21:32:10Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "2eccc3beeef43e306f4c7410378b95e649cadf8e81fb3605d831e10e5ce18518",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "fd42e540b8eb9b546d20627bb487c953887a1b5819b78188a060f3b18d1094c3",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -2167,7 +2144,7 @@
     },
     "linguagens": {
      "via": "api",
-     "trecho": "A; u; d; i; o; v; i; s; u; a; l; ,;  ; A; r; t; e; s; a; n; a; t; o; ,;  ; C; u; l; t; u; r; a; s;  ; T; r; a; d; i; c; i; o; n; a; i; s;  ; e;  ; P; o; p; u; l; a; r; e; s; ,;  ; L; i; t; e; r; a; t; u; r; a; ,;  ; M; ú; s; i; c; a"
+     "trecho": "Audiovisual; Artesanato; Culturas Tradicionais e Populares; Literatura; Música"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -2271,9 +2248,9 @@
    "inscricao_fim": "2026-11-19T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-06T17:36:36Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "6a91a74dece2b1f3a56b9837edc362e2a0e34ddc769b5b9896958345abae480a",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "b70184c2775765a67a12ae16dd12503e084dd81b97bc8f7f293745de63be6fa5",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -2290,10 +2267,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: MA"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "tipo_apoio": {
      "via": "regex",
@@ -2336,9 +2309,9 @@
    "inscricao_fim": "2026-11-20T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-11-04T14:02:58Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "f539c664065385a8aea6c608ed214da5a224d78645c085af6beaa09fc56479bc",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "fad6845ec26738e390e23ad070d1479a3e68a32957cd6101534d3e0b938a5c9c",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -2355,10 +2328,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RJ"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     }
    },
    "via": "CultBR (MinC)",
@@ -2559,9 +2528,9 @@
    "inscricao_fim": "2026-11-23T20:00:00Z",
    "fim_tem_horario": true,
    "publicado_em": "2026-10-21T14:29:15Z",
-   "coletado_em": "2026-11-07T17:10:03.940988Z",
-   "atualizado_em": "2026-11-07T17:10:03.940988Z",
-   "hash_conteudo": "aee72f1c19d5cefc7448851cd6e90212a978390b6e8ee5c427dc267b2f00cd22",
+   "coletado_em": "2026-11-07T17:21:37.528156Z",
+   "atualizado_em": "2026-11-07T17:21:37.528156Z",
+   "hash_conteudo": "d415eb1b238148890a035bc1aa5ef25fab6deba8220b6fe57fa56113a3f72403",
    "proveniencia": {
     "inscricao_fim": {
      "via": "api",
@@ -2578,10 +2547,6 @@
     "uf": {
      "via": "api",
      "trecho": "uf_ente_recebedor_plano_acao: RS"
-    },
-    "linguagens": {
-     "via": "api",
-     "trecho": "E; d; i; t; a; l;  ; n; ã; o;  ; s; e;  ; d; i; r; e; c; i; o; n; a;  ; a;  ; s; e; g; m; e; n; t; o; s;  ; e; s; p; e; c; í; f; i; c; o; s"
     },
     "teto_por_projeto": {
      "via": "regex",
@@ -3948,8 +3913,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 3,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -3966,8 +3931,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 20,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -3984,7 +3949,7 @@
    "status": "erro",
    "erro": "falha após 3 tentativas em https://mapacultural.pe.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
@@ -4002,7 +3967,7 @@
    "status": "erro",
    "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
@@ -4020,8 +3985,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4035,10 +4000,10 @@
    "metodo": "api",
    "url": "https://mapacultural.pb.gov.br",
    "ativa": true,
-   "status": "ok",
-   "erro": null,
+   "status": "erro",
+   "erro": "falha após 3 tentativas em https://mapacultural.pb.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
    "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
@@ -4056,8 +4021,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 7,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4074,8 +4039,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 1,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4092,7 +4057,7 @@
    "status": "erro",
    "erro": "falha após 3 tentativas em https://mapacultural.campinas.sp.gov.br/api/opportunity/find: ConnectTimeout",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
@@ -4110,8 +4075,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 3,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4128,8 +4093,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 4,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4146,8 +4111,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
    "duracao_ms": 0,
@@ -4434,11 +4399,11 @@
    "status": "bloqueada_em_ci",
    "erro": "HTTP 403 em www.sescpr.com.br",
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
    "ultimo_sucesso": "2026-11-07T11:53:21.452394Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 219,
+   "duracao_ms": 381,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4452,11 +4417,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 372,
+   "duracao_ms": 1189,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4470,83 +4435,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 904,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-spcine-fomento",
-   "nome": "Spcine: editais de fomento",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://spcine.com.br/editais-de-fomento/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 1053,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-claro-patrocinios",
-   "nome": "Claro: patrocínios",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://www.claro.com.br/institucional/patrocinios",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 1319,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-sesc-rj-pulsar",
-   "nome": "Sesc RJ: Edital de Cultura Pulsar",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://www.sescrio.org.br/pulsar/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 1604,
-   "termos_url": null,
-   "termos_conferidos_em": "2026-11-07"
-  },
-  {
-   "fonte": "vigia-riofilme-chamadas",
-   "nome": "Riofilme: chamadas",
-   "tipo": "oficial",
-   "metodo": "vigia",
-   "url": "https://riofilme.com.br/",
-   "ativa": true,
-   "status": "ok",
-   "erro": null,
-   "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
-   "total_coletado": 0,
-   "candidatos_criados": 0,
-   "duracao_ms": 1810,
+   "duracao_ms": 1354,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4560,11 +4453,83 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 2140,
+   "duracao_ms": 1603,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-spcine-fomento",
+   "nome": "Spcine: editais de fomento",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://spcine.com.br/editais-de-fomento/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 1618,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-sesc-rj-pulsar",
+   "nome": "Sesc RJ: Edital de Cultura Pulsar",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.sescrio.org.br/pulsar/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 1826,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-claro-patrocinios",
+   "nome": "Claro: patrocínios",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://www.claro.com.br/institucional/patrocinios",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 2328,
+   "termos_url": null,
+   "termos_conferidos_em": "2026-11-07"
+  },
+  {
+   "fonte": "vigia-riofilme-chamadas",
+   "nome": "Riofilme: chamadas",
+   "tipo": "oficial",
+   "metodo": "vigia",
+   "url": "https://riofilme.com.br/",
+   "ativa": true,
+   "status": "ok",
+   "erro": null,
+   "motivo": null,
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
+   "total_coletado": 0,
+   "candidatos_criados": 0,
+   "duracao_ms": 3573,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4578,11 +4543,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 3222,
+   "duracao_ms": 3754,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4596,11 +4561,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 3907,
+   "duracao_ms": 4533,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4614,11 +4579,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 0,
    "candidatos_criados": 0,
-   "duracao_ms": 10449,
+   "duracao_ms": 10087,
    "termos_url": null,
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4632,11 +4597,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 1,
    "candidatos_criados": 2,
-   "duracao_ms": 11375,
+   "duracao_ms": 11684,
    "termos_url": "https://www.gov.br/cultura/pt-br/acesso-a-informacao",
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4650,11 +4615,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 12,
-   "candidatos_criados": 13,
-   "duracao_ms": 148871,
+   "candidatos_criados": 0,
+   "duracao_ms": 36914,
    "termos_url": "https://portal.cultbr.cultura.gov.br/oportunidades",
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4668,11 +4633,11 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 228,
    "candidatos_criados": 20,
-   "duracao_ms": 255839,
+   "duracao_ms": 502939,
    "termos_url": "https://radareditais.clubemma.com.br/termos",
    "termos_conferidos_em": "2026-11-07"
   },
@@ -4686,8 +4651,8 @@
    "status": "ok",
    "erro": null,
    "motivo": null,
-   "ultima_execucao": "2026-11-07T17:10:03.940988Z",
-   "ultimo_sucesso": "2026-11-07T17:10:03.940988Z",
+   "ultima_execucao": "2026-11-07T17:21:37.528156Z",
+   "ultimo_sucesso": "2026-11-07T17:21:37.528156Z",
    "total_coletado": 5,
    "candidatos_criados": 0,
    "duracao_ms": 0,
