@@ -616,3 +616,19 @@ def test_nenhuma_tela_escreve_a_palavra_null(navegador, url):
         texto = pg.locator("#projeto-raiz").inner_text()
         assert not re.search(r"\bnull\b|\bundefined\b", texto), f"{caminho!r}: {texto[:200]!r}"
     pg.context.close()
+
+
+def test_edital_aparece_no_topo_e_nas_regras(navegador, url):
+    pg, be = preparar(navegador, None)
+    pid = be.projeto(edital_titulo="Edital Teste X", edital_url="https://exemplo.invalid/x")
+    abrir(pg, url, f"?id={pid}")
+    pg.wait_for_selector(".item-secao")
+    topo = pg.locator(".topo-projeto")
+    assert "Edital: Edital Teste X" in topo.inner_text()
+    assert (
+        topo.get_by_role("link", name="Edital Teste X").get_attribute("href")
+        == "https://exemplo.invalid/x"
+    )
+    regras = pg.locator("p.aviso-fixo")
+    assert regras.get_by_role("link", name="Edital Teste X").count() == 1
+    pg.context.close()
