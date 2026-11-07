@@ -185,8 +185,7 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                 novos = [
                     e
                     for e in editais
-                    if e.fonte not in falharam
-                    and existentes.get((e.fonte, e.id_externo), {}).get("hash_conteudo")
+                    if existentes.get((e.fonte, e.id_externo), {}).get("hash_conteudo")
                     != e.hash_conteudo
                 ]
                 gravados = await supabase.upsert_editais(novos)
