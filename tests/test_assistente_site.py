@@ -634,3 +634,20 @@ def test_edital_aparece_no_topo_e_nas_regras(navegador, url):
     regras = pg.locator("p.aviso-fixo")
     assert regras.get_by_role("link", name="Edital Teste X").count() == 1
     pg.context.close()
+
+
+def test_card_da_lista_tem_link_para_o_assistente(navegador, url, snapshot):
+    from e2e_util import abertos
+
+    pg = nova_pagina(navegador)
+    edital = abertos(snapshot)[0]
+    pg.goto(url + "editais/")
+    pg.wait_for_selector("html[data-pronto]")
+    card = pg.locator(f'.card[data-chave="{edital["chave"]}"]')
+    link = card.get_by_role("link", name="Escrever projeto para este edital")
+    q = parse_qs(urlparse(link.get_attribute("href")).query)
+    assert q["novo"] == ["1"] and q["edital"] == [edital["chave"]]
+    # o link fica acima da área clicável do card: clicar nele navega e não abre o painel
+    link.click()
+    pg.wait_for_url(re.compile(r"/projeto/\?novo=1"))
+    pg.close()

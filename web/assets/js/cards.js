@@ -6,6 +6,7 @@ import {
   formatarMoeda,
   listaDeProponentes,
   localDoEdital,
+  urlAssistente,
 } from "./formatos.js";
 import { estadoDoPrazo } from "./prazos.js";
 
@@ -111,6 +112,7 @@ export function criarCard(edital, { favorito, aoAbrir, aoAlternarFavorito, agora
       raioX(edital),
       pilulas(edital),
       edital.resumo_simples ? el("p", { class: "resumo" }, edital.resumo_simples) : null,
+      el("p", { class: "card-assistente" }, el("a", { href: urlAssistente(edital) }, "Escrever projeto para este edital")),
       botaoFavorito(edital, favorito, aoAlternarFavorito),
     ),
   );

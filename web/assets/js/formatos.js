@@ -148,6 +148,14 @@ export function textoWhatsapp(edital, urlPortal) {
   ].join("\n");
 }
 
+/** Link para o assistente de projetos, já com o edital escolhido (qualquer página do site). */
+export function urlAssistente(edital) {
+  const url = new URL("../../projeto/", import.meta.url);
+  url.searchParams.set("novo", "1");
+  if (edital.chave) url.searchParams.set("edital", edital.chave);
+  return url.href;
+}
+
 /** Cria elemento sem innerHTML: todo texto entra via textContent. */
 export function el(tag, atributos = {}, ...filhos) {
   const no = document.createElement(tag);
