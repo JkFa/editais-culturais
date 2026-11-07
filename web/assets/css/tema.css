@@ -1,0 +1,138 @@
+/* Tokens semânticos. Nenhum componente usa hex direto: tudo passa por aqui.
+   Três modos: sistema (padrão, via prefers-color-scheme), claro e escuro (data-tema).
+   O bloco escuro aparece duas vezes (sistema e forçado); scripts/contraste.mjs confere
+   que são idênticos e que todos os pares usados passam em WCAG AA. */
+
+:root {
+  color-scheme: light dark;
+
+  --serifa: "Instrument Serif", "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --raio: 4px;
+  --transicao: 150ms ease-out;
+  --largura: 76rem;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --regua: 1px solid var(--cor-borda);
+  --alvo-toque: 2.75rem; /* 44 px */
+
+  /* claro: a paleta editorial */
+  --cor-fundo: #f7f5f0;
+  --cor-superficie: #ffffff;
+  --cor-superficie-elevada: #ffffff;
+  --cor-texto: #141413;
+  --cor-texto-suave: #5c5a54;
+  --cor-borda: #e2dfd7;
+  --cor-borda-controle: #7d796c;
+  --cor-urgente: #b03f27;
+  --cor-urgente-fundo: #c84b31;
+  --cor-urgente-sobre: #ffffff;
+  --cor-urgente-suave: transparent;
+  --cor-aberto: #2d5a27;
+  --cor-aberto-suave: transparent;
+  --cor-foco: #141413;
+  --cor-destaque-fundo: #ece8dc;
+  --cor-overlay: rgba(20, 20, 19, 0.45);
+
+  --cg-0: #ece8dc;
+  --cg-1: #d6e1d0;
+  --cg-2: #a9c49f;
+  --cg-3: #6f9a63;
+  --cg-4: #3f7036;
+  --cg-5: #2d5a27;
+  --cg-t-0: #5c5a54;
+  --cg-t-1: #141413;
+  --cg-t-2: #141413;
+  --cg-t-3: #141413;
+  --cg-t-4: #ffffff;
+  --cg-t-5: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    --cor-fundo: #161513;
+    --cor-superficie: #1e1d1a;
+    --cor-superficie-elevada: #262420;
+    --cor-texto: #ece8df;
+    --cor-texto-suave: #a8a398;
+    --cor-borda: #34322c;
+    --cor-borda-controle: #7a766b;
+    --cor-urgente: #e07a5f;
+    --cor-urgente-fundo: rgba(224, 122, 95, 0.12);
+    --cor-urgente-sobre: #e07a5f;
+    --cor-urgente-suave: rgba(224, 122, 95, 0.12);
+    --cor-aberto: #8db580;
+    --cor-aberto-suave: rgba(141, 181, 128, 0.12);
+    --cor-foco: #ece8df;
+    --cor-destaque-fundo: #2a2824;
+    --cor-overlay: rgba(0, 0, 0, 0.6);
+
+    --cg-0: #1e1d1a;
+    --cg-1: #2a3a26;
+    --cg-2: #3f5c38;
+    --cg-3: #6f9a63;
+    --cg-4: #8db580;
+    --cg-5: #b5d6a8;
+    --cg-t-0: #a8a398;
+    --cg-t-1: #ece8df;
+    --cg-t-2: #ece8df;
+    --cg-t-3: #161513;
+    --cg-t-4: #161513;
+    --cg-t-5: #161513;
+  }
+}
+
+:root[data-tema="claro"] {
+  color-scheme: light;
+}
+
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+
+  --cor-fundo: #161513;
+  --cor-superficie: #1e1d1a;
+  --cor-superficie-elevada: #262420;
+  --cor-texto: #ece8df;
+  --cor-texto-suave: #a8a398;
+  --cor-borda: #34322c;
+  --cor-borda-controle: #7a766b;
+  --cor-urgente: #e07a5f;
+  --cor-urgente-fundo: rgba(224, 122, 95, 0.12);
+  --cor-urgente-sobre: #e07a5f;
+  --cor-urgente-suave: rgba(224, 122, 95, 0.12);
+  --cor-aberto: #8db580;
+  --cor-aberto-suave: rgba(141, 181, 128, 0.12);
+  --cor-foco: #ece8df;
+  --cor-destaque-fundo: #2a2824;
+  --cor-overlay: rgba(0, 0, 0, 0.6);
+
+  --cg-0: #1e1d1a;
+  --cg-1: #2a3a26;
+  --cg-2: #3f5c38;
+  --cg-3: #6f9a63;
+  --cg-4: #8db580;
+  --cg-5: #b5d6a8;
+  --cg-t-0: #a8a398;
+  --cg-t-1: #ece8df;
+  --cg-t-2: #ece8df;
+  --cg-t-3: #161513;
+  --cg-t-4: #161513;
+  --cg-t-5: #161513;
+}
+
+/* Troca de tema suave, desligada para quem pede menos movimento. */
+@media (prefers-reduced-motion: no-preference) {
+  body,
+  .card,
+  .painel,
+  .chip,
+  .btn,
+  .campo-busca,
+  .barra-fonte,
+  .cabecalho-site {
+    transition:
+      background-color 150ms ease-out,
+      color 150ms ease-out,
+      border-color 150ms ease-out;
+  }
+}

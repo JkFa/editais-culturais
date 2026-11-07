@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Editais abertos: filtre por perfil, linguagem e estado</title>
+    <meta name="description" content="Todos os editais culturais abertos no Brasil. Filtre por perfil (pessoa física, MEI, PJ, OSC, coletivo), linguagem e estado, e veja prazo e valor." />
+    <link rel="canonical" href="https://jkfa.github.io/editais-culturais/editais/" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Editais culturais do Brasil" />
+    <meta property="og:title" content="Editais abertos: filtre por perfil, linguagem e estado" />
+    <meta property="og:description" content="Todos os editais culturais abertos no Brasil. Filtre por perfil (pessoa física, MEI, PJ, OSC, coletivo), linguagem e estado, e veja prazo e valor." />
+    <meta property="og:url" content="https://jkfa.github.io/editais-culturais/editais/" />
+    <meta property="og:image" content="https://jkfa.github.io/editais-culturais/assets/img/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>(function(){try{var t=localStorage.getItem('editais-culturais:tema');if(t==='claro'||t==='escuro'){document.documentElement.dataset.tema=t;var c=t==='escuro'?'#161513':'#f7f5f0',m=document.querySelectorAll('meta[name=theme-color]');for(var i=0;i<m.length;i++){m[i].dataset.padrao=m[i].content;m[i].setAttribute('content',c)}}}catch(e){}})()</script>
+    <link rel="icon" href="../assets/img/icone.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../assets/img/icone-180.png" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preconnect" href="https://qhendbxavdretpfcwlyn.supabase.co" crossorigin />
+    <link rel="stylesheet" href="../assets/css/fontes.css" />
+    <link rel="stylesheet" href="../assets/css/tema.css" />
+    <link rel="stylesheet" href="../assets/css/editorial.css" />
+  </head>
+  <body class="pagina-explorador">
+    <a class="pular-conteudo" href="#lista">Pular para os editais</a>
+    <div id="app-raiz">
+    <header class="cabecalho-site">
+      <div class="container barra-site">
+        <a class="marca" href="../">Editais culturais</a>
+        <nav aria-label="Principal">
+          <a href="../editais/" aria-current="page">Editais</a>
+          <a href="../sobre/">Sobre</a>
+        </nav>
+        <button type="button" class="btn btn-tema" data-alternar-tema>Tema: sistema</button>
+      </div>
+    </header>
+      <main>
+        <section class="topo-explorador container" aria-labelledby="titulo-explorador">
+          <h1 id="titulo-explorador">Editais abertos</h1>
+          <ul class="contadores" id="contadores" aria-label="Resumo dos editais abertos"></ul>
+        </section>
+
+        <div class="busca-topo">
+          <div class="container">
+            <label class="sr-only" for="campo-busca">Buscar editais</label>
+            <input class="campo-busca" id="campo-busca" type="search" inputmode="search"
+              enterkeyhint="search" placeholder="Buscar por título, órgão ou assunto" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="folha-fundo" id="folha-fundo" hidden></div>
+        <section class="filtros" id="filtros" aria-labelledby="titulo-filtros">
+          <div class="container">
+            <div class="folha-topo">
+              <h2 id="titulo-filtros">Posso me inscrever?</h2>
+              <button class="btn folha-fechar" type="button" id="folha-fechar">Fechar</button>
+            </div>
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-perfil">
+              <span class="rotulo" id="rotulo-perfil">Meu perfil</span>
+              <div class="chips rolagem" id="chips-perfil"></div>
+            </div>
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-linguagem">
+              <span class="rotulo" id="rotulo-linguagem">Linguagem</span>
+              <div class="chips rolagem" id="chips-linguagem"></div>
+            </div>
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-abrangencia">
+              <span class="rotulo" id="rotulo-abrangencia">Onde</span>
+              <div class="chips" id="chips-abrangencia"></div>
+            </div>
+            <div class="linha-opcoes">
+              <label class="opcao-check">
+                <input type="checkbox" id="filtro-abertas" checked />
+                Apenas inscrições abertas
+              </label>
+              <label class="ordenacao" for="filtro-ordem">
+                Ordenar por
+                <select class="chip" id="filtro-ordem"></select>
+              </label>
+            </div>
+            <div class="folha-rodape">
+              <button class="btn btn-primario" type="button" id="folha-ver">Ver editais</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <p class="aviso-topo" id="aviso-topo" hidden></p>
+
+          <div class="abas" role="tablist" aria-label="Visão da lista">
+            <button class="aba" role="tab" data-aba="todos" aria-selected="true">Editais</button>
+            <button class="aba" role="tab" data-aba="favoritos" aria-selected="false">
+              Meus favoritos (<span id="contador-favoritos">0</span>)
+            </button>
+          </div>
+
+          <div class="barra-exportar" id="barra-exportar" hidden>
+            <button class="btn" type="button" id="exportar-csv">Exportar CSV</button>
+            <button class="btn" type="button" id="exportar-ics">Exportar calendário (.ics)</button>
+            <button class="btn" type="button" id="exportar-whatsapp">Copiar lista para WhatsApp</button>
+          </div>
+
+          <h2 class="sr-only">Lista de editais</h2>
+          <p class="resultado-info" id="resultado-info" aria-live="polite"></p>
+          <ul class="lista" id="lista" aria-busy="true"></ul>
+
+          <section class="radar" id="radar" aria-labelledby="titulo-radar" hidden>
+            <h2 id="titulo-radar">Costuma abrir em breve</h2>
+            <p class="nota">
+              Editais que se repetem todo ano e estão fechados agora. Não dá para se inscrever: use como aviso
+              para conferir a página oficial quando a janela chegar.
+            </p>
+            <ul id="radar-lista"></ul>
+          </section>
+        </div>
+      </main>
+      <footer class="rodape-site">
+      <div class="container rodape-grade">
+        <div>
+          <p class="rodape-titulo">Fontes</p>
+          <p>Mapas Culturais (instâncias públicas) e curadoria manual, conferida em fonte oficial.</p>
+        </div>
+        <div>
+          <p class="rodape-titulo">Última coleta</p>
+          <p class="num"><span data-ultima-coleta>…</span></p>
+        </div>
+        <div>
+          <p class="rodape-titulo">Código e contato</p>
+          <p><a href="https://github.com/JkFa/editais-culturais" rel="noopener">Repositório no GitHub</a> ·
+            <a href="https://github.com/JkFa/editais-culturais/issues" rel="noopener">Issues</a></p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="rodape-nota">Dados públicos, sem login, sem cookies. <a href="../sobre/#privacidade">Privacidade</a></p>
+      </div>
+    </footer>
+      <button class="fab-filtros" type="button" id="abrir-filtros" aria-controls="filtros" aria-expanded="false">
+        Filtros (<span id="filtros-n">0</span>)
+      </button>
+    </div>
+
+    <div id="painel-raiz"></div>
+
+    <div class="barra-fonte" role="status">
+      <div class="container">
+        <span class="ponto offline" id="fonte-ponto" aria-hidden="true"></span>
+        <span id="fonte-texto">Carregando dados…</span>
+      </div>
+    </div>
+    <div class="aviso-live" id="aviso-live" role="status" aria-live="polite"></div>
+
+    <script src="../config.js"></script>
+    <script type="module" src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -115,15 +115,6 @@ function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoF
       secao("Documentos exigidos", documentos),
       cronograma ? secao("Cronograma", cronograma) : null,
       secao("Links", el("div", { class: "links" }, links)),
-      el(
-        "div",
-        { class: "links" },
-        el(
-          "button",
-          { type: "button", class: "btn btn-primario", id: "copiar-whatsapp", onclick: () => aoCopiar(textoWhatsapp(edital, urlPortal)) },
-          "Copiar resumo para WhatsApp",
-        ),
-      ),
       blocoProveniencia(edital),
       el(
         "p",
@@ -131,6 +122,21 @@ function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoF
         `Fonte: ${nomeDaFonte(edital.fonte)} · coletado em `,
         edital.coletado_em ? formatarDiaMes(edital.coletado_em) : "data desconhecida",
         edital.verificado_em ? ` · verificado em ${formatarData(`${edital.verificado_em}T12:00:00-03:00`)}` : "",
+      ),
+    ),
+    // Fixo na base do painel (e da tela cheia no celular), acima da área segura do iPhone.
+    el(
+      "div",
+      { class: "painel-rodape" },
+      el(
+        "button",
+        {
+          type: "button",
+          class: "btn btn-primario",
+          id: "copiar-whatsapp",
+          onclick: () => aoCopiar(textoWhatsapp(edital, urlPortal)),
+        },
+        "Copiar resumo para WhatsApp",
       ),
     ),
   ];

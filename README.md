@@ -21,6 +21,33 @@ O snapshot é commitado todo dia. Isso dá um fallback sempre real e atualizado,
 ativo (o GitHub desativa workflows agendados após 60 dias sem atividade) e faz o site continuar no ar se
 o Supabase pausar ou estourar a cota.
 
+## Páginas
+
+| caminho | o que é |
+|---|---|
+| `/` | página inicial: números do dia, encerram esta semana, índice por linguagem e perfil, radar, visitantes |
+| `/editais/` | explorador com filtros, painel do edital, favoritos |
+| `/sobre/` | metodologia, fontes, limitações, privacidade e contato |
+| `/404.html` | página de erro (usa `<base href="/editais-culturais/">`) |
+
+Links antigos (`/?uf=MG&edital=123`) redirecionam para `/editais/` com os mesmos parâmetros. O site tem tema claro, escuro e
+"sistema" (botão no cabeçalho) e foi desenhado a partir de 360 px.
+
+## Contador de visitas (anônimo)
+
+A Edge Function `supabase/functions/registrar-visita` conta uma visita por aba e por dia, sem cookie, IP, hash de IP nem
+identificador. Ela lê o IP só em memória para descobrir estado e cidade aproximados no [ipwho.is](https://ipwho.is) e grava
+apenas totais por dia × página × país × UF × cidade (`visitas_agregadas`). Cidade com menos de 5 visitas em 30 dias aparece
+como "outras cidades" (`visitas_resumo()`). Do Not Track e Global Privacy Control contam a visita sem localização.
+
+```bash
+supabase db push                                   # aplica a migration de visitas
+supabase functions deploy registrar-visita --no-verify-jwt
+scripts/testar_registrar_visita.sh                 # integração local (Docker): contagem, bot, DNT, rate limit, IP fora dos logs
+node --test supabase/functions/registrar-visita/logica.test.mjs
+node scripts/contraste.mjs                         # contraste WCAG AA nos dois temas
+```
+
 ## Ver o site agora (sem configurar nada)
 
 ```bash
@@ -234,4 +261,6 @@ DECISIONS.md               decisões, descobertas da Fase 0 e desvios da especif
   PostgreSQL 16 local e a escrita REST com transporte simulado) e o `supabase-js` real (o modo ao vivo foi
   testado com um módulo simulado; a URL `esm.sh` com versão fixada responde). O primeiro run do workflow é
   o teste de verdade.
-- **Fontes tipográficas** vêm do Google Fonts; sem rede, o site usa fontes do sistema.
+- **Fontes tipográficas** são hospedadas no próprio site (`web/assets/fonts`, licença OFL).
+- **Contador de visitas:** depende do ipwho.is (1.000 consultas/dia por IP de origem). Passado o limite, a visita conta sem localização. O rate limit da function vale por instância, não globalmente.
+- **`robots.txt`** fica em `/editais-culturais/`, onde crawlers não o leem (só leem na raiz do host).
