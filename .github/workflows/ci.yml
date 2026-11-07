@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+      - run: playwright install --with-deps chromium
+      - run: node scripts/contraste.mjs
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Specs do assistente em sincronia
+        run: node scripts/sincronizar_specs.mjs --check
+      - name: Edge Function assistente (tipos e testes)
+        run: |
+          deno check supabase/functions/assistente/index.ts
+          deno test --allow-read --allow-env supabase/functions/assistente/
+      - run: pytest -q

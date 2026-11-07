@@ -7,6 +7,7 @@ import time
 from pathlib import Path
 
 import pytest
+from sql_util import PREAMBULO_SUPABASE
 
 RAIZ = Path(__file__).resolve().parent.parent
 MIGRATION = RAIZ / "supabase" / "migrations" / "20261107120000_visitas.sql"
@@ -60,7 +61,7 @@ def banco():
     time.sleep(1.5)
     psql(
         nome,
-        "create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;",
+        PREAMBULO_SUPABASE,
     )
     psql(nome, MIGRATION.read_text(encoding="utf-8"))
     yield nome

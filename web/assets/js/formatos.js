@@ -97,6 +97,11 @@ export function listaDeProponentes(edital) {
 
 const NOMES_FONTE = {
   curadoria: "Curadoria",
+  "minc-inscricoes-abertas": "Ministério da Cultura",
+  "cultbr-pnab": "CultBR (MinC)",
+  es: "Mapa Cultural do Espírito Santo",
+  "cim-amfri": "Mapa Cultural do CIM-AMFRI",
+  parauapebas: "Mapa Cultural de Parauapebas",
   br: "Mapa Cultural do Brasil",
   ce: "Mapa Cultural do Ceará",
   pe: "Mapa Cultural de Pernambuco",
@@ -143,6 +148,14 @@ export function textoWhatsapp(edital, urlPortal) {
   ].join("\n");
 }
 
+/** Link para o assistente de projetos, já com o edital escolhido (qualquer página do site). */
+export function urlAssistente(edital) {
+  const url = new URL("../../projeto/", import.meta.url);
+  url.searchParams.set("novo", "1");
+  if (edital.chave) url.searchParams.set("edital", edital.chave);
+  return url.href;
+}
+
 /** Cria elemento sem innerHTML: todo texto entra via textContent. */
 export function el(tag, atributos = {}, ...filhos) {
   const no = document.createElement(tag);
@@ -163,4 +176,18 @@ export function el(tag, atributos = {}, ...filhos) {
 
 export function plural(n, singular, pluralForma) {
   return `${n} ${n === 1 ? singular : pluralForma}`;
+}
+
+export const ROTULOS_TIPO_APOIO = {
+  fomento_em_dinheiro: "Fomento em dinheiro",
+  premio: "Prêmio",
+  patrocinio_incentivado: "Patrocínio incentivado",
+  cessao_de_espaco: "Cessão de espaço (sem repasse)",
+  credenciamento: "Credenciamento",
+};
+
+/** "Fonte: Secretaria da Cultura do Ceará · via Mapas Culturais (CE)"; sem plataforma, só a fonte. */
+export function textoDaFonte(edital) {
+  if (edital.via) return `Fonte: ${edital.orgao_fomento} · via ${edital.via}`;
+  return `Fonte: ${nomeDaFonte(edital.fonte)}`;
 }

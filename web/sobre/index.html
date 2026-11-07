@@ -38,6 +38,7 @@
         <a class="marca" href="../">Editais culturais</a>
         <nav aria-label="Principal">
           <a href="../editais/">Editais</a>
+          <a href="../projeto/">Meus projetos</a>
           <a href="../sobre/" aria-current="page">Sobre</a>
         </nav>
         <button type="button" class="btn btn-tema" data-alternar-tema>Tema: sistema</button>
@@ -55,6 +56,15 @@
         <p>Valor, proponente, contrapartida e documentos só aparecem quando o texto diz. Se o resumo não traz a informação, o campo mostra “Não informado no resumo — ver edital”. Nunca mostramos zero no lugar de “não sei”.</p>
 
         <h2 id="fontes">Fontes</h2>
+        <p id="fontes-resumo" class="suave"></p>
+        <div id="fontes-lista" class="fontes-lista" aria-live="polite"></div>
+        <p>Como cada tipo de fonte é tratado:</p>
+        <ul>
+          <li><strong>Oficial:</strong> o site do órgão ou da empresa que lança o edital. Os dados entram com o trecho que os comprova.</li>
+          <li><strong>Plataforma:</strong> sistema onde o órgão hospeda o edital (Mapas Culturais, CultBR). O card mostra “via” a plataforma.</li>
+          <li><strong>Descoberta:</strong> agregadores feitos por terceiros. Usamos agregadores só para descobrir editais. Os dados exibidos vêm sempre da fonte oficial: do agregador lemos apenas o link, e cada edital novo passa por conferência humana antes de aparecer aqui.</li>
+        </ul>
+        <p>Resumo da origem dos dados:</p>
         <ul>
           <li><strong>Mapas Culturais:</strong> instâncias públicas da plataforma, como a do MinC e as de Ceará, Pernambuco, Sergipe, Pará, Paraíba, Aracaju, Natal e Campinas. Entram só oportunidades do tipo “Edital” com prazo final definido.</li>
           <li><strong>Curadoria:</strong> editais de quem não usa o Mapas Culturais (hoje, o Programa Funarte Aberta). Só entra o que foi conferido na fonte oficial, com o trecho que comprova cada dado e a data da conferência.</li>
@@ -72,7 +82,7 @@
         </ul>
 
         <h2 id="privacidade">Privacidade e contador de visitas</h2>
-        <p>O portal não tem login, não usa cookies e não rastreia quem navega. Para saber se ele é útil, conta visitas de forma anônima:</p>
+        <p>Para navegar pelos editais não há login, não há cookies e ninguém é rastreado. Só o <a href="#assistente">assistente de projetos</a>, que é opcional, pede login. Para saber se o portal é útil, contamos visitas de forma anônima:</p>
         <ul>
           <li>Não guardamos IP, nem hash de IP, nem qualquer identificador do visitante.</li>
           <li>O servidor lê o IP só na hora, para descobrir o estado e a cidade aproximados, e descarta. Para isso, consulta o serviço <a href="https://ipwho.is" rel="noopener">ipwho.is</a>, que recebe o IP naquela requisição.</li>
@@ -80,6 +90,16 @@
           <li>Conta-se uma visita por aba e por dia (via <code>sessionStorage</code>, que some ao fechar a aba). Robôs não contam.</li>
           <li>Se o seu navegador envia “Não rastrear” (DNT) ou Global Privacy Control, a visita é contada sem localização.</li>
           <li>A escolha de tema (claro, escuro ou sistema) fica no seu navegador (<code>localStorage</code>) e não sai de lá.</li>
+        </ul>
+
+        <h3 id="assistente">Assistente de projetos (opcional, com login)</h3>
+        <ul>
+          <li>Você entra por um link enviado ao seu e-mail, sem senha. A sessão fica no seu navegador (<code>localStorage</code>); não usamos cookies.</li>
+          <li>Guardamos no banco só o que você cria: projetos, respostas, rascunhos e o histórico das versões. Só você lê os seus (cada linha é protegida por regras de acesso do banco). Você pode excluir um projeto a qualquer momento.</li>
+          <li>Nome completo, CPF/CNPJ, endereço e telefone ficam num formulário separado, aparecem apenas na capa do arquivo que você baixa e <strong>nunca</strong> são enviados à IA. O que você escreve no chat passa por um filtro que tira CPF, CNPJ, e-mail, telefone e CEP antes de qualquer envio. O filtro não reconhece nomes: não escreva seu nome completo no chat.</li>
+          <li>O texto do chat, a ficha do projeto (sem dados pessoais) e as seções já aprovadas são enviados a um serviço de IA, o Google Gemini, no plano gratuito. Os termos do plano gratuito permitem que a Google use esse conteúdo para melhorar seus produtos e que pessoas o revisem. Por isso, não escreva no chat nada que você não queira ver tratado assim.</li>
+          <li>A resposta opcional sobre cotas fica só na ficha e não vai à IA, a menos que você marque que pode citá-la nos textos.</li>
+          <li>O assistente ajuda a escrever; não garante aprovação. Confira sempre as regras do edital oficial.</li>
         </ul>
 
         <h2 id="contato">Contato</h2>

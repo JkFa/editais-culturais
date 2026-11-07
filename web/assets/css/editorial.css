@@ -1201,3 +1201,42 @@ body {
   min-height: 150vh;
   align-content: start;
 }
+
+.card .via {
+  margin: -0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--cor-texto-suave);
+}
+
+.pilula.requisito {
+  border-color: var(--cor-urgente);
+  color: var(--cor-urgente);
+}
+
+.painel .assistente-chamada {
+  margin: 1rem 0 0;
+}
+
+.painel .assistente-chamada .btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+/* Link do assistente no card: fica acima da área clicável do card inteiro. */
+.card .card-assistente {
+  position: relative;
+  z-index: 2;
+  margin: 0.2rem 0 0;
+  font-size: 0.875rem;
+}
+
+.card .card-assistente a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--alvo-toque);
+  color: var(--cor-texto);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}

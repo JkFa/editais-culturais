@@ -11,7 +11,8 @@ const COLUNAS = [
   "municipio", "proponentes", "valor_total", "teto_por_projeto", "num_cotas",
   "exige_contrapartida", "marco_legal", "documentos_exigidos", "cronograma", "tipo_apoio",
   "verificado_em", "pendencias", "inscricao_inicio", "inscricao_fim", "fim_tem_horario",
-  "publicado_em", "coletado_em", "atualizado_em", "proveniencia",
+  "publicado_em", "coletado_em", "atualizado_em", "proveniencia", "via", "fontes_alternativas",
+  "requisitos",
 ].join(",");
 
 export function configurado(config) {
@@ -107,6 +108,7 @@ export async function carregarProgressivo(config, aoDados) {
   const base = {
     geradoEm: snapshot?.gerado_em ?? null,
     fontesOk: snapshot?.fontes_ok ?? [],
+    fontes: snapshot?.fontes ?? [],
     motivoFallback: null,
     atualizando: false,
     buscarNoServidor: null,

@@ -11,7 +11,17 @@ import {
   gerarTextoWhatsapp,
   resolverFavoritos,
 } from "./favoritos.js";
-import { LINGUAGENS, ORDENS, PERFIS, UFS, contadores, filtrar, filtrosAtivos, ordenar } from "./filtros.js";
+import {
+  LINGUAGENS,
+  ORDENS,
+  PERFIS,
+  TIPOS_APOIO,
+  UFS,
+  contadores,
+  filtrar,
+  filtrosAtivos,
+  ordenar,
+} from "./filtros.js";
 import { el, formatarDataHora, formatarMoeda, formatarMoedaCompacta, plural } from "./formatos.js";
 import { renderRadar } from "./radar.js";
 import { empilharPainel, gravarEstado, lerEstado, urlDoPortal } from "./url-state.js";
@@ -84,6 +94,14 @@ function renderFiltros() {
       aoMudarFiltro();
     }),
     selectUf,
+  );
+  $("#chips-apoio").replaceChildren(
+    ...TIPOS_APOIO.map((t) =>
+      criarChip(t.rotulo, estado.tipoApoio === t.id, () => {
+        estado.tipoApoio = estado.tipoApoio === t.id ? "" : t.id;
+        aoMudarFiltro();
+      }),
+    ),
   );
   $("#filtro-abertas").checked = estado.apenasAbertas;
   $("#campo-busca").value = estado.q;

@@ -8,8 +8,10 @@ import {
   formatarDiaMes,
   localDoEdital,
   nomeDaFonte,
+  textoDaFonte,
   prazoPorExtenso,
   textoWhatsapp,
+  urlAssistente,
 } from "./formatos.js";
 
 const FOCAVEIS = 'a[href], button:not([disabled]), input, select, textarea, summary, [tabindex]:not([tabindex="-1"])';
@@ -23,6 +25,7 @@ const ROTULOS_CAMPO = {
   exige_contrapartida: "Contrapartida",
   inscricao_fim: "Prazo final",
   tipo_apoio: "Tipo de apoio",
+  requisitos: "Requisitos",
   municipio: "Município",
   linguagens: "Linguagens",
   resumo_simples: "Resumo simples",
@@ -57,6 +60,21 @@ function blocoProveniencia(edital) {
         el("dt", {}, `${ROTULOS_CAMPO[campo]} · ${ROTULOS_VIA[p.via] ?? p.via}`),
         el("dd", {}, `“${p.trecho}”`),
       ]),
+    ),
+  );
+}
+
+function blocoAlternativas(edital) {
+  const alt = edital.fontes_alternativas ?? [];
+  if (!alt.length) return null;
+  return secao(
+    "Também publicado em",
+    el(
+      "ul",
+      { class: "docs" },
+      alt.map((a) =>
+        el("li", {}, el("a", { href: a.url, target: "_blank", rel: "noopener noreferrer" }, a.via || nomeDaFonte(a.fonte))),
+      ),
     ),
   );
 }
@@ -115,11 +133,18 @@ function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoF
       secao("Documentos exigidos", documentos),
       cronograma ? secao("Cronograma", cronograma) : null,
       secao("Links", el("div", { class: "links" }, links)),
+      el(
+        "p",
+        { class: "assistente-chamada" },
+        el("a", { class: "btn", href: urlAssistente(edital) }, "Escrever projeto para este edital"),
+        el("span", { class: "fonte" }, " Assistente gratuito, com login por e-mail."),
+      ),
+      blocoAlternativas(edital),
       blocoProveniencia(edital),
       el(
         "p",
         { class: "fonte" },
-        `Fonte: ${nomeDaFonte(edital.fonte)} · coletado em `,
+        `${textoDaFonte(edital)} · coletado em `,
         edital.coletado_em ? formatarDiaMes(edital.coletado_em) : "data desconhecida",
         edital.verificado_em ? ` · verificado em ${formatarData(`${edital.verificado_em}T12:00:00-03:00`)}` : "",
       ),

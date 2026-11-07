@@ -37,6 +37,9 @@ class Instancia:
     municipio: str | None = None
     ativa: bool = True
     motivo: str | None = None
+    termos_url: str | None = None
+    termos_conferidos_em: str | None = None
+    descoberta: str | None = None
 
     @property
     def fonte(self) -> str:
@@ -56,6 +59,14 @@ class ResultadoColeta:
     brutos: list[EditalBruto] = field(default_factory=list)
     textos: dict[str, str] = field(default_factory=dict)  # id_externo -> texto sem truncar
     descartes: Counter[str] = field(default_factory=Counter)
+
+
+def _via(inst: Instancia) -> str:
+    """ "Mapas Culturais (CE)": a plataforma intermediária, com a sigla ou o nome do lugar."""
+    lugar = inst.slug.upper() if len(inst.slug) <= 3 else inst.nome
+    for prefixo in ("Mapa Cultural de ", "Mapa Cultural do ", "Mapa Cultural da "):
+        lugar = lugar.removeprefix(prefixo)
+    return f"Mapas Culturais ({lugar})"
 
 
 def _filtro_data(dt: datetime) -> str:
@@ -142,6 +153,7 @@ def converter(
         uf=inst.uf,
         municipio=inst.municipio,
         proveniencia=prov,
+        via=_via(inst),
     )
     return bruto, texto
 

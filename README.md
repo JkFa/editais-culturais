@@ -33,6 +33,15 @@ o Supabase pausar ou estourar a cota.
 Links antigos (`/?uf=MG&edital=123`) redirecionam para `/editais/` com os mesmos parâmetros. O site tem tema claro, escuro e
 "sistema" (botão no cabeçalho) e foi desenhado a partir de 360 px.
 
+## Assistente de projetos culturais (opcional, com login)
+
+Além de listar os editais, o portal tem um assistente de escrita guiada em `/projeto/`: a pessoa entra por link no
+e-mail, escolhe um edital ("Escrever projeto para este edital") e responde a perguntas, seção por seção; a IA
+(Gemini, plano gratuito) redige rascunhos **só com os fatos dados** e marca `[COMPLETAR: ...]` onde faltar
+informação. Dá para editar, aprovar, ver versões anteriores, exportar `.docx` e copiar campo a campo. Dados pessoais
+ficam num formulário à parte e nunca vão para a IA. Custo zero (Pages, Actions, Supabase e Gemini gratuitos).
+Arquitetura, segredos, deploy e como criar novas seções: [docs/assistente.md](docs/assistente.md).
+
 ## Contador de visitas (anônimo)
 
 A Edge Function `supabase/functions/registrar-visita` conta uma visita por aba e por dia, sem cookie, IP, hash de IP nem
@@ -126,6 +135,23 @@ Código de saída: `0` ok; `1` se **todas** as fontes falharam (o snapshot anter
 coleta funcionou mas a gravação no Supabase falhou (o snapshot já foi escrito).
 
 ## Fontes
+
+Hoje são 17 fontes novas ativas além das instâncias de Mapas Culturais e da curadoria (a lista completa, com
+saúde e motivo das desativadas, está em `/sobre/` e em `DECISIONS.md`). Tipos: **oficial**, **plataforma** (com
+"via ...") e **descoberta** (agregadores: só o link é lido; o edital passa pela fila de curadoria).
+
+### Fila de curadoria
+
+Candidatos viram Issues com a etiqueta `candidato`: fontes de descoberta, editais sem prazo legível e vigias de
+página que detectaram mudança. Para publicar: confira o link oficial, complete o YAML da Issue (`inscricao_fim`,
+`verificado_em` e as `evidencias` com o trecho literal) e troque a etiqueta por `aprovado`. O sync seguinte publica;
+prazo vencido fecha a Issue. Fontes que bloqueiam o robô geram, toda segunda, uma Issue `conferir-manual`.
+
+### Testar uma fonte no GitHub Actions
+
+`Actions > Sincronizar editais > Run workflow`, com `fonte` = id de `worker/fontes.yaml`, `mapas:<slug>` ou `todas`
+(marque `dry_run` para não gravar no banco). Localmente: `python -m worker.scraper_worker --fonte todas --dry-run`.
+
 
 - **A. Mapas Culturais** (`worker/fontes.yaml`): API pública `/api/opportunity/find`. Instâncias ativas
   hoje: Brasil (MinC), CE, PE, SE, PA, PB, Aracaju, Natal e Campinas. Para acrescentar uma, inclua um bloco

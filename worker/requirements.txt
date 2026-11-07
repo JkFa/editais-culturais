@@ -3,3 +3,4 @@ pydantic>=2.7
 pyyaml>=6.0
 python-dateutil>=2.9
 tzdata
+pypdf>=4.0

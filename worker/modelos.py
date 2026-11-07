@@ -31,6 +31,15 @@ UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC S
 Via = Literal["regex", "llm", "curadoria", "api"]
 Abrangencia = Literal["nacional", "estadual", "municipal"]
 
+TIPOS_APOIO = (
+    "fomento_em_dinheiro",
+    "premio",
+    "patrocinio_incentivado",
+    "cessao_de_espaco",
+    "credenciamento",
+)
+TIPOS_FONTE = ("oficial", "plataforma", "descoberta")
+
 LIMITE_RESUMO_ORIGINAL = 2000
 LIMITE_RESUMO_SIMPLES = 280
 
@@ -60,6 +69,9 @@ class EditalBruto(BaseModel):
     uf: str | None = None
     municipio: str | None = None
     proveniencia: dict[str, Proveniencia] = Field(default_factory=dict)
+    # "via Prosas", "via CultBR (MinC)": plataforma intermediária, quando há uma.
+    via: str | None = None
+    requisitos: list[str] | None = None
 
     # Preenchidos só pela curadoria, que já traz tudo conferido à mão.
     curado: bool = False
@@ -118,9 +130,15 @@ class Edital(BaseModel):
     atualizado_em: datetime | None = None
     hash_conteudo: str | None = None
     proveniencia: dict[str, Proveniencia] = Field(default_factory=dict)
+    via: str | None = None
+    # Outras origens do mesmo edital: [{"fonte": ..., "url": ..., "via": ...}].
+    fontes_alternativas: list[dict[str, str | None]] | None = None
+    requisitos: list[str] | None = None
 
     @model_validator(mode="after")
     def _valida(self) -> Edital:
+        if self.tipo_apoio is not None and self.tipo_apoio not in TIPOS_APOIO:
+            raise ValueError(f"tipo_apoio inválido: {self.tipo_apoio}")
         invalidas = [x for x in self.linguagens if x not in LINGUAGENS]
         if invalidas:
             raise ValueError(f"linguagens fora da taxonomia: {invalidas}")

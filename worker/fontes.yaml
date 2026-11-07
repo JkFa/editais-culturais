@@ -87,6 +87,39 @@ instancias:
     municipio: Campinas
     ativa: true
 
+  - slug: es
+    nome: Mapa Cultural do Espírito Santo
+    base_url: https://mapa.cultura.es.gov.br
+    abrangencia: estadual
+    uf: ES
+    municipio: null
+    ativa: true
+    termos_conferidos_em: "2026-11-07"
+    termos_url: https://mapa.cultura.es.gov.br/
+    descoberta: "link visto no Radar de Editais; API de Mapas Culturais respondeu em 07/11/2026"
+
+  - slug: cim-amfri
+    nome: Mapa Cultural do CIM-AMFRI (SC)
+    base_url: https://mapacultural.cim-amfri.sc.gov.br
+    abrangencia: municipal
+    uf: SC
+    municipio: null
+    ativa: true
+    termos_conferidos_em: "2026-11-07"
+    termos_url: https://mapacultural.cim-amfri.sc.gov.br/
+    descoberta: "link visto no Radar de Editais; consórcio de municípios de Santa Catarina"
+
+  - slug: parauapebas
+    nome: Mapa Cultural de Parauapebas (PA)
+    base_url: https://mapacultural.parauapebas.pa.gov.br
+    abrangencia: municipal
+    uf: PA
+    municipio: Parauapebas
+    ativa: true
+    termos_conferidos_em: "2026-11-07"
+    termos_url: https://mapacultural.parauapebas.pa.gov.br/
+    descoberta: "link visto no Radar de Editais"
+
   - slug: df
     nome: Mapa Cultural do Distrito Federal
     base_url: https://mapa.cultura.df.gov.br
@@ -95,3 +128,102 @@ instancias:
     municipio: null
     ativa: false
     motivo: "HTTP 403 em /api/opportunity/find na sondagem de 06/11/2026 (bloqueia clientes automatizados)."
+
+# ---------------------------------------------------------------------------------------------
+# v4: novas fontes. `tipo`: oficial (publica com evidência) | plataforma (idem, com "via X") |
+# descoberta (nunca publica: só abre candidato na fila de curadoria).
+# `metodo`: api | html | vigia (hash do texto principal; mudança abre candidato).
+# Termos de uso e robots.txt conferidos em 07/11/2026 (links em termos_url; resumo no DECISIONS.md).
+# ---------------------------------------------------------------------------------------------
+fontes:
+  - id: minc-inscricoes-abertas
+    nome: "Ministério da Cultura: editais abertos"
+    tipo: oficial
+    metodo: html
+    coletor: minc
+    url: "https://www.gov.br/cultura/pt-br/assuntos/editais/inscricoes-abertas"
+    termos_url: "https://www.gov.br/cultura/pt-br/acesso-a-informacao"
+    termos_conferidos_em: "2026-11-07"
+    robots_ok: true
+    intervalo_min_entre_requisicoes_s: 2
+    ativa: true
+
+  - id: cultbr-pnab
+    nome: "CultBR (MinC): editais da Política Nacional Aldir Blanc"
+    tipo: plataforma
+    metodo: api
+    coletor: cultbr
+    url: "https://back.portal.cultbr.cultura.gov.br/v1/public/par/editais"
+    termos_url: "https://portal.cultbr.cultura.gov.br/oportunidades"
+    termos_conferidos_em: "2026-11-07"
+    robots_ok: null   # o host da API não publica robots.txt (404)
+    intervalo_min_entre_requisicoes_s: 3
+    ativa: true
+
+  - id: radar-clube-emma
+    nome: "Radar de Editais (Clube Emma), só para descobrir links"
+    tipo: descoberta
+    metodo: html
+    coletor: radar_emma
+    url: "https://radareditais.clubemma.com.br/"
+    termos_url: "https://radareditais.clubemma.com.br/termos"
+    termos_conferidos_em: "2026-11-07"
+    robots_ok: true
+    intervalo_min_entre_requisicoes_s: 3
+    ativa: true
+    ignorar_hosts: ["prosas.com.br", "produtos.prosas.com.br", "portal.cultbr.cultura.gov.br", "culteditais.cultura.gov.br"]
+
+  - id: prosas-central-de-editais
+    nome: "Prosas: Central de Editais"
+    tipo: plataforma
+    metodo: html
+    url: "https://produtos.prosas.com.br/editais"
+    termos_url: "https://produtos.prosas.com.br/termos-de-uso"
+    termos_conferidos_em: "2026-11-07"
+    robots_ok: true
+    ativa: false
+    motivo: "Os termos de uso proíbem 'métodos de prospecção ou semelhantes de extração de dados' e o robots.txt pede Crawl-Delay de 30 s. Não coletamos. Os editais do Prosas que importam entram pela curadoria, com link para a página de inscrição."
+
+  - id: culteditais
+    nome: "CultEditais (MinC)"
+    tipo: oficial
+    metodo: html
+    url: "https://culteditais.cultura.gov.br/"
+    termos_conferidos_em: "2026-11-07"
+    ativa: false
+    motivo: "O site responde com desafio anti-bot do Cloudflare ('Just a moment') para robôs. Não contornamos. É uma instância de Mapas Culturais; os editais dela chegam estruturados pela API pública do CultBR."
+
+  - id: shell-premio-teatro
+    nome: "Prêmio Shell de Teatro"
+    tipo: oficial
+    metodo: html
+    url: "https://www.shell.com.br/sustentabilidade/sociedade/premio-shell-de-teatro"
+    termos_conferidos_em: "2026-11-07"
+    ativa: false
+    motivo: "Sem inscrição aberta ao público: o júri acompanha as temporadas. Só a categoria Destaque Nacional exige inscrição por formulário, divulgado a partir de agosto. Está no radar (fontes_curadas.yaml); a página é montada por JavaScript."
+
+  # ------------------------------------------------------------------ vigias de página
+  - {id: vigia-petrobras-cultural, nome: "Petrobras Cultural: seleções públicas", tipo: oficial, metodo: vigia, url: "https://petrobras.com.br/pt/cultural/selecoes-publicas-culturais", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-sesi-sp-editais, nome: "Sesi-SP: editais de cultura", tipo: oficial, metodo: vigia, url: "https://www.sesisp.org.br/cultura/editais", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-sesc-pr-editais, nome: "Sesc Paraná: editais", tipo: oficial, metodo: vigia, url: "https://www.sescpr.com.br/editais/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-sesc-rj-pulsar, nome: "Sesc RJ: Edital de Cultura Pulsar", tipo: oficial, metodo: vigia, url: "https://www.sescrio.org.br/pulsar/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-instituto-cultural-vale, nome: "Instituto Cultural Vale: chamada", tipo: oficial, metodo: vigia, url: "https://www.institutoculturalvale.org/editais/chamada-instituto-cultural-vale/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-spcine-fomento, nome: "Spcine: editais de fomento", tipo: oficial, metodo: vigia, url: "https://spcine.com.br/editais-de-fomento/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-funarte-editais, nome: "Funarte: editais", tipo: oficial, metodo: vigia, url: "https://www.gov.br/funarte/pt-br/editais-1", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-riofilme-chamadas, nome: "Riofilme: chamadas", tipo: oficial, metodo: vigia, url: "https://riofilme.com.br/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-rj-incentivo-cultura, nome: "Secult-RJ: Lei de Incentivo à Cultura", tipo: oficial, metodo: vigia, url: "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-claro-patrocinios, nome: "Claro: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.claro.com.br/institucional/patrocinios", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-renner-patrocinios, nome: "Lojas Renner: patrocínios e projetos", tipo: oficial, metodo: vigia, url: "https://www.lojasrennersa.com.br/patrocinios-e-projetos/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+
+  # ------------------------------------------------------------------ avaliadas e desativadas
+  - {id: bb-patrocinios, nome: "Banco do Brasil: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.bb.com.br/site/patrocinios/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Página montada por JavaScript: só 150 caracteres de texto para um robô."}
+  - {id: caixa-patrocinios, nome: "Caixa: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.caixa.gov.br/patrocinios/Paginas/default.aspx", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Página montada por JavaScript: 19 caracteres de texto."}
+  - {id: bndes-patrocinios, nome: "BNDES: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.bndes.gov.br/wps/portal/site/home/desenvolvimento-sustentavel/patrocinios", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Página sem texto útil sem JavaScript."}
+  - {id: porto-seguro-patrocinio, nome: "Porto Seguro: patrocínio", tipo: oficial, metodo: vigia, url: "https://www.portoseguro.com.br/institucional/patrocinio", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Página montada por JavaScript: 24 caracteres de texto."}
+  - {id: natura-musical, nome: "Natura Musical", tipo: oficial, metodo: vigia, url: "https://www.natura.com.br/natura-musical", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "HTTP 403 para o robô e página em JavaScript. Não contornamos. Edição bienal: próxima provavelmente em 2027 (suposição, não confirmada)."}
+  - {id: santander-patrocinios, nome: "Santander: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.santander.com.br/patrocinios", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "HTTP 403 para o robô. Não contornamos."}
+  - {id: smc-sp-editais, nome: "Prefeitura de SP: SMC Editais", tipo: oficial, metodo: vigia, url: "https://smceditais.prefeitura.sp.gov.br", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Sistema de página única (JavaScript): 18 caracteres de texto."}
+  - {id: ancine-fsa, nome: "Ancine/FSA: chamadas públicas", tipo: oficial, metodo: vigia, url: "https://fsa.ancine.gov.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "fsa.ancine.gov.br deu ConnectTimeout e o caminho de chamadas públicas em gov.br/ancine respondeu 404 em 07/11/2026. URL estável não encontrada."}
+  - {id: descentra-mg, nome: "Descentra Cultura (Secult-MG)", tipo: plataforma, metodo: html, url: "https://www.secult.mg.gov.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "A plataforma exige cadastro e login para ver e enviar editais; não coletamos. A Secult-MG divulga os editais da PNAB em notícias; os que passam pelo CultBR entram por lá."}
+  - {id: itau-cultural, nome: "Itaú Cultural", tipo: oficial, metodo: vigia, url: "https://www.itaucultural.org.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Não achei página estável só de editais (/chamadas dá 404); a home muda todo dia e geraria falso alarme. Segue no radar da curadoria."}
+  - {id: oi-futuro, nome: "Oi Futuro", tipo: oficial, metodo: vigia, url: "https://oifuturo.org.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "ConnectTimeout em 07/11/2026."}

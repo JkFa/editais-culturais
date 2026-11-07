@@ -140,6 +140,12 @@ _CUE_NAO_FOMENTO = re.compile(
 _CUE_TETO_UNITARIO = re.compile(
     r"(?:premios?|bolsas?|vagas?|projetos?|propostas?|cotas?|iniciativas?)\s+(?:no valor\s+)?de\s*$"
 )
+# "R$ 1 milhão para cada uma das localidades" é garantia por local, não teto por projeto.
+_CUE_POR_LOCAL = re.compile(
+    r"\bcada\s+(?:uma\s+d[ao]s?\s+)?(?:localidade|cidade|estado|regiao|municipio|categoria|faixa|polo|capital)"
+)
+# "montante mínimo de R$ ..." é piso do programa, nem total nem teto.
+_CUE_PISO = re.compile(r"\b(?:minimo|minima)\s+(?:de\s+)?$|investimento minimo\s+(?:de\s+)?$")
 _CUE_TETO_ANTES = re.compile(
     r"(?:\bate|limite|maximo|teto)(?:\s+(?:o|a))?(?:\s+valor)?(?:\s+de|\s+ate)?\s*:?\s*$"
 )
@@ -195,7 +201,11 @@ def extrair_valores(texto: str) -> list[ValorAchado]:
         depois = _FRONTEIRA.split(norm[m.end() : min(fim_depois, m.end() + 70)])[0]
         frase = _FRONTEIRA.split(norm[max(0, m.start() - 160) : m.start()])[-1]
         frase += norm[m.start() : m.start() + 160].split(".")[0]
-        if _CUE_NAO_FOMENTO.search(frase):
+        if (
+            _CUE_NAO_FOMENTO.search(frase)
+            or _CUE_POR_LOCAL.search(depois)
+            or _CUE_PISO.search(antes)
+        ):
             papel = "outro"
         elif _CUE_TETO_DEPOIS.search(depois) or _CUE_TETO_UNITARIO.search(antes):
             papel = "teto"
@@ -319,6 +329,49 @@ def extrair_marco_legal(texto: str) -> tuple[str, str] | None:
     return None
 
 
+# ---------------------------------------------------------------- tipo de apoio e requisitos
+
+# Ordem = prioridade quando mais de uma regra casa (a mais específica primeiro).
+_TIPOS_APOIO = (
+    ("credenciamento", re.compile(r"\bcredenciamento\b")),
+    ("cessao_de_espaco", re.compile(r"cessao (?:gratuita )?de espaco|cessao d[oa]s? (?:sala|teatro|galpao|espaco)|\bpauta\b(?! de)")),
+    ("patrocinio_incentivado", re.compile(r"lei rouanet|lei de incentivo a cultura|\bpronac\b|\bsalic\b|lei do audiovisual|patrocinio incentivado|recursos incentivados")),
+    ("premio", re.compile(r"\bpremiacao\b|\bpremio\b|\bpremios\b|premiar")),
+    ("fomento_em_dinheiro", re.compile(r"\bfomento\b|apoio financeiro|apoio a projetos|selecao de projetos")),
+)  # fmt: skip
+_RE_PROJETO_APROVADO = re.compile(
+    r"(?:projeto|proposta)s? (?:ja )?aprovad[oa]s?[^.]{0,80}(?:lei rouanet|pronac|salic|lei de incentivo|minc)|"
+    r"(?:lei rouanet|pronac|salic|lei de incentivo)[^.]{0,80}(?:projeto|proposta)s? (?:ja )?aprovad[oa]s?|"
+    r"(?:aprovad[oa]s? (?:no|pelo) (?:salic|minc|pronac))|"
+    r"(?:possuir|deve ter|devem ter|ter)\s+(?:numero d[eo] )?pronac"
+)
+_NEGACAO_REQUISITO = re.compile(
+    r"\bveda|vedad|nao (?:poder|pode|sera|serao|e permitid)|impedid|exceto|sem (?:aprovacao|pronac)"
+)
+
+
+def inferir_tipo_apoio(titulo: str, texto: str) -> tuple[str, str] | None:
+    """(tipo, trecho). Procura primeiro no título, depois no texto; sem evidência, `None`."""
+    for fonte in (titulo, texto[:1500]):
+        norm = sem_acento(fonte)
+        for tipo, regra in _TIPOS_APOIO:
+            m = regra.search(norm)
+            if m:
+                return tipo, _trecho(fonte, m.start(), m.end(), 50)
+    return None
+
+
+def extrair_requisitos(texto: str) -> dict[str, str]:
+    """Requisitos que eliminam proponentes. Hoje: projeto já aprovado na Lei Rouanet/Salic."""
+    norm = sem_acento(texto)
+    achados: dict[str, str] = {}
+    m = _RE_PROJETO_APROVADO.search(norm)
+    # "O programa veda projetos com Pronac ativo" é o oposto de exigir: ignora se há negação perto.
+    if m and not _NEGACAO_REQUISITO.search(norm[max(0, m.start() - 140) : m.end()]):
+        achados["Exige projeto aprovado na Lei Rouanet"] = _trecho(texto, m.start(), m.end(), 60)
+    return achados
+
+
 # ---------------------------------------------------------------- resumo
 
 
@@ -383,6 +436,8 @@ def padronizar(
             "marco_legal": bruto.marco_legal,
             "documentos_exigidos": bruto.documentos_exigidos or None,
             "resumo_simples": bruto.resumo_simples,
+            "tipo_apoio": bruto.tipo_apoio,
+            "requisitos": bruto.requisitos,
         }
         uf, abrangencia, municipio = bruto.uf, bruto.abrangencia, bruto.municipio
     else:
@@ -399,6 +454,8 @@ def padronizar(
             "marco_legal": None,
             "documentos_exigidos": None,
             "resumo_simples": resumo_sem_llm(bruto.resumo_original),
+            "tipo_apoio": bruto.tipo_apoio,
+            "requisitos": bruto.requisitos,
         }
         for campo, (valor, trecho) in resolver_valores(texto).items():
             campos[campo] = valor
@@ -410,6 +467,14 @@ def padronizar(
             prov["proponentes"] = Proveniencia(
                 via="regex", trecho=" | ".join(proponentes[p] for p in ordem if p in proponentes)
             )
+        apoio = inferir_tipo_apoio(bruto.titulo, texto)
+        if apoio:
+            campos["tipo_apoio"], trecho_apoio = apoio
+            prov["tipo_apoio"] = Proveniencia(via="regex", trecho=trecho_apoio)
+        reqs = extrair_requisitos(texto)
+        if reqs:
+            campos["requisitos"] = list(reqs)
+            prov["requisitos"] = Proveniencia(via="regex", trecho=" | ".join(reqs.values()))
         marco = extrair_marco_legal(texto)
         if marco:
             campos["marco_legal"], trecho_marco = marco
@@ -438,8 +503,8 @@ def padronizar(
         num_cotas=bruto.num_cotas,
         exige_contrapartida=bruto.exige_contrapartida,
         cronograma=bruto.cronograma,
-        tipo_apoio=bruto.tipo_apoio,
         verificado_em=bruto.verificado_em,
+        via=bruto.via,
         pendencias=bruto.pendencias,
         inscricao_inicio=bruto.inscricao_inicio,
         inscricao_fim=bruto.inscricao_fim,

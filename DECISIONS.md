@@ -219,3 +219,182 @@ no resumo entregue ao fim do trabalho.
 - Primeiro teste em produção parecia não contar: o Chromium headless do Playwright se anuncia como `HeadlessChrome`, que o filtro
   de bots da function barra. É o comportamento desejado; o teste passou com user-agent comum (+1 por aba, 0 no reload).
 - Bug de texto achado em produção: com 1 visita a frase dizia "1 visitas". Corrigido no singular, com teste.
+
+## v4: novas fontes (07/11/2026)
+
+Pré-requisito do pedido: a "fila de curadoria" e a tabela `fontes_status` da v3 não existiam (o
+`PROMPT_v3_evolucao_completa.md` não está no repositório). Implementei a versão mínima: Issues com as
+etiquetas `candidato` e `aprovado` (`worker/fila.py`) e `fontes_status` (migration
+`20261107200000_v4_fontes.sql`).
+
+### Modelo
+
+- Catálogo em `worker/fontes.yaml` (`fontes:` + as `instancias:` de Mapas Culturais). Tipos:
+  **oficial** e **plataforma** publicam com evidência; **descoberta** nunca publica, só abre candidato.
+- Candidato = Issue `candidato` com marcador `<!-- candidato:<hash> -->`, link oficial, trecho lido da
+  página oficial e um YAML proposto. A pessoa completa o YAML (evidência obrigatória), troca a etiqueta
+  por `aprovado` e o sync seguinte publica (fonte `curadoria`, id `fila-<n>`); prazo vencido fecha a Issue;
+  YAML inválido recebe comentário. Nada é recriado, mesmo com a Issue fechada.
+- **Prazo nunca é adivinhado:** `worker/prazos_texto.py` só aceita data com ano e guarda o trecho. Edital sem
+  prazo legível vira candidato, não edital (foi o caso de 2 dos 4 editais do MinC).
+- **Cliente web educado** (`worker/web.py`): robots.txt (e Crawl-delay), User-Agent com o link do repositório,
+  sequencial por domínio com intervalo, timeout de 30 s. 403/429 ou desafio anti-bot viram `bloqueada_em_ci`
+  e **não são contornados** (uma tentativa, sem retry, sem outro User-Agent).
+- **Cache:** hash do texto principal nos vigias (`worker/cache/vigias.json`); ETag suportado no cliente, mas
+  nenhuma das fontes atuais devolve ETag nas listagens, então não é usado em coleta (honesto: o pedido de
+  "ETag ou hash" fica coberto só pelo hash).
+- **Deduplicação** (`worker/dedup.py`): mesma URL normalizada em qualquer par de fontes, ou prazo no mesmo dia
+  + títulos parecidos (Jaccard das palavras de conteúdo ≥ 0,4, ≥ 3 em comum) **só entre fontes diferentes**.
+  Duas ofertas da mesma fonte nunca se juntam (os 5 "Funarte Aberta" têm título e prazo quase iguais).
+  Canônico: curadoria > oficial > plataforma > descoberta; as outras origens vão em `fontes_alternativas`.
+  Primeira versão juntava demais (rodei no dado real e vi falsos positivos entre editais PNAB de municípios
+  diferentes); corrigi antes de publicar.
+- **Tipo de apoio** (5 valores) e **requisitos** ("Exige projeto aprovado na Lei Rouanet") só com evidência regex
+  no texto, com negação ignorada (o texto real do Rouanet nas Favelas 2 *veda* projetos com Pronac ativo, e o
+  regex não vira exigência). Sem evidência = `null`; sob o filtro "Tipo de apoio" o `null` some.
+- **Regex de valores:** "R$ 1.000.000 para cada uma das localidades" (garantia por local) e "montante mínimo de"
+  (piso) deixaram de contar como teto/total; achado no texto real do MinC.
+- `--fonte <id|todas> [--dry-run]` roda fontes isoladas no Actions sem mexer no snapshot.
+
+### Fontes avaliadas (07/11/2026)
+
+| fonte | tipo | método | status | motivo / observação |
+|---|---|---|---|---|
+| minc-inscricoes-abertas | oficial | html (Plone) | **ativa** | sem REST nem RSS (404); `a.govbr-card-content` + página de cada edital; a lista "abertas" traz editais já encerrados |
+| cultbr-pnab | plataforma | api | **ativa** | API pública do portal; 12 editais estruturados (prazo, valor, proponentes) + candidatos; "via CultBR (MinC)" |
+| radar-clube-emma | descoberta | html | **ativa** | só links; 20 candidatos/dia; ignora Prosas e CultBR |
+| mapas:es, mapas:cim-amfri, mapas:parauapebas | plataforma | api | **ativas** | descobertas pelos links do Radar; a API de Mapas respondeu |
+| vigia-petrobras-cultural | oficial | vigia | **ativa** | |
+| vigia-sesi-sp-editais | oficial | vigia | **ativa** | |
+| vigia-sesc-pr-editais | oficial | vigia | ativa, **bloqueada_em_ci** | HTTP 403 só no runner do GitHub (da minha máquina responde). Não contornamos; Issue semanal "Conferir manualmente" |
+| vigia-sesc-rj-pulsar | oficial | vigia | **ativa** | |
+| vigia-instituto-cultural-vale | oficial | vigia | **ativa** | |
+| vigia-spcine-fomento | oficial | vigia | **ativa** | |
+| vigia-funarte-editais | oficial | vigia | **ativa** | |
+| vigia-riofilme-chamadas | oficial | vigia | **ativa** | |
+| vigia-rj-incentivo-cultura | oficial | vigia | **ativa** | |
+| vigia-claro-patrocinios | oficial | vigia | **ativa** | patrocínio contínuo, link vindo do Radar |
+| vigia-renner-patrocinios | oficial | vigia | **ativa** | idem |
+| prosas-central-de-editais | plataforma | html | **desativada** | termos proíbem extração de dados; Crawl-delay 30 s (ver abaixo) |
+| culteditais | oficial | html | **desativada** | desafio anti-bot do Cloudflare; dados chegam pelo CultBR |
+| shell-premio-teatro | oficial | html | desativada | sem inscrição pública; só Destaque Nacional exige formulário (radar) |
+| bb-patrocinios, caixa-patrocinios, bndes-patrocinios, porto-seguro-patrocinio, smc-sp-editais | oficial | vigia | desativadas | páginas em JavaScript: 18 a 150 caracteres de texto para o robô |
+| natura-musical, santander-patrocinios | oficial | vigia | desativadas | HTTP 403 para o robô |
+| ancine-fsa | oficial | vigia | desativada | URL estável não encontrada (timeout / 404) |
+| descentra-mg | plataforma | html | desativada | exige login; editais PNAB de MG que passam pelo CultBR entram por lá |
+| itau-cultural | oficial | vigia | desativada | sem página estável só de editais; a home geraria falso alarme |
+| oi-futuro | oficial | vigia | desativada | ConnectTimeout |
+| sesc-sp/df/mg/pe/go, sesc-sc, sesc-se/pb, secult-es | — | — | descartadas | URLs de edital que chutei deram 404 ou erro de DNS; não entraram no catálogo |
+
+Total: **17 fontes novas ativas** (3 instâncias de Mapas + MinC + CultBR + Radar + 11 vigias), 16 saudáveis no
+GitHub Actions e 1 bloqueada. O pedido sugeria 15.
+
+### Termos de uso conferidos (07/11/2026)
+
+- **Prosas:** `https://produtos.prosas.com.br/termos-de-uso` veda "usar quaisquer métodos de prospecção ou métodos
+  semelhantes de extração de dados"; `https://prosas.com.br/robots.txt` tem `Crawl-Delay: 30`. Decisão: **não
+  coletar**, nem como `descoberta` (extrair título e link da lista também é extração). O Radar tem 42 links do
+  Prosas e o worker os descarta sem abrir. Parceria seria o caminho; os editais do Prosas que importam entram pela
+  curadoria, com o link da página de inscrição.
+- **Radar de Editais (Clube Emma):** `https://radareditais.clubemma.com.br/robots.txt` libera a home (bloqueia
+  só `/fila-revisao-*` e `/candidatos-*`, que não tocamos) e `/termos` diz que as informações são públicas.
+  Permitido, como `descoberta`: lemos só os links; títulos, prazos e comentários do código-fonte da página deles
+  nunca entram no repositório (o fixture de teste omite os títulos). **Sugestão ao dono:** vale propor uma
+  parceria ao Clube Emma (atribuição mútua e um feed de links), já que dependemos da página deles.
+- **CultBR (MinC):** termos em `https://portal.cultbr.cultura.gov.br/oportunidades` (rodapé "Termos de uso"):
+  permitem consultar e reproduzir informação pública citando a fonte; proíbem só "extração automatizada abusiva".
+  Por isso 1 requisição a cada 3 s e a fonte é citada ("via CultBR (MinC)").
+- **MinC (gov.br/cultura):** robots.txt permite; sem termos específicos de raspagem.
+- **CultEditais:** desafio Cloudflare; não contornamos.
+- **Shell:** a página só mostra conteúdo com JavaScript (li pelo navegador). Resposta da pergunta 3 do FAQ: "Espetáculos
+  inéditos [...] no Rio de Janeiro e em São Paulo [...] são acompanhados pelo júri"; "Para concorrer nesta categoria
+  [Destaque Nacional], é necessário realizar inscrição por meio do formulário que será disponibilizado neste site a
+  partir de agosto". Conclusão: **não é edital**; entrou no `radar` com essa explicação.
+
+### Verificação
+
+- Coletores rodados no GitHub Actions (`--fonte todas --dry-run`, run 42370759998): 16 ok, `vigia-sesc-pr-editais`
+  `bloqueada_em_ci`. MinC, CultBR e os Mapas novos funcionam do runner.
+- Deduplicação em dado real: Ciclo de Saberes (MinC × Mapa da Cultura, prazo igual) vira 1 registro com a
+  alternativa; os 5 Funarte Aberta e fomentos PNAB de PE/CE com mesmo prazo **não** se juntam; 10 itens duplicados
+  dentro do CultBR são descartados por URL. Não há caso "MinC + Mapa + Prosas" porque o Prosas está desativado.
+- Candidatos conferidos no dado real: título, trecho e prazo vêm da página oficial; nenhum texto do Radar. Candidato
+  com prazo já vencido é descartado; título de página com template (`{{seal.name}}`) cai para o `<title>`.
+- **Produção (07/11/2026, depois do merge do PR #3 e da migration `20261107200000_v4_fontes.sql`):**
+  - 1º sync falhou com `KeyError` em `vigia-sesi-sp-editais` (laço de remoção assumia que toda fonte v4 gera
+    editais) e as áreas do CultBR em texto viravam letras soltas; corrigidos no PR #39. 2º sync: sucesso em
+    12 min 20 s; 3º (após o PR #60): sucesso em 14 min 20 s. Meta era < 20 min.
+  - Banco: 65 editais, 42 linhas em `fontes_status`, 59 editais com `via`, 1 com `fontes_alternativas`, 11 MB no total.
+  - Fila: 38 candidatos no 1º sync (2 eram ruído: portal de transparência e página "Carregando..."; fechados, e o
+    coletor passou a descartar páginas sem menção a edital). O teto é de 20 candidatos novos por execução.
+  - Verificado no navegador em produção: filtro "Tipo de apoio", card único do Ciclo de Saberes com "Também
+    publicado em: Mapas Culturais (BR)", "Fonte: Município de Campos dos Goytacazes · via CultBR (MinC)" e a lista
+    de fontes em `/sobre/`. O resumo do MinC trazia a barra de compartilhar do gov.br; corrigido no PR #60.
+  - Limites conhecidos: `mapas:pe`, `mapas:se` e `mapas:campinas` dão `ConnectTimeout` a partir do runner desde o
+    v1 (`mapas:pb` falhou uma vez); `vigia-sesc-pr-editais` leva 403 só no runner. A "última coleta boa" dessas
+    fontes veio de um dry-run local (data real, mas não do Actions). Nenhuma exigência de projeto aprovado (Rouanet)
+    aparece hoje nos abertos: o requisito só existe nos fixtures.
+
+
+## Assistente de Projetos Culturais (Fase 1)
+
+Escrita guiada por conversa em `/projeto/`. Visão geral e operação em `docs/assistente.md`. Decisões onde o prompt
+original conflitava com o repositório (aprovadas pelo usuário em 07/11/2026):
+
+- **Rota.** O GitHub Pages não reescreve rotas; `/projeto/novo?edital=<id>` virou `/projeto/?novo=1&edital=<chave>`
+  (uma página com visões por query string). O edital é identificado pela `chave` (`fonte:id_externo`), como no resto do site.
+- **`edital_id` é `bigint`, não `uuid`,** porque `editais.id` é `bigint identity`. Como os editais são apagados depois
+  de vencer, o projeto guarda também `edital_chave`, `edital_titulo` e `edital_url` (FK com `on delete set null`).
+- **Specs.** Fonte única em `specs/`; o Pages só publica `web/` e a Edge Function só empacota a própria pasta, então
+  `scripts/sincronizar_specs.mjs` gera as cópias e o CI (`--check` + pytest) falha se saírem de sincronia.
+- **TypeScript com Deno no CI** (`denoland/setup-deno`) para `llm.ts`/`prompts.ts` e demais módulos da função: 53 testes
+  sem rede. A lógica compartilhada com o navegador (`specs/lib/secoes.mjs`) é JavaScript puro.
+- **Dados pessoais em tabela própria** (`projeto_proponente`), que a função nunca lê: a regra de LGPD vale pela
+  estrutura do banco, não só pelo código. O texto livre ainda passa por filtro (CPF, CNPJ, e-mail, telefone, CEP).
+  O filtro não reconhece nomes de pessoas; a interface avisa.
+- **Cotas/pontuação extra são dado sensível:** pergunta com `canal: "formulario"` (não passa pelo chat nem pela IA), fica
+  na ficha e só vai a prompt se a pessoa marcar que pode citar. A pergunta de edital também é de formulário.
+- **RLS nas tabelas-filhas** por dono do projeto (não há `user_id` nelas). O usuário só **lê** mensagens, respostas,
+  histórico e uso; quem escreve é a função (`service_role`). `projeto_secoes` e `projetos` o usuário edita.
+- **Histórico de versões** por trigger `security definer` (o usuário só lê o histórico). Editar o texto tira a aprovação.
+  Um teste de RLS encontrou o defeito original: o trigger rodava com a permissão do usuário e falhava.
+- **`verify_jwt = false`** na função: o preflight CORS não leva JWT. A função valida o token no GoTrue e o dono do
+  projeto a cada chamada (leitura com o JWT do usuário, então a RLS filtra; escrita com `service_role`).
+- **Contrato do LLM.** O provedor recebe `fatos_novos_ficha` como lista de pares chave/valor (alguns provedores não
+  aceitam objeto sem propriedades fixas) e a função devolve o objeto do contrato. Tudo é revalidado; inválido → uma nova
+  tentativa → erro tratado (502).
+- **Limite diário** atômico na RPC `assistente_consumir_uso` (dia de Brasília). Conta ao iniciar a chamada, inclusive se
+  a IA falhar depois (não há estorno nesta fase).
+- **Modelo.** `gemini-3.6-flash` (Flash estável na documentação oficial em 07/11/2026; `gemini-2.5-flash` está
+  obsoleto). Configurável por `LLM_MODEL`. Groq fica como stub documentado.
+- **Plano gratuito do Gemini e LGPD.** Os termos da Google permitem usar prompts e respostas do plano gratuito para
+  melhorar produtos e revisão humana. Mitigação: filtro de dados pessoais, ficha restrita, aviso no chat e em `/sobre/`.
+  Quem quiser eliminar o risco usa um projeto com faturamento ou outro provedor.
+- **`/sobre/` ganhou a seção "Assistente de projetos"** e a frase "o portal não tem login" foi corrigida (navegar segue
+  sem login e sem cookies; a sessão do assistente fica em `localStorage`). É a única alteração em página existente além
+  do botão no painel do edital.
+- **Seções 6 a 11** existem só como placeholders `ativo: false` ("em breve").
+
+### Assistente: verificação em produção (07/11/2026)
+
+- **Publicação:** migração `20261108000000_assistente.sql` aplicada (8 tabelas com RLS; `anon` recebe 401 em todas e na RPC
+  do limite), função `assistente` v1 com `verify_jwt = false`, segredos `GEMINI_API_KEY`, `LLM_PROVIDER`, `LLM_MODEL=gemini-3.6-flash`
+  e `LIMITE_DIARIO=60`. Auth: só `site_url` e as URLs de redirecionamento foram enviados.
+- **`supabase config push` não deve ser usado às cegas:** o `config.toml` do repositório divergia da produção
+  (confirmação de e-mail, intervalo mínimo de 1 min entre e-mails, OTP de 8 dígitos e MFA TOTP). O arquivo foi alinhado
+  à produção antes do push, e o diff final continha só `site_url` e `additional_redirect_urls`. Rode `echo n | supabase config push`
+  para ver o diff antes de qualquer envio.
+- **Gemini real:** o modelo `gemini-3.6-flash` e o `responseSchema` (com `fatos_novos_ficha` como lista de pares) foram aceitos.
+  Respostas: perguntas adaptadas ao edital; rascunho só com fatos informados e `[COMPLETAR: ...]` onde faltou (4 pontos num
+  teste com 3 dados informados); filtro de LGPD tirou o e-mail do texto antes de IA e banco (conferido na tabela `mensagens`).
+- **Fluxos conferidos no navegador:** login (link de confirmação do primeiro acesso), botão no painel do edital, criar projeto
+  vinculado, chat, rascunho, aprovação com pontos pendentes, edição que tira a aprovação e grava a versão anterior, limite diário
+  (429 com mensagem amigável; `LIMITE_DIARIO` voltou para 60) e exclusão em cascata (todas as tabelas ficaram zeradas).
+- **`.docx`:** gerado com a biblioteca real (`docx@9.5.0` do jsDelivr) em Deno com `--unsafe-proto` (restrição do Deno, não do
+  navegador): arquivo válido, capa com proponente, edital e linguagem, seções em ordem e só os `[COMPLETAR]` em amarelo.
+- **Defeitos achados só em produção e corrigidos (PRs #83, #84, #85):** a palavra "null" escrita na tela (`replaceChildren`
+  com `null`), a linha "Edital:" vazia (mesmo nó de link em dois lugares) e o contador da lista desatualizado ao excluir. Cada um
+  ganhou teste de regressão que falha no código antigo.
+- **E-mail do login:** o SMTP padrão do Supabase só entrega para membros do projeto. Resend foi avaliado e **não resolve sem
+  domínio próprio verificado** (a conta não tem domínio; sem ele só envia para o e-mail do dono). Para o público geral entrar é
+  preciso um domínio com DNS (Resend, Brevo ou outro) e configurar *Authentication → SMTP Settings*.
