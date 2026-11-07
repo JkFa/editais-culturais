@@ -150,3 +150,20 @@ def test_config_do_ambiente(monkeypatch):
     monkeypatch.setenv("SUPABASE_URL", "https://a.supabase.co/")
     monkeypatch.setenv("SUPABASE_SERVICE_ROLE_KEY", "k")
     assert ConfigSupabase.do_ambiente().url == "https://a.supabase.co"
+
+
+async def test_chave_nova_sb_secret_vai_so_em_apikey():
+    vistos = []
+
+    def tratar(req):
+        vistos.append(req)
+        return httpx.Response(201)
+
+    sb = Supabase(
+        ConfigSupabase("https://p.invalid", "sb_secret_de-teste"),
+        transporte=httpx.MockTransport(tratar),
+    )
+    await sb.heartbeat(AGORA)
+    await sb.fechar()
+    assert vistos[0].headers["apikey"] == "sb_secret_de-teste"
+    assert "authorization" not in vistos[0].headers

@@ -41,6 +41,8 @@ jobs:
           python3 - <<'PY'
           import base64, json, os, sys
           chave = os.environ.get("SUPABASE_ANON_KEY", "")
+          if chave.startswith("sb_secret_"):
+              sys.exit("ERRO: SUPABASE_ANON_KEY contém uma secret key. Use a publishable/anon.")
           if chave.count(".") == 2:
               corpo = chave.split(".")[1]
               corpo += "=" * (-len(corpo) % 4)

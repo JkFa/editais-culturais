@@ -117,12 +117,13 @@ class Supabase:
         self, cfg: ConfigSupabase, transporte: httpx.AsyncBaseTransport | None = None
     ) -> None:
         self._base = f"{cfg.url}/rest/v1"
+        cabecalhos = {"apikey": cfg.chave_servico, "Content-Type": "application/json"}
+        # Chaves novas (`sb_secret_...`) não são JWT: vão só em `apikey`. A service_role
+        # legada (JWT) também vai em Authorization.
+        if not cfg.chave_servico.startswith("sb_"):
+            cabecalhos["Authorization"] = f"Bearer {cfg.chave_servico}"
         self._cliente = httpx.AsyncClient(
-            headers={
-                "apikey": cfg.chave_servico,
-                "Authorization": f"Bearer {cfg.chave_servico}",
-                "Content-Type": "application/json",
-            },
+            headers=cabecalhos,
             timeout=60,
             transport=transporte,
         )
