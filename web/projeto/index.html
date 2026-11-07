@@ -6,10 +6,9 @@
     <title>Assistente de projetos culturais</title>
     <meta name="description" content="Escreva seu projeto cultural para um edital, seção por seção, com ajuda de um assistente que só usa o que você informa." />
     <meta name="robots" content="noindex" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)" />
-    <script>(function(){try{var t=localStorage.getItem('editais-culturais:tema');if(t==='claro'||t==='escuro'){document.documentElement.dataset.tema=t;var c=t==='escuro'?'#161513':'#f7f5f0',m=document.querySelectorAll('meta[name=theme-color]');for(var i=0;i<m.length;i++){m[i].dataset.padrao=m[i].content;m[i].setAttribute('content',c)}}}catch(e){}})()</script>
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <script>(function(){try{var t=localStorage.getItem('editais-culturais:tema');if(t==='escuro'){document.documentElement.dataset.tema=t;var c=t==='escuro'?'#161513':'#f7f5f0',m=document.querySelectorAll('meta[name=theme-color]');for(var i=0;i<m.length;i++){m[i].dataset.padrao=m[i].content;m[i].setAttribute('content',c)}}}catch(e){}})()</script>
     <link rel="icon" href="../assets/img/icone.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="../assets/img/icone-180.png" />
     <link rel="manifest" href="../manifest.webmanifest" />
@@ -31,7 +30,7 @@
           <a href="./" aria-current="page">Meus projetos</a>
           <a href="../sobre/">Sobre</a>
         </nav>
-        <button type="button" class="btn btn-tema" data-alternar-tema>Tema: sistema</button>
+        <button type="button" class="btn btn-tema" data-alternar-tema>Tema: claro</button>
       </div>
     </header>
     <main id="conteudo" tabindex="-1">

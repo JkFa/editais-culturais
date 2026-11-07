@@ -26,9 +26,7 @@ function tokensDoBloco(inicio) {
 }
 
 const claro = tokensDoBloco(":root {");
-const escuroForcado = tokensDoBloco(':root[data-tema="escuro"]');
-const escuroSistema = tokensDoBloco(':root:not([data-tema="claro"])');
-const escuro = { ...claro, ...escuroForcado };
+const escuro = { ...claro, ...tokensDoBloco(':root[data-tema="escuro"]') };
 
 function analisar(valor) {
   valor = valor.trim();
@@ -98,14 +96,6 @@ for (const [tema, t] of [
   for (let n = 1; n <= 5; n++) {
     conferir(tema, t, `cartograma nível ${n} × fundo`, `--cg-${n}`, "--cor-fundo", 1.05);
   }
-}
-
-const ordenar = (o) => JSON.stringify(Object.entries(o).sort());
-if (ordenar(escuroForcado) === ordenar(escuroSistema)) {
-  console.log("ok    blocos escuros (sistema e forçado) idênticos");
-} else {
-  falhas++;
-  console.log("FALHA o bloco escuro de sistema difere do escuro forçado");
 }
 
 console.log(falhas ? `\n${falhas} falha(s)` : "\nContraste OK nos dois temas");

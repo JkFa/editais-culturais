@@ -1,10 +1,10 @@
 /* Tokens semânticos. Nenhum componente usa hex direto: tudo passa por aqui.
-   Três modos: sistema (padrão, via prefers-color-scheme), claro e escuro (data-tema).
-   O bloco escuro aparece duas vezes (sistema e forçado); scripts/contraste.mjs confere
-   que são idênticos e que todos os pares usados passam em WCAG AA. */
+   Dois temas: claro (padrão, sempre, sem olhar a preferência do sistema) e escuro, opcional
+   (data-tema="escuro", escolhido pelo botão). scripts/contraste.mjs confere que todos os
+   pares usados passam em WCAG AA nos dois. */
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --serifa: "Instrument Serif", "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -46,44 +46,6 @@
   --cg-t-3: #141413;
   --cg-t-4: #ffffff;
   --cg-t-5: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-tema="claro"]) {
-    --cor-fundo: #161513;
-    --cor-superficie: #1e1d1a;
-    --cor-superficie-elevada: #262420;
-    --cor-texto: #ece8df;
-    --cor-texto-suave: #a8a398;
-    --cor-borda: #34322c;
-    --cor-borda-controle: #7a766b;
-    --cor-urgente: #e07a5f;
-    --cor-urgente-fundo: rgba(224, 122, 95, 0.12);
-    --cor-urgente-sobre: #e07a5f;
-    --cor-urgente-suave: rgba(224, 122, 95, 0.12);
-    --cor-aberto: #8db580;
-    --cor-aberto-suave: rgba(141, 181, 128, 0.12);
-    --cor-foco: #ece8df;
-    --cor-destaque-fundo: #2a2824;
-    --cor-overlay: rgba(0, 0, 0, 0.6);
-
-    --cg-0: #1e1d1a;
-    --cg-1: #2a3a26;
-    --cg-2: #3f5c38;
-    --cg-3: #6f9a63;
-    --cg-4: #8db580;
-    --cg-5: #b5d6a8;
-    --cg-t-0: #a8a398;
-    --cg-t-1: #ece8df;
-    --cg-t-2: #ece8df;
-    --cg-t-3: #161513;
-    --cg-t-4: #161513;
-    --cg-t-5: #161513;
-  }
-}
-
-:root[data-tema="claro"] {
-  color-scheme: light;
 }
 
 :root[data-tema="escuro"] {

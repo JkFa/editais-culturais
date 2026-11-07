@@ -174,10 +174,11 @@ no resumo entregue ao fim do trabalho.
   snapshot, e a do banco ao vivo seria outra. Preferi um número que vale nos dois modos.
 - **Valor total na home e no cabeçalho do explorador** em formato compacto ("R$ 5,2 mi", valor exato no `title`): o valor
   cheio quebrava a linha em 4 colunas e estourava em 360 px.
-- **Tema:** três estados (sistema, claro, escuro) em `localStorage` (`editais-culturais:tema`, com try/catch), aplicados por um
-  script inline idêntico nas 4 páginas, antes do CSS (teste confere ordem e igualdade). `theme-color` com duas metas
-  `media=` e ajuste ao trocar. O bloco escuro de tokens existe duas vezes (sistema e forçado); o `contraste.mjs` falha se
-  divergirem.
+- **Tema (revisto em 07/11/2026):** o site **abre sempre no claro**, sem consultar `prefers-color-scheme`; o escuro é opcional,
+  pelo botão do cabeçalho. Só `escuro` vai para o `localStorage` (`editais-culturais:tema`, com try/catch); qualquer outro valor
+  guardado antes ("sistema", "claro") abre no claro. Script inline idêntico nas 5 páginas, antes do CSS (teste confere ordem e
+  igualdade). Uma única meta `theme-color`, ajustada ao trocar. Antes eram três estados (sistema, claro, escuro); removi o
+  "sistema" a pedido, o que também eliminou o bloco duplicado de tokens escuros.
 - **Contraste (valores finais, `scripts/contraste.mjs`, WCAG AA):** claro: fundo `#F7F5F0`, superfície `#FFFFFF`, texto `#141413`,
   texto suave `#5C5A54` (6,3:1), borda decorativa `#E2DFD7`, **borda de controle `#7D796C`** (≥3:1; a decorativa não passa),
   urgente `#B03F27` (5,4:1 no fundo; o `#C84B31` dá 4,3:1, então só preenche o badge "hoje" com texto branco 4,7:1), aberto
