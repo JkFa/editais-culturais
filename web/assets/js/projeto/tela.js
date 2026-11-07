@@ -377,20 +377,22 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   }
 
   // ───────────────────────── cabeçalho
-  const editalLink = projeto.edital_url
-    ? el("a", { href: projeto.edital_url, target: "_blank", rel: "noopener noreferrer" }, projeto.edital_titulo ?? "edital oficial")
-    : null;
+  // Um nó do DOM só pode estar num lugar: cada uso precisa de um link novo.
+  const criarLinkEdital = () =>
+    projeto.edital_url
+      ? el("a", { href: projeto.edital_url, target: "_blank", rel: "noopener noreferrer" }, projeto.edital_titulo ?? "edital oficial")
+      : null;
   preencher(raiz, 
     ctx.barra,
     el("div", { class: "topo-projeto" },
       el("div", {},
         el("p", { class: "fonte" }, el("a", { href: "./" }, "← Meus projetos")),
         el("h1", {}, projeto.titulo),
-        el("p", { class: "fonte" }, projeto.edital_titulo ? ["Edital: ", editalLink ?? projeto.edital_titulo] : "Projeto avulso (sem edital)")),
+        el("p", { class: "fonte" }, projeto.edital_titulo ? ["Edital: ", criarLinkEdital() ?? projeto.edital_titulo] : "Projeto avulso (sem edital)")),
       el("div", { class: "acoes" },
         el("button", { type: "button", class: "btn", onclick: () => abrirProponente(ctx, estado.projeto) }, "Dados do proponente"),
         el("button", { type: "button", class: "btn", onclick: () => abrirExportacao(ctx, { projeto: estado.projeto, secoes: ativas, linhaDe }) }, "Exportar e copiar"))),
-    el("p", { class: "aviso-fixo" }, AVISO_IA, " ", editalLink ? ["Regras: ", editalLink, "."] : null),
+    el("p", { class: "aviso-fixo" }, AVISO_IA, " ", projeto.edital_url ? ["Regras: ", criarLinkEdital(), "."] : null),
     el("details", { class: "aviso-fixo" }, el("summary", {}, "Privacidade: o que vai para a IA"), el("p", {}, AVISO_PRIVACIDADE)),
     abas,
     grade,
