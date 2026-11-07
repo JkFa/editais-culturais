@@ -312,3 +312,17 @@ GitHub Actions e 1 bloqueada. O pedido sugeria 15.
   dentro do CultBR são descartados por URL. Não há caso "MinC + Mapa + Prosas" porque o Prosas está desativado.
 - Candidatos conferidos no dado real: título, trecho e prazo vêm da página oficial; nenhum texto do Radar. Candidato
   com prazo já vencido é descartado; título de página com template (`{{seal.name}}`) cai para o `<title>`.
+- **Produção (07/11/2026, depois do merge do PR #3 e da migration `20261107200000_v4_fontes.sql`):**
+  - 1º sync falhou com `KeyError` em `vigia-sesi-sp-editais` (laço de remoção assumia que toda fonte v4 gera
+    editais) e as áreas do CultBR em texto viravam letras soltas; corrigidos no PR #39. 2º sync: sucesso em
+    12 min 20 s; 3º (após o PR #60): sucesso em 14 min 20 s. Meta era < 20 min.
+  - Banco: 65 editais, 42 linhas em `fontes_status`, 59 editais com `via`, 1 com `fontes_alternativas`, 11 MB no total.
+  - Fila: 38 candidatos no 1º sync (2 eram ruído: portal de transparência e página "Carregando..."; fechados, e o
+    coletor passou a descartar páginas sem menção a edital). O teto é de 20 candidatos novos por execução.
+  - Verificado no navegador em produção: filtro "Tipo de apoio", card único do Ciclo de Saberes com "Também
+    publicado em: Mapas Culturais (BR)", "Fonte: Município de Campos dos Goytacazes · via CultBR (MinC)" e a lista
+    de fontes em `/sobre/`. O resumo do MinC trazia a barra de compartilhar do gov.br; corrigido no PR #60.
+  - Limites conhecidos: `mapas:pe`, `mapas:se` e `mapas:campinas` dão `ConnectTimeout` a partir do runner desde o
+    v1 (`mapas:pb` falhou uma vez); `vigia-sesc-pr-editais` leva 403 só no runner. A "última coleta boa" dessas
+    fontes veio de um dry-run local (data real, mas não do Actions). Nenhuma exigência de projeto aprovado (Rouanet)
+    aparece hoje nos abertos: o requisito só existe nos fixtures.
