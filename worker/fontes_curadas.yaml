@@ -214,3 +214,12 @@ radar:
     janela_habitual: "março a abril"
     linguagens: ["Teatro & Dança", "Música", "Literatura"]
     verificado_em: "2026-11-06"
+
+  - id_externo: premio-shell-de-teatro
+    titulo: "Prêmio Shell de Teatro (categoria Destaque Nacional)"
+    orgao_fomento: "Shell Brasil"
+    url_referencia: "https://www.shell.com.br/sustentabilidade/sociedade/premio-shell-de-teatro"
+    ultima_edicao: "37ª edição. O prêmio principal não tem inscrição: espetáculos inéditos no Rio de Janeiro e em São Paulo são acompanhados pelo júri. Só a categoria Destaque Nacional (peças fora do eixo Rio-São Paulo) exige inscrição, por formulário no site."
+    janela_habitual: "a partir de agosto (formulário da categoria Destaque Nacional)"
+    linguagens: ["Teatro & Dança"]
+    verificado_em: "2026-11-07"

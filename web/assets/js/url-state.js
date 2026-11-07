@@ -1,5 +1,5 @@
 // Estado <-> URL. Abrir um link compartilhado reproduz exatamente a mesma tela.
-import { LINGUAGENS, ORDENS, PERFIS, UFS, estadoInicial } from "./filtros.js";
+import { LINGUAGENS, ORDENS, PERFIS, TIPOS_APOIO, UFS, estadoInicial } from "./filtros.js";
 
 export function lerEstado(busca = location.search) {
   const p = new URLSearchParams(busca);
@@ -12,6 +12,7 @@ export function lerEstado(busca = location.search) {
     estado.uf = p.get("uf");
     estado.abrangencia = "";
   }
+  if (TIPOS_APOIO.some((t) => t.id === p.get("apoio"))) estado.tipoApoio = p.get("apoio");
   estado.apenasAbertas = p.get("abertas") !== "0";
   if (ORDENS.some((o) => o.id === p.get("ord"))) estado.ordem = p.get("ord");
   if (p.get("aba") === "favoritos") estado.aba = "favoritos";
@@ -25,6 +26,7 @@ export function montarBusca(estado, edital = null) {
   if (estado.linguagens.length) p.set("ling", estado.linguagens.join(","));
   if (estado.abrangencia) p.set("abr", estado.abrangencia);
   if (estado.uf) p.set("uf", estado.uf);
+  if (estado.tipoApoio) p.set("apoio", estado.tipoApoio);
   if (!estado.apenasAbertas) p.set("abertas", "0");
   if (estado.ordem !== "prazo") p.set("ord", estado.ordem);
   if (estado.aba === "favoritos") p.set("aba", "favoritos");

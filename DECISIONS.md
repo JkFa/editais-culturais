@@ -211,3 +211,104 @@ no resumo entregue ao fim do trabalho.
   `assets/img/og.svg` convertido para PNG por `scripts/gerar_imagens.py` (Playwright, já dependência de teste).
 - **Testes:** fixtures de e2e foram para o `conftest.py` e os auxiliares para `tests/e2e_util.py`; `test_v2_site.py` cobre
   redirecionamentos, tema sem flash, visitas, cartograma e celular × temas (360×740 e 390×844); screenshots em `docs/v2/`.
+
+## v4: novas fontes (07/11/2026)
+
+Pré-requisito do pedido: a "fila de curadoria" e a tabela `fontes_status` da v3 não existiam (o
+`PROMPT_v3_evolucao_completa.md` não está no repositório). Implementei a versão mínima: Issues com as
+etiquetas `candidato` e `aprovado` (`worker/fila.py`) e `fontes_status` (migration
+`20261107200000_v4_fontes.sql`).
+
+### Modelo
+
+- Catálogo em `worker/fontes.yaml` (`fontes:` + as `instancias:` de Mapas Culturais). Tipos:
+  **oficial** e **plataforma** publicam com evidência; **descoberta** nunca publica, só abre candidato.
+- Candidato = Issue `candidato` com marcador `<!-- candidato:<hash> -->`, link oficial, trecho lido da
+  página oficial e um YAML proposto. A pessoa completa o YAML (evidência obrigatória), troca a etiqueta
+  por `aprovado` e o sync seguinte publica (fonte `curadoria`, id `fila-<n>`); prazo vencido fecha a Issue;
+  YAML inválido recebe comentário. Nada é recriado, mesmo com a Issue fechada.
+- **Prazo nunca é adivinhado:** `worker/prazos_texto.py` só aceita data com ano e guarda o trecho. Edital sem
+  prazo legível vira candidato, não edital (foi o caso de 2 dos 4 editais do MinC).
+- **Cliente web educado** (`worker/web.py`): robots.txt (e Crawl-delay), User-Agent com o link do repositório,
+  sequencial por domínio com intervalo, timeout de 30 s. 403/429 ou desafio anti-bot viram `bloqueada_em_ci`
+  e **não são contornados** (uma tentativa, sem retry, sem outro User-Agent).
+- **Cache:** hash do texto principal nos vigias (`worker/cache/vigias.json`); ETag suportado no cliente, mas
+  nenhuma das fontes atuais devolve ETag nas listagens, então não é usado em coleta (honesto: o pedido de
+  "ETag ou hash" fica coberto só pelo hash).
+- **Deduplicação** (`worker/dedup.py`): mesma URL normalizada em qualquer par de fontes, ou prazo no mesmo dia
+  + títulos parecidos (Jaccard das palavras de conteúdo ≥ 0,4, ≥ 3 em comum) **só entre fontes diferentes**.
+  Duas ofertas da mesma fonte nunca se juntam (os 5 "Funarte Aberta" têm título e prazo quase iguais).
+  Canônico: curadoria > oficial > plataforma > descoberta; as outras origens vão em `fontes_alternativas`.
+  Primeira versão juntava demais (rodei no dado real e vi falsos positivos entre editais PNAB de municípios
+  diferentes); corrigi antes de publicar.
+- **Tipo de apoio** (5 valores) e **requisitos** ("Exige projeto aprovado na Lei Rouanet") só com evidência regex
+  no texto, com negação ignorada (o texto real do Rouanet nas Favelas 2 *veda* projetos com Pronac ativo, e o
+  regex não vira exigência). Sem evidência = `null`; sob o filtro "Tipo de apoio" o `null` some.
+- **Regex de valores:** "R$ 1.000.000 para cada uma das localidades" (garantia por local) e "montante mínimo de"
+  (piso) deixaram de contar como teto/total; achado no texto real do MinC.
+- `--fonte <id|todas> [--dry-run]` roda fontes isoladas no Actions sem mexer no snapshot.
+
+### Fontes avaliadas (07/11/2026)
+
+| fonte | tipo | método | status | motivo / observação |
+|---|---|---|---|---|
+| minc-inscricoes-abertas | oficial | html (Plone) | **ativa** | sem REST nem RSS (404); `a.govbr-card-content` + página de cada edital; a lista "abertas" traz editais já encerrados |
+| cultbr-pnab | plataforma | api | **ativa** | API pública do portal; 12 editais estruturados (prazo, valor, proponentes) + candidatos; "via CultBR (MinC)" |
+| radar-clube-emma | descoberta | html | **ativa** | só links; 20 candidatos/dia; ignora Prosas e CultBR |
+| mapas:es, mapas:cim-amfri, mapas:parauapebas | plataforma | api | **ativas** | descobertas pelos links do Radar; a API de Mapas respondeu |
+| vigia-petrobras-cultural | oficial | vigia | **ativa** | |
+| vigia-sesi-sp-editais | oficial | vigia | **ativa** | |
+| vigia-sesc-pr-editais | oficial | vigia | ativa, **bloqueada_em_ci** | HTTP 403 só no runner do GitHub (da minha máquina responde). Não contornamos; Issue semanal "Conferir manualmente" |
+| vigia-sesc-rj-pulsar | oficial | vigia | **ativa** | |
+| vigia-instituto-cultural-vale | oficial | vigia | **ativa** | |
+| vigia-spcine-fomento | oficial | vigia | **ativa** | |
+| vigia-funarte-editais | oficial | vigia | **ativa** | |
+| vigia-riofilme-chamadas | oficial | vigia | **ativa** | |
+| vigia-rj-incentivo-cultura | oficial | vigia | **ativa** | |
+| vigia-claro-patrocinios | oficial | vigia | **ativa** | patrocínio contínuo, link vindo do Radar |
+| vigia-renner-patrocinios | oficial | vigia | **ativa** | idem |
+| prosas-central-de-editais | plataforma | html | **desativada** | termos proíbem extração de dados; Crawl-delay 30 s (ver abaixo) |
+| culteditais | oficial | html | **desativada** | desafio anti-bot do Cloudflare; dados chegam pelo CultBR |
+| shell-premio-teatro | oficial | html | desativada | sem inscrição pública; só Destaque Nacional exige formulário (radar) |
+| bb-patrocinios, caixa-patrocinios, bndes-patrocinios, porto-seguro-patrocinio, smc-sp-editais | oficial | vigia | desativadas | páginas em JavaScript: 18 a 150 caracteres de texto para o robô |
+| natura-musical, santander-patrocinios | oficial | vigia | desativadas | HTTP 403 para o robô |
+| ancine-fsa | oficial | vigia | desativada | URL estável não encontrada (timeout / 404) |
+| descentra-mg | plataforma | html | desativada | exige login; editais PNAB de MG que passam pelo CultBR entram por lá |
+| itau-cultural | oficial | vigia | desativada | sem página estável só de editais; a home geraria falso alarme |
+| oi-futuro | oficial | vigia | desativada | ConnectTimeout |
+| sesc-sp/df/mg/pe/go, sesc-sc, sesc-se/pb, secult-es | — | — | descartadas | URLs de edital que chutei deram 404 ou erro de DNS; não entraram no catálogo |
+
+Total: **17 fontes novas ativas** (3 instâncias de Mapas + MinC + CultBR + Radar + 11 vigias), 16 saudáveis no
+GitHub Actions e 1 bloqueada. O pedido sugeria 15.
+
+### Termos de uso conferidos (07/11/2026)
+
+- **Prosas:** `https://produtos.prosas.com.br/termos-de-uso` veda "usar quaisquer métodos de prospecção ou métodos
+  semelhantes de extração de dados"; `https://prosas.com.br/robots.txt` tem `Crawl-Delay: 30`. Decisão: **não
+  coletar**, nem como `descoberta` (extrair título e link da lista também é extração). O Radar tem 42 links do
+  Prosas e o worker os descarta sem abrir. Parceria seria o caminho; os editais do Prosas que importam entram pela
+  curadoria, com o link da página de inscrição.
+- **Radar de Editais (Clube Emma):** `https://radareditais.clubemma.com.br/robots.txt` libera a home (bloqueia
+  só `/fila-revisao-*` e `/candidatos-*`, que não tocamos) e `/termos` diz que as informações são públicas.
+  Permitido, como `descoberta`: lemos só os links; títulos, prazos e comentários do código-fonte da página deles
+  nunca entram no repositório (o fixture de teste omite os títulos). **Sugestão ao dono:** vale propor uma
+  parceria ao Clube Emma (atribuição mútua e um feed de links), já que dependemos da página deles.
+- **CultBR (MinC):** termos em `https://portal.cultbr.cultura.gov.br/oportunidades` (rodapé "Termos de uso"):
+  permitem consultar e reproduzir informação pública citando a fonte; proíbem só "extração automatizada abusiva".
+  Por isso 1 requisição a cada 3 s e a fonte é citada ("via CultBR (MinC)").
+- **MinC (gov.br/cultura):** robots.txt permite; sem termos específicos de raspagem.
+- **CultEditais:** desafio Cloudflare; não contornamos.
+- **Shell:** a página só mostra conteúdo com JavaScript (li pelo navegador). Resposta da pergunta 3 do FAQ: "Espetáculos
+  inéditos [...] no Rio de Janeiro e em São Paulo [...] são acompanhados pelo júri"; "Para concorrer nesta categoria
+  [Destaque Nacional], é necessário realizar inscrição por meio do formulário que será disponibilizado neste site a
+  partir de agosto". Conclusão: **não é edital**; entrou no `radar` com essa explicação.
+
+### Verificação
+
+- Coletores rodados no GitHub Actions (`--fonte todas --dry-run`, run 42370759998): 16 ok, `vigia-sesc-pr-editais`
+  `bloqueada_em_ci`. MinC, CultBR e os Mapas novos funcionam do runner.
+- Deduplicação em dado real: Ciclo de Saberes (MinC × Mapa da Cultura, prazo igual) vira 1 registro com a
+  alternativa; os 5 Funarte Aberta e fomentos PNAB de PE/CE com mesmo prazo **não** se juntam; 10 itens duplicados
+  dentro do CultBR são descartados por URL. Não há caso "MinC + Mapa + Prosas" porque o Prosas está desativado.
+- Candidatos conferidos no dado real: título, trecho e prazo vêm da página oficial; nenhum texto do Radar. Candidato
+  com prazo já vencido é descartado; título de página com template (`{{seal.name}}`) cai para o `<title>`.

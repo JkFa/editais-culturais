@@ -10,6 +10,7 @@ from conftest import carregar
 from worker import scraper_worker
 from worker.coletores import mapas_culturais
 from worker.http import ClienteHttp
+from worker.web import ClienteWeb
 
 AGORA = datetime.now(UTC)
 
@@ -41,6 +42,20 @@ def test_fontes_yaml_valido_e_instancias_inativas_tem_motivo():
     for i in instancias:
         if not i.ativa:
             assert i.motivo
+
+
+@pytest.fixture(autouse=True)
+def sem_fontes_v4_na_rede(monkeypatch, request):
+    """Os testes de orquestração não saem para a internet: as fontes v4 têm testes próprios."""
+    if "com_fontes_v4" in request.keywords:
+        return
+
+    async def vazio(*a, **kw):
+        from worker.fontes_v4 import ResultadoV4
+
+        return ResultadoV4()
+
+    monkeypatch.setattr(scraper_worker, "rodar_fontes_v4", vazio)
 
 
 @pytest.fixture
@@ -78,7 +93,7 @@ async def test_dry_run_gera_snapshot_valido_e_falha_isolada(tmp_path, servidor_f
         e["url_origem"] and e["inscricao_fim"] for e in corpo["editais"]
     )
     assert {e["fonte"] for e in corpo["editais"]} >= {"curadoria", "mapas:ce"}
-    assert len(corpo["radar"]) == 5
+    assert len(corpo["radar"]) == 6
     fins = [e["inscricao_fim"] for e in corpo["editais"]]
     assert fins == sorted(fins)
 
@@ -164,3 +179,47 @@ async def test_banco_vazio_grava_tudo_mesmo_com_snapshot_anterior(
     monkeypatch.setattr(persistencia.Supabase, "__init__", init)
     assert await scraper_worker.executar(dry_run=False, snapshot=snapshot) == 0
     assert sum(posts) > 0
+
+
+async def test_fonte_unica_desconhecida_retorna_2(capsys):
+    assert await scraper_worker.executar_fonte_unica("nao-existe", dry_run=True) == 2
+    assert "fonte desconhecida" in capsys.readouterr().out
+
+
+@pytest.mark.com_fontes_v4
+async def test_fonte_unica_desativada_nao_faz_requisicao_e_reporta_o_motivo(capsys, monkeypatch):
+    chamadas = []
+
+    def tratar(req):
+        chamadas.append(req)
+        return httpx.Response(500)
+
+    original = ClienteWeb.__init__ if False else None
+    _ = original
+    assert await scraper_worker.executar_fonte_unica("prosas-central-de-editais", dry_run=True) == 0
+    saida = capsys.readouterr().out
+    assert '"status": "desativada"' in saida and "extração de dados" in saida
+    assert chamadas == []
+
+
+async def test_snapshot_gerado_leva_o_catalogo_de_fontes_com_saude(
+    tmp_path, servidor_falso, monkeypatch
+):
+    from worker.catalogo import carregar_fontes_v4, status_desativada
+    from worker.fontes_v4 import ResultadoV4
+
+    async def so_desativadas(fontes, *a, **kw):
+        return ResultadoV4(status=[status_desativada(f) for f in fontes if not f.ativa])
+
+    monkeypatch.setattr(scraper_worker, "rodar_fontes_v4", so_desativadas)
+    _ = carregar_fontes_v4
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    snapshot = tmp_path / "s.json"
+    assert await scraper_worker.executar(dry_run=True, snapshot=snapshot) == 0
+    corpo = json.loads(snapshot.read_text(encoding="utf-8"))
+    por_id = {f["fonte"]: f for f in corpo["fontes"]}
+    assert por_id["mapas:ce"]["status"] == "ok" and por_id["mapas:ce"]["total_coletado"] > 0
+    assert por_id["mapas:pe"]["status"] == "erro"  # o servidor falso devolve 503
+    assert por_id["curadoria"]["status"] == "ok"
+    assert por_id["mapas:df"]["status"] == "desativada" and por_id["mapas:df"]["motivo"]
+    assert por_id["prosas-central-de-editais"]["status"] == "desativada"

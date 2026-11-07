@@ -1201,3 +1201,14 @@ body {
   min-height: 150vh;
   align-content: start;
 }
+
+.card .via {
+  margin: -0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--cor-texto-suave);
+}
+
+.pilula.requisito {
+  border-color: var(--cor-urgente);
+  color: var(--cor-urgente);
+}
