@@ -6,6 +6,7 @@ import time
 from pathlib import Path
 
 import pytest
+from sql_util import PREAMBULO_SUPABASE
 
 MIGRATIONS = sorted(
     (Path(__file__).resolve().parent.parent / "supabase" / "migrations").glob("*.sql")
@@ -58,7 +59,7 @@ def banco():
     time.sleep(1.5)
     psql(
         nome,
-        "create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;",
+        PREAMBULO_SUPABASE,
     )
     yield nome
     subprocess.run(["docker", "rm", "-f", nome], capture_output=True)
