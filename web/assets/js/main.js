@@ -1,6 +1,7 @@
 // Orquestra a página: dados, filtros, URL, lista, painel, favoritos e radar.
 import { atualizarBadges, criarCard, criarCardRemovido } from "./cards.js";
-import { carregarDados } from "./dados.js";
+import { config, iniciarPagina, preencherUltimaColeta } from "./comum.js";
+import { carregarProgressivo } from "./dados.js";
 import { Painel, copiarTexto } from "./drawer.js";
 import {
   Favoritos,
@@ -11,12 +12,11 @@ import {
   resolverFavoritos,
 } from "./favoritos.js";
 import { LINGUAGENS, ORDENS, PERFIS, UFS, contadores, filtrar, filtrosAtivos, ordenar } from "./filtros.js";
-import { el, formatarDataHora, formatarMoeda, plural } from "./formatos.js";
-import { mesAtualBrasilia, mesesAteJanela } from "./prazos.js";
+import { el, formatarDataHora, formatarMoeda, formatarMoedaCompacta, plural } from "./formatos.js";
+import { renderRadar } from "./radar.js";
 import { empilharPainel, gravarEstado, lerEstado, urlDoPortal } from "./url-state.js";
 
 const $ = (seletor) => document.querySelector(seletor);
-const config = window.EDITAIS_CONFIG ?? {};
 
 let dados = null;
 let estado = lerEstado().estado;
@@ -103,6 +103,78 @@ function aoMudarFiltro() {
   gravarEstado(estado, editalAbertoChave);
 }
 
+// ---------------------------------------------------------------- folha de filtros (celular)
+// Em telas estreitas a barra "Posso me inscrever?" vira uma folha inferior, aberta por um
+// botão fixo "Filtros (n)". No desktop continua a barra de sempre.
+
+const telaEstreita = window.matchMedia("(max-width: 48rem)");
+const folha = {
+  aberta: false,
+  origem: null,
+};
+
+function atualizarBotaoFiltros() {
+  // A busca fica sempre visível e por isso não entra na conta.
+  const n = filtrosAtivos({ ...estado, q: "" }).length;
+  $("#filtros-n").textContent = String(n);
+  $("#abrir-filtros").setAttribute("aria-label", `Filtros, ${n} ${n === 1 ? "ativo" : "ativos"}. Abrir filtros.`);
+  const visiveis = dados ? filtrar(dados.editais, estado, new Date(), chavesServidor).length : 0;
+  $("#folha-ver").textContent = visiveis === 1 ? "Ver 1 edital" : `Ver ${visiveis} editais`;
+}
+
+function configurarFolha() {
+  const secao = $("#filtros");
+  secao.setAttribute("role", "dialog");
+  secao.setAttribute("aria-modal", "true");
+  secao.toggleAttribute("data-aberta", false);
+  if (!telaEstreita.matches) {
+    secao.removeAttribute("role");
+    secao.removeAttribute("aria-modal");
+  }
+}
+
+function abrirFolha() {
+  if (!telaEstreita.matches || folha.aberta) return;
+  folha.aberta = true;
+  folha.origem = $("#abrir-filtros");
+  $("#filtros").setAttribute("data-aberta", "");
+  $("#folha-fundo").hidden = false;
+  $("#abrir-filtros").setAttribute("aria-expanded", "true");
+  document.body.classList.add("folha-aberta");
+  $("#folha-fechar").focus();
+  document.addEventListener("keydown", aoTeclarNaFolha);
+}
+
+function fecharFolha() {
+  if (!folha.aberta) return;
+  folha.aberta = false;
+  $("#filtros").removeAttribute("data-aberta");
+  $("#folha-fundo").hidden = true;
+  $("#abrir-filtros").setAttribute("aria-expanded", "false");
+  document.body.classList.remove("folha-aberta");
+  document.removeEventListener("keydown", aoTeclarNaFolha);
+  folha.origem?.focus();
+}
+
+function aoTeclarNaFolha(evento) {
+  if (evento.key === "Escape") {
+    evento.preventDefault();
+    fecharFolha();
+    return;
+  }
+  if (evento.key !== "Tab") return;
+  const focaveis = [...$("#filtros").querySelectorAll("button, input, select, a[href]")].filter((n) => n.offsetParent !== null);
+  const primeiro = focaveis[0];
+  const ultimo = focaveis.at(-1);
+  if (evento.shiftKey && document.activeElement === primeiro) {
+    evento.preventDefault();
+    ultimo.focus();
+  } else if (!evento.shiftKey && document.activeElement === ultimo) {
+    evento.preventDefault();
+    primeiro.focus();
+  }
+}
+
 // ---------------------------------------------------------------- cabeçalho, lista, radar
 
 function renderContadores() {
@@ -113,7 +185,11 @@ function renderContadores() {
     el(
       "li",
       {},
-      el("span", { class: "valor" }, c.comValorInformado ? formatarMoeda(c.somaValores) : "—"),
+      el(
+        "span",
+        { class: "valor", title: c.comValorInformado ? formatarMoeda(c.somaValores) : null },
+        c.comValorInformado ? formatarMoedaCompacta(c.somaValores) : "—",
+      ),
       el("span", { class: "rotulo" }, `em ${plural(c.comValorInformado, "edital", "editais")} com valor informado (os demais não informam o total)`),
     ),
   );
@@ -162,6 +238,8 @@ function renderLista() {
   atualizarContadorFavoritos();
   $("#barra-exportar").hidden = estado.aba !== "favoritos";
   $("#filtros").hidden = estado.aba === "favoritos";
+  $("#abrir-filtros").hidden = estado.aba === "favoritos";
+  atualizarBotaoFiltros();
   if (estado.aba === "favoritos") return renderFavoritos(lista, info);
   const visiveis = ordenar(filtrar(dados.editais, estado, new Date(), chavesServidor), estado.ordem);
   info.textContent = `${plural(visiveis.length, "edital", "editais")} de ${dados.editais.length} abertos`;
@@ -191,42 +269,6 @@ function renderFavoritos(lista, info) {
   );
 }
 
-function renderRadar() {
-  const secao = $("#radar");
-  const itens = dados.radar ?? [];
-  if (!itens.length) {
-    secao.hidden = true;
-    return;
-  }
-  const mes = mesAtualBrasilia();
-  const ordenados = [...itens].sort((a, b) => {
-    const da = mesesAteJanela(a.janela_mes_inicio, a.janela_mes_fim, mes) ?? 99;
-    const db = mesesAteJanela(b.janela_mes_inicio, b.janela_mes_fim, mes) ?? 99;
-    return da - db;
-  });
-  secao.hidden = false;
-  $("#radar-lista").replaceChildren(
-    ...ordenados.map((r) =>
-      el(
-        "li",
-        {},
-        el(
-          "div",
-          {},
-          el("div", { class: "titulo-radar" }, r.url_referencia ? el("a", { href: r.url_referencia, target: "_blank", rel: "noopener noreferrer" }, r.titulo) : r.titulo),
-          el("div", { class: "detalhe" }, r.orgao_fomento),
-        ),
-        el(
-          "div",
-          {},
-          r.janela_habitual ? el("div", { class: "janela" }, `Costuma abrir: ${r.janela_habitual}`) : null,
-          r.ultima_edicao ? el("div", { class: "detalhe" }, `Sobre a última edição: ${r.ultima_edicao}`) : null,
-        ),
-      ),
-    ),
-  );
-}
-
 function renderRodape() {
   const texto = $("#fonte-texto");
   const ponto = $("#fonte-ponto");
@@ -234,7 +276,8 @@ function renderRodape() {
     texto.textContent = "Dados ao vivo";
     ponto.classList.remove("offline");
   } else {
-    texto.textContent = `Dados de ${formatarDataHora(dados.geradoEm)} (cópia offline)`;
+    const data = formatarDataHora(dados.geradoEm);
+    texto.textContent = dados.atualizando ? `Dados de ${data}. Atualizando…` : `Dados de ${data} (cópia offline)`;
     ponto.classList.add("offline");
     if (dados.motivoFallback) texto.title = `Supabase indisponível: ${dados.motivoFallback}`;
   }
@@ -346,6 +389,14 @@ function ligarEventos() {
       aoMudarFiltro();
     });
   }
+  $("#abrir-filtros").addEventListener("click", abrirFolha);
+  $("#folha-fechar").addEventListener("click", fecharFolha);
+  $("#folha-ver").addEventListener("click", fecharFolha);
+  $("#folha-fundo").addEventListener("click", fecharFolha);
+  telaEstreita.addEventListener("change", () => {
+    fecharFolha();
+    configurarFolha();
+  });
   $("#exportar-csv").addEventListener("click", () => exportar("csv"));
   $("#exportar-ics").addEventListener("click", () => exportar("ics"));
   $("#exportar-whatsapp").addEventListener("click", () => exportar("whatsapp"));
@@ -408,30 +459,40 @@ function mostrarErro(erro) {
   $("#fonte-texto").textContent = "Sem dados";
 }
 
-async function iniciar() {
-  renderFiltros();
-  ligarEventos();
-  mostrarEsqueleto();
-  atualizarContadorFavoritos();
-  try {
-    dados = await carregarDados(config);
-  } catch (erro) {
-    return mostrarErro(erro);
-  }
+/** Chamado com o snapshot e, depois, com os dados ao vivo: redesenha sem perder filtros nem painel. */
+async function aplicarDados(novos) {
+  const primeira = dados === null;
+  dados = novos;
   $("#lista").setAttribute("aria-busy", "false");
-  if (dados.motivoFallback) {
-    $("#aviso-topo").hidden = false;
-    $("#aviso-topo").textContent = "O banco ao vivo não respondeu; mostrando a cópia offline mais recente.";
-  }
+  const aviso = $("#aviso-topo");
+  aviso.hidden = !dados.motivoFallback;
+  if (dados.motivoFallback) aviso.textContent = "O banco ao vivo não respondeu; mostrando a cópia offline mais recente.";
+  chavesServidor = null;
   if (estado.q && dados.buscarNoServidor) {
     chavesServidor = await dados.buscarNoServidor(estado.q).catch(() => null);
   }
   renderContadores();
   renderRodape();
-  renderRadar();
+  renderRadar($("#radar"), $("#radar-lista"), dados.radar);
+  preencherUltimaColeta(dados.geradoEm);
   renderLista();
-  sincronizarPainelComUrl();
+  if (primeira) sincronizarPainelComUrl();
   document.documentElement.dataset.pronto = "1"; // sinal para testes automatizados
+  document.documentElement.dataset.origem = dados.origem;
+}
+
+async function iniciar() {
+  iniciarPagina("editais");
+  renderFiltros();
+  configurarFolha();
+  ligarEventos();
+  mostrarEsqueleto();
+  atualizarContadorFavoritos();
+  try {
+    await carregarProgressivo(config, aplicarDados);
+  } catch (erro) {
+    mostrarErro(erro);
+  }
 }
 
 iniciar();

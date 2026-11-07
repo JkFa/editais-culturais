@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f7f5f0"/>
+  <rect x="64" y="64" width="1072" height="3" fill="#141413"/>
+  <text x="64" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="24" fill="#5c5a54">EDITAIS CULTURAIS DO BRASIL</text>
+  <text font-family="'Instrument Serif', Georgia, 'Times New Roman', serif" font-size="104" fill="#141413">
+    <tspan x="64" y="270">Editais de cultura</tspan>
+    <tspan x="64" y="378">abertos no Brasil,</tspan>
+    <tspan x="64" y="486">lidos para você.</tspan>
+  </text>
+  <rect x="64" y="540" width="1072" height="1" fill="#e2dfd7"/>
+  <text x="64" y="582" font-family="'Inter', system-ui, sans-serif" font-size="24" fill="#5c5a54">Prazo, valor e quem pode se inscrever</text>
+  <text x="1136" y="582" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="22" fill="#b03f27">jkfa.github.io/editais-culturais</text>
+</svg>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Sobre o portal: metodologia, fontes e limitações</title>
+    <meta name="description" content="Como o portal de editais culturais coleta, trata e confere os dados, quais fontes usa, o que ainda não sabe e como privacidade e visitas são tratadas." />
+    <link rel="canonical" href="https://jkfa.github.io/editais-culturais/sobre/" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Editais culturais do Brasil" />
+    <meta property="og:title" content="Sobre o portal: metodologia, fontes e limitações" />
+    <meta property="og:description" content="Como o portal de editais culturais coleta, trata e confere os dados, quais fontes usa, o que ainda não sabe e como privacidade e visitas são tratadas." />
+    <meta property="og:url" content="https://jkfa.github.io/editais-culturais/sobre/" />
+    <meta property="og:image" content="https://jkfa.github.io/editais-culturais/assets/img/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>(function(){try{var t=localStorage.getItem('editais-culturais:tema');if(t==='claro'||t==='escuro'){document.documentElement.dataset.tema=t;var c=t==='escuro'?'#161513':'#f7f5f0',m=document.querySelectorAll('meta[name=theme-color]');for(var i=0;i<m.length;i++){m[i].dataset.padrao=m[i].content;m[i].setAttribute('content',c)}}}catch(e){}})()</script>
+    <link rel="icon" href="../assets/img/icone.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../assets/img/icone-180.png" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="preload" href="../assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preconnect" href="https://qhendbxavdretpfcwlyn.supabase.co" crossorigin />
+    <link rel="stylesheet" href="../assets/css/fontes.css" />
+    <link rel="stylesheet" href="../assets/css/tema.css" />
+    <link rel="stylesheet" href="../assets/css/editorial.css" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+  </head>
+  <body class="pagina-sobre">
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho-site">
+      <div class="container barra-site">
+        <a class="marca" href="../">Editais culturais</a>
+        <nav aria-label="Principal">
+          <a href="../editais/">Editais</a>
+          <a href="../sobre/" aria-current="page">Sobre</a>
+        </nav>
+        <button type="button" class="btn btn-tema" data-alternar-tema>Tema: sistema</button>
+      </div>
+    </header>
+    <main id="conteudo">
+      <article class="texto-longo container">
+        <p class="sobretitulo">Sobre</p>
+        <h1>Como o portal lê os editais</h1>
+        <p class="lede">Um resumo honesto do que o portal sabe, de onde vem e onde ele ainda erra.</p>
+
+        <h2 id="metodologia">Metodologia</h2>
+        <p>Todo dia às 5h (Brasília) um programa consulta as fontes, padroniza os campos e grava o resultado num banco de dados e num arquivo de cópia (<code>snapshot.json</code>). O site mostra primeiro a cópia e, em seguida, os dados do banco. Se o banco falhar, a cópia continua servindo.</p>
+        <p>Cada campo calculado guarda de onde veio: lido do texto do edital, informado pela plataforma de origem ou conferido por curadoria. No painel de cada edital, “Como sabemos disso” mostra o trecho exato do texto que sustenta o valor ou o proponente.</p>
+        <p>Valor, proponente, contrapartida e documentos só aparecem quando o texto diz. Se o resumo não traz a informação, o campo mostra “Não informado no resumo — ver edital”. Nunca mostramos zero no lugar de “não sei”.</p>
+
+        <h2 id="fontes">Fontes</h2>
+        <ul>
+          <li><strong>Mapas Culturais:</strong> instâncias públicas da plataforma, como a do MinC e as de Ceará, Pernambuco, Sergipe, Pará, Paraíba, Aracaju, Natal e Campinas. Entram só oportunidades do tipo “Edital” com prazo final definido.</li>
+          <li><strong>Curadoria:</strong> editais de quem não usa o Mapas Culturais (hoje, o Programa Funarte Aberta). Só entra o que foi conferido na fonte oficial, com o trecho que comprova cada dado e a data da conferência.</li>
+          <li><strong>Radar:</strong> editais que se repetem todo ano e estão fechados. Servem de aviso e nunca entram na contagem de abertos.</li>
+        </ul>
+
+        <h2 id="limitacoes">Limitações</h2>
+        <ul>
+          <li>O portal lê o resumo publicado, não o PDF do edital. Contrapartida, documentos e cronograma só aparecem na curadoria.</li>
+          <li>Qualquer pessoa publica no Mapas Culturais. Anúncios e testes marcados como “Edital” podem passar pelo filtro.</li>
+          <li>Algumas instâncias não respondem aos servidores do GitHub. Quando isso acontece, mostramos o que elas tinham na véspera, enquanto o prazo não vence.</li>
+          <li>“Pessoa jurídica” sem qualificação no texto vale como com e sem fins lucrativos. Quando há vários tetos no mesmo edital, mostramos o maior.</li>
+          <li>Fluxo contínuo, sem data final, não entra. Prazo à meia-noite conta como o fim do dia.</li>
+          <li>Confira sempre a página oficial antes de montar o projeto e antes do prazo.</li>
+        </ul>
+
+        <h2 id="privacidade">Privacidade e contador de visitas</h2>
+        <p>O portal não tem login, não usa cookies e não rastreia quem navega. Para saber se ele é útil, conta visitas de forma anônima:</p>
+        <ul>
+          <li>Não guardamos IP, nem hash de IP, nem qualquer identificador do visitante.</li>
+          <li>O servidor lê o IP só na hora, para descobrir o estado e a cidade aproximados, e descarta. Para isso, consulta o serviço <a href="https://ipwho.is" rel="noopener">ipwho.is</a>, que recebe o IP naquela requisição.</li>
+          <li>Guardamos apenas totais por dia, página, país, estado e cidade. Cidade com menos de 5 visitas no mês aparece como “outras cidades”.</li>
+          <li>Conta-se uma visita por aba e por dia (via <code>sessionStorage</code>, que some ao fechar a aba). Robôs não contam.</li>
+          <li>Se o seu navegador envia “Não rastrear” (DNT) ou Global Privacy Control, a visita é contada sem localização.</li>
+          <li>A escolha de tema (claro, escuro ou sistema) fica no seu navegador (<code>localStorage</code>) e não sai de lá.</li>
+        </ul>
+
+        <h2 id="contato">Contato</h2>
+        <p>Achou um erro, um edital que falta ou uma fonte nova? Abra uma <a href="https://github.com/JkFa/editais-culturais/issues" rel="noopener">Issue no repositório</a>. O código é aberto.</p>
+        <p><a class="link-seta" href="../editais/">Ver os editais abertos</a></p>
+      </article>
+    </main>
+    <footer class="rodape-site">
+      <div class="container rodape-grade">
+        <div>
+          <p class="rodape-titulo">Fontes</p>
+          <p>Mapas Culturais (instâncias públicas) e curadoria manual, conferida em fonte oficial.</p>
+        </div>
+        <div>
+          <p class="rodape-titulo">Última coleta</p>
+          <p class="num"><span data-ultima-coleta>…</span></p>
+        </div>
+        <div>
+          <p class="rodape-titulo">Código e contato</p>
+          <p><a href="https://github.com/JkFa/editais-culturais" rel="noopener">Repositório no GitHub</a> ·
+            <a href="https://github.com/JkFa/editais-culturais/issues" rel="noopener">Issues</a></p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="rodape-nota">Dados públicos, sem login, sem cookies. <a href="../sobre/#privacidade">Privacidade</a></p>
+      </div>
+    </footer>
+    <script src="../config.js"></script>
+    <script type="module" src="../assets/js/sobre.js"></script>
+  </body>
+</html>

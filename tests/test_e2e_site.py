@@ -101,7 +101,8 @@ def nova_pagina(navegador, largura=1280, altura=900, permissoes=None):
 
 
 def abrir(pg, url, busca=""):
-    pg.goto(url + busca)
+    """Abre o explorador (/editais/)."""
+    pg.goto(url + "editais/" + busca)
     pg.wait_for_selector("html[data-pronto]")
 
 
@@ -145,7 +146,7 @@ def test_tres_filtros_e_estado_na_url_sobrevive_ao_recarregar(navegador, url):
     assert "perfil=PF" in busca and "uf=CE" in busca and "ling=" in busca
     assert 0 < antes < pg.evaluate("1000")
 
-    pg.goto(url + busca)
+    pg.goto(url + "editais/" + busca)
     pg.wait_for_selector("html[data-pronto]")
     assert pg.locator(".card").count() == antes
     assert pg.get_by_role("button", name="Pessoa física").get_attribute("aria-pressed") == "true"
@@ -339,57 +340,54 @@ def test_localstorage_indisponivel_avisa_e_funciona_em_memoria(navegador, url):
     pg.close()
 
 
-def test_modo_ao_vivo_usa_supabase_e_busca_textual(navegador, url):
-    """Simula o supabase-js (interceptando o esm.sh) para exercitar o caminho ao vivo."""
-    modulo = """
-    export function createClient() {
-      const consulta = (tabela) => {
-        const q = {
-          select: () => q, order: () => q,
-          textSearch: (coluna, termo, opcoes) => {
-            (window.__buscas ||= []).push({ tabela, coluna, termo, opcoes });
-            return Promise.resolve({ data: [], error: null });
-          },
-          then: (ok, falha) => fetch('data/snapshot.json').then((r) => r.json()).then((s) =>
-            ({ data: tabela === 'radar_editais' ? s.radar : s.editais, error: null })).then(ok, falha),
-        };
-        return q;
-      };
-      return { from: consulta };
-    }"""
+def _simular_supabase(pg, snapshot, buscas):
+    """Responde a API REST do Supabase (PostgREST) com o conteúdo do snapshot."""
+    corpos = {
+        "editais_abertos": [{k: v for k, v in e.items()} for e in snapshot["editais"]],
+        "radar_editais": snapshot["radar"],
+    }
+
+    def tratar(rota):
+        req = rota.request
+        tabela = req.url.split("/rest/v1/")[1].split("?")[0]
+        if "busca_textual" in req.url:
+            buscas.append(req.url)
+            return rota.fulfill(status=200, content_type="application/json", body="[]",
+                                headers={"access-control-allow-origin": "*"})
+        rota.fulfill(status=200, content_type="application/json", body=json.dumps(corpos[tabela]),
+                     headers={"access-control-allow-origin": "*"})
+
+    pg.route("https://projeto.supabase.invalid/rest/v1/**", tratar)
+    pg.route("**/config.js", lambda r: r.fulfill(
+        content_type="text/javascript",
+        body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"sb_publishable_teste"};',
+    ))
+
+
+def test_modo_ao_vivo_mostra_snapshot_primeiro_e_busca_textual_no_servidor(navegador, url, snapshot):
     pg = nova_pagina(navegador)
-    pg.route(
-        "**/config.js",
-        lambda r: r.fulfill(
-            content_type="text/javascript",
-            body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"anon-de-teste"};',
-        ),
-    )
-    pg.route("https://esm.sh/**", lambda r: r.fulfill(content_type="text/javascript", body=modulo))
-    abrir(pg, url)
+    buscas: list[str] = []
+    _simular_supabase(pg, snapshot, buscas)
+    pg.goto(url + "editais/")
+    pg.wait_for_selector("html[data-origem=ao-vivo]")
     assert pg.inner_text("#fonte-texto") == "Dados ao vivo"
     assert pg.locator(".card").count() > 0
     pg.fill("#campo-busca", "musica")
     pg.wait_for_timeout(500)
-    busca = pg.evaluate("window.__buscas")
-    assert busca[-1]["coluna"] == "busca_textual"
-    assert busca[-1]["opcoes"] == {"config": "portuguese", "type": "websearch"}
+    assert buscas and "wfts%28portuguese%29.musica" in buscas[-1].replace("(", "%28").replace(")", "%29")
     assert pg.erros == []
     pg.close()
 
 
-def test_supabase_fora_do_ar_cai_no_snapshot(navegador, url):
+def test_supabase_fora_do_ar_fica_com_o_snapshot(navegador, url):
     pg = nova_pagina(navegador)
-    pg.route(
-        "**/config.js",
-        lambda r: r.fulfill(
-            content_type="text/javascript",
-            body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"anon"};',
-        ),
-    )
-    pg.route("https://esm.sh/**", lambda r: r.abort())
-    pg.goto(url)
-    pg.wait_for_selector("html[data-pronto]")
+    pg.route("**/config.js", lambda r: r.fulfill(
+        content_type="text/javascript",
+        body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"sb_publishable_teste"};',
+    ))
+    pg.route("https://projeto.supabase.invalid/**", lambda r: r.abort())
+    pg.goto(url + "editais/")
+    pg.wait_for_function("document.documentElement.dataset.pronto && !document.querySelector('#fonte-texto').textContent.includes('Atualizando')")
     assert "cópia offline" in pg.inner_text("#fonte-texto")
     assert pg.locator(".card").count() > 0
     assert "cópia offline" in pg.inner_text("#aviso-topo")

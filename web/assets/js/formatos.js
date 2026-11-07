@@ -34,6 +34,18 @@ export function formatarMoeda(valor) {
   return valor == null ? null : moeda.format(valor);
 }
 
+const moedaCompacta = new Intl.NumberFormat("pt-BR", {
+  style: "currency",
+  currency: "BRL",
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
+
+/** "R$ 5,2 mi": para números grandes em espaço curto. O valor exato vai no title. */
+export function formatarMoedaCompacta(valor) {
+  return valor == null ? null : moedaCompacta.format(valor);
+}
+
 export function formatarData(iso) {
   return dataCurta.format(new Date(iso));
 }
