@@ -432,6 +432,8 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                 gravados = await supabase.upsert_editais(novos)
                 removidos = 0
                 for fonte in fontes_ok:
+                    if fonte not in ids_por_fonte:  # vigia/descoberta: não geram editais
+                        continue
                     removidos += await supabase.remover_sumidos(fonte, ids_por_fonte[fonte], agora)
                 if "curadoria" not in falharam:
                     await supabase.sincronizar_radar(radar, agora)

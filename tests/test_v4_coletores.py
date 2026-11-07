@@ -348,3 +348,23 @@ def test_candidato_com_prazo_ja_vencido_nao_vai_para_a_fila():
     )
     novo = antigo.model_copy(update={"campos": {"inscricao_fim": "2999-01-01"}})
     assert antigo.encerrado and not novo.encerrado
+
+
+def test_cultbr_segmentos_como_texto_nao_vira_letras():
+    from worker.coletores.cultbr import _areas_de
+
+    assert _areas_de("Edital não se direciona a segmentos específicos") == []
+    assert _areas_de("Música, Teatro; Dança") == ["Música", "Teatro", "Dança"]
+    assert _areas_de([{"label": "Circo"}, "Artes visuais", None]) == ["Circo", "Artes visuais"]
+    assert _areas_de(None) == []
+
+
+def test_descoberta_descarta_pagina_sem_sinal_de_edital_e_acha_titulo_de_pdf():
+    from worker.descoberta import parece_edital, titulo_de_pdf
+
+    assert not parece_edital("Portal da Transparência")
+    assert not parece_edital("NoPaper: Consulta Documentos\nCarregando...")
+    assert parece_edital("Abertas as inscrições até 10/12/2026")
+    texto = "DISTRIBUIDORA DE FILMES S/A - RIOFILME\nEDITAL RIOFILME/FSA Nº 13: DISTRIBUIÇÃO"
+    assert titulo_de_pdf(texto, "x").startswith("EDITAL RIOFILME/FSA Nº 13")
+    assert titulo_de_pdf("", "fallback") == "fallback"
