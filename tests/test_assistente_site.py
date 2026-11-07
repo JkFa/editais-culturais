@@ -599,3 +599,20 @@ def test_portal_publico_continua_sem_chamar_o_login(navegador, url):
     pg.wait_for_selector("html[data-pronto]")
     assert chamadas == []
     pg.close()
+
+
+def test_nenhuma_tela_escreve_a_palavra_null(navegador, url):
+    pg, be = preparar(navegador, None)
+    pid = be.projeto(ficha={})
+    for caminho in (
+        "",
+        "?novo=1",
+        "?novo=1&edital=mapas:ce:1",
+        f"?id={pid}",
+        f"?id={pid}&secao=justificativa",
+    ):
+        abrir(pg, url, caminho)
+        pg.wait_for_timeout(300)
+        texto = pg.locator("#projeto-raiz").inner_text()
+        assert not re.search(r"\bnull\b|\bundefined\b", texto), f"{caminho!r}: {texto[:200]!r}"
+    pg.context.close()

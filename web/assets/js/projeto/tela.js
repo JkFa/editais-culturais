@@ -1,6 +1,7 @@
 // Tela do projeto: seções à esquerda, chat no meio, rascunho à direita (abas no celular).
 import { formatarDataHora, el } from "../formatos.js";
 import { ErroApi } from "./api.js";
+import { preencher } from "./dom.js";
 import { abrirExportacao } from "./exportar.js";
 import { abrirProponente } from "./proponente.js";
 import { perguntasAplicaveis, secoesDoFluxo } from "./secoes.mjs";
@@ -55,7 +56,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     renderAbas();
   }
   function renderAbas() {
-    abas.replaceChildren(
+    preencher(abas, 
       ...[["chat", "Conversa"], ["rascunho", "Rascunho"]].map(([k, rot]) =>
         el("button", { type: "button", role: "tab", class: "aba", "aria-selected": String(estado.painel === k), onclick: () => mudarPainel(k) }, rot)),
     );
@@ -77,7 +78,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
             onclick: () => abrirSecao(s.id),
           }, el("span", { class: "num" }, String(s.ordem).padStart(2, "0")), el("span", { class: "nome" }, s.titulo), el("span", { class: "status" }, ROTULO_STATUS[st])));
       }));
-    barraSecoes.replaceChildren(
+    preencher(barraSecoes, 
       el("button", { type: "button", class: "btn secoes-menu", "aria-expanded": String(menuAberto), "aria-controls": "lista-secoes", onclick: () => { menuAberto = !menuAberto; renderSecoes(); } },
         `Seções · ${aprovadas()} de ${ativas.length} aprovadas`),
       el("div", { id: "lista-secoes", class: "secoes-corpo", hidden: false, "data-aberto": String(menuAberto) }, lista),
@@ -128,7 +129,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   function renderChat() {
     const s = specDe(estado.atual);
     if (!s) {
-      painelChat.replaceChildren(el("h2", { id: "titulo-chat" }, "Conversa"), el("p", { class: "vazio" }, "Escolha uma seção ao lado para começar."));
+      preencher(painelChat, el("h2", { id: "titulo-chat" }, "Conversa"), el("p", { class: "vazio" }, "Escolha uma seção ao lado para começar."));
       return;
     }
     const log = el("div", { class: "chat-log", role: "log", "aria-live": "polite", "aria-label": `Conversa da seção ${s.titulo}` }, estado.mensagens.map(mensagemNaTela));
@@ -167,7 +168,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     const erro = estado.erro
       ? el("div", { class: "msg-form erro", role: "alert" }, estado.erro.mensagem, estado.erro.repetir ? [" ", el("button", { type: "button", class: "btn", onclick: estado.erro.repetir }, "Tentar de novo")] : null)
       : null;
-    painelChat.replaceChildren(
+    preencher(painelChat, 
       el("h2", { id: "titulo-chat" }, s.titulo),
       formularioCotas(),
       log,
@@ -250,7 +251,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     const s = specDe(estado.atual);
     if (!s) {
       areaTexto = null;
-      painelRascunho.replaceChildren(el("h2", { id: "titulo-rascunho" }, "Rascunho"), el("p", { class: "vazio" }, "O rascunho da seção aparece aqui."));
+      preencher(painelRascunho, el("h2", { id: "titulo-rascunho" }, "Rascunho"), el("p", { class: "vazio" }, "O rascunho da seção aparece aqui."));
       return;
     }
     const linha = linhaDe(s.id);
@@ -258,7 +259,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     const texto = linha?.rascunho ?? "";
     if (!texto && !estado.sujo) {
       areaTexto = null;
-      painelRascunho.replaceChildren(
+      preencher(painelRascunho, 
         el("h2", { id: "titulo-rascunho" }, "Rascunho"),
         el("p", { class: "vazio" }, "O rascunho aparece aqui quando você terminar as perguntas, ou quando clicar em \"Redigir agora com o que tenho\"."),
       );
@@ -272,9 +273,9 @@ export async function telaProjeto(ctx, id, secaoPedida) {
 
     function atualizar() {
       const n = areaTexto.value.length;
-      contador.replaceChildren(el("span", { class: n > limite ? "num excedeu" : "num" }, `${n} / ${limite}`), " caracteres", n > limite ? el("strong", { class: "excedeu" }, ` · corte ${n - limite}`) : null);
+      preencher(contador, el("span", { class: n > limite ? "num excedeu" : "num" }, `${n} / ${limite}`), " caracteres", n > limite ? el("strong", { class: "excedeu" }, ` · corte ${n - limite}`) : null);
       const pontos = pontosACompletar(areaTexto.value);
-      listaCompletar.replaceChildren(
+      preencher(listaCompletar, 
         ...(pontos.length
           ? [el("h3", {}, `Pontos para completar (${pontos.length})`),
               el("ul", {}, pontos.map((p) => el("li", {}, el("mark", {}, p.texto), " ",
@@ -299,7 +300,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
       const pontos = pontosACompletar(areaTexto.value);
       if (pontos.length && !ignorarPontos) {
         confirmacao.hidden = false;
-        confirmacao.replaceChildren(`Ainda há ${pontos.length} ponto(s) com [COMPLETAR]. `, el("button", { type: "button", class: "btn", onclick: () => aprovar(true) }, "Aprovar mesmo assim"));
+        preencher(confirmacao, `Ainda há ${pontos.length} ponto(s) com [COMPLETAR]. `, el("button", { type: "button", class: "btn", onclick: () => aprovar(true) }, "Aprovar mesmo assim"));
         return;
       }
       try {
@@ -329,7 +330,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
       }
     });
 
-    painelRascunho.replaceChildren(
+    preencher(painelRascunho, 
       el("h2", { id: "titulo-rascunho" }, "Rascunho", aprovado ? el("span", { class: "selo" }, "aprovada") : null),
       alertas.length ? el("ul", { class: "alertas" }, alertas.map((a) => el("li", { class: a.nivel }, el("strong", {}, a.nivel === "aviso" ? "Atenção: " : "Dica: "), a.texto))) : null,
       el("label", { for: "texto-rascunho", class: "sr-only" }, `Texto da seção ${s.titulo}`),
@@ -379,7 +380,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   const editalLink = projeto.edital_url
     ? el("a", { href: projeto.edital_url, target: "_blank", rel: "noopener noreferrer" }, projeto.edital_titulo ?? "edital oficial")
     : null;
-  raiz.replaceChildren(
+  preencher(raiz, 
     ctx.barra,
     el("div", { class: "topo-projeto" },
       el("div", {},
