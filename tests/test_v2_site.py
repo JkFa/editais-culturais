@@ -525,6 +525,18 @@ def test_bloco_de_visitantes_com_cartograma_tabela_e_cidades(navegador, url):
         ctx.close()
 
 
+def test_frase_de_visitas_no_singular(navegador, url):
+    pg = nova_pagina(navegador)
+    _visitas(pg, resumo={**RESUMO, "total_geral": 1, "por_uf": [{"uf": "MG", "total": 1}]})
+    pronta(pg, url)
+    pg.locator("#visitantes").wait_for(state="visible")
+    assert (
+        pg.locator("[data-visitas-frase]").inner_text()
+        == "1 visita · pessoas de 1 estado nos últimos 30 dias"
+    )
+    pg.close()
+
+
 def test_cartograma_posiciona_27_ufs_sem_sobreposicao():
     js = (WEB / "assets/js/cartograma.js").read_text(encoding="utf-8")
     bloco = js[js.index("export const POSICAO_UF") : js.index("}; // fmt: skip")]

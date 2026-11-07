@@ -224,6 +224,16 @@ Publicado em 07/11/2026, de ponta a ponta pela CLI (`gh`, `supabase`), sem expor
 
 Para reaplicar mudanças no schema, crie uma nova migration (`supabase migration new …`) e rode `supabase db push`.
 
+### v2 em produção (07/11/2026)
+
+Migration de visitas aplicada com `supabase db push`; `registrar-visita` publicada com
+`supabase functions deploy registrar-visita --no-verify-jwt --use-api`; PR #1 mergeado e o Pages publicou sozinho.
+Conferido em produção com navegador: o rodapé diz "Dados ao vivo", a visita é contada uma vez por aba (reload e outra página
+da mesma aba não contam; outra aba conta), links antigos (`/?uf=MG&edital=…`) redirecionam para `/editais/`, a 404 vem
+estilizada em qualquer caminho e o bloco "Quem visita" aparece com o cartograma. O anon lê só `visitas_resumo()`;
+`visitas_agregadas` e `registrar_visita_agregada` devolvem 401. Navegadores headless (user-agent com "Headless") **não**
+contam, de propósito: para testar a contagem num robô, troque o user-agent.
+
 ## Estrutura
 
 ```

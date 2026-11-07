@@ -211,3 +211,11 @@ no resumo entregue ao fim do trabalho.
   `assets/img/og.svg` convertido para PNG por `scripts/gerar_imagens.py` (Playwright, já dependência de teste).
 - **Testes:** fixtures de e2e foram para o `conftest.py` e os auxiliares para `tests/e2e_util.py`; `test_v2_site.py` cobre
   redirecionamentos, tema sem flash, visitas, cartograma e celular × temas (360×740 e 390×844); screenshots em `docs/v2/`.
+
+## v2 em produção (07/11/2026)
+
+- Migration e function aplicadas pela CLI (`supabase db push`, `functions deploy --use-api --no-verify-jwt`, sem Docker); o
+  painel foi usado para conferência. Nenhuma chave passou pela tela.
+- Primeiro teste em produção parecia não contar: o Chromium headless do Playwright se anuncia como `HeadlessChrome`, que o filtro
+  de bots da function barra. É o comportamento desejado; o teste passou com user-agent comum (+1 por aba, 0 no reload).
+- Bug de texto achado em produção: com 1 visita a frase dizia "1 visitas". Corrigido no singular, com teste.
