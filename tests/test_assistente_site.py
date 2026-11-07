@@ -326,6 +326,8 @@ def test_lista_com_progresso_e_exclusao_em_duas_etapas(navegador, url):
     pg.get_by_role("button", name="Confirmar exclusão").click()
     pg.wait_for_function("document.querySelectorAll('.cartao-projeto').length === 1")
     assert len(be.projetos) == 1
+    assert "1 projeto." in pg.locator(".contagem-projetos").inner_text()
+    assert "2 projetos" not in pg.locator("#projeto-raiz").inner_text()
     pg.context.close()
 
 
