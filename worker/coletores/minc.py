@@ -70,7 +70,7 @@ def converter_detalhe(
             link_oficial=url,
             origem="Ministério da Cultura (gov.br/cultura), lista de editais abertos",
             motivo="a página não traz um prazo de inscrição legível; confira o cronograma no edital",
-            resumo=truncar_palavra(pagina.texto, 600),
+            resumo=truncar_palavra(_descricao(pagina.texto, titulo), 600),
             campos={"orgao_fomento": ORGAO, "abrangencia": "nacional"},
         )
         return None, cand, "sem_prazo"
@@ -97,10 +97,32 @@ def converter_detalhe(
     return bruto, None, ""
 
 
+_RUIDO_GOVBR = re.compile(
+    r"^(info|compartilhe.*|link para copiar.*|publicado em|atualizado em|"
+    r"\d{2}/\d{2}/\d{4}( \d{1,2}h\d{2})?|anexos?|perguntas frequentes)$",
+    re.I,
+)
+
+
+_RODAPE_GOVBR = re.compile(
+    r"^(compartilhe:?|ajude a melhorar o gov\.br|rejeitar|fale agora|refazer a busca)$", re.I
+)
+
+
 def _descricao(texto: str, titulo: str) -> str:
-    """Texto descritivo (sem a linha de título repetida), para resumo e regex."""
-    linhas = [x for x in texto.split("\n") if x.strip() and x.strip() != titulo]
-    return " ".join(linhas)
+    """Texto descritivo para resumo e regex: sem título repetido nem barra de compartilhar/datas.
+
+    Nas páginas do gov.br o miolo começa em "O que é?"; o que vem antes é menu, compartilhamento,
+    datas de publicação e links de anexos.
+    """
+    linhas = [x.strip() for x in texto.split("\n") if x.strip() and x.strip() != titulo]
+    inicio = next((i for i, x in enumerate(linhas) if re.fullmatch(r"o que é\??", x, re.I)), None)
+    if inicio is not None:
+        linhas = linhas[inicio:]
+    else:
+        linhas = [x for x in linhas if not _RUIDO_GOVBR.match(x)]
+    fim = next((i for i, x in enumerate(linhas) if _RODAPE_GOVBR.match(x)), len(linhas))
+    return " ".join(linhas[:fim])
 
 
 async def coletar(

@@ -70,6 +70,15 @@ def test_minc_ciclo_de_saberes_aberto():
     assert "8 de novembro de 2026" in bruto.proveniencia["inscricao_fim"].trecho
 
 
+def test_minc_resumo_sem_barra_de_compartilhar_nem_datas_de_publicacao():
+    bruto, _, _ = minc.converter_detalhe(
+        "https://www.gov.br/cultura/x/ciclo", "x", ler("minc_detalhe_ciclo_de_saberes.html"), AGORA
+    )
+    assert bruto.resumo_original.startswith("O que é? O Programa Ciclo de Saberes")
+    for ruido in ("Compartilhe", "Publicado em", "Atualizado em", "Ajude a melhorar"):
+        assert ruido not in bruto.resumo_original
+
+
 def test_minc_sem_prazo_legivel_vai_para_a_fila_e_nao_e_publicado():
     html = "<html><body><h1>Edital Teste A</h1><main><p>Texto fictício sem datas de inscrição.</p></main></body></html>"
     bruto, cand, motivo = minc.converter_detalhe("https://exemplo.invalid/a", "x", html, AGORA)
