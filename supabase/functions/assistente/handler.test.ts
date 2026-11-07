@@ -189,6 +189,15 @@ Deno.test("ficha: custo acima do teto do edital gera aviso", async () => {
   assert.ok(j.alertas.some((a: { texto: string }) => /passa do teto/.test(a.texto)));
 });
 
+Deno.test("ficha: sem critérios, o teto por projeto do edital (gravado na ficha) vale", async () => {
+  const t = montar({ projeto: projetoPadrao({ ficha: { edital_teto_por_projeto: 50000 } }) }, [{ ...rascunhoOk, fatos_novos_ficha: [{ chave: "custo_estimado", valor: "80000" }] }]);
+  const j = await (await chamar(t.handler, base)).json();
+  assert.ok(j.alertas.some((a: { texto: string }) => /passa do teto.*50\.000/.test(a.texto)));
+  const t2 = montar({ projeto: projetoPadrao({ ficha: { edital_teto_por_projeto: 100000 } }) }, [{ ...rascunhoOk, fatos_novos_ficha: [{ chave: "custo_estimado", valor: "80000" }] }]);
+  const j2 = await (await chamar(t2.handler, base)).json();
+  assert.ok(!j2.alertas.some((a: { texto: string }) => /teto/.test(a.texto)));
+});
+
 Deno.test("seções aprovadas entram como contexto; dados pessoais dentro delas são tirados", async () => {
   const t = montar({ contexto: { aprovadas: [{ secao_id: "apresentacao", rascunho: `Oficina. CNPJ ${PII[1]}.` }] } }, [rascunhoOk]);
   await chamar(t.handler, { projeto_id: PID, secao_id: "justificativa", acao: "redigir" });

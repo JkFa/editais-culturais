@@ -186,7 +186,7 @@ export function criarHandler(d: Deps) {
         const faltas = (saida.rascunho.match(/\[COMPLETAR:/g) ?? []).length;
         if (faltas) alertasServidor.push({ nivel: "info", texto: `Há ${faltas} ponto(s) marcado(s) com [COMPLETAR]. Preencha antes de aprovar.` });
       }
-      const teto = Number(criterios?.teto_orcamento);
+      const teto = Number(criterios?.teto_orcamento) || Number(projeto.ficha?.edital_teto_por_projeto);
       const custo = Number((saida.fatos_novos_ficha.custo_estimado ?? projeto.ficha?.custo_estimado) as unknown);
       if (spec.id === "ficha" && teto > 0 && custo > teto) {
         alertasServidor.push({ nivel: "aviso", texto: `O custo estimado passa do teto do edital (R$ ${teto.toLocaleString("pt-BR")}).` });
