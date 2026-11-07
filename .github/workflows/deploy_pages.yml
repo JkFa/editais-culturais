@@ -1,0 +1,66 @@
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+    paths: ["web/**"]
+  # Commits feitos com GITHUB_TOKEN não disparam `push`; por isso o deploy
+  # também escuta o fim da coleta diária.
+  workflow_run:
+    workflows: ["Sincronizar editais"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gerar web/config.js
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+        run: |
+          # A anon key é pública por design (a segurança vem da RLS), mas a
+          # service_role jamais pode ir para o navegador: aborta se for essa.
+          python3 - <<'PY'
+          import base64, json, os, sys
+          chave = os.environ.get("SUPABASE_ANON_KEY", "")
+          if chave.count(".") == 2:
+              corpo = chave.split(".")[1]
+              corpo += "=" * (-len(corpo) % 4)
+              try:
+                  papel = json.loads(base64.urlsafe_b64decode(corpo)).get("role")
+              except ValueError:
+                  papel = None
+              if papel == "service_role":
+                  sys.exit("ERRO: SUPABASE_ANON_KEY contém a chave service_role. Use a anon/public.")
+          PY
+          jq -rn --arg u "$SUPABASE_URL" --arg k "$SUPABASE_ANON_KEY" \
+            '"window.EDITAIS_CONFIG = " + ({supabaseUrl: $u, supabaseAnonKey: $k} | tojson) + ";"' \
+            > web/config.js
+          echo "config.js gerado (Supabase configurado: $([ -n "$SUPABASE_URL" ] && echo sim || echo não))"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
