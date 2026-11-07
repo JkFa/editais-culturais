@@ -1,5 +1,8 @@
 """Gera og.png (1200x630) e os ícones PNG a partir dos SVG, com o Chromium do Playwright.
-Uso: python scripts/gerar_imagens.py  (precisa de `playwright install chromium` e rede para as fontes)."""
+
+Uso: python scripts/gerar_imagens.py (precisa de `playwright install chromium` e de rede
+para baixar as fontes só na hora de desenhar).
+"""
 
 from pathlib import Path
 
@@ -15,9 +18,10 @@ FONTES = (
 def renderizar(pg, svg: Path, saida: Path, tamanho: tuple[int, int]) -> None:
     pg.set_viewport_size({"width": tamanho[0], "height": tamanho[1]})
     corpo = svg.read_text(encoding="utf-8")
+    dimensoes = f"<svg width={tamanho[0]} height={tamanho[1]} "
     pg.set_content(
         f'<html><head><link rel="stylesheet" href="{FONTES}"></head>'
-        f'<body style="margin:0">{corpo.replace("<svg ", f"<svg width={tamanho[0]} height={tamanho[1]} ", 1)}</body></html>'
+        f'<body style="margin:0">{corpo.replace("<svg ", dimensoes, 1)}</body></html>'
     )
     pg.wait_for_load_state("networkidle")
     pg.evaluate("document.fonts.ready")

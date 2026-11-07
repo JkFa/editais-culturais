@@ -149,3 +149,65 @@ no resumo entregue ao fim do trabalho.
   instâncias). Timeout subiu para 60 s e o log passou a registrar o tipo da exceção (antes a mensagem vinha vazia).
 - Erro meu no processo: a varredura de segredos no histórico e o `gh repo create --push` rodaram no mesmo comando, sem esperar
   o resultado da varredura antes do push. O resultado foi limpo (só a string fictícia `sb_secret_de-teste` de um teste).
+
+## v2: home, visitas, tema claro/escuro, celular (07/11/2026)
+
+- **Rotas:** `/` é a home; o explorador foi para `/editais/` (`web/editais/index.html`), com `sobre/` e `404.html`.
+  Um script inline no topo da home (antes do CSS e do `<body>`) redireciona qualquer link antigo para `editais/` com os mesmos
+  parâmetros. A lista cobre os que o explorador usa de fato (`q`, `uf`, `perfil`, `ling`, `abr`, `abertas`, `ord`, `edital`, `aba`)
+  e os apelidos do pedido (`ordem` → `ord`, `abertos` → `abertas`). Testado um a um e com o link real `?uf=CE&edital=…`.
+  O `PROMPT.md` citado no pedido não existe; li `PROMPT_editais_culturais.md`.
+- **404 com `<base href="/editais-culturais/">`:** o Pages serve a 404 em qualquer profundidade, e caminho relativo quebraria.
+  Se o repositório for renomeado, é preciso trocar esse valor.
+- **`robots.txt` e `sitemap.xml` ficam em `/editais-culturais/`:** crawlers só leem `robots.txt` na raiz do host
+  (`jkfa.github.io/robots.txt`), que um project site não controla. Os arquivos existem como pedido; o `<link rel=canonical>`
+  e o sitemap ajudam, o `robots.txt` é inócuo. Domínio próprio resolveria.
+- **Fontes hospedadas no próprio site** (`web/assets/fonts`, subconjunto latin, OFL; `fontes.css`), em vez do `preconnect` ao
+  Google Fonts pedido. Motivo: o portal promete "sem rastreio"; a requisição ao Google entregava o IP de cada visitante, e a
+  troca de fonte pesava no Lighthouse (home 80 → 94 em performance). Custo: ~100 KB no repositório.
+  O `→` de `.link-seta` cai na fonte do sistema (U+2192 fora do subconjunto).
+- **`supabase-js` removido do site:** os dados ao vivo e a busca textual usam o PostgREST por `fetch`
+  (`wfts(portuguese).termo`). Menos 100 KB de CDN e uma dependência a menos. Descartada: carregar supabase-js sob demanda.
+- **Dados em duas etapas:** a página mostra o `snapshot.json` (cache normal do Pages) e troca pelos dados ao vivo quando chegam;
+  o rodapé diz "Atualizando…" nesse intervalo. "Última atualização" vem sempre do `gerado_em` do snapshot.
+- **"Fontes consultadas" na home** é "fontes com editais abertos" (7 hoje): a contagem exata de fontes consultadas só existe no
+  snapshot, e a do banco ao vivo seria outra. Preferi um número que vale nos dois modos.
+- **Valor total na home e no cabeçalho do explorador** em formato compacto ("R$ 5,2 mi", valor exato no `title`): o valor
+  cheio quebrava a linha em 4 colunas e estourava em 360 px.
+- **Tema:** três estados (sistema, claro, escuro) em `localStorage` (`editais-culturais:tema`, com try/catch), aplicados por um
+  script inline idêntico nas 4 páginas, antes do CSS (teste confere ordem e igualdade). `theme-color` com duas metas
+  `media=` e ajuste ao trocar. O bloco escuro de tokens existe duas vezes (sistema e forçado); o `contraste.mjs` falha se
+  divergirem.
+- **Contraste (valores finais, `scripts/contraste.mjs`, WCAG AA):** claro: fundo `#F7F5F0`, superfície `#FFFFFF`, texto `#141413`,
+  texto suave `#5C5A54` (6,3:1), borda decorativa `#E2DFD7`, **borda de controle `#7D796C`** (≥3:1; a decorativa não passa),
+  urgente `#B03F27` (5,4:1 no fundo; o `#C84B31` dá 4,3:1, então só preenche o badge "hoje" com texto branco 4,7:1), aberto
+  `#2D5A27`. Escuro: fundo `#161513`, superfície `#1E1D1A`, elevada `#262420`, texto `#ECE8DF`, suave `#A8A398` (7,3:1), borda
+  `#34322C`, borda de controle `#7A766B`, urgente `#E07A5F` (6,2:1), aberto `#8DB580`, foco `#ECE8DF`. Badges no escuro: fundo
+  translúcido (12%) com texto no acento. Cartograma: 6 níveis por tema com texto próprio (≥4,5:1); o nível 0 usa borda tracejada.
+- **Visitas (LGPD):** a function recebe só `{pagina}` (`text/plain`, sem preflight, `keepalive`, sem cookies nem referrer); uma
+  visita por aba e dia (`sessionStorage`); `navigator.webdriver` e user-agent de bot não contam; DNT e Sec-GPC são lidos **no
+  servidor** (o navegador os envia sozinho) e a visita é contada com localização `ZZ`. Rate limit de 3 por minuto por IP em
+  memória do isolate (não é global entre instâncias: contém abuso simples, não ataque distribuído). A tabela só tem
+  `dia, pagina, pais, uf, cidade, total`; `ZZ`/`''` = desconhecido. Fora do Brasil só se guarda o país. Cidade com menos de 5
+  visitas em 30 dias vira "outras cidades" dentro de `visitas_resumo()` (`security definer`; o anon não lê a tabela).
+  `verify_jwt = false` na function: as chaves `sb_publishable_` não são JWT e a function é pública por desenho.
+- **Provedor de geolocalização: ipwho.is.** Sem chave, HTTPS, uso comercial permitido, 1.000 req/dia por IP de origem
+  (docs em ipwhois.io/documentation). Descartados: ip-api.com (HTTP no plano grátis, uso não comercial) e ipinfo/MaxMind (exigem
+  conta e chave). Limite real: o IP de origem é o da Edge Function (compartilhado), então o teto de 1.000/dia pode estourar em
+  dias de pico; nesse caso a visita conta com localização desconhecida, sem erro. O provedor recebe o IP naquela requisição
+  (declarado em `sobre/#privacidade`). Alternativa se faltar cota: base DB-IP Lite local (CC BY 4.0).
+- **Teste da function:** a lógica pura está em `logica.mjs` (`node --test`, 7 casos). A integração roda no Deno oficial via Docker
+  (`scripts/testar_registrar_visita.sh`), porque `supabase functions serve` exige `supabase start` (stack completo).
+  Verificado: bot e página inválida não geram registro; DNT/GPC gravam `ZZ`; provedor inacessível ou IP de documentação grava
+  `ZZ`; 4º pedido no minuto dá 429; **o IP não aparece no log da function nem no que ela grava**.
+- **Celular:** a barra de filtros vira folha inferior abaixo de 48 rem (`role=dialog` só nesse modo, foco preso, Esc, foco volta
+  ao botão), botão fixo "Filtros (n)" (a busca não conta), painel do edital em tela cheia com o botão do WhatsApp em rodapé fixo
+  (`env(safe-area-inset-bottom)`), alvos ≥ 44 px (testado nas 4 páginas), inputs ≥ 16 px, chips com `scroll-snap`. O card inteiro
+  é a área de toque via `::after` do título. A barra de fonte dos dados deixa de ser fixa no celular (o espaço é do botão).
+- **Lighthouse mobile** (servidor local, relatórios em `docs/lighthouse/`): home 94/100/100/100, explorador 92/100/100/100
+  (performance/acessibilidade/boas práticas/SEO). CLS ~0,1 por conteúdo que chega depois do snapshot; reservei altura da lista e
+  da semana. O número varia entre execuções.
+- **PWA leve:** só `manifest.webmanifest` e ícones; nenhum service worker (evita mostrar edital vencido). Imagem OG: SVG em
+  `assets/img/og.svg` convertido para PNG por `scripts/gerar_imagens.py` (Playwright, já dependência de teste).
+- **Testes:** fixtures de e2e foram para o `conftest.py` e os auxiliares para `tests/e2e_util.py`; `test_v2_site.py` cobre
+  redirecionamentos, tema sem flash, visitas, cartograma e celular × temas (360×740 e 390×844); screenshots em `docs/v2/`.

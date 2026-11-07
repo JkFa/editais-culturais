@@ -1,109 +1,17 @@
-"""Verificação ponta a ponta do site com Playwright (Chromium headless).
+"""Verificação ponta a ponta do explorador com Playwright (Chromium headless).
 
-Sobe `python -m http.server` sobre `web/` e usa o snapshot real. Pulado se o
-Chromium não estiver instalado (`playwright install chromium`).
+Sobe `python -m http.server` sobre `web/` (fixtures no conftest) e usa o snapshot real.
+Pulado se o Chromium não estiver instalado (`playwright install chromium`).
 """
 
 import json
 import re
-import socket
-import subprocess
-import sys
-import time
-from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
+from e2e_util import SAIDA, abertos, abrir, nova_pagina
 
-playwright_sync = pytest.importorskip("playwright.sync_api")
-
-RAIZ = Path(__file__).resolve().parent.parent
-WEB = RAIZ / "web"
-SAIDA = RAIZ / "verificacao"
-HOSTS_DE_FONTE = ("fonts.googleapis.com", "fonts.gstatic.com")
-
-
-def _porta_livre() -> int:
-    with socket.socket() as s:
-        s.bind(("127.0.0.1", 0))
-        return s.getsockname()[1]
-
-
-@pytest.fixture(scope="module")
-def url():
-    porta = _porta_livre()
-    proc = subprocess.Popen(
-        [sys.executable, "-m", "http.server", str(porta), "--bind", "127.0.0.1", "-d", str(WEB)],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-    base = f"http://127.0.0.1:{porta}/"
-    for _ in range(50):
-        try:
-            socket.create_connection(("127.0.0.1", porta), timeout=0.2).close()
-            break
-        except OSError:
-            time.sleep(0.1)
-    yield base
-    proc.terminate()
-
-
-@pytest.fixture(scope="module")
-def navegador():
-    with playwright_sync.sync_playwright() as p:
-        try:
-            nav = p.chromium.launch()
-        except Exception as exc:  # navegador não instalado
-            pytest.skip(f"Chromium indisponível: {exc}")
-        yield nav
-        nav.close()
-
-
-@pytest.fixture
-def snapshot():
-    return json.loads((WEB / "data" / "snapshot.json").read_text(encoding="utf-8"))
-
-
-def abertos(snapshot):
-    agora = datetime.now(UTC)
-    return [e for e in snapshot["editais"] if datetime.fromisoformat(e["inscricao_fim"]) >= agora]
-
-
-def nova_pagina(navegador, largura=1280, altura=900, permissoes=None):
-    ctx = navegador.new_context(
-        viewport={"width": largura, "height": altura},
-        locale="pt-BR",
-        timezone_id="America/Sao_Paulo",
-        accept_downloads=True,
-        permissions=permissoes or [],
-    )
-    pg = ctx.new_page()
-    erros: list[str] = []
-
-    def console(m):
-        if m.type == "error" and not any(
-            h in (m.location.get("url") or "") for h in HOSTS_DE_FONTE
-        ):
-            erros.append(f"console.error: {m.text}")
-
-    pg.on("console", console)
-    pg.on("pageerror", lambda e: erros.append(f"pageerror: {e}"))
-    pg.on(
-        "requestfailed",
-        lambda r: (
-            erros.append(f"requestfailed: {r.url}")
-            if not any(h in r.url for h in HOSTS_DE_FONTE)
-            else None
-        ),
-    )
-    pg.erros = erros
-    return pg
-
-
-def abrir(pg, url, busca=""):
-    """Abre o explorador (/editais/)."""
-    pg.goto(url + "editais/" + busca)
-    pg.wait_for_selector("html[data-pronto]")
+pytest.importorskip("playwright.sync_api")
 
 
 def test_renderiza_cards_do_snapshot_sem_erros_no_console(navegador, url, snapshot):
@@ -352,19 +260,32 @@ def _simular_supabase(pg, snapshot, buscas):
         tabela = req.url.split("/rest/v1/")[1].split("?")[0]
         if "busca_textual" in req.url:
             buscas.append(req.url)
-            return rota.fulfill(status=200, content_type="application/json", body="[]",
-                                headers={"access-control-allow-origin": "*"})
-        rota.fulfill(status=200, content_type="application/json", body=json.dumps(corpos[tabela]),
-                     headers={"access-control-allow-origin": "*"})
+            return rota.fulfill(
+                status=200,
+                content_type="application/json",
+                body="[]",
+                headers={"access-control-allow-origin": "*"},
+            )
+        rota.fulfill(
+            status=200,
+            content_type="application/json",
+            body=json.dumps(corpos[tabela]),
+            headers={"access-control-allow-origin": "*"},
+        )
 
     pg.route("https://projeto.supabase.invalid/rest/v1/**", tratar)
-    pg.route("**/config.js", lambda r: r.fulfill(
-        content_type="text/javascript",
-        body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"sb_publishable_teste"};',
-    ))
+    pg.route(
+        "**/config.js",
+        lambda r: r.fulfill(
+            content_type="text/javascript",
+            body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"sb_publishable_teste"};',
+        ),
+    )
 
 
-def test_modo_ao_vivo_mostra_snapshot_primeiro_e_busca_textual_no_servidor(navegador, url, snapshot):
+def test_modo_ao_vivo_mostra_snapshot_primeiro_e_busca_textual_no_servidor(
+    navegador, url, snapshot
+):
     pg = nova_pagina(navegador)
     buscas: list[str] = []
     _simular_supabase(pg, snapshot, buscas)
@@ -374,20 +295,27 @@ def test_modo_ao_vivo_mostra_snapshot_primeiro_e_busca_textual_no_servidor(naveg
     assert pg.locator(".card").count() > 0
     pg.fill("#campo-busca", "musica")
     pg.wait_for_timeout(500)
-    assert buscas and "wfts%28portuguese%29.musica" in buscas[-1].replace("(", "%28").replace(")", "%29")
+    assert buscas and "wfts%28portuguese%29.musica" in buscas[-1].replace("(", "%28").replace(
+        ")", "%29"
+    )
     assert pg.erros == []
     pg.close()
 
 
 def test_supabase_fora_do_ar_fica_com_o_snapshot(navegador, url):
     pg = nova_pagina(navegador)
-    pg.route("**/config.js", lambda r: r.fulfill(
-        content_type="text/javascript",
-        body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"sb_publishable_teste"};',
-    ))
+    pg.route(
+        "**/config.js",
+        lambda r: r.fulfill(
+            content_type="text/javascript",
+            body='window.EDITAIS_CONFIG={supabaseUrl:"https://projeto.supabase.invalid",supabaseAnonKey:"sb_publishable_teste"};',
+        ),
+    )
     pg.route("https://projeto.supabase.invalid/**", lambda r: r.abort())
     pg.goto(url + "editais/")
-    pg.wait_for_function("document.documentElement.dataset.pronto && !document.querySelector('#fonte-texto').textContent.includes('Atualizando')")
+    pg.wait_for_function(
+        "document.documentElement.dataset.pronto && !document.querySelector('#fonte-texto').textContent.includes('Atualizando')"
+    )
     assert "cópia offline" in pg.inner_text("#fonte-texto")
     assert pg.locator(".card").count() > 0
     assert "cópia offline" in pg.inner_text("#aviso-topo")

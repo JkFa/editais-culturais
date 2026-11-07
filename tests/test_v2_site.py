@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 import pytest
-from test_e2e_site import WEB, abertos, navegador, nova_pagina, snapshot, url  # noqa: F401
+from e2e_util import WEB, abertos, nova_pagina
 
 RAIZ = Path(__file__).resolve().parent.parent
 DOCS = RAIZ / "docs" / "v2"
@@ -88,11 +88,15 @@ def test_script_de_tema_inline_vem_antes_do_css_e_e_igual_nas_4_paginas():
     scripts = set()
     for pagina in PAGINAS:
         html = (WEB / pagina).read_text(encoding="utf-8")
-        achado = re.search(r"<script>(\(function\(\)\{try\{var t=localStorage.*?)</script>", html, re.S)
+        achado = re.search(
+            r"<script>(\(function\(\)\{try\{var t=localStorage.*?)</script>", html, re.S
+        )
         assert achado, pagina
         assert achado.start() < html.index('rel="stylesheet"'), pagina
         scripts.add(achado.group(1))
-        assert html.count('name="theme-color"') == 2 and 'media="(prefers-color-scheme: dark)"' in html
+        assert (
+            html.count('name="theme-color"') == 2 and 'media="(prefers-color-scheme: dark)"' in html
+        )
         assert 'name="color-scheme" content="light dark"' in html
     assert len(scripts) == 1
 
@@ -138,14 +142,23 @@ def test_alternar_tema_percorre_sistema_claro_escuro_e_persiste(navegador, url):
     botao = pg.locator("[data-alternar-tema]").first
     assert botao.inner_text() == "Tema: sistema"
     botao.click()
-    assert botao.inner_text() == "Tema: claro" and pg.evaluate("document.documentElement.dataset.tema") == "claro"
+    assert (
+        botao.inner_text() == "Tema: claro"
+        and pg.evaluate("document.documentElement.dataset.tema") == "claro"
+    )
     pg.wait_for_timeout(300)  # transição de cor de 150 ms
-    assert pg.evaluate("getComputedStyle(document.body).backgroundColor") == "rgb(247, 245, 240)"  # claro vence o sistema escuro
+    assert (
+        pg.evaluate("getComputedStyle(document.body).backgroundColor") == "rgb(247, 245, 240)"
+    )  # claro vence o sistema escuro
     assert "escuro" in botao.get_attribute("aria-label")  # anuncia o próximo estado
-    assert pg.evaluate("[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#f7f5f0')")
+    assert pg.evaluate(
+        "[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#f7f5f0')"
+    )
     botao.click()
     assert botao.inner_text() == "Tema: escuro"
-    assert pg.evaluate("[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#161513')")
+    assert pg.evaluate(
+        "[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#161513')"
+    )
     pg.reload()
     pg.wait_for_selector("html[data-pronto]")
     assert pg.evaluate("document.documentElement.dataset.tema") == "escuro"
@@ -153,13 +166,20 @@ def test_alternar_tema_percorre_sistema_claro_escuro_e_persiste(navegador, url):
     pg.locator("[data-alternar-tema]").first.click()  # volta ao sistema
     assert pg.evaluate("document.documentElement.dataset.tema") is None
     assert pg.evaluate("localStorage.getItem('editais-culturais:tema')") is None
-    assert pg.evaluate("[...document.querySelectorAll('meta[name=theme-color]')].map(m => m.content).join()") == "#f7f5f0,#161513"
+    assert (
+        pg.evaluate(
+            "[...document.querySelectorAll('meta[name=theme-color]')].map(m => m.content).join()"
+        )
+        == "#f7f5f0,#161513"
+    )
     ctx.close()
 
 
 def test_tema_funciona_sem_localstorage(navegador, url):
     pg = nova_pagina(navegador)
-    pg.add_init_script("Object.defineProperty(window, 'localStorage', {get(){ throw new Error('bloqueado') }})")
+    pg.add_init_script(
+        "Object.defineProperty(window, 'localStorage', {get(){ throw new Error('bloqueado') }})"
+    )
     pronta(pg, url)
     pg.locator("[data-alternar-tema]").first.click()
     assert pg.evaluate("document.documentElement.dataset.tema") == "claro"
@@ -181,7 +201,12 @@ def test_tema_do_explorador_e_compartilhado_com_a_home(navegador, url):
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node indisponível")
 def test_contraste_wcag_nos_dois_temas():
-    r = subprocess.run(["node", str(RAIZ / "scripts" / "contraste.mjs")], capture_output=True, text=True, stdin=subprocess.DEVNULL)
+    r = subprocess.run(
+        ["node", str(RAIZ / "scripts" / "contraste.mjs")],
+        capture_output=True,
+        text=True,
+        stdin=subprocess.DEVNULL,
+    )
     assert r.returncode == 0, r.stdout
     assert "FALHA" not in r.stdout
 
@@ -189,8 +214,14 @@ def test_contraste_wcag_nos_dois_temas():
 @pytest.mark.skipif(shutil.which("node") is None, reason="Node indisponível")
 def test_logica_da_edge_function():
     r = subprocess.run(
-        ["node", "--test", str(RAIZ / "supabase" / "functions" / "registrar-visita" / "logica.test.mjs")],
-        capture_output=True, text=True, stdin=subprocess.DEVNULL,
+        [
+            "node",
+            "--test",
+            str(RAIZ / "supabase" / "functions" / "registrar-visita" / "logica.test.mjs"),
+        ],
+        capture_output=True,
+        text=True,
+        stdin=subprocess.DEVNULL,
     )
     assert r.returncode == 0, r.stdout[-800:]
 
@@ -203,13 +234,17 @@ def test_home_usa_dados_reais_do_snapshot(navegador, url, snapshot):
     pronta(pg, url)
     vivos = abertos(snapshot)
     assert pg.locator('[data-numero="abertos"]').inner_text() == str(len(vivos))
-    assert pg.locator('[data-numero="fontes"]').inner_text() == str(len({e["fonte"] for e in vivos}))
+    assert pg.locator('[data-numero="fontes"]').inner_text() == str(
+        len({e["fonte"] for e in vivos})
+    )
     com_valor = [e for e in vivos if e["valor_total"] is not None]
     assert f"{len(com_valor)} edita" in pg.locator('[data-numero-rotulo="valor"]').inner_text()
     # índice por linguagem: contagens reais
     for linha in pg.locator("#indice-linguagem li").all():
         nome = linha.locator(".indice-nome").inner_text()
-        assert int(linha.locator(".indice-n").inner_text()) == sum(1 for e in vivos if nome in e["linguagens"])
+        assert int(re.match(r"\d+", linha.locator(".indice-n").inner_text()).group()) == sum(
+            1 for e in vivos if nome in e["linguagens"]
+        )
     assert pg.locator("#perfis li").count() == 5
     assert pg.locator("#radar li").count() == len(snapshot["radar"])
     assert re.search(r"\d{2}/\d{2}/\d{4} \d{2}:\d{2}", pg.locator(".sobretitulo").inner_text())
@@ -265,7 +300,10 @@ def test_home_sem_cookies_e_sem_bloco_de_visitas_sem_supabase(navegador, url):
 def test_semana_vazia_mostra_o_texto_pedido(navegador, url, snapshot):
     vazio = {**snapshot, "editais": [e for e in snapshot["editais"] if e["fonte"] == "curadoria"]}
     pg = nova_pagina(navegador)
-    pg.route("**/data/snapshot.json", lambda r: r.fulfill(content_type="application/json", body=json.dumps(vazio)))
+    pg.route(
+        "**/data/snapshot.json",
+        lambda r: r.fulfill(content_type="application/json", body=json.dumps(vazio)),
+    )
     pronta(pg, url)
     assert pg.locator("#semana").inner_text() == "Nenhum edital encerra nos próximos 7 dias"
     pg.close()
@@ -277,13 +315,23 @@ def test_semana_vazia_mostra_o_texto_pedido(navegador, url, snapshot):
 @pytest.mark.parametrize("pagina", PAGINAS)
 def test_cada_pagina_tem_titulo_description_e_open_graph_proprios(pagina):
     html = (WEB / pagina).read_text(encoding="utf-8")
-    for marca in ("<title>", 'name="description"', 'rel="canonical"', 'property="og:image"', 'rel="manifest"', 'name="viewport"'):
+    for marca in (
+        "<title>",
+        'name="description"',
+        'rel="canonical"',
+        'property="og:image"',
+        'rel="manifest"',
+        'name="viewport"',
+    ):
         assert marca in html, (pagina, marca)
     assert "og.png" in html
 
 
 def test_titulos_sao_distintos():
-    titulos = [re.search(r"<title>(.*?)</title>", (WEB / p).read_text(encoding="utf-8")).group(1) for p in PAGINAS]
+    titulos = [
+        re.search(r"<title>(.*?)</title>", (WEB / p).read_text(encoding="utf-8")).group(1)
+        for p in PAGINAS
+    ]
     assert len(set(titulos)) == len(PAGINAS)
 
 
@@ -308,7 +356,10 @@ def test_caminhos_sao_relativos_exceto_a_404_com_base():
 def test_pagina_404_funciona_com_a_base_do_subcaminho(navegador, url):
     pg = nova_pagina(navegador)
     # O GitHub Pages serve a 404 em qualquer caminho: aqui o subcaminho é mapeado para a raiz local.
-    pg.route(re.compile(r".*/editais-culturais/.*"), lambda r: r.continue_(url=r.request.url.replace("/editais-culturais/", "/")))
+    pg.route(
+        re.compile(r".*/editais-culturais/.*"),
+        lambda r: r.continue_(url=r.request.url.replace("/editais-culturais/", "/")),
+    )
     pg.goto(url.rstrip("/") + "/editais-culturais/404.html")
     assert "Esse endereço não existe" in pg.locator("h1").inner_text()
     assert pg.get_by_role("link", name="Ver os editais abertos").get_attribute("href") == "editais/"
@@ -335,8 +386,13 @@ def _visitas(pg, resumo=None, falha=False):
     chamadas: list = []
 
     def funcao(rota):
-        chamadas.append({"corpo": rota.request.post_data, "tipo": rota.request.headers.get("content-type"),
-                         "cookie": rota.request.headers.get("cookie")})
+        chamadas.append(
+            {
+                "corpo": rota.request.post_data,
+                "tipo": rota.request.headers.get("content-type"),
+                "cookie": rota.request.headers.get("cookie"),
+            }
+        )
         rota.fulfill(status=204, headers={"access-control-allow-origin": "*"})
 
     pg.route("https://projeto.supabase.invalid/functions/v1/registrar-visita", funcao)
@@ -346,9 +402,18 @@ def _visitas(pg, resumo=None, falha=False):
         if "visitas_resumo" in rota.request.url:
             if falha or resumo is None:
                 return rota.abort()
-            return rota.fulfill(status=200, content_type="application/json", body=json.dumps(resumo),
-                                headers={"access-control-allow-origin": "*"})
-        rota.fulfill(status=200, content_type="application/json", body="[]", headers={"access-control-allow-origin": "*"})
+            return rota.fulfill(
+                status=200,
+                content_type="application/json",
+                body=json.dumps(resumo),
+                headers={"access-control-allow-origin": "*"},
+            )
+        rota.fulfill(
+            status=200,
+            content_type="application/json",
+            body="[]",
+            headers={"access-control-allow-origin": "*"},
+        )
 
     pg.route("https://projeto.supabase.invalid/rest/v1/**", rest)
     return chamadas
@@ -371,9 +436,17 @@ def test_conta_uma_visita_por_aba_e_por_dia_sem_dado_pessoal(navegador, url):
     pg.wait_for_timeout(300)
     assert len(chamadas) == 1  # mesma aba, mesmo dia: não conta de novo
     outra = ctx.new_page()
-    _visitas_extra = outra.route("https://projeto.supabase.invalid/functions/v1/registrar-visita", lambda r: (chamadas.append(1), r.fulfill(status=204)))
-    outra.route("**/config.js", lambda r: r.fulfill(content_type="text/javascript", body=CONFIG_FALSA))
-    outra.route("https://projeto.supabase.invalid/rest/v1/**", lambda r: r.fulfill(status=200, content_type="application/json", body="[]"))
+    _visitas_extra = outra.route(
+        "https://projeto.supabase.invalid/functions/v1/registrar-visita",
+        lambda r: (chamadas.append(1), r.fulfill(status=204)),
+    )
+    outra.route(
+        "**/config.js", lambda r: r.fulfill(content_type="text/javascript", body=CONFIG_FALSA)
+    )
+    outra.route(
+        "https://projeto.supabase.invalid/rest/v1/**",
+        lambda r: r.fulfill(status=200, content_type="application/json", body="[]"),
+    )
     outra.goto(url + "sobre/")
     outra.wait_for_selector("html[data-pronto], footer")
     outra.wait_for_timeout(300)
@@ -420,9 +493,14 @@ def test_bloco_de_visitantes_com_cartograma_tabela_e_cidades(navegador, url):
     pronta(pg, url)
     bloco = pg.locator("#visitantes")
     bloco.wait_for(state="visible")
-    assert pg.locator("[data-visitas-frase]").inner_text() == "12.480 visitas · pessoas de 3 estados nos últimos 30 dias"
+    assert (
+        pg.locator("[data-visitas-frase]").inner_text()
+        == "12.480 visitas · pessoas de 3 estados nos últimos 30 dias"
+    )
     assert pg.locator(".cg-celula").count() == 27
-    assert pg.locator('.cg-celula[data-nivel="5"]').inner_text() == "MG"   # o maior vira o nível máximo
+    assert (
+        pg.locator('.cg-celula[data-nivel="5"]').inner_text() == "MG"
+    )  # o maior vira o nível máximo
     assert pg.locator('.cg-celula[data-nivel="0"]').count() == 24
     assert pg.locator(".cg-botao", has_text="CE").get_attribute("title") == "CE: 100 visitas"
     pg.locator(".cg-botao", has_text="SP").focus()
@@ -449,10 +527,12 @@ def test_bloco_de_visitantes_com_cartograma_tabela_e_cidades(navegador, url):
 
 def test_cartograma_posiciona_27_ufs_sem_sobreposicao():
     js = (WEB / "assets/js/cartograma.js").read_text(encoding="utf-8")
-    bloco = js[js.index("export const POSICAO_UF"): js.index("}; // fmt: skip")]
+    bloco = js[js.index("export const POSICAO_UF") : js.index("}; // fmt: skip")]
     pares = re.findall(r"([A-Z]{2}): \[(\d), (\d)\]", bloco)
-    assert len(pares) == 27 and len({(c, l) for _, c, l in pares}) == 27
-    assert {uf for uf, _, _ in pares} == set("AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split())
+    assert len(pares) == 27 and len({(col, lin) for _, col, lin in pares}) == 27
+    assert {uf for uf, _, _ in pares} == set(
+        "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split()
+    )
 
 
 # ---------------------------------------------------------------- celular × temas
@@ -462,11 +542,24 @@ TEMAS = ["light", "dark"]
 
 
 def contexto_movel(navegador, largura, altura, tema):
-    ctx = navegador.new_context(viewport={"width": largura, "height": altura}, color_scheme=tema, has_touch=True,
-                                is_mobile=True, device_scale_factor=2, locale="pt-BR")
+    ctx = navegador.new_context(
+        viewport={"width": largura, "height": altura},
+        color_scheme=tema,
+        has_touch=True,
+        is_mobile=True,
+        device_scale_factor=2,
+        locale="pt-BR",
+    )
     pg = ctx.new_page()
     erros: list[str] = []
-    pg.on("console", lambda m: erros.append(m.text) if m.type == "error" and "fonts.g" not in (m.location.get("url") or "") else None)
+    pg.on(
+        "console",
+        lambda m: (
+            erros.append(m.text)
+            if m.type == "error" and "fonts.g" not in (m.location.get("url") or "")
+            else None
+        ),
+    )
     pg.on("pageerror", lambda e: erros.append(str(e)))
     pg.erros = erros
     return ctx, pg
@@ -477,12 +570,23 @@ def contexto_movel(navegador, largura, altura, tema):
 def test_todas_as_paginas_no_celular(navegador, url, largura, altura, tema):
     DOCS.mkdir(parents=True, exist_ok=True)
     ctx, pg = contexto_movel(navegador, largura, altura, tema)
-    pg.route(re.compile(r".*/editais-culturais/.*"), lambda r: r.continue_(url=r.request.url.replace("/editais-culturais/", "/")))
-    for nome, caminho in [("home", ""), ("editais", "editais/"), ("sobre", "sobre/"), ("404", "editais-culturais/404.html")]:
+    pg.route(
+        re.compile(r".*/editais-culturais/.*"),
+        lambda r: r.continue_(url=r.request.url.replace("/editais-culturais/", "/")),
+    )
+    for nome, caminho in [
+        ("home", ""),
+        ("editais", "editais/"),
+        ("sobre", "sobre/"),
+        ("404", "editais-culturais/404.html"),
+    ]:
         pg.goto(url + caminho if nome != "404" else url.rstrip("/") + "/" + caminho)
         pg.wait_for_selector("h1")
         pg.wait_for_timeout(500)
-        assert pg.evaluate("document.documentElement.scrollWidth <= window.innerWidth"), (nome, "rolagem horizontal")
+        assert pg.evaluate("document.documentElement.scrollWidth <= window.innerWidth"), (
+            nome,
+            "rolagem horizontal",
+        )
         # alvos de toque e fonte dos campos
         pequenos = pg.evaluate(
             """() => [...document.querySelectorAll('button, a.btn, .chip, select, input:not([type=checkbox]), nav a, .perfil, .indice a, .aba, summary')]
@@ -491,8 +595,12 @@ def test_todas_as_paginas_no_celular(navegador, url, largura, altura, tema):
                 .filter(([, h]) => h < 43.5)"""
         )
         assert pequenos == [], (nome, pequenos)
-        assert pg.evaluate("[...document.querySelectorAll('input, select, textarea')].every(e => parseFloat(getComputedStyle(e).fontSize) >= 16)"), nome
-        pg.screenshot(path=str(DOCS / f"{nome}-{largura}-{tema}.png"), full_page=(nome != "editais"))
+        assert pg.evaluate(
+            "[...document.querySelectorAll('input, select, textarea')].every(e => parseFloat(getComputedStyle(e).fontSize) >= 16)"
+        ), nome
+        pg.screenshot(
+            path=str(DOCS / f"{nome}-{largura}-{tema}.png"), full_page=(nome != "editais")
+        )
     assert pg.erros == []
     ctx.close()
 
@@ -565,11 +673,20 @@ def test_painel_em_tela_cheia_com_whatsapp_fixo(navegador, url, largura, altura,
 @pytest.mark.parametrize("tema", TEMAS)
 def test_desktop_1280x800_nos_dois_temas(navegador, url, tema):
     DOCS.mkdir(parents=True, exist_ok=True)
-    ctx = navegador.new_context(viewport={"width": 1280, "height": 800}, color_scheme=tema, locale="pt-BR")
+    ctx = navegador.new_context(
+        viewport={"width": 1280, "height": 800}, color_scheme=tema, locale="pt-BR"
+    )
     pg = ctx.new_page()
     erros: list[str] = []
     pg.on("pageerror", lambda e: erros.append(str(e)))
-    pg.on("console", lambda m: erros.append(m.text) if m.type == "error" and "fonts.g" not in (m.location.get("url") or "") else None)
+    pg.on(
+        "console",
+        lambda m: (
+            erros.append(m.text)
+            if m.type == "error" and "fonts.g" not in (m.location.get("url") or "")
+            else None
+        ),
+    )
     for nome, caminho in [("home", ""), ("editais", "editais/"), ("sobre", "sobre/")]:
         pg.goto(url + caminho)
         pg.wait_for_selector("h1")
