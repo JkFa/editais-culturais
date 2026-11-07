@@ -170,9 +170,12 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                 existentes = await supabase.existentes()
             except RuntimeError as exc:
                 log.error("não foi possível ler o banco: %s", exc)
-        if not existentes and anterior:
-            existentes = {(x["fonte"], x["id_externo"]): x for x in anterior.get("editais", [])}
-        editais = preservar_carimbos(editais, existentes)
+        # Carimbos (coletado_em) vêm do banco; sem banco, do snapshot anterior. A decisão de
+        # gravar compara só com o banco: o snapshot não prova que a linha está no Supabase.
+        carimbos = existentes or {
+            (x["fonte"], x["id_externo"]): x for x in (anterior or {}).get("editais", [])
+        }
+        editais = preservar_carimbos(editais, carimbos)
 
         corpo = escrever_snapshot(snapshot, editais, radar, fontes_ok, falhas, agora)
         imprimir_resumo(corpo, descartes, nao_mapeadas, dry_run)

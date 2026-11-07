@@ -33,7 +33,7 @@ class ClienteHttp:
         self,
         repo_url: str | None = None,
         concorrencia: int = 4,
-        timeout: float = 30.0,
+        timeout: float = 60.0,
         tentativas: int = 3,
         transporte: httpx.AsyncBaseTransport | None = None,
         pausa_base: float = 1.5,
@@ -85,7 +85,8 @@ class ClienteHttp:
                     except ValueError as exc:
                         raise ErroColeta(f"resposta não é JSON em {url}") from exc
             except (httpx.TransportError, httpx.TimeoutException) as exc:
-                ultimo = exc
+                # Timeouts do httpx têm mensagem vazia: registra também o tipo.
+                ultimo = ErroColeta(f"{type(exc).__name__} {exc}".strip())
             if tentativa < self._tentativas:
                 log.warning(
                     "tentativa %d/%d falhou (%s); aguardando %.1fs",

@@ -132,3 +132,35 @@ async def test_sem_credenciais_roda_como_dry_run(tmp_path, servidor_falso, monke
 
 def test_paginacao_maxima_nao_e_infinita():
     assert mapas_culturais.MAX_PAGINAS <= 50 and AGORA
+
+
+async def test_banco_vazio_grava_tudo_mesmo_com_snapshot_anterior(
+    tmp_path, servidor_falso, monkeypatch
+):
+    """Regressão: o snapshot não prova que a linha existe no Supabase."""
+    import httpx as _httpx
+
+    from worker import persistencia
+
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setenv("SUPABASE_URL", "https://p.invalid")
+    monkeypatch.setenv("SUPABASE_SERVICE_ROLE_KEY", "k")
+    snapshot = tmp_path / "s.json"
+    snapshot.write_text(Path(scraper_worker.SNAPSHOT).read_text(encoding="utf-8"), encoding="utf-8")
+    posts: list[int] = []
+
+    def tratar(req):
+        if req.method == "POST" and req.url.path.endswith("/editais"):
+            posts.append(len(json.loads(req.content)))
+        if req.method == "GET":
+            return _httpx.Response(200, json=[])
+        return _httpx.Response(201)
+
+    original = persistencia.Supabase.__init__
+
+    def init(self, cfg, transporte=None):
+        original(self, cfg, transporte=_httpx.MockTransport(tratar))
+
+    monkeypatch.setattr(persistencia.Supabase, "__init__", init)
+    assert await scraper_worker.executar(dry_run=False, snapshot=snapshot) == 0
+    assert sum(posts) > 0
