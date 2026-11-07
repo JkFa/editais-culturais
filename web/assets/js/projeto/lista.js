@@ -33,7 +33,10 @@ export async function telaLista(ctx) {
         await api.excluirProjeto(p.id);
         item.remove();
         ctx.avisar("Projeto excluído.");
-        if (!lista.children.length) raiz.querySelector(".vazio")?.removeAttribute("hidden");
+        const restantes = lista.children.length;
+        const contagem = raiz.querySelector(".contagem-projetos");
+        if (contagem) contagem.textContent = restantes ? `${plural(restantes, "projeto", "projetos")}.` : "";
+        if (!restantes) raiz.querySelector(".vazio")?.removeAttribute("hidden");
       } catch (e) {
         apagar.disabled = false;
         ctx.avisar(e.message);
@@ -59,7 +62,7 @@ export async function telaLista(ctx) {
     el("div", { class: "topo-pagina" },
       el("h1", {}, "Meus projetos"),
       el("a", { class: "btn btn-primario", href: "?novo=1" }, "Novo projeto")),
-    el("p", { class: "lead" }, projetos.length ? plural(projetos.length, "projeto", "projetos") + "." : ""),
+    el("p", { class: "lead contagem-projetos" }, projetos.length ? plural(projetos.length, "projeto", "projetos") + "." : ""),
     el("p", { class: "vazio", hidden: projetos.length > 0 }, "Você ainda não tem projetos. Comece por um edital da lista ou crie um projeto avulso."),
     lista,
   );
