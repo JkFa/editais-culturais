@@ -26,10 +26,16 @@ def itens_reais() -> list[dict]:
 def textos_reais(itens_reais) -> list[str]:
     from worker.padronizacao import limpar_texto
 
-    return [
+    from worker.extrator import extrair_pagina
+
+    textos = [
         limpar_texto(f"{i.get('shortDescription') or ''} {i.get('longDescription') or ''}")
         for i in itens_reais
     ]
+    # Páginas reais do MinC (v4) também servem de corpus para o regex de valores.
+    for arquivo in sorted((FIXTURES / "v4").glob("minc_detalhe_*.html")):
+        textos.append(limpar_texto(extrair_pagina(arquivo.read_text(encoding="utf-8")).texto))
+    return textos
 
 
 # ---------------------------------------------------------------- fixtures do e2e (Playwright)

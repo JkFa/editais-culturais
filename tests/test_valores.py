@@ -85,6 +85,11 @@ CASOS = [
         "até R$ 500 mil, e projetos de atuação mais localizada, até R$ 250 mil",
         [(D("500000"), "teto"), (D("250000"), "teto")],
     ),
+    # Garantia por localidade e piso do programa não são teto por projeto (texto real do MinC).
+    (
+        "Cada proponente pode solicitar o valor máximo de R$ 200.000,00 (duzentos mil reais) por proposta. O programa garante a seleção de, no mínimo, 50 propostas culturais e assegura o montante mínimo de R$ 1.000.000,00 (um milhão de reais) para cada uma das localidades listadas.",
+        [(D("200000"), "teto"), (D("1000000"), "outro")],
+    ),
     # Dinheiro que não é fomento: taxa cobrada e remuneração de parecerista.
     (
         "será cobrada uma taxa de cofinanciamento no valor de R$ 50,00 por obra submetida",
