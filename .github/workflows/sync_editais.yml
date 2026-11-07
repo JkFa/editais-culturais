@@ -9,6 +9,10 @@ on:
         description: "Opcional: id de uma fonte nova (worker/fontes.yaml) para testar isolada, sem alterar o snapshot"
         required: false
         default: ""
+      dry_run:
+        description: "Com `fonte`: não grava nada no Supabase (só imprime o resultado)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -42,9 +46,14 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FONTE: ${{ inputs.fonte }}
+          SEM_GRAVAR: ${{ inputs.dry_run }}
         run: |
           if [ -n "$FONTE" ]; then
-            python -m worker.scraper_worker --fonte "$FONTE"
+            if [ "$SEM_GRAVAR" = "true" ]; then
+              python -m worker.scraper_worker --fonte "$FONTE" --dry-run
+            else
+              python -m worker.scraper_worker --fonte "$FONTE"
+            fi
             exit $?
           fi
           if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
