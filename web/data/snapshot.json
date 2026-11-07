@@ -1,13 +1,12 @@
 {
- "gerado_em": "2026-11-07T03:31:27.631710+00:00",
+ "gerado_em": "2026-11-07T14:39:33.246328+00:00",
  "fontes_ok": [
   "curadoria",
   "mapas:aracaju",
   "mapas:br",
   "mapas:ce",
   "mapas:natal",
-  "mapas:pa",
-  "mapas:pb"
+  "mapas:pa"
  ],
  "fontes_falharam": [
   {
@@ -17,6 +16,10 @@
   {
    "fonte": "mapas:se",
    "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout"
+  },
+  {
+   "fonte": "mapas:pb",
+   "erro": "falha após 3 tentativas em https://mapacultural.pb.gov.br/api/opportunity/find: ConnectTimeout"
   },
   {
    "fonte": "mapas:campinas",
