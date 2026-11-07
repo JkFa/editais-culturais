@@ -24,9 +24,8 @@ def itens_reais() -> list[dict]:
 
 @pytest.fixture(scope="session")
 def textos_reais(itens_reais) -> list[str]:
-    from worker.padronizacao import limpar_texto
-
     from worker.extrator import extrair_pagina
+    from worker.padronizacao import limpar_texto
 
     textos = [
         limpar_texto(f"{i.get('shortDescription') or ''} {i.get('longDescription') or ''}")
