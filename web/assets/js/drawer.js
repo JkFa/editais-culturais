@@ -78,6 +78,14 @@ function blocoAlternativas(edital) {
   );
 }
 
+/** Link para o assistente de projetos, já com o edital escolhido (qualquer página do site). */
+function urlAssistente(edital) {
+  const url = new URL("../../projeto/", import.meta.url);
+  url.searchParams.set("novo", "1");
+  if (edital.chave) url.searchParams.set("edital", edital.chave);
+  return url.href;
+}
+
 function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoFechar, aoCopiar }) {
   const documentos = edital.documentos_exigidos?.length
     ? el("ul", { class: "docs" }, edital.documentos_exigidos.map((d) => el("li", {}, d)))
@@ -132,6 +140,12 @@ function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoF
       secao("Documentos exigidos", documentos),
       cronograma ? secao("Cronograma", cronograma) : null,
       secao("Links", el("div", { class: "links" }, links)),
+      el(
+        "p",
+        { class: "assistente-chamada" },
+        el("a", { class: "btn", href: urlAssistente(edital) }, "Escrever projeto para este edital"),
+        el("span", { class: "fonte" }, " Assistente gratuito, com login por e-mail."),
+      ),
       blocoAlternativas(edital),
       blocoProveniencia(edital),
       el(

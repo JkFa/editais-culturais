@@ -1212,3 +1212,14 @@ body {
   border-color: var(--cor-urgente);
   color: var(--cor-urgente);
 }
+
+.painel .assistente-chamada {
+  margin: 1rem 0 0;
+}
+
+.painel .assistente-chamada .btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--cor-texto);
+}
