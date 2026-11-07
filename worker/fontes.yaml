@@ -1,0 +1,97 @@
+# Instâncias de Mapas Culturais consultadas via /api/opportunity/find.
+# Fonte gravada no banco: "mapas:<slug>".
+# Reconhecimento feito em 06/11/2026 (ver DECISIONS.md, Fase 0).
+
+parametros:
+  # Só estes tipos de oportunidade viram edital (as instâncias também publicam
+  # cursos, oficinas, eventos, feiras etc.).
+  tipos_aceitos: ["Edital"]
+  # Regex (sem acentos, minúsculas) aplicada ao título. Remove cadastros de teste
+  # e eleições de conselho, que não são fomento.
+  excluir_titulo_regex:
+    - '\bteste\b'
+    - 'conselho (municipal|estadual|nacional|distrital) de politica cultural'
+  # Fluxo contínuo costuma vir com fim em 2100/2111 (sem prazo real).
+  ano_sem_prazo_a_partir_de: 2090
+
+instancias:
+  - slug: br
+    nome: Mapa Cultural do Brasil (MinC)
+    base_url: https://mapa.cultura.gov.br
+    abrangencia: null   # plataforma federal: cada edital pode ser de qualquer lugar
+    uf: null
+    municipio: null
+    ativa: true
+
+  - slug: ce
+    nome: Mapa Cultural do Ceará (Secult-CE)
+    base_url: https://mapacultural.secult.ce.gov.br
+    abrangencia: estadual
+    uf: CE
+    municipio: null
+    ativa: true
+
+  - slug: pe
+    nome: Mapa Cultural de Pernambuco
+    base_url: https://mapacultural.pe.gov.br
+    abrangencia: estadual
+    uf: PE
+    municipio: null
+    ativa: true
+
+  - slug: se
+    nome: Mapa Cultural de Sergipe
+    base_url: https://mapacultural.se.gov.br
+    abrangencia: estadual
+    uf: SE
+    municipio: null
+    ativa: true
+
+  - slug: pa
+    nome: Mapa Cultural do Pará
+    base_url: https://mapacultural.pa.gov.br
+    abrangencia: estadual
+    uf: PA
+    municipio: null
+    ativa: true
+
+  - slug: pb
+    nome: Mapa Cultural da Paraíba
+    base_url: https://mapacultural.pb.gov.br
+    abrangencia: estadual
+    uf: PB
+    municipio: null
+    ativa: true
+
+  - slug: aracaju
+    nome: Mapa Cultural de Aracaju (Funcaju)
+    base_url: https://mapacultural.aracaju.se.gov.br
+    abrangencia: municipal
+    uf: SE
+    municipio: Aracaju
+    ativa: true
+
+  - slug: natal
+    nome: Mapa Cultural de Natal
+    base_url: https://mapacultural.natal.rn.gov.br
+    abrangencia: municipal
+    uf: RN
+    municipio: Natal
+    ativa: true
+
+  - slug: campinas
+    nome: Mapa Cultural de Campinas
+    base_url: https://mapacultural.campinas.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: Campinas
+    ativa: true
+
+  - slug: df
+    nome: Mapa Cultural do Distrito Federal
+    base_url: https://mapa.cultura.df.gov.br
+    abrangencia: estadual
+    uf: DF
+    municipio: null
+    ativa: false
+    motivo: "HTTP 403 em /api/opportunity/find na sondagem de 06/11/2026 (bloqueia clientes automatizados)."

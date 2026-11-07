@@ -1,0 +1,306 @@
+[
+ {
+  "id": 278,
+  "name": "APOIO FINANCEIRO PARA ARRAIÁS DE RUA 2026",
+  "shortDescription": "SELEÇÃO PÚBLICA Nº 14/2026 – SECULT/FUNCARTE. SELEÇÃO PÚBLICA PARA APOIO FINANCEIRO A ARRAIÁS DE RUA DE NATAL – PROGRAMAÇÃO DOS FESTEJOS JUNINOS DE 2026.  Processo Administrativo nº Funcarte-20260717111.\n",
+  "registrationFrom": {
+   "date": "2026-05-27 16:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-06-07 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "A Fundação Cultural Capitania das Artes – FUNCARTE torna pública a presente Seleção Pública nº 14/2026, destinada à habilitação e seleção de propostas de Arraiás de Rua de Natal, com vistas à composição da programação das Celebrações dos Festejos Juninos de 2026, mediante concessão de apoio financeiro, observadas as condições, critérios, prazos e obrigações previstos neste instrumento.\n\nA presente Seleção Pública tem por objeto habilitar e selecionar até 40 (quarenta) \nArraiás de Rua de Natal para recebimento de apoio financeiro, conforme as seguintes faixas:\n\nFaixa A – Arraiás consolidados: Apoio financeiro para até 35 (trinta e cinco) Arraiás \nde Rua que comprovem, no mínimo, 03 (três) edições já realizadas, no valor de R$5.000,00 \n(cinco mil reais) cada.\n\nFaixa B – Arraiás em consolidação: Apoio financeiro para até 05 (cinco) Arraiás de Rua que comprovem, no mínimo, 01 (uma) edição já realizada, no valor de R$3.500,00 (três mil e quinhentos reais) cada.\n\nA seleção observará as especificações e condições constantes neste Edital, bem como  os critérios técnicos definidos para a etapa de Seleção Artística, visando à composição da programação das Celebrações dos Festejos Juninos de Natal 2026.\n\nInformações e esclarecimentos necessários ao perfeito conhecimento do objeto desta Seleção Pública poderão ser prestados pela FUNCARTE pelo e-mail secult.funcarte@natal.rn.gov.br e telefone +55 84 92001-9072.",
+  "ownerEntity": {
+   "id": 298,
+   "name": "CICLO JUNINO 2026",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 1850,
+   "name": "Pablo Trajano Pinheiro da Silva",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [
+    "apoio"
+   ],
+   "area": [
+    "Forró",
+    "Festejos Juninos",
+    "Culturas Populares",
+    "Culturas Tradicionais e Populares",
+    "Festas Populares"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/278/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 188,
+  "name": "Bolsa Mestra e Mestre",
+  "shortDescription": " EDITAL PADRONIZADO DE CONCESSÃO DE BOLSAS CULTURA VIVA PARA MESTRAS E MESTRES  \n\nEDITAL DE CHAMAMENTO PÚBLICO Nº 11/2026\nPARA CONCESSÃO DE BOLSAS CULTURA VIVA A MESTRAS E MESTRES DAS CULTURAS TRADICIONAIS E POPULARES COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA (LEI Nº 14.399/2022) Processo: Funcarte-20260386603",
+  "registrationFrom": {
+   "date": "2026-04-14 12:36:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-05-14 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "1. OBJETO\n1.1. O objeto deste Edital é a concessão de Bolsas Cultura Viva para Mestras e Mestres das Culturas Tradicionais e Populares, destinadas exclusivamente a pessoas físicas que, vinculadas ao menos um ponto ou pontão de cultura, desenvolvam atividades culturais que colaborem para as finalidades da PNCV.\n\n3.1. Este Edital é realizado com recursos do Governo Federal, repassados ao Município do \nNatal por meio da Política Nacional Aldir Blanc para a realização de ações no âmbito da PNCV \ne tem o valor total de R$327.600,00 (trezentos e vinte e sete mil e seiscentos reais), para a \nconcessão de treze (13) Bolsas Cultura Viva. \n\nAs informações e esclarecimentos necessários ao perfeito conhecimento do objeto desta Seleção Pública poderão ser prestados pela FUNCARTE pelo e-mail pnab2@natal.rn.gov.br e telefone +55 84 92001-9072.",
+  "ownerEntity": {
+   "id": 290,
+   "name": "PNAB Natal - Ciclo 2",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Cultura da juventude de povos e comunidades tradicionais",
+    "Culturas Afrobrasileiras",
+    "Culturas dos Povos Originários",
+    "Culturas Tradicionais",
+    "Culturas Tradicionais e Populares"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/188/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 194,
+  "name": "Edital Periferia",
+  "shortDescription": "EDITAL SIMPLIFICADO DE CHAMAMENTO PÚBLICO Nº 08/2026\nSELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB NATAL - CICLO 2 (LEI Nº 14.399/2022) Funcarte-20260386077\n",
+  "registrationFrom": {
+   "date": "2026-04-14 15:46:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-05-14 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "INFORMAÇÕES GERAIS \nObjeto do edital\nO objeto deste Edital é a seleção de projetos culturais de Agentes Culturais e projetos a serem desenvolvidos em áreas das periferias do município de Natal/RN para receberem apoio financeiro nas categorias descritas no Anexo I, com o objetivo de incentivar as diversas formas de manifestações culturais do município.\n\nQuantidade de projetos selecionados\nSerão selecionadas 56 propostas, contudo, caso haja orçamento e interesse público, o edital poderá ser suplementado, ou seja, caso haja saldo de recursos da PNAB oriundo de outros editais ou rendimentos, as vagas podem ser ampliadas.\n                                                                                                                                                                     \nValor total do edital\nCada projeto receberá o valor descrito no Anexo I. O valor total deste edital é de R$420.000,00 (quatrocentos e vinte mil reais).\nA dotação orçamentária e financeira ocorrerá à conta da Unidade Orçamentária Projeto/Atividade; 13.392.0149.2019 FORTALECIMENTO DO FUNDO DE INCENTIVO À CULTURA; Elemento de Despesa 333.90.31, 333.90.36 e 333.90.39; Fonte: 17190000; sendo R$5.365.983,62 (cinco milhões, trezentos e sessenta e cinco mil, novecentos e oitenta e três reais e sessenta e dois centavos), Programa Nacional Aldir Blanc de Fomento à Cultura – PNAB - Ciclo 2.\n\nAs informações e esclarecimentos necessários ao perfeito conhecimento do objeto desta Seleção Pública poderão ser prestados pela FUNCARTE pelo e-mail pnab2@natal.rn.gov.br e telefone +55 84 92001-9072.",
+  "ownerEntity": {
+   "id": 290,
+   "name": "PNAB Natal - Ciclo 2",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Arte Gráfica",
+    "Ballet",
+    "Canto",
+    "Cultura Alimentar",
+    "Cultura Hip Hop",
+    "Arte Digital",
+    "Audiovisual e Mídias Interativas",
+    "Cultura Negra",
+    "Cinema",
+    "Cultura Digital",
+    "Circo",
+    "Cultura LGBTQIAPN+",
+    "Arte de Plásticas"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/194/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 204,
+  "name": "Edital Fomento PNAB Natal - Ciclo 2",
+  "shortDescription": "EDITAL SIMPLIFICADO DE CHAMAMENTO PÚBLICO Nº 7/2026\nSELEÇÃO DE PROJETOS PARA FIRMAR TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB NATAL - CICLO 2 (LEI Nº 14.399/2022) Funcarte-20260383841.\n",
+  "registrationFrom": {
+   "date": "2026-04-14 15:46:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-05-14 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "INFORMAÇÕES GERAIS \nObjeto do edital\nO objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro nas categorias descritas no Anexo I, com o objetivo de incentivar as diversas formas de manifestações culturais do Município do Natal/RN.\n\nQuantidade de projetos selecionados\nSerão selecionados 118 (cento e dezoito) projetos.\nContudo, caso haja orçamento e interesse público, o edital poderá ser suplementado, ou seja, caso haja saldo de recursos da PNAB oriundo de outros editais ou rendimentos, as vagas podem ser ampliadas.\n\nValor total do edital\nCada projeto receberá o valor descrito no Anexo I.\nO valor total deste edital é de R$1.908.000,00 (um milhão, novecentos e oito mil reais).\n\nAs informações e esclarecimentos necessários ao perfeito conhecimento do objeto desta Seleção Pública poderão ser prestados pela FUNCARTE pelo e-mail pnab2@natal.rn.gov.br e telefone +55 84 92001-9072.",
+  "ownerEntity": {
+   "id": 290,
+   "name": "PNAB Natal - Ciclo 2",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Arte Gráfica",
+    "Ballet",
+    "Canto",
+    "Cultura Alimentar",
+    "Cultura Hip Hop",
+    "Arte Digital",
+    "Audiovisual e Mídias Interativas",
+    "Cultura Negra",
+    "Cinema",
+    "Cultura Digital",
+    "Circo",
+    "Cultura LGBTQIAPN+",
+    "Arte de Plásticas"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/204/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 144,
+  "name": "SELEÇÃO PÚBLICA Nº 09/2025 - SELEÇÃO PÚBLICA DE APOIO FINANCEIRO PARA ARRAIÁS DE RUA DE NATAL",
+  "shortDescription": "PORTARIA Nº 178/2025 – GP/FUNCARTE DE 26 DE MAIO DE 2025.\nA Presidente da Fundação Cultural Capitania das Artes - FUNCARTE, no uso de suas\natribuições legais, tendo em vista o disposto no art. 43 da Lei complementar nº. 141, de\n28 de agosto de 2014,\nArt. 1º Tornar Público o Edital da SELEÇÃO PÚBLICA Nº 09/2025 - APOIO FINANCEIRO PARA\nARRAIÁS DE RUA DE NATAL: PROGRAMAÇÃO DOS FESTEJOS JUNINOS 2025, ",
+  "registrationFrom": {
+   "date": "2025-05-27 10:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2025-06-03 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "SELEÇÃO PÚBLICA Nº 09/2025 - SELEÇÃO PÚBLICA DE APOIO FINANCEIRO PARA\nARRAIÁS DE RUA DE NATAL: PROGRAMAÇÃO DOS FESTEJOS JUNINOS 2025, PROCESSO\nADMINISTRATIVO Nº 20250615986\nA Fundação Cultural Capitania das Artes – FUNCARTE torna pública a SELEÇÃO PÚBLICA\nnº 009/2025 que regulamenta o processo de Seleção de Pessoa Física e MEI, sem fins\nlucrativos, com vistas a selecionar ARRAIÁS DE RUA para compor a programação das\n“Celebrações dos Festejos Juninos 2025’’, com a finalidade de ofertar à população o acesso\nà arte e à cultura produzida na Cidade do Natal, dentro dos FESTEJOS POPULARES. Em\ncumprimento da meta 25 do Plano Municipal de Cultura, que determina “Incluir, na agenda\nde programações promovidas pelo Poder Público Municipal, a realização de apresentações\nartísticas e a circulação de produtos relativos à economia da cultura.”\n 1. DO OBJETO\n 1.1 A presente SELEÇÃO PÚBLICA tem por objetivo habilitar e selecionar para fomento até 40\n(quarenta) ARRAIÁS DE RUA DE NATAL para recebimento de apoio financeiro, conforme a seguir:\n1.1.1 Apoio financeiro para trinta e cinco (35) arraiás com pelo menos 3 edições realizadas,\nno valor de R$ 5.000,00 (cinco mil reais) cada;\n1.1.2 Apoio financeiro para cinco (5) arraiás com uma edição já realizada, no valor de R$ 3.500,00\n(três mil e quinhentos reais) cada; dentro das especificações e condições constantes nesta Seleção,\ncontemplando os critérios técnicos definidos pela Comissão de Avaliação e Seleção, com vistas a\ncompor a programação das ‘Celebrações dos Festejos Juninos de Natal 2025”. ",
+  "ownerEntity": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Dança"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/144/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 60,
+  "name": "FIC - AUXÍLIO FINANCEIRO PARA FOMENTO DA ÁREA DA DANÇA DE NATAL 2024",
+  "shortDescription": "Constitui o objeto desta Seleção Pública selecionar até 24 (vinte\ne quatro) propostas de oficinas e composições coreográficas temáticas e/ou\nartísticas coletivas voltadas a agentes culturais da dança.",
+  "registrationFrom": {
+   "date": "2024-07-31 09:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-09-02 13:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O valor dos recursos desta Seleção Pública é de R$ 155.600,00 (cento e cinquenta\ne cinco mil e seiscentos reais), sendo provenientes de recursos do FIC, , referente ao exercício do ano\nde 2024, através da dotação orçamentária elencada no FIC – FORTALECIMENTO\nDO FUNDO MUNICIPAL DE INCENTIVO À CULTURA",
+  "ownerEntity": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Dança"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/60/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 53,
+  "name": "ARRAIÁS DE RUA",
+  "shortDescription": "Seleção de ARRAIÁS DE RUA para compor a programação das “Celebrações dos Feste-jos Juninos 2024’’, com a finalidade de ofertar à população o acesso à arte e à cultura produzida na Cidade do Natal, dentro dos FESTEJOS POPULARES.",
+  "registrationFrom": {
+   "date": "2024-06-18 15:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-06-23 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "A presente SELEÇÃO PÚBLICA tem por objetivo habilitar e selecionar para fomento até 40 (quarenta) ARRAIÁS DE RUA DE NATAL para recebimento de apoio financeiro de R$ 5.000,00 (cinco mil reais) cada, dentro das especificações e condições constantes nesta Seleção, contemplando os critérios técnicos definidos pela Comissão de Avaliação e Seleção, com vistas a compor a programação das ‘Celebrações dos Festejos Juninos de Natal 2024”.",
+  "ownerEntity": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Dança",
+    "Música"
+   ]
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/53/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ }
+]

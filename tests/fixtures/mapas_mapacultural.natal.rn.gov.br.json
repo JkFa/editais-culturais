@@ -1,0 +1,500 @@
+[
+ {
+  "id": 316,
+  "name": "EDITAL DE SELEÇÃO PÚBLICA PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026",
+  "shortDescription": "EDITAL DA SELEÇÃO PÚBLICA Nº 19/2026-FUNCARTE PARA O 17º SALÃO DE ARTES VISUAIS DA CIDADE DE NATAL - 2026.  PAE Nº Funcarte-20261108891",
+  "registrationFrom": {
+   "date": "2026-10-06 18:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-11-22 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2026-10-05 14:19:26.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "O presente Edital tem por objeto selecionar trabalhos artísticos no campo das artes visuais com autoria de artistas residentes no Estado do Rio Grande do Norte e/ou em algum dos Estados da Região Nordeste do Brasil, para compor a exposição do 17º Salão de Artes Visuais da Cidade de Natal, com data prevista para 16 de janeiro a 30 de março de 2027.\n\nSerão selecionados até 15 (quinze) trabalhos artísticos, observada a ordem de classificação, podendo ser selecionados até 3 (três) trabalhos por expressão artística, de acordo com a classificação final e os critérios estabelecidos neste Edital, especialmente ao item 10.\n\nA seleção compreenderá análise documental e análise artística, conforme critérios e procedimentos previstos neste Edital ao item 10.\n\nOs artistas que necessitarem de suporte para realização da inscrição poderão solicitar atendimento com antecedência mínima de 24 (vinte e quatro) horas, pelo e-mail secult.funcarte@natal.rn.gov.br ou pelo Suporte de Editais sob número +55 84 92001-9072.",
+  "ownerEntity": {
+   "id": 1850,
+   "name": "Pablo Trajano Pinheiro da Silva",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 96,
+   "name": "Jefferson Felipe Mota Silva",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [
+    "arte",
+    "artes visuais"
+   ],
+   "area": [
+    "Arte de Plásticas",
+    "Artes Visuais"
+   ]
+  },
+  "files": {
+   "header": {
+    "id": 79892,
+    "name": "17o-salao-de-artes-visuais-de-natal-1.png",
+    "mimeType": "image/png",
+    "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/17o-salao-de-artes-visuais-de-natal-1.png",
+    "createTimestamp": {
+     "date": "2026-10-07 09:56:28.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 79893,
+      "name": "17o-salao-de-artes-visuais-de-natal-1-b5fca66afafdc14bd2360f76ee1f6abe.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/file/79892/17o-salao-de-artes-visuais-de-natal-1-b5fca66afafdc14bd2360f76ee1f6abe.png",
+      "createTimestamp": {
+       "date": "2026-10-07 09:56:29.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 79895,
+     "name": "anexo-i-manual.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/anexo-i-manual.pdf",
+     "createTimestamp": {
+      "date": "2026-10-07 10:01:50.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Anexo I - Manual de Uso e Convivência: Galeria de Arte Newton Navarro",
+     "transformations": null
+    },
+    {
+     "id": 79897,
+     "name": "anexo-iii-termo-de-responsabilidade.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/anexo-iii-termo-de-responsabilidade.pdf",
+     "createTimestamp": {
+      "date": "2026-10-07 10:03:11.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Anexo III - Termo de Responsabilidade - Galeria de Arte Newton Navarro",
+     "transformations": null
+    },
+    {
+     "id": 79899,
+     "name": "anexo-iv-briefing.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/anexo-iv-briefing.pdf",
+     "createTimestamp": {
+      "date": "2026-10-07 10:06:31.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Anexo IV - Briefing da Exposição",
+     "transformations": null
+    },
+    {
+     "id": 79900,
+     "name": "anexo-v.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/anexo-v.pdf",
+     "createTimestamp": {
+      "date": "2026-10-07 10:08:32.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Anexo V - Declaração de Residência",
+     "transformations": null
+    },
+    {
+     "id": 79901,
+     "name": "anexo-vi.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/anexo-vi.pdf",
+     "createTimestamp": {
+      "date": "2026-10-07 10:09:12.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Anexo VI - Declaração de Compatibilidade e Inexistência de Parentesco",
+     "transformations": null
+    },
+    {
+     "id": 79902,
+     "name": "anexo-vii.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/anexo-vii.pdf",
+     "createTimestamp": {
+      "date": "2026-10-07 10:09:57.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Anexo VII - Declaração de Inexistência de Empregados em Condições Excepcionais",
+     "transformations": null
+    },
+    {
+     "id": 81006,
+     "name": "resolucao-n-005-2026-cnpdm-edital-de-regulamentacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/resolucao-n-005-2026-cnpdm-edital-de-regulamentacao.pdf",
+     "createTimestamp": {
+      "date": "2026-11-03 10:04:12.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Resolução 05/2026",
+     "transformations": null
+    }
+   ],
+   "rules": {
+    "id": 80014,
+    "name": "edital-17-salao-artes-visuais-natal-2026-revisao.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/316/edital-17-salao-artes-visuais-natal-2026-revisao.pdf",
+    "createTimestamp": {
+     "date": "2026-10-09 12:52:17.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "registrations-spreadsheets": {
+    "id": 80633,
+    "name": "oportunidade-316--inscricoes-2026-10-14 11:45:47.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapacultural.natal.rn.gov.br/file/arquivo-privado/80633/",
+    "createTimestamp": {
+     "date": "2026-10-14 11:45:47.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/316/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 119,
+  "name": "Programa Djalma Maranhão (Inscrições via Portal Directa)",
+  "shortDescription": "As inscrições nos editais e processos seletivos deverão ser realizadas exclusivamente por meio do sistema Directa. Aqui neste espaço o agente cultural tem a sua disposição os dispositivos legais referentes ao Programa Djalma Maranhão, bem como documentos para realizar sua inscrição no Directa.\n",
+  "registrationFrom": {
+   "date": "2026-11-03 09:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-12-21 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2025-01-31 11:18:30.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "AVISO IMPORTANTE AOS USUÁRIOS\n\nInformamos que as informações disponibilizadas no Mapa Cultural de Natal possuem caráter exclusivamente consultivo e orientativo, servindo como instrumento de apoio aos agentes culturais.\n\nRessaltamos que as inscrições nos editais e processos seletivos deverão ser realizadas exclusivamente por meio do sistema Directa, conforme as orientações e os procedimentos estabelecidos em cada edital.\n\nA consulta ao Mapa Cultural não substitui a inscrição no sistema Directa, nem garante a participação no certame.\n\nFique atento às orientações do edital e ao sistema oficial de inscrição!\n\n----------\n\nEstá aberto o período de recebimento de projetos culturais do programa Djalma Maranhão para o exercício 2026, do dia 03 de novembro ao dia 21 de dezembro.\nO Empreendedor Cultural deverá protocolar sua proposta perante a Secretaria Municipal de Cultura, via Portal Directa(directa.natal.rn.gov.br), com limite de 4 (quatro) projetos por empreendedor cultural, desde que a soma dos valores dos projetos não ultrapassem o valor de R$ 195.613,20 (cento e noventa e cinco mil, seiscentos e treze reais, vinte centavos).\nOs anexos estão disponíveis no mapa cultural(mapacultural.natal.rn.gov.br).   \nInformações adicionais poderão ser solicitadas através do e-mail institucional leidjalmamaranhao@natal.rn.gov.br",
+  "ownerEntity": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 1,
+   "name": "Fundação Cultural Capitania das Artes",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Artes Visuais",
+    "Música",
+    "Dança",
+    "Teatro",
+    "Circo",
+    "Ópera",
+    "Audiovisual e Mídias Interativas",
+    "Leitura",
+    "Artesanato",
+    "História",
+    "Patrimônio Cultural",
+    "Museu (Patrimônio Material)",
+    "Arte de Rua",
+    "Arte Digital",
+    "Cinema",
+    "Comunicação",
+    "Cultura Digital",
+    "Cultura LGBTQIAPN+",
+    "Cultura Negra",
+    "Culturas Populares",
+    "Cultura e Educação",
+    "Gestão Cultural",
+    "Jogos eletrônicos/Games",
+    "Literatura",
+    "Livro"
+   ]
+  },
+  "files": {
+   "rules": {
+    "id": 40170,
+    "name": "lei-complementar-djalma-maranhao-no-240-de-19-01-24-3.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/lei-complementar-djalma-maranhao-no-240-de-19-01-24-3.pdf",
+    "createTimestamp": {
+     "date": "2025-01-31 11:22:33.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 40171,
+     "name": "decreto-no-13-136-de-24-de-julho-de-2024.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/decreto-no-13-136-de-24-de-julho-de-2024.pdf",
+     "createTimestamp": {
+      "date": "2025-01-31 11:23:13.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Decreto de Regulamentação",
+     "transformations": null
+    },
+    {
+     "id": 40173,
+     "name": "anexo-do-formulario-para-inscricao-do-projeto-cultural.doc",
+     "mimeType": "application/msword",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/anexo-do-formulario-para-inscricao-do-projeto-cultural.doc",
+     "createTimestamp": {
+      "date": "2025-01-31 11:25:18.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Formulário para inscrição",
+     "transformations": null
+    },
+    {
+     "id": 40174,
+     "name": "passo-a-passo-para-inscricao-de-projetos-pdm-2024-2-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/passo-a-passo-para-inscricao-de-projetos-pdm-2024-2-1.pdf",
+     "createTimestamp": {
+      "date": "2025-01-31 11:26:41.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Passo a passo da inscrição",
+     "transformations": null
+    },
+    {
+     "id": 40179,
+     "name": "documentacao-para-processo-de-patrocinio.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/documentacao-para-processo-de-patrocinio.pdf",
+     "createTimestamp": {
+      "date": "2025-01-31 11:59:19.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Documentos para o processo de patrocínio",
+     "transformations": null
+    },
+    {
+     "id": 40181,
+     "name": "modelo-anexo-pesso-fisica-termo-de-compromisso.doc",
+     "mimeType": "application/msword",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/modelo-anexo-pesso-fisica-termo-de-compromisso.doc",
+     "createTimestamp": {
+      "date": "2025-01-31 12:01:14.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Termo de compromisso Pessoa Física",
+     "transformations": null
+    },
+    {
+     "id": 40182,
+     "name": "modelo-anexo-pessoa-juridica-termo-de-compromisso.doc",
+     "mimeType": "application/msword",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/modelo-anexo-pessoa-juridica-termo-de-compromisso.doc",
+     "createTimestamp": {
+      "date": "2025-01-31 12:02:09.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Termo de compromisso Pessoa Jurídica",
+     "transformations": null
+    },
+    {
+     "id": 40183,
+     "name": "modelo-anexo-ficha-cadastral-iss.doc",
+     "mimeType": "application/msword",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/modelo-anexo-ficha-cadastral-iss.doc",
+     "createTimestamp": {
+      "date": "2025-01-31 12:03:53.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Ficha Cadastral de Patrocínio",
+     "transformations": null
+    },
+    {
+     "id": 40184,
+     "name": "passo-a-passo-para-inscricao-de-processo-de-patrocinio-dos-projetos-pdm-2025-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/passo-a-passo-para-inscricao-de-processo-de-patrocinio-dos-projetos-pdm-2025-1.pdf",
+     "createTimestamp": {
+      "date": "2025-01-31 12:05:15.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Passo a passo da inscrição para Patrocínio",
+     "transformations": null
+    },
+    {
+     "id": 40185,
+     "name": "manual-cgm-programa-djalma-maranhao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/manual-cgm-programa-djalma-maranhao.pdf",
+     "createTimestamp": {
+      "date": "2025-01-31 12:06:39.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Manual de prestação de contas",
+     "transformations": null
+    },
+    {
+     "id": 40186,
+     "name": "modelo-anexo-para-prestacao-de-contas.doc",
+     "mimeType": "application/msword",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/modelo-anexo-para-prestacao-de-contas.doc",
+     "createTimestamp": {
+      "date": "2025-01-31 12:18:57.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Modelo de anexos para prestação de contas",
+     "transformations": null
+    },
+    {
+     "id": 81006,
+     "name": "resolucao-n-005-2026-cnpdm-edital-de-regulamentacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/resolucao-n-005-2026-cnpdm-edital-de-regulamentacao.pdf",
+     "createTimestamp": {
+      "date": "2026-11-03 10:04:12.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Resolução 05/2026",
+     "transformations": null
+    }
+   ],
+   "header": {
+    "id": 40187,
+    "name": "enviar-logo-pdm-3.jpeg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/enviar-logo-pdm-3.jpeg",
+    "createTimestamp": {
+     "date": "2025-01-31 12:19:47.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 40188,
+      "name": "enviar-logo-pdm-3-1ea697be43367d145e92e3d717774910.jpeg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/file/40187/enviar-logo-pdm-3-1ea697be43367d145e92e3d717774910.jpeg",
+      "createTimestamp": {
+       "date": "2025-01-31 12:19:47.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 40189,
+    "name": "programa-djalma-maranhao-3.png",
+    "mimeType": "image/png",
+    "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/programa-djalma-maranhao-3.png",
+    "createTimestamp": {
+     "date": "2025-01-31 13:05:18.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 40190,
+      "name": "programa-djalma-maranhao-3-090479ec66e4b4ba86df785266e43778.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/file/40189/programa-djalma-maranhao-3-090479ec66e4b4ba86df785266e43778.png",
+      "createTimestamp": {
+       "date": "2025-01-31 13:05:18.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 40191,
+      "name": "programa-djalma-maranhao-3-9bf25d9e1a99cd0a6aa529e685c11aee.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/file/40189/programa-djalma-maranhao-3-9bf25d9e1a99cd0a6aa529e685c11aee.png",
+      "createTimestamp": {
+       "date": "2025-01-31 13:05:18.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 40192,
+      "name": "programa-djalma-maranhao-3-54f89d5186220725ec5d2ee9492bc468.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.natal.rn.gov.br/files/opportunity/119/file/40189/programa-djalma-maranhao-3-54f89d5186220725ec5d2ee9492bc468.png",
+      "createTimestamp": {
+       "date": "2025-01-31 13:05:18.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   }
+  },
+  "singleUrl": "https://mapacultural.natal.rn.gov.br/oportunidade/119/",
+  "type": {
+   "id": 8,
+   "name": "Programa"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ }
+]

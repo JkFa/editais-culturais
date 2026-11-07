@@ -1,0 +1,4274 @@
+[
+ {
+  "id": 3447,
+  "name": "EDITAL Nº 001/2026 – FOMENTO CULTURAL – CRIAÇÃO E FORMAÇÃO – PNAB – CICLO 2 – PETROLÂNDIA/PE",
+  "shortDescription": "Este edital tem como objetivo incentivar as diversas manifestações culturais de Petrolândia, apoiando projetos de criação, formação, circulação e difusão artística. Busca valorizar os saberes e as expressões culturais do município, estimular a produção local e ampliar o acesso da população à cultura, por meio da Política Nacional Aldir Blanc de Fomento à Cultura — PNAB, Ciclo 2.",
+  "registrationFrom": {
+   "date": "2026-10-23 09:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-08 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-10-22 13:10:13.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": {
+   "date": "2026-11-13 17:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "status": 1,
+  "longDescription": "A Prefeitura de Petrolândia, por meio da Secretaria Municipal de Cultura, torna público o Edital nº 001/2026 — Fomento Cultural — Criação e Formação, realizado com recursos do Governo Federal, por meio do Ministério da Cultura, no âmbito da Política Nacional Aldir Blanc de Fomento à Cultura — PNAB, Ciclo 2.\n\nO edital selecionará 48 projetos culturais, com apoio financeiro de R$ 5.000,00 por projeto, totalizando R$ 240.000,00, mediante celebração de Termo de Execução Cultural.\n\nÁREAS CULTURAIS\n\nSerão apoiadas propostas nas áreas de Culturas Populares e Tradicionais, Artesanato, Dança, Música, Patrimônio Cultural Material e Imaterial, Fotografia, Audiovisual, Artes Visuais, Teatro, Gastronomia, Literatura e Design/Moda.\n\nAs propostas poderão contemplar atividades de criação, circulação, difusão, exposição, produção, publicação, performance, vivência criativa, formação, pesquisa, feiras de negócios criativos, mediação, fruição, proteção e salvaguarda do patrimônio cultural, entre outras previstas no edital.\n\nQUEM PODE PARTICIPAR\n\nPoderão participar pessoas físicas maiores de 18 anos, grupos ou coletivos sem personalidade jurídica e pessoas jurídicas de direito privado, com ou sem fins lucrativos, inclusive microempreendedores individuais — MEI, observados os requisitos e os impedimentos estabelecidos no edital.\n\nAs pessoas físicas deverão comprovar residência e atuação cultural em Petrolândia há, pelo menos, três meses. Os grupos e coletivos deverão observar os requisitos específicos de representação e trajetória cultural. As pessoas jurídicas deverão comprovar sede e funcionamento no município há, no mínimo, um ano.\n\nINSCRIÇÕES\n\nAs inscrições são gratuitas e deverão ser realizadas pelo Mapa Cultural de Pernambuco, de 23 de outubro a 8 de novembro de 2026, até as 23h59, horário de Brasília.\n\nO preenchimento do formulário e o envio dos documentos deverão seguir as orientações do edital e de seus anexos. Salvar a proposta como rascunho não conclui a inscrição: é necessário clicar em “Enviar”.\n\nSELEÇÃO E AÇÕES AFIRMATIVAS\n\nAs propostas serão submetidas à avaliação de mérito cultural, conforme os critérios de pontuação do edital. A seleção observará as cotas, as reservas de vagas e a bonificação por execução territorial nele estabelecidas.\n\nOs selecionados serão convocados para a etapa de habilitação documental e, após o cumprimento das exigências, para a assinatura do Termo de Execução Cultural.\n\nEXECUÇÃO DOS PROJETOS\n\nOs projetos deverão ser executados após o recebimento dos recursos e concluídos até 30 de março de 2027. O Relatório de Execução do Objeto deverá ser apresentado até 30 de abril de 2027.\n\nEDITAL, ANEXOS E RESULTADOS\n\nLeia o edital completo e seus anexos antes de realizar a inscrição. O acompanhamento dos resultados, das convocações e de eventuais alterações do cronograma deverá ser feito nesta oportunidade e no site da Prefeitura de Petrolândia.\n\nDÚVIDAS E INFORMAÇÕES\n\nE-mail: pnabciclo2petrolandia@gmail.com\n\nAtendimento da Secretaria Municipal de Cultura: de segunda a sexta-feira, das 8h às 12h e das 13h às 17h, exceto feriados.",
+  "ownerEntity": {
+   "id": 24379,
+   "name": "Secretaria de Cultura, Esporte e Lazer do Município de Petrolândia, PE.",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 24209,
+   "name": "MARIA",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": false,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Artes Visuais",
+    "Artesanato",
+    "Culturas Tradicionais e Populares",
+    "Dança",
+    "Design",
+    "Design de Moda",
+    "Fotografia",
+    "Gastronomia",
+    "Literatura",
+    "Música",
+    "Patrimônio Cultural Imaterial",
+    "Patrimônio Cultural Material",
+    "Produção Audiovisual",
+    "Teatro"
+   ]
+  },
+  "files": {
+   "downloads": [
+    {
+     "id": 3075214,
+     "name": "anexo-i-cronograma.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-i-cronograma.pdf",
+     "createTimestamp": {
+      "date": "2026-10-22 20:19:30.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo I – Cronograma",
+     "transformations": null
+    },
+    {
+     "id": 3075215,
+     "name": "anexo-ii-carta-de-anuencia-pessoa-fisica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-ii-carta-de-anuencia-pessoa-fisica.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:19:47.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo II – Carta de Anuência Pessoa Física",
+     "transformations": null
+    },
+    {
+     "id": 3075216,
+     "name": "anexo-iii-carta-de-anuencia-pessoa-juridica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-iii-carta-de-anuencia-pessoa-juridica.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:20:14.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo III – Carta de Anuência Pessoa Jurídica",
+     "transformations": null
+    },
+    {
+     "id": 3075217,
+     "name": "anexo-iv-autodeclaracao-de-residencia.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-iv-autodeclaracao-de-residencia.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:20:30.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo IV – Autodeclaração de Residência",
+     "transformations": null
+    },
+    {
+     "id": 3075218,
+     "name": "anexo-v-declaracao-de-pertencimento-a-povos-e-comunidades-tradicionais.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-v-declaracao-de-pertencimento-a-povos-e-comunidades-tradicionais.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:20:48.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo V – Declaração de Pertencimento a Povos e Comunidades Tradicionais",
+     "transformations": null
+    },
+    {
+     "id": 3075219,
+     "name": "anexo-vi-declaracao-de-representacao-de-grupo-ou-coletivo.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-vi-declaracao-de-representacao-de-grupo-ou-coletivo.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:21:13.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VI – Declaração de Representação de Grupo ou Coletivo",
+     "transformations": null
+    },
+    {
+     "id": 3075220,
+     "name": "anexo-vii-documentos-para-inscricao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-vii-documentos-para-inscricao.pdf",
+     "createTimestamp": {
+      "date": "2026-10-22 20:21:35.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VII – Documentos para Inscrição",
+     "transformations": null
+    },
+    {
+     "id": 3075221,
+     "name": "anexo-viii-documentos-de-habilitacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-viii-documentos-de-habilitacao.pdf",
+     "createTimestamp": {
+      "date": "2026-10-22 20:21:49.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VIII – Documentos de Habilitação",
+     "transformations": null
+    },
+    {
+     "id": 3075222,
+     "name": "anexo-ix-curriculo-artistico.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-ix-curriculo-artistico.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:22:07.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo IX – Currículo Artístico",
+     "transformations": null
+    },
+    {
+     "id": 3075223,
+     "name": "anexo-x-declaracao-de-nao-contemplacao-anterior.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-x-declaracao-de-nao-contemplacao-anterior.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:22:21.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo X – Declaração de Não Contemplação Anterior",
+     "transformations": null
+    },
+    {
+     "id": 3075224,
+     "name": "anexo-xi-termo-de-execucao-cultural.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-xi-termo-de-execucao-cultural.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:22:56.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XI – Termo de Execução Cultural",
+     "transformations": null
+    },
+    {
+     "id": 3075225,
+     "name": "anexo-xii-relatorio-de-execucao-do-objeto.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-xii-relatorio-de-execucao-do-objeto.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:23:12.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XII – Relatório de Execução do Objeto",
+     "transformations": null
+    },
+    {
+     "id": 3075226,
+     "name": "anexo-xiii-autodeclaracao-de-pessoa-com-deficiencia.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-xiii-autodeclaracao-de-pessoa-com-deficiencia.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:23:27.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XIII – Autodeclaração de Pessoa com Deficiência",
+     "transformations": null
+    },
+    {
+     "id": 3075227,
+     "name": "anexo-xiv-formulario-de-recurso.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/anexo-xiv-formulario-de-recurso.docx",
+     "createTimestamp": {
+      "date": "2026-10-22 20:23:45.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XIV – Formulário de Recurso",
+     "transformations": null
+    },
+    {
+     "id": 3028636,
+     "name": "minuta-de-pedido-de-registro.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/minuta-de-pedido-de-registro.docx",
+     "createTimestamp": {
+      "date": "2026-08-01 19:26:22.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "MINUTA DE PEDIDO DE REGISTRO ",
+     "transformations": null
+    }
+   ],
+   "rules": {
+    "id": 3075958,
+    "name": "edital-001-2026fomento-cultural-criacao-e-formacao-pnab-ciclo-2-petrolandia-pe.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/edital-001-2026fomento-cultural-criacao-e-formacao-pnab-ciclo-2-petrolandia-pe.pdf",
+    "createTimestamp": {
+     "date": "2026-10-23 12:56:27.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "header": {
+    "id": 3075959,
+    "name": "banner-1170-x-390-jpg.jpeg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/banner-1170-x-390-jpg.jpeg",
+    "createTimestamp": {
+     "date": "2026-10-23 12:57:53.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 3075960,
+      "name": "banner-1170-x-390-jpg-1a26b7ae23fcb85a0f0f575ab6d051a9.jpeg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/file/3075959/banner-1170-x-390-jpg-1a26b7ae23fcb85a0f0f575ab6d051a9.jpeg",
+      "createTimestamp": {
+       "date": "2026-10-23 12:57:53.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 3075961,
+    "name": "perfil.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/perfil.png",
+    "createTimestamp": {
+     "date": "2026-10-23 12:58:19.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 3075962,
+      "name": "perfil-f3522283f4efb296c0c0aa1e73b4456f.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/file/3075961/perfil-f3522283f4efb296c0c0aa1e73b4456f.png",
+      "createTimestamp": {
+       "date": "2026-10-23 12:58:19.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 3075963,
+      "name": "perfil-53d223ff5597e782d2bec5ad5a264ea9.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/file/3075961/perfil-53d223ff5597e782d2bec5ad5a264ea9.png",
+      "createTimestamp": {
+       "date": "2026-10-23 12:58:19.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 3075964,
+      "name": "perfil-54185e3c1f6e131bc47cbf0801d1e76e.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3447/file/3075961/perfil-54185e3c1f6e131bc47cbf0801d1e76e.png",
+      "createTimestamp": {
+       "date": "2026-10-23 12:58:19.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3447/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3489,
+  "name": "EDITAL Nº 01/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "shortDescription": "EDITAL Nº 01/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "registrationFrom": {
+   "date": "2026-11-03 18:32:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-08 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-11-03 17:34:26.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Acessibilidade Cultural"
+   ]
+  },
+  "files": [],
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3489/",
+  "type": {
+   "id": 45,
+   "name": "Outros tipos de inscrição"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3491,
+  "name": "EDITAL Nº 02/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "shortDescription": "EDITAL Nº 02/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "registrationFrom": {
+   "date": "2026-11-03 18:32:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-08 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-11-03 18:28:17.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Acessibilidade Cultural"
+   ]
+  },
+  "files": [],
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3491/",
+  "type": {
+   "id": 45,
+   "name": "Outros tipos de inscrição"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3493,
+  "name": "EDITAL Nº 03/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "shortDescription": "EDITAL Nº 03/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "registrationFrom": {
+   "date": "2026-11-03 18:32:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-08 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-11-03 18:29:41.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Acessibilidade Cultural"
+   ]
+  },
+  "files": [],
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3493/",
+  "type": {
+   "id": 45,
+   "name": "Outros tipos de inscrição"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3495,
+  "name": "EDITAL Nº 04/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "shortDescription": "EDITAL Nº 04/2026 - FORMULÁRIO DE DOCUMENTAÇÃO PARA HABILITAÇÃO DE PAGAMENTO PNAB SMBV",
+  "registrationFrom": {
+   "date": "2026-11-03 18:32:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-08 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-11-03 18:30:54.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "",
+  "ownerEntity": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 31379901,
+   "name": "Secretaria Executiva de Cultura de Santa Maria da Boa Vista",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Acessibilidade Cultural"
+   ]
+  },
+  "files": [],
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3495/",
+  "type": {
+   "id": 45,
+   "name": "Outros tipos de inscrição"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3410,
+  "name": "CONVOCATÓRIA PARA OS CICLOS CARNAVALESCO E JUNINO - CAJU 2027",
+  "shortDescription": "Esta Convocatória tem como objetivo ampliar o acesso da população às diferentes linguagens e\nmanifestações culturais, com uma programação diversa e de qualidade. Também busca fortalecer e\ndivulgar a cultura pernambucana, ampliar a circulação de agentes culturais em diferentes territórios e\nestimular a troca de experiências entre artistas, comunidades e saberes.",
+  "registrationFrom": {
+   "date": "2026-10-20 15:50:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-10 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-09-22 15:34:53.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "",
+  "ownerEntity": {
+   "id": 3279,
+   "name": "CICLOS CARNAVALESCO E JUNINO DE PERNAMBUCO - CAJU - FUNDARPE",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": false,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Carnaval",
+    "Festejos Juninos"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 3067216,
+    "name": "avatar-caju.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/avatar-caju.png",
+    "createTimestamp": {
+     "date": "2026-10-13 14:53:13.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 3067217,
+      "name": "avatar-caju-986d3e8e6f4ce825d46d9957a199c59c.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/file/3067216/avatar-caju-986d3e8e6f4ce825d46d9957a199c59c.png",
+      "createTimestamp": {
+       "date": "2026-10-13 14:53:13.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 3067218,
+      "name": "avatar-caju-0c6a9f44d3ff57d73377e0e592cfc3ab.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/file/3067216/avatar-caju-0c6a9f44d3ff57d73377e0e592cfc3ab.png",
+      "createTimestamp": {
+       "date": "2026-10-13 14:53:13.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 3067219,
+      "name": "avatar-caju-48ff510fb1fe520eae53292324cb9137.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/file/3067216/avatar-caju-48ff510fb1fe520eae53292324cb9137.png",
+      "createTimestamp": {
+       "date": "2026-10-13 14:53:13.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "header": {
+    "id": 3067220,
+    "name": "banner-caju.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/banner-caju.png",
+    "createTimestamp": {
+     "date": "2026-10-13 14:54:03.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 3067221,
+      "name": "banner-caju-0b1c17057c8f33bbe3bda89f537d229a.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/file/3067220/banner-caju-0b1c17057c8f33bbe3bda89f537d229a.png",
+      "createTimestamp": {
+       "date": "2026-10-13 14:54:04.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 3067222,
+    "name": "edital-convocatoria-para-os-ciclos-carnavalesco-e-junino-2027.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/edital-convocatoria-para-os-ciclos-carnavalesco-e-junino-2027.pdf",
+    "createTimestamp": {
+     "date": "2026-10-13 14:56:07.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 3067223,
+     "name": "anexo-1-conceitos-deste-edital.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-1-conceitos-deste-edital.pdf",
+     "createTimestamp": {
+      "date": "2026-10-13 14:56:35.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 1  - CONCEITOS DESTE EDITAL",
+     "transformations": null
+    },
+    {
+     "id": 3067224,
+     "name": "anexo-2-conceitos-deste-edital.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-2-conceitos-deste-edital.pdf",
+     "createTimestamp": {
+      "date": "2026-10-13 14:57:08.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 2  - CONCEITOS DESTE EDITAL",
+     "transformations": null
+    },
+    {
+     "id": 3067225,
+     "name": "anexo-3-check-list-padrao-de-documentos.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-3-check-list-padrao-de-documentos.pdf",
+     "createTimestamp": {
+      "date": "2026-10-13 14:58:14.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 3 - CHECK LIST PADRÃO DE DOCUMENTOS",
+     "transformations": null
+    },
+    {
+     "id": 3067226,
+     "name": "anexo-4-declaracao-de-naturalidade-pernambucana.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-4-declaracao-de-naturalidade-pernambucana.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 14:58:30.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 4 - DECLARAÇÃO DE NATURALIDADE PERNAMBUCANA",
+     "transformations": null
+    },
+    {
+     "id": 3067227,
+     "name": "anexo-5-declaracao-para-comprovacao-de-pertencimento-do-s-artista-s-a-povos-e-comunidades-tradicionais-artista-individual.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-5-declaracao-para-comprovacao-de-pertencimento-do-s-artista-s-a-povos-e-comunidades-tradicionais-artista-individual.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 14:58:50.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 5  - DECLARAÇÃO PARA COMPROVAÇÃO DE PERTENCIMENTO DO(S) ARTISTA(S) A POVOS E COMUNIDADES TRADICIONAIS (ARTISTA INDIVIDUAL)",
+     "transformations": null
+    },
+    {
+     "id": 3067228,
+     "name": "anexo-6-procuracao-para-grupo-representado-por-pessoa-fisica-que-faz-parte-do-mesmo.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-6-procuracao-para-grupo-representado-por-pessoa-fisica-que-faz-parte-do-mesmo.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 14:59:20.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 6 - PROCURAÇÃO PARA GRUPO REPRESENTADO POR PESSOA FÍSICA QUE FAZ PARTE DO MESMO",
+     "transformations": null
+    },
+    {
+     "id": 3067230,
+     "name": "anexo-7-declaracao-de-exclusividade-artista-individual.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-7-declaracao-de-exclusividade-artista-individual.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:01:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 7  - DECLARAÇÃO DE EXCLUSIVIDADE (ARTISTA INDIVIDUAL)",
+     "transformations": null
+    },
+    {
+     "id": 3067232,
+     "name": "anexo-8-declaracao-de-exclusividade-grupos-bandas-coletivos.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-8-declaracao-de-exclusividade-grupos-bandas-coletivos.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:03:14.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 8 - DECLARAÇÃO DE EXCLUSIVIDADE (GRUPOS / BANDAS / COLETIVOS)",
+     "transformations": null
+    },
+    {
+     "id": 3067233,
+     "name": "anexo-9-modelo-de-termo-de-adesao-de-socio-associado-a-artista-individual.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-9-modelo-de-termo-de-adesao-de-socio-associado-a-artista-individual.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:03:49.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 9 -  MODELO DE TERMO DE ADESÃO DE SÓCIO / ASSOCIADO(A) (ARTISTA INDIVIDUAL)",
+     "transformations": null
+    },
+    {
+     "id": 3067236,
+     "name": "anexo-10-modelo-de-termo-de-adesao-de-socio-associado-a-grupo-banda.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-10-modelo-de-termo-de-adesao-de-socio-associado-a-grupo-banda.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:05:34.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 10 - MODELO DE TERMO DE ADESÃO DE SÓCIO /  ASSOCIADO(A) (GRUPO-BANDA)",
+     "transformations": null
+    },
+    {
+     "id": 3067243,
+     "name": "anexo-11-modelo-de-contrato-de-exclusividade-artista-individual.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-11-modelo-de-contrato-de-exclusividade-artista-individual.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:12:10.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 11 - MODELO DE CONTRATO DE EXCLUSIVIDADE – ARTISTA INDIVIDUAL",
+     "transformations": null
+    },
+    {
+     "id": 3067248,
+     "name": "anexo-12-modelo-de-contrato-de-exclusividade-grupo-banda.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-12-modelo-de-contrato-de-exclusividade-grupo-banda.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:15:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 12 - MODELO DE CONTRATO DE EXCLUSIVIDADE - GRUPO - BANDA",
+     "transformations": null
+    },
+    {
+     "id": 3067259,
+     "name": "anexo-13-autorizacao-para-apresentacao-de-menores.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-13-autorizacao-para-apresentacao-de-menores.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:25:47.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 13 -  AUTORIZAÇÃO PARA APRESENTAÇÃO DE MENORES",
+     "transformations": null
+    },
+    {
+     "id": 3067260,
+     "name": "anexo-14-declaracao-de-ciencia-de-cache-secult-pessoa-fisica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-14-declaracao-de-ciencia-de-cache-secult-pessoa-fisica.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:26:44.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 14 - DECLARAÇÃO DE CIÊNCIA DE CACHÊ - SECULT / PESSOA FÍSICA",
+     "transformations": null
+    },
+    {
+     "id": 3067261,
+     "name": "anexo-15-declaracao-de-ciencia-de-cache-secult-pessoa-juridica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-15-declaracao-de-ciencia-de-cache-secult-pessoa-juridica.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:27:08.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 15 - DECLARAÇÃO DE CIÊNCIA DE CACHÊ - SECULT / PESSOA JURÍDICA",
+     "transformations": null
+    },
+    {
+     "id": 3067264,
+     "name": "anexo-16-declaracao-de-ciencia-de-cache-empetur-pessoa-fisica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-16-declaracao-de-ciencia-de-cache-empetur-pessoa-fisica.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:28:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 16 - DECLARAÇÃO DE CIÊNCIA DE CACHÊ - EMPETUR / PESSOA FÍSICA",
+     "transformations": null
+    },
+    {
+     "id": 3067267,
+     "name": "anexo-17-declaracao-de-ciencia-de-cache-empetur-pessoa-juridica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-17-declaracao-de-ciencia-de-cache-empetur-pessoa-juridica.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:29:24.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 17 - DECLARAÇÃO DE CIÊNCIA DE CACHÊ - EMPETUR / PESSOA JURÍDICA",
+     "transformations": null
+    },
+    {
+     "id": 3067269,
+     "name": "anexo-18-termo-de-autorizacao-de-uso-de-imagem-e-de-licenca-de-direitos-autorais-artista-individual.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-18-termo-de-autorizacao-de-uso-de-imagem-e-de-licenca-de-direitos-autorais-artista-individual.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:30:20.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 18 - TERMO DE AUTORIZAÇÃO DE USO DE IMAGEM E DE LICENÇA DE DIREITOS AUTORAIS - (ARTISTA INDIVIDUAL)",
+     "transformations": null
+    },
+    {
+     "id": 3067296,
+     "name": "anexo-19-termo-de-autorizacao-de-uso-de-imagem-e-de-licenca-de-direitos-autorais-bandas-grupos-coletivos.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-19-termo-de-autorizacao-de-uso-de-imagem-e-de-licenca-de-direitos-autorais-bandas-grupos-coletivos.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:43:42.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 19 - TERMO DE AUTORIZAÇÃO DE USO DE IMAGEM E DE LICENÇA DE DIREITOS AUTORAIS - (BANDAS - GRUPOS - COLETIVOS)",
+     "transformations": null
+    },
+    {
+     "id": 3067297,
+     "name": "anexo-20-declaracao-para-quem-nao-possui-endereco-fixo-ou-registrado-pessoa-fisica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-20-declaracao-para-quem-nao-possui-endereco-fixo-ou-registrado-pessoa-fisica.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:44:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 20 - DECLARAÇÃO PARA QUEM NÃO POSSUI ENDEREÇO FIXO OU REGISTRADO (PESSOA FÍSICA)",
+     "transformations": null
+    },
+    {
+     "id": 3067298,
+     "name": "anexo-21-declaracao-para-quem-nao-possui-endereco-fixo-ou-registrado-pessoa-juridica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-21-declaracao-para-quem-nao-possui-endereco-fixo-ou-registrado-pessoa-juridica.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:44:26.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 21 - DECLARAÇÃO PARA QUEM NÃO POSSUI ENDEREÇO FIXO OU REGISTRADO (PESSOA JURÍDICA)",
+     "transformations": null
+    },
+    {
+     "id": 3067299,
+     "name": "anexo-22-declaracao-de-tomador-de-servicos-para-comprovacao-de-caches-de-tomadores-privados.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-22-declaracao-de-tomador-de-servicos-para-comprovacao-de-caches-de-tomadores-privados.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:44:48.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 22 - DECLARAÇÃO DE TOMADOR DE SERVIÇOS PARA COMPROVAÇÃO DE CACHÊS DE TOMADORES PRIVADOS",
+     "transformations": null
+    },
+    {
+     "id": 3067300,
+     "name": "anexo-23-orientacoes-para-prestacao-de-contas-fundarpe-e-secult.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-23-orientacoes-para-prestacao-de-contas-fundarpe-e-secult.pdf",
+     "createTimestamp": {
+      "date": "2026-10-13 15:45:11.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 23 - ORIENTAÇÕES PARA PRESTAÇÃO DE CONTAS / FUNDARPE E SECULT",
+     "transformations": null
+    },
+    {
+     "id": 3067301,
+     "name": "anexo-24-orientacoes-para-prestacao-de-contas-empetur.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-24-orientacoes-para-prestacao-de-contas-empetur.pdf",
+     "createTimestamp": {
+      "date": "2026-10-13 15:45:55.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 24 - ORIENTAÇÕES PARA PRESTAÇÃO DE CONTAS / EMPETUR",
+     "transformations": null
+    },
+    {
+     "id": 3067321,
+     "name": "anexo-25-relatorio-de-prestacao-de-contas-execucao-do-objeto-secult-fundarpe.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-25-relatorio-de-prestacao-de-contas-execucao-do-objeto-secult-fundarpe.docx",
+     "createTimestamp": {
+      "date": "2026-10-13 15:58:09.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 25. RELATÓRIO DE PRESTAÇÃO DE CONTAS - EXECUÇÃO DO OBJETO - SECULT / FUNDARPE",
+     "transformations": null
+    },
+    {
+     "id": 3067322,
+     "name": "anexo-26-regioes-de-desenvolvimento-de-pernambuco.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3410/anexo-26-regioes-de-desenvolvimento-de-pernambuco.pdf",
+     "createTimestamp": {
+      "date": "2026-10-13 15:58:40.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 26 - REGIÕES DE DESENVOLVIMENTO DE PERNAMBUCO",
+     "transformations": null
+    },
+    {
+     "id": 3094309,
+     "name": "oportunidade-3240--inscricoes-2026-11-03 17:01:50.xlsx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3094309/",
+     "createTimestamp": {
+      "date": "2026-11-03 17:01:51.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": null
+    }
+   ],
+   "registrations-spreadsheets": {
+    "id": 3105041,
+    "name": "oportunidade-3410--inscricoes-2026-11-06 14:34:01.csv",
+    "mimeType": "text/plain",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3105041/",
+    "createTimestamp": {
+     "date": "2026-11-06 14:34:10.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "documentary-spreadsheets": {
+    "id": 3099943,
+    "name": "oportunidade-3410--avaliacoes-2026-11-05 11:41:15.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3099943/",
+    "createTimestamp": {
+     "date": "2026-11-05 11:41:53.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3410/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3240,
+  "name": "ARRANJOS REGIONAIS",
+  "shortDescription": "Este Edital é realizado com recursos do Governo do Estado de Pernambuco, aportados como contrapartida no âmbito dos Arranjos Regionais 2025, em articulação com o Fundo Setorial do Audiovisual (FSA). O Edital reúne as regras de participação, inscrição, seleção, habilitação, execução, acompanhamento e prestação de informações dos projetos culturais. \nBoa leitura. Desejamos sucesso!",
+  "registrationFrom": {
+   "date": "2026-10-13 16:55:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-13 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-06-08 17:07:28.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "O Edital de Chamamento Público MinC nº 4/2025 - Arranjos Regionais tem como objetivo estimular o \ndesenvolvimento e o fortalecimento das cadeias produtivas locais do audiovisual, por meio da descentralização de recursos e da consolidação de uma política de complementaridade entre União, Estados, Distrito Federal e Municípios. ",
+  "ownerEntity": {
+   "id": 3569,
+   "name": "ARRANJOS REGIONAIS",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": false,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Outra"
+   ]
+  },
+  "files": {
+   "header": {
+    "id": 3060255,
+    "name": "banner-arranjosregionais-2.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/banner-arranjosregionais-2.png",
+    "createTimestamp": {
+     "date": "2026-09-25 20:50:12.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 3060256,
+      "name": "banner-arranjosregionais-2-9a598a6494e51b5c4eaee7c1d3efee38.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/file/3060255/banner-arranjosregionais-2-9a598a6494e51b5c4eaee7c1d3efee38.png",
+      "createTimestamp": {
+       "date": "2026-09-25 20:50:12.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 3060257,
+    "name": "avatar-arranjosregionais-2.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/avatar-arranjosregionais-2.png",
+    "createTimestamp": {
+     "date": "2026-09-25 20:50:24.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 3060258,
+      "name": "avatar-arranjosregionais-2-5041f179c0b1884509fbee1133383515.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/file/3060257/avatar-arranjosregionais-2-5041f179c0b1884509fbee1133383515.png",
+      "createTimestamp": {
+       "date": "2026-09-25 20:50:24.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 3060259,
+      "name": "avatar-arranjosregionais-2-25378db315ca59a628941fdcbab62291.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/file/3060257/avatar-arranjosregionais-2-25378db315ca59a628941fdcbab62291.png",
+      "createTimestamp": {
+       "date": "2026-09-25 20:50:24.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 3060260,
+      "name": "avatar-arranjosregionais-2-f1cd98a91d5cc952261c6d630b2a31fe.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/file/3060257/avatar-arranjosregionais-2-f1cd98a91d5cc952261c6d630b2a31fe.png",
+      "createTimestamp": {
+       "date": "2026-09-25 20:50:24.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 3065167,
+    "name": "edital-arranjos-regionais.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/edital-arranjos-regionais.pdf",
+    "createTimestamp": {
+     "date": "2026-10-08 18:12:21.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 3076302,
+     "name": "anexo-01-planilha-orcamentaria.xlsx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-01-planilha-orcamentaria.xlsx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:51:23.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 01- PLANILHA ORÇAMENTÁRIA",
+     "transformations": null
+    },
+    {
+     "id": 3076307,
+     "name": "anexo-02-carta-de-anuencia-termo-de-permissao-pf.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-02-carta-de-anuencia-termo-de-permissao-pf.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:51:37.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 02 - CARTA DE ANUÊNCIA TERMO DE PERMISSÃO PF",
+     "transformations": null
+    },
+    {
+     "id": 3076309,
+     "name": "anexo-03-carta-de-anuencia-termo-de-permissao-pj.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-03-carta-de-anuencia-termo-de-permissao-pj.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:51:51.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 03 - CARTA DE ANUÊNCIA TERMO DE PERMISSÃO PJ",
+     "transformations": null
+    },
+    {
+     "id": 3076310,
+     "name": "anexo-04-curriculo-resumido.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-04-curriculo-resumido.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:52:04.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 04 - CURRÍCULO RESUMIDO",
+     "transformations": null
+    },
+    {
+     "id": 3076312,
+     "name": "anexo-05-cronograma-de-execucao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-05-cronograma-de-execucao.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:52:19.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 05 - CRONOGRAMA DE EXECUÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 3076314,
+     "name": "anexo-06-autodeclaracao-de-genero-pessoa-trans.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-06-autodeclaracao-de-genero-pessoa-trans.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:52:47.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 06 - AUTODECLARAÇÃO DE GÊNERO PESSOA TRANS",
+     "transformations": null
+    },
+    {
+     "id": 3076315,
+     "name": "anexo-07-autodeclaracao-etnico-racial.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-07-autodeclaracao-etnico-racial.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:53:02.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 07 - AUTODECLARAÇÃO ÉTNICO-RACIAL",
+     "transformations": null
+    },
+    {
+     "id": 3076316,
+     "name": "anexo-08-autodeclaracao-de-pessoa-com-deficiencia.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-08-autodeclaracao-de-pessoa-com-deficiencia.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:53:19.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 08 - AUTODECLARAÇÃO DE PESSOA COM DEFICIÊNCIA",
+     "transformations": null
+    },
+    {
+     "id": 3076318,
+     "name": "anexo-09-declaracao-de-ciencia-e-compromisso.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-09-declaracao-de-ciencia-e-compromisso.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:53:30.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 09 - DECLARAÇÃO DE CIÊNCIA E COMPROMISSO",
+     "transformations": null
+    },
+    {
+     "id": 3076320,
+     "name": "anexo-10-declaracao-povos-originarios-e-comunidades-tradicionais.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-10-declaracao-povos-originarios-e-comunidades-tradicionais.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:53:44.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 10 - DECLARAÇÃO POVOS ORIGINÁRIOS E COMUNIDADES TRADICIONAIS",
+     "transformations": null
+    },
+    {
+     "id": 3076321,
+     "name": "anexo-11-minuta-de-termo-de-execucao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-11-minuta-de-termo-de-execucao.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:53:57.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 11 - MINUTA DE TERMO DE EXECUÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 3076322,
+     "name": "anexo-12-modelo-de-relatorio-de-objeto-da-execucao-cultural.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-12-modelo-de-relatorio-de-objeto-da-execucao-cultural.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:54:14.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 12 - MODELO DE RELATÓRIO DE OBJETO DA EXECUÇÃO CULTURAL",
+     "transformations": null
+    },
+    {
+     "id": 3076323,
+     "name": "anexo-13-instrucao-normativa-minc-10-2023.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-13-instrucao-normativa-minc-10-2023.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:54:27.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 13 - INSTRUÇÃO NORMATIVA MINC 10 2023",
+     "transformations": null
+    },
+    {
+     "id": 3076324,
+     "name": "anexo-14-game-design-document-gdd.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-14-game-design-document-gdd.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:54:57.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 14 - GAME DESIGN DOCUMENT (GDD)",
+     "transformations": null
+    },
+    {
+     "id": 3076325,
+     "name": "anexo-15-plano-de-curso.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-15-plano-de-curso.docx",
+     "createTimestamp": {
+      "date": "2026-10-23 16:55:11.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 15 - PLANO DE CURSO",
+     "transformations": null
+    },
+    {
+     "id": 3076326,
+     "name": "anexo-16-lgpd-lei-geral-de-protecao-de-dados-pessoais.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-16-lgpd-lei-geral-de-protecao-de-dados-pessoais.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:55:24.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 16 - LGPD LEI GERAL DE PROTEÇÃO DE DADOS PESSOAIS",
+     "transformations": null
+    },
+    {
+     "id": 3076327,
+     "name": "anexo-17-procedimento-de-heteroidentificacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-17-procedimento-de-heteroidentificacao.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:55:40.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 17 - PROCEDIMENTO DE HETEROIDENTIFICAÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 3076328,
+     "name": "anexo-18-documentos-para-habilitacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-18-documentos-para-habilitacao.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:55:55.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 18 - DOCUMENTOS PARA HABILITAÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 3076329,
+     "name": "anexo-19-relatorio-consolidado-de-consulta-publica.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/anexo-19-relatorio-consolidado-de-consulta-publica.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:56:12.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO 19 - RELATÓRIO CONSOLIDADO DE CONSULTA PÚBLICA",
+     "transformations": null
+    },
+    {
+     "id": 3076330,
+     "name": "29-09-2026-errata-do-edital.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3240/29-09-2026-errata-do-edital.pdf",
+     "createTimestamp": {
+      "date": "2026-10-23 16:56:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "29.09.2026 - ERRATA DO EDITAL",
+     "transformations": null
+    },
+    {
+     "id": 3096093,
+     "name": "10-04-2026-alteracao-do-cronograma-do-edital-de-credenciamento-no-003-2024.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/10-04-2026-alteracao-do-cronograma-do-edital-de-credenciamento-no-003-2024.pdf",
+     "createTimestamp": {
+      "date": "2026-11-04 11:17:55.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "04.11.2026 - ALTERAÇÃO DO CRONOGRAMA DO EDITAL DE CREDENCIAMENTO Nº 003/2024",
+     "transformations": null
+    }
+   ],
+   "registrations-spreadsheets": {
+    "id": 3094309,
+    "name": "oportunidade-3240--inscricoes-2026-11-03 17:01:50.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3094309/",
+    "createTimestamp": {
+     "date": "2026-11-03 17:01:51.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3240/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2491,
+  "name": "CREDENCIAMENTO NACIONAL DE PARECERISTAS FUNDARPE EDITAL Nº 003/2024",
+  "shortDescription": "Esta chamada pública visa credenciar profissionais, pessoa física ou MEIs, para integrar o BANCO DE PARECERISTAS da FUNDARPE. Os selecionados poderão analisar, classificar e emitir pareceres técnicos sobre propostas e ações culturais nos Editais e Chamadas Públicas de Cultura, desde que atendam aos requisitos estabelecidos.",
+  "registrationFrom": {
+   "date": "2024-12-04 14:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2026-11-30 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2024-11-26 14:18:26.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 2674,
+   "name": "CREDENCIAMENTO PARECERISTAS FUNDARPE",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Outra"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 2055016,
+    "name": "000-avatar-parecerista.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/000-avatar-parecerista.png",
+    "createTimestamp": {
+     "date": "2024-11-29 15:59:45.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2055017,
+      "name": "000-avatar-parecerista-f35ea0285b38904a0eaac605c279b1f0.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/file/2055016/000-avatar-parecerista-f35ea0285b38904a0eaac605c279b1f0.png",
+      "createTimestamp": {
+       "date": "2024-11-29 15:59:46.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2055018,
+      "name": "000-avatar-parecerista-ff6d472f1f7cb3b3b5a1ed61f3270c22.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/file/2055016/000-avatar-parecerista-ff6d472f1f7cb3b3b5a1ed61f3270c22.png",
+      "createTimestamp": {
+       "date": "2024-11-29 15:59:46.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2055019,
+      "name": "000-avatar-parecerista-9ba154e32fc8ee20cbcdaed5630ff9a2.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/file/2055016/000-avatar-parecerista-9ba154e32fc8ee20cbcdaed5630ff9a2.png",
+      "createTimestamp": {
+       "date": "2024-11-29 15:59:47.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "header": {
+    "id": 2055020,
+    "name": "000-banner-parecerista.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/000-banner-parecerista.png",
+    "createTimestamp": {
+     "date": "2024-11-29 16:01:05.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 2055021,
+      "name": "000-banner-parecerista-d09c481d32f642b2ac4e56cfa1c5b044.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/file/2055020/000-banner-parecerista-d09c481d32f642b2ac4e56cfa1c5b044.png",
+      "createTimestamp": {
+       "date": "2024-11-29 16:01:06.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 2055409,
+     "name": "anexos-credenciamento-pareceristas-da-fundarpe.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexos-credenciamento-pareceristas-da-fundarpe.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:18:06.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 01 - Termo de Credenciamento",
+     "transformations": null
+    },
+    {
+     "id": 2055410,
+     "name": "anexo-02-declaracao-de-inexistencia-de-impedimentos.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-02-declaracao-de-inexistencia-de-impedimentos.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:19:40.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 02 A - Inexistência Impedimentos - Pessoa Física",
+     "transformations": null
+    },
+    {
+     "id": 2055411,
+     "name": "declaracao-de-inexistencia-de-impedimentos-pessoa-juridica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/declaracao-de-inexistencia-de-impedimentos-pessoa-juridica.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:21:20.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 02 B  - Inexistência Impedimentos - Pessoa Jurídica",
+     "transformations": null
+    },
+    {
+     "id": 2055413,
+     "name": "anexo-03-termo-de-confidencialidade-e-sigilo.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-03-termo-de-confidencialidade-e-sigilo.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:22:50.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 03  - Termo de Confidencialidade",
+     "transformations": null
+    },
+    {
+     "id": 2055415,
+     "name": "anexo-04-declaracao-de-que-nao-emprega-menor-de-idade.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-04-declaracao-de-que-nao-emprega-menor-de-idade.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:24:40.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 04 - Declaração Não Emprega Menor de Idade",
+     "transformations": null
+    },
+    {
+     "id": 2055416,
+     "name": "anexo-05-a-declaracao-para-quem-nao-possui-endereco-fixo-ou-registrado-pessoa-fisica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-05-a-declaracao-para-quem-nao-possui-endereco-fixo-ou-registrado-pessoa-fisica.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:26:33.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 05 A - Autodeclaração Residência - Pessoa Física",
+     "transformations": null
+    },
+    {
+     "id": 2055417,
+     "name": "anexo-05-b-autodeclaracao-residencia-pessoa-juridica.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-05-b-autodeclaracao-residencia-pessoa-juridica.docx",
+     "createTimestamp": {
+      "date": "2024-12-02 08:29:14.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 05 B - Autodeclaração Residência - Pessoa Jurídica",
+     "transformations": null
+    },
+    {
+     "id": 2055418,
+     "name": "anexos-credenciamento-pareceristas-da-fundarpe-8-9.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexos-credenciamento-pareceristas-da-fundarpe-8-9.pdf",
+     "createTimestamp": {
+      "date": "2024-12-02 08:30:07.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 06 - Lei Geral de Proteção de Dados - LGPD",
+     "transformations": null
+    },
+    {
+     "id": 2055419,
+     "name": "anexos-credenciamento-pareceristas-da-fundarpe-10-18.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexos-credenciamento-pareceristas-da-fundarpe-10-18.pdf",
+     "createTimestamp": {
+      "date": "2024-12-02 08:31:01.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 07 - Minuta do Contrato",
+     "transformations": null
+    },
+    {
+     "id": 2070731,
+     "name": "anexo-08-autodeclaracao-para-pessoa-com-deficiencia-4.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-08-autodeclaracao-para-pessoa-com-deficiencia-4.docx",
+     "createTimestamp": {
+      "date": "2024-12-11 13:13:54.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 08 - Autodeclaração para pessoa com deficiência",
+     "transformations": null
+    },
+    {
+     "id": 2070735,
+     "name": "anexo-09-declaracao-para-proponente-de-povos-e-comunidades-tradicionais-mei.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/anexo-09-declaracao-para-proponente-de-povos-e-comunidades-tradicionais-mei.docx",
+     "createTimestamp": {
+      "date": "2024-12-11 13:15:26.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo 09 - Declaração para proponente de povos e comunidades tradicionais",
+     "transformations": null
+    },
+    {
+     "id": 2092438,
+     "name": "1a-resultado-preliminar-parecerista-10-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/1a-resultado-preliminar-parecerista-10-1.pdf",
+     "createTimestamp": {
+      "date": "2025-01-10 17:11:12.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.01.2025 - 1º Resultado Preliminar",
+     "transformations": null
+    },
+    {
+     "id": 2102804,
+     "name": "resultado-sorteio-pareceristas-17-01-25.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/resultado-sorteio-pareceristas-17-01-25.pdf",
+     "createTimestamp": {
+      "date": "2025-01-21 14:29:43.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "17.01.2025 - Resultado 1º Sorteio ",
+     "transformations": null
+    },
+    {
+     "id": 2128692,
+     "name": "resultado-do-01-julgamento-dos-recursos-credenciamento-de-pareceristas-03-02-2025.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/resultado-do-01-julgamento-dos-recursos-credenciamento-de-pareceristas-03-02-2025.pdf",
+     "createTimestamp": {
+      "date": "2025-02-04 09:39:49.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "04.02.2025 - Resultado Após Análise de Recurso",
+     "transformations": null
+    },
+    {
+     "id": 2241389,
+     "name": "resultado-preliminar-parecerista-10-4.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/resultado-preliminar-parecerista-10-4.pdf",
+     "createTimestamp": {
+      "date": "2025-04-10 14:26:45.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.04.2025 - 2º Resultado Preliminar do Edital de Credenciamento de Pareceristas",
+     "transformations": null
+    },
+    {
+     "id": 2330360,
+     "name": "resultado-apos-recurso.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/resultado-apos-recurso.pdf",
+     "createTimestamp": {
+      "date": "2025-04-29 08:01:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "29.04.2025 - 2º RESULTADO APÓS ANÁLISE DE RECURSO",
+     "transformations": null
+    },
+    {
+     "id": 2467079,
+     "name": "2-resultado-final.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/2-resultado-final.pdf",
+     "createTimestamp": {
+      "date": "2025-06-03 14:07:29.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "03.06.2025 - 2ª RESULTADO FINAL",
+     "transformations": null
+    },
+    {
+     "id": 2482157,
+     "name": "resultado-preliminar-parecerista-10-7-2.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/resultado-preliminar-parecerista-10-7-2.pdf",
+     "createTimestamp": {
+      "date": "2025-07-10 13:52:59.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.07.2025 - 3º RESULTADO APÓS ANÁLISE DE RECURSO",
+     "transformations": null
+    },
+    {
+     "id": 2491779,
+     "name": "3-resultado-apos-analise-de-recurso-do-edital-de-credenciamento-de-pareceristas-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/3-resultado-apos-analise-de-recurso-do-edital-de-credenciamento-de-pareceristas-1.pdf",
+     "createTimestamp": {
+      "date": "2025-07-23 09:15:05.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "23.07.2025 - RESULTADO APÓS ANÁLISE DE RECURSOS",
+     "transformations": null
+    },
+    {
+     "id": 2505647,
+     "name": "3o-resultado-final-do-edital-de-credenciamento-de-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/3o-resultado-final-do-edital-de-credenciamento-de-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2025-07-30 16:13:15.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "30.07.2025 - 3ª RESULTADO FINAL",
+     "transformations": null
+    },
+    {
+     "id": 2552271,
+     "name": "4-resultado-preliminar-pareceristas-17-10.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/4-resultado-preliminar-pareceristas-17-10.pdf",
+     "createTimestamp": {
+      "date": "2025-10-17 10:12:50.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "17.10.2025 - 4° RESULTADO PRELIMINAR DO CREDENCIAMENTO NACIONAL DE PARECERISTAS",
+     "transformations": null
+    },
+    {
+     "id": 2564643,
+     "name": "edital-de-credenciamento-de-pareceristas-fundarpe-atualizado.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/edital-de-credenciamento-de-pareceristas-fundarpe-atualizado.pdf",
+     "createTimestamp": {
+      "date": "2025-10-24 09:58:46.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "24.10.2025 - EDITAL DE CREDENCIAMENTO DE PARECERISTAS FUNDARPE ATUALIZADO",
+     "transformations": null
+    },
+    {
+     "id": 2650017,
+     "name": "resultado-apos-analise-de-recursos-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/resultado-apos-analise-de-recursos-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2025-12-17 08:57:13.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "17.12.2025 - 4º RESULTADO APÓS ANÁLISE DE RECURSO",
+     "transformations": null
+    },
+    {
+     "id": 2669340,
+     "name": "4-resultado-final-parecerista-4.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/4-resultado-final-parecerista-4.pdf",
+     "createTimestamp": {
+      "date": "2026-01-06 13:51:43.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "06.01.2026 - 4° RESULTADO FINAL",
+     "transformations": null
+    },
+    {
+     "id": 2681593,
+     "name": "comunicado-5-resultado-preliminar-do-credenciamento-nacional-de-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/comunicado-5-resultado-preliminar-do-credenciamento-nacional-de-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2026-01-12 15:48:04.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "12.01.2026 - COMUNICADO 5° RESULTADO PRELIMINAR DO CREDENCIAMENTO NACIONAL DE PARECERISTAS",
+     "transformations": null
+    },
+    {
+     "id": 2746548,
+     "name": "atualizacao-de-cronograma-para-5o-resultado-preliminar-do-credenciamento-de-pareceristas-fundarpe.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/atualizacao-de-cronograma-para-5o-resultado-preliminar-do-credenciamento-de-pareceristas-fundarpe.pdf",
+     "createTimestamp": {
+      "date": "2026-01-27 09:25:35.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "27.01.2026 - ATUALIZAÇÃO DE CRONOGRAMA PARA O 5° RESULTADO PRELIMINAR DO CREDENCIAMENTO NACIONAL DE PARECERISTAS",
+     "transformations": null
+    },
+    {
+     "id": 2757282,
+     "name": "atualizacao-de-cronograma-do-5o-resultado-preliminar-pareceristas-fundarpe.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/atualizacao-de-cronograma-do-5o-resultado-preliminar-pareceristas-fundarpe.pdf",
+     "createTimestamp": {
+      "date": "2026-02-13 15:26:26.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "13.02.2026 - ATUALIZAÇÃO DE CRONOGRAMA PARA O 5° RESULTADO PRELIMINAR DO CREDENCIAMENTO NACIONAL DE PARECERISTAS",
+     "transformations": null
+    },
+    {
+     "id": 2769989,
+     "name": "errata-4-resultado-final-parecerista-fundarpe.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/errata-4-resultado-final-parecerista-fundarpe.pdf",
+     "createTimestamp": {
+      "date": "2026-03-04 14:29:06.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "04.03.2026 - ERRATA AO 4º RESULTADO FINAL",
+     "transformations": null
+    },
+    {
+     "id": 2772138,
+     "name": "5-resultado-preliminar-do-edital-de-parecerista-05-03-2026-3.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/5-resultado-preliminar-do-edital-de-parecerista-05-03-2026-3.pdf",
+     "createTimestamp": {
+      "date": "2026-03-05 14:54:34.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "05.03.2026 - 5º RESULTADO PRELIMINAR DO EDITAL DE PARECERISTAS",
+     "transformations": null
+    },
+    {
+     "id": 2816272,
+     "name": "5-resultado-apa-s-recuros-e-5-resultado-final-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/5-resultado-apa-s-recuros-e-5-resultado-final-1.pdf",
+     "createTimestamp": {
+      "date": "2026-03-19 14:27:46.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "19.03.2026 - 5º RESULTADO APÓS ANÁLISE DE RECURSO E 5º RESULTADO FINAL",
+     "transformations": null
+    },
+    {
+     "id": 2892722,
+     "name": "alteracao-do-cronograma-do-edital-de-credenciamento.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/alteracao-do-cronograma-do-edital-de-credenciamento.pdf",
+     "createTimestamp": {
+      "date": "2026-04-10 14:46:11.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.04.2026 - ALTERAÇÃO DO CRONOGRAMA DO EDITAL DE CREDENCIAMENTO Nº 003/2024",
+     "transformations": null
+    },
+    {
+     "id": 2996845,
+     "name": "publicacao-sorteio-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/publicacao-sorteio-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2026-07-03 15:07:44.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "03.07.26 - DIVULGAÇÃO DO 3º SORTEIO",
+     "transformations": null
+    }
+   ],
+   "registrations-spreadsheets": {
+    "id": 3067050,
+    "name": "oportunidade-2491--inscricoes-2026-10-13 09:59:26.csv",
+    "mimeType": "text/plain",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3067050/",
+    "createTimestamp": {
+     "date": "2026-10-13 09:59:32.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "rules": {
+    "id": 2070730,
+    "name": "edital-pareceristas-fundarpe.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2491/edital-pareceristas-fundarpe.pdf",
+    "createTimestamp": {
+     "date": "2024-12-11 13:11:32.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/2491/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2571,
+  "name": "Edital de Credenciamento Nacional de Pareceristas - Funcultura",
+  "shortDescription": "Este Edital tem como objetivo credenciar profissionais, pessoas físicas e/ou MEIs, residentes ou não em Pernambuco, para integrar o banco de pareceristas. Os selecionados poderão atuar na análise, classificação e emissão de parecer técnico sobre projetos culturais dos Editais do Funcultura, desde que atendam aos requisitos deste Instrumento Convocatório.",
+  "registrationFrom": {
+   "date": "2025-03-17 09:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2027-03-17 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2025-02-18 15:36:38.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 2990,
+   "name": "FUNCULTURA 2024/2025",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Audiovisual e Mídias Interativas",
+    "Artes Visuais",
+    "Artesanato",
+    "Circo",
+    "Culturas Populares",
+    "Cultura dos Povos Originários",
+    "Cultura Digital",
+    "Cultura LGBTQIAPN+",
+    "Dança",
+    "Design",
+    "Design de Moda",
+    "Fotografia",
+    "Gastronomia",
+    "Literatura",
+    "Música",
+    "Patrimônio Cultural",
+    "Teatro",
+    "Ópera"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 2149973,
+    "name": "avatar-pareceristas-fundarpe.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/avatar-pareceristas-fundarpe.png",
+    "createTimestamp": {
+     "date": "2025-02-28 14:09:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2149974,
+      "name": "avatar-pareceristas-fundarpe-bbba0245825c04b54e46c29abc756920.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/file/2149973/avatar-pareceristas-fundarpe-bbba0245825c04b54e46c29abc756920.png",
+      "createTimestamp": {
+       "date": "2025-02-28 14:09:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2149975,
+      "name": "avatar-pareceristas-fundarpe-8340ba5e7960d0925804a76539a870ef.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/file/2149973/avatar-pareceristas-fundarpe-8340ba5e7960d0925804a76539a870ef.png",
+      "createTimestamp": {
+       "date": "2025-02-28 14:09:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2149976,
+      "name": "avatar-pareceristas-fundarpe-bff35d8a675a8902e2b5d1bc732d0735.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/file/2149973/avatar-pareceristas-fundarpe-bff35d8a675a8902e2b5d1bc732d0735.png",
+      "createTimestamp": {
+       "date": "2025-02-28 14:09:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "header": {
+    "id": 2149977,
+    "name": "banner-pareceristas-fundarpe.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/banner-pareceristas-fundarpe.png",
+    "createTimestamp": {
+     "date": "2025-02-28 14:09:30.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 2149978,
+      "name": "banner-pareceristas-fundarpe-8547cb413b6631dceef4e5fca1767c5a.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/file/2149977/banner-pareceristas-fundarpe-8547cb413b6631dceef4e5fca1767c5a.png",
+      "createTimestamp": {
+       "date": "2025-02-28 14:09:30.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 2149988,
+     "name": "anexo-i-resolucao-cd-funcultura-01-2025-banco-de-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-i-resolucao-cd-funcultura-01-2025-banco-de-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2025-02-28 14:15:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO I - RESOLUÇÃO CD FUNCULTURA Nº 01/2025",
+     "transformations": null
+    },
+    {
+     "id": 2149992,
+     "name": "anexo-ii-declaracao-de-inexistencia-de-impedimentos-pareceristas.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-ii-declaracao-de-inexistencia-de-impedimentos-pareceristas.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:16:59.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO II - DECLARAÇÃO DE INEXISTÊNCIA DE IMPEDIMENTOS",
+     "transformations": null
+    },
+    {
+     "id": 2149993,
+     "name": "anexo-iii-termo-de-credenciamento-e-confidencialidade.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-iii-termo-de-credenciamento-e-confidencialidade.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:20:42.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO III - TERMO DE CREDENCIAMENTO E CONFIDENCIALIDADE",
+     "transformations": null
+    },
+    {
+     "id": 2149998,
+     "name": "anexo-iv-declaracao-de-disponibilidade.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-iv-declaracao-de-disponibilidade.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:21:45.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO IV - DECLARAÇÃO DE DISPONIBILIDADE",
+     "transformations": null
+    },
+    {
+     "id": 2150001,
+     "name": "anexo-v-lista-de-documentacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-v-lista-de-documentacao.pdf",
+     "createTimestamp": {
+      "date": "2025-02-28 14:22:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO V - LISTAGEM DEDOCUMENTOS PARA INSCRIÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 2150002,
+     "name": "anexo-vi-declaracao-nao-inscrito-no-cadastro-de-inscricao-municipal.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-vi-declaracao-nao-inscrito-no-cadastro-de-inscricao-municipal.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:24:19.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO VI -DECLARAÇÃO DE NÃO INSCRITO NO CADASTRO DE INSCRIÇÃO MUNICIPAL",
+     "transformations": null
+    },
+    {
+     "id": 2150005,
+     "name": "anexo-vii-lgpd.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-vii-lgpd.pdf",
+     "createTimestamp": {
+      "date": "2025-02-28 14:26:23.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO VII - LEI GERAL DE PROTEÇÃO DE DADOS PESSOAIS – Lei nº 13.709/2018 – LGPD",
+     "transformations": null
+    },
+    {
+     "id": 2150006,
+     "name": "anexo-viii-calendario-e-cronograma-de-trabalho-2025.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-viii-calendario-e-cronograma-de-trabalho-2025.pdf",
+     "createTimestamp": {
+      "date": "2025-02-28 14:27:24.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO VIII - CALENDÁRIO E CRONOGRAMA DE TRABALHO",
+     "transformations": null
+    },
+    {
+     "id": 2150007,
+     "name": "anexo-ix-autodeclaracao-para-quem-nao-possui-endereco-fixo-ou-registrado.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-ix-autodeclaracao-para-quem-nao-possui-endereco-fixo-ou-registrado.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:28:34.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO IX - DECLARAÇÃO DE COMPROVANTE DE RESIDÊNCIA",
+     "transformations": null
+    },
+    {
+     "id": 2150008,
+     "name": "anexo-x-intrumento-da-contratacao-edital-de-parecerista-funcultura.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-x-intrumento-da-contratacao-edital-de-parecerista-funcultura.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:29:19.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO X - INSTRUMENTO DE CONTRATAÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 2150025,
+     "name": "anexo-xi-modelo-de-comprovacoes-analise-projetos-1.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-xi-modelo-de-comprovacoes-analise-projetos-1.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:43:12.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO XII -MODELO DE COMPROVAÇÕES ANÁLISE DE PROJETOS",
+     "transformations": null
+    },
+    {
+     "id": 2150026,
+     "name": "anexo-xii-modelo-de-comprovacoes-experiencia-gestao-1.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-xii-modelo-de-comprovacoes-experiencia-gestao-1.docx",
+     "createTimestamp": {
+      "date": "2025-02-28 14:44:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO XIII -MODELO DE COMPROVAÇÕES EXPERIÊNCIA DE GESTÃO",
+     "transformations": null
+    },
+    {
+     "id": 2186492,
+     "name": "anexo-x-modelo-de-comprovacoes-curriculares.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/anexo-x-modelo-de-comprovacoes-curriculares.docx",
+     "createTimestamp": {
+      "date": "2025-03-17 14:45:54.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO XI -MODELO DE COMPROVAÇÕES CURRICULARES",
+     "transformations": null
+    },
+    {
+     "id": 2443113,
+     "name": "resultado-preliminar-pareceristas-classificados.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-preliminar-pareceristas-classificados.pdf",
+     "createTimestamp": {
+      "date": "2025-05-14 11:54:56.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "RESULTADO PRELIMINAR PARECERISTAS CLASSIFICADOS",
+     "transformations": null
+    },
+    {
+     "id": 2471852,
+     "name": "resultado-dos-recursos.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-dos-recursos.pdf",
+     "createTimestamp": {
+      "date": "2025-06-10 14:30:45.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.06.2025 - RESULTADO DA ANÁLISE DOS RECURSOS",
+     "transformations": null
+    },
+    {
+     "id": 2473179,
+     "name": "resultado-final-de-parecerista-classificados-13-06-2025.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-final-de-parecerista-classificados-13-06-2025.pdf",
+     "createTimestamp": {
+      "date": "2025-06-13 14:58:57.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "RESULTADO FINAL PARECERISTAS CLASSIFICADOS",
+     "transformations": null
+    },
+    {
+     "id": 2483068,
+     "name": "resultado-do-1o-sorteio.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-do-1o-sorteio.pdf",
+     "createTimestamp": {
+      "date": "2025-07-12 13:03:19.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "12.07.2025 - DIVULGAÇÃO DO 1º SORTEIO",
+     "transformations": null
+    },
+    {
+     "id": 2771248,
+     "name": "resultado-preliminar-parecerista-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-preliminar-parecerista-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-03-05 10:04:02.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "05.03.2026 - RESULTADO PRELIMINAR DE PARECERISTAS CLASSIFICADOS",
+     "transformations": null
+    },
+    {
+     "id": 2821716,
+     "name": "resultado-dos-recursos-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-dos-recursos-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2026-03-20 15:06:32.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "20.03.2026 - RESULTADO DA ANÁLISE DOS RECURSOS",
+     "transformations": null
+    },
+    {
+     "id": 2821717,
+     "name": "resultado-final-2026-edital-de-credenciamento-de-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/resultado-final-2026-edital-de-credenciamento-de-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2026-03-20 15:06:59.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "20.03.2026 - RESULTADO FINAL DE PARECERISTAS CLASSIFICADOS",
+     "transformations": null
+    },
+    {
+     "id": 2913818,
+     "name": "publicacao-sorteio-audiovisual-23-04-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/publicacao-sorteio-audiovisual-23-04-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-04-24 11:17:40.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "23.04.26 - DIVULGAÇÃO DO 2º SORTEIO",
+     "transformations": null
+    },
+    {
+     "id": 2982761,
+     "name": "edital-de-credenciamento-de-pareceristas-3o-entrada-sorteio.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-de-credenciamento-de-pareceristas-3o-entrada-sorteio.pdf",
+     "createTimestamp": {
+      "date": "2026-06-10 15:12:49.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.06.2026 - RESULTADO DA ORDEM DE SORTEADOS - 3ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    }
+   ],
+   "rules": {
+    "id": 2150029,
+    "name": "edital-de-credenciamento-de-pareceristas-funcultura-2025.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2571/edital-de-credenciamento-de-pareceristas-funcultura-2025.pdf",
+    "createTimestamp": {
+     "date": "2025-02-28 14:47:22.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "registrations-spreadsheets": {
+    "id": 2882609,
+    "name": "oportunidade-2571--inscricoes-2026-04-08 11:32:53.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/2882609/",
+    "createTimestamp": {
+     "date": "2026-04-08 11:33:03.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/2571/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2581,
+  "name": "CREDENCIAMENTO DE PARECERISTAS - SECRETARIA DE CULTURA DE PERNAMBUCO",
+  "shortDescription": "Tem por objetivo a formação de BANCO DE PARECERISTAS que possam vir a exercer as atividades de análise, classificação e emissão de Parecer Técnico sobre propostas e ações culturais no âmbito dos editais e chamadas públicas  regidos pela legislação supra, com recursos sob gestão da SECULT/PE.",
+  "registrationFrom": {
+   "date": "2025-03-27 10:05:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2027-03-19 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2025-03-12 08:39:45.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "",
+  "ownerEntity": {
+   "id": 3053,
+   "name": "Secult 2025",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Outra"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 2209796,
+    "name": "avatar.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/avatar.jpg",
+    "createTimestamp": {
+     "date": "2025-03-21 17:00:12.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2209797,
+      "name": "avatar-7156c3afac8c072580e034539dd454cb.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/file/2209796/avatar-7156c3afac8c072580e034539dd454cb.jpg",
+      "createTimestamp": {
+       "date": "2025-03-21 17:00:12.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2209798,
+      "name": "avatar-662861ef8ce2458766ef6f35f5cb449a.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/file/2209796/avatar-662861ef8ce2458766ef6f35f5cb449a.jpg",
+      "createTimestamp": {
+       "date": "2025-03-21 17:00:12.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2209799,
+      "name": "avatar-d2e21e78e7bda65ca1bbeb8a457061b3.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/file/2209796/avatar-d2e21e78e7bda65ca1bbeb8a457061b3.jpg",
+      "createTimestamp": {
+       "date": "2025-03-21 17:00:12.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "header": {
+    "id": 2209890,
+    "name": "secult-pareceristas-capa-mapacultural-1170x390.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/secult-pareceristas-capa-mapacultural-1170x390.png",
+    "createTimestamp": {
+     "date": "2025-03-21 18:25:34.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 2209891,
+      "name": "secult-pareceristas-capa-mapacultural-1170x390-e132a14de5912c26f309579f9a2cfe26.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/file/2209890/secult-pareceristas-capa-mapacultural-1170x390-e132a14de5912c26f309579f9a2cfe26.png",
+      "createTimestamp": {
+       "date": "2025-03-21 18:25:34.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 2209935,
+    "name": "edital-pareceristas-secult-2025.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-pareceristas-secult-2025.pdf",
+    "createTimestamp": {
+     "date": "2025-03-21 18:38:57.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 2209940,
+     "name": "anexo-i-cronograma.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-i-cronograma.pdf",
+     "createTimestamp": {
+      "date": "2025-03-21 18:58:27.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo I - Cronograma",
+     "transformations": null
+    },
+    {
+     "id": 2209941,
+     "name": "anexo-ii-lei-geral-de-protecao-de-dados-pessoais-lei-n-13-709-2018-lgpd.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-ii-lei-geral-de-protecao-de-dados-pessoais-lei-n-13-709-2018-lgpd.pdf",
+     "createTimestamp": {
+      "date": "2025-03-21 18:59:44.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo II - Lei Geral de Proteção de Dados Pessoais",
+     "transformations": null
+    },
+    {
+     "id": 2215766,
+     "name": "anexo-iv-autodeclaracao-racial.doc",
+     "mimeType": "application/msword",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-iv-autodeclaracao-racial.doc",
+     "createTimestamp": {
+      "date": "2025-03-27 15:45:24.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo IV - Autodeclaração Racial",
+     "transformations": null
+    },
+    {
+     "id": 2215774,
+     "name": "anexo-v-declaracao-de-pertencimento-etnico-indigena.doc",
+     "mimeType": "application/msword",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-v-declaracao-de-pertencimento-etnico-indigena.doc",
+     "createTimestamp": {
+      "date": "2025-03-27 15:46:34.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo V - Declaração de Pertencimento Étnico Indígena",
+     "transformations": null
+    },
+    {
+     "id": 2215779,
+     "name": "anexo-vi-autodeclaracao-de-identidade-de-genero.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-vi-autodeclaracao-de-identidade-de-genero.docx",
+     "createTimestamp": {
+      "date": "2025-03-27 15:47:10.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VI - Autodeclaração de Identidade de Gênero",
+     "transformations": null
+    },
+    {
+     "id": 2215788,
+     "name": "anexo-vii-declaracao-de-pertencimento-a-povos-e-comunidades-tradicionais.doc",
+     "mimeType": "application/msword",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-vii-declaracao-de-pertencimento-a-povos-e-comunidades-tradicionais.doc",
+     "createTimestamp": {
+      "date": "2025-03-27 15:47:41.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VII - Declaração de Pertencimento a Povos e Comunidades Tradicionais",
+     "transformations": null
+    },
+    {
+     "id": 2215793,
+     "name": "anexo-viii-laudo-medico-para-pessoas-com-deficiencia.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-viii-laudo-medico-para-pessoas-com-deficiencia.docx",
+     "createTimestamp": {
+      "date": "2025-03-27 15:48:02.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VIII - Laudo Médico Para Pessoas Com Deficiência",
+     "transformations": null
+    },
+    {
+     "id": 2215800,
+     "name": "anexo-ix-declaracao-de-nao-impedimentos.doc",
+     "mimeType": "application/msword",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-ix-declaracao-de-nao-impedimentos.doc",
+     "createTimestamp": {
+      "date": "2025-03-27 15:50:49.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo IX - Declaração de Não Impedimentos",
+     "transformations": null
+    },
+    {
+     "id": 2215803,
+     "name": "anexo-x-termo-de-confidencialidade-e-sigilo.doc",
+     "mimeType": "application/msword",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-x-termo-de-confidencialidade-e-sigilo.doc",
+     "createTimestamp": {
+      "date": "2025-03-27 15:51:10.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo X - Termo de Confidencialidade e Sigilo",
+     "transformations": null
+    },
+    {
+     "id": 2215808,
+     "name": "anexo-xi-termo-de-credenciamento.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-xi-termo-de-credenciamento.docx",
+     "createTimestamp": {
+      "date": "2025-03-27 15:51:46.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XI - Termo de Credenciamento",
+     "transformations": null
+    },
+    {
+     "id": 2215812,
+     "name": "anexo-xii-minuta-de-contrato.doc",
+     "mimeType": "application/msword",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-xii-minuta-de-contrato.doc",
+     "createTimestamp": {
+      "date": "2025-03-27 15:52:02.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XII - Minuta do Contrato",
+     "transformations": null
+    },
+    {
+     "id": 2219651,
+     "name": "anexo-errata-edital-credenciamento.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-errata-edital-credenciamento.pdf",
+     "createTimestamp": {
+      "date": "2025-03-31 16:43:26.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO ERRATA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2393643,
+     "name": "documento-preliminar-pareceristas-1-entrada-pdf.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/documento-preliminar-pareceristas-1-entrada-pdf.pdf",
+     "createTimestamp": {
+      "date": "2025-05-06 12:23:01.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "06.05.2025 - RESULTADO PRELIMINAR - 1ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2451127,
+     "name": "edital-de-credenciamento-de-pareceristas-1-entrada-resultado-dos-recursos.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-de-credenciamento-de-pareceristas-1-entrada-resultado-dos-recursos.pdf",
+     "createTimestamp": {
+      "date": "2025-05-20 16:42:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "20.05.2025 - RESULTADO DOS RECURSOS - 1ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2451131,
+     "name": "edital-de-credenciamento-de-pareceristas-1-entrada-resultado-final-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-de-credenciamento-de-pareceristas-1-entrada-resultado-final-1.pdf",
+     "createTimestamp": {
+      "date": "2025-05-20 16:42:46.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "20.05.2025 - RESULTADO FINAL - 1ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2465272,
+     "name": "edital-de-credenciamento-de-pareceristas-1-entrada-sorteio.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-de-credenciamento-de-pareceristas-1-entrada-sorteio.pdf",
+     "createTimestamp": {
+      "date": "2025-05-30 18:01:31.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "30.05.2025 - RESULTADO DA ORDEM DE SORTEADOS - 1ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2472483,
+     "name": "anexo-i-cronograma-2-entrada.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-i-cronograma-2-entrada.pdf",
+     "createTimestamp": {
+      "date": "2025-06-11 16:27:08.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO I - CRONOGRAMA 2ª ENTRADA",
+     "transformations": null
+    },
+    {
+     "id": 2476742,
+     "name": "anexo-iii-documentos-necessarios-para-contratacao-2.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-iii-documentos-necessarios-para-contratacao-2.pdf",
+     "createTimestamp": {
+      "date": "2025-06-26 09:54:30.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo III - Documentos para Contratação",
+     "transformations": null
+    },
+    {
+     "id": 2476743,
+     "name": "anexo-viii-declaracao-de-nao-impedimentos-1.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-viii-declaracao-de-nao-impedimentos-1.docx",
+     "createTimestamp": {
+      "date": "2025-06-26 09:55:03.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo VIII - Declaração de Não Impedimentos",
+     "transformations": null
+    },
+    {
+     "id": 2476744,
+     "name": "anexo-xiii-declaracao-de-inexistencia-de-menor-trabalhador.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-xiii-declaracao-de-inexistencia-de-menor-trabalhador.docx",
+     "createTimestamp": {
+      "date": "2025-06-26 09:55:24.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Anexo XIII - Declaração de Inexistência de Menor Trabalhador",
+     "transformations": null
+    },
+    {
+     "id": 2523999,
+     "name": "sei-72819945-govpe-nota-tecnica-7.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/sei-72819945-govpe-nota-tecnica-7.pdf",
+     "createTimestamp": {
+      "date": "2025-09-04 09:05:18.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "04.09.2025 - NOTA TÉCNICA - SECULT - Unidade de Contratação de Pareceristas - Nº 7/2025",
+     "transformations": null
+    },
+    {
+     "id": 2524000,
+     "name": "errata-anexo-i-cronograma-2-entrada-docx-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/errata-anexo-i-cronograma-2-entrada-docx-1.pdf",
+     "createTimestamp": {
+      "date": "2025-09-04 09:06:38.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "04.09.2025 - ERRATA CRONOGRAMA 2ª ENTRADA DO CREDENCIAMENTO DE PARECERISTAS",
+     "transformations": null
+    },
+    {
+     "id": 2584281,
+     "name": "documento-preliminar-pareceristas-2o-entrada.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/documento-preliminar-pareceristas-2o-entrada.pdf",
+     "createTimestamp": {
+      "date": "2025-11-05 15:06:26.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "05.11.2025 - RESULTADO PRELIMINAR - 2ª ENTRADA - EDITAL DE CREDENCIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2594147,
+     "name": "errata-anexo-i-cronograma-2-entrada-pareceristas-secult.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/errata-anexo-i-cronograma-2-entrada-pareceristas-secult.pdf",
+     "createTimestamp": {
+      "date": "2025-11-10 16:22:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "10.11.2025 - ERRATA CRONOGRAMA 2ª ENTRADA - CREDENCIAMENTO PARECERISTAS SECULT",
+     "transformations": null
+    },
+    {
+     "id": 2630413,
+     "name": "edital-de-credenciamento-de-pareceristas-2-entrada-resultado-dos-recursos.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-de-credenciamento-de-pareceristas-2-entrada-resultado-dos-recursos.pdf",
+     "createTimestamp": {
+      "date": "2025-11-20 08:07:01.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "20.11.2025 - RESULTADO DOS RECURSOS - 2ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2632421,
+     "name": "documento-final-pareceristas-2o-entrada.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/documento-final-pareceristas-2o-entrada.pdf",
+     "createTimestamp": {
+      "date": "2025-11-27 09:36:10.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "27.11.2025 - RESULTADO FINAL - 2ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2638206,
+     "name": "edital-de-credenciamento-de-pareceristas-2-entrada-sorteio.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/edital-de-credenciamento-de-pareceristas-2-entrada-sorteio.pdf",
+     "createTimestamp": {
+      "date": "2025-12-05 11:15:18.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "05.12.2025 - RESULTADO DA ORDEM DE SORTEADOS - 2ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2761134,
+     "name": "anexo-i-cronograma-3-entrada.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-i-cronograma-3-entrada.pdf",
+     "createTimestamp": {
+      "date": "2026-02-23 14:40:36.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO I - CRONOGRAMA 3ª ENTRADA",
+     "transformations": null
+    },
+    {
+     "id": 2797998,
+     "name": "documento-preliminar-pareceristas-3-entrada.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/documento-preliminar-pareceristas-3-entrada.pdf",
+     "createTimestamp": {
+      "date": "2026-03-17 16:39:37.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "17.03.2026 - RESULTADO PRELIMINAR - 3ª ENTRADA - EDITAL DE CREDENCIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2864843,
+     "name": "resultado-final-3-entrada-de-credenciamento-de-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/resultado-final-3-entrada-de-credenciamento-de-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2026-04-06 15:15:26.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "31.03.2026 - RESULTADO FINAL - 3ª ENTRADA - EDITAL DE CREDECIAMENTO Nº 001/2025",
+     "transformations": null
+    },
+    {
+     "id": 2966159,
+     "name": "anexo-iii-atualizado-documentos-para-contratacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2581/anexo-iii-atualizado-documentos-para-contratacao.pdf",
+     "createTimestamp": {
+      "date": "2026-05-14 16:12:15.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "14.05.26 - ATUALIZADO - ANEXO III - DOCUMENTOS PARA CONTRATAÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 3092189,
+     "name": "oportunidade-3207--inscricoes-2026-11-03 07:41:17.xlsx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3092189/",
+     "createTimestamp": {
+      "date": "2026-11-03 07:41:19.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": null
+    }
+   ],
+   "registrations-spreadsheets": {
+    "id": 2891092,
+    "name": "oportunidade-2581--inscricoes-2026-04-09 14:20:17.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/2891092/",
+    "createTimestamp": {
+     "date": "2026-04-09 14:20:32.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "technical-spreadsheets": {
+    "id": 2785947,
+    "name": "oportunidade-2581--avaliacoes-2026-03-12 08:08:11.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/2785947/",
+    "createTimestamp": {
+     "date": "2026-03-12 08:08:14.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/2581/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3337,
+  "name": "CONSULTA E ANUÊNCIA DAS COMUNIDADES DETENTORAS Pedido de Registro dos Povos e Comunidades Tradicionais de Terreiro de Matriz Africana como Patrimônio Cultural Imaterial de Pernambuco",
+  "shortDescription": "Consulta Pública \nConvidamos os Povos e Comunidades Tradicionais de Terreiro de Matriz Africana em Pernambuco a participarem da consulta pública para subsidiar o pedido de registro de suas práticas, saberes, fazeres e modos de viver como Patrimônio Cultural Imaterial do Estado. Sua participação é essencial para fortalecer este reconhecimento.\nFormulário: https://docs.google.com/forms/d/19xjIiZ6VrL",
+  "registrationFrom": {
+   "date": "2026-08-01 19:06:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2027-08-03 19:06:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-08-01 19:08:52.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "Prezada Ialorixá, Babalorixá, Dirigente Religioso(a), Zelador(a), Sacerdote(a), Liderança Tradicional e demais representantes dos Povos e Comunidades Tradicionais de Terreiro de Matriz Africana em Pernambuco. Os Conselheiros Elinildo Marinho de Lima, representante da Sociedade Civil no segmento de Arqueologia, História e Museologia, Cláudio Brandão de Oliveira (Xoxó Malaquias), representante da Sociedade Civil no segmento das Expressões Culturais de Pernambuco registradas como Patrimônio Cultural Imaterial, e  Maria Elizabeth Santiago de Oliveira (Mãe Beth de Oxum) representante da Sociedade Civil no segmento de Comunidades Tradicionais e Religiosas, membros do Conselho Estadual de Preservação do Patrimônio Cultural (CEPPC), convidam sua comunidade a participar desta consulta pública. O objetivo é subsidiar o pedido de abertura do processo de registro das Práticas Socioculturais, Religiosas, Saberes, Fazeres e Modos de Viver dos Povos e Comunidades Tradicionais de Terreiro de Matriz Africana em Pernambuco como Patrimônio Cultural Imaterial do Estado de Pernambuco. O Registro Estadual é um instrumento de reconhecimento e valorização da contribuição histórica, cultural, religiosa e social dos Povos de Terreiro para a formação da identidade pernambucana. Além de fortalecer políticas públicas de salvaguarda, contribui para a preservação dos conhecimentos tradicionais, da memória coletiva, da liberdade religiosa e da promoção da igualdade racial. É importante destacar que o Registro não interfere na autonomia dos terreiros, em seus rituais, fundamentos, segredos litúrgicos ou formas próprias de organização. Seu propósito é reconhecer oficialmente esse patrimônio e promover sua proteção pelo Estado de Pernambuco. A participação das comunidades detentoras é fundamental para este processo. Sua manifestação demonstra que o pedido representa a vontade das próprias comunidades e fortalece a futura construção das ações de salvaguarda.\n\nLink do formulário de consulta pública:\nhttps://docs.google.com/forms/d/19xjIiZ6VrLmvipwpw9nA2XvHIK1WqfGzkZ04a2Z6Eb8/edit\n\nLink do documento completo do pedido de registro:\nhttps://docs.google.com/document/d/1vVaJ7W1jGeDO0L2mjsAvKd4DLZh55uVj/edit?usp=sharing&ouid=114504195839753844819&rtpof=true&sd=true\n\n Agradecemos sua participação e sua importante contribuição para a valorização e preservação do patrimônio cultural dos Povos e Comunidades Tradicionais de Terreiro de Matriz Africana em Pernambuco.",
+  "ownerEntity": {
+   "id": 176,
+   "name": "Elinildo Marinho",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 176,
+   "name": "Elinildo Marinho",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": false,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Cultura dos povos e comunidades de terreiro/povos e comunidades de matriz africana",
+    "Patrimônio Cultural Imaterial"
+   ]
+  },
+  "files": {
+   "header": {
+    "id": 3028623,
+    "name": "chatgpt-image-5-de-jul-de-2026-18-28-01-2.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/chatgpt-image-5-de-jul-de-2026-18-28-01-2.png",
+    "createTimestamp": {
+     "date": "2026-08-01 19:16:51.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 3028624,
+      "name": "chatgpt-image-5-de-jul-de-2026-18-28-01-2-aa760662b218927ae3201af81d65ddda.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/file/3028623/chatgpt-image-5-de-jul-de-2026-18-28-01-2-aa760662b218927ae3201af81d65ddda.png",
+      "createTimestamp": {
+       "date": "2026-08-01 19:16:53.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 3028625,
+    "name": "chatgpt-image-5-de-jul-de-2026-18-28-01.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/chatgpt-image-5-de-jul-de-2026-18-28-01.png",
+    "createTimestamp": {
+     "date": "2026-08-01 19:17:30.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 3028626,
+      "name": "chatgpt-image-5-de-jul-de-2026-18-28-01-8ca47b26a7584a4ef9839c5dea71aa0b.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/file/3028625/chatgpt-image-5-de-jul-de-2026-18-28-01-8ca47b26a7584a4ef9839c5dea71aa0b.png",
+      "createTimestamp": {
+       "date": "2026-08-01 19:17:30.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 3028627,
+      "name": "chatgpt-image-5-de-jul-de-2026-18-28-01-e5a4c7da6f4af7f77eab9f12ff784d6d.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/file/3028625/chatgpt-image-5-de-jul-de-2026-18-28-01-e5a4c7da6f4af7f77eab9f12ff784d6d.png",
+      "createTimestamp": {
+       "date": "2026-08-01 19:17:30.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 3028628,
+      "name": "chatgpt-image-5-de-jul-de-2026-18-28-01-bdc9edfa46a080b46326a48f054d2b85.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3337/file/3028625/chatgpt-image-5-de-jul-de-2026-18-28-01-bdc9edfa46a080b46326a48f054d2b85.png",
+      "createTimestamp": {
+       "date": "2026-08-01 19:17:31.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 2905744,
+     "name": "motion-photo-7426326815057891582-0963c278474e2d0da7aa325e1279a985.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905742/motion-photo-7426326815057891582-0963c278474e2d0da7aa325e1279a985.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:21:01.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     }
+    }
+   ]
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3337/",
+  "type": {
+   "id": 41,
+   "name": "Campanhas"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2753,
+  "name": "PNAB 2024 - Solicitação de Alteração",
+  "shortDescription": "Este formulário tem como objetivo padronizar o fluxo e garantir mais agilidade na solicitação dos projetos dos editais PNAB 2024.",
+  "registrationFrom": {
+   "date": "2025-08-14 08:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2027-08-30 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2025-08-13 16:10:30.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 2844,
+   "name": "EDITAIS PNAB - CICLO I",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Outra"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 2516173,
+    "name": "escuta-pnab-avatar-167x167px.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2753/escuta-pnab-avatar-167x167px.png",
+    "createTimestamp": {
+     "date": "2025-08-14 14:55:14.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2516174,
+      "name": "escuta-pnab-avatar-167x167px-bc9f034e41dfe952f99fad93a6f599eb.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2753/file/2516173/escuta-pnab-avatar-167x167px-bc9f034e41dfe952f99fad93a6f599eb.png",
+      "createTimestamp": {
+       "date": "2025-08-14 14:55:14.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2516175,
+      "name": "escuta-pnab-avatar-167x167px-07d5fad9def17fa8f68868a469fa095f.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2753/file/2516173/escuta-pnab-avatar-167x167px-07d5fad9def17fa8f68868a469fa095f.png",
+      "createTimestamp": {
+       "date": "2025-08-14 14:55:14.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2516176,
+      "name": "escuta-pnab-avatar-167x167px-9af1d4729c8b27b486f223da61595622.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2753/file/2516173/escuta-pnab-avatar-167x167px-9af1d4729c8b27b486f223da61595622.png",
+      "createTimestamp": {
+       "date": "2025-08-14 14:55:14.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "registrations-spreadsheets": {
+    "id": 3054409,
+    "name": "oportunidade-2753--inscricoes-2026-09-08 10:20:24.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3054409/",
+    "createTimestamp": {
+     "date": "2026-09-08 10:20:28.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "header": {
+    "id": 3012101,
+    "name": "selo-secult.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2753/selo-secult.jpg",
+    "createTimestamp": {
+     "date": "2026-07-23 15:00:29.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 3012102,
+      "name": "selo-secult-7c2c52d64ecfbed759a74081ab6518d4.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2753/file/3012101/selo-secult-7c2c52d64ecfbed759a74081ab6518d4.jpg",
+      "createTimestamp": {
+       "date": "2026-07-23 15:00:29.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/2753/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3207,
+  "name": "EDITAL DE CHAMAMENTO PÚBLICO Nº 007/2026 CADASTRO AFIRMATIVO DA CULTURA DA SECRETARIA DE CULTURA DO ESTADO DE PERNAMBUCO (CAC SECULT/PE)",
+  "shortDescription": "Cadastro permanente destinado a agentes culturais que se enquadrem nos critérios de ações afirmativas da Secretaria de Cultura de Pernambuco (SECULT/PE), para registro, verificação e certificação de pertencimentos afirmativos, possibilitando o acesso às políticas afirmativas previstas nos mecanismos de fomento cultural do Estado.",
+  "registrationFrom": {
+   "date": "2026-06-16 09:30:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2028-06-16 16:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-05-20 10:26:53.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "O Cadastro Afirmativo da Cultura da Secretaria de Cultura de Pernambuco (CAC SECULT/PE) é um chamamento público permanente destinado ao cadastramento, verificação e certificação de agentes culturais que se enquadrem nos critérios de ações afirmativas da SECULT/PE.\n\nPodem participar pessoas físicas maiores de 18 anos que pertençam a um ou mais grupos contemplados pela Política de Ações Afirmativas, como pessoas negras, indígenas, com deficiência, integrantes de povos e comunidades tradicionais, mulheres, pessoas LGBTQIAPN+, jovens e pessoas idosas.\n\nAs inscrições são gratuitas, realizadas exclusivamente pela Plataforma Mapa Cultural de Pernambuco, mediante envio da documentação cadastral e dos documentos comprobatórios do(s) pertencimento(s) afirmativo(s) declarado(s). As análises ocorrem em ciclos mensais e os cadastros deferidos terão validade de 2 anos.\n\nO CAC SECULT/PE tem caráter exclusivamente cadastral e habilitador, servindo como instrumento de apoio à aplicação das políticas afirmativas nos editais e demais mecanismos de fomento cultural da Secretaria de Cultura do Estado de Pernambuco.",
+  "ownerEntity": {
+   "id": 3550,
+   "name": "SECULT-PE 2026",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 11,
+   "name": "Secretaria de Cultura do Estado de Pernambuco",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": false,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Outra"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 2981925,
+    "name": "avatar-cac.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/avatar-cac.png",
+    "createTimestamp": {
+     "date": "2026-06-08 08:49:57.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2981926,
+      "name": "avatar-cac-bb24de29b0208d7b7bb68e69300856b9.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/file/2981925/avatar-cac-bb24de29b0208d7b7bb68e69300856b9.png",
+      "createTimestamp": {
+       "date": "2026-06-08 08:49:58.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2981927,
+      "name": "avatar-cac-6347b7c3e3b7e815164a6838902b55a6.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/file/2981925/avatar-cac-6347b7c3e3b7e815164a6838902b55a6.png",
+      "createTimestamp": {
+       "date": "2026-06-08 08:49:58.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2981928,
+      "name": "avatar-cac-8226af30f9459d2e5078eb429c54f9da.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/file/2981925/avatar-cac-8226af30f9459d2e5078eb429c54f9da.png",
+      "createTimestamp": {
+       "date": "2026-06-08 08:49:58.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "header": {
+    "id": 2981929,
+    "name": "banner-edital.png",
+    "mimeType": "image/png",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/banner-edital.png",
+    "createTimestamp": {
+     "date": "2026-06-08 08:50:09.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 2981930,
+      "name": "banner-edital-a60c390a37a608d5f5b67c746f22e379.png",
+      "mimeType": "image/png",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/file/2981929/banner-edital-a60c390a37a608d5f5b67c746f22e379.png",
+      "createTimestamp": {
+       "date": "2026-06-08 08:50:09.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 2982334,
+    "name": "cac-secultpe.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/cac-secultpe.pdf",
+    "createTimestamp": {
+     "date": "2026-06-09 14:57:24.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 2982335,
+     "name": "anexo-i-autodeclaracao-para-pessoas-negras.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-i-autodeclaracao-para-pessoas-negras.docx",
+     "createTimestamp": {
+      "date": "2026-06-09 14:58:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO I - AUTODECLARAÇÃO PARA PESSOAS NEGRAS",
+     "transformations": null
+    },
+    {
+     "id": 2982342,
+     "name": "anexo-ii-orientacoes-de-envio-de-fotografia-e-video-para-pessoas-negras.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-ii-orientacoes-de-envio-de-fotografia-e-video-para-pessoas-negras.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 14:59:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO II - ORIENTAÇÕES DE ENVIO DE FOTOGRAFIA E VÍDEO PARA PESSOAS NEGRAS",
+     "transformations": null
+    },
+    {
+     "id": 2982343,
+     "name": "anexo-iii-procedimento-de-heteroidentificacao.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-iii-procedimento-de-heteroidentificacao.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 14:59:15.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO III - PROCEDIMENTO DE HETEROIDENTIFICAÇÃO",
+     "transformations": null
+    },
+    {
+     "id": 2982344,
+     "name": "anexo-iv-declaracao-de-pertencimento-etnico-indigena-2.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-iv-declaracao-de-pertencimento-etnico-indigena-2.docx",
+     "createTimestamp": {
+      "date": "2026-06-09 14:59:31.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO IV - DECLARAÇÃO DE PERTENCIMENTO ÉTNICO INDÍGENA",
+     "transformations": null
+    },
+    {
+     "id": 2982345,
+     "name": "anexo-v-laudo-medico-para-pessoas-com-deficiencia.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-v-laudo-medico-para-pessoas-com-deficiencia.docx",
+     "createTimestamp": {
+      "date": "2026-06-09 14:59:50.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO V - LAUDO MÉDICO PARA PESSOAS COM DEFICIÊNCIA",
+     "transformations": null
+    },
+    {
+     "id": 2982346,
+     "name": "anexo-vi-autodeclaracao-de-identidade-de-genero.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-vi-autodeclaracao-de-identidade-de-genero.docx",
+     "createTimestamp": {
+      "date": "2026-06-09 15:00:11.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO VI - AUTODECLARAÇÃO DE IDENTIDADE DE GÊNERO",
+     "transformations": null
+    },
+    {
+     "id": 2982374,
+     "name": "anexo-vii-declaracao-de-pertencimento-a-povos-e-comunidades-indigenas-quilombolas-e-tradicionais.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-vii-declaracao-de-pertencimento-a-povos-e-comunidades-indigenas-quilombolas-e-tradicionais.docx",
+     "createTimestamp": {
+      "date": "2026-06-09 16:20:45.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO VII - DECLARAÇÃO DE PERTENCIMENTO A POVOS E COMUNIDADES INDÍGENAS, QUILOMBOLAS E TRADICIONAIS",
+     "transformations": null
+    },
+    {
+     "id": 2982375,
+     "name": "anexo-viii-fluxograma-de-analises-mensais.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-viii-fluxograma-de-analises-mensais.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 16:21:07.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO VIII - FLUXOGRAMA DE ANÁLISES MENSAIS",
+     "transformations": null
+    },
+    {
+     "id": 2982376,
+     "name": "anexo-ix-glossario-de-termos-tecnicos.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-ix-glossario-de-termos-tecnicos.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 16:21:25.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO IX - GLOSSÁRIO DE TERMOS TÉCNICOS",
+     "transformations": null
+    },
+    {
+     "id": 2982377,
+     "name": "anexo-x-modelo-de-carta-consubstanciada.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-x-modelo-de-carta-consubstanciada.docx",
+     "createTimestamp": {
+      "date": "2026-06-09 16:21:45.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO X - MODELO DE CARTA CONSUBSTANCIADA",
+     "transformations": null
+    },
+    {
+     "id": 2982378,
+     "name": "anexo-xi-portaria-secult-pe-n-021-de-04-de-maio-de-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-xi-portaria-secult-pe-n-021-de-04-de-maio-de-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 16:21:59.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO XI - PORTARIA SECULT–PE Nº 021, DE 04 DE MAIO DE 2026",
+     "transformations": null
+    },
+    {
+     "id": 2982379,
+     "name": "anexo-xii-manual-cac-secult-pe.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-xii-manual-cac-secult-pe.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 16:22:15.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO XII - MANUAL DO CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 2982380,
+     "name": "anexo-xiii-lei-geral-de-protecao-de-dados.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/anexo-xiii-lei-geral-de-protecao-de-dados.pdf",
+     "createTimestamp": {
+      "date": "2026-06-09 16:22:28.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "ANEXO XIII - LEI GERAL DE PROTEÇÃO DE DADOS",
+     "transformations": null
+    },
+    {
+     "id": 3003520,
+     "name": "resultado-preliminar-do-cadastro-afirmativo-da-cultura.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-preliminar-do-cadastro-afirmativo-da-cultura.pdf",
+     "createTimestamp": {
+      "date": "2026-07-15 15:26:03.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "15.07.2026 - RESULTADO PRELIMINAR DO CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3027647,
+     "name": "resultado-do-julgamento-dos-recursos-cadastro-afirmativo-da-cultura-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-do-julgamento-dos-recursos-cadastro-afirmativo-da-cultura-1.pdf",
+     "createTimestamp": {
+      "date": "2026-07-31 10:35:09.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "31.07.2026 - RESULTADO DO JULGAMENTO DOS RECURSOS - CADASTRO AFIRMATIVO DA CULTURA ",
+     "transformations": null
+    },
+    {
+     "id": 3027648,
+     "name": "resultado-final-cadastro-afirmativo-da-cultura-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-final-cadastro-afirmativo-da-cultura-1.pdf",
+     "createTimestamp": {
+      "date": "2026-07-31 10:35:35.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "31.07.2026 - RESULTADO FINAL - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3042244,
+     "name": "resultado-mes-julho-2026-cadastro-afirmativo-da-cultura.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-mes-julho-2026-cadastro-afirmativo-da-cultura.pdf",
+     "createTimestamp": {
+      "date": "2026-08-14 08:30:08.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "14.08.2026 - RESULTADO PRELIMINAR DO MÊS DE JULHO 2026 - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3048413,
+     "name": "resultado-do-julgamento-dos-recursos-cadastro-afirmativo-da-cultura-31-08-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-do-julgamento-dos-recursos-cadastro-afirmativo-da-cultura-31-08-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-08-31 10:11:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "31.08.2026 - RESULTADO DO JULGAMENTO DOS RECURSOS - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3048414,
+     "name": "resultado-final-cadastro-afirmativo-da-cultura-31-08-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-final-cadastro-afirmativo-da-cultura-31-08-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-08-31 10:12:03.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "31.08.2026 - RESULTADO FINAL - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3057440,
+     "name": "resultado-preliminar-mes-agosto-2026-cadastro-afirmativo-da-cultura-14-09-2026-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-preliminar-mes-agosto-2026-cadastro-afirmativo-da-cultura-14-09-2026-1.pdf",
+     "createTimestamp": {
+      "date": "2026-09-16 07:21:22.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "15.09.2026 - RESULTADO PRELIMINAR DO MÊS AGOSTO 2026 - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3061532,
+     "name": "resultado-final-mes-agosto-2026-cadastro-afirmativo-da-cultura-29-09.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-final-mes-agosto-2026-cadastro-afirmativo-da-cultura-29-09.pdf",
+     "createTimestamp": {
+      "date": "2026-09-30 12:28:32.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "31.09.2026 - RESULTADO FINAL - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    },
+    {
+     "id": 3069200,
+     "name": "resultado-preliminar-mes-setembro-2026-cadastro-afirmativo-da-cultura-15-10-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-preliminar-mes-setembro-2026-cadastro-afirmativo-da-cultura-15-10-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-10-15 14:19:31.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "15.10.2026 - RESULTADO PRELIMINAR DO MÊS DE SETEMBRO 2026",
+     "transformations": null
+    },
+    {
+     "id": 3092162,
+     "name": "resultado-final-mes-setembro-2026-cadastro-afirmativo-da-cultura-29-10-2026.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3207/resultado-final-mes-setembro-2026-cadastro-afirmativo-da-cultura-29-10-2026.pdf",
+     "createTimestamp": {
+      "date": "2026-11-03 06:59:09.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "29.10.2026 - RESULTADO FINAL - CADASTRO AFIRMATIVO DA CULTURA",
+     "transformations": null
+    }
+   ],
+   "registrations-spreadsheets": {
+    "id": 3092189,
+    "name": "oportunidade-3207--inscricoes-2026-11-03 07:41:17.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3092189/",
+    "createTimestamp": {
+     "date": "2026-11-03 07:41:19.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "documentary-spreadsheets": {
+    "id": 3068749,
+    "name": "oportunidade-3207--avaliacoes-2026-10-15 08:17:47.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://www.mapacultural.pe.gov.br/file/arquivo-privado/3068749/",
+    "createTimestamp": {
+     "date": "2026-10-15 08:17:50.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3207/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2939,
+  "name": "Oficina de Caxixi, instrumento pra capoeira",
+  "shortDescription": "Oficina prática dedicada à confecção do caxixi, ensinando técnicas tradicionais de trançado e a importância do instrumento na musicalidade da capoeira. Uma atividade que preserva a cultura, desenvolve habilidades manuais e fortalece a identidade afro-brasileira.",
+  "registrationFrom": {
+   "date": "2025-12-04 14:47:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2111-01-01 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2025-12-04 14:49:10.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "A Oficina de Caxixi é uma atividade cultural voltada para a preservação e valorização da musicalidade da capoeira. Através de uma abordagem prática e educativa, ensinamos aos participantes todo o processo de confecção do caxixi — desde a preparação dos materiais, técnicas de trançado e acabamento, até a compreensão da importância desse instrumento na roda de capoeira.\n\nA oficina busca despertar o interesse pela arte de fazer instrumentos tradicionais, fortalecendo a identidade cultural e estimulando habilidades manuais, criatividade e disciplina. Além disso, promove a integração social, o respeito às raízes afro-brasileiras e a continuidade das tradições que sustentam a capoeira enquanto expressão cultural.\n\nIdeal para iniciantes, alunos de projetos sociais, capoeiristas e pessoas que desejam aprender um ofício ancestral que transforma vidas através da cultura.",
+  "ownerEntity": {
+   "id": 17388347,
+   "name": "Erik da Silva Ferreira",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 17388347,
+   "name": "Erik da Silva Ferreira",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Cultura Negra",
+    "Cultura das comunidades quilombolas",
+    "Artesanato"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 2637073,
+    "name": "1000775534.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2939/1000775534.jpg",
+    "createTimestamp": {
+     "date": "2025-12-04 14:52:22.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2637074,
+      "name": "1000775534-da7cb8a47c16b7e4230fbd499c4c4437.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2939/file/2637073/1000775534-da7cb8a47c16b7e4230fbd499c4c4437.jpg",
+      "createTimestamp": {
+       "date": "2025-12-04 14:52:22.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2637075,
+      "name": "1000775534-a1e6cb2e140563951eb26976c81e6b07.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2939/file/2637073/1000775534-a1e6cb2e140563951eb26976c81e6b07.jpg",
+      "createTimestamp": {
+       "date": "2025-12-04 14:52:22.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2637076,
+      "name": "1000775534-0248a8ceb34f9170e42b7d4059a75f2c.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2939/file/2637073/1000775534-0248a8ceb34f9170e42b7d4059a75f2c.jpg",
+      "createTimestamp": {
+       "date": "2025-12-04 14:52:22.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "header": {
+    "id": 2637091,
+    "name": "1000770480.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2939/1000770480.jpg",
+    "createTimestamp": {
+     "date": "2025-12-04 14:56:42.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 2637092,
+      "name": "1000770480-ccb6d2506ab65cfc44f38e64e90225dc.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/2939/file/2637091/1000770480-ccb6d2506ab65cfc44f38e64e90225dc.jpg",
+      "createTimestamp": {
+       "date": "2025-12-04 14:56:42.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   }
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/2939/",
+  "type": {
+   "id": 24,
+   "name": "Oficina"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 3119,
+  "name": "Fabricação de berimbau com Garafa pet",
+  "shortDescription": "O trabalho com materiais recicláveis é uma das formas mais eficazes de ajudar no combate às enchentes, especialmente em áreas urbanas. O descarte irregular de lixo é um dos principais fatores que levam ao transbordamento de rios e bueiros. ",
+  "registrationFrom": {
+   "date": "2026-04-17 22:03:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "registrationTo": {
+   "date": "2111-01-01 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "createTimestamp": {
+   "date": "2026-04-17 22:05:46.000000",
+   "timezone_type": 3,
+   "timezone": "America/Recife"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "Qual a importância da reciclagem para o meio ambiente?\nA reciclagem reduz o impacto sobre o meio ambiente, traz benefícios para o planeta, além de diminuir as retiradas de matéria-prima do ecossistema.\nEm todo o mundo são produzidas toneladas de lixo diariamente e cada vez mais se torna necessário pensar sobre a importância da reciclagem.\nPor exemplo, no Brasil, 30% de todo lixo produzido tem potencial para ser reciclado. No entanto, apenas 3% deste total é de fato reciclado. Desse modo, a reciclagem se torna uma excelente alternativa para o problema de resíduos sólidos urbanos descartados incorretamente no meio ambiente.\n\n98Mas afinal, o que é reciclagem?\n\nSegundo o Ministério do Meio Ambiente, “reciclagem é um conjunto de técnicas de reaproveitamento de materiais descartados, reintroduzindo-os no ciclo produtivo”. Ou seja, transformar um material já utilizado em matéria-prima, a fim de que se forme um novo produto com as mesmas características.\n\nA reciclagem é importante, pois reduz o impacto sobre o meio ambiente e traz benefícios para o planeta, tendo em vista que muitos materiais levam bastante tempo para se decompor na natureza. Além disso, é responsável pela diminuição da retirada de matéria-prima do ambiente, gera economia de água e energia e reduz a disposição inadequada do lixo\n\nO que você pode fazer?\n\nReutilize os materiais recicláveis e comece a reciclagem na sua casa. Separe todo o material que pode ser reciclado (vidros, plásticos, papéis e metais) do lixo orgânico. Além disso, procure saber se há coleta seletiva na sua cidade. Caso não haja, procure a cooperativa de reciclagem mais próxima de você, mas se informe sobre quais materiais eles recolhem e como a coleta pode ser feita. Lembre-se que a coleta seletiva é realizada por cores para facilitar a separação dos materiais recicláveis.\n\nAs cores da coleta seletiva\n\nAs cores da coleta seletiva são uma importante ferramenta para a melhor destinação dos resíduos. Segundo a resolução do Conselho Nacional do Meio Ambiente, existem dez cores de lixeiras para cada tipo de resíduos, sendo elas:\n\nAzul: papel/papelão;\n\nVermelho: plástico;\n\nVerde: vidro;\n\nAmarelo: metal;\n\nPreto: madeira;\n\nLaranja: resíduos perigosos (como pilhas e baterias);\n\nBranco: resíduos de hospitais e serviço de saúde;\n\nRoxo: lixo radioativo;\n\nMarrom: lixo orgânico;\n\nCinza: lixo não reciclável, contaminado ou cuja separação não é possível.\n\nA reciclagem é importante, além de ser uma iniciativa que pode salvar o planeta.",
+  "ownerEntity": {
+   "id": 21064507,
+   "name": "VITOR",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 21064507,
+   "name": "VITOR",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [
+    "#capoeira",
+    "Arte afro indigina",
+    "arte afro",
+    "capoeira de pernambuco em ação",
+    "#estersoares #cocodorosario #saraucocodorosario #arte #cultura #jaboatãodosguararapes #jaboatãocultural",
+    "jaboatao"
+   ],
+   "area": [
+    "Capoeira",
+    "Produção Cultural",
+    "Produção de Eventos"
+   ]
+  },
+  "files": {
+   "header": {
+    "id": 2905720,
+    "name": "img-20260413-wa0672.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/img-20260413-wa0672.jpg",
+    "createTimestamp": {
+     "date": "2026-04-17 22:16:54.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 2905721,
+      "name": "img-20260413-wa0672-293edb3c8ac22b619c03226b96027bec.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905720/img-20260413-wa0672-293edb3c8ac22b619c03226b96027bec.jpg",
+      "createTimestamp": {
+       "date": "2026-04-17 22:16:54.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 2905722,
+    "name": "motion-photo-3849698407716503487.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/motion-photo-3849698407716503487.jpg",
+    "createTimestamp": {
+     "date": "2026-04-17 22:17:19.000000",
+     "timezone_type": 3,
+     "timezone": "America/Recife"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 2905723,
+      "name": "motion-photo-3849698407716503487-b582f0c307ece051e85548125049c73b.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905722/motion-photo-3849698407716503487-b582f0c307ece051e85548125049c73b.jpg",
+      "createTimestamp": {
+       "date": "2026-04-17 22:17:19.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarMedium": {
+      "id": 2905724,
+      "name": "motion-photo-3849698407716503487-3158287fbde9bb5f6fb316ddba94208d.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905722/motion-photo-3849698407716503487-3158287fbde9bb5f6fb316ddba94208d.jpg",
+      "createTimestamp": {
+       "date": "2026-04-17 22:17:19.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     },
+     "avatarBig": {
+      "id": 2905725,
+      "name": "motion-photo-3849698407716503487-3a368d39fa3f741e8a0a7477b991614f.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905722/motion-photo-3849698407716503487-3a368d39fa3f741e8a0a7477b991614f.jpg",
+      "createTimestamp": {
+       "date": "2026-04-17 22:17:19.000000",
+       "timezone_type": 3,
+       "timezone": "America/Recife"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 2905726,
+     "name": "motion-photo-8024867876315855547.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/motion-photo-8024867876315855547.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:19:18.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": "Fotos da Oficina de Fabricação de berimbau",
+     "transformations": null
+    }
+   ],
+   "gallery": [
+    {
+     "id": 2905727,
+     "name": "img-20260415-wa0610.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/img-20260415-wa0610.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:19:44.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 2905728,
+       "name": "img-20260415-wa0610-ebf33fbbc2ed03a38ef7cd7adf4ca990.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905727/img-20260415-wa0610-ebf33fbbc2ed03a38ef7cd7adf4ca990.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:19:44.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      },
+      "galleryFull": {
+       "id": 2905729,
+       "name": "img-20260415-wa0610-629958b0d8ac75cf086498473c79a719.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905727/img-20260415-wa0610-629958b0d8ac75cf086498473c79a719.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:19:44.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      }
+     }
+    },
+    {
+     "id": 2905730,
+     "name": "img-20260413-231044-979.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/img-20260413-231044-979.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:20:00.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 2905731,
+       "name": "img-20260413-231044-979-9e2fcd09a5c90f6517ec9609d2a9436a.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905730/img-20260413-231044-979-9e2fcd09a5c90f6517ec9609d2a9436a.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:01.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      },
+      "galleryFull": {
+       "id": 2905732,
+       "name": "img-20260413-231044-979-2f4d9cf99f3492af08ac4d3488d47115.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905730/img-20260413-231044-979-2f4d9cf99f3492af08ac4d3488d47115.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:01.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      }
+     }
+    },
+    {
+     "id": 2905733,
+     "name": "motion-photo-4003063464386582999.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/motion-photo-4003063464386582999.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:20:12.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 2905734,
+       "name": "motion-photo-4003063464386582999-d1f0efe2867167b2b13ea597a33ffa53.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905733/motion-photo-4003063464386582999-d1f0efe2867167b2b13ea597a33ffa53.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:12.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      },
+      "galleryFull": {
+       "id": 2905735,
+       "name": "motion-photo-4003063464386582999-5e88648c76baef3519c3146d71b28b28.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905733/motion-photo-4003063464386582999-5e88648c76baef3519c3146d71b28b28.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:12.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      }
+     }
+    },
+    {
+     "id": 2905736,
+     "name": "motion-photo-3849698407716503487-2.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/motion-photo-3849698407716503487-2.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:20:31.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 2905737,
+       "name": "motion-photo-3849698407716503487-2-40a3c9e457bf20074a68d8569e70212a.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905736/motion-photo-3849698407716503487-2-40a3c9e457bf20074a68d8569e70212a.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:31.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      },
+      "galleryFull": {
+       "id": 2905738,
+       "name": "motion-photo-3849698407716503487-2-a35b10b5424267a660f6900bc85f617c.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905736/motion-photo-3849698407716503487-2-a35b10b5424267a660f6900bc85f617c.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:31.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      }
+     }
+    },
+    {
+     "id": 2905739,
+     "name": "motion-photo-4766052680930521007.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/motion-photo-4766052680930521007.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:20:43.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 2905740,
+       "name": "motion-photo-4766052680930521007-dccebdcd74bd7bf7a139d8b13b6cfb32.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905739/motion-photo-4766052680930521007-dccebdcd74bd7bf7a139d8b13b6cfb32.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:43.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      },
+      "galleryFull": {
+       "id": 2905741,
+       "name": "motion-photo-4766052680930521007-0850ed13fef3902f0479a67ecda0bc6f.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905739/motion-photo-4766052680930521007-0850ed13fef3902f0479a67ecda0bc6f.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:20:43.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      }
+     }
+    },
+    {
+     "id": 2905742,
+     "name": "motion-photo-7426326815057891582.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/motion-photo-7426326815057891582.jpg",
+     "createTimestamp": {
+      "date": "2026-04-17 22:21:01.000000",
+      "timezone_type": 3,
+      "timezone": "America/Recife"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 2905743,
+       "name": "motion-photo-7426326815057891582-90e22a2ab7c30053ae77eb67fb87bed4.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905742/motion-photo-7426326815057891582-90e22a2ab7c30053ae77eb67fb87bed4.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:21:01.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      },
+      "galleryFull": {
+       "id": 2905744,
+       "name": "motion-photo-7426326815057891582-0963c278474e2d0da7aa325e1279a985.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://www.mapacultural.pe.gov.br/files/opportunity/3119/file/2905742/motion-photo-7426326815057891582-0963c278474e2d0da7aa325e1279a985.jpg",
+       "createTimestamp": {
+        "date": "2026-04-17 22:21:01.000000",
+        "timezone_type": 3,
+        "timezone": "America/Recife"
+       }
+      }
+     }
+    }
+   ]
+  },
+  "singleUrl": "https://www.mapacultural.pe.gov.br/oportunidade/3119/",
+  "type": {
+   "id": 23,
+   "name": "Curso"
+  },
+  "@entityType": "opportunity"
+ }
+]

@@ -1,0 +1,216 @@
+# fontes_curadas.yaml
+# Editais de instituições que não publicam nos Mapas Culturais.
+# O worker valida este arquivo e faz upsert com fonte = "curadoria".
+#
+# Regras:
+# - Só entra edital conferido em fonte oficial ou na plataforma de inscrição.
+# - Campo sem comprovação fica null. A UI mostra "Não informado no resumo — ver edital".
+# - Toda informação derivada leva o trecho que a comprova em `evidencias`.
+# - Datas no fuso America/Sao_Paulo. Sem horário confirmado: fim_tem_horario: false.
+# - Reconfira `verificado_em` pelo menos uma vez por mês.
+#
+# Pesquisa de 06/11/2026:
+# - Itaú Cultural: nenhum edital com inscrição aberta. O último (Itaú Cultural Play,
+#   produções audiovisuais do Centro-Oeste e do Norte) encerrou em 23/04/2026.
+# - Sesc: nenhum edital nacional aberto. Os recorrentes estão na seção `radar`.
+
+editais:
+
+  - id_externo: funarte-aberta-2026-cta
+    titulo: "Programa Funarte Aberta 2026 – Centro Técnico de Artes"
+    orgao_fomento: "Fundação Nacional de Artes (Funarte)"
+    url_origem: "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-tecnico-de-artes"
+    url_inscricao: "https://prosas.com.br/editais/17664-programa-funarte-aberta-2026-centro-tecnico-de-artes"
+    url_edital_pdf: "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-tecnico-de-artes/regulamento-funarte-aberta-cta.pdf"
+    resumo_simples: "Cessão gratuita da Sala Multiuso do Centro Técnico de Artes (RJ) para ensaio, criação, residência ou apresentação. Não há repasse em dinheiro."
+    linguagens: ["Teatro & Dança", "Música", "Artes Visuais", "Multiáreas"]
+    abrangencia: nacional
+    uf: null
+    municipio: "Rio de Janeiro"
+    proponentes: ["PF", "MEI", "PJ_COM_FINS", "PJ_SEM_FINS"]
+    valor_total: null
+    teto_por_projeto: null
+    tipo_apoio: cessao_de_espaco
+    exige_contrapartida: null
+    marco_legal: null
+    documentos_exigidos:
+      - "Anexo I – Formulário de Inscrição"
+      - "Anexo II – Roteiro para apresentação oral"
+      - "Anexo III – Declaração de Uso de Imagem"
+    inscricao_inicio: "2026-03-30"
+    inscricao_fim: "2027-04-30T17:59:00-03:00"
+    fim_tem_horario: true
+    verificado_em: "2026-11-06"
+    evidencias:
+      inscricao_fim: "Inscrições abertas De 30/03/2026 Até 30/04/2027 (às 17h59 - horário de Brasília)"
+      proponentes: "Pessoas Físicas maiores de 18 anos, Pessoas Jurídicas de direito privado, com ou sem fins lucrativos, Microempreendedores(as) Individuais (MEIs) e Empresários(as) Individuais"
+      tipo_apoio: "disponibilizando, de modo gratuito e democrático, seus espaços"
+      municipio: "Centro Técnico de Artes (Rio de Janeiro RJ)"
+
+  - id_externo: funarte-aberta-2026-complexo-mg
+    titulo: "Programa Funarte Aberta 2026 – Complexo Funarte MG"
+    orgao_fomento: "Fundação Nacional de Artes (Funarte)"
+    url_origem: "https://prosas.com.br/editais/17665-programa-funarte-aberta-2026-complexo-funarte-mg"
+    url_inscricao: "https://prosas.com.br/editais/17665-programa-funarte-aberta-2026-complexo-funarte-mg"
+    url_edital_pdf: null
+    resumo_simples: "Cessão gratuita dos galpões e da área externa do Complexo Funarte em Belo Horizonte para pesquisa, ensaio, residência, apresentação ou gravação. Não há repasse em dinheiro."
+    linguagens: ["Teatro & Dança", "Música", "Artes Visuais", "Multiáreas"]
+    abrangencia: nacional
+    uf: null
+    municipio: "Belo Horizonte"
+    proponentes: ["PF", "MEI", "PJ_COM_FINS", "PJ_SEM_FINS"]
+    valor_total: null
+    teto_por_projeto: null
+    tipo_apoio: cessao_de_espaco
+    exige_contrapartida: null
+    marco_legal: null
+    documentos_exigidos:
+      - "Anexo I – Formulário de Inscrição Complexo MG"
+      - "Anexo II – Roteiro para apresentação oral"
+      - "Anexo III – Declaração de Uso de Imagem"
+    inscricao_inicio: "2026-03-30"
+    inscricao_fim: "2027-04-30"
+    fim_tem_horario: false
+    verificado_em: "2026-11-06"
+    evidencias:
+      inscricao_fim: "Programa Funarte Aberta 2026 - Complexo Funarte MG — Inscrições até 30/04/27"
+      linguagens: "o programa acolhe propostas de artes visuais, artes integradas e transversais, circo, dança, música, teatro, entre outras"
+      proponentes: "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
+      municipio: "Complexo Cultural Funarte Minas Gerais (Belo Horizonte MG)"
+
+  - id_externo: funarte-aberta-2026-complexo-sp
+    titulo: "Programa Funarte Aberta 2026 – Complexo Funarte SP"
+    orgao_fomento: "Fundação Nacional de Artes (Funarte)"
+    url_origem: "https://prosas.com.br/editais/17666-programa-funarte-aberta-2026-complexo-funarte-sp"
+    url_inscricao: "https://prosas.com.br/editais/17666-programa-funarte-aberta-2026-complexo-funarte-sp"
+    url_edital_pdf: null
+    resumo_simples: "Cessão gratuita dos espaços do Complexo Funarte em São Paulo. A proposta precisa ser enviada entre 30 e 120 dias antes da data pretendida. Não há repasse em dinheiro."
+    linguagens: ["Teatro & Dança", "Música", "Artes Visuais", "Multiáreas"]
+    abrangencia: nacional
+    uf: null
+    municipio: "São Paulo"
+    proponentes: ["PF", "MEI", "PJ_COM_FINS", "PJ_SEM_FINS"]
+    valor_total: null
+    teto_por_projeto: null
+    tipo_apoio: cessao_de_espaco
+    exige_contrapartida: true
+    marco_legal: null
+    documentos_exigidos: []
+    inscricao_inicio: "2026-03-30"
+    inscricao_fim: "2027-04-30"
+    fim_tem_horario: false
+    verificado_em: "2026-11-06"
+    evidencias:
+      inscricao_fim: "As inscrições estão abertas até o dia 30 de abril de 2027, através do link: https://prosas.com.br/editais/17666-programa-funarte-aberta-2026-complexo-funarte-sp"
+      tipo_apoio: "O edital prevê a cessão gratuita de espaço, não havendo repasse de recursos financeiros aos proponentes"
+      exige_contrapartida: "É obrigatória a apresentação de medidas de acessibilidade e democratização do acesso"
+      antecedencia: "Antecedência mínima de 30 dias e máxima de 120 dias em relação ao início pretendido"
+      proponentes: "Pessoas Físicas (maiores de 18 anos), Pessoas Jurídicas de direito privado (com ou sem fins lucrativos), Microempreendedores Individuais (MEIs) e Empresários Individuais (EIs)"
+
+  - id_externo: funarte-aberta-2026-livraria-mario-de-andrade
+    titulo: "Programa Funarte Aberta 2026 – Livraria Mário de Andrade"
+    orgao_fomento: "Fundação Nacional de Artes (Funarte)"
+    url_origem: "https://prosas.com.br/editais/17667-programa-funarte-aberta-2026-livraria-m-rio-de-andrade"
+    url_inscricao: "https://prosas.com.br/editais/17667-programa-funarte-aberta-2026-livraria-m-rio-de-andrade"
+    url_edital_pdf: null
+    resumo_simples: "Cessão gratuita da Livraria Mário de Andrade, no Palácio Gustavo Capanema, para lançamentos de livros abertos ao público."
+    linguagens: ["Literatura"]
+    abrangencia: nacional
+    uf: null
+    municipio: null
+    proponentes: ["PF", "MEI", "PJ_COM_FINS", "PJ_SEM_FINS"]
+    valor_total: null
+    teto_por_projeto: null
+    tipo_apoio: cessao_de_espaco
+    exige_contrapartida: null
+    marco_legal: null
+    documentos_exigidos:
+      - "Anexo I – Formulário de Inscrição Livraria"
+      - "Anexo II – Roteiro para apresentação oral"
+      - "Anexo III – Declaração de Uso de Imagem"
+    inscricao_inicio: "2026-03-30"
+    inscricao_fim: "2027-04-30"
+    fim_tem_horario: false
+    verificado_em: "2026-11-06"
+    evidencias:
+      inscricao_fim: "Programa Funarte Aberta 2026 - Livraria Mário de Andrade — Inscrições até 30/04/27"
+      linguagens: "atividades abertas ao público, especificamente lançamentos de livros"
+      proponentes: "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
+
+  - id_externo: funarte-aberta-2026-centro-de-teatro
+    titulo: "Programa Funarte Aberta 2026 – Centro de Teatro"
+    orgao_fomento: "Fundação Nacional de Artes (Funarte)"
+    url_origem: "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-de-teatro/funarte-aberta-ceteatro.pdf"
+    url_inscricao: null
+    url_edital_pdf: "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-funarte-aberta/programa-funarte-aberta-2026-2013-ocupacao-dos-espacos-culturais-da-funarte-centro-de-teatro/funarte-aberta-ceteatro.pdf"
+    resumo_simples: "Cessão gratuita dos espaços do Centro de Teatro da Funarte para ensaio, criação ou apresentação. Não há repasse em dinheiro."
+    linguagens: ["Teatro & Dança"]
+    abrangencia: nacional
+    uf: null
+    municipio: null
+    proponentes: ["PF", "MEI", "PJ_COM_FINS", "PJ_SEM_FINS"]
+    valor_total: null
+    teto_por_projeto: null
+    tipo_apoio: cessao_de_espaco
+    exige_contrapartida: null
+    marco_legal: null
+    documentos_exigidos: []
+    inscricao_inicio: "2026-03-30"
+    inscricao_fim: "2027-04-30"
+    fim_tem_horario: false
+    verificado_em: "2026-11-06"
+    pendencias: "Página de inscrição no Prosas não localizada; confirmar link e município."
+    evidencias:
+      inscricao_fim: "Programa Funarte Aberta 2026 - Centro de Teatro — Inscrições até 30/04/27"
+      proponentes: "No Funarte Aberta 2026: pessoa física maior de 18 anos, pessoa jurídica privada, MEI e empresário individual"
+
+# Editais que se repetem todo ano e estão fechados agora.
+# Não aparecem como abertos no site: servem de aviso ("costuma abrir em...")
+# e de lembrete para conferir a fonte quando a janela chegar.
+radar:
+
+  - id_externo: sesc-rj-pulsar
+    titulo: "Edital de Cultura Sesc RJ Pulsar"
+    orgao_fomento: "Sesc RJ"
+    url_referencia: "https://www.sescrio.org.br/pulsar/"
+    ultima_edicao: "6ª edição: inscrições de 30/01 a 20/03/2026, R$ 36 milhões, projetos de todo o país"
+    janela_habitual: "fim de janeiro a março"
+    proponentes_ultima_edicao: ["PJ_COM_FINS", "PJ_SEM_FINS"]
+    linguagens: ["Artes Visuais", "Cinema & Audiovisual", "Teatro & Dança", "Literatura", "Música"]
+    verificado_em: "2026-11-06"
+
+  - id_externo: premio-sesc-literatura
+    titulo: "Prêmio Sesc de Literatura"
+    orgao_fomento: "Sesc"
+    url_referencia: null
+    ultima_edicao: "2026: inscrições até 2 de março, para autores inéditos (romance, conto e poesia)"
+    janela_habitual: "fevereiro a março"
+    linguagens: ["Literatura"]
+    verificado_em: "2026-11-06"
+
+  - id_externo: sesc-pr-artes-da-cena
+    titulo: "Edital Sesc Artes da Cena (Sesc Paraná)"
+    orgao_fomento: "Sesc PR"
+    url_referencia: "https://www.sescpr.com.br/edital/edital-sesc-artes-da-cena/"
+    ultima_edicao: "2026: inscrições de 23/06 a 31/08/2026, artistas de todo o Brasil"
+    janela_habitual: "junho a agosto"
+    linguagens: ["Teatro & Dança"]
+    verificado_em: "2026-11-06"
+
+  - id_externo: itau-cultural-rumos
+    titulo: "Rumos Itaú Cultural"
+    orgao_fomento: "Itaú Cultural"
+    url_referencia: "https://rumositaucultural.org.br"
+    ultima_edicao: "Última edição localizada: 2023-2024 (inscrições de agosto a setembro de 2023, teto de R$ 100 mil por projeto, PF e PJ). Edição posterior não localizada."
+    janela_habitual: "agosto a setembro, em anos de edição; a periodicidade mudou ao longo do tempo"
+    linguagens: ["Multiáreas"]
+    verificado_em: "2026-11-06"
+
+  - id_externo: itau-cultural-a-ponte
+    titulo: "a_ponte: cena do teatro universitário"
+    orgao_fomento: "Itaú Cultural"
+    url_referencia: "https://www.itaucultural.org.br"
+    ultima_edicao: "6ª edição: inscrições até 10/04/2026 (prorrogado); pesquisas universitárias em artes cênicas, música e literatura"
+    janela_habitual: "março a abril"
+    linguagens: ["Teatro & Dança", "Música", "Literatura"]
+    verificado_em: "2026-11-06"

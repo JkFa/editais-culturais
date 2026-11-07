@@ -1,0 +1,881 @@
+[
+ {
+  "id": 11453,
+  "name": "2º PRÊMIO TRAJETÓRIAS CULTURAIS | QUADRILHAS JUNINAS | IBIASSUCÊ-BA",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2026 - 1º EDITAL PRÊMIO TRAJETÓRIAS CULTURAIS - QUADRILHAS JUNINAS - ALDIR BLANC IBIASSUCÊ CICLO 2",
+  "registrationFrom": {
+   "date": "2026-09-18 08:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-10-02 18:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O 2º Edital Prêmio Trajetórias Culturais vai premiar 2 coletivos/grupos culturais de quadrilhas juninas de IBIASSUCÊ-BA, com o valor total de R$ 4.714,08 (quatro mil e setecentos e quatorze reais e oito centavos) com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB).",
+  "ownerEntity": {
+   "id": 209160,
+   "name": "ALDIR BLANC | IBIASSUCÊ-BA (CICLO 2)",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Tradicionais e Populares",
+    "Festejos Juninos"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/11453/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 11455,
+  "name": "1º CISCO CULTURAL | DIVERSAS ÁREAS CULTURAIS | IBIASSUCÊ-BA",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026 - 1º EDITAL CISCO CULTURAL - DIVERSAS ÁREAS CULTURAIS - ALDIR BLANC IBIASSUCÊ CICLO 2\n",
+  "registrationFrom": {
+   "date": "2026-09-18 07:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-10-02 18:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O 1º Edital Cisco Cultural vai selecionar 47 projetos e iniciativas culturais do município de Ibiassucê-BA para receberem apoio financeiro total de R$ 69.000,00 (sessenta e nove mil reais), com recursos da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB) com o intuito de incentivar as diversas formas de manifestações culturais.\n\nMÃE MÔNICA – ANO III | Eventos Calendarizados | Grupos e Coletivos Culturais\nZÉ NASCIMENTO – ANO II | Audiovisual\nJURACY CARDOSO – ANO I | Artes Visuais, Artesanato e Fotografia\nANTÔNIO FIGUEIREDO – ANO I | Publicação de Livros\nLAMPARINA CÊNICA – ANO I | Artes Cênicas, Teatro, Dança e Performance\nGURY DINIZ – ANO I | Festival da Canção\nDONA YOLANDA – SUBSÍDIO CULTURAL – ANO III | Espaços, Inciativas e Ambientes Artístico-Culturais",
+  "ownerEntity": {
+   "id": 209160,
+   "name": "ALDIR BLANC | IBIASSUCÊ-BA (CICLO 2)",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Artes Visuais",
+    "Música",
+    "Teatro",
+    "Artesanato",
+    "Fotografia",
+    "Dança",
+    "Culturas Tradicionais e Populares",
+    "Produção Audiovisual",
+    "Produção de Eventos",
+    "Livro, Leitura e Literatura",
+    "Performance",
+    "Espaços e Equipamentos Culturais"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/11455/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 10607,
+  "name": "EDITAL DE PARTICIPAÇÃO EM ANTOLOGIA: (CONTO, CRÔNICA, POEMA E DRAMATURGIA)",
+  "shortDescription": "O edital de chamada pública da Antologia \"Sobrenatural\" tem como objetivo selecionar até 50 autores para compor uma coletânea literária com textos inéditos em língua portuguesa sobre a temática do sobrenatural. Podem participar maiores de 18 anos (ou menores com autorização do responsável), submetendo contos, crônicas, poemas ou dramaturgias em formato Word, mediante inscrição.",
+  "registrationFrom": {
+   "date": "2026-07-21 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-09-11 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "A coordenação editorial torna pública a abertura de inscrições para a seleção de obras literárias que integrarão a antologia de textos focada na temática Sobrenatural. O objetivo desta coletânea é reunir visões criativas, assustadoras, místicas ou misteriosas sobre o além e o inexplicável.\n\n1. Das Modalidades Textuais\nSerão aceitos textos originais (em língua portuguesa) nos seguintes formatos:\nContos\nCrônicas\nPoemas\nDramaturgia (Textos teatrais/roteiros)\n\n2. Da Participação e Vagas\nO edital é aberto a qualquer autor(a) maior de 18 anos. (menores devem enviar declaração segundo modelo do anexo 1, assinada pelo responsável)\nSerão selecionados, no máximo, 50 autores no total.\nCada autor poderá enviar mais de uma obra por segmento, ou mesmo seguimento, mas, para cada envio, será necessário uma nova inscrição, e pagamento, de acordo com a modalidade.\n\n3. Da Formatação e Limite de Páginas\nOs textos devem ser enviados obrigatoriamente em arquivo do Microsoft Word (.doc ou .docx), fonte Arial, tamanho 12, espaçamento 1,5.\nO limite de espaço para cada autor na publicação final será estritamente respeitado da seguinte forma:\nContos, Crônicas e Poemas: Até 3 páginas diagramadas. (com mini biografia, e foto do autor)\nDramaturgia: Até 10 páginas diagramadas (com mini biografia, e foto do autor)\n\nAtenção: Textos que excedam o limite de páginas estimado após a diagramação padrão da editora poderão ser desclassificados ou devolvidos para corte.\n\n4. Dos Documentos Exigidos para Inscrição\nNo ato da inscrição (pelo formulário eletrônico: https://forms.gle/rp1RfnHZje6cFWxq7 ), o autor deverá enviar:\n\nA Obra: Arquivo em formato Word (.doc/.docx) contendo o texto a ser publicado, o título, e identificação do autor.\n\nMini Biografia: Um breve resumo da trajetória literária/pessoal do autor (máximo de 10 linhas), em arquivo de texto separado.\n\nFoto de Rosto: Fotografia em alta resolução (formato JPG ou PNG), com boa iluminação, para fins de divulgação e inclusão no livro.\n\n5. Da Taxa de Inscrição e Cofinanciamento\nPara cobrir os custos de edição, atribuição de ISBN, diagramação e design de capa, será cobrada uma taxa de cofinanciamento no valor de R$ 50,00 por obra submetida. O pagamento deverá ser realizado via PIX.\nChave: smarcotulio038@gmail.com\nPara inscrições que não enviarem o comprovante, ou enviarem comprovantes falsos, a obra não será publicada na antologia.\n\nSOBRE CANCELAMENTO E ESTORNO: Somente serão aceitos pedidos formais enviados para o e-mail: contato@marcotulionettoloja.com.br em um período de 07 dias após a inscrição e pagamento. Após a solicitação, iremos avaliar, e se seguir as regras das políticas de cancelamento, estornaremos o valor, e cancelaremos a participação do autor na antologia.\n\n6. Das Inscrições e Cronograma\nPeríodo de Inscrições: De 24 de julho até 11 de setembro.\nForma de Envio: Os materiais devem ser encaminhados via formulário eletrônico: https://forms.gle/rp1RfnHZje6cFWxq7\n\n7. Dos Direitos Autorais\nOs autores, no ato da inscrição, deverão assinar e enviar o Termo de Cessão de Direitos Autorais constante no Anexo 2 deste edital.\n\n8. Sobre o Lançamento\nApós o término de inscrições dos autores, iremos entrar em contato com todos inscritos, daremos início ao processo de criação da antologia, e a publicação acontecerá em Outubro. A publicação será de forma física, e cada autor terá 10% de desconto na compra dos exemplares. Também poderá ser publicado em formato e-book, mas, será discutido com os autores presentes na obra.\n\n\n9. Disposições Finais\nAo enviar a inscrição, o autor declara a originalidade, autoria, e sem uso de I.A do texto submetido, assumindo total responsabilidade civil e penal por qualquer questão de plágio ou direitos de terceiros, bem como autoriza a publicação do texto, foto e biografia na referida antologia.\nContatos para dúvidas: contato@marcotulionettoloja.com.br",
+  "ownerEntity": {
+   "id": 210452,
+   "name": "ANTOLOGIA SOBRENATURAL",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 28278363,
+   "name": "MARCO TULIO SOUZA NETO",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Criação literária",
+    "Letras e Literatura (Humanidades)",
+    "Literatura",
+    "Livro, Leitura e Literatura",
+    "Performance Literária"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/10607/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 7031,
+  "name": " 1º EDITAL RIO CULTURAL - FOMENTO ÁS DIVERSAS ÁREAS CULTURAIS (RIO DO ANTÔNIO-BA)",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026 - 1º EDITAL RIO CULTURAL - DIVERSAS ÁREAS CULTURAIS - ALDIR BLANC RIO DO ANTÔNIO CICLO 2\n",
+  "registrationFrom": {
+   "date": "2026-03-20 08:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-04-17 17:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O objeto do 1º Edital Rio Cultural é a seleção de projetos/propostas culturais para receberem apoio financeiro nas modalidades, categorias e linhas descritas abaixo, com o objetivo de incentivar as diversas formas de manifestações culturais do município de Rio do Antônio-BA.\n\nSerão selecionados 42 (quarenta e dois) projetos/propostas de 04 (quatro) modalidades diferentes:\n\nAdelbardo Silveira - Ano II - (Literatura, Audiovisual, Fotografia, Linguagens Artísticas)\nJoaquim Rodrigues - Ano I - (Eventos Calendarizados, Culturas Populares, Tradicionais e Identitárias)\nCarlos Guedes - Ano II - (Festival de Música)\nSenhor Nogueira - Ano I - (Feira de Artesanato)\n\nO valor total deste edital é de R$ 54.000,00 (cinquenta e quatro mil reais)",
+  "ownerEntity": {
+   "id": 208895,
+   "name": "ALDIR BLANC | RIO DO ANTÔNIO-BA (CICLO 2)",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 240405,
+   "name": "DEPCULT | Departamento Municipal de Cultura | Rio do Antônio - BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [
+    "Rio do Antônio-BA",
+    "DEPCULT",
+    "Rio Cultural"
+   ],
+   "area": [
+    "Artes Visuais",
+    "Artesanato",
+    "Produção Audiovisual",
+    "Fotografia",
+    "Dança",
+    "Teatro",
+    "Culturas Tradicionais e Populares",
+    "Música"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/7031/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 7033,
+  "name": "2º EDITAL - PRÊMIO CULTURA VIVA RIO DO ANTÔNIO - BA ",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 02/2026\n2º EDITAL - PRÊMIO CULTURA VIVA RIO DO ANTÔNIO\nREDE MUNICIPAL DE PONTOS DE CULTURA DE RIO DO ANTÔNIO-BA",
+  "registrationFrom": {
+   "date": "2026-03-20 08:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-04-17 17:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O objeto do 2º Edital Prêmio Cultura Viva é a premiação de projetos, iniciativas, atividades ou ações de Pontos e Pontões de Cultura, nos termos da Política Nacional de Cultura Viva. Trata-se, portanto, de reconhecimento pela contribuição já realizada por Pontos e Pontões de Cultura (com ou sem CNPJ); além de entidades (com CNPJ) e coletivos informais (sem CNPJ) que ainda não são certificadas como Pontos ou Pontões de Cultura, mas que têm características de Pontos de Cultura e serão certificadas por meio deste edital.\n\nDe acordo com a Lei Cultura Viva:\n\nI- Pontos de Cultura são “entidades jurídicas de direito privado sem fins lucrativos, grupos ou coletivos sem constituição jurídica, de natureza ou finalidade cultural, que desenvolvam e articulem atividades culturais em suas comunidades”;\nII- Pontões de Cultura são “entidades com constituição jurídica, de natureza/finalidade cultural e/ou educativa, que desenvolvam, acompanhem e articulem atividades culturais, em parceria com as redes regionais, identitárias e temáticas de pontos de cultura e outras redes temáticas, que se destinam à mobilização, à troca de experiências, ao desenvolvimento de ações conjuntas com governos locais e à articulação entre os diferentes pontos de cultura que poderão se agrupar em nível estadual e/ou regional ou por áreas temáticas de interesse comum, visando à capacitação, ao mapeamento e a ações conjuntas.”\n\nEste Edital é realizado com recursos do Governo Federal, repassados ao município de Rio do Antônio por meio da PNAB, e tem o valor total de R$ 30.000,00 (trinta mil reais), para a premiação de 03 entidades e/ou coletivos, como detalhamento descrito no ANEXO 01 deste edital.",
+  "ownerEntity": {
+   "id": 208895,
+   "name": "ALDIR BLANC | RIO DO ANTÔNIO-BA (CICLO 2)",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 240405,
+   "name": "DEPCULT | Departamento Municipal de Cultura | Rio do Antônio - BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Economia Criativa e da Cultura"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/7033/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 7037,
+  "name": "2º EDITAL - PRÊMIO TRAJETÓRIAS CULTURAIS - RIO DO ANTONIO - BA ",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 03/2026 - 2º EDITAL - PRÊMIO TRAJETÓRIAS CULTURAIS - ALDIR BLANC RIO DO ANTÔNIO CICLO 2",
+  "registrationFrom": {
+   "date": "2026-03-20 08:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-04-17 17:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O 2º Edital Prêmio Trajetórias Culturais vem em conformidade com a Política Nacional Aldir Blanc de Fomento à Cultura, observadas as normas indicadas abaixo, e busca contribuir para o desenvolvimento da política cultural no município de RIO DO ANTÔNIO-BA.\n\nO 2º Edital Premio Trajetórias Culturais possui natureza jurídica de doação sem encargo, ou seja, será realizado por meio de pagamento direto ao contemplado, sem estabelecimento de obrigações futuras, sem exigência de contrapartida, sem necessidade de assinatura de instrumento jurídico, sem prestação de contas, conforme autoriza a Lei nº 14.903/2024.\n\nO objeto do 2º Edital Prêmio Trajetórias Culturais é a premiação de agentes culturais coletivos/grupos culturais com atuação nas expressões culturais populares e tradicionais de quadrilhas juninas e ternos de reis e que tenham prestado relevante contribuição ao desenvolvimento artístico ou cultural do município de RIO DO ANTÔNIO-BA.\n\nSerão premiados 10 coletivos/grupos culturais.\n\nO valor total deste edital é de R$ 22.000,00 (vinte e dois mil reais).",
+  "ownerEntity": {
+   "id": 208895,
+   "name": "ALDIR BLANC | RIO DO ANTÔNIO-BA (CICLO 2)",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 240405,
+   "name": "DEPCULT | Departamento Municipal de Cultura | Rio do Antônio - BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Festejos Juninos",
+    "Folia de Reis"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/7037/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 6974,
+  "name": "Vozes de Jabaraí: Formação Pedagógica e Registro Identitário",
+  "shortDescription": "Projeto de formação cultural em Jabaraí, Guarapari, voltado para 20 jovens. Através de metodologias pedagógicas e da Andragogia capacitaremos jovens no registro de memórias e narrativas digitais do território. Foco no protagonismo juvenil, valorização da identidade e cidadania, incluindo o repasse obrigatório de 4 bolsas de R$ 500,00 para jovens monitores locais.",
+  "registrationFrom": {
+   "date": "2025-12-30 20:27:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-03-13 18:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O projeto \"Vozes de Jabaraí\" é uma iniciativa de intervenção cultural e pedagógica desenhada para o território de Jabaraí, em Guarapari, área prioritária do Programa Estado Presente. A proposta central é realizar um ciclo de formação teórica e prática focado no mapeamento identitário e no registro de memórias locais. Através da mediação pedagógica, o projeto busca transformar o olhar dos jovens sobre seu próprio território, identificando potências culturais que muitas vezes permanecem invisibilizadas.\n\nMetodologia :\nA estrutura do curso é fundamentada nos princípios da Pedagogia Social, garantindo um percurso de aprendizagem lógico, acessível e voltado para resultados práticos, promovendo um ambiente de escuta ativa e construção coletiva do conhecimento. \nOs conteúdos abordarão técnicas de:\n\nHistória Oral: Metodologias de entrevista e escuta de anciãos e mestres locais.\n\nNarrativas Digitais: Uso de dispositivos móveis para registro fotográfico e audiovisual das manifestações culturais do bairro.\n\nCartografia Afetiva: Criação de um mapa cultural do Jabaraí sob a ótica da juventude.\n\nImpacto e Protagonismo Juvenil:\n\nO projeto atenderá diretamente 20 jovens (10 a 29 anos), combatendo a exclusão cultural e fomentando o exercício da cidadania. Como pilar de sustentabilidade e incentivo, serão concedidas 04 bolsas de estudo (R$ 500,00 cada) para jovens de 15 a 24 anos residentes no bairro, que atuarão como agentes de mobilização e pesquisa durante todo o cronograma.\n\nResultados Esperados:\nAo final do ciclo, os participantes terão produzido um acervo digital de memórias e um diagnóstico das potências criativas de Jabaraí. Mais do que o registro físico, espera-se o fortalecimento da autoestima comunitária e a criação de uma rede de jovens capacitados para atuar como guardiões e difusores do patrimônio cultural de seu território..",
+  "ownerEntity": {
+   "id": 25789281,
+   "name": "Bruna Emanuela Gomes de Morais",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 25789281,
+   "name": "Bruna Emanuela Gomes de Morais",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [
+    "@jabaraí"
+   ],
+   "area": [
+    "Acessibilidade Cultural"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/6974/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5798,
+  "name": "Prêmio VIVALEITURA 2025",
+  "shortDescription": "A iniciativa vai reconhecer e valorizar ações de leitura, literatura, escrita e de fortalecimento de bibliotecas e espaços culturais como ferramentas de transformação social e educacional.",
+  "registrationFrom": {
+   "date": "2025-06-10 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2025-07-21 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O Prêmio VIVALEITURA tem como propósito reconhecer e valorizar iniciativas que promovem a leitura, a escrita, a literatura e o fortalecimento de bibliotecas e espaços culturais como ferramentas de transformação social e educacional.\n\nO edital contempla cinco categorias: bibliotecas públicas, comunitárias e privadas; escolas públicas, privadas e bibliotecas escolares; práticas continuadas em espaços diversos; escrita criativa; e projetos realizados em unidades prisionais e centros socioeducativos. Serão premiadas 25 iniciativas, com um vencedor e quatro finalistas por categoria. Os vencedores receberão R$ 50 mil e os finalistas, R$ 15 mil.\n\nAs inscrições são gratuitas e devem ser feitas exclusivamente pela internet, por meio do Mapa da Cultura, entre os dias 10 de junho e 11 de julho de 2025, até às 23h59 (horário de Brasília).\n\nPodem participar pessoas físicas, instituições privadas sem fins lucrativos e grupos ou coletivos sem CNPJ, com atuação comprovada de no mínimo dois anos. Coletivos devem apresentar uma carta de autorização assinada pelos membros, e escolas ou bibliotecas públicas sem CNPJ devem ser representadas por pessoa física com anuência da direção.\n\nTodos os projetos inscritos, selecionados ou não, serão integrados ao cadastro do Ministério da Cultura e do Ministério da Educação, contribuindo para o mapeamento da produção cultural brasileira.\n\n",
+  "ownerEntity": {
+   "id": 11097655,
+   "name": "Prêmio VIVALEITURA 2025",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 11097655,
+   "name": "Prêmio VIVALEITURA 2025",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Biblioteca",
+    "Livro",
+    "Livro, Leitura e Literatura",
+    "Audiolivro",
+    "Leitura",
+    "Mediação de Leitura",
+    "Cultura e Educação",
+    "Cultura e Direitos Humanos"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5798/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5325,
+  "name": "PROGRAMA DE INTERCÂMBIO CULTURAL EDITAL DE MOBILIDADE CULTURAL Nº 01/2024",
+  "shortDescription": "O Ministério da Cultura, por intermédio da Secretaria de Economia Criativa – SEFIC e Fomento Cultural e a Fundação Nacional de Artes - Funarte torna pública a realização de processo seletivo PROGRAMA DE INTERCÂMBIO CULTURAL - EDITAL DE MOBILIDADE CULTURAL Nº 01/2024.\n",
+  "registrationFrom": {
+   "date": "2024-11-14 09:20:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2025-03-26 23:55:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "Constitui objeto do presente Edital a concessão de ajuda de custo para projetos inscritos no\nPrograma de Intercâmbio Cultural, por meio do apoio financeiro destinado ao custeio de despesas de deslocamento, permanência e participação de agentes culturais e artísticos, para apresentação de\ntrabalho próprio, em eventos, festivais, feiras de negócios e outras atividades culturais e artísticas, no Brasil e no exterior, que promovam o intercâmbio e a difusão, a partir das seguintes categorias:\n\nAções Artísticas: Ações ligadas aos segmentos de Artes Visuais, Circo, Dança, Música, Teatro e Literatura.\n\nAções Transversais: Ações que busquem divulgar expressões culturais, saberes, práticas, modos de vida, bens, produtos e serviços culturais brasileiros, e que, por serem sazonais, peculiares, transversais ou inéditas, não se encaixam em uma única área ou expressão cultural. Essas ações podem conectar temas como economia criativa, territórios, patrimônio cultural, museus, cultura popular, memória, cultura alimentar, comunidades tradicionais, cultura digital, antropologia, diversidade cultural, artesanato, produção cultural, gestão cultural, entre outros. Elas também podem integrar expressões e manifestações culturais com educação, meio ambiente, saúde, direitos humanos, tecnologias sociais, experimentação, ciência, tecnologia, inovação e outros campos do conhecimento.\n\nOs valores variam em função do destino da candidatura:\na) Destinos nacionais: R$ 7.000,00\nb) Destinos no exterior: R$ 17.000,00",
+  "ownerEntity": {
+   "id": 5963,
+   "name": "Programa de Intercâmbio Cultural",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 240266,
+   "name": "Diretoria de Fomento Direto",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Arte Digital",
+    "Arte de Rua",
+    "Artes Circenses",
+    "Artes Visuais",
+    "Artesanato",
+    "Circo",
+    "Cultura Digital",
+    "Cultura dos Povos Originários",
+    "Cultura LGBTQIAPN+",
+    "Cultura Negra",
+    "Culturas Populares",
+    "Dança",
+    "Economia Criativa e da Cultura",
+    "Cultura e Educação",
+    "Cultura e Esporte",
+    "Gestão Cultural",
+    "Literatura",
+    "Livro",
+    "Cultura, Meio Ambiente e Sustentabilidade",
+    "Design de Moda",
+    "Museu (Patrimônio Material)",
+    "Música",
+    "Patrimônio Cultural",
+    "Patrimônio Cultural Imaterial",
+    "Patrimônio Cultural Material",
+    "Produção Cultural",
+    "Teatro"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5325/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5223,
+  "name": "PRÊMIO TRAJETÓRIAS CULTURAIS - FAZEDORES E COLETIVOS DE CULTURA DE IBIASSUCÊ",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 01/2024\nPRÊMIO TRAJETÓRIAS CULTURAIS - FAZEDORES E COLETIVOS DE CULTURA DE IBIASSUCÊ\n",
+  "registrationFrom": {
+   "date": "2024-11-08 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-12-09 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O objeto deste Edital é a premiação de agentes culturais individuais ou coletivos/grupos culturais que tenham prestado relevante contribuição ao desenvolvimento artístico ou cultural do Município de Ibiassucê-BA, observadas as categorias e linhas de apoio descritas.\n\nTrata-se, portanto, de reconhecimento pela contribuição já realizada pelo agente cultural ao Município de Ibiassucê-BA.\n\nO prêmio possui natureza jurídica de doação sem encargo, ou seja, será realizado por meio de pagamento direto ao contemplado, sem estabelecimento de obrigações futuras, sem exigência de contrapartida, sem necessidade de assinatura de instrumento jurídico, sem prestação de contas, conforme autoriza a Lei nº 14.903/2024.\n\nSerão premiados 12 agentes culturais individuais e 9 coletivos/grupos culturais. Contudo, caso haja orçamento e interesse público, o edital poderá ser suplementado, ou seja, caso haja saldo de recursos da PNAB oriundo de outros editais ou rendimentos as vagas podem ser ampliadas. \n\nO valor total deste edital é de R$ 34.000,00 (trinta e quatro mil reais).",
+  "ownerEntity": {
+   "id": 6467,
+   "name": "PNAB IBIASSUCÊ-BA 2024",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Música",
+    "Culturas Populares",
+    "Produção Cultural",
+    "Outra"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5223/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5276,
+  "name": "EDITAL MÃE MÔNICA PNAB - FOMENTO ÀS DIVERSAS ÁREAS CULTURAIS",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 02/2024\nEDITAL MÃE MÔNICA PNAB - FOMENTO ÀS DIVERSAS ÁREAS CULTURAIS\n",
+  "registrationFrom": {
+   "date": "2024-11-08 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-12-09 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O objeto deste Edital é a seleção de projetos culturais para receberem apoio financeiro nas categorias descritas no Anexo I, com o objetivo de incentivar as diversas formas de manifestações culturais do município de IBIASSUCÊ-BA.\n\nSerão selecionados 09 projetos. Contudo, caso haja orçamento e interesse público, o edital poderá ser suplementado, ou seja, caso haja saldo de recursos da PNAB oriundo de outros editais ou rendimentos as vagas podem ser ampliadas. \n\nO valor total deste edital é de R$ 31.871,40 (trinta e um mil e oitocentos e setenta e um reais e quarenta centavos).\n",
+  "ownerEntity": {
+   "id": 6467,
+   "name": "PNAB IBIASSUCÊ-BA 2024",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Música",
+    "Produção Cultural",
+    "Outra",
+    "Artes Visuais",
+    "Artesanato",
+    "Audiovisual e Mídias Interativas",
+    "Cultura LGBTQIAPN+",
+    "Cultura Negra",
+    "Dança",
+    "Economia Criativa e da Cultura",
+    "Leitura",
+    "Literatura",
+    "Livro",
+    "Museu (Patrimônio Material)",
+    "Design de Moda",
+    "Patrimônio Cultural",
+    "Teatro"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5276/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5287,
+  "name": "SUBSÍDIO PARA MANUTENÇÃO DE ESPAÇOS, AMBIENTES E INICIATIVAS ARTÍSTICO-CULTURAIS",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 03/2024\nSUBSÍDIO PARA MANUTENÇÃO DE ESPAÇOS, AMBIENTES E INICIATIVAS ARTÍSTICO-CULTURAIS",
+  "registrationFrom": {
+   "date": "2024-11-08 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-12-09 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O objeto deste Edital é a seleção de espaços, ambientes e iniciativas artístico-culturais para receberem subsídio para manutenção, com o objetivo de incentivar as diversas formas de manifestações culturais do município de Ibiassucê-BA.\n\nSerão selecionados 03 espaços, ambientes e iniciativas artístico-culturais. Contudo, caso haja orçamento e interesse público, o edital poderá ser suplementado, ou seja, caso haja saldo de recursos da PNAB oriundo de outros editais ou rendimentos as vagas podem ser ampliadas. \n\nO valor total deste edital é de R$ 15.000,00 (quinze mil reais).\n\nCada espaço, ambiente ou iniciativa artístico-cultural receberá subsídio mensal, desembolsado em parcela única, para execução de plano de trabalho, conforme os valores descritos no Anexo I deste Edital.\n\n",
+  "ownerEntity": {
+   "id": 6467,
+   "name": "PNAB IBIASSUCÊ-BA 2024",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Economia Criativa e da Cultura",
+    "Produção Cultural",
+    "Outra",
+    "Patrimônio Cultural",
+    "Arquitetura e Urbanismo",
+    "Arquivos",
+    "Gestão Cultural"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5287/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5297,
+  "name": "PRÊMIO CULTURA VIVA IBIASSUCÊ-BA",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 04/2024\nEDITAL PRÊMIO CULTURA VIVA IBIASSUCÊ-BA\nREDE MUNICIPAL DE PONTOS DE CULTURA DE IBIASSUCÊ-BA\n",
+  "registrationFrom": {
+   "date": "2024-11-08 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-12-09 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "Este Edital tem por objeto a premiação de projetos, iniciativas, atividades ou ações de Pontos e Pontões de Cultura, nos termos da Política Nacional de Cultura Viva. Trata-se, portanto, de reconhecimento pela contribuição já realizada por Pontos e Pontões de Cultura (com ou sem CNPJ); além de entidades (com CNPJ) e coletivos informais (sem CNPJ) que ainda não são certificadas como Pontos ou Pontões de Cultura, mas que têm características de Pontos de Cultura e serão certificadas por meio deste edital (desde que atendam aos requisitos previstos no item 3).\n\nEste Edital é realizado com recursos do Governo Federal, repassados ao município de Ibiassucê por meio da PNAB, e tem o valor total de R$ 10.000,49, para a premiação de 01 entidades e/ou coletivos, como detalhamento descrito no Anexo I deste edital, no valor de R$ 10.000,49 (dez mil reais e quarenta e nove centavos).\n\nPoderão participar deste edital:\n\nI. Pontos e Pontões de Cultura certificados pelo Ministério da Cultura com constituição jurídica, ou seja, com CNPJ (aqui tratados, também, como entidades culturais);\nII. Pontos e Pontões de Cultura certificados pelo Ministério da Cultura sem constituição jurídica, ou seja, sem CNPJ (aqui tratados, também, como coletivos culturais);\nIII. Organizações da Sociedade Civil sem fins lucrativos (com CNPJ - aqui tratados, também, como entidades culturais) que desenvolvam e articulem atividades culturais em suas comunidades e ainda não estejam certificadas como Ponto ou Pontão de Cultura pelo Ministério da Cultura, desde que cumpram os requisitos para a certificação no Cadastro Nacional, conforme item 3 deste edital;\nIV. Coletivos informais (sem constituição jurídica), representados por pessoas física, que desenvolvam e articulem atividades culturais em suas comunidades e ainda não estejam certificadas como Ponto ou Pontão de Cultura pelo Ministério da Cultura, desde que cumpram os requisitos para a certificação no Cadastro Nacional, conforme item 3 deste edital.  \n\nEm todos os casos, é necessário que as entidades e coletivos comprovem, no mínimo, 2 (dois) anos de desenvolvimento de atividades culturais na comunidade local, por meio de fotos, material gráfico de eventos, publicações impressas e em meios eletrônicos e outros materiais comprobatórios; \n\n",
+  "ownerEntity": {
+   "id": 6467,
+   "name": "PNAB IBIASSUCÊ-BA 2024",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Música",
+    "Produção Cultural",
+    "Outra"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5297/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5306,
+  "name": "PRÊMIO TRAJETÓRIAS CULTURAIS - FAZEDORES E COLETIVOS DE CULTURA DE RIO DO ANTÔNIO",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 01/2024\nPRÊMIO TRAJETÓRIAS CULTURAIS - FAZEDORES E COLETIVOS DE CULTURA DE RIO DO ANTÔNIO\n",
+  "registrationFrom": {
+   "date": "2024-11-08 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-12-09 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "O objeto deste Edital é a premiação de agentes culturais individuais ou coletivos/grupos culturais que tenham prestado relevante contribuição ao desenvolvimento artístico ou cultural do Município de Rio do Antônio-BA, observadas as categorias e linhas de apoio descritas.\n\nTrata-se, portanto, de reconhecimento pela contribuição já realizada pelo agente cultural ao Município de Rio do Antônio-BA.\n\nO prêmio possui natureza jurídica de doação sem encargo, ou seja, será realizado por meio de pagamento direto ao contemplado, sem estabelecimento de obrigações futuras, sem exigência de contrapartida, sem necessidade de assinatura de instrumento jurídico, sem prestação de contas, conforme autoriza a Lei nº 14.903/2024.\n\nSerão premiados 37 agentes culturais individuais e 28 coletivos/grupos culturais. Contudo, caso haja orçamento e interesse público, o edital poderá ser suplementado, ou seja, caso haja saldo de recursos da PNAB oriundo de outros editais ou rendimentos as vagas podem ser ampliadas. \n\nO valor total deste edital é de R$ 105.886,34 (cento e cinco mil e oitocentos e oitenta e seis reais e trinta e cinco centavos).",
+  "ownerEntity": {
+   "id": 6701,
+   "name": "PNAB RIO DO ANTÔNIO-BA 2024",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 240405,
+   "name": "DEPCULT | Departamento Municipal de Cultura | Rio do Antônio - BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Música",
+    "Produção Cultural",
+    "Outra"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5306/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5311,
+  "name": "PRÊMIO CULTURA VIVA RIO DO ANTÔNIO-BA",
+  "shortDescription": "EDITAL DE CHAMAMENTO PÚBLICO Nº 02/2024\nPRÊMIO CULTURA VIVA RIO DO ANTÔNIO-BA\nREDE MUNICIPAL DE PONTOS DE CULTURA DE RIO DO ANTÔNIO-BA\n",
+  "registrationFrom": {
+   "date": "2024-11-08 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-12-09 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": "Este Edital tem por objeto a premiação de projetos, iniciativas, atividades ou ações de Pontos e Pontões de Cultura, nos termos da Política Nacional de Cultura Viva. Trata-se, portanto, de reconhecimento pela contribuição já realizada por Pontos e Pontões de Cultura (com ou sem CNPJ); além de entidades (com CNPJ) e coletivos informais (sem CNPJ) que ainda não são certificadas como Pontos ou Pontões de Cultura, mas que têm características de Pontos de Cultura e serão certificadas por meio deste edital (desde que atendam aos requisitos previstos no item 3).\n\nEste Edital é realizado com recursos do Governo Federal, repassados ao município de Rio do Antônio por meio da PNAB, e tem o valor total de R$ 10.000,00, para a premiação de 01 entidades e/ou coletivos, como detalhamento descrito no Anexo 01 deste edital, no valor de R$ 10.000,00 (dez mil reais) \n\nPoderão participar deste edital:\n\nI. Pontos e Pontões de Cultura certificados pelo Ministério da Cultura com constituição jurídica, ou seja, com CNPJ (aqui tratados, também, como entidades culturais);\nII. Pontos e Pontões de Cultura certificados pelo Ministério da Cultura sem constituição jurídica, ou seja, sem CNPJ (aqui tratados, também, como coletivos culturais);\nIII. Organizações da Sociedade Civil sem fins lucrativos (com CNPJ - aqui tratados, também, como entidades culturais) que desenvolvam e articulem atividades culturais em suas comunidades e ainda não estejam certificadas como Ponto ou Pontão de Cultura pelo Ministério da Cultura, desde que cumpram os requisitos para a certificação no Cadastro Nacional, conforme item 3 deste edital;\nIV. Coletivos informais (sem constituição jurídica), representados por pessoas física, que desenvolvam e articulem atividades culturais em suas comunidades e ainda não estejam certificadas como Ponto ou Pontão de Cultura pelo Ministério da Cultura, desde que cumpram os requisitos para a certificação no Cadastro Nacional, conforme item 3 deste edital.  \n\nEm todos os casos, é necessário que as entidades e coletivos comprovem, no mínimo, 2 (dois) anos de desenvolvimento de atividades culturais na comunidade local, por meio de fotos, material gráfico de eventos, publicações impressas e em meios eletrônicos e outros materiais comprobatórios; \n\n",
+  "ownerEntity": {
+   "id": 6701,
+   "name": "PNAB RIO DO ANTÔNIO-BA 2024",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 240405,
+   "name": "DEPCULT | Departamento Municipal de Cultura | Rio do Antônio - BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Culturas Populares",
+    "Música",
+    "Produção Cultural",
+    "Outra"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5311/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 5112,
+  "name": "Editais da Política Nacional Aldir Blanc (PNAB)",
+  "shortDescription": "A Lei Aldir Blanc 2, ou Política Nacional Aldir Blanc (PNAB), é uma lei que estabelece o repasse de recursos financeiros para o fomento à cultura em todo o Brasil. A lei foi instituída pela Lei nº 14.399, de 8 de julho de 2022.\n\nNo total, o governo federal fará repasse na ordem de R$ 3 bilhões a Estados, Distrito Federal e Municípios para aplicação em ações culturais. O Fundo Municipal de Cultura ",
+  "registrationFrom": {
+   "date": "2024-09-18 18:29:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2024-10-10 18:29:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 276687,
+   "name": "Intendência de Cultura, Turismo e Eventos",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 276687,
+   "name": "Intendência de Cultura, Turismo e Eventos",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Arte Digital",
+    "Arte de Rua",
+    "Artes Circenses",
+    "Artes Visuais",
+    "Artesanato",
+    "Audiovisual e Mídias Interativas",
+    "Circo",
+    "Cultura Cigana",
+    "Cultura Digital",
+    "Cultura dos Povos Originários",
+    "Cultura LGBTQIAPN+",
+    "Cultura Negra",
+    "Culturas Populares",
+    "Dança",
+    "Economia Criativa e da Cultura"
+   ]
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/5112/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2107,
+  "name": "EDITAL Nº 03/2023 - APOIO A SALAS DE CINEMA - LEI PAULO GUSTAVO IBIASSUCÊ-BA",
+  "shortDescription": "O presente edital destina-se a FOMENTAR projetos apresentados pelos agentes culturais do município de Ibiassucê-BA, especificamente pessoas jurídicas com e sem fins lucrativos, que tenham por objeto o apoio a reformas, restauros, manutenção e/ou modernização e funcionamento de salas de cinema, bem como adequações de espaços culturais para salas de cinema. Será destinado o valor de R$ 7.000,00 (sete mil reais) para contemplação de até 1 (um) projeto para reformas, restauros, manutenção e/ou modernização e funcionamento de salas de cinema, bem como adequações de espaços culturais para salas de cinema, sendo permitido como proponente somente Pessoa Jurídica. Esta linha permite o investimento em Espaços culturais que tenham ou já tiveram exibição de filmes, interrompidas de algum modo pela pandemia ou pelo decurso do tempo, que possa comprovar as ações, mesmo que não exclusivamente, também podem ser público-alvo desta linha.",
+  "registrationFrom": {
+   "date": "2023-11-09 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2023-11-17 17:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 5635,
+   "name": "Lei Paulo Gustavo Ibiassucê-BA",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 239053,
+   "name": "COMCULT - Coordenação Municipal de Cultura e Relações Étnico-Raciais de Ibiassucê-BA",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": []
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/2107/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 2002,
+  "name": "Prêmio de Incentivo à Publicação Literária, Antologia - 200 Anos de Independência, 3ª Edição",
+  "shortDescription": "Leia o edital e inscreva sua obra!\n\nO Prêmio de Incentivo à Publicação Literária, Antologia - 200 Anos de Independência - 3ª Edição pretende premiar 60 (sessenta) obras literárias inéditas, no valor de R$ 3.000,00 (três mil reais) cada.\n\nO edital visa selecionar e premiar 15 contos,15 crônicas, 15 poesias e 15 quadrinhos inéditos, em português do Brasil, que abordem de forma livre a temática dos 200 Anos de Independência do Brasil.\n\nDúvidas e informações referentes a este Edital poderão ser esclarecidas e/ou obtidas junto ao Departamento de Livro, Leitura, Literatura e Bibliotecas, por meio do endereço eletrônico premioliterario200anos-3edicao@turismo.gov.br e dos telefones 61.2024-2831/2806.",
+  "registrationFrom": {
+   "date": "2022-09-05 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2022-10-19 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 5313,
+   "name": "Prêmio de Incentivo à Publicação Literária, Antologia 200 Anos de Independência – 3ª Edição",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 41093,
+   "name": "Coordenação-Geral de Leitura, Literatura e Economia do Livro DLLLB",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": []
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/2002/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 1387,
+  "name": "Prêmio de Incentivo à Publicação Literária, 200 Anos de Independência - 2ª Edição",
+  "shortDescription": "Leia o edital e inscreva sua obra!\n\n\nO Prêmio de Incentivo à Publicação Literária, 200 Anos de Independência - 2ª Edição, pretende premiar 20 (vinte) obras literárias inéditas, no valor de R$ 30.000,00 (trinta mil reais).\n\nO edital visa a seleção de obras literárias inéditas em português do Brasil que abordem de forma livre a temática do Bicentenário da Independência do Brasil.\n\nO Prêmio de Incentivo à Publicação Literária, 200 Anos de Independência – 2ª Edição atende aos princípios e diretrizes do Plano Nacional do Livro e Leitura (PNLL) e da Política Nacional de Leitura e Escrita (PNLE). São objetivos deste edital:\na) cumprir as diretrizes formuladas pelo Plano Plurianual do Governo Federal e pelo Plano Nacional de Cultura;\nb) promover, valorizar e difundir a literatura brasileira e a circulação de autores, com ênfase na bibliodiversidade;\nc) estimular a formação de leitores e práticas de leitura; e\nd) difundir, promover e incentivar produções literárias que abordem de forma livre a temática do Bicentenário da Independência do Brasil.",
+  "registrationFrom": {
+   "date": "2019-10-11 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2019-11-25 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 41093,
+   "name": "Coordenação-Geral de Leitura, Literatura e Economia do Livro DLLLB",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 41093,
+   "name": "Coordenação-Geral de Leitura, Literatura e Economia do Livro DLLLB",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [
+    "#obrasinéditas",
+    "#edital",
+    "#prêmio",
+    "#incentivoàpublicação",
+    "#publicaçãoliterária",
+    "#200anosdeindependência",
+    "#edital2ªedição"
+   ],
+   "area": []
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/1387/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 1032,
+  "name": "Prêmio de Incentivo à Publicação Literária, 100 Anos da Semana de Arte Moderna de 1922 - 2018.",
+  "shortDescription": "Leia o Edital e inscreva sua obra!!\n\nO Prêmio de Incentivo à Publicação Literária, 100 Anos da Semana de Arte Moderna de 1922 - 2018, pretende premiar 25 (vinte e cinco) obras literárias inéditas, no valor de R$ 40.000,00 (quarenta mil reais).\n\nSerão selecionadas e premiadas de obras literárias inéditas em português do Brasil, que abordem de forma livre a temática dos 100 Anos da Semana de Arte Moderna de 1922.\n\nEste Edital atende aos princípios e diretrizes do Plano Nacional do Livro e Leitura (PNLL). São objetivos deste edital: \na) cumprir as diretrizes formuladas pelo Plano Plurianual do Governo Federal e pelo Plano Nacional de Cultura;\nb) promover, valorizar e difundir a literatura brasileira e a circulação de autores, com ênfase na bibliodiversidade; \nc) estimular a formação de leitores e práticas de leitura; e\nd) difundir, promover e incentivar produções literárias que abordem de forma livre a temática do Centenário da Semana de Arte Moderna de 1922.\n\nAs inscrições vão até 15 de novembro.",
+  "registrationFrom": {
+   "date": "2018-10-01 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2018-11-15 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "longDescription": null,
+  "ownerEntity": {
+   "id": 41093,
+   "name": "Coordenação-Geral de Leitura, Literatura e Economia do Livro DLLLB",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 41093,
+   "name": "Coordenação-Geral de Leitura, Literatura e Economia do Livro DLLLB",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [
+    "#livro",
+    "#leitura",
+    "#semanadaartemoderna",
+    "#literatura",
+    "#obrasinéditas",
+    "#escritores"
+   ],
+   "area": []
+  },
+  "singleUrl": "https://mapa.cultura.gov.br/oportunidade/1032/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "@entityType": "opportunity"
+ }
+]

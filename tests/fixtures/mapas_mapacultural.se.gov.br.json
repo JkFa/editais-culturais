@@ -1,0 +1,368 @@
+[
+ {
+  "id": 59,
+  "name": "EDITAL DE CHAMAMENTO PÚBLICO PARA CREDENCIAMENTO DE PARECERISTAS",
+  "shortDescription": "O Estado de Sergipe, por intermédio da Fundação de Cultura e Arte Aperipê de Sergipe (FUNCAP/SE) e Secretaria Especial de Cultura - SECULT, no uso de suas atribuições e nos termos do Decreto Federal n.° 11.453/23 e da Lei n.° 14.133/2021 (Lei de Licitações), torna pública a abertura de procedimento, destinado a pessoa física e pessoa jurídica, com a finalidade de credenciar profissionais.",
+  "registrationFrom": {
+   "date": "2026-08-01 15:11:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2027-01-01 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2026-08-06 15:09:38.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "Constitui objeto deste Edital o credenciamento de pessoas físicas, brasileiros natos ou naturalizados, maiores de 18 anos, com comprovada atuação e conhecimento em pelo menos, 1 (um) dos segmentos artísticos e culturais elencados neste edital no item 1.2, para exercerem as atividades de avaliação técnica e de mérito cultural de projetos que concorram a chamamentos públicos administrados por esta Fundação. A pessoa interessada poderá requerer sua inscrição na condição de Microempreendedor individual – MEI ou como pessoa física. Os profissionais serão credenciados e habilitados para emissão de análise considerando os segmentos artísticos e culturais a seguir: a) Artesanato; b) Arte Inclusiva; c) Artes Visuais; d) Arte Urbana; e) Audiovisual; f) Artes Cênicas; g) Cultura Digital, Jogos Eletrônicos e Arte-Tecnologia; h) Cultura Popular e Manifestações Tradicionais e Originárias; i) Moda; j) Diversidade e Cultura LGBTQIAPN+; k) Fotografia; l) Gastronomia; m) Livro, Leitura, Escrita, Literatura e Contação de Histórias; n) Manifestações Culturais no segmento cristão e afro-brasileiro (música, dança e teatro); o) Música popular e erudita; p) Patrimônio Histórico e Artístico Material e Imaterial; q) Pesquisa e Documentação; r) Produção Cultural; s) Arquitetura e design.",
+  "ownerEntity": {
+   "id": 769584,
+   "name": "FUNCAP",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 109,
+   "name": "Laura Vasconcelos",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Patrimônio Cultural",
+    "Teatro",
+    "Cinema",
+    "Produção Audiovisual",
+    "Audiovisual e Mídias Interativas",
+    "Audiovisual Expandido",
+    "Circo",
+    "Arte de Plásticas",
+    "Arte de Rua",
+    "Artes Circenses",
+    "Artes Visuais",
+    "Circo de Rua",
+    "Circo Itinerante",
+    "Cultura LGBTQIAPN+",
+    "Cultura Negra",
+    "Cultura Urbana"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 91635,
+    "name": "captura-de-tela-2026-04-06-141147.png",
+    "mimeType": "image/png",
+    "url": "https://mapacultural.se.gov.br/files/opportunity/59/captura-de-tela-2026-04-06-141147.png",
+    "createTimestamp": {
+     "date": "2026-08-06 15:10:04.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 91636,
+      "name": "captura-de-tela-2026-04-06-141147-9687cab11e0d41a6c36a631812c29774.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.se.gov.br/files/opportunity/59/file/91635/captura-de-tela-2026-04-06-141147-9687cab11e0d41a6c36a631812c29774.png",
+      "createTimestamp": {
+       "date": "2026-08-06 15:10:04.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 91637,
+      "name": "captura-de-tela-2026-04-06-141147-0bc67f3b6e00173aa7f13dca07e88b07.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.se.gov.br/files/opportunity/59/file/91635/captura-de-tela-2026-04-06-141147-0bc67f3b6e00173aa7f13dca07e88b07.png",
+      "createTimestamp": {
+       "date": "2026-08-06 15:10:04.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 91638,
+      "name": "captura-de-tela-2026-04-06-141147-ec18080c05507bd630767e15aab8ebc0.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.se.gov.br/files/opportunity/59/file/91635/captura-de-tela-2026-04-06-141147-ec18080c05507bd630767e15aab8ebc0.png",
+      "createTimestamp": {
+       "date": "2026-08-06 15:10:04.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 91843,
+    "name": "edital-de-chamamento-publico-para-credenciamento-de-pareceristas.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://mapacultural.se.gov.br/files/opportunity/59/edital-de-chamamento-publico-para-credenciamento-de-pareceristas.pdf",
+    "createTimestamp": {
+     "date": "2026-08-06 16:06:20.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "registrations-spreadsheets": {
+    "id": 94993,
+    "name": "oportunidade-59--inscricoes-2026-08-19 13:19:53.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapacultural.se.gov.br/file/arquivo-privado/94993/",
+    "createTimestamp": {
+     "date": "2026-08-19 13:19:53.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 94990,
+     "name": "resultado-parcial-do-edital-de-chamamento-de-pareceristas.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.se.gov.br/files/opportunity/59/resultado-parcial-do-edital-de-chamamento-de-pareceristas.pdf",
+     "createTimestamp": {
+      "date": "2026-08-19 09:35:23.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Segundo Resultado Parcial do Edital de Chamamento Público para Credenciamento de Pareceristas",
+     "transformations": null
+    },
+    {
+     "id": 98940,
+     "name": "oportunidade-57--inscricoes-2026-10-20 11:13:48.xlsx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://mapacultural.se.gov.br/file/arquivo-privado/98940/",
+     "createTimestamp": {
+      "date": "2026-10-20 11:13:48.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": null,
+     "transformations": null
+    }
+   ]
+  },
+  "singleUrl": "https://mapacultural.se.gov.br/oportunidade/59/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 57,
+  "name": "Edital n° 19/2026 - Credenciamento de Prestadores de Serviços para Execução de Atividades de Mediação Cultural e Monitoria nos Museus da Rede Estadual Administrados Pela Funcap/Se",
+  "shortDescription": "A contratação dos credenciados buscará atender às necessidades específicas de cada unidade museológica, especialmente durante finais de semana, feriados, eventos culturais e períodos de maior fluxo de visitantes.\n",
+  "registrationFrom": {
+   "date": "2026-07-31 11:30:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2027-08-11 20:04:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2026-07-30 19:03:56.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "Este Edital tem por objeto o credenciamento de pessoas físicas e pessoas jurídicas habilitadas para a prestação de serviços de monitoria, mediação cultural e apoio às ações educativas desenvolvidas nas unidades museológicas administradas pela Fundação de Cultura e Arte Aperipê de Sergipe – FUNCAP, conforme a demanda da Administração Pública.\n\nO presente credenciamento tem por finalidade ampliar a capacidade operacional dos museus administrados pela FUNCAP, assegurando apoio às atividades de mediação cultural, atendimento ao público e educação museal,\n\nA contratação dos credenciados buscará atender às necessidades específicas de cada unidade museológica, especialmente durante finais de semana, feriados, eventos culturais e períodos de maior fluxo de visitantes.\n",
+  "ownerEntity": {
+   "id": 769584,
+   "name": "FUNCAP",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 109,
+   "name": "Laura Vasconcelos",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Museologia",
+    "Cultura e Educação"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 87621,
+    "name": "captura-de-tela-2026-07-30-191028.png",
+    "mimeType": "image/png",
+    "url": "https://mapacultural.se.gov.br/files/opportunity/57/captura-de-tela-2026-07-30-191028.png",
+    "createTimestamp": {
+     "date": "2026-07-30 19:10:37.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 87622,
+      "name": "captura-de-tela-2026-07-30-191028-8ea433c7e1de95e4e9369e2902ae30e4.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.se.gov.br/files/opportunity/57/file/87621/captura-de-tela-2026-07-30-191028-8ea433c7e1de95e4e9369e2902ae30e4.png",
+      "createTimestamp": {
+       "date": "2026-07-30 19:10:37.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 87623,
+      "name": "captura-de-tela-2026-07-30-191028-f4716ee3e2b27a8fcf66a2f4b6c039cc.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.se.gov.br/files/opportunity/57/file/87621/captura-de-tela-2026-07-30-191028-f4716ee3e2b27a8fcf66a2f4b6c039cc.png",
+      "createTimestamp": {
+       "date": "2026-07-30 19:10:37.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 87624,
+      "name": "captura-de-tela-2026-07-30-191028-f208fa7904ed30e930770cba2f436ada.png",
+      "mimeType": "image/png",
+      "url": "https://mapacultural.se.gov.br/files/opportunity/57/file/87621/captura-de-tela-2026-07-30-191028-f208fa7904ed30e930770cba2f436ada.png",
+      "createTimestamp": {
+       "date": "2026-07-30 19:10:37.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 87798,
+    "name": "edital-credenciamento-museus.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://mapacultural.se.gov.br/files/opportunity/57/edital-credenciamento-museus.pdf",
+    "createTimestamp": {
+     "date": "2026-07-31 10:22:17.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "registrations-spreadsheets": {
+    "id": 98940,
+    "name": "oportunidade-57--inscricoes-2026-10-20 11:13:48.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapacultural.se.gov.br/file/arquivo-privado/98940/",
+    "createTimestamp": {
+     "date": "2026-10-20 11:13:48.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "technical-spreadsheets": {
+    "id": 95538,
+    "name": "oportunidade-57--avaliacoes-2026-08-28 07:51:52.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapacultural.se.gov.br/file/arquivo-privado/95538/",
+    "createTimestamp": {
+     "date": "2026-08-28 07:51:52.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 95556,
+     "name": "resultado-preliminar-credenciamento-museus.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.se.gov.br/files/opportunity/57/resultado-preliminar-credenciamento-museus.pdf",
+     "createTimestamp": {
+      "date": "2026-08-28 16:42:58.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "RESULTADO PRELIMINAR – ANÁLISE DE MÉRITO CULTURAL",
+     "transformations": null
+    },
+    {
+     "id": 96461,
+     "name": "resultado-final-credenciamento-museus-1.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.se.gov.br/files/opportunity/57/resultado-final-credenciamento-museus-1.pdf",
+     "createTimestamp": {
+      "date": "2026-09-10 11:05:22.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "RESULTADO FINAL CREDENCIAMENTO MUSEUS",
+     "transformations": null
+    },
+    {
+     "id": 96586,
+     "name": "sorteio-publico-para-ordem-de-convocacao-dos-credenciados-14-09-2026-as-10-hrs.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.se.gov.br/files/opportunity/57/sorteio-publico-para-ordem-de-convocacao-dos-credenciados-14-09-2026-as-10-hrs.pdf",
+     "createTimestamp": {
+      "date": "2026-09-11 14:32:56.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "SORTEIO PÚBLICO PARA ORDEM DE CONVOCAÇÃO DOS CREDENCIADOS",
+     "transformations": null
+    },
+    {
+     "id": 96958,
+     "name": "resultado-sorteio-credenciamento-museus.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.se.gov.br/files/opportunity/57/resultado-sorteio-credenciamento-museus.pdf",
+     "createTimestamp": {
+      "date": "2026-09-15 09:33:24.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "1° RESULTADO FINAL DO SORTEIO",
+     "transformations": null
+    },
+    {
+     "id": 97584,
+     "name": "resultado-2-sorteio-credenciamento-museus.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapacultural.se.gov.br/files/opportunity/57/resultado-2-sorteio-credenciamento-museus.pdf",
+     "createTimestamp": {
+      "date": "2026-09-24 11:34:55.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "2° RESULTADO FINAL DO SORTEIO",
+     "transformations": null
+    }
+   ]
+  },
+  "singleUrl": "https://mapacultural.se.gov.br/oportunidade/57/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ }
+]

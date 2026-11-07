@@ -1,0 +1,389 @@
+[
+ {
+  "id": 2003,
+  "name": "Leitura afetiva do traço ",
+  "shortDescription": "Despertar o traço \"escrita\" através da arte!!",
+  "registrationFrom": {
+   "date": "2026-01-02 12:37:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Belem"
+  },
+  "registrationTo": {
+   "date": "2111-01-01 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "America/Belem"
+  },
+  "createTimestamp": {
+   "date": "2026-01-02 12:39:09.000000",
+   "timezone_type": 3,
+   "timezone": "America/Belem"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "Oficinas de cunho educativo,afetivo, que trabalha manualidades, trazendo memórias, escritas autorais e pesquisa com resíduos sólido. A metodologia aplicada tem como responsabilidade ensinar aprendendo de Pessoas para Pessoas. Material utilizado nas práticas são resíduos derivados de petróleo tipo: tecido e plástico. Os processos advém de estudos × exercícios , experiência de 30 anos, em escolas não formal onde despertamos o traço, auto estima, geração de renda e consciência ambiental. ",
+  "ownerEntity": {
+   "id": 22726,
+   "name": "ANA CARLA VIEIRA BELTRÃO DA SILVA",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 22726,
+   "name": "ANA CARLA VIEIRA BELTRÃO DA SILVA",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [],
+   "area": [
+    "Arte de Plásticas",
+    "Artes Visuais",
+    "Pesquisa"
+   ]
+  },
+  "files": {
+   "gallery": [
+    {
+     "id": 1628621,
+     "name": "5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-14969.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-14969.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:06:30.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628622,
+       "name": "5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-14969-87917e5105208f1ee4c94501f55b0be5.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628621/5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-14969-87917e5105208f1ee4c94501f55b0be5.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:06:30.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628623,
+       "name": "5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-14969-45e998150aa03684b891dc8c298f8d04.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628621/5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-14969-45e998150aa03684b891dc8c298f8d04.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:06:30.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628637,
+     "name": "1000012277.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000012277.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:08:58.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628638,
+       "name": "1000012277-56d48d9f2fd4d761e4d6209a721266d7.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628637/1000012277-56d48d9f2fd4d761e4d6209a721266d7.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:08:58.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628639,
+       "name": "1000012277-e6ef1efea4474029cd3fa8d14e6a959b.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628637/1000012277-e6ef1efea4474029cd3fa8d14e6a959b.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:08:58.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628642,
+     "name": "1000021699.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000021699.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:09:33.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628643,
+       "name": "1000021699-18f480b86701e21ca987a2f5053d7776.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628642/1000021699-18f480b86701e21ca987a2f5053d7776.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:09:33.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628644,
+       "name": "1000021699-4178f6bfa2f8781510098444a4325603.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628642/1000021699-4178f6bfa2f8781510098444a4325603.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:09:33.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628658,
+     "name": "1000009326.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000009326.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:12:09.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628659,
+       "name": "1000009326-ee82189cb89ccdc34a3f7175f4144ffd.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628658/1000009326-ee82189cb89ccdc34a3f7175f4144ffd.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:12:10.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628660,
+       "name": "1000009326-cb26d647e2baf626205706a6a17e91db.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628658/1000009326-cb26d647e2baf626205706a6a17e91db.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:12:10.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628661,
+     "name": "5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-10982.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-10982.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:14:40.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628662,
+       "name": "5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-10982-cdf112c34da24324074bfefdf40a89ac.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628661/5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-10982-cdf112c34da24324074bfefdf40a89ac.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:14:40.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628663,
+       "name": "5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-10982-01cdc0aefd307b6f33becfb83918ee72.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628661/5cc14686-42db-46b2-a67e-dde8e38cef06-1-all-10982-01cdc0aefd307b6f33becfb83918ee72.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:14:41.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628664,
+     "name": "1000000984.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000000984.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:15:52.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628665,
+       "name": "1000000984-0cebc50649d934100ac32bb243abf08b.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628664/1000000984-0cebc50649d934100ac32bb243abf08b.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:15:52.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628666,
+       "name": "1000000984-4283a0be282d7b60f0282fa7792b2de7.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628664/1000000984-4283a0be282d7b60f0282fa7792b2de7.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:15:52.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628667,
+     "name": "1000000052.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000000052.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:16:39.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628668,
+       "name": "1000000052-c9be500b0b08876bb4dffa39cdf44e39.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628667/1000000052-c9be500b0b08876bb4dffa39cdf44e39.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:16:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628669,
+       "name": "1000000052-f3d4d733bdc4a2362eff38215dac6e2f.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628667/1000000052-f3d4d733bdc4a2362eff38215dac6e2f.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:16:39.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    },
+    {
+     "id": 1628670,
+     "name": "1000000044.jpg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000000044.jpg",
+     "createTimestamp": {
+      "date": "2026-01-02 13:17:17.000000",
+      "timezone_type": 3,
+      "timezone": "America/Belem"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 1628671,
+       "name": "1000000044-1de90e5315eb58379e057575309587a6.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628670/1000000044-1de90e5315eb58379e057575309587a6.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:17:17.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      },
+      "galleryFull": {
+       "id": 1628672,
+       "name": "1000000044-8bc40987134572bf99eb49c362a8e1fc.jpg",
+       "mimeType": "image/jpeg",
+       "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628670/1000000044-8bc40987134572bf99eb49c362a8e1fc.jpg",
+       "createTimestamp": {
+        "date": "2026-01-02 13:17:17.000000",
+        "timezone_type": 3,
+        "timezone": "America/Belem"
+       }
+      }
+     }
+    }
+   ],
+   "avatar": {
+    "id": 1628678,
+    "name": "1000015501-2.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/1000015501-2.jpg",
+    "createTimestamp": {
+     "date": "2026-01-02 13:22:00.000000",
+     "timezone_type": 3,
+     "timezone": "America/Belem"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 1628679,
+      "name": "1000015501-2-02dbedc3593207141d18c00bf894a39d.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628678/1000015501-2-02dbedc3593207141d18c00bf894a39d.jpg",
+      "createTimestamp": {
+       "date": "2026-01-02 13:22:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Belem"
+      }
+     },
+     "avatarMedium": {
+      "id": 1628680,
+      "name": "1000015501-2-dc39bac028040e2784edd167da1bddd9.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628678/1000015501-2-dc39bac028040e2784edd167da1bddd9.jpg",
+      "createTimestamp": {
+       "date": "2026-01-02 13:22:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Belem"
+      }
+     },
+     "avatarBig": {
+      "id": 1628681,
+      "name": "1000015501-2-226ab33a79f89d71b0547dc3549e9aae.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapacultural.pa.gov.br/files/opportunity/2003/file/1628678/1000015501-2-226ab33a79f89d71b0547dc3549e9aae.jpg",
+      "createTimestamp": {
+       "date": "2026-01-02 13:22:00.000000",
+       "timezone_type": 3,
+       "timezone": "America/Belem"
+      }
+     }
+    }
+   }
+  },
+  "singleUrl": "https://mapacultural.pa.gov.br/oportunidade/2003/",
+  "type": {
+   "id": 24,
+   "name": "Oficina"
+  },
+  "@entityType": "opportunity"
+ }
+]
