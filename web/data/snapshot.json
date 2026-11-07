@@ -1,29 +1,26 @@
 {
- "gerado_em": "2026-11-07T03:25:05.097635+00:00",
+ "gerado_em": "2026-11-07T03:27:40.123348+00:00",
  "fontes_ok": [
   "curadoria",
   "mapas:aracaju",
   "mapas:br",
   "mapas:ce",
   "mapas:natal",
-  "mapas:pa"
+  "mapas:pa",
+  "mapas:pb"
  ],
  "fontes_falharam": [
   {
    "fonte": "mapas:pe",
-   "erro": "falha após 3 tentativas em https://mapacultural.pe.gov.br/api/opportunity/find: "
+   "erro": "falha após 3 tentativas em https://mapacultural.pe.gov.br/api/opportunity/find: ConnectTimeout"
   },
   {
    "fonte": "mapas:se",
-   "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: "
-  },
-  {
-   "fonte": "mapas:pb",
-   "erro": "falha após 3 tentativas em https://mapacultural.pb.gov.br/api/opportunity/find: "
+   "erro": "falha após 3 tentativas em https://mapacultural.se.gov.br/api/opportunity/find: ConnectTimeout"
   },
   {
    "fonte": "mapas:campinas",
-   "erro": "falha após 3 tentativas em https://mapacultural.campinas.sp.gov.br/api/opportunity/find: "
+   "erro": "falha após 3 tentativas em https://mapacultural.campinas.sp.gov.br/api/opportunity/find: ConnectTimeout"
   }
  ],
  "editais": [
