@@ -1,0 +1,12 @@
+{
+  "nao_inventar_dados": "O texto só usa fatos dados pelo usuário; onde faltou informação há [COMPLETAR: ...].",
+  "alertar_teto_orcamento": "Se o custo estimado passar do teto do orçamento do edital, avisar.",
+  "cabe_em_um_paragrafo": "O texto cabe em um parágrafo.",
+  "responde_o_que_onde_quando_para_quem": "O texto responde: o quê, onde, quando e para quem.",
+  "conecta_com_criterios_do_edital": "Quando houver critérios do edital, o texto se conecta com pelo menos 2 deles, sem exagero.",
+  "objetivos_especificos_no_infinitivo": "Há de 3 a 5 objetivos específicos, cada um com verbo no infinitivo.",
+  "cada_objetivo_tem_meta": "Cada objetivo específico tem ao menos uma meta na seção de metas (se ela já existir).",
+  "metas_numericas_e_verificaveis": "As metas têm número, prazo e forma de comprovação verificável.",
+  "coerentes_com_objetivos_aprovados": "As metas são coerentes com os objetivos aprovados.",
+  "estimativa_coerente_com_acoes": "A estimativa de público é coerente com o número de ações da apresentação."
+}

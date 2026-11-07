@@ -1,0 +1,35 @@
+{
+  "id": "metas",
+  "titulo": "Metas e indicadores",
+  "ordem": 4,
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao",
+    "objetivos"
+  ],
+  "perguntas": [
+    {
+      "id": "metas",
+      "texto": "Para cada objetivo específico: quanto, de quê, até quando?",
+      "obrigatoria": true
+    },
+    {
+      "id": "comprovacao",
+      "texto": "Como você vai comprovar? (lista de presença, fotos, vídeos, relatório, link)",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [],
+  "checagens": [
+    "nao_inventar_dados",
+    "metas_numericas_e_verificaveis",
+    "coerentes_com_objetivos_aprovados"
+  ],
+  "limite_caracteres_padrao": 2500,
+  "instrucoes_redacao": "Liste uma ou mais metas por objetivo específico, com número, prazo e forma de comprovação. Nunca invente números: onde faltar, use [COMPLETAR: ...]."
+}

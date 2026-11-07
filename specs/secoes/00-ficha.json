@@ -1,0 +1,68 @@
+{
+  "id": "ficha",
+  "titulo": "Ficha do projeto",
+  "ordem": 0,
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [],
+  "perguntas": [
+    {
+      "id": "edital",
+      "texto": "Para qual edital é este projeto?",
+      "obrigatoria": false,
+      "canal": "formulario",
+      "ajuda": "Preenchido automaticamente quando você vem de um edital do portal."
+    },
+    {
+      "id": "tipo_proponente",
+      "texto": "Você vai se inscrever como pessoa física, MEI, coletivo ou empresa/associação?",
+      "obrigatoria": true
+    },
+    {
+      "id": "linguagem",
+      "texto": "Qual a linguagem artística principal? E alguma secundária?",
+      "obrigatoria": true
+    },
+    {
+      "id": "cidades",
+      "texto": "Em que cidade(s) o projeto acontece?",
+      "obrigatoria": true
+    },
+    {
+      "id": "ideia",
+      "texto": "Conte em poucas frases a ideia, como se explicasse para um amigo.",
+      "obrigatoria": true
+    },
+    {
+      "id": "custo_estimado",
+      "texto": "Quanto você imagina que o projeto custa?",
+      "obrigatoria": true
+    },
+    {
+      "id": "trajetoria",
+      "texto": "Há quanto tempo você (ou o grupo) atua nessa área? Cite 2 ou 3 trabalhos anteriores.",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [
+    {
+      "se": "ficha.edital_tem_cotas == true",
+      "pergunta": {
+        "id": "cotas",
+        "texto": "O edital tem cotas ou pontuação extra. Você quer concorrer em alguma delas? (opcional)",
+        "obrigatoria": false,
+        "canal": "formulario",
+        "ajuda": "Resposta opcional. Fica só na sua ficha e não é enviada à IA nem usada nos textos, a menos que você peça."
+      }
+    }
+  ],
+  "checagens": [
+    "nao_inventar_dados",
+    "alertar_teto_orcamento"
+  ],
+  "limite_caracteres_padrao": 1500,
+  "instrucoes_redacao": "Escreva um resumo curto da ficha, em tópicos, só com o que a pessoa informou. Guarde em fatos_novos_ficha os fatos objetivos (tipo de proponente, linguagem, cidades, custo estimado em número, tempo de atuação). Se o custo passar do teto do edital, avise em alertas."
+}

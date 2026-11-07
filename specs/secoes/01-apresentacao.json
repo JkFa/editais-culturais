@@ -1,0 +1,43 @@
+{
+  "id": "apresentacao",
+  "titulo": "Apresentação / Resumo",
+  "ordem": 1,
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha"
+  ],
+  "perguntas": [
+    {
+      "id": "o_que",
+      "texto": "O que exatamente vai ser feito? (espetáculo, oficina, festival, gravação, publicação, exposição…)",
+      "obrigatoria": true
+    },
+    {
+      "id": "quantidade",
+      "texto": "Quantas ações, apresentações ou encontros?",
+      "obrigatoria": true
+    },
+    {
+      "id": "onde_quando",
+      "texto": "Onde e quando, aproximadamente?",
+      "obrigatoria": true
+    },
+    {
+      "id": "resultado",
+      "texto": "Qual o resultado final que fica para o público?",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [],
+  "checagens": [
+    "nao_inventar_dados",
+    "cabe_em_um_paragrafo",
+    "responde_o_que_onde_quando_para_quem"
+  ],
+  "limite_caracteres_padrao": 1500,
+  "instrucoes_redacao": "Escreva um único parágrafo que responda: o quê, onde, quando e para quem. Abra dizendo o que será realizado."
+}
