@@ -23,4 +23,13 @@ jobs:
       - run: ruff check .
       - run: playwright install --with-deps chromium
       - run: node scripts/contraste.mjs
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Specs do assistente em sincronia
+        run: node scripts/sincronizar_specs.mjs --check
+      - name: Edge Function assistente (tipos e testes)
+        run: |
+          deno check supabase/functions/assistente/index.ts
+          deno test --allow-read --allow-env supabase/functions/assistente/
       - run: pytest -q

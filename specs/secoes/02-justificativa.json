@@ -1,0 +1,52 @@
+{
+  "id": "justificativa",
+  "titulo": "Justificativa",
+  "ordem": 2,
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao"
+  ],
+  "perguntas": [
+    {
+      "id": "necessidade",
+      "texto": "Que necessidade ou ausência na sua cidade/comunidade este projeto responde?",
+      "obrigatoria": true
+    },
+    {
+      "id": "por_que_voce",
+      "texto": "Por que você (ou o grupo) é a pessoa certa para fazer isso?",
+      "obrigatoria": true
+    },
+    {
+      "id": "relevancia",
+      "texto": "Qual a relevância cultural: mantém uma tradição, experimenta linguagem nova, forma público, gera renda para artistas locais?",
+      "obrigatoria": true
+    },
+    {
+      "id": "dados",
+      "texto": "Tem algum dado, notícia, pesquisa ou experiência anterior que mostre essa necessidade?",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [
+    {
+      "se": "ficha.territorio_prioritario == true",
+      "pergunta": {
+        "id": "impacto_territorio",
+        "texto": "O projeto acontece em território periférico, rural ou de comunidade tradicional. Como ele muda a vida das pessoas desse lugar?",
+        "obrigatoria": true
+      }
+    }
+  ],
+  "checagens": [
+    "nao_inventar_dados",
+    "conecta_com_criterios_do_edital"
+  ],
+  "limite_caracteres_padrao": 3000,
+  "instrucoes_redacao": "Argumente em ordem: necessidade, por que este proponente, relevância cultural, evidências. Só cite dados que a pessoa deu. Se ela disse que o projeto é em território periférico, rural ou de comunidade tradicional, devolva fatos_novos_ficha.territorio_prioritario = true."
+}

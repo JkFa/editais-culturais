@@ -326,3 +326,43 @@ GitHub Actions e 1 bloqueada. O pedido sugeria 15.
     v1 (`mapas:pb` falhou uma vez); `vigia-sesc-pr-editais` leva 403 só no runner. A "última coleta boa" dessas
     fontes veio de um dry-run local (data real, mas não do Actions). Nenhuma exigência de projeto aprovado (Rouanet)
     aparece hoje nos abertos: o requisito só existe nos fixtures.
+
+
+## Assistente de Projetos Culturais (Fase 1)
+
+Escrita guiada por conversa em `/projeto/`. Visão geral e operação em `docs/assistente.md`. Decisões onde o prompt
+original conflitava com o repositório (aprovadas pelo usuário em 07/11/2026):
+
+- **Rota.** O GitHub Pages não reescreve rotas; `/projeto/novo?edital=<id>` virou `/projeto/?novo=1&edital=<chave>`
+  (uma página com visões por query string). O edital é identificado pela `chave` (`fonte:id_externo`), como no resto do site.
+- **`edital_id` é `bigint`, não `uuid`,** porque `editais.id` é `bigint identity`. Como os editais são apagados depois
+  de vencer, o projeto guarda também `edital_chave`, `edital_titulo` e `edital_url` (FK com `on delete set null`).
+- **Specs.** Fonte única em `specs/`; o Pages só publica `web/` e a Edge Function só empacota a própria pasta, então
+  `scripts/sincronizar_specs.mjs` gera as cópias e o CI (`--check` + pytest) falha se saírem de sincronia.
+- **TypeScript com Deno no CI** (`denoland/setup-deno`) para `llm.ts`/`prompts.ts` e demais módulos da função: 53 testes
+  sem rede. A lógica compartilhada com o navegador (`specs/lib/secoes.mjs`) é JavaScript puro.
+- **Dados pessoais em tabela própria** (`projeto_proponente`), que a função nunca lê: a regra de LGPD vale pela
+  estrutura do banco, não só pelo código. O texto livre ainda passa por filtro (CPF, CNPJ, e-mail, telefone, CEP).
+  O filtro não reconhece nomes de pessoas; a interface avisa.
+- **Cotas/pontuação extra são dado sensível:** pergunta com `canal: "formulario"` (não passa pelo chat nem pela IA), fica
+  na ficha e só vai a prompt se a pessoa marcar que pode citar. A pergunta de edital também é de formulário.
+- **RLS nas tabelas-filhas** por dono do projeto (não há `user_id` nelas). O usuário só **lê** mensagens, respostas,
+  histórico e uso; quem escreve é a função (`service_role`). `projeto_secoes` e `projetos` o usuário edita.
+- **Histórico de versões** por trigger `security definer` (o usuário só lê o histórico). Editar o texto tira a aprovação.
+  Um teste de RLS encontrou o defeito original: o trigger rodava com a permissão do usuário e falhava.
+- **`verify_jwt = false`** na função: o preflight CORS não leva JWT. A função valida o token no GoTrue e o dono do
+  projeto a cada chamada (leitura com o JWT do usuário, então a RLS filtra; escrita com `service_role`).
+- **Contrato do LLM.** O provedor recebe `fatos_novos_ficha` como lista de pares chave/valor (alguns provedores não
+  aceitam objeto sem propriedades fixas) e a função devolve o objeto do contrato. Tudo é revalidado; inválido → uma nova
+  tentativa → erro tratado (502).
+- **Limite diário** atômico na RPC `assistente_consumir_uso` (dia de Brasília). Conta ao iniciar a chamada, inclusive se
+  a IA falhar depois (não há estorno nesta fase).
+- **Modelo.** `gemini-3.6-flash` (Flash estável na documentação oficial em 07/11/2026; `gemini-2.5-flash` está
+  obsoleto). Configurável por `LLM_MODEL`. Groq fica como stub documentado.
+- **Plano gratuito do Gemini e LGPD.** Os termos da Google permitem usar prompts e respostas do plano gratuito para
+  melhorar produtos e revisão humana. Mitigação: filtro de dados pessoais, ficha restrita, aviso no chat e em `/sobre/`.
+  Quem quiser eliminar o risco usa um projeto com faturamento ou outro provedor.
+- **`/sobre/` ganhou a seção "Assistente de projetos"** e a frase "o portal não tem login" foi corrigida (navegar segue
+  sem login e sem cookies; a sessão do assistente fica em `localStorage`). É a única alteração em página existente além
+  do botão no painel do edital.
+- **Seções 6 a 11** existem só como placeholders `ativo: false` ("em breve").

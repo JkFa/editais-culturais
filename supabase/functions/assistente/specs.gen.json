@@ -1,0 +1,324 @@
+{
+ "versao": "f42ab269c33a",
+ "secoes": [
+  {
+   "id": "ficha",
+   "titulo": "Ficha do projeto",
+   "ordem": 0,
+   "ativo": true,
+   "fluxos": [
+    "padrao",
+    "audiovisual"
+   ],
+   "depende_de": [],
+   "perguntas": [
+    {
+     "id": "edital",
+     "texto": "Para qual edital é este projeto?",
+     "obrigatoria": false,
+     "canal": "formulario",
+     "ajuda": "Preenchido automaticamente quando você vem de um edital do portal."
+    },
+    {
+     "id": "tipo_proponente",
+     "texto": "Você vai se inscrever como pessoa física, MEI, coletivo ou empresa/associação?",
+     "obrigatoria": true
+    },
+    {
+     "id": "linguagem",
+     "texto": "Qual a linguagem artística principal? E alguma secundária?",
+     "obrigatoria": true
+    },
+    {
+     "id": "cidades",
+     "texto": "Em que cidade(s) o projeto acontece?",
+     "obrigatoria": true
+    },
+    {
+     "id": "ideia",
+     "texto": "Conte em poucas frases a ideia, como se explicasse para um amigo.",
+     "obrigatoria": true
+    },
+    {
+     "id": "custo_estimado",
+     "texto": "Quanto você imagina que o projeto custa?",
+     "obrigatoria": true
+    },
+    {
+     "id": "trajetoria",
+     "texto": "Há quanto tempo você (ou o grupo) atua nessa área? Cite 2 ou 3 trabalhos anteriores.",
+     "obrigatoria": true
+    }
+   ],
+   "condicionais": [
+    {
+     "se": "ficha.edital_tem_cotas == true",
+     "pergunta": {
+      "id": "cotas",
+      "texto": "O edital tem cotas ou pontuação extra. Você quer concorrer em alguma delas? (opcional)",
+      "obrigatoria": false,
+      "canal": "formulario",
+      "ajuda": "Resposta opcional. Fica só na sua ficha e não é enviada à IA nem usada nos textos, a menos que você peça."
+     }
+    }
+   ],
+   "checagens": [
+    "nao_inventar_dados",
+    "alertar_teto_orcamento"
+   ],
+   "limite_caracteres_padrao": 1500,
+   "instrucoes_redacao": "Escreva um resumo curto da ficha, em tópicos, só com o que a pessoa informou. Guarde em fatos_novos_ficha os fatos objetivos (tipo de proponente, linguagem, cidades, custo estimado em número, tempo de atuação). Se o custo passar do teto do edital, avise em alertas."
+  },
+  {
+   "id": "apresentacao",
+   "titulo": "Apresentação / Resumo",
+   "ordem": 1,
+   "ativo": true,
+   "fluxos": [
+    "padrao",
+    "audiovisual"
+   ],
+   "depende_de": [
+    "ficha"
+   ],
+   "perguntas": [
+    {
+     "id": "o_que",
+     "texto": "O que exatamente vai ser feito? (espetáculo, oficina, festival, gravação, publicação, exposição…)",
+     "obrigatoria": true
+    },
+    {
+     "id": "quantidade",
+     "texto": "Quantas ações, apresentações ou encontros?",
+     "obrigatoria": true
+    },
+    {
+     "id": "onde_quando",
+     "texto": "Onde e quando, aproximadamente?",
+     "obrigatoria": true
+    },
+    {
+     "id": "resultado",
+     "texto": "Qual o resultado final que fica para o público?",
+     "obrigatoria": true
+    }
+   ],
+   "condicionais": [],
+   "checagens": [
+    "nao_inventar_dados",
+    "cabe_em_um_paragrafo",
+    "responde_o_que_onde_quando_para_quem"
+   ],
+   "limite_caracteres_padrao": 1500,
+   "instrucoes_redacao": "Escreva um único parágrafo que responda: o quê, onde, quando e para quem. Abra dizendo o que será realizado."
+  },
+  {
+   "id": "justificativa",
+   "titulo": "Justificativa",
+   "ordem": 2,
+   "ativo": true,
+   "fluxos": [
+    "padrao",
+    "audiovisual"
+   ],
+   "depende_de": [
+    "ficha",
+    "apresentacao"
+   ],
+   "perguntas": [
+    {
+     "id": "necessidade",
+     "texto": "Que necessidade ou ausência na sua cidade/comunidade este projeto responde?",
+     "obrigatoria": true
+    },
+    {
+     "id": "por_que_voce",
+     "texto": "Por que você (ou o grupo) é a pessoa certa para fazer isso?",
+     "obrigatoria": true
+    },
+    {
+     "id": "relevancia",
+     "texto": "Qual a relevância cultural: mantém uma tradição, experimenta linguagem nova, forma público, gera renda para artistas locais?",
+     "obrigatoria": true
+    },
+    {
+     "id": "dados",
+     "texto": "Tem algum dado, notícia, pesquisa ou experiência anterior que mostre essa necessidade?",
+     "obrigatoria": true
+    }
+   ],
+   "condicionais": [
+    {
+     "se": "ficha.territorio_prioritario == true",
+     "pergunta": {
+      "id": "impacto_territorio",
+      "texto": "O projeto acontece em território periférico, rural ou de comunidade tradicional. Como ele muda a vida das pessoas desse lugar?",
+      "obrigatoria": true
+     }
+    }
+   ],
+   "checagens": [
+    "nao_inventar_dados",
+    "conecta_com_criterios_do_edital"
+   ],
+   "limite_caracteres_padrao": 3000,
+   "instrucoes_redacao": "Argumente em ordem: necessidade, por que este proponente, relevância cultural, evidências. Só cite dados que a pessoa deu. Se ela disse que o projeto é em território periférico, rural ou de comunidade tradicional, devolva fatos_novos_ficha.territorio_prioritario = true."
+  },
+  {
+   "id": "objetivos",
+   "titulo": "Objetivos",
+   "ordem": 3,
+   "ativo": true,
+   "fluxos": [
+    "padrao",
+    "audiovisual"
+   ],
+   "depende_de": [
+    "ficha",
+    "apresentacao",
+    "justificativa"
+   ],
+   "perguntas": [
+    {
+     "id": "objetivo_geral",
+     "texto": "Em uma frase: o que o projeto quer alcançar no fim?",
+     "obrigatoria": true
+    },
+    {
+     "id": "passos",
+     "texto": "Quais passos concretos levam a isso? (eles viram 3 a 5 objetivos específicos)",
+     "obrigatoria": true
+    }
+   ],
+   "condicionais": [],
+   "checagens": [
+    "nao_inventar_dados",
+    "objetivos_especificos_no_infinitivo",
+    "cada_objetivo_tem_meta"
+   ],
+   "limite_caracteres_padrao": 2000,
+   "instrucoes_redacao": "Escreva 1 objetivo geral e de 3 a 5 objetivos específicos, cada um começando com verbo no infinitivo. Se a seção de metas já existir, avise em alertas quando algum objetivo específico não tiver meta."
+  },
+  {
+   "id": "metas",
+   "titulo": "Metas e indicadores",
+   "ordem": 4,
+   "ativo": true,
+   "fluxos": [
+    "padrao",
+    "audiovisual"
+   ],
+   "depende_de": [
+    "ficha",
+    "apresentacao",
+    "objetivos"
+   ],
+   "perguntas": [
+    {
+     "id": "metas",
+     "texto": "Para cada objetivo específico: quanto, de quê, até quando?",
+     "obrigatoria": true
+    },
+    {
+     "id": "comprovacao",
+     "texto": "Como você vai comprovar? (lista de presença, fotos, vídeos, relatório, link)",
+     "obrigatoria": true
+    }
+   ],
+   "condicionais": [],
+   "checagens": [
+    "nao_inventar_dados",
+    "metas_numericas_e_verificaveis",
+    "coerentes_com_objetivos_aprovados"
+   ],
+   "limite_caracteres_padrao": 2500,
+   "instrucoes_redacao": "Liste uma ou mais metas por objetivo específico, com número, prazo e forma de comprovação. Nunca invente números: onde faltar, use [COMPLETAR: ...]."
+  },
+  {
+   "id": "publico",
+   "titulo": "Público-alvo",
+   "ordem": 5,
+   "ativo": true,
+   "fluxos": [
+    "padrao",
+    "audiovisual"
+   ],
+   "depende_de": [
+    "ficha",
+    "apresentacao"
+   ],
+   "perguntas": [
+    {
+     "id": "quem",
+     "texto": "Quem você quer alcançar? (faixa etária, escolas, comunidade específica, público geral)",
+     "obrigatoria": true
+    },
+    {
+     "id": "quantas_pessoas",
+     "texto": "Quantas pessoas, no total, você estima atingir? Como chegou nesse número?",
+     "obrigatoria": true
+    },
+    {
+     "id": "gratuidade",
+     "texto": "As ações serão gratuitas? Se houver ingresso, qual o valor e a política de meia/gratuidade?",
+     "obrigatoria": true
+    }
+   ],
+   "condicionais": [],
+   "checagens": [
+    "nao_inventar_dados",
+    "estimativa_coerente_com_acoes"
+   ],
+   "limite_caracteres_padrao": 2000,
+   "instrucoes_redacao": "Descreva quem é o público, quantas pessoas se espera atingir e como se chegou a esse número, e se as ações são gratuitas. Confira se o total é coerente com o número de ações da apresentação."
+  },
+  {
+   "id": "acessibilidade",
+   "titulo": "Acessibilidade",
+   "ordem": 6,
+   "ativo": false
+  },
+  {
+   "id": "democratizacao",
+   "titulo": "Democratização do acesso",
+   "ordem": 7,
+   "ativo": false
+  },
+  {
+   "id": "comunicacao",
+   "titulo": "Plano de comunicação",
+   "ordem": 8,
+   "ativo": false
+  },
+  {
+   "id": "equipe",
+   "titulo": "Equipe",
+   "ordem": 9,
+   "ativo": false
+  },
+  {
+   "id": "cronograma",
+   "titulo": "Cronograma",
+   "ordem": 10,
+   "ativo": false
+  },
+  {
+   "id": "orcamento",
+   "titulo": "Orçamento",
+   "ordem": 11,
+   "ativo": false
+  }
+ ],
+ "checagens": {
+  "nao_inventar_dados": "O texto só usa fatos dados pelo usuário; onde faltou informação há [COMPLETAR: ...].",
+  "alertar_teto_orcamento": "Se o custo estimado passar do teto do orçamento do edital, avisar.",
+  "cabe_em_um_paragrafo": "O texto cabe em um parágrafo.",
+  "responde_o_que_onde_quando_para_quem": "O texto responde: o quê, onde, quando e para quem.",
+  "conecta_com_criterios_do_edital": "Quando houver critérios do edital, o texto se conecta com pelo menos 2 deles, sem exagero.",
+  "objetivos_especificos_no_infinitivo": "Há de 3 a 5 objetivos específicos, cada um com verbo no infinitivo.",
+  "cada_objetivo_tem_meta": "Cada objetivo específico tem ao menos uma meta na seção de metas (se ela já existir).",
+  "metas_numericas_e_verificaveis": "As metas têm número, prazo e forma de comprovação verificável.",
+  "coerentes_com_objetivos_aprovados": "As metas são coerentes com os objetivos aprovados.",
+  "estimativa_coerente_com_acoes": "A estimativa de público é coerente com o número de ações da apresentação."
+ }
+}

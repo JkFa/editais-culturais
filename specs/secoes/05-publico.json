@@ -1,0 +1,38 @@
+{
+  "id": "publico",
+  "titulo": "Público-alvo",
+  "ordem": 5,
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao"
+  ],
+  "perguntas": [
+    {
+      "id": "quem",
+      "texto": "Quem você quer alcançar? (faixa etária, escolas, comunidade específica, público geral)",
+      "obrigatoria": true
+    },
+    {
+      "id": "quantas_pessoas",
+      "texto": "Quantas pessoas, no total, você estima atingir? Como chegou nesse número?",
+      "obrigatoria": true
+    },
+    {
+      "id": "gratuidade",
+      "texto": "As ações serão gratuitas? Se houver ingresso, qual o valor e a política de meia/gratuidade?",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [],
+  "checagens": [
+    "nao_inventar_dados",
+    "estimativa_coerente_com_acoes"
+  ],
+  "limite_caracteres_padrao": 2000,
+  "instrucoes_redacao": "Descreva quem é o público, quantas pessoas se espera atingir e como se chegou a esse número, e se as ações são gratuitas. Confira se o total é coerente com o número de ações da apresentação."
+}
