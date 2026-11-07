@@ -149,11 +149,17 @@ def status_das_instancias(
 
 
 async def executar_fonte_unica(fonte_id: str, dry_run: bool) -> int:
-    """`--fonte <id>`: roda uma fonte nova isolada (teste no Actions), sem tocar no snapshot."""
+    """`--fonte <id>`: roda fontes isoladas (teste no Actions), sem tocar no snapshot.
+
+    `id` pode ser uma fonte do catálogo, uma instância (`mapas:<slug>`) ou `todas` (todas as
+    fontes novas ativas e as instâncias de Mapas, para conferir o que o runner consegue acessar).
+    """
     agora = datetime.now(UTC)
     fontes = carregar_fontes_v4(FONTES)
-    if fonte_id not in {f.id for f in fontes}:
-        print(f"fonte desconhecida: {fonte_id}. Disponíveis: {sorted(f.id for f in fontes)}")
+    instancias, params = carregar_fontes()
+    ids = {f.id for f in fontes} | {i.fonte for i in instancias}
+    if fonte_id != "todas" and fonte_id not in ids:
+        print(f"fonte desconhecida: {fonte_id}. Disponíveis: {sorted(ids)} ou 'todas'")
         return 2
     anterior = ler_snapshot(SNAPSHOT) or {}
     status_ant = {x["fonte"]: x for x in anterior.get("fontes", [])}
@@ -164,26 +170,44 @@ async def executar_fonte_unica(fonte_id: str, dry_run: bool) -> int:
         if u
     }
     estado = _ler_json(CACHE_VIGIAS)
+    todas = fonte_id == "todas"
     resultado = await rodar_fontes_v4(
-        fontes, agora, urls, set(), estado, status_ant, apenas=fonte_id
-    )
-    for st in resultado.status:
-        print(json.dumps(st.model_dump(mode="json"), ensure_ascii=False))
-    res = resultado.resultados.get(fonte_id)
-    if res:
-        print(
-            f"editais: {len(res.brutos)}  candidatos: {len(res.candidatos)}  descartes: {dict(res.descartes)}"
+        fontes, agora, urls, set(), estado, status_ant,
+        apenas=None if todas else (fonte_id if fonte_id in {f.id for f in fontes} else "__nenhuma__"),
+    )  # fmt: skip
+    status = list(resultado.status)
+    alvo = [i for i in instancias if i.ativa and (todas or i.fonte == fonte_id)]
+    if todas:
+        alvo = [i for i in alvo if i.slug in ("es", "cim-amfri", "parauapebas")]
+    totais: dict[str, int] = {}
+    erros: dict[str, str] = {}
+    if alvo:
+        async with ClienteHttp() as http:
+            for inst in alvo:
+                try:
+                    r = await coletar_instancia(http, inst, params, agora)
+                    totais[inst.fonte] = len(r.brutos)
+                except Exception as exc:  # noqa: BLE001
+                    erros[inst.fonte] = f"{type(exc).__name__}: {exc}"[:300]
+        status += status_das_instancias(
+            alvo, {i.fonte for i in alvo} - set(erros), erros, totais, status_ant, agora
         )
+    for st in status:
+        print(json.dumps(st.model_dump(mode="json"), ensure_ascii=False))
+    for fid, res in resultado.resultados.items():
+        print(
+            f"{fid}: editais={len(res.brutos)} candidatos={len(res.candidatos)} "
+            f"descartes={dict(res.descartes)}"
+        )
+    print("RESUMO " + " ".join(f"{st.fonte}={st.status}" for st in status))
     cfg_supabase = None if dry_run else ConfigSupabase.do_ambiente()
     if cfg_supabase:
         sb = Supabase(cfg_supabase)
         try:
-            await sb.upsert_fontes_status(resultado.status)
+            await sb.upsert_fontes_status(status)
         finally:
             await sb.fechar()
-    return (
-        0 if all(st.status in ("ok", "sem_dados", "desativada") for st in resultado.status) else 1
-    )
+    return 0 if all(st.status in ("ok", "sem_dados", "desativada") for st in status) else 1
 
 
 async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
