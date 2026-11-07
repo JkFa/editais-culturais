@@ -94,3 +94,41 @@ Sondagem de ~70 hostnames prováveis (padrão `mapacultural.<uf>.gov.br` etc.). 
 - **Arquivos na raiz fora do escopo**: `PROMPT_editais_culturais.md` e `ANÁLISE_COMPETITIVA.md`
   são idênticos byte a byte (mesmo conteúdo, sem análise competitiva de fato). O segundo foi ignorado.
   `fontes_curadas.yaml` na raiz foi copiado para `worker/` sem alteração (conferido com `cmp`).
+
+## Fase 3: workflows
+
+- **Deploy escuta `workflow_run`** do "Sincronizar editais", além de `push` em `web/**`. Commits feitos
+  com `GITHUB_TOKEN` não disparam `push`; sem isso o snapshot novo não seria publicado.
+- **Commit do snapshot com `if: always()`**: se o Supabase falhar depois de o snapshot ser escrito (código
+  3), o snapshot ainda vai para o repositório. O job continua marcado como falho, para alertar.
+- **Trava contra `service_role` no front**: o deploy decodifica a claim `role` da JWT em
+  `vars.SUPABASE_ANON_KEY` e aborta se for `service_role`. Descartada: confiar só na documentação.
+- **`web/config.js` versionado vazio** (e `config.example.js` documentado). Sem o arquivo, a tag `<script>`
+  geraria um 404 no console, e a definição de pronto exige zero erros abrindo sem configuração.
+
+## Fase 4: frontend
+
+- **Contraste (AA)**: `#C84B31` sobre o branco dá 4,66:1, mas sobre o papel `#F7F5F0` dá só 4,28:1. O texto
+  de urgência usa `#B5412A` (5,13:1 no papel, 5,59:1 no branco); `#C84B31` ficou só como preenchimento do
+  badge "Encerra hoje" (texto branco, 4,66:1). `#2D5A27` dá 7,4:1 no papel. Texto secundário `#5F5C54` (6,1:1).
+- **Busca no modo ao vivo**: `textSearch('busca_textual', q, {config:'portuguese', type:'websearch'})` soma
+  seus acertos aos da busca local por substring (sem acento). Só a busca textual do Postgres não acharia
+  prefixos ("mus" → "música"). Os demais filtros rodam sempre no cliente: a base aberta é pequena.
+- **Estado na URL**: filtros usam `replaceState`; abrir o painel usa `pushState`, para que o botão voltar
+  feche o painel (`?edital=<chave>`). O popstate só redesenha a lista se os filtros mudaram, senão o foco
+  não voltaria ao card (bug achado no teste ponta a ponta).
+- **Perfil**: seleção única (clicar de novo desmarca). Linguagem: múltipla (OU). "Nacional" e UF são
+  exclusivos entre si; UF mostra a UF e os nacionais.
+- **CSV com `;`** e BOM: é o separador que o Excel pt-BR espera. Células iniciadas por `= + - @` levam
+  apóstrofo (injeção de fórmula a partir de títulos públicos).
+- **`.ics`**: evento de dia inteiro quando o prazo não tem horário; 30 min a partir do horário quando tem.
+  Linhas dobradas em 75 octetos e lembrete (`VALARM`) de um dia antes.
+- **Favoritos guardam um mínimo** (título, órgão, link, prazo) para listar, como "Encerrado ou removido",
+  o edital que saiu da base, sem inventar nada.
+- **Radar** vem no snapshot (`radar`) e do Supabase (`radar_editais`); a ordem é cíclica pela distância
+  em meses até a janela (0 = dentro dela).
+
+## Fase 5: verificação
+
+Ver o README ("Testes e verificações") e a seção "Limitações conhecidas". Resultado da execução final está
+no resumo entregue ao fim do trabalho.

@@ -43,6 +43,20 @@ CURADAS = Path(__file__).resolve().parent / "fontes_curadas.yaml"
 log = logging.getLogger("worker")
 
 
+def carregar_env(caminho: Path = RAIZ / ".env") -> None:
+    """Lê `.env` (ignorado pelo git) sem sobrescrever variáveis já definidas no ambiente."""
+    if not caminho.exists():
+        return
+    for linha in caminho.read_text(encoding="utf-8").splitlines():
+        linha = linha.strip()
+        if not linha or linha.startswith("#") or "=" not in linha:
+            continue
+        chave, _, valor = linha.partition("=")
+        valor = valor.strip().strip("\"'")
+        if valor:
+            os.environ.setdefault(chave.strip(), valor)
+
+
 def carregar_fontes(caminho: Path = FONTES) -> tuple[list[Instancia], Parametros]:
     dados = yaml.safe_load(caminho.read_text(encoding="utf-8"))
     params = Parametros(**(dados.get("parametros") or {}))
@@ -223,6 +237,7 @@ def main(argv: list[str] | None = None) -> int:
         "--dry-run", action="store_true", help="coleta e gera o snapshot sem tocar no Supabase"
     )
     args = parser.parse_args(argv)
+    carregar_env()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     logging.getLogger("httpx").setLevel(logging.WARNING)
     return asyncio.run(executar(args.dry_run))

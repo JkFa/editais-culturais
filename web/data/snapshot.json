@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-07T02:43:58.815973+00:00",
+ "gerado_em": "2026-11-07T03:00:11.288001+00:00",
  "fontes_ok": [
   "curadoria",
   "mapas:aracaju",
@@ -15,141 +15,11 @@
  "fontes_falharam": [],
  "editais": [
   {
-   "fonte": "mapas:ce",
-   "id_externo": "8263",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8263/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "1º EDITAL DE CHAMAMENTO PÚBLICO PARA REALIZAÇÃO DO PROGRAMA DE ARTE E CULTURA DIGITAL NO CEARÁ",
-   "orgao_fomento": "Secretaria da Cultura do Estado do Ceará - SECULTCE",
-   "resumo_original": "Período de conhecimento pública: De 28 de agosto a 28 de setembro de 2026. Período de inscrição: De 29 de setembro a 14 de outubro de 2026. -- 1º EDITAL DE CHAMAMENTO PÚBLICO PARA REALIZAÇÃO DO PROGRAMA DE ARTE E CULTURA DIGITAL NO CEARÁ",
-   "resumo_simples": "Período de conhecimento pública: De 28 de agosto a 28 de setembro de 2026.",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": null,
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-09-29T03:00:00Z",
-   "inscricao_fim": "2026-11-07T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-08-26T12:39:39Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "e6c683978483ba324de4870b074848889534f8f60762a626bbcfc0c2e977e797",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    }
-   },
-   "chave": "mapas:ce:8263"
-  },
-  {
-   "fonte": "mapas:ce",
-   "id_externo": "8434",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8434/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "EDITAL DE APOIO AO CICLO NATALINO – 2026 – POLITICA NACIONAL ALDIR BLANC – CHORÓ EDITAL Nº 03/2026",
-   "orgao_fomento": "Renei Benício",
-   "resumo_original": "Este edital tem por finalidade assegurar o aproveitamento de vagas remanescentes e fortalecer as manifestações culturais e os saberes tradicionais relacionados ao ciclo natalino no Município de Choró/CE.",
-   "resumo_simples": "Este edital tem por finalidade assegurar o aproveitamento de vagas remanescentes e fortalecer as manifestações culturais e os saberes tradicionais relacionados ao ciclo natalino no Município de Choró/CE.",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-23T03:00:00Z",
-   "inscricao_fim": "2026-11-07T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-19T14:44:47Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "f6d8050205baadee9da11e19f8efa3e13de7ee92959a66c9cf67213a648ab9b3",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "DE APOIO AO CICLO NATALINO – 2026 – POLITICA NACIONAL ALDIR BLANC – CHORÓ EDITAL Nº 03/2026 Este edital"
-    }
-   },
-   "chave": "mapas:ce:8434"
-  },
-  {
-   "fonte": "mapas:ce",
-   "id_externo": "8455",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8455/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "Edital 013 - Formação e Qualificação Cultural - PROSIEC Pacajus",
-   "orgao_fomento": "Secretaria de Cultura e Turismo de Pacajus",
-   "resumo_original": "O MUNICÍPIO DE PACAJUS, por intermédio da Secretaria Municipal de Cultura e Turismo, torna público o presente Edital de Chamamento Público para seleção de projeto cultural, a ser executado mediante celebração de Termo de Execução Cultural – TEC, com recursos transferidos ao Fundo Municipal de Cultura de Pacajus no âmbito do Programa de Fortalecimento do Sistema Estadual da Cultura - ProSIEC, com fundamento na Lei Estadual nº 18.012/2022, na Lei Estadual nº 18.816/2024, no Decreto Estadual nº 36.040/2024, na Instrução Normativa Secult nº 02/2026, na Lei Federal nº 14.903/2024, no Decreto Federal nº 11.453/2023 e na legislação municipal aplicável e das condições previstas neste Edital",
-   "resumo_simples": "O MUNICÍPIO DE PACAJUS, por intermédio da Secretaria Municipal de Cultura e Turismo, torna público o presente Edital de Chamamento Público para seleção de projeto cultural, a ser executado mediante celebração de Termo de Execução Cultural – TEC, com recursos transferidos ao…",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": null,
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-26T03:00:00Z",
-   "inscricao_fim": "2026-11-07T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-26T13:32:51Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "c522385868e56eebc9df4c501d76b61f52a78e65e5feebbd9e3e7dbdcdc1eb34",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    }
-   },
-   "chave": "mapas:ce:8455"
-  },
-  {
    "fonte": "mapas:br",
    "id_externo": "12667",
    "url_origem": "https://mapa.cultura.gov.br/oportunidade/12667/",
    "url_inscricao": null,
-   "url_edital_pdf": null,
+   "url_edital_pdf": "https://mapa.cultura.gov.br/files/opportunity/12667/sei-3193023-edital-minc-mec-n-13.pdf",
    "titulo": "Programa Ciclos de Saberes e Conhecimentos Tradicionais, Populares e das Artes",
    "orgao_fomento": "Secretaria de Formação Artística e Cultural, Livro e Leitura (SEFLI/MinC)",
    "resumo_original": "O Programa Ciclo de Saberes selecionará projetos de Instituições Federais de Ensino Superior (IFES) para promover e valorizar os conhecimentos de mestras e mestres das culturas tradicionais, populares e das artes, aproximando seus saberes das universidades, escolas públicas e comunidades por meio de atividades educativas e culturais",
@@ -175,9 +45,9 @@
    "inscricao_fim": "2026-11-09T02:59:59Z",
    "fim_tem_horario": false,
    "publicado_em": "2026-10-16T15:47:47Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "006bec87dbe81f17bf9076a8f0d734ae4dc75a1f67d9e56c3772635ae9f23c0f",
+   "coletado_em": "2026-11-07T03:00:11.288001Z",
+   "atualizado_em": "2026-11-07T03:00:11.288001Z",
+   "hash_conteudo": "1867303ac79489dcde12135acb8b0b7db03d0b5e0f85bac418f80851255459e9",
    "proveniencia": {
     "linguagens": {
      "via": "api",
@@ -193,52 +63,6 @@
     }
    },
    "chave": "mapas:br:12667"
-  },
-  {
-   "fonte": "mapas:ce",
-   "id_externo": "8447",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8447/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE",
-   "orgao_fomento": "Companhia Artes Cínicas de Teatro",
-   "resumo_original": "Selecionar e apoiar financeiramente 15 projetos culturais nas diversas linguagens conforme o Edital 001/2026.",
-   "resumo_simples": "Selecionar e apoiar financeiramente 15 projetos culturais nas diversas linguagens conforme o Edital 001/2026.",
-   "linguagens": [
-    "Multiáreas"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-21T03:00:00Z",
-   "inscricao_fim": "2026-11-09T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-20T17:35:41Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "323fe1cb40c4e673c1581749d07139488667aa2c3d940fc3f047bfe251ea84d1",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE Selecionar e apoiar"
-    }
-   },
-   "chave": "mapas:ce:8447"
   },
   {
    "fonte": "mapas:ce",
@@ -285,6 +109,52 @@
     }
    },
    "chave": "mapas:ce:8443"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8447",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8447/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE",
+   "orgao_fomento": "Companhia Artes Cínicas de Teatro",
+   "resumo_original": "Selecionar e apoiar financeiramente 15 projetos culturais nas diversas linguagens conforme o Edital 001/2026.",
+   "resumo_simples": "Selecionar e apoiar financeiramente 15 projetos culturais nas diversas linguagens conforme o Edital 001/2026.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": "PNAB",
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-21T03:00:00Z",
+   "inscricao_fim": "2026-11-09T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-20T17:35:41Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "323fe1cb40c4e673c1581749d07139488667aa2c3d940fc3f047bfe251ea84d1",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "EDITAL DE FOMENTO 001/2026 - PNAB CICLO II - TAUÁ/CE Selecionar e apoiar"
+    }
+   },
+   "chave": "mapas:ce:8447"
   },
   {
    "fonte": "mapas:pe",
@@ -359,6 +229,48 @@
     }
    },
    "chave": "mapas:pe:3447"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8467",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8467/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "ATELIÊ DE INVESTIGAÇÕES POÉTICAS",
+   "orgao_fomento": "ECOA Sobral",
+   "resumo_original": "O Ateliê de Investigação Poética se dedica a pensar a criação artística como um lugar de invenção e reflexão sobre as tecnologias desenvolvidas e usadas nas artes visuais sobralenses. Como advento desta edição do Salão Sobral de Artes Visuais, propomos um eixo de pesquisa em criação e buscamos selecionar 02 (dois) artistas sobralenses com trajetórias que dialoguem com os conceitos e caminhos propostos nesse texto em suas pesquisas, poéticas e saberes.",
+   "resumo_simples": "O Ateliê de Investigação Poética se dedica a pensar a criação artística como um lugar de invenção e reflexão sobre as tecnologias desenvolvidas e usadas nas artes visuais sobralenses.",
+   "linguagens": [
+    "Multiáreas"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-30T03:00:00Z",
+   "inscricao_fim": "2026-11-10T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-30T18:12:55Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "5e569c5145173118c2eee3b40f0b62c3ef76c63b37c81c8bb61491b726073b91",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    }
+   },
+   "chave": "mapas:ce:8467"
   },
   {
    "fonte": "mapas:ce",
@@ -516,46 +428,54 @@
    "chave": "mapas:ce:8446"
   },
   {
-   "fonte": "mapas:ce",
-   "id_externo": "8467",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8467/",
+   "fonte": "mapas:aracaju",
+   "id_externo": "137",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/137/",
    "url_inscricao": null,
    "url_edital_pdf": null,
-   "titulo": "ATELIÊ DE INVESTIGAÇÕES POÉTICAS",
-   "orgao_fomento": "ECOA Sobral",
-   "resumo_original": "O Ateliê de Investigação Poética se dedica a pensar a criação artística como um lugar de invenção e reflexão sobre as tecnologias desenvolvidas e usadas nas artes visuais sobralenses. Como advento desta edição do Salão Sobral de Artes Visuais, propomos um eixo de pesquisa em criação e buscamos selecionar 02 (dois) artistas sobralenses com trajetórias que dialoguem com os conceitos e caminhos propostos nesse texto em suas pesquisas, poéticas e saberes.",
-   "resumo_simples": "O Ateliê de Investigação Poética se dedica a pensar a criação artística como um lugar de invenção e reflexão sobre as tecnologias desenvolvidas e usadas nas artes visuais sobralenses.",
+   "titulo": "EDITAL Nº 016/2026 – MÚSICA - SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Funcaju",
+   "resumo_original": "Seleção de projetos culturais para celebração de termo de execução cultural com recursos da política nacional Aldir Blanc de fomento à cultura – PNAB – ciclo 2 (Lei nº 14.399/2022)",
+   "resumo_simples": "Seleção de projetos culturais para celebração de termo de execução cultural com recursos da política nacional Aldir Blanc de fomento à cultura – PNAB – ciclo 2 (Lei nº 14.399/2022)",
    "linguagens": [
-    "Multiáreas"
+    "Música"
    ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
+   "abrangencia": "municipal",
+   "uf": "SE",
+   "municipio": "Aracaju",
    "proponentes": null,
    "valor_total": null,
    "teto_por_projeto": null,
    "num_cotas": null,
    "exige_contrapartida": null,
-   "marco_legal": null,
+   "marco_legal": "PNAB",
    "documentos_exigidos": null,
    "cronograma": null,
    "tipo_apoio": null,
    "verificado_em": null,
    "pendencias": null,
-   "inscricao_inicio": "2026-10-30T03:00:00Z",
+   "inscricao_inicio": "2026-10-28T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
-   "publicado_em": "2026-10-30T18:12:55Z",
+   "publicado_em": "2026-10-28T17:40:01Z",
    "coletado_em": "2026-11-07T02:43:58.815973Z",
    "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "5e569c5145173118c2eee3b40f0b62c3ef76c63b37c81c8bb61491b726073b91",
+   "hash_conteudo": "f8692cccdafb8bc3967ce90ddde9db5105b6d56db7e284ef68fa2307e51e3144",
    "proveniencia": {
     "uf": {
      "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "MÚSICA"
+    },
+    "marco_legal": {
+     "via": "regex",
+     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
     }
    },
-   "chave": "mapas:ce:8467"
+   "chave": "mapas:aracaju:137"
   },
   {
    "fonte": "mapas:aracaju",
@@ -655,16 +575,16 @@
   },
   {
    "fonte": "mapas:aracaju",
-   "id_externo": "137",
-   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/137/",
+   "id_externo": "133",
+   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/133/",
    "url_inscricao": null,
    "url_edital_pdf": null,
-   "titulo": "EDITAL Nº 016/2026 – MÚSICA - SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
-   "orgao_fomento": "Funcaju",
-   "resumo_original": "Seleção de projetos culturais para celebração de termo de execução cultural com recursos da política nacional Aldir Blanc de fomento à cultura – PNAB – ciclo 2 (Lei nº 14.399/2022)",
-   "resumo_simples": "Seleção de projetos culturais para celebração de termo de execução cultural com recursos da política nacional Aldir Blanc de fomento à cultura – PNAB – ciclo 2 (Lei nº 14.399/2022)",
+   "titulo": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "orgao_fomento": "Lucas de Oliveira Santana",
+   "resumo_original": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
+   "resumo_simples": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
    "linguagens": [
-    "Música"
+    "Teatro & Dança"
    ],
    "abrangencia": "municipal",
    "uf": "SE",
@@ -680,13 +600,13 @@
    "tipo_apoio": null,
    "verificado_em": null,
    "pendencias": null,
-   "inscricao_inicio": "2026-10-28T03:00:00Z",
+   "inscricao_inicio": "2026-10-26T03:00:00Z",
    "inscricao_fim": "2026-11-10T02:59:59Z",
    "fim_tem_horario": false,
-   "publicado_em": "2026-10-28T17:40:01Z",
+   "publicado_em": "2026-10-26T03:00:22Z",
    "coletado_em": "2026-11-07T02:43:58.815973Z",
    "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "f8692cccdafb8bc3967ce90ddde9db5105b6d56db7e284ef68fa2307e51e3144",
+   "hash_conteudo": "4bc1f0e979689a873028b3be3206c576dd199526e2b1d577c98a426b95de70f0",
    "proveniencia": {
     "uf": {
      "via": "api",
@@ -694,14 +614,14 @@
     },
     "linguagens": {
      "via": "regex",
-     "trecho": "MÚSICA"
+     "trecho": "ARTES CÊNICAS"
     },
     "marco_legal": {
      "via": "regex",
      "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
     }
    },
-   "chave": "mapas:aracaju:137"
+   "chave": "mapas:aracaju:133"
   },
   {
    "fonte": "mapas:aracaju",
@@ -800,56 +720,6 @@
    "chave": "mapas:aracaju:132"
   },
   {
-   "fonte": "mapas:aracaju",
-   "id_externo": "133",
-   "url_origem": "https://mapacultural.aracaju.se.gov.br/oportunidade/133/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
-   "orgao_fomento": "Lucas de Oliveira Santana",
-   "resumo_original": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
-   "resumo_simples": "EDITAL Nº 013/ 2026 - ARTES CÊNICAS SELEÇÃO DE PROJETOS CULTURAIS PARA CELEBRAÇÃO DE TERMO DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2 (LEI Nº 14.399/2022)",
-   "linguagens": [
-    "Teatro & Dança"
-   ],
-   "abrangencia": "municipal",
-   "uf": "SE",
-   "municipio": "Aracaju",
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": "PNAB",
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-26T03:00:00Z",
-   "inscricao_fim": "2026-11-10T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-26T03:00:22Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "4bc1f0e979689a873028b3be3206c576dd199526e2b1d577c98a426b95de70f0",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.aracaju.se.gov.br (SE)"
-    },
-    "linguagens": {
-     "via": "regex",
-     "trecho": "ARTES CÊNICAS"
-    },
-    "marco_legal": {
-     "via": "regex",
-     "trecho": "DE EXECUÇÃO CULTURAL COM RECURSOS DA POLÍTICA NACIONAL ALDIR BLANC DE FOMENTO À CULTURA – PNAB – CICLO 2"
-    }
-   },
-   "chave": "mapas:aracaju:133"
-  },
-  {
    "fonte": "mapas:pe",
    "id_externo": "3410",
    "url_origem": "https://www.mapacultural.pe.gov.br/oportunidade/3410/",
@@ -897,52 +767,6 @@
   },
   {
    "fonte": "mapas:ce",
-   "id_externo": "8461",
-   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8461/",
-   "url_inscricao": null,
-   "url_edital_pdf": null,
-   "titulo": "Salão Sobral de Artes Visuais 2026",
-   "orgao_fomento": "ECOA Sobral",
-   "resumo_original": "Ao longo de sua trajetória, o Salão Sobral extrapolou seu papel no âmbito da difusão cultural, tornando-se um importante instrumento de mobilização social, de reflexão e de formação. É considerando essa dimensão do projeto que ele traz uma abordagem das narrativas que se estabelecem no espaço urbano, do perpassar pelas gerações e como arte, vida e história se entrelaçam mirando o futuro com os pés no presente sem esquecer do passado. O Salão Sobral de Artes Visuais tem apoio cultural da Enel, com realização do Instituto ECOA, apoio institucional da Secretaria da Cultura do Estado do Ceará e Governo do Estado por meio do Edital Mecenas do Ceará através da Lei Estadual Nº 18.012 de 01 de abril de 2022.",
-   "resumo_simples": "Ao longo de sua trajetória, o Salão Sobral extrapolou seu papel no âmbito da difusão cultural, tornando-se um importante instrumento de mobilização social, de reflexão e de formação.",
-   "linguagens": [
-    "Artes Visuais"
-   ],
-   "abrangencia": "estadual",
-   "uf": "CE",
-   "municipio": null,
-   "proponentes": null,
-   "valor_total": null,
-   "teto_por_projeto": null,
-   "num_cotas": null,
-   "exige_contrapartida": null,
-   "marco_legal": null,
-   "documentos_exigidos": null,
-   "cronograma": null,
-   "tipo_apoio": null,
-   "verificado_em": null,
-   "pendencias": null,
-   "inscricao_inicio": "2026-10-27T03:00:00Z",
-   "inscricao_fim": "2026-11-11T02:59:59Z",
-   "fim_tem_horario": false,
-   "publicado_em": "2026-10-27T17:53:57Z",
-   "coletado_em": "2026-11-07T02:43:58.815973Z",
-   "atualizado_em": "2026-11-07T02:43:58.815973Z",
-   "hash_conteudo": "bb2e15fa29390f596825dfd21f0742f44771524457a9b081298decea8f433fe8",
-   "proveniencia": {
-    "uf": {
-     "via": "api",
-     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
-    },
-    "linguagens": {
-     "via": "regex",
-     "trecho": "Artes Visuais"
-    }
-   },
-   "chave": "mapas:ce:8461"
-  },
-  {
-   "fonte": "mapas:ce",
    "id_externo": "8465",
    "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8465/",
    "url_inscricao": null,
@@ -986,6 +810,52 @@
     }
    },
    "chave": "mapas:ce:8465"
+  },
+  {
+   "fonte": "mapas:ce",
+   "id_externo": "8461",
+   "url_origem": "https://mapacultural.secult.ce.gov.br/oportunidade/8461/",
+   "url_inscricao": null,
+   "url_edital_pdf": null,
+   "titulo": "Salão Sobral de Artes Visuais 2026",
+   "orgao_fomento": "ECOA Sobral",
+   "resumo_original": "Ao longo de sua trajetória, o Salão Sobral extrapolou seu papel no âmbito da difusão cultural, tornando-se um importante instrumento de mobilização social, de reflexão e de formação. É considerando essa dimensão do projeto que ele traz uma abordagem das narrativas que se estabelecem no espaço urbano, do perpassar pelas gerações e como arte, vida e história se entrelaçam mirando o futuro com os pés no presente sem esquecer do passado. O Salão Sobral de Artes Visuais tem apoio cultural da Enel, com realização do Instituto ECOA, apoio institucional da Secretaria da Cultura do Estado do Ceará e Governo do Estado por meio do Edital Mecenas do Ceará através da Lei Estadual Nº 18.012 de 01 de abril de 2022.",
+   "resumo_simples": "Ao longo de sua trajetória, o Salão Sobral extrapolou seu papel no âmbito da difusão cultural, tornando-se um importante instrumento de mobilização social, de reflexão e de formação.",
+   "linguagens": [
+    "Artes Visuais"
+   ],
+   "abrangencia": "estadual",
+   "uf": "CE",
+   "municipio": null,
+   "proponentes": null,
+   "valor_total": null,
+   "teto_por_projeto": null,
+   "num_cotas": null,
+   "exige_contrapartida": null,
+   "marco_legal": null,
+   "documentos_exigidos": null,
+   "cronograma": null,
+   "tipo_apoio": null,
+   "verificado_em": null,
+   "pendencias": null,
+   "inscricao_inicio": "2026-10-27T03:00:00Z",
+   "inscricao_fim": "2026-11-11T02:59:59Z",
+   "fim_tem_horario": false,
+   "publicado_em": "2026-10-27T17:53:57Z",
+   "coletado_em": "2026-11-07T02:43:58.815973Z",
+   "atualizado_em": "2026-11-07T02:43:58.815973Z",
+   "hash_conteudo": "bb2e15fa29390f596825dfd21f0742f44771524457a9b081298decea8f433fe8",
+   "proveniencia": {
+    "uf": {
+     "via": "api",
+     "trecho": "Instância https://mapacultural.secult.ce.gov.br (CE)"
+    },
+    "linguagens": {
+     "via": "regex",
+     "trecho": "Artes Visuais"
+    }
+   },
+   "chave": "mapas:ce:8461"
   },
   {
    "fonte": "mapas:ce",
