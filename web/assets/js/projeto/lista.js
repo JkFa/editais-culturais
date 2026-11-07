@@ -1,4 +1,5 @@
 // "Meus projetos" e "Novo projeto".
+import { preencher } from "./dom.js";
 import { formatarData, el, plural } from "../formatos.js";
 
 const urlProjeto = (id) => `?id=${encodeURIComponent(id)}`;
@@ -53,7 +54,7 @@ export async function telaLista(ctx) {
   }
   projetos.forEach((p) => lista.append(cartao(p)));
 
-  raiz.replaceChildren(
+  preencher(raiz, 
     ctx.barra,
     el("div", { class: "topo-pagina" },
       el("h1", {}, "Meus projetos"),
@@ -82,12 +83,12 @@ export async function telaNovo(ctx, editalChave) {
   function escolher(e) {
     edital = e;
     if (e && !titulo.value) titulo.value = `Projeto para ${e.titulo}`.slice(0, 200);
-    escolhido.replaceChildren(
+    preencher(escolhido, 
       e
         ? el("p", {}, el("strong", {}, "Edital: "), e.titulo, " ", el("button", { type: "button", class: "btn btn-discreto", onclick: () => escolher(null) }, "Trocar"))
         : el("p", { class: "fonte" }, "Nenhum edital escolhido: o projeto será avulso."),
     );
-    resultados.replaceChildren();
+    preencher(resultados);
     busca.closest(".grupo-busca").hidden = Boolean(e);
   }
 
@@ -95,17 +96,17 @@ export async function telaNovo(ctx, editalChave) {
   busca.addEventListener("input", () => {
     clearTimeout(temporizador);
     const t = busca.value.trim();
-    if (t.length < 3) return resultados.replaceChildren();
+    if (t.length < 3) return preencher(resultados);
     temporizador = setTimeout(async () => {
       try {
         const achados = await api.buscarEditais(t);
-        resultados.replaceChildren(
+        preencher(resultados, 
           ...(achados.length
             ? achados.map((e) => el("li", {}, el("button", { type: "button", class: "btn btn-discreto", onclick: () => escolher(e) }, e.titulo, el("span", { class: "fonte" }, ` · ${e.orgao_fomento}`))))
             : [el("li", { class: "fonte" }, "Nenhum edital aberto com esse nome.")]),
         );
       } catch (e) {
-        resultados.replaceChildren(el("li", { class: "msg-form erro" }, e.message));
+        preencher(resultados, el("li", { class: "msg-form erro" }, e.message));
       }
     }, 300);
   });
@@ -145,6 +146,6 @@ export async function telaNovo(ctx, editalChave) {
   el("p", { class: "nota" }, "Dica: use o nome que você daria ao projeto, como \"Oficinas de teatro de rua\". Você pode mudar depois."),
   botao, " ", el("a", { class: "btn btn-discreto", href: "./" }, "Cancelar"), mensagem);
 
-  raiz.replaceChildren(ctx.barra, el("h1", {}, "Novo projeto"), aviso ? el("p", { class: "msg-form erro", role: "alert" }, aviso) : null, form);
+  preencher(raiz, ctx.barra, el("h1", {}, "Novo projeto"), aviso ? el("p", { class: "msg-form erro", role: "alert" }, aviso) : null, form);
   escolher(edital);
 }
