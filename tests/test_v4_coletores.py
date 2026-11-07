@@ -327,3 +327,24 @@ async def test_vigia_pagina_feita_em_javascript_e_conteudo_insuficiente(fixture)
 
 def test_linhas_novas_ignora_o_que_ja_existia():
     assert vigia.linhas_novas(["a" * 30], ["a" * 30, "b" * 30, "curta"]) == ["b" * 30]
+
+
+def test_titulo_de_pagina_com_template_cai_para_o_title():
+    from worker.extrator import extrair_pagina
+
+    html = "<html><head><title>Mapa Fictício - EDITAL 003</title></head><body><h1>{{seal.name}}</h1></body></html>"
+    assert extrair_pagina(html).titulo == "Mapa Fictício - EDITAL 003"
+
+
+def test_candidato_com_prazo_ja_vencido_nao_vai_para_a_fila():
+    from worker.fila import Candidato
+
+    antigo = Candidato(
+        chave="x",
+        titulo="Edital Teste A",
+        link_oficial="https://e.invalid",
+        origem="o",
+        campos={"inscricao_fim": "2020-01-01"},
+    )
+    novo = antigo.model_copy(update={"campos": {"inscricao_fim": "2999-01-01"}})
+    assert antigo.encerrado and not novo.encerrado

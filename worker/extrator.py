@@ -126,9 +126,13 @@ def _limpar(texto: str) -> str:
 def extrair_pagina(html: str, url: str = "") -> Pagina:
     leitor = _Leitor(url)
     leitor.feed(html)
-    titulo = (
-        _limpar(" ".join(leitor.h1)) or leitor.og_titulo or _limpar(" ".join(leitor.titulo_tag))
+    # h1/og:title de página montada por template ("{{seal.name}}") ou curtíssimo não serve de título.
+    candidatos = (
+        _limpar(" ".join(leitor.h1)),
+        leitor.og_titulo or "",
+        _limpar(" ".join(leitor.titulo_tag)),
     )
+    titulo = next((c for c in candidatos if len(c) >= 8 and "{{" not in c), "")
     return Pagina(
         titulo=titulo or None,
         texto=_limpar("".join(leitor.pedacos)),

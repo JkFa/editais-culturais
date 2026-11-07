@@ -12,7 +12,7 @@ import hashlib
 import json
 import logging
 import re
-from datetime import UTC, date, datetime
+from datetime import UTC, datetime
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
@@ -57,6 +57,12 @@ class Candidato(BaseModel):
     resumo: str | None = None  # texto da página oficial (nunca do agregador), curto
     campos: dict[str, Any] = Field(default_factory=dict)
     diff: list[str] = Field(default_factory=list)
+
+    @property
+    def encerrado(self) -> bool:
+        """Prazo lido da página já passou: não vale abrir Issue."""
+        fim = self.campos.get("inscricao_fim")
+        return bool(fim) and str(fim) < datetime.now(UTC).date().isoformat()
 
     @property
     def id(self) -> str:
@@ -244,6 +250,3 @@ async def publicar_aprovados(
 
 def candidatos_json(candidatos: list[Candidato]) -> str:
     return json.dumps([c.model_dump() for c in candidatos], ensure_ascii=False)
-
-
-_ = (date, UTC)  # reservado para validações de data na fila

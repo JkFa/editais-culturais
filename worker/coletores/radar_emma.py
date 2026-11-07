@@ -85,5 +85,8 @@ async def coletar(
         if cand is None:
             res.descartes["pagina_ilegivel"] += 1
             continue
+        if cand.encerrado:
+            res.descartes["encerrado"] += 1
+            continue
         res.candidatos.append(cand)
     return res

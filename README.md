@@ -127,6 +127,23 @@ coleta funcionou mas a gravação no Supabase falhou (o snapshot já foi escrito
 
 ## Fontes
 
+Hoje são 17 fontes novas ativas além das instâncias de Mapas Culturais e da curadoria (a lista completa, com
+saúde e motivo das desativadas, está em `/sobre/` e em `DECISIONS.md`). Tipos: **oficial**, **plataforma** (com
+"via ...") e **descoberta** (agregadores: só o link é lido; o edital passa pela fila de curadoria).
+
+### Fila de curadoria
+
+Candidatos viram Issues com a etiqueta `candidato`: fontes de descoberta, editais sem prazo legível e vigias de
+página que detectaram mudança. Para publicar: confira o link oficial, complete o YAML da Issue (`inscricao_fim`,
+`verificado_em` e as `evidencias` com o trecho literal) e troque a etiqueta por `aprovado`. O sync seguinte publica;
+prazo vencido fecha a Issue. Fontes que bloqueiam o robô geram, toda segunda, uma Issue `conferir-manual`.
+
+### Testar uma fonte no GitHub Actions
+
+`Actions > Sincronizar editais > Run workflow`, com `fonte` = id de `worker/fontes.yaml`, `mapas:<slug>` ou `todas`
+(marque `dry_run` para não gravar no banco). Localmente: `python -m worker.scraper_worker --fonte todas --dry-run`.
+
+
 - **A. Mapas Culturais** (`worker/fontes.yaml`): API pública `/api/opportunity/find`. Instâncias ativas
   hoje: Brasil (MinC), CE, PE, SE, PA, PB, Aracaju, Natal e Campinas. Para acrescentar uma, inclua um bloco
   em `instancias:` (slug, `base_url`, abrangência, UF). Se uma instância sair do ar, marque `ativa: false`
