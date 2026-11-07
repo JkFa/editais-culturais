@@ -31,10 +31,10 @@ export function niveisPorUf(porUf) {
 
 export function fraseDeVisitas(resumo) {
   const estados = resumo.por_uf.filter((x) => x.total > 0).length;
-  const total = fmt.format(resumo.total_geral);
+  const total = `${fmt.format(resumo.total_geral)} ${resumo.total_geral === 1 ? "visita" : "visitas"}`;
   return estados
-    ? `${total} visitas · pessoas de ${plural(estados, "estado", "estados")} nos últimos 30 dias`
-    : `${total} visitas desde o início`;
+    ? `${total} · pessoas de ${plural(estados, "estado", "estados")} nos últimos 30 dias`
+    : `${total} desde o início`;
 }
 
 function cartograma(porUf) {
