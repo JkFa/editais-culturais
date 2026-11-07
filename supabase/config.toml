@@ -416,3 +416,9 @@ enabled = true
 
 [functions.registrar-visita]
 verify_jwt = false
+
+# O gateway não pode exigir JWT: o preflight CORS (OPTIONS) não leva Authorization.
+# A função valida o token do usuário no GoTrue e confere o dono do projeto (RLS + user_id).
+[functions.assistente]
+enabled = true
+verify_jwt = false
