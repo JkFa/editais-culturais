@@ -11,6 +11,7 @@ import {
   textoDaFonte,
   prazoPorExtenso,
   textoWhatsapp,
+  urlAssistente,
 } from "./formatos.js";
 
 const FOCAVEIS = 'a[href], button:not([disabled]), input, select, textarea, summary, [tabindex]:not([tabindex="-1"])';
@@ -76,14 +77,6 @@ function blocoAlternativas(edital) {
       ),
     ),
   );
-}
-
-/** Link para o assistente de projetos, já com o edital escolhido (qualquer página do site). */
-function urlAssistente(edital) {
-  const url = new URL("../../projeto/", import.meta.url);
-  url.searchParams.set("novo", "1");
-  if (edital.chave) url.searchParams.set("edital", edital.chave);
-  return url.href;
 }
 
 function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoFechar, aoCopiar }) {
