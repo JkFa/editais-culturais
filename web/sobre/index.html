@@ -6,9 +6,8 @@
     <title>Sobre o portal: metodologia, fontes e limitações</title>
     <meta name="description" content="Como o portal de editais culturais coleta, trata e confere os dados, quais fontes usa, o que ainda não sabe e como privacidade e visitas são tratadas." />
     <link rel="canonical" href="https://jkfa.github.io/editais-culturais/sobre/" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f7f5f0" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Editais culturais do Brasil" />
@@ -19,7 +18,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <script>(function(){try{var t=localStorage.getItem('editais-culturais:tema');if(t==='claro'||t==='escuro'){document.documentElement.dataset.tema=t;var c=t==='escuro'?'#161513':'#f7f5f0',m=document.querySelectorAll('meta[name=theme-color]');for(var i=0;i<m.length;i++){m[i].dataset.padrao=m[i].content;m[i].setAttribute('content',c)}}}catch(e){}})()</script>
+    <script>(function(){try{var t=localStorage.getItem('editais-culturais:tema');if(t==='escuro'){document.documentElement.dataset.tema=t;var c=t==='escuro'?'#161513':'#f7f5f0',m=document.querySelectorAll('meta[name=theme-color]');for(var i=0;i<m.length;i++){m[i].dataset.padrao=m[i].content;m[i].setAttribute('content',c)}}}catch(e){}})()</script>
     <link rel="icon" href="../assets/img/icone.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="../assets/img/icone-180.png" />
     <link rel="manifest" href="../manifest.webmanifest" />
@@ -41,7 +40,7 @@
           <a href="../projeto/">Meus projetos</a>
           <a href="../sobre/" aria-current="page">Sobre</a>
         </nav>
-        <button type="button" class="btn btn-tema" data-alternar-tema>Tema: sistema</button>
+        <button type="button" class="btn btn-tema" data-alternar-tema>Tema: claro</button>
       </div>
     </header>
     <main id="conteudo">
@@ -89,7 +88,7 @@
           <li>Guardamos apenas totais por dia, página, país, estado e cidade. Cidade com menos de 5 visitas no mês aparece como “outras cidades”.</li>
           <li>Conta-se uma visita por aba e por dia (via <code>sessionStorage</code>, que some ao fechar a aba). Robôs não contam.</li>
           <li>Se o seu navegador envia “Não rastrear” (DNT) ou Global Privacy Control, a visita é contada sem localização.</li>
-          <li>A escolha de tema (claro, escuro ou sistema) fica no seu navegador (<code>localStorage</code>) e não sai de lá.</li>
+          <li>A escolha de tema (o site abre no claro; o escuro é opcional) fica no seu navegador (<code>localStorage</code>) e não sai de lá.</li>
         </ul>
 
         <h3 id="assistente">Assistente de projetos (opcional, com login)</h3>

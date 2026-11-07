@@ -30,8 +30,8 @@ o Supabase pausar ou estourar a cota.
 | `/sobre/` | metodologia, fontes, limitações, privacidade e contato |
 | `/404.html` | página de erro (usa `<base href="/editais-culturais/">`) |
 
-Links antigos (`/?uf=MG&edital=123`) redirecionam para `/editais/` com os mesmos parâmetros. O site tem tema claro, escuro e
-"sistema" (botão no cabeçalho) e foi desenhado a partir de 360 px.
+Links antigos (`/?uf=MG&edital=123`) redirecionam para `/editais/` com os mesmos parâmetros. O site abre sempre no tema claro; o escuro
+é opcional (botão no cabeçalho) e foi desenhado a partir de 360 px.
 
 ## Assistente de projetos culturais (opcional, com login)
 

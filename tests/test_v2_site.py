@@ -94,10 +94,8 @@ def test_script_de_tema_inline_vem_antes_do_css_e_e_igual_nas_4_paginas():
         assert achado, pagina
         assert achado.start() < html.index('rel="stylesheet"'), pagina
         scripts.add(achado.group(1))
-        assert (
-            html.count('name="theme-color"') == 2 and 'media="(prefers-color-scheme: dark)"' in html
-        )
-        assert 'name="color-scheme" content="light dark"' in html
+        assert html.count('name="theme-color"') == 1 and "prefers-color-scheme" not in html
+        assert 'name="color-scheme" content="light"' in html
     assert len(scripts) == 1
 
 
@@ -124,38 +122,37 @@ def test_tema_salvo_e_aplicado_antes_de_o_css_carregar(navegador, url):
     ctx.close()
 
 
+def escolher_tema(ctx, esquema):
+    """O site abre sempre no claro; para ver o escuro é preciso escolhê-lo (como faz o botão)."""
+    if esquema == "dark":
+        ctx.add_init_script("localStorage.setItem('editais-culturais:tema', 'escuro')")
+
+
 @pytest.mark.parametrize("sistema", ["light", "dark"])
-def test_modo_sistema_segue_prefers_color_scheme(navegador, url, sistema):
+def test_abre_sempre_no_claro_mesmo_com_sistema_escuro(navegador, url, sistema):
     ctx = navegador.new_context(color_scheme=sistema)
     pg = ctx.new_page()
     pronta(pg, url)
-    fundo = pg.evaluate("getComputedStyle(document.body).backgroundColor")
-    assert fundo == ("rgb(22, 21, 19)" if sistema == "dark" else "rgb(247, 245, 240)")
+    assert pg.evaluate("getComputedStyle(document.body).backgroundColor") == "rgb(247, 245, 240)"
     assert pg.evaluate("document.documentElement.dataset.tema") is None
+    assert pg.locator("[data-alternar-tema]").first.inner_text() == "Tema: claro"
     ctx.close()
 
 
-def test_alternar_tema_percorre_sistema_claro_escuro_e_persiste(navegador, url):
-    ctx = navegador.new_context(color_scheme="dark")
+def test_alternar_tema_claro_escuro_e_persiste(navegador, url):
+    ctx = navegador.new_context(color_scheme="dark")  # o sistema escuro não muda o padrão
     pg = ctx.new_page()
     pronta(pg, url)
     botao = pg.locator("[data-alternar-tema]").first
-    assert botao.inner_text() == "Tema: sistema"
+    assert botao.inner_text() == "Tema: claro"
+    assert "escuro" in botao.get_attribute("aria-label")  # anuncia o próximo estado
     botao.click()
     assert (
-        botao.inner_text() == "Tema: claro"
-        and pg.evaluate("document.documentElement.dataset.tema") == "claro"
+        botao.inner_text() == "Tema: escuro"
+        and pg.evaluate("document.documentElement.dataset.tema") == "escuro"
     )
     pg.wait_for_timeout(300)  # transição de cor de 150 ms
-    assert (
-        pg.evaluate("getComputedStyle(document.body).backgroundColor") == "rgb(247, 245, 240)"
-    )  # claro vence o sistema escuro
-    assert "escuro" in botao.get_attribute("aria-label")  # anuncia o próximo estado
-    assert pg.evaluate(
-        "[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#f7f5f0')"
-    )
-    botao.click()
-    assert botao.inner_text() == "Tema: escuro"
+    assert pg.evaluate("getComputedStyle(document.body).backgroundColor") == "rgb(22, 21, 19)"
     assert pg.evaluate(
         "[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#161513')"
     )
@@ -163,16 +160,25 @@ def test_alternar_tema_percorre_sistema_claro_escuro_e_persiste(navegador, url):
     pg.wait_for_selector("html[data-pronto]")
     assert pg.evaluate("document.documentElement.dataset.tema") == "escuro"
     assert pg.locator("[data-alternar-tema]").first.inner_text() == "Tema: escuro"
-    pg.locator("[data-alternar-tema]").first.click()  # volta ao sistema
+    pg.locator("[data-alternar-tema]").first.click()  # volta ao claro
     assert pg.evaluate("document.documentElement.dataset.tema") is None
     assert pg.evaluate("localStorage.getItem('editais-culturais:tema')") is None
-    assert (
-        pg.evaluate(
-            "[...document.querySelectorAll('meta[name=theme-color]')].map(m => m.content).join()"
-        )
-        == "#f7f5f0,#161513"
+    assert pg.evaluate(
+        "[...document.querySelectorAll('meta[name=theme-color]')].every(m => m.content === '#f7f5f0')"
     )
     ctx.close()
+
+
+def test_valor_antigo_sistema_ou_claro_no_storage_abre_no_claro(navegador, url):
+    for antigo in ("sistema", "claro"):
+        ctx = navegador.new_context(color_scheme="dark")
+        pg = ctx.new_page()
+        pg.add_init_script(f"localStorage.setItem('editais-culturais:tema', '{antigo}')")
+        pronta(pg, url)
+        assert (
+            pg.evaluate("getComputedStyle(document.body).backgroundColor") == "rgb(247, 245, 240)"
+        )
+        ctx.close()
 
 
 def test_tema_funciona_sem_localstorage(navegador, url):
@@ -182,7 +188,7 @@ def test_tema_funciona_sem_localstorage(navegador, url):
     )
     pronta(pg, url)
     pg.locator("[data-alternar-tema]").first.click()
-    assert pg.evaluate("document.documentElement.dataset.tema") == "claro"
+    assert pg.evaluate("document.documentElement.dataset.tema") == "escuro"
     assert pg.erros == []
     pg.close()
 
@@ -191,7 +197,6 @@ def test_tema_do_explorador_e_compartilhado_com_a_home(navegador, url):
     ctx = navegador.new_context()
     pg = ctx.new_page()
     pronta(pg, url)
-    pg.locator("[data-alternar-tema]").first.click()
     pg.locator("[data-alternar-tema]").first.click()  # escuro
     pg.goto(url + "editais/")
     pg.wait_for_selector("html[data-pronto]")
@@ -515,6 +520,7 @@ def test_bloco_de_visitantes_com_cartograma_tabela_e_cidades(navegador, url):
     pg.close()
     for esquema in ("light", "dark"):
         ctx = navegador.new_context(viewport={"width": 1280, "height": 800}, color_scheme=esquema)
+        escolher_tema(ctx, esquema)
         outra = ctx.new_page()
         _visitas(outra, resumo=RESUMO)
         pronta(outra, url)
@@ -562,6 +568,7 @@ def contexto_movel(navegador, largura, altura, tema):
         device_scale_factor=2,
         locale="pt-BR",
     )
+    escolher_tema(ctx, tema)
     pg = ctx.new_page()
     erros: list[str] = []
     pg.on(
@@ -688,6 +695,7 @@ def test_desktop_1280x800_nos_dois_temas(navegador, url, tema):
     ctx = navegador.new_context(
         viewport={"width": 1280, "height": 800}, color_scheme=tema, locale="pt-BR"
     )
+    escolher_tema(ctx, tema)
     pg = ctx.new_page()
     erros: list[str] = []
     pg.on("pageerror", lambda e: erros.append(str(e)))
