@@ -1,14 +1,20 @@
 // Contrato da resposta do LLM e validação. O provedor recebe `SCHEMA_RESPOSTA` (modo JSON
 // estruturado); mesmo assim tudo é revalidado aqui, porque o modelo pode errar.
 import { fatosSeguros } from "./privacidade.ts";
+import { TABELAS } from "./tipos_tabelas.ts";
 
 export type Alerta = { nivel: "info" | "aviso"; texto: string };
+/** Linhas que o LLM PROPÕE para uma tabela. Nada é gravado: o usuário aceita, edita ou descarta. */
+export type ItensPropostos = { tabela: string; linhas: Array<Record<string, unknown>> };
+export const MAX_LINHAS_PROPOSTAS = 40;
 export type RespostaAssistente = {
   tipo: "pergunta" | "rascunho";
   perguntas: Array<{ id: string; texto: string }>;
   rascunho: string;
   alertas: Alerta[];
   fatos_novos_ficha: Record<string, unknown>;
+  /** Só em seções estruturadas (orçamento, cronograma, mídia, equipe). */
+  itens_propostos?: ItensPropostos | null;
 };
 
 export class ErroContrato extends Error {}
@@ -35,9 +41,52 @@ export const SCHEMA_RESPOSTA = {
       type: "array",
       items: { type: "object", properties: { chave: { type: "string" }, valor: { type: "string" } }, required: ["chave", "valor"] },
     },
+    // Opcional: só nas seções estruturadas, junto com o rascunho. Todos os campos são opcionais.
+    itens_propostos: {
+      type: "object",
+      properties: {
+        tabela: { type: "string", enum: [...TABELAS] },
+        linhas: {
+          type: "array",
+          items: {
+            type: "object",
+            properties: {
+              etapa: { type: "string", enum: ["pre_producao", "producao", "pos_producao", "divulgacao", "acessibilidade", "administrativo"] },
+              rubrica: { type: "string" },
+              item: { type: "string" },
+              unidade: { type: "string" },
+              quantidade: { type: "number" },
+              valor_unitario: { type: "number", nullable: true },
+              fonte_preco: { type: "string", nullable: true },
+              justificativa: { type: "string" },
+              atividade: { type: "string" },
+              mes_inicio: { type: "integer" },
+              mes_fim: { type: "integer" },
+              peca: { type: "string" },
+              canal: { type: "string" },
+              periodo: { type: "string" },
+              custo: { type: "number", nullable: true },
+              funcao: { type: "string" },
+              nome_artistico_ou_funcao: { type: "string" },
+              mini_curriculo: { type: "string" },
+              local: { type: "string" },
+            },
+          },
+        },
+      },
+      required: ["tabela", "linhas"],
+    },
   },
   required: ["tipo", "perguntas", "rascunho", "alertas", "fatos_novos_ficha"],
 } as const;
+
+function lerItensPropostos(bruto: unknown): ItensPropostos | null {
+  if (!bruto || typeof bruto !== "object" || Array.isArray(bruto)) return null;
+  const { tabela, linhas } = bruto as { tabela?: unknown; linhas?: unknown };
+  if (typeof tabela !== "string" || !TABELAS.includes(tabela) || !Array.isArray(linhas)) return null;
+  const ok = linhas.filter((l) => l && typeof l === "object" && !Array.isArray(l)).slice(0, MAX_LINHAS_PROPOSTAS) as Array<Record<string, unknown>>;
+  return ok.length ? { tabela, linhas: ok } : null;
+}
 
 const MAX_PERGUNTAS = 2;
 
@@ -100,5 +149,7 @@ export function validarResposta(bruto: unknown): RespostaAssistente {
     rascunho: r.tipo === "rascunho" ? rascunho : "",
     alertas,
     fatos_novos_ficha: fatosSeguros(paraObjetoDeFatos(r.fatos_novos_ficha)),
+    // Proposta malformada não derruba a resposta: o texto da seção continua valendo.
+    itens_propostos: r.tipo === "rascunho" ? lerItensPropostos(r.itens_propostos) : null,
   };
 }

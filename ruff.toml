@@ -9,4 +9,9 @@ select = ["E", "F", "I", "UP", "B"]
 "tests/*" = ["E501"]
 # Regex longas e textos de fila (Issues) ficam legíveis em uma linha.
 "worker/*" = ["E501"]
+# Prompts e trechos de edital em uma linha ficam legíveis.
+"scripts/*" = ["E501"]
+"scripts/extrair_criterios/*" = ["E501"]
 "worker/coletores/*" = ["E501"]
+# O fixture `banco` é importado do módulo irmão (um Postgres por arquivo de teste).
+"tests/test_assistente_fase2_sql.py" = ["F811"]

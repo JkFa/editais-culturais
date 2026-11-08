@@ -13,13 +13,16 @@ const secoes = arquivos.map((f) => JSON.parse(ler("specs", "secoes", f))).sort((
 const checagens = JSON.parse(ler("specs", "checagens.json"));
 const versao = createHash("sha256").update(JSON.stringify({ secoes, checagens })).digest("hex").slice(0, 12);
 const pacote = JSON.stringify({ versao, secoes, checagens }, null, 1) + "\n";
-const lib = ler("specs", "lib", "secoes.mjs");
+// Módulos puros compartilhados (um copia por destino; os imports entre eles são relativos, "./x.mjs").
+const modulos = readdirSync(join(raiz, "specs", "lib")).filter((f) => f.endsWith(".mjs") && !f.endsWith(".test.mjs")).sort();
 
 const SAIDAS = [
   ["web/projeto/specs.json", pacote],
-  ["web/assets/js/projeto/secoes.mjs", lib],
   ["supabase/functions/assistente/specs.gen.json", pacote],
-  ["supabase/functions/assistente/secoes.mjs", lib],
+  ...modulos.flatMap((m) => [
+    [`web/assets/js/projeto/${m}`, ler("specs", "lib", m)],
+    [`supabase/functions/assistente/${m}`, ler("specs", "lib", m)],
+  ]),
 ];
 
 const check = process.argv.includes("--check");

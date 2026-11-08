@@ -1,6 +1,7 @@
 // Templates dos prompts como constantes testáveis. Um prompt de sistema fixo, um bloco de
 // contexto (ficha + seções aprovadas + critérios) e um bloco da seção. Texto original do projeto.
 import { fichaPermitida, removerDadosPessoais } from "./privacidade.ts";
+import { ROTULOS_ETAPA, totalDoItem, valorAConfirmar } from "./tipos_tabelas.ts";
 
 export type Pergunta = { id: string; texto: string; obrigatoria?: boolean; canal?: string };
 export type SpecSecao = {
@@ -11,15 +12,35 @@ export type SpecSecao = {
   checagens: string[];
   limite_caracteres_padrao: number;
   instrucoes_redacao: string;
+  saida_estruturada?: { tabela: string; editor: string; etapa_padrao?: string };
 };
 export type Acao = "responder" | "redigir" | "reabrir";
 export type Criterios = {
   criterios?: unknown[];
   teto_orcamento?: number | null;
+  teto_por_proponente?: number | null;
+  percentuais_max?: Record<string, number>;
+  percentuais_min?: Record<string, number>;
+  rubricas_vedadas?: string[];
   linguagens?: string[];
-  campos_exigidos?: Record<string, unknown>;
+  campos_exigidos?: Array<{ nome: string; secao?: string | null }>;
   limites_caracteres?: Record<string, number>;
+  contrapartida_exigida?: string | null;
+  prazo_execucao_meses?: number | null;
+  exige_acessibilidade?: boolean | null;
+  observacoes?: string | null;
+  /** false = lido automaticamente do edital e ainda não conferido por uma pessoa. */
+  revisado?: boolean;
+  fonte_url?: string | null;
 } | null;
+
+/** As tabelas como o LLM pode vê-las: sem nomes de pessoas, sem currículos, sem ids. */
+export type TabelasParaPrompt = {
+  orcamento: Array<Record<string, unknown>>;
+  cronograma: Array<Record<string, unknown>>;
+  midia: Array<Record<string, unknown>>;
+  equipe: Array<Record<string, unknown>>;
+};
 
 export type EntradaPrompt = {
   acao: Acao;
@@ -40,7 +61,28 @@ export type EntradaPrompt = {
   checagensCatalogo: Record<string, string>;
   /** Quantas perguntas de aprofundamento já foram feitas sobre cada pergunta. */
   aprofundamentos: Record<string, number>;
+  /** Tabelas já preenchidas (orçamento, cronograma, mídia, equipe). */
+  tabelas?: TabelasParaPrompt;
 };
+
+type Linha = Record<string, unknown>;
+/** Reduz as tabelas ao que o LLM precisa. A equipe vai só com função e local: nomes e currículos ficam de fora. */
+export function tabelasParaPrompt(t: { orcamento_itens: Linha[]; cronograma_itens: Linha[]; midia_itens: Linha[]; equipe_membros: Linha[] }): TabelasParaPrompt {
+  return {
+    orcamento: t.orcamento_itens.map((i) => ({
+      etapa: ROTULOS_ETAPA[i.etapa as string] ?? i.etapa,
+      rubrica: i.rubrica,
+      item: i.item,
+      quantidade: i.quantidade,
+      valor_unitario: i.valor_unitario ?? null,
+      total: totalDoItem(i),
+      valor_a_confirmar: valorAConfirmar(i),
+    })),
+    cronograma: t.cronograma_itens.map((i) => ({ etapa: ROTULOS_ETAPA[i.etapa as string] ?? i.etapa, atividade: i.atividade, mes_inicio: i.mes_inicio, mes_fim: i.mes_fim })),
+    midia: t.midia_itens.map((i) => ({ peca: i.peca, canal: i.canal, periodo: i.periodo, custo: i.custo ?? null })),
+    equipe: t.equipe_membros.map((m) => ({ funcao: m.funcao, local: m.local, tem_cache_no_orcamento: Array.isArray(m.orcamento_item_ids) && m.orcamento_item_ids.length > 0 })),
+  };
+}
 
 export const PROMPT_SISTEMA = `Você é o Assistente de Projetos Culturais de um portal gratuito de editais. Ajuda pessoas a escrever o projeto que vão inscrever em um edital, uma seção por vez, em português do Brasil, com linguagem simples e respeitosa.
 
@@ -57,7 +99,8 @@ FORMATO DA RESPOSTA (JSON)
 - "perguntas": lista de { "id", "texto" }. Preencha só quando tipo = "pergunta" (no máximo 2). Para perguntas do roteiro use o id exato do roteiro. Para aprofundamento use o id "<id_da_pergunta>:aprofundar".
 - "rascunho": o texto da seção. Preencha só quando tipo = "rascunho"; caso contrário, string vazia.
 - "alertas": lista de { "nivel": "info" | "aviso", "texto" } com as checagens da seção que falharam ou dúvidas úteis. Pode ser vazia.
-- "fatos_novos_ficha": lista de pares { "chave", "valor" } com fatos objetivos novos que a pessoa acabou de dar (chaves em minúsculas_com_sublinhado). Sem dados pessoais. Pode ser vazia.`;
+- "fatos_novos_ficha": lista de pares { "chave", "valor" } com fatos objetivos novos que a pessoa acabou de dar (chaves em minúsculas_com_sublinhado). Sem dados pessoais. Pode ser vazia.
+- "itens_propostos": OPCIONAL e só nas seções com tabela (veja "Saída estruturada" na seção). { "tabela", "linhas": [...] } com linhas PROPOSTAS para a pessoa aceitar, editar ou descartar. Só junto de tipo = "rascunho". Nunca invente preço, nome de pessoa ou data: o que a pessoa não disse fica nulo ou vazio.`;
 
 export const TAREFA_RESPONDER = `TAREFA: conduzir a conversa desta seção.
 1. Faça as perguntas obrigatórias que ainda não foram respondidas, 1 ou 2 por vez, em tom de conversa. Use o texto do roteiro, adaptando-o ao que a pessoa já contou.
@@ -82,19 +125,70 @@ export function jsonEstavel(v: unknown): string {
   return JSON.stringify(ordenar(v), null, 2);
 }
 
+/** Critérios do edital no formato do prompt, ou null quando não há nada aproveitável. */
+export function resumoCriterios(c: Criterios): Record<string, unknown> | null {
+  if (!c) return null;
+  const itens = (c.criterios ?? []).map((x) => {
+    if (x && typeof x === "object") {
+      const { nome, descricao, peso, nota_max } = x as Record<string, unknown>;
+      return { nome, descricao, peso, nota_max };
+    }
+    return x;
+  });
+  const saida: Record<string, unknown> = {};
+  if (itens.length) saida.criterios_de_avaliacao = itens;
+  if (c.teto_orcamento) saida.teto_orcamento = c.teto_orcamento;
+  if (c.teto_por_proponente) saida.teto_por_proponente = c.teto_por_proponente;
+  if (Object.keys(c.percentuais_max ?? {}).length) saida.percentuais_maximos_por_etapa = c.percentuais_max;
+  if (Object.keys(c.percentuais_min ?? {}).length) saida.percentuais_minimos_por_etapa = c.percentuais_min;
+  if (c.rubricas_vedadas?.length) saida.rubricas_vedadas = c.rubricas_vedadas;
+  if (Object.keys(c.limites_caracteres ?? {}).length) saida.limites_de_caracteres = c.limites_caracteres;
+  if (c.campos_exigidos?.length) saida.campos_exigidos = c.campos_exigidos.map((x) => x.nome);
+  if (c.contrapartida_exigida) saida.contrapartida_exigida = c.contrapartida_exigida;
+  if (c.prazo_execucao_meses) saida.prazo_execucao_meses = c.prazo_execucao_meses;
+  if (c.exige_acessibilidade != null) saida.exige_acessibilidade = c.exige_acessibilidade;
+  if (c.observacoes) saida.observacoes = c.observacoes;
+  if (!Object.keys(saida).length) return null;
+  if (c.revisado === false) saida.aviso = "Critérios lidos automaticamente do edital e ainda não conferidos: trate como indicação, não como regra.";
+  return saida;
+}
+
 export function blocoContexto(e: EntradaPrompt): string {
   const partes = ["## CONTEXTO DO PROJETO", "### Ficha (fatos já informados)", jsonEstavel(fichaPermitida(e.ficha))];
   partes.push("### Edital", e.edital.titulo ? `Título: ${e.edital.titulo}` : "Projeto avulso (sem edital vinculado).");
-  const c = e.criterios;
-  if (c && (c.criterios?.length || c.teto_orcamento || Object.keys(c.limites_caracteres ?? {}).length)) {
+  const c = resumoCriterios(e.criterios);
+  if (c) {
     partes.push("### Critérios do edital (use o vocabulário só se for verdade para o projeto)", jsonEstavel(c));
   } else {
     partes.push("### Critérios do edital", "Não disponíveis. Use as orientações padrão.");
+  }
+  if (e.tabelas && (e.tabelas.orcamento.length || e.tabelas.cronograma.length || e.tabelas.midia.length || e.tabelas.equipe.length)) {
+    partes.push("### Tabelas do projeto até agora (orçamento, cronograma, mídia e equipe; equipe sem nomes)", jsonEstavel(e.tabelas));
   }
   partes.push("### Seções já aprovadas (consistência)");
   if (e.aprovadas.length === 0) partes.push("Nenhuma ainda.");
   for (const a of e.aprovadas) partes.push(`#### ${a.titulo}`, a.rascunho);
   return partes.join("\n");
+}
+
+const CAMPOS_DA_TABELA: Record<string, string> = {
+  orcamento_itens: 'etapa (pre_producao | producao | pos_producao | divulgacao | acessibilidade | administrativo), rubrica, item, unidade, quantidade, valor_unitario (número em reais ou null), fonte_preco (ou null), justificativa',
+  cronograma_itens: "etapa (mesmos valores do orçamento), atividade, mes_inicio e mes_fim (inteiros; mês 1 = primeiro mês de execução)",
+  midia_itens: "peca, canal, periodo, quantidade, custo (número em reais ou null)",
+  equipe_membros: "funcao, nome_artistico_ou_funcao (só se a pessoa informou o nome; senão repita a função), mini_curriculo (2 a 3 linhas, só com o que a pessoa contou), local",
+};
+
+export function blocoSaidaEstruturada(s: { tabela: string; etapa_padrao?: string }): string {
+  const linhas = [
+    "### Saída estruturada (itens_propostos)",
+    `Tabela desta seção: ${s.tabela}. Campos de cada linha: ${CAMPOS_DA_TABELA[s.tabela] ?? "ver spec"}.`,
+    "Regras: proponha linhas só com o que a pessoa disse; não repita linhas que já estão em \"Tabelas do projeto\"; no máximo 25 linhas; só junto de tipo = \"rascunho\".",
+  ];
+  if (s.tabela === "orcamento_itens" || s.tabela === "midia_itens") {
+    linhas.push("PREÇO: preencha valor_unitario/custo e fonte_preco SOMENTE se a pessoa escreveu esse valor nas respostas. Se não escreveu, use null: o valor fica \"a confirmar\" e a pessoa preenche no editor. Você nunca decide o preço.");
+  }
+  if (s.etapa_padrao) linhas.push(`Todas as linhas desta seção são da etapa "${s.etapa_padrao}".`);
+  return linhas.join("\n");
 }
 
 export function blocoSecao(e: EntradaPrompt): string {
@@ -113,6 +207,7 @@ export function blocoSecao(e: EntradaPrompt): string {
   if (e.respostas.length === 0) linhas.push("Nenhuma ainda.");
   for (const r of e.respostas) linhas.push(`- [${r.pergunta_id}] ${r.resposta}`);
   linhas.push("### Aprofundamentos já feitos (máximo 2 por pergunta)", jsonEstavel(e.aprofundamentos));
+  if (e.spec.saida_estruturada) linhas.push(blocoSaidaEstruturada(e.spec.saida_estruturada));
   linhas.push("### Checagens desta seção");
   for (const c of e.spec.checagens) linhas.push(`- ${e.checagensCatalogo[c] ?? c}`);
   if (e.historico.length) {

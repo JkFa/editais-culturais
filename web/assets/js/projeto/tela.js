@@ -2,6 +2,13 @@
 import { formatarDataHora, el } from "../formatos.js";
 import { ErroApi } from "./api.js";
 import { preencher } from "./dom.js";
+import { criarControle } from "./editor-base.js";
+import { criarEditorCronograma } from "./editor-cronograma.js";
+import { criarEditorEquipe } from "./editor-equipe.js";
+import { criarEditorMidia } from "./editor-midia.js";
+import { criarEditorOrcamento } from "./editor-orcamento.js";
+import { criarPainelPendencias } from "./pendencias.js";
+import { criarPropostas } from "./propostas.js";
 import { abrirExportacao } from "./exportar.js";
 import { abrirProponente } from "./proponente.js";
 import { perguntasAplicaveis, secoesDoFluxo } from "./secoes.mjs";
@@ -14,7 +21,14 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   const { api, specs, raiz } = ctx;
   const projeto = await api.carregarProjeto(id);
   if (!projeto) throw new ErroApi(404, "Projeto não encontrado. Ele pode ter sido excluído.");
-  const [linhas, comConversa] = await Promise.all([api.secoesDoProjeto(id), api.secoesComConversa(id)]);
+  // Tabelas e critérios são da Fase 2: se o banco ainda não tem essas tabelas, o projeto abre mesmo assim.
+  const vazias = { orcamento_itens: [], cronograma_itens: [], midia_itens: [], equipe_membros: [] };
+  const [linhas, comConversa, tabelas, criterios] = await Promise.all([
+    api.secoesDoProjeto(id),
+    api.secoesComConversa(id),
+    api.tabelas(id).catch(() => vazias),
+    api.criterios(projeto.edital_id).catch(() => null),
+  ]);
   const secoes = secoesDoFluxo(specs.secoes, projeto.fluxo);
   const estado = {
     projeto,
@@ -29,7 +43,15 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     uso: null,
     painel: "chat",
     sujo: false,
+    proposta: null, // { tabela, linhas } da última resposta do assistente na seção atual
+    criterios,
   };
+  // Um controle por tabela (estado, validação e salvamento automático); os editores só desenham.
+  const controles = Object.fromEntries(
+    Object.keys(vazias).map((t) => [t, criarControle({ tabela: t, api, projetoId: id, linhas: tabelas[t] ?? [], avisar: ctx.avisar, aoMudar: () => pendencias?.atualizar() })]),
+  );
+  let pendencias = null;
+  const editores = new Map();
   const specDe = (sid) => secoes.find((s) => s.id === sid);
   const linhaDe = (sid) => estado.linhas.get(sid) ?? null;
   const ativas = secoes.filter((s) => s.ativo !== false);
@@ -47,8 +69,9 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   const barraSecoes = el("nav", { class: "secoes", "aria-label": "Seções do projeto" });
   const painelChat = el("section", { class: "painel-chat", "aria-labelledby": "titulo-chat" });
   const painelRascunho = el("section", { class: "painel-rascunho", "aria-labelledby": "titulo-rascunho" });
+  const painelTabela = el("section", { class: "painel-tabela", "aria-labelledby": "titulo-tabela", hidden: true });
   const abas = el("div", { class: "abas", role: "tablist", "aria-label": "Painel" });
-  const grade = el("div", { class: "projeto-grade", "data-painel": "chat" }, barraSecoes, painelChat, painelRascunho);
+  const grade = el("div", { class: "projeto-grade", "data-painel": "chat" }, barraSecoes, painelChat, painelRascunho, painelTabela);
 
   function mudarPainel(qual) {
     estado.painel = qual;
@@ -56,8 +79,10 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     renderAbas();
   }
   function renderAbas() {
+    const estruturada = Boolean(specDe(estado.atual)?.saida_estruturada);
+    if (!estruturada && estado.painel === "tabela") mudarPainel("rascunho");
     preencher(abas, 
-      ...[["chat", "Conversa"], ["rascunho", "Rascunho"]].map(([k, rot]) =>
+      ...[["chat", "Conversa"], ["rascunho", "Rascunho"], ...(estruturada ? [["tabela", "Tabela"]] : [])].map(([k, rot]) =>
         el("button", { type: "button", role: "tab", class: "aba", "aria-selected": String(estado.painel === k), onclick: () => mudarPainel(k) }, rot)),
     );
   }
@@ -65,6 +90,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   // ───────────────────────── barra lateral
   let menuAberto = false;
   function renderSecoes() {
+    pendencias?.atualizar();
     const lista = el("ol", { class: "lista-secoes" },
       secoes.map((s) => {
         const st = statusDe(s);
@@ -201,10 +227,11 @@ export async function telaProjeto(ctx, id, secaoPedida) {
       estado.limite = r.limite_caracteres;
       estado.uso = r.uso;
       estado.alertas = r.alertas ?? [];
+      estado.proposta = r.itens_propostos?.linhas?.length ? r.itens_propostos : null;
       estado.comConversa.add(sid);
       await atualizarDoServidor();
       if (r.tipo === "rascunho") {
-        ctx.avisar("Rascunho pronto.");
+        ctx.avisar(estado.proposta ? "Rascunho pronto, com linhas sugeridas para a tabela." : "Rascunho pronto.");
         mudarPainel("rascunho");
       }
     } catch (e) {
@@ -215,6 +242,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
       if (estado.atual === sid) {
         renderChat();
         renderRascunho();
+        renderTabela();
         renderSecoes();
       }
     }
@@ -222,7 +250,8 @@ export async function telaProjeto(ctx, id, secaoPedida) {
 
   // ───────────────────────── rascunho
   let areaTexto = null;
-  const limiteDe = (s) => estado.limite ?? s.limite_caracteres_padrao;
+  // limite do edital (se foi lido) antes do padrão do spec; a função devolve o mesmo valor a cada resposta
+  const limiteDe = (s) => estado.limite ?? (Number(estado.criterios?.limites_caracteres?.[s.id]) || s.limite_caracteres_padrao);
 
   function alertasDaUltimaResposta() {
     const ultima = [...estado.mensagens].reverse().find((m) => m.papel === "assistente" && m.conteudo?.tipo === "rascunho");
@@ -355,7 +384,9 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   // ───────────────────────── navegação entre seções
   async function abrirSecao(sid) {
     if (estado.sujo) await salvar(true);
+    await Promise.all(Object.values(controles).filter((c) => c.sujo()).map((c) => c.salvar()));
     estado.atual = sid;
+    estado.proposta = null;
     estado.erro = null;
     estado.alertas = [];
     estado.mensagens = [];
@@ -366,14 +397,101 @@ export async function telaProjeto(ctx, id, secaoPedida) {
     renderSecoes();
     renderChat();
     renderRascunho();
+    renderTabela();
+    renderAbas();
     try {
       estado.mensagens = await api.mensagens(estado.projeto.id, sid);
     } catch (e) {
       estado.erro = { mensagem: e.message };
     }
     if (estado.atual !== sid) return;
+    // A última proposta de linhas do assistente continua disponível ao reabrir a seção.
+    const ultima = [...estado.mensagens].reverse().find((m) => m.papel === "assistente" && m.conteudo?.itens_propostos?.linhas?.length);
+    estado.proposta = ultima?.conteudo?.itens_propostos ?? null;
     renderChat();
     renderRascunho();
+    renderTabela();
+  }
+
+  // ───────────────────────── tabela (orçamento, cronograma, mídia, equipe)
+  const ROTULO_EDITOR = { orcamento: "Orçamento", cronograma: "Cronograma", midia: "Plano de mídia", equipe: "Equipe" };
+
+  function editorDe(spec) {
+    const { tabela, editor, etapa_padrao: foco } = spec.saida_estruturada;
+    const chave = `${editor}:${foco ?? ""}`;
+    if (!editores.has(chave)) {
+      const c = controles[tabela];
+      const orcamento = () => controles.orcamento_itens.linhas;
+      const novo = {
+        orcamento: () => criarEditorOrcamento({ c, criterios: estado.criterios, ficha: estado.projeto.ficha, etapaEmFoco: foco ?? null }),
+        cronograma: () => criarEditorCronograma({ c, criterios: estado.criterios }),
+        midia: () => criarEditorMidia({ c, orcamento }),
+        equipe: () => criarEditorEquipe({ c, orcamento }),
+      }[editor]();
+      editores.set(chave, novo);
+    }
+    return editores.get(chave);
+  }
+
+  function renderTabela() {
+    const s = specDe(estado.atual);
+    const estruturada = s?.saida_estruturada;
+    painelTabela.hidden = !estruturada;
+    if (!estruturada) return preencher(painelTabela);
+    const c = controles[estruturada.tabela];
+    const ed = editorDe(s);
+    ed.redesenhar();
+    const propostas = criarPropostas({
+      c,
+      tabela: estruturada.tabela,
+      proposta: estado.proposta,
+      chaveSessao: `prop:${estado.projeto.id}:${s.id}`,
+      aoAceitar: (linha, editar) => {
+        const l = c.adicionar({ ...linha, ...(estruturada.etapa_padrao ? { etapa: estruturada.etapa_padrao } : {}) });
+        ed.redesenhar();
+        if (editar) painelTabela.querySelector(`[data-id="${l.id}"] input, [data-id="${l.id}"] textarea`)?.focus();
+      },
+    });
+    preencher(painelTabela,
+      el("h2", { id: "titulo-tabela" }, ROTULO_EDITOR[estruturada.editor], estruturada.etapa_padrao ? " · só a etapa Acessibilidade" : ""),
+      propostas.no,
+      ed.no);
+  }
+
+  // ───────────────────────── pendências e aviso de critérios
+  const titulosDasSecoes = Object.fromEntries(ativas.map((s) => [s.id, s.titulo]));
+  pendencias = criarPainelPendencias({
+    titulos: titulosDasSecoes,
+    irPara: async (sid) => {
+      await abrirSecao(sid);
+      const s = specDe(sid);
+      mudarPainel(s?.saida_estruturada ? "tabela" : "rascunho");
+      (s?.saida_estruturada ? painelTabela : painelRascunho).scrollIntoView?.({ block: "start" });
+    },
+    coletar: () => ({
+      specs: ativas,
+      secoes: Object.fromEntries(ativas.map((s) => [s.id, { rascunho: linhaDe(s.id)?.rascunho ?? "" }])),
+      orcamento: controles.orcamento_itens.linhas,
+      cronograma: controles.cronograma_itens.linhas,
+      midia: controles.midia_itens.linhas,
+      equipe: controles.equipe_membros.linhas,
+      criterios: estado.criterios,
+      ficha: estado.projeto.ficha ?? {},
+      ligacoes: null,
+    }),
+  });
+
+  /** Critérios lidos por máquina e ainda não conferidos por uma pessoa: o aviso fica em toda tela do projeto. */
+  function avisoCriterios() {
+    const c = estado.criterios;
+    // sem nada lido (documento sem critérios aproveitáveis) não há o que conferir
+    const temConteudo = c && (c.criterios?.length || c.teto_orcamento || c.teto_por_proponente || c.contrapartida_exigida || c.prazo_execucao_meses || c.exige_acessibilidade != null || c.campos_exigidos?.length || c.rubricas_vedadas?.length || Object.keys(c.percentuais_max ?? {}).length || Object.keys(c.percentuais_min ?? {}).length || Object.keys(c.limites_caracteres ?? {}).length);
+    if (!c || c.revisado || !temConteudo) return null;
+    const doc = c.fonte_url || projeto.edital_url;
+    return el("p", { class: "aviso-fixo aviso-criterios", role: "note" },
+      el("strong", {}, "Critérios lidos automaticamente — confira no edital. "),
+      "Os limites, o teto e os percentuais usados aqui foram lidos do edital por um programa e ainda não foram conferidos por uma pessoa. ",
+      doc ? el("a", { href: doc, target: "_blank", rel: "noopener noreferrer" }, "Abrir o documento do edital") : null);
   }
 
   // ───────────────────────── cabeçalho
@@ -391,9 +509,11 @@ export async function telaProjeto(ctx, id, secaoPedida) {
         el("p", { class: "fonte" }, projeto.edital_titulo ? ["Edital: ", criarLinkEdital() ?? projeto.edital_titulo] : "Projeto avulso (sem edital)")),
       el("div", { class: "acoes" },
         el("button", { type: "button", class: "btn", onclick: () => abrirProponente(ctx, estado.projeto) }, "Dados do proponente"),
-        el("button", { type: "button", class: "btn", onclick: () => abrirExportacao(ctx, { projeto: estado.projeto, secoes: ativas, linhaDe }) }, "Exportar e copiar"))),
+        el("button", { type: "button", class: "btn", onclick: () => abrirExportacao(ctx, { projeto: estado.projeto, secoes: ativas, linhaDe, criterios: estado.criterios, tabelas: () => ({ orcamento: controles.orcamento_itens.linhas, cronograma: controles.cronograma_itens.linhas, midia: controles.midia_itens.linhas, equipe: controles.equipe_membros.linhas }) }) }, "Exportar e copiar"))),
     el("p", { class: "aviso-fixo" }, AVISO_IA, " ", projeto.edital_url ? ["Regras: ", criarLinkEdital(), "."] : null),
     el("details", { class: "aviso-fixo" }, el("summary", {}, "Privacidade: o que vai para a IA"), el("p", {}, AVISO_PRIVACIDADE)),
+    avisoCriterios(),
+    pendencias.no,
     abas,
     grade,
   );

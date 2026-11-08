@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
 
 Sitemap: https://jkfa.github.io/editais-culturais/sitemap.xml

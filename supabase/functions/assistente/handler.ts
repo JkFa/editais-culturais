@@ -3,7 +3,9 @@ import { ErroContrato, lerJsonDoModelo, SCHEMA_RESPOSTA, validarResposta } from 
 import type { Alerta, RespostaAssistente } from "./contrato.ts";
 import { ErroLlm } from "./llm.ts";
 import type { ProvedorLlm } from "./llm.ts";
-import { montarPrompt } from "./prompts.ts";
+import { filtrarItensPropostos, salvarItens } from "./itens.ts";
+import { montarPrompt, tabelasParaPrompt } from "./prompts.ts";
+import { resumoOrcamento } from "./tipos_tabelas.ts";
 import type { Acao, SpecSecao } from "./prompts.ts";
 import { removerDadosPessoais } from "./privacidade.ts";
 import { ErroBanco } from "./repositorio.ts";
@@ -41,6 +43,38 @@ function resposta(corpo: unknown, status: number, cors: Record<string, string>):
 const erro = (status: number, codigo: string, mensagem: string, cors: Record<string, string>) =>
   resposta({ erro: codigo, mensagem }, status, cors);
 
+/** Grava orçamento, cronograma, mídia ou equipe. Sem LLM e sem gastar o limite diário. */
+async function tratarSalvarItens(
+  d: Deps,
+  token: string,
+  entrada: { projeto_id?: unknown; tabela?: unknown; linhas?: unknown },
+  cors: Record<string, string>,
+  inicio: number,
+): Promise<Response> {
+  const log = (extra: Record<string, unknown>) => d.log({ evento: "assistente", acao: "salvar_itens", ms: Date.now() - inicio, ...extra });
+  const projetoId = entrada.projeto_id;
+  if (typeof projetoId !== "string" || !UUID.test(projetoId)) return erro(400, "projeto_id", "Projeto inválido.", cors);
+  try {
+    const userId = await d.repo.usuarioDoToken(token);
+    if (!userId) return erro(401, "sessao_invalida", "Sua sessão expirou. Entre de novo.", cors);
+    const projeto = await d.repo.carregarProjeto(token, projetoId);
+    if (!projeto || projeto.user_id !== userId) {
+      log({ status: 404 });
+      return erro(404, "projeto_nao_encontrado", "Projeto não encontrado.", cors);
+    }
+    const r = await salvarItens(d.repo, { projetoId, tabela: entrada.tabela, linhas: entrada.linhas });
+    if (!r.ok) {
+      log({ status: r.codigo === "validacao" ? 422 : 400, tabela: entrada.tabela });
+      return resposta({ erro: r.codigo, mensagem: r.mensagem, erros: r.erros ?? [] }, r.codigo === "validacao" ? 422 : 400, cors);
+    }
+    log({ status: 200, tabela: r.tabela, linhas: r.linhas.length });
+    return resposta({ tabela: r.tabela, linhas: r.linhas, resumo: r.resumo ?? null, avisos: r.avisos }, 200, cors);
+  } catch (e) {
+    log({ status: 500, tipo: e instanceof ErroBanco ? "banco" : "interno" });
+    return erro(500, "interno", "Não consegui salvar agora. Seus dados continuam na tela; tente de novo.", cors);
+  }
+}
+
 export function criarHandler(d: Deps) {
   return async function (req: Request): Promise<Response> {
     const inicio = Date.now();
@@ -60,13 +94,14 @@ export function criarHandler(d: Deps) {
     const token = /^Bearer\s+(.+)$/i.exec(req.headers.get("authorization") ?? "")?.[1];
     if (!token) return erro(401, "nao_autenticado", "Entre na sua conta para usar o assistente.", cors);
 
-    let entrada: { projeto_id?: unknown; secao_id?: unknown; acao?: unknown; mensagem?: unknown };
+    let entrada: { projeto_id?: unknown; secao_id?: unknown; acao?: unknown; mensagem?: unknown; tabela?: unknown; linhas?: unknown };
     try {
       entrada = await req.json();
     } catch {
       return erro(400, "json", "Corpo da requisição inválido.", cors);
     }
     const { projeto_id, secao_id, acao } = entrada;
+    if (acao === "salvar_itens") return await tratarSalvarItens(d, token, entrada, cors, inicio);
     if (typeof projeto_id !== "string" || !UUID.test(projeto_id)) return erro(400, "projeto_id", "Projeto inválido.", cors);
     if (typeof secao_id !== "string" || !/^[a-z_]{2,40}$/.test(secao_id)) return erro(400, "secao_id", "Seção inválida.", cors);
     if (typeof acao !== "string" || !ACOES.has(acao as Acao)) return erro(400, "acao", "Ação inválida.", cors);
@@ -99,9 +134,11 @@ export function criarHandler(d: Deps) {
       }
 
       // 3. Contexto (sem dados pessoais).
-      const [ctx, criterios] = await Promise.all([
+      const [ctx, criterios, tabelas, textosDoUsuario] = await Promise.all([
         d.repo.carregarSecao(token, projeto_id, secao_id, spec.depende_de ?? []),
         d.repo.carregarCriterios(token, projeto.edital_id),
+        d.repo.carregarTabelas(token, projeto_id),
+        d.repo.carregarTextosDoUsuario(token, projeto_id),
       ]);
       const alertasServidor: Alerta[] = [];
       let mensagem: string | undefined;
@@ -122,7 +159,8 @@ export function criarHandler(d: Deps) {
       }
       const todasRespostas = [...ctx.respostas, ...novasRespostas];
       const respondidas = new Set(todasRespostas.flatMap((r) => r.pergunta_id.split("+")));
-      const contexto = { ficha: projeto.ficha ?? {} };
+      // `criterios.*` alimenta as perguntas condicionais das seções 6 a 11 (ausente = null).
+      const contexto = { ficha: projeto.ficha ?? {}, criterios: criterios ?? {} };
       const aplicaveis = perguntasAplicaveis(spec, contexto, { canal: "chat" });
       const pend: string[] = calcularPendentes(spec, contexto, respondidas).map((p: { id: string }) => p.id);
       const aprofundamentos: Record<string, number> = {};
@@ -156,6 +194,7 @@ export function criarHandler(d: Deps) {
         limite,
         checagensCatalogo: d.specs.checagens,
         aprofundamentos,
+        tabelas: tabelasParaPrompt(tabelas),
       };
       const { sistema, usuario } = montarPrompt(entradaPrompt);
 
@@ -186,7 +225,25 @@ export function criarHandler(d: Deps) {
         const faltas = (saida.rascunho.match(/\[COMPLETAR:/g) ?? []).length;
         if (faltas) alertasServidor.push({ nivel: "info", texto: `Há ${faltas} ponto(s) marcado(s) com [COMPLETAR]. Preencha antes de aprovar.` });
       }
+      // Seções com tabela: o que o LLM propôs só passa pelas regras de preço, nome e tabela certa.
+      if (spec.saida_estruturada) {
+        const f = filtrarItensPropostos(saida.itens_propostos, {
+          tabelaEsperada: spec.saida_estruturada.tabela,
+          etapaPadrao: spec.saida_estruturada.etapa_padrao,
+          textosUsuario: [...textosDoUsuario, ...(mensagem ? [mensagem] : [])],
+        });
+        saida.itens_propostos = f.itens;
+        if (f.precosRemovidos) {
+          alertasServidor.push({ nivel: "info", texto: `Tirei ${f.precosRemovidos} valor(es) que você não informou: esses itens ficam como "valor a confirmar" e você preenche no editor.` });
+        }
+      } else {
+        saida.itens_propostos = null;
+      }
       const teto = Number(criterios?.teto_orcamento) || Number(projeto.ficha?.edital_teto_por_projeto);
+      if (spec.id === "orcamento" && teto > 0) {
+        const total = resumoOrcamento(tabelas.orcamento_itens).total;
+        if (total > teto) alertasServidor.push({ nivel: "aviso", texto: `O total do orçamento (R$ ${total.toLocaleString("pt-BR")}) passa do teto do edital (R$ ${teto.toLocaleString("pt-BR")}).` });
+      }
       const custo = Number((saida.fatos_novos_ficha.custo_estimado ?? projeto.ficha?.custo_estimado) as unknown);
       if (spec.id === "ficha" && teto > 0 && custo > teto) {
         alertasServidor.push({ nivel: "aviso", texto: `O custo estimado passa do teto do edital (R$ ${teto.toLocaleString("pt-BR")}).` });

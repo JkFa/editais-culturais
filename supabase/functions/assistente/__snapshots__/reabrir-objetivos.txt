@@ -14,6 +14,7 @@ FORMATO DA RESPOSTA (JSON)
 - "rascunho": o texto da seção. Preencha só quando tipo = "rascunho"; caso contrário, string vazia.
 - "alertas": lista de { "nivel": "info" | "aviso", "texto" } com as checagens da seção que falharam ou dúvidas úteis. Pode ser vazia.
 - "fatos_novos_ficha": lista de pares { "chave", "valor" } com fatos objetivos novos que a pessoa acabou de dar (chaves em minúsculas_com_sublinhado). Sem dados pessoais. Pode ser vazia.
+- "itens_propostos": OPCIONAL e só nas seções com tabela (veja "Saída estruturada" na seção). { "tabela", "linhas": [...] } com linhas PROPOSTAS para a pessoa aceitar, editar ou descartar. Só junto de tipo = "rascunho". Nunca invente preço, nome de pessoa ou data: o que a pessoa não disse fica nulo ou vazio.
 
 =====
 

@@ -1,4 +1,4 @@
-# Assistente de Projetos Culturais (Fase 1)
+# Assistente de Projetos Culturais (Fases 1 e 2)
 
 Escrita guiada, por conversa, de um projeto para um edital, seção por seção. A IA faz perguntas, aponta lacunas
 e redige rascunhos **só com os fatos que a pessoa deu**. Onde falta informação, escreve `[COMPLETAR: ...]`.
@@ -143,10 +143,89 @@ idempotência) e confere, com papéis `anon`/`authenticated`/`service_role` e `a
 - o limite diário é atômico (1, 2, 3, depois -1) e só a `service_role` chama a RPC;
 - excluir o edital não apaga o projeto (`edital_id` vira nulo; título e link ficam copiados no projeto).
 
-## Roadmap
+## Fase 2: orçamento, cronograma, mídia, equipe e critérios dos editais
 
-Fora desta fase, mas com ponto de extensão pronto: orçamento e cronograma em `.xlsx` (seções 10–11 já existem como
-"em breve"); extração automática de critérios dos editais (a tabela `edital_criterios` já é consultada e usa valores
-padrão quando vazia); Modo Parecerista; busca semântica (RAG/pgvector); fluxo audiovisual (`fluxo = 'audiovisual'` já
-existe nas tabelas e nas specs); Recurso; conversa livre. Seções 6–11 (acessibilidade, democratização, comunicação,
-equipe, cronograma, orçamento) entram criando JSONs.
+Seções 6–11 (acessibilidade, democratização, comunicação, equipe, cronograma, orçamento) estão ativas, com perguntas e
+condicionais nos JSONs de `specs/secoes/`. As quatro últimas têm **editor de tabela** além do chat.
+
+### Tabelas do projeto
+
+`orcamento_itens`, `cronograma_itens`, `midia_itens`, `equipe_membros` (migration `20261109120000_assistente_fase2.sql`).
+O usuário só tem **SELECT** pela RLS; a escrita passa pela função `assistente` (ação `salvar_itens`, sem LLM e sem gastar o limite
+diário), que valida cada linha, confere que ids e ligações pertencem ao projeto e grava com `service_role`.
+Regras puras (totais, etapas, valor a confirmar, checagens) ficam em `specs/lib/*.mjs`, **o mesmo código** no front e na função
+(`scripts/sincronizar_specs.mjs`, conferido no CI com `--check`).
+
+- **Preço nunca vem da IA.** A função só aceita um valor proposto pelo modelo se o número aparece em algo que a pessoa escreveu;
+  senão grava `null` e o editor mostra "valor a confirmar". Nomes da equipe só se a pessoa os escreveu; nomes e currículos da equipe
+  nunca entram no prompt.
+- **Propostas:** o rascunho pode trazer `itens_propostos`; o painel mostra cada um para aceitar, editar ou descartar.
+- **Pendências do projeto:** painel com as checagens cruzadas (total acima do teto, percentual de etapa fora do limite do edital,
+  mídia sem custo no orçamento, equipe sem item de orçamento, cronograma além do prazo, etc.). Catálogo em `specs/checagens.json`.
+
+### Exportação
+
+- **.xlsx** (ExcelJS, carregado do CDN, gerado no navegador): abas Orçamento, Resumo, Cronograma, Plano de mídia, com **fórmulas de
+  verdade** (`=E*F`, `SUBTOTAL`, `SUMIF` entre abas, `IF/AND` para a situação), formatação condicional e cabeçalho congelado.
+  Testado no LibreOffice (`tests/test_assistente_xlsx.py`): mudar uma quantidade recalcula tudo.
+- **.docx:** seções 6–11 com tabelas-resumo (orçamento por etapa, cronograma, mídia, equipe sem dados pessoais).
+- **Copiar por campo:** segue `campos_exigidos` do edital, quando extraído.
+
+### Critérios dos editais (extração automática)
+
+`scripts/extrair_criterios/` roda no GitHub Actions (job `criterios` em `.github/workflows/sync_editais.yml`, **depois** da coleta,
+com timeout próprio e `continue-on-error`: se falhar, a coleta já foi commitada).
+
+1. Planeja a fila (`extracao_fila`): editais brasileiros abertos, os com mais projetos primeiro, depois o prazo mais próximo; no máximo
+   `MAX_EDITAIS_POR_DIA` por execução (padrão **20**, variável do repositório). Reconfere um edital já extraído se o link mudou ou
+   passaram 30 dias; erro tenta de novo até 3 vezes.
+2. Baixa o PDF (ou a página) com `ClienteWeb` (respeita `robots.txt`, User-Agent identificado, intervalo entre pedidos). **403 não é
+   contornado:** o edital vira `sem_documento`. PDFs com mais de 8 MB e PDFs escaneados (sem texto) também.
+3. Compara o hash com o da extração anterior: documento igual **não chama o LLM**.
+4. Texto por `pdftotext`/`pypdf`, dividido em partes por página; Gemini com *structured output* e temperatura 0.
+5. **Validação:** cada valor precisa vir com um `trecho` que **exista literalmente** no documento (comparação normalizada) e, para
+   números, o número tem de aparecer no trecho. Sem isso o campo é descartado (fica `null`, nunca inventado). Pesos em fração que não
+   somam 1 são removidos. Trecho gravado com até 200 caracteres e página.
+6. Grava `edital_criterios` com `revisado = false`, `fonte_url`, `fonte_hash`, `modelo_llm` e `evidencias`.
+
+O assistente usa os critérios na hora de perguntar e de checar (teto, percentuais, limites de caracteres, campos exigidos) e o front
+mostra **"critérios lidos automaticamente — confira no edital"** enquanto `revisado = false`. Sem critérios, tudo continua como na Fase 1.
+
+| Nome | Onde | Padrão | Para quê |
+|---|---|---|---|
+| `GEMINI_API_KEY` | **GitHub Secret** do repositório | — | extração. Sem ela o job só atualiza a fila |
+| `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` | GitHub Secrets (já existem) | — | gravar fila e critérios |
+| `MAX_EDITAIS_POR_DIA` | variável do repositório | `20` | teto de editais por execução (cota gratuita do Gemini) |
+| `GEMINI_MODEL` | variável do repositório | `gemini-3.6-flash` | modelo da extração |
+
+Rodar à mão: workflow "Sincronizar editais" com `somente_criterios` (e `edital_criterios` para um só). Local:
+`python -m scripts.extrair_criterios --dry-run --max 3 --edital <id>` (precisa de `SUPABASE_*` e `GEMINI_API_KEY` no ambiente).
+Custo: zero na camada gratuita; por edital são de 3 a 8 chamadas (documento em partes). Limite conhecido: critérios que estão em
+anexo separado do edital não são lidos (a observação diz isso).
+
+### Revisão pelo administrador
+
+`/admin/criterios/` (fora do menu, `noindex`, `Disallow: /admin/` no `robots.txt`). Só quem está na tabela `admins` vê dados; a
+proteção real é a RLS (`eh_admin()`), a tela só reflete. Lista "Para revisar" ordenada pelo número de projetos abertos
+(`admin_criterios_para_revisar()`), aba "Com problema" (erro e sem documento), edição campo a campo com a citação do edital e link
+para a página do documento, e os botões **Marcar como revisado** (grava quem e quando), **Reprocessar** (volta à fila com
+`ultimo_erro = 'reprocessar'`, o que força nova extração mesmo com hash igual) e **Sem critérios aproveitáveis** (pede confirmação).
+
+Cadastrar um administrador (uma vez, depois de a pessoa entrar pelo assistente para existir em `auth.users`):
+
+```sql
+insert into public.admins (user_id) select id from auth.users where email = 'EMAIL_DO_ADMIN';
+```
+
+### Deploy da Fase 2 (ordem)
+
+1. Aplicar a migration (`supabase db push --dry-run`, depois `supabase db push`). O front tolera as tabelas ausentes, mas a função nova não.
+2. `supabase functions deploy assistente --use-api --no-verify-jwt`.
+3. Merge do PR (publica o front) e `gh secret set GEMINI_API_KEY`.
+4. Rodar o workflow com `somente_criterios`; cadastrar o administrador e revisar.
+
+## Roadmap (Fase 3)
+
+Modo Parecerista (a IA avalia o projeto pelos critérios do edital, já extraídos e revisados); busca semântica (RAG/pgvector) sobre
+editais e projetos aprovados; fluxo audiovisual (`fluxo = 'audiovisual'` já existe nas tabelas e nas specs); Recurso; conversa livre;
+classificação objetivo × meta por LLM (hoje a ligação é manual).

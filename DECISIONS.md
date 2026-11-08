@@ -458,3 +458,20 @@ Detalhes e tabela em `docs/fontes-internacionais.md`. Resultado:
 - Todos entram em `fontes.yaml` como inativos, com motivo, para aparecer em `/sobre/`.
 - **Teste que quebraria sozinho:** a verificação "curadoria sem entradas vencidas" comparava com "hoje" e falharia quando a primeira
   chamada vencesse. Passou a comparar com a data da conferência de cada entrada; o teste de integração usa prazo em 2099.
+
+## Assistente, Fase 2 (08/11/2026)
+
+- **Tabelas:** `ALTER` em `edital_criterios` (já era consultada pela Fase 1), nunca recriar. Usuário só tem SELECT nas quatro tabelas novas;
+  a escrita passa pela função (`salvar_itens`, sem LLM, fora do limite diário), que valida e usa `service_role`.
+- **Regras compartilhadas:** `specs/lib/*.mjs` (e não `.ts`) para o mesmo código rodar no navegador e no Deno; sincronizado e conferido no CI.
+- **Preço:** o LLM nunca define valor. Só vale um número que apareça em texto escrito pela pessoa; senão `null` e "valor a confirmar".
+- **Equipe:** nomes e currículos nunca vão ao prompt; nomes propostos só se a pessoa os escreveu.
+- **xlsx:** ExcelJS no navegador (CDN, versão fixa), fórmulas reais, conferido em recálculo do LibreOffice.
+- **Extração de critérios:** job separado e `continue-on-error`, depois da coleta. Custo zero: Gemini gratuito, `MAX_EDITAIS_POR_DIA` (20),
+  fila com hash (documento igual não gasta LLM). **Nada é gravado sem citação literal** do documento e, para números, o número no trecho;
+  na dúvida, `null`. Sempre `revisado = false` até um administrador conferir.
+- **Não contornamos bloqueios:** 403 e `robots.txt` viram `sem_documento` (PDFs de gov.br respondem 403 a clientes automáticos). Documento
+  acima de 8 MB, escaneado ou com critérios em anexo separado também ficam sem critérios, com a observação dizendo isso.
+- **Revisão:** `/admin/criterios/` com RLS por `admins` (`eh_admin()` security definer; UPDATE só nos campos dos critérios e da revisão). A tela é só reflexo.
+- **Fora do escopo (Fase 3):** Modo Parecerista, RAG/pgvector, fluxo audiovisual, Recurso, conversa livre, cobrança.
+

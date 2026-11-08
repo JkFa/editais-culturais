@@ -2,10 +2,11 @@
 import { sessaoAtiva } from "./auth.js";
 
 export class ErroApi extends Error {
-  constructor(status, mensagem, codigo = "") {
+  constructor(status, mensagem, codigo = "", detalhes = null) {
     super(mensagem);
     this.status = status;
     this.codigo = codigo;
+    this.detalhes = detalhes; // ex.: { erros: [{ indice, campos }] } da gravação de tabelas
   }
 }
 
@@ -37,7 +38,7 @@ export function criarApi(config) {
     if (resposta.status === 401 && tentarRenovar && (await sessaoAtiva(config, true))) return chamar(url, opcoes, false);
     if (!resposta.ok) {
       const corpo = await resposta.json().catch(() => ({}));
-      throw new ErroApi(resposta.status, corpo.mensagem ?? MENSAGENS[resposta.status] ?? "Algo deu errado. Tente de novo.", corpo.erro ?? "");
+      throw new ErroApi(resposta.status, corpo.mensagem ?? MENSAGENS[resposta.status] ?? "Algo deu errado. Tente de novo.", corpo.erro ?? "", corpo);
     }
     return resposta.status === 204 ? null : resposta.json().catch(() => null);
   }
@@ -81,6 +82,25 @@ export function criarApi(config) {
       }).then((l) => l[0]),
     definirAprovacao: (projetoId, secaoId, aprovado) =>
       rest(`projeto_secoes?projeto_id=eq.${q(projetoId)}&secao_id=eq.${q(secaoId)}`, { metodo: "PATCH", corpo: { aprovado } }),
+
+    /** Orçamento, cronograma, mídia e equipe do projeto (só leitura: quem grava é a Edge Function). */
+    tabelas: (id) =>
+      Promise.all(
+        ["orcamento_itens", "cronograma_itens", "midia_itens", "equipe_membros"].map((t) =>
+          rest(`${t}?projeto_id=eq.${q(id)}&select=*&order=ordem.asc&limit=400`),
+        ),
+      ).then(([orcamento_itens, cronograma_itens, midia_itens, equipe_membros]) => ({ orcamento_itens, cronograma_itens, midia_itens, equipe_membros })),
+    /** Grava uma tabela inteira pela Edge Function (valida e recalcula antes). Lança ErroApi com `erros` por linha. */
+    salvarItens: (projetoId, tabela, linhas) =>
+      chamar(`${raiz}/functions/v1/assistente`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ projeto_id: projetoId, acao: "salvar_itens", tabela, linhas }),
+      }),
+    criterios: (editalId) =>
+      editalId == null
+        ? Promise.resolve(null)
+        : rest(`edital_criterios?edital_id=eq.${q(editalId)}&select=*&limit=1`).then((l) => l[0] ?? null),
 
     proponente: (id) => rest(`projeto_proponente?projeto_id=eq.${q(id)}&select=dados&limit=1`).then((l) => l[0]?.dados ?? {}),
     salvarProponente: (id, dados) =>

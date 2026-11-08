@@ -40,6 +40,8 @@ e-mail, escolhe um edital ("Escrever projeto para este edital") e responde a per
 (Gemini, plano gratuito) redige rascunhos **só com os fatos dados** e marca `[COMPLETAR: ...]` onde faltar
 informação. Dá para editar, aprovar, ver versões anteriores, exportar `.docx` e copiar campo a campo. Dados pessoais
 ficam num formulário à parte e nunca vão para a IA. Custo zero (Pages, Actions, Supabase e Gemini gratuitos).
+Na Fase 2 ganhou editores de orçamento, cronograma, plano de mídia e equipe, checagens cruzadas, exportação `.xlsx` com fórmulas
+e a leitura automática dos critérios dos editais (revisada por um administrador em `/admin/criterios/`).
 Arquitetura, segredos, deploy e como criar novas seções: [docs/assistente.md](docs/assistente.md).
 
 ## Contador de visitas (anônimo)

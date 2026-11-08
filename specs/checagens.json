@@ -8,5 +8,15 @@
   "cada_objetivo_tem_meta": "Cada objetivo específico tem ao menos uma meta na seção de metas (se ela já existir).",
   "metas_numericas_e_verificaveis": "As metas têm número, prazo e forma de comprovação verificável.",
   "coerentes_com_objetivos_aprovados": "As metas são coerentes com os objetivos aprovados.",
-  "estimativa_coerente_com_acoes": "A estimativa de público é coerente com o número de ações da apresentação."
+  "estimativa_coerente_com_acoes": "A estimativa de público é coerente com o número de ações da apresentação.",
+  "medidas_de_acessibilidade_com_custo": "Toda medida de acessibilidade citada tem linha no orçamento (etapa acessibilidade); se faltar, avise.",
+  "acessibilidade_percentual_do_edital": "Se o edital exige um percentual mínimo para acessibilidade, o texto não afirma cumprir sem o orçamento mostrar isso.",
+  "contrapartida_do_edital_citada": "A contrapartida exigida pelo edital (se houver) é citada e tem uma meta correspondente, com quantidade e comprovação.",
+  "pecas_pagas_com_custo": "Toda peça de divulgação paga tem custo no orçamento (etapa divulgação).",
+  "divulgacao_dentro_do_limite": "Os custos de divulgação ficam dentro do percentual máximo do edital, quando ele existir.",
+  "funcoes_pagas_na_equipe": "Toda função paga no orçamento aparece na equipe, e toda pessoa da equipe com cachê tem linha no orçamento.",
+  "cronograma_cobre_metas": "Todas as metas aprovadas aparecem em alguma atividade do cronograma; a prestação de contas vem no fim.",
+  "cronograma_dentro_do_prazo": "O cronograma não passa do prazo de execução do edital, quando ele existir.",
+  "orcamento_dentro_do_teto": "O total do orçamento não passa do teto do edital, e nenhuma etapa passa do percentual máximo ou usa rubrica vedada.",
+  "orcamento_itens_com_fonte": "Todo item do orçamento tem fonte de preço e justificativa; sem isso, ele é marcado 'valor a confirmar'."
 }
