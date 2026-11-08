@@ -32,12 +32,21 @@ def test_edital_brasileiro_tem_os_padroes_da_fase_1():
 
 def test_hash_do_edital_brasileiro_nao_muda_com_os_campos_novos():
     """Sem isso, a primeira coleta regravaria todos os editais e zeraria o 'coletado em'."""
-    linhas = json.loads(SNAPSHOT.read_text(encoding="utf-8"))["editais"]
+    todas = json.loads(SNAPSHOT.read_text(encoding="utf-8"))["editais"]
+    linhas = [x for x in todas if x.get("ambito", "brasil") == "brasil"]
     assert linhas
     for linha in linhas:
         e = Edital.model_validate({k: v for k, v in linha.items() if k != "chave"})
         assert e.ambito == "brasil"
         assert e.calcular_hash() == linha["hash_conteudo"], linha["chave"]
+
+
+def test_linhas_internacionais_do_snapshot_sao_validas_e_o_hash_confere():
+    for linha in json.loads(SNAPSHOT.read_text(encoding="utf-8"))["editais"]:
+        if linha.get("ambito", "brasil") == "brasil":
+            continue
+        e = Edital.model_validate({k: v for k, v in linha.items() if k != "chave"})
+        assert e.abrangencia is None and e.calcular_hash() == linha["hash_conteudo"], linha["chave"]
 
 
 def test_hash_muda_quando_ha_dado_internacional():

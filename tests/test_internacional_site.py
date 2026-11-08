@@ -14,7 +14,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 import pytest
-from e2e_util import abertos, nova_pagina
+from e2e_util import abertos, nova_pagina, so_do_brasil
 
 sys.path.insert(0, str(Path(__file__).parent))
 from test_internacional_onthemove import AGORA, coletar  # noqa: E402
@@ -86,7 +86,9 @@ def snapshot_com_internacionais(snapshot):
         "elegibilidade_br": "requer_parceiro",
     }
     novos = [*linhas, com_fuso, residencia, parceiro]
-    return {**snapshot, "editais": [*snapshot["editais"], *novos]}, novos
+    # base só do Brasil: o snapshot real já traz oportunidades de fora (coleta diária) e elas
+    # se misturariam com as sintéticas deste teste
+    return {**snapshot, "editais": [*so_do_brasil(snapshot)["editais"], *novos]}, novos
 
 
 @pytest.fixture
