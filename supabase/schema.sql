@@ -562,6 +562,27 @@ create table if not exists public.extracao_fila (
 );
 create index if not exists extracao_fila_status_idx on public.extracao_fila (status, atualizado_em);
 
+-- Lista de revisão: critérios ainda não conferidos, os mais usados primeiro (projetos criados para aquele edital).
+-- `security definer` porque o administrador não lê os projetos dos outros; devolve linhas SÓ para administrador.
+create or replace function public.admin_criterios_para_revisar()
+returns table (
+  edital_id bigint, titulo text, url_origem text, url_edital_pdf text, inscricao_fim timestamptz,
+  projetos int, extraido_em timestamptz, fila_status text, fila_erro text
+)
+language sql stable security definer set search_path = public
+as $$
+  select c.edital_id, e.titulo, e.url_origem, e.url_edital_pdf, e.inscricao_fim,
+         (select count(*)::int from public.projetos p where p.edital_id = c.edital_id),
+         c.extraido_em, f.status, f.ultimo_erro
+  from public.edital_criterios c
+  join public.editais e on e.id = c.edital_id
+  left join public.extracao_fila f on f.edital_id = c.edital_id
+  where public.eh_admin() and c.revisado = false
+  order by 6 desc, e.inscricao_fim asc
+$$;
+revoke all on function public.admin_criterios_para_revisar() from public, anon;
+grant execute on function public.admin_criterios_para_revisar() to authenticated, service_role;
+
 -- ── RLS ─────────────────────────────────────────────────────────────────────────────────────
 alter table public.orcamento_itens  enable row level security;
 alter table public.cronograma_itens enable row level security;

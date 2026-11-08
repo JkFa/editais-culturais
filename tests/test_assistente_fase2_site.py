@@ -398,7 +398,11 @@ def test_aviso_de_criterios_automaticos_some_quando_revisado(navegador, url):
         navegador,
         url,
         "metas",
-        criterios={"revisado": False, "fonte_url": "https://exemplo.invalid/edital.pdf"},
+        criterios={
+            "revisado": False,
+            "teto_orcamento": 5000,
+            "fonte_url": "https://exemplo.invalid/edital.pdf",
+        },
     )
     aviso = pg.locator(".aviso-criterios")
     assert "Critérios lidos automaticamente — confira no edital." in aviso.inner_text()
@@ -410,6 +414,11 @@ def test_aviso_de_criterios_automaticos_some_quando_revisado(navegador, url):
     pg3, _, _ = ir(navegador, url, "metas")  # projeto avulso, sem edital
     assert pg3.locator(".aviso-criterios").count() == 0
     pg3.context.close()
+    pg4, _, _ = ir(
+        navegador, url, "metas", criterios={"revisado": False}
+    )  # nada foi lido: nada a conferir
+    assert pg4.locator(".aviso-criterios").count() == 0
+    pg4.context.close()
 
 
 def test_pendencias_acusam_total_percentual_equipe_e_meta_sem_atividade(navegador, url):

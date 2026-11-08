@@ -240,6 +240,58 @@ def test_criterios_rejeitam_valores_absurdos(banco):
         assert psql(banco, sql, papel="service_role", check=False).returncode != 0, sql
 
 
+def test_lista_de_revisao_so_para_admin_e_ordenada_pelos_projetos_mais_usados(banco):
+    preparar_admin(banco)
+    eid = criar_edital_e_criterios(banco)
+    psql(
+        banco,
+        "insert into editais(fonte,id_externo,url_origem,titulo,orgao_fomento,inscricao_fim) values ('t','crit-2','u','Edital popular','o', now() + interval '60 days') on conflict do nothing;",
+        papel="postgres",
+    )
+    popular = saida(
+        psql(banco, "select id from editais where id_externo='crit-2';", papel="postgres")
+    )
+    psql(
+        banco,
+        f"insert into edital_criterios(edital_id) values ({popular}) on conflict do nothing;",
+        papel="service_role",
+    )
+    psql(
+        banco,
+        f"update edital_criterios set revisado=false where edital_id in ({eid},{popular});",
+        papel="service_role",
+    )
+    for _ in range(2):
+        psql(banco, f"insert into projetos(titulo, edital_id) values ('p', {popular});", ANA)
+    psql(banco, f"insert into projetos(titulo, edital_id) values ('q', {popular});", BETO)
+    linhas = psql(
+        banco, "select edital_id::text||':'||projetos from admin_criterios_para_revisar();", ADMIN
+    ).stdout.split()
+    assert [x for x in linhas if ":" in x][:2] == [f"{popular}:3", f"{eid}:0"], (
+        "mais projetos primeiro"
+    )
+    # usuário comum não vê nada (nem contagens de projetos dos outros); anônimo nem executa
+    assert saida(psql(banco, "select count(*) from admin_criterios_para_revisar();", ANA)) == "0"
+    assert (
+        psql(
+            banco, "select count(*) from admin_criterios_para_revisar();", papel="anon", check=False
+        ).returncode
+        != 0
+    )
+    # revisado sai da lista
+    psql(banco, f"update edital_criterios set revisado=true where edital_id={popular};", ADMIN)
+    assert (
+        saida(
+            psql(
+                banco,
+                f"select count(*) from admin_criterios_para_revisar() where edital_id={popular};",
+                ADMIN,
+            )
+        )
+        == "0"
+    )
+
+
 def test_fila_de_extracao_so_admin_enxerga_e_reprocessa(banco):
     preparar_admin(banco)
     eid = criar_edital_e_criterios(banco)
