@@ -1,0 +1,41 @@
+{
+ "coletado_em": "2026-11-08",
+ "nota": "Textos públicos de editais lidos pelo portal (primeiros 7.000 caracteres). Usados para testar as regras da publicação automática.",
+ "itens": {
+  "niteroi": {
+   "link": "https://smc.niteroi.rj.gov.br/wp-content/uploads/2026/10/00.-Edital-PNAB-Niteroi-2026-RETIFICADO-E-PRORROGADO.pdf",
+   "titulo_issue": "PREFEITURA",
+   "numero": 55
+  },
+  "tanabi": {
+   "link": "https://tanabi.sp.gov.br/files/anexos/bb1028d01e35e46097d0683ba9010a93.pdf",
+   "titulo_issue": "EDITAL DE CHAMAMENTO PÚBLICO Nº. 004/2026",
+   "numero": 73
+  },
+  "piracicaba": {
+   "link": "https://piracicaba.sp.gov.br/servicos/pnab-ciclo-2/",
+   "titulo_issue": "PNAB CICLO 2 EDITAIS PNAB CICLO 2",
+   "numero": 92
+  },
+  "riofilme12": {
+   "link": "https://riofilme.com.br/wp-content/uploads/2026/10/EDITAL_12_DESENVOLVIMENTO_DE_PROJETOS.pdf",
+   "titulo_issue": "DISTRIBUIDORA DE FILMES S/A - RIOFILME",
+   "numero": 25
+  },
+  "gurupi": {
+   "link": "https://gurupi.to.gov.br/wp-content/uploads/2026/11/EDITAL-BENJAMIM-RODRIGUES.pdf",
+   "titulo_issue": "EDITAL Nº 07/2026 – 13° CONCURSO BENJAMIM RODRIGUES DE POESIA",
+   "numero": 80
+  },
+  "salvador_fgm": {
+   "link": "https://fgm.salvador.ba.gov.br/edital-atelie-itinerante-de-restauro/",
+   "titulo_issue": "Edital Ateliê Itinerante de Restauro abre inscrições; confira FALE CONOSCO",
+   "numero": 65
+  },
+  "londrina": {
+   "link": "https://repositorio.londrina.pr.gov.br/index.php/menu-cultura/audiovisual/edital-fsa-local/76879-sei-19386483-chamamento-edital/file",
+   "titulo_issue": "EDITAL DE CHAMAMENTO PÚBLICO Nº 004/2026",
+   "numero": 31
+  }
+ }
+}

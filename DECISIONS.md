@@ -557,3 +557,18 @@ Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários of
   Efeito medido: nota 2,56 → 3,13 (121 municípios a meio ponto; capitais cobertas 3 → 9). **Estados no CultBR (19 UFs) NÃO contam** para a medida de UFs: só o município foi aprovado.
 - **Limite do método:** "tem edital no CultBR" não prova que o portal enxerga tudo daquele município (ele pode publicar em outro lugar). Por isso o meio ponto e o texto em `/sobre/`.
 - **Achado fora do escopo:** há 89 Issues `candidato` abertas e **0 aprovadas** (48 com prazo futuro e evidência, 8 já vencidas, 33 sem prazo). Sem aprovação ninguém publica. A publicação automática com selo (Onda 3, item 3) é o que destrava isso.
+
+## Publicação automática com selo, PR A: modo sombra (08/11/2026)
+
+- **Nada é publicado neste PR.** `worker/automatica.py` + o job `publicacao_sombra` (depois da coleta, `continue-on-error`, sem Supabase e sem escrever no repositório) leem os candidatos abertos, relêem as páginas oficiais
+  e escrevem no resumo do job o que o portal PODERIA publicar e por que o resto fica na fila humana. A publicação e o selo vêm no PR B, depois que o dono do projeto validar a tabela.
+- **Regras (todas precisam valer):** sem rótulo `nao-publicar`; domínio oficial (`.gov.br`, `.leg.br`, `.mp.br`, `.jus.br` ou `worker/referencia/dominios_oficiais.json`, aprovado pelo dono); página relida agora com texto;
+  prazo futuro (até 240 dias à frente) com trecho literal que fala de "inscrições"; sinais de fomento/seleção e nenhum ruído no título (resultado, errata, feira, curso, encerrado, suspenso...); órgão e UF com evidência; título identificado;
+  máximo de 15 por execução (os de prazo mais próximo). Qualquer dúvida = fila humana.
+- **O primeiro relatório real pegou erros que a revisão humana pegaria, e foram corrigidos antes de qualquer publicação:** (1) órgão "Governo Federal" no edital de Tanabi (cabeçalho do PNAB): agora o **nome da cidade tem de bater com o domínio**
+  (`conferir_municipio`) e "governo" sozinho não é órgão; (2) "Município de Piracicaba Cidadão Empresa Turista" (itens de menu): o nome é cortado onde deixa de bater com o domínio; (3) títulos "PREFEITURA"/"EDITAL": usa-se o título da Issue só se
+  parecer de edital, senão o primeiro "EDITAL Nº x/AAAA ..." do documento, sem "Errata/Anexo"; (4) `www.gov.br` não era reconhecido como oficial; (5) edital com "inscrições encerradas" no título (Piracicaba) é barrado.
+  Fundações e institutos (sem prefeitura/estado no nome) não publicam sozinhos, a menos que o domínio esteja na lista aprovada.
+- **Bug antigo corrigido (afeta Issues já abertas):** `prazo.fim.astimezone().date()` usava o fuso da MÁQUINA. No Actions (UTC) o prazo saía **um dia adiantado** (23h59 de Brasília = 02h59 UTC do dia seguinte): o edital de Gurupi, que fecha dia 11,
+  aparecia como dia 12 no YAML da Issue. Agora usa o fuso de Brasília (`FUSO_PADRAO`) em `descoberta.py` e na publicação automática, com teste de regressão forçando `TZ=UTC`. As Issues `candidato` já criadas continuam com a data errada no YAML até serem recriadas.
+- **Lista de domínios aprovada (08/11/2026):** Riofilme, Spcine, Sesc RJ, Sesc PR, Sesi-SP, Instituto Cultural Vale, Petrobras, Claro, Lojas Renner (as agências municipais e as fontes oficiais já curadas).

@@ -927,7 +927,7 @@ def test_workflow_diario_roda_a_extracao_em_job_proprio_sem_segredo_no_repositor
     ).read_text(encoding="utf-8")
     wf = yaml.safe_load(texto)
     j = wf["jobs"]["criterios"]
-    assert j["needs"] == "sync" and j["if"] == "${{ always() }}", (
+    assert j["needs"] == "sync" and j["if"].startswith("${{ always()"), (
         "roda depois da coleta, mesmo se ela falhar"
     )
     assert j["continue-on-error"] is True and j["timeout-minutes"] <= 30
@@ -940,4 +940,7 @@ def test_workflow_diario_roda_a_extracao_em_job_proprio_sem_segredo_no_repositor
     )
     # a coleta não depende da extração
     assert "criterios" not in str(wf["jobs"]["sync"].get("needs", ""))
-    assert wf["jobs"]["sync"]["if"] == "${{ inputs.somente_criterios != true }}"
+    assert (
+        wf["jobs"]["sync"]["if"]
+        == "${{ inputs.somente_criterios != true && inputs.somente_sombra != true }}"
+    )

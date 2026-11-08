@@ -11,6 +11,7 @@ import re
 from .extrator import extrair_pagina, texto_de_pdf
 from .fila import Candidato
 from .padronizacao import (
+    FUSO_PADRAO,
     extrair_marco_legal,
     extrair_proponentes,
     limpar_texto,
@@ -47,7 +48,7 @@ def campos_do_texto(texto: str) -> dict[str, object]:
     evidencias: dict[str, str] = {}
     prazo = achar_prazo(texto)
     if prazo:
-        campos["inscricao_fim"] = prazo.fim.astimezone().date().isoformat()
+        campos["inscricao_fim"] = prazo.fim.astimezone(FUSO_PADRAO).date().isoformat()
         campos["fim_tem_horario"] = prazo.tem_horario
         evidencias["inscricao_fim"] = prazo.trecho
     for campo, (valor, trecho) in resolver_valores(texto).items():
