@@ -14,6 +14,7 @@ from pathlib import Path
 
 import httpx
 
+from .catalogo import eh_falha_de_conexao
 from .fila import API
 
 SNAPSHOT = Path(__file__).resolve().parent.parent / "web" / "data" / "snapshot.json"
@@ -45,8 +46,15 @@ async def principal() -> int:
             titulo = f"Conferir manualmente: {f['nome']}"
             if titulo in titulos:
                 continue
+            if eh_falha_de_conexao(f.get("erro")):
+                motivo = (
+                    f"A fonte **{f['nome']}** não respondeu aos servidores do GitHub por vários dias seguidos "
+                    f"({f.get('erro')}). Pode ser filtro de IP contra datacenters; o site pode estar normal no navegador."
+                )
+            else:
+                motivo = f"A fonte **{f['nome']}** bloqueou o robô na última coleta ({f.get('erro') or 'sem detalhe'})."
             corpo = (
-                f"A fonte **{f['nome']}** bloqueou o robô na última coleta ({f.get('erro') or 'sem detalhe'}).\n\n"
+                f"{motivo}\n\n"
                 f"Abra {f['url']} no navegador e confira se há edital novo. Se houver, crie um candidato.\n"
                 "O portal não tenta contornar o bloqueio."
             )

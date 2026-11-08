@@ -18,7 +18,7 @@ const ROTULO_STATUS = {
   ok: ["funcionando", "ok"],
   sem_dados: ["sem dados hoje", "ok"],
   erro: ["com erro", "problema"],
-  bloqueada_em_ci: ["bloqueia o robô", "problema"],
+  bloqueada_em_ci: ["sem acesso pelo robô do GitHub", "problema"],
   bloqueada_por_robots: ["robots.txt não permite", "problema"],
   conteudo_insuficiente: ["página sem texto para o robô", "problema"],
   desativada: ["desativada", "inativa"],
