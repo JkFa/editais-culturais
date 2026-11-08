@@ -34,6 +34,12 @@ SAIDA = RAIZ / "web" / "data" / "cobertura.json"
 VERSAO = 1
 HISTORICO_MAX = 60
 FRESCOR_HORAS = 26
+PESO_CULTBR = (
+    0.5  # município que usa o CultBR: o portal lê o CultBR todo dia, mas só o que ele publica lá
+)
+CULTBR_VALIDADE_DIAS = (
+    45  # registro de entes mais velho que isso não conta (o script roda toda semana)
+)
 AMOSTRA_MINIMA_RECALL = 30
 FONTES_ESTRUTURADAS = ("mapas:", "cultbr")
 
@@ -70,6 +76,7 @@ class Referencias:
     ufs: list[dict[str, Any]]
     municipios: list[dict[str, Any]]
     auditoria: dict[str, Any] | None = None
+    cultbr: dict[str, Any] | None = None  # entes com edital no CultBR (scripts/entes_cultbr.py)
 
     @classmethod
     def carregar(cls, pasta: Path = REFERENCIA) -> Referencias:
@@ -77,6 +84,7 @@ class Referencias:
             ufs=_ler(pasta / "ufs_capitais.json", {}).get("ufs", []),
             municipios=_ler(pasta / "municipios_100k.json", {}).get("municipios", []),
             auditoria=_ler(pasta / "auditoria.json", None),
+            cultbr=_ler(pasta / "cultbr_entes.json", None),
         )
 
 
@@ -106,6 +114,35 @@ def territorios_declarados(instancias: list[Any], fontes: list[Any]) -> list[Ter
         if c:
             saida.append(Territorio(f.id, c.ente, c.uf, c.municipio, c.parcial, ativa=f.ativa))
     return saida
+
+
+def _cobertos_via_cultbr(
+    cultbr: dict[str, Any] | None,
+    por_nome: dict[tuple[str, str], int],
+    cobertos: dict[int, float],
+    agora: datetime,
+) -> int:
+    """Marca (com meio ponto) os municípios que têm edital no CultBR e ainda não têm fonte própria. Devolve quantos."""
+    if not cultbr:
+        return 0
+    try:
+        gerado = datetime.fromisoformat(str(cultbr["atualizado_em"]).replace("Z", "+00:00"))
+    except (KeyError, ValueError):
+        return 0
+    if gerado.tzinfo is None:
+        gerado = gerado.replace(tzinfo=UTC)
+    if agora - gerado > timedelta(days=CULTBR_VALIDADE_DIAS):
+        log.warning("cultbr_entes.json está velho (%s): ignorado no placar", gerado.date())
+        return 0
+    novos = 0
+    for e in cultbr.get("entes", []):
+        if e.get("tipo") != "municipio" or not e.get("municipio") or not e.get("editais"):
+            continue
+        ibge = por_nome.get((normalizar(e["municipio"]), e["uf"]))
+        if ibge and cobertos.get(ibge, 0.0) < PESO_CULTBR:
+            novos += 0 if ibge in cobertos else 1
+            cobertos[ibge] = PESO_CULTBR
+    return novos
 
 
 def _peso_fonte(t: Territorio) -> float:
@@ -180,6 +217,7 @@ def calcular(
             ibge = por_nome.get((normalizar(t.municipio), t.uf))
             if ibge:
                 cobertos[ibge] = max(cobertos.get(ibge, 0.0), _peso_fonte(t))
+    via_cultbr = _cobertos_via_cultbr(refs.cultbr, por_nome, cobertos, agora)
     cap_pts = sum(cobertos.get(i, 0.0) for i in cap_ibge)
     grandes = [m["ibge"] for m in refs.municipios]
     mun_pts = sum(cobertos.get(i, 0.0) for i in grandes)
@@ -243,7 +281,9 @@ def calcular(
         "ufs": {"atual": ufs_pts, "total": n_ufs, "texto": f"{ufs_pts:g} de {n_ufs} UFs"},
         "capitais": {"atual": cap_pts, "total": 27, "texto": f"{cap_pts:g} de 27 capitais"},
         "municipios": {"atual": mun_pts, "total": len(grandes), "pct": round(_pct(mun_pts, len(grandes)), 4),
-                       "texto": f"{mun_pts:g} de {len(grandes)} municípios ({_pct(mun_pts, len(grandes)):.1%})"},
+                       "via_cultbr": via_cultbr,
+                       "texto": f"{mun_pts:g} de {len(grandes)} municípios ({_pct(mun_pts, len(grandes)):.1%})"
+                       + (f"; {via_cultbr} só pelo CultBR, a meio ponto" if via_cultbr else "")},
         "recall": {"medido": medido, "recall": recall, "amostra": aud.get("amostra"), "data": aud.get("data"),
                    "texto": f"{recall:.0%} em {aud.get('amostra')} editais (auditoria de {aud.get('data')})" if medido
                    else "não medido (conta zero até a primeira auditoria com 30 ou mais editais)"},

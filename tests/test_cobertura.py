@@ -480,3 +480,90 @@ def test_workflows_da_cobertura_e_commit_do_json():
     assert "web/data/cobertura.json" in (
         RAIZ / ".github" / "workflows" / "sync_editais.yml"
     ).read_text(encoding="utf-8")
+
+
+# ── CultBR: entes que usam a plataforma (meio ponto) ─────────────────────────────────────────
+
+
+def cultbr(entes, dias_atras=1):
+    return {"atualizado_em": (AGORA - timedelta(days=dias_atras)).isoformat(), "entes": entes}
+
+
+def mun(nome, uf, editais=1):
+    return {
+        "tipo": "municipio",
+        "uf": uf,
+        "municipio": nome,
+        "editais": editais,
+        "abertos": 0,
+        "ano_par": 2025,
+    }
+
+
+def test_municipio_com_edital_no_cultbr_vale_meio_ponto_e_fonte_propria_vale_inteiro():
+    refs = refs_mini()
+    refs.cultbr = cultbr(
+        [
+            mun("CAMPINAS", "SP"),
+            mun("São Paulo", "SP"),
+            mun("Cidade Pequena", "SP"),
+            {**mun("Fortaleza", "CE"), "editais": 0},
+        ]
+    )
+    c = calc(
+        [], [fonte("mapas:sp-capital")], [inst("sp-capital", "municipal", "SP", "São Paulo")], refs
+    )
+    assert m(c, "municipios")["atual"] == 1.5, (
+        "São Paulo (fonte própria) 1 + Campinas (CultBR) 0,5; Fortaleza sem edital e município fora da lista não contam"
+    )
+    assert m(c, "municipios")["via_cultbr"] == 1 and "só pelo CultBR" in m(c, "municipios")["texto"]
+    assert m(c, "capitais")["atual"] == 1, (
+        "a capital com fonte própria não é rebaixada para meio ponto"
+    )
+
+
+def test_capital_so_no_cultbr_conta_meio_ponto_nas_capitais():
+    refs = refs_mini()
+    refs.cultbr = cultbr([mun("Fortaleza", "CE")])
+    c = calc([], [], [], refs)
+    assert m(c, "capitais")["atual"] == 0.5 and m(c, "municipios")["atual"] == 0.5
+    assert {u["uf"]: u["capital_coberta"] for u in c["por_uf"]}["CE"] == 0.5
+
+
+def test_registro_de_entes_velho_ou_ausente_ou_invalido_e_ignorado():
+    for cb in (
+        None,
+        {},
+        cultbr([mun("Fortaleza", "CE")], dias_atras=60),
+        {"atualizado_em": "ontem", "entes": [mun("Fortaleza", "CE")]},
+    ):
+        refs = refs_mini()
+        refs.cultbr = cb
+        assert m(calc([], [], [], refs), "municipios")["atual"] == 0, cb
+
+
+def test_estado_no_cultbr_nao_cobre_a_uf():
+    refs = refs_mini()
+    refs.cultbr = cultbr(
+        [
+            {
+                "tipo": "estado",
+                "uf": "CE",
+                "municipio": None,
+                "editais": 3,
+                "abertos": 0,
+                "ano_par": 2025,
+            }
+        ]
+    )
+    assert m(calc([], [], [], refs), "ufs")["atual"] == 0
+
+
+def test_arquivo_de_entes_versionado_tem_a_forma_certa():
+    d = json.loads(
+        (RAIZ / "worker" / "referencia" / "cultbr_entes.json").read_text(encoding="utf-8")
+    )
+    assert d["total_registros"] > 1000 and len(d["entes"]) > 500
+    assert all({"tipo", "uf", "municipio", "editais"} <= set(e) for e in d["entes"])
+    assert {e["tipo"] for e in d["entes"]} == {"municipio", "estado"}
+    assert all(e["municipio"] for e in d["entes"] if e["tipo"] == "municipio")

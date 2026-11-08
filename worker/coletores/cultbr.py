@@ -203,6 +203,11 @@ async def coletar(
         if cand is None:
             res.descartes["pagina_ilegivel"] += 1
             continue
+        if (
+            cand.encerrado
+        ):  # o status "Aberto" do CultBR é defasado: a página/PDF já mostra prazo vencido
+            res.descartes["encerrado_na_pagina"] += 1
+            continue
         cand.campos.setdefault(
             "orgao_fomento", nome_legivel(limpar_texto(item.get("nome_ente_recebedor")))
         )
