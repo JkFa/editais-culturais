@@ -1,7 +1,7 @@
 {
-  "name": "Editais culturais do Brasil",
+  "name": "Editais culturais",
   "short_name": "Editais",
-  "description": "Editais e chamamentos de cultura abertos no Brasil, com prazo, valor e quem pode se inscrever.",
+  "description": "Editais de cultura abertos no Brasil e oportunidades internacionais abertas a brasileiros, com prazo, valor e quem pode se inscrever.",
   "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",

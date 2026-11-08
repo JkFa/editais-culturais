@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Editais culturais do Brasil: abertos agora, lidos para você</title>
-    <meta name="description" content="Editais e chamamentos de cultura abertos no Brasil, com prazo, valor e quem pode se inscrever. Dados públicos, atualizados todo dia." />
+    <title>Editais culturais no Brasil e no exterior: abertos agora, lidos para você</title>
+    <meta name="description" content="Editais de cultura abertos no Brasil e oportunidades internacionais (residências, mobilidade, fomento) abertas a brasileiros, com prazo, valor e quem pode se inscrever. Dados públicos, atualizados todo dia." />
     <link rel="canonical" href="https://jkfa.github.io/editais-culturais/" />
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#f7f5f0" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="Editais culturais do Brasil" />
-    <meta property="og:title" content="Editais culturais do Brasil: abertos agora, lidos para você" />
-    <meta property="og:description" content="Editais e chamamentos de cultura abertos no Brasil, com prazo, valor e quem pode se inscrever. Dados públicos, atualizados todo dia." />
+    <meta property="og:site_name" content="Editais culturais" />
+    <meta property="og:title" content="Editais culturais no Brasil e no exterior: abertos agora, lidos para você" />
+    <meta property="og:description" content="Editais de cultura abertos no Brasil e oportunidades internacionais (residências, mobilidade, fomento) abertas a brasileiros, com prazo, valor e quem pode se inscrever. Dados públicos, atualizados todo dia." />
     <meta property="og:url" content="https://jkfa.github.io/editais-culturais/" />
     <meta property="og:image" content="https://jkfa.github.io/editais-culturais/assets/img/og.png" />
     <meta property="og:image:width" content="1200" />
@@ -60,12 +60,13 @@
     <main id="conteudo">
       <section class="abertura container" aria-labelledby="titulo-home">
         <p class="sobretitulo">Atualizado em <span class="num" data-ultima-coleta>…</span> (horário de Brasília)</p>
-        <h1 id="titulo-home">Editais de cultura abertos no Brasil, lidos para você.</h1>
-        <p class="lede">Prazo, valor e quem pode se inscrever, em segundos. Dados de plataformas públicas e curadoria, com a fonte à vista.</p>
+        <h1 id="titulo-home">Editais culturais no Brasil e no exterior, lidos para você.</h1>
+        <p class="lede">Prazo, valor e quem pode se inscrever, em segundos. Editais brasileiros e chamadas internacionais de residência, mobilidade e fomento abertas a brasileiros, com a fonte à vista.</p>
+        <p class="lede-intl"><a class="link-seta" href="editais/?amb=internacional">Procurando algo fora do país? Veja as oportunidades internacionais</a></p>
         <form class="busca-grande" action="editais/" method="get" role="search">
           <label class="sr-only" for="busca-home">Buscar editais</label>
           <input id="busca-home" class="campo-busca" name="q" type="search" inputmode="search"
-            enterkeyhint="search" autocomplete="off" placeholder="Título, órgão ou assunto: PNAB, audiovisual, Ceará" />
+            enterkeyhint="search" autocomplete="off" placeholder="Título, órgão ou assunto: PNAB, audiovisual, residência" />
           <button class="btn btn-primario" type="submit">Buscar editais</button>
         </form>
       </section>
@@ -102,7 +103,7 @@
       <section class="secao container" aria-labelledby="t-perfil">
         <h2 class="secao-titulo" id="t-perfil"><span class="secao-n num">04</span> Posso me inscrever?</h2>
         <div class="secao-corpo">
-          <p class="suave">Escolha o seu perfil. Os editais que não dizem quem pode participar continuam na lista.</p>
+          <p class="suave">Escolha o seu perfil. Os editais que não dizem quem pode participar continuam na lista. Para as oportunidades internacionais, as perguntas (nacionalidade, país onde mora, organização) ficam no filtro <a href="editais/?amb=internacional">Internacional</a>.</p>
           <ul class="perfis" id="perfis"></ul>
         </div>
       </section>
@@ -119,10 +120,10 @@
         <h2 class="secao-titulo" id="t-como"><span class="secao-n num">06</span> Como o portal funciona</h2>
         <div class="secao-corpo">
           <ol class="passos">
-            <li><p>Os dados vêm de duas fontes: instâncias públicas do Mapas Culturais, que órgãos e produtores usam para publicar editais, e uma curadoria manual de instituições que não usam a plataforma, como a Funarte. Cada edital mostra de onde veio.</p></li>
-            <li><p>A coleta roda todo dia às 5h, horário de Brasília. O horário no topo da página é o da última coleta. Prazos são sempre de Brasília.</p></li>
+            <li><p>Editais do Brasil: instâncias públicas do Mapas Culturais, páginas do MinC e do CultBR e uma curadoria manual de instituições que publicam em outros lugares, como a Funarte. Oportunidades internacionais: o feed público da rede On the Move, o mapa do IberCultura Viva e uma curadoria manual. Cada item mostra de onde veio.</p></li>
+            <li><p>A coleta roda todo dia às 5h, horário de Brasília. O horário no topo da página é o da última coleta. Os prazos dos editais do Brasil são de Brasília; nas oportunidades internacionais mostramos o prazo como a fonte informa, com o fuso quando ele existe.</p></li>
             <li><p>Valor, proponente e contrapartida só aparecem quando o texto do edital diz. O portal lê o resumo publicado, não o PDF. Por isso muitos campos mostram “Não informado no resumo — ver edital”: preferimos deixar em branco a informar errado.</p></li>
-            <li><p>As oportunidades internacionais (residências, mobilidade, fomento) vêm do feed público da rede On the Move, do Mapa do IberCultura Viva e de uma curadoria manual. O selo “Aberto a brasileiros” só aparece quando a própria fonte diz isso; sem essa frase o selo é “Verificar elegibilidade”. Confira sempre a chamada original: requisitos de visto, idioma e documentação são de responsabilidade de quem se candidata.</p></li>
+            <li><p>Nas oportunidades internacionais (residências, mobilidade, fomento em outros países), o selo “Aberto a brasileiros” só aparece quando a própria fonte diz isso; sem essa frase o selo é “Verificar elegibilidade”. Confira sempre a chamada original: requisitos de visto, idioma e documentação são de responsabilidade de quem se candidata.</p></li>
           </ol>
           <p><a class="link-seta" href="sobre/">Ler a metodologia, as fontes e as limitações</a></p>
         </div>
@@ -148,7 +149,7 @@
       <div class="container rodape-grade">
         <div>
           <p class="rodape-titulo">Fontes</p>
-          <p>Mapas Culturais (instâncias públicas) e curadoria manual, conferida em fonte oficial.</p>
+          <p>Mapas Culturais (instâncias públicas), MinC e CultBR, On the Move e curadoria manual, conferida em fonte oficial.</p>
         </div>
         <div>
           <p class="rodape-titulo">Última coleta</p>
