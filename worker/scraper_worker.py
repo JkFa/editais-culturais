@@ -387,6 +387,9 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                 estado_vigias,
                 status_ant,
                 cliente=cliente_web,
+                existentes=[
+                    e for e in editais if e.ambito == "brasil"
+                ],  # o que o portal já tem (evita candidato duplicado)
             )
         for fid, res in resultado_v4.resultados.items():
             if res.brutos:

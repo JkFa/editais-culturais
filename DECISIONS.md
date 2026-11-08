@@ -611,3 +611,19 @@ sumiram do portal (a leitura diária falhou, e falha de leitura era tratada como
 é reaproveitado do snapshot anterior enquanto o prazo valer, o rótulo fica e a Issue não recebe comentário. Só prazo mudado, trecho que sumiu, veto humano ou validação rejeitada tiram do ar. Lição operacional: **disparar a coleta várias vezes por dia aumenta
 a chance de bloqueio** (403/429 viram `bloqueada_em_ci` e não são contornados); a coleta diária às 5h é suficiente.
 Também: o título da página da Funarte ("Convocatória") era só o começo do título real do card; passa a valer o da lista quando o da página é parcial.
+
+## Cobertura, Onda 3 / PR 3a: diários oficiais municipais pelo Querido Diário (08/11/2026)
+
+- **Fonte `querido-diario` (tipo `descoberta`, coletor `querido_diario`):** só descobre, **nunca publica direto**. Cada edital achado vira candidato com o trecho do diário. Se o texto do diário citar um link oficial (`.gov.br`...),
+  o candidato aponta para ele e a publicação automática pode relê-lo e publicar; sem link oficial, o link é a cópia do diário (espelho do Querido Diário) e o candidato fica para conferência humana.
+  Roda dentro da coleta diária como as outras fontes v4 (falha isolada, status em `/sobre/`), não em job separado como o plano previa: ganha dry-run, cache e testes da infraestrutura existente.
+- **Sem LLM, de propósito** (decisão do dono do projeto): o `robots.txt` do serviço declara `Content-Signal: search=yes,ai-train=no`, e a cota do Gemini é curta. O texto do diário nunca vai a um modelo. Classificação só por regras.
+- **Fluxo:** seis consultas (Aldir Blanc, PNAB, chamamento público cultura, edital de fomento cultural, prêmio cultural, Lei Paulo Gustavo), janela de 3 dias, 50 por página (até 3 páginas), 2 s entre requisições (a documentação pede ritmo baixo; referência de 60/min);
+  1) triagem do trecho: abertura (lê primeiro), posterior (extrato, resultado, errata...) só se sobrar orçamento de leitura, sem sinal = descarta sem baixar; 2) lê o diário (até 40 por execução) e acha as passagens "EDITAL ... Nº x/AAAA" com pedido de inscrição, apoio financeiro,
+  **cultura no texto** e prazo futuro cujo trecho fale de **inscrição/inscrições** (não "inscritos no cadastro"); 3) até 15 candidatos por dia, os de prazo mais próximo; descarta o que já está na fila (marcador), o que já está no portal (mesma UF, mesmo dia de prazo e título parecido, ou mesmo endereço) e o já processado (cache de 14 dias).
+- **Órgão e UF vêm dos metadados do município** (`territory_name`, `state_code`), nunca do texto: "Município de X".
+- **API instável:** o endereço da documentação (`api.queridodiario.ok.org.br`) dá erro de SSL em alguns ambientes; o coletor cai para `queridodiario.ok.org.br/api` e abandona o endereço quebrado na execução. Erro 520/timeout tem nova tentativa com espera. Se TODAS as consultas falham, a fonte fica em
+  `erro` (e não "sem dados"); falha parcial só conta em `erro_consulta`.
+- **Primeira rodada real (08/11/2026):** 248 diários nos últimos 3 dias; 60 com sinal de abertura; 5 candidatos (Guaraçaí e São Bernardo do Campo, SP; Rondonópolis, MT; mais dois que a revisão mostrou serem ruído: "inscritos no cadastro" em Salvador e um edital de educação em São José do Vale do Rio Preto).
+  Os dois erros viraram regra (prazo só com "inscrição/inscrições"; exigir cultura no texto) e o `automatica.py` ganhou a mesma regra do trecho.
+- **Fora desta PR:** classificar prorrogação/retificação de edital existente (PR 3b), recall auditado e peso do Querido Diário na nota (PR 3c).
