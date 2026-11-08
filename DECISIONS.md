@@ -440,3 +440,21 @@ Pedido: `prompt-claude-code-internacional-fase1.md`. Documentação das fontes, 
   ao Supabase (`dados.js`) e o worker as grava; sem a migration o "ao vivo" falha (cai no snapshot) e o upsert do worker erra.
 - **Fora do escopo, deixado pronto:** `valor_brl` e `resumo_pt` (colunas vazias), `prazo_fuso` (guardado para a conversão),
   `ambito = estrangeiro_nacional`.
+
+### Internacional: seis endereços avaliados (08/11/2026)
+
+Detalhes e tabela em `docs/fontes-internacionais.md`. Resultado:
+
+- **Cadastrado como oportunidade:** só a **Caméra libre** (CNC + Cité internationale des arts; prazo 16/11/2026 confirmado na página do
+  CNC; "verificar", porque a regra depende da situação do cineasta). Entre as 4 chamadas abertas da Cité, as outras 3 exigem nacionalidade
+  coreana, morar na França ou ser formado na Villa Arson.
+- **No radar:** Ibermedia (anual; todas as modalidades fechadas, prazo de 30/03/2026 vencido) e **Icatu x Cité** (anual, para artistas do
+  Brasil; sem chamada nem datas na página). O radar já aceita item sem janela de meses (vai para o fim da lista).
+- **Não cadastrados:** EFFEA (Call #5 já fechou em 03/11 e é só para endereço em países europeus) e Visegrad Fund (fechada e restrita a
+  cidadãos de CZ/HU/PL/SK).
+- **Res Artis:** agregador (~150 chamadas). Pede um coletor próprio; aguardo decisão do dono do projeto (termos: lista enviada por
+  membros, sem garantia; `robots.txt` permite a página).
+- **Live Composers:** `robots.txt` com `Disallow: /` para todos. Não coletamos nem curamos a partir dele.
+- Todos entram em `fontes.yaml` como inativos, com motivo, para aparecer em `/sobre/`.
+- **Teste que quebraria sozinho:** a verificação "curadoria sem entradas vencidas" comparava com "hoje" e falharia quando a primeira
+  chamada vencesse. Passou a comparar com a data da conferência de cada entrada; o teste de integração usa prazo em 2099.

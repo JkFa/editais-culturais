@@ -14,10 +14,14 @@
     "prazo_fuso": "Europe/Berlin",
     "moeda": null,
     "valor_original": null,
-    "linguagens": ["Multiáreas"],
+    "linguagens": [
+      "Multiáreas"
+    ],
     "observacao_curta": "Uma frase em português, escrita por quem conferiu, sobre o que a chamada oferece.",
     "conferido_em": "2026-11-07",
-    "evidencias": { "prazo_original": "Trecho literal da página oficial com o prazo." }
+    "evidencias": {
+      "prazo_original": "Trecho literal da página oficial com o prazo."
+    }
   },
   "oportunidades": [
     {
@@ -37,13 +41,44 @@
       "prazo_fuso": null,
       "moeda": "EUR",
       "valor_original": 22500,
-      "linguagens": ["Patrimônio"],
+      "linguagens": [
+        "Patrimônio"
+      ],
       "observacao_curta": "Fundo para museus públicos, privados sem fins lucrativos e comunitários dos 15 países-membros, incluindo o Brasil; não recebe pessoas físicas. Sete apoios, de 1.750 a 4.000 euros (22.500 no total).",
       "conferido_em": "2026-11-07",
       "evidencias": {
         "prazo_original": "Las inscripciones estarán abiertas del 22 de octubre de 2026 al 5 de marzo de 2027 a través de convocatorias.ibermuseos.org.",
         "elegibilidade_br": "dirigido a museos públicos, privados sin ánimo de lucro y comunitarios o de base comunitaria establecidos en los 15 países miembros del Consejo Intergubernamental de Ibermuseos: Argentina, Brasil, Chile, Colombia",
         "valor_original": "La convocatoria financiará siete proyectos, con una inversión total de 22.500 euros"
+      }
+    },
+    {
+      "id": "camera-libre-2026-2a-sessao",
+      "titulo_original": "Caméra libre: résidence pour cinéastes étrangers en situation difficile (2e session)",
+      "organizacao": "CNC, Cité internationale des arts e L'usage du monde au 21e siècle",
+      "url_oficial": "https://www.cnc.fr/professionnels/aides-et-financements/multi-sectoriel/ecriture-et-developpement/camera-libre_1812991",
+      "url_inscricao": null,
+      "url_bases_pdf": null,
+      "tipo_oportunidade": "residencia",
+      "pais_destino": "FR",
+      "elegibilidade_br": "verificar",
+      "custos_cobertos": [
+        "viagem"
+      ],
+      "idioma_original": "fr",
+      "prazo_inicio": "2026-09-23",
+      "prazo_original": "2026-11-16",
+      "prazo_fuso": null,
+      "moeda": null,
+      "valor_original": null,
+      "linguagens": [
+        "Cinema & Audiovisual"
+      ],
+      "observacao_curta": "Residência de seis meses em Paris, com a viagem à França paga e bolsa mensal, para cineastas estrangeiros com longa em festival importante e impedidos de filmar por violência, censura ou perseguição.",
+      "conferido_em": "2026-11-08",
+      "evidencias": {
+        "prazo_original": "Deuxième commission : Date limite de dépôt des demandes : 16 novembre 2026",
+        "custos_cobertos": "L’accueil inclut la prise en charge complète de la venue en France, une bourse de vie mensuelle"
       }
     }
   ]
