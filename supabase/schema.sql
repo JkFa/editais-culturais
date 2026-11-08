@@ -531,6 +531,8 @@ alter table public.edital_criterios add column if not exists contrapartida_exigi
 alter table public.edital_criterios add column if not exists prazo_execucao_meses int;
 alter table public.edital_criterios add column if not exists exige_acessibilidade boolean;
 alter table public.edital_criterios add column if not exists observacoes text;
+-- de onde veio cada valor: {campo: {"trecho": "...", "pagina": 12}} (a tela de revisão mostra ao lado do documento)
+alter table public.edital_criterios add column if not exists evidencias jsonb not null default '{}'::jsonb;
 alter table public.edital_criterios add column if not exists modelo_llm text;
 alter table public.edital_criterios add column if not exists revisado_em timestamptz;
 alter table public.edital_criterios add column if not exists revisado_por uuid references auth.users(id) on delete set null;
@@ -545,6 +547,7 @@ alter table public.edital_criterios add constraint edital_criterios_valores_chec
   and jsonb_typeof(criterios) = 'array'
   and jsonb_typeof(percentuais_max) = 'object'
   and jsonb_typeof(percentuais_min) = 'object'
+  and jsonb_typeof(evidencias) = 'object'
   and jsonb_typeof(limites_caracteres) = 'object'
 );
 

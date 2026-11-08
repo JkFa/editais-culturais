@@ -250,7 +250,8 @@ export async function telaProjeto(ctx, id, secaoPedida) {
 
   // ───────────────────────── rascunho
   let areaTexto = null;
-  const limiteDe = (s) => estado.limite ?? s.limite_caracteres_padrao;
+  // limite do edital (se foi lido) antes do padrão do spec; a função devolve o mesmo valor a cada resposta
+  const limiteDe = (s) => estado.limite ?? (Number(estado.criterios?.limites_caracteres?.[s.id]) || s.limite_caracteres_padrao);
 
   function alertasDaUltimaResposta() {
     const ultima = [...estado.mensagens].reverse().find((m) => m.papel === "assistente" && m.conteudo?.tipo === "rascunho");
@@ -483,7 +484,9 @@ export async function telaProjeto(ctx, id, secaoPedida) {
   /** Critérios lidos por máquina e ainda não conferidos por uma pessoa: o aviso fica em toda tela do projeto. */
   function avisoCriterios() {
     const c = estado.criterios;
-    if (!c || c.revisado) return null;
+    // sem nada lido (documento sem critérios aproveitáveis) não há o que conferir
+    const temConteudo = c && (c.criterios?.length || c.teto_orcamento || c.teto_por_proponente || c.contrapartida_exigida || c.prazo_execucao_meses || c.exige_acessibilidade != null || c.campos_exigidos?.length || c.rubricas_vedadas?.length || Object.keys(c.percentuais_max ?? {}).length || Object.keys(c.percentuais_min ?? {}).length || Object.keys(c.limites_caracteres ?? {}).length);
+    if (!c || c.revisado || !temConteudo) return null;
     const doc = c.fonte_url || projeto.edital_url;
     return el("p", { class: "aviso-fixo aviso-criterios", role: "note" },
       el("strong", {}, "Critérios lidos automaticamente — confira no edital. "),
