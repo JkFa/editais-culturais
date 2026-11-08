@@ -155,7 +155,8 @@ def test_perguntas_sensiveis_nao_passam_pelo_chat():
 @node
 def test_logica_compartilhada_em_node():
     r = subprocess.run(
-        ["node", "--test", str(RAIZ / "specs" / "lib")],
+        # arquivos explícitos: o Node 24 não aceita diretório em `--test`
+        ["node", "--test", *map(str, sorted((RAIZ / "specs" / "lib").glob("*.test.mjs")))],
         capture_output=True,
         text=True,
     )
