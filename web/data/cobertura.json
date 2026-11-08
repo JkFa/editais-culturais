@@ -1,8 +1,8 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-08T21:14:32.579583+00:00",
+ "gerado_em": "2026-11-08T22:13:01.961371+00:00",
  "data": "2026-11-08",
- "nota": 3.31,
+ "nota": 3.22,
  "metricas": [
   {
    "id": "ufs",
@@ -20,24 +20,24 @@
    "nome": "Capitais com fonte municipal ativa",
    "peso": 1.0,
    "meta": "27 de 27",
-   "fracao": 0.3333,
-   "pontos": 0.333,
-   "atual": 9.0,
+   "fracao": 0.2963,
+   "pontos": 0.296,
+   "atual": 8.0,
    "total": 27,
-   "texto": "9 de 27 capitais"
+   "texto": "8 de 27 capitais"
   },
   {
    "id": "municipios",
    "nome": "Municípios com mais de 100 mil habitantes monitorados",
    "peso": 1.5,
    "meta": "80% ou mais",
-   "fracao": 0.3076,
-   "pontos": 0.461,
-   "atual": 78.5,
+   "fracao": 0.3037,
+   "pontos": 0.456,
+   "atual": 77.5,
    "total": 319,
-   "pct": 0.2461,
+   "pct": 0.2429,
    "via_cultbr": 121,
-   "texto": "78.5 de 319 municípios (24.6%); 121 só pelo CultBR, a meio ponto"
+   "texto": "77.5 de 319 municípios (24.3%); 121 só pelo CultBR, a meio ponto"
   },
   {
    "id": "recall",
@@ -57,35 +57,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.3074,
-   "pontos": 0.307,
-   "atual": 17,
+   "fracao": 0.2893,
+   "pontos": 0.289,
+   "atual": 16,
    "total": 79,
-   "pct": 0.2152,
-   "texto": "17 de 79 (22%)"
+   "pct": 0.2025,
+   "texto": "16 de 79 (20%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7769,
-   "pontos": 0.388,
+   "fracao": 0.769,
+   "pontos": 0.384,
    "prazo": 79,
-   "proponentes": 35,
+   "proponentes": 34,
    "total": 79,
-   "texto": "prazo 79/79 (100%); proponentes 35/79 (44%)"
+   "texto": "prazo 79/79 (100%); proponentes 34/79 (43%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9761,
-   "pontos": 0.488,
+   "fracao": 0.9256,
+   "pontos": 0.463,
    "atual": 51,
-   "total": 55,
-   "texto": "51 de 55 fontes ativas"
+   "total": 58,
+   "texto": "51 de 58 fontes ativas"
   },
   {
    "id": "higiene",
@@ -298,11 +298,10 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 11,
+   "abertos": 9,
    "fonte_estadual": 0.5,
-   "capital_coberta": 0.5,
+   "capital_coberta": 0.0,
    "fontes": [
-    "vigia-riofilme-chamadas",
     "vigia-rj-incentivo-cultura"
    ]
   },
@@ -360,14 +359,13 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 6,
+   "abertos": 5,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.5,
+   "capital_coberta": 0.0,
    "fontes": [
     "mapas:itatiba-sp",
     "mapas:maua-sp",
-    "mapas:ribeiraopires-sp",
-    "vigia-spcine-fomento"
+    "mapas:ribeiraopires-sp"
    ]
   },
   {
@@ -392,11 +390,11 @@
   }
  ],
  "editais_abertos": 79,
- "editais_sem_uf": 8,
+ "editais_sem_uf": 11,
  "historico": [
   {
    "data": "2026-11-08",
-   "nota": 3.31
+   "nota": 3.22
   }
  ],
  "dias_seguidos_9": 0
