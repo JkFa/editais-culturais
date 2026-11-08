@@ -1,0 +1,50 @@
+{
+  "$comment": "Curadoria manual de oportunidades internacionais (Fase 1). Só entra o que foi aberto e conferido na página oficial, com prazo futuro. Veja o schema ao lado e docs/fontes-internacionais.md. Conferido em 07/11/2026.",
+  "exemplo_comentado": {
+    "id": "exemplo-nao-publicar",
+    "titulo_original": "Título da chamada no idioma da fonte",
+    "organizacao": "Nome da organização",
+    "url_oficial": "https://exemplo.invalid/chamada",
+    "tipo_oportunidade": "residencia",
+    "pais_destino": "DE",
+    "elegibilidade_br": "verificar",
+    "custos_cobertos": null,
+    "idioma_original": "en",
+    "prazo_original": "2027-01-31T23:59:00+01:00",
+    "prazo_fuso": "Europe/Berlin",
+    "moeda": null,
+    "valor_original": null,
+    "linguagens": ["Multiáreas"],
+    "observacao_curta": "Uma frase em português, escrita por quem conferiu, sobre o que a chamada oferece.",
+    "conferido_em": "2026-11-07",
+    "evidencias": { "prazo_original": "Trecho literal da página oficial com o prazo." }
+  },
+  "oportunidades": [
+    {
+      "id": "ibermuseos-fondo-7-2026",
+      "titulo_original": "7ª convocatoria del Fondo Ibermuseos para el Patrimonio Museológico",
+      "organizacao": "Programa Ibermuseos",
+      "url_oficial": "https://www.ibermuseos.org/recursos/noticias/7fondo/",
+      "url_inscricao": "https://convocatorias.ibermuseos.org",
+      "url_bases_pdf": "https://www.ibermuseos.org/wp-content/uploads/2026/10/7-fondo-ibermuseos-2026-reglamento-es.pdf",
+      "tipo_oportunidade": "projeto",
+      "pais_destino": "Ibero-América",
+      "elegibilidade_br": "aberto",
+      "custos_cobertos": null,
+      "idioma_original": "es",
+      "prazo_inicio": "2026-10-22",
+      "prazo_original": "2027-03-05",
+      "prazo_fuso": null,
+      "moeda": "EUR",
+      "valor_original": 22500,
+      "linguagens": ["Patrimônio"],
+      "observacao_curta": "Fundo para museus públicos, privados sem fins lucrativos e comunitários dos 15 países-membros, incluindo o Brasil; não recebe pessoas físicas. Sete apoios, de 1.750 a 4.000 euros (22.500 no total).",
+      "conferido_em": "2026-11-07",
+      "evidencias": {
+        "prazo_original": "Las inscripciones estarán abiertas del 22 de octubre de 2026 al 5 de marzo de 2027 a través de convocatorias.ibermuseos.org.",
+        "elegibilidade_br": "dirigido a museos públicos, privados sin ánimo de lucro y comunitarios o de base comunitaria establecidos en los 15 países miembros del Consejo Intergubernamental de Ibermuseos: Argentina, Brasil, Chile, Colombia",
+        "valor_original": "La convocatoria financiará siete proyectos, con una inversión total de 22.500 euros"
+      }
+    }
+  ]
+}

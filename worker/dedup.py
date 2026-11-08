@@ -65,7 +65,11 @@ def mesmo_edital(a: Edital, b: Edital) -> bool:
 
 
 def _ordem(e: Edital, tipos: dict[str, str]) -> tuple[int, int, str]:
-    tipo = "curadoria" if e.fonte in ("curadoria", "fila") else tipos.get(e.fonte, "plataforma")
+    tipo = (
+        "curadoria"
+        if e.fonte in ("curadoria", "fila", "curadoria-internacional")
+        else tipos.get(e.fonte, "plataforma")
+    )
     completo = sum(
         x is not None for x in (e.valor_total, e.teto_por_projeto, e.proponentes, e.url_edital_pdf)
     )

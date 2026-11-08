@@ -131,6 +131,7 @@ async def test_todas_as_fontes_falhando_preserva_snapshot_e_retorna_1(tmp_path, 
 
     monkeypatch.setattr(ClienteHttp, "__init__", init)
     monkeypatch.setattr(scraper_worker, "CURADAS", tmp_path / "inexistente.yaml")
+    monkeypatch.setattr(scraper_worker, "CURADAS_INTERNACIONAL", tmp_path / "inexistente.json")
     snapshot = tmp_path / "snapshot.json"
     snapshot.write_text('{"preservado": true}', encoding="utf-8")
     assert await scraper_worker.executar(dry_run=True, snapshot=snapshot) == 1

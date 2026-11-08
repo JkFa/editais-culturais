@@ -23,6 +23,9 @@ from pydantic import ValidationError
 
 from .catalogo import FonteConfig, StatusFonte, carregar_fontes_v4, status_de
 from .coletores.curadoria import ErroCuradoria, carregar_curadoria
+from .coletores.curadoria_internacional import FONTE as FONTE_CURADORIA_INTERNACIONAL
+from .coletores.curadoria_internacional import ErroCuradoriaInternacional
+from .coletores.curadoria_internacional import carregar as carregar_curadoria_internacional
 from .coletores.mapas_culturais import Instancia, Parametros, ResultadoColeta, coletar_instancia
 from .dedup import deduplicar
 from .enriquecimento_llm import CacheLLM, ClienteGemini, enriquecer_editais
@@ -52,6 +55,7 @@ COLETORES_DE_EDITAIS = {
 }  # fontes que publicam editais (as outras só abrem candidatos)
 FONTES = Path(__file__).resolve().parent / "fontes.yaml"
 CURADAS = Path(__file__).resolve().parent / "fontes_curadas.yaml"
+CURADAS_INTERNACIONAL = Path(__file__).resolve().parent / "curadoria_internacional.json"
 
 log = logging.getLogger("worker")
 
@@ -273,6 +277,19 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
         log.error("fonte curadoria falhou: %s", exc)
         falhas.append({"fonte": "curadoria", "erro": str(exc)[:300]})
 
+    # Curadoria internacional (JSON). Falha isolada: não derruba a coleta brasileira.
+    try:
+        cur_int = carregar_curadoria_internacional(CURADAS_INTERNACIONAL, agora.date())
+        for aviso in cur_int.avisos:
+            log.warning(aviso)
+        convertidos = padronizar_todos(cur_int.editais, {}, agora, nao_mapeadas)
+        editais += convertidos
+        ids_por_fonte[FONTE_CURADORIA_INTERNACIONAL] = {e.id_externo for e in convertidos}
+        fontes_ok.append(FONTE_CURADORIA_INTERNACIONAL)
+    except (ErroCuradoriaInternacional, OSError) as exc:
+        log.error("fonte %s falhou: %s", FONTE_CURADORIA_INTERNACIONAL, exc)
+        falhas.append({"fonte": FONTE_CURADORIA_INTERNACIONAL, "erro": str(exc)[:300]})
+
     # Fila de curadoria: Issues `aprovado` viram editais da fonte "curadoria".
     marcadores: set[str] = set()
     if fila:
@@ -413,7 +430,15 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                             metodo="html", url="https://github.com/JkFa/editais-culturais/issues?q=label%3Aaprovado"),
                 "ok" if "curadoria" in fontes_ok else "erro", status_ant.get("curadoria"),
                 total=sum(1 for e in editais if e.fonte == "curadoria"), agora=agora,
-            )
+            ),
+            status_de(
+                FonteConfig(id=FONTE_CURADORIA_INTERNACIONAL, nome="Curadoria internacional (curadoria_internacional.json)",
+                            tipo="oficial", metodo="html",
+                            url="https://github.com/JkFa/editais-culturais/blob/main/worker/curadoria_internacional.json"),
+                "ok" if FONTE_CURADORIA_INTERNACIONAL in fontes_ok else "erro",
+                status_ant.get(FONTE_CURADORIA_INTERNACIONAL),
+                total=sum(1 for e in editais if e.fonte == FONTE_CURADORIA_INTERNACIONAL), agora=agora,
+            ),
         ]  # fmt: skip
 
         corpo = escrever_snapshot(
