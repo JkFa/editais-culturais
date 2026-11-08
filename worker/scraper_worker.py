@@ -81,6 +81,21 @@ def carregar_fontes(caminho: Path = FONTES) -> tuple[list[Instancia], Parametros
     return [Instancia(**i) for i in dados.get("instancias", [])], params
 
 
+def alvo_do_llm(
+    editais: list[Edital], falharam: set[str], instancias: list[Instancia]
+) -> list[Edital]:
+    """Editais que podem ir ao LLM de enriquecimento: Mapas do Brasil, fonte ok e site que não proíbe uso por IA."""
+    sem_llm = {i.fonte for i in instancias if i.sem_llm}
+    return [
+        e
+        for e in editais
+        if e.fonte.startswith("mapas:")
+        and e.fonte not in falharam
+        and e.fonte not in sem_llm
+        and e.ambito == "brasil"
+    ]
+
+
 def padronizar_todos(
     brutos: list[Any], textos: dict[str, str], agora: datetime, nao_mapeadas: set[str]
 ) -> list[Edital]:
@@ -380,11 +395,7 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
         gemini = ClienteGemini(chave_gemini, os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash")
         try:
             # O enriquecimento é em português e para editais do Brasil: o internacional não passa por ele.
-            alvo = [
-                e
-                for e in editais
-                if e.fonte.startswith("mapas:") and e.fonte not in falharam and e.ambito == "brasil"
-            ]
+            alvo = alvo_do_llm(editais, falharam, instancias)
             outros = [e for e in editais if e not in alvo]
             maximo = int(os.environ.get("GEMINI_MAX_POR_EXECUCAO", "60"))
             editais = outros + await enriquecer_editais(alvo, textos_llm, gemini, cache, maximo)

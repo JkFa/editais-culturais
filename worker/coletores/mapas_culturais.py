@@ -43,6 +43,10 @@ class Instancia:
     descoberta: str | None = None
     # Resultado da sondagem automática (scripts/descobrir_mapas.py): só documentação, o coletor não usa.
     sondagem: dict[str, Any] | None = None
+    # O site declara que o conteúdo não pode ser usado por IA (Content-Signal ai-train=no no robots.txt):
+    # os editais dele nunca vão para o LLM de enriquecimento (só regras determinísticas).
+    sem_llm: bool = False
+    termos_obs: str | None = None
     # Instâncias de fora do Brasil (ex.: IberCultura Viva): o edital vira internacional.
     ambito: str = "brasil"
     pais_destino: str | None = None

@@ -422,3 +422,77 @@ def test_workflow_semanal_so_propoe_e_nao_ativa_nada():
     assert wf[True]["schedule"][0]["cron"] and "workflow_dispatch" in wf[True]
     assert "python -m scripts.descobrir_mapas" in texto and "ativa: true" not in texto
     assert wf["jobs"]["descobrir"]["timeout-minutes"] <= 30
+
+
+# ── ativação das instâncias descobertas ──────────────────────────────────────────────────────
+
+
+def test_toda_instancia_ativa_tem_termos_conferidos_e_robots_nao_proibido():
+    instancias, _ = carregar_fontes()
+    ativas = [i for i in instancias if i.ativa]
+    assert len(ativas) >= 30
+    for i in [
+        x for x in ativas if x.sondagem
+    ]:  # as descobertas automaticamente só ligam depois de conferidas
+        assert i.termos_conferidos_em and i.termos_url, (
+            f"{i.slug}: instância ativa sem termos conferidos"
+        )
+    for i in instancias:
+        if i.sondagem and i.ativa:
+            assert i.sondagem["robots"] == "permitido", i.slug
+        if not i.ativa:
+            assert i.motivo, f"{i.slug}: desativada sem motivo"
+
+
+def test_site_sem_termos_publicados_deixa_a_observacao_registrada():
+    instancias, _ = carregar_fontes()
+    sem_pagina = [
+        i
+        for i in instancias
+        if i.sondagem and i.ativa and i.termos_obs and "não publica termos" in i.termos_obs
+    ]
+    assert {i.slug for i in sem_pagina} >= {
+        "maua-sp",
+        "pelotas-rs",
+        "arapiraca-al",
+        "gravatai-rs",
+        "itatiba-sp",
+        "ribeiraopires-sp",
+    }
+
+
+def test_site_com_content_signal_ai_train_no_nunca_vai_para_o_llm():
+    from worker.modelos import Edital
+    from worker.scraper_worker import alvo_do_llm
+
+    instancias, _ = carregar_fontes()
+    assert [i.slug for i in instancias if i.sem_llm] == ["lagoasanta-mg"]
+
+    def ed(fonte):
+        return Edital.model_validate({
+            "fonte": fonte, "id_externo": "1", "titulo": "Edital de teste de fomento", "orgao_fomento": "Org", "url_origem": "https://x.test/1",
+            "inscricao_fim": "2099-01-01T00:00:00+00:00", "ambito": "brasil", "abrangencia": "municipal", "uf": "MG",
+        })  # fmt: skip
+
+    todos = [
+        ed("mapas:lagoasanta-mg"),
+        ed("mapas:quixada-ce"),
+        ed("mapas:ce"),
+        ed("mapas:falhou"),
+        ed("curadoria"),
+    ]
+    alvo = alvo_do_llm(todos, {"mapas:falhou"}, instancias)
+    assert [e.fonte for e in alvo] == ["mapas:quixada-ce", "mapas:ce"]
+
+
+def test_pareceristas_nao_entram_como_edital_de_fomento():
+    import re
+
+    from worker.scraper_worker import carregar_fontes as cf
+
+    _, params = cf()
+    assert any(
+        re.search(p, "credenciamento de pareceristas projetos pnab")
+        for p in params.excluir_titulo_regex
+    )
+    assert not any(re.search(p, "credenciamento de artistas") for p in params.excluir_titulo_regex)
