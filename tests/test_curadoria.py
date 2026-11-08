@@ -37,7 +37,7 @@ def escrever(tmp_path, texto):
 
 def test_arquivo_real_valida_e_conta_entradas():
     r = carregar_curadoria(CURADAS, date(2026, 11, 6))
-    assert len(r.editais) == 5 and len(r.radar) == 7
+    assert len(r.editais) == 5 and len(r.radar) == 8
     assert r.avisos == []
     for e in r.editais:
         assert e.fonte == "curadoria" and e.curado

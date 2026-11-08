@@ -479,7 +479,8 @@ def test_catalogo_tem_ao_menos_15_fontes_novas_ativas_e_as_desativadas_tem_motiv
     assert all(f.motivo for f in fontes if not f.ativa)
     assert len({f.id for f in fontes}) == len(fontes)
     assert all(
-        f.url.startswith("https://") and f.termos_conferidos_em == "2026-11-07" for f in fontes
+        f.url.startswith("https://") and (f.termos_conferidos_em or "") >= "2026-11-07"
+        for f in fontes
     )
 
 

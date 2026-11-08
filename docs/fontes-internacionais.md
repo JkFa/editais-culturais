@@ -106,13 +106,21 @@ Testes: `tests/test_internacional_elegibilidade.py` e `tests/test_internacional_
 O prompt original chamava o terceiro programa de "Ibercena" e pedia um adaptador HTML para Ibermuseos; o nome
 oficial é **Iberescena**, e o adaptador de Ibermuseos ficou na curadoria pelo motivo da tabela.
 
-### Endereços avaliados em 08/11/2026 (Ibermedia PT-PT, Res Artis, Live Composers)
+### Endereços avaliados em 08/11/2026
+
+Seis endereços foram abertos e conferidos antes de qualquer cadastro. Regra: só entra chamada aberta, com prazo futuro e evidência;
+agregadores só servem para descobrir.
 
 | Endereço | Resultado |
 |---|---|
-| `programaibermedia.com/pt-pt/as-nossas-convocatorias/` | As 6 modalidades (distribuição, codesenvolvimento de longas e de séries, coprodução, formação, ajudas à indústria) aparecem como **"convocatória fechada"**; o único prazo da página, 30/03/2026, passou. Não há o que cadastrar em `curadoria_internacional.json`. A convocatória é anual, então entrou no **radar** ("Costuma abrir em breve") em `worker/fontes_curadas.yaml`. |
-| `resartis.org/open-calls/` | Agregador da rede Res Artis com ~150 chamadas de residência abertas, cada uma com título, **prazo** e **país**. Não dá para cadastrar à mão uma a uma, e o feed "Open Calls" do site vem vazio. `robots.txt` permite a página; o aviso legal diz que a lista é enviada por membros e que o Res Artis não garante os dados. Seria um coletor novo (HTML da listagem), tratado como o On the Move: título, prazo, país e link, com elegibilidade em "verificar". **Aguarda decisão**. |
-| `live-composers.pantheonsite.io` | Agregador de oportunidades para compositores ("The Composer's Site"), hospedado no domínio de plataforma `pantheonsite.io`. O `robots.txt` é `Disallow: /` para todos os robôs. **Não coletamos** e não dá para curar entradas a partir dele sem navegar o site por robô. Entra se vier o endereço oficial do site ou o link de uma chamada específica. |
+| `programaibermedia.com/pt-pt/as-nossas-convocatorias/` | As 6 modalidades aparecem como **"convocatória fechada"** e o único prazo (30/03/2026) passou. Nada a cadastrar. A convocatória é anual: entrou no **radar** ("Costuma abrir em breve") em `worker/fontes_curadas.yaml`. |
+| `citeinternationaledesarts.fr/en/programmes-de-residence/` | Catálogo de programas por país. A página `/en/open-calls/` lista 4 chamadas abertas: Samsung (só nacionalidade coreana), Prisme/ADAGP (quem mora na França), Villa Arson (formados lá) e **Caméra libre** (cineastas estrangeiros em situação de perseguição; prazo 16/11/2026, confirmado na página do CNC). Só a **Caméra libre** foi cadastrada, como "verificar elegibilidade". O programa **Icatu x Cité** (anual, para artistas do Brasil) está sem chamada aberta e entrou no radar. |
+| `effea.eu/effea-residencies/all-residencies` | Lista residências já concedidas. A Call #5 foi de 01/09 a 03/11/2026 e só aceita festivais e artistas com endereço em países europeus da lista, sem o Brasil. Não cadastrada. |
+| `visegradfund.org/performing-artist-residency-apply` | "Currently closed" (prazo 25/10/2026) e restrita a cidadãos dos países de Visegrado (CZ, HU, PL, SK). Não cadastrada. |
+| `resartis.org/open-calls/` | Agregador com ~150 chamadas de residência (título, prazo e país na listagem). Não dá para cadastrar à mão uma a uma, e o feed oficial de chamadas vem vazio. `robots.txt` permite a página; o aviso legal diz que a lista é enviada por membros, sem garantia. Seria um **coletor novo** (HTML da listagem), tratado como o On the Move: título, prazo, país e link, com elegibilidade "verificar". **Aguarda decisão.** |
+| `live-composers.pantheonsite.io` | Agregador para compositores ("The Composer's Site") no domínio de plataforma `pantheonsite.io`. O `robots.txt` é `Disallow: /` para todos os robôs: **não coletamos**. Entra se vier o endereço oficial ou o link de uma chamada específica. Foi feita uma única requisição à página inicial. |
+
+Todos aparecem na lista de fontes de `/sobre/` como inativos, com o motivo (`worker/fontes.yaml`).
 
 ### Curadoria manual · `worker/curadoria_internacional.json`
 
@@ -126,8 +134,9 @@ oficial é **Iberescena**, e o adaptador de Ibermuseos ficou na curadoria pelo m
 - **Regra editorial:** só entra o que foi aberto e conferido na página oficial, com prazo futuro. `aberto`,
   `requer_*` e `custos_cobertos` exigem a evidência correspondente. URLs de exemplo são recusadas. Conferência com
   mais de 45 dias gera aviso no log; prazo vencido sai sozinho.
-- Hoje: 1 entrada, o **7º Fundo Ibermuseos** (inscrições de 22/10/2026 a 05/03/2027; museus dos 15 países-membros,
-  incluindo o Brasil; não recebe pessoas físicas).
+- Hoje: 2 entradas. O **7º Fundo Ibermuseos** (inscrições de 22/10/2026 a 05/03/2027; museus dos 15 países-membros, incluindo
+  o Brasil; não recebe pessoas físicas) e a **Caméra libre** (CNC/Cité internationale des arts; prazo 16/11/2026; cineastas
+  estrangeiros em situação de perseguição; viagem à França paga; elegibilidade "verificar").
 - Aparece como "Fonte: curadoria do portal".
 
 ## No site

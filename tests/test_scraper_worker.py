@@ -93,7 +93,7 @@ async def test_dry_run_gera_snapshot_valido_e_falha_isolada(tmp_path, servidor_f
         e["url_origem"] and e["inscricao_fim"] for e in corpo["editais"]
     )
     assert {e["fonte"] for e in corpo["editais"]} >= {"curadoria", "mapas:ce"}
-    assert len(corpo["radar"]) == 7
+    assert len(corpo["radar"]) == 8
     fins = [e["inscricao_fim"] for e in corpo["editais"]]
     assert fins == sorted(fins)
 

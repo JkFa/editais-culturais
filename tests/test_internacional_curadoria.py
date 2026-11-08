@@ -38,20 +38,41 @@ def test_schema_e_valido_e_o_arquivo_de_dados_passa_nele():
     jsonschema.validate(carregar_json(DADOS), schema)
 
 
-def test_nenhuma_entrada_ficticia_nem_vencida_nem_sem_evidencia():
-    """Regra editorial: só o que foi aberto e conferido na página oficial, com prazo futuro."""
+def test_nenhuma_entrada_ficticia_nem_sem_evidencia():
+    """Regra editorial: só o que foi aberto e conferido na página oficial, com prazo futuro na conferência.
+
+    O prazo é comparado com a data da conferência (e não com "hoje"): quando uma chamada vence, a
+    coleta a tira sozinha e este teste não pode quebrar por causa disso.
+    """
     dados = carregar_json(DADOS)
     assert dados["oportunidades"], "se nada foi confirmado, o arquivo deve ficar só com o schema"
-    resultado = ci.carregar(DADOS, hoje=date.today())
-    assert not [a for a in resultado.avisos if "vencido" in a], resultado.avisos
     for op in dados["oportunidades"]:
+        conferido = date.fromisoformat(op["conferido_em"])
+        resultado = ci.carregar(DADOS, hoje=conferido)
+        assert op["id"] in {b.id_externo for b in resultado.editais}, (
+            f"{op['id']}: vencida na conferência"
+        )
         assert op["id"] != "exemplo-nao-publicar"
         assert op["url_oficial"].startswith("https://")
         assert not any(h in op["url_oficial"] for h in ("example", "exemplo", ".invalid"))
-        assert op["evidencias"]["prazo_original"] in (
-            op["evidencias"]["prazo_original"],
-        )  # trecho presente
-        assert date.fromisoformat(op["conferido_em"]) <= date.today()
+        assert op["evidencias"]["prazo_original"]  # trecho literal da página oficial
+        assert conferido <= date.today()
+
+
+def test_camera_libre_entra_como_verificar_com_custo_e_evidencia():
+    b = next(x for x in ci.carregar(DADOS, HOJE).editais if x.id_externo.startswith("camera-libre"))
+    assert (
+        b.elegibilidade_br == "verificar" and b.pais_destino == "FR" and b.idioma_original == "fr"
+    )
+    assert b.tipo_oportunidade == "residencia" and b.linguagens == ["Cinema & Audiovisual"]
+    assert (
+        b.custos_cobertos == ["viagem"]
+        and "venue en France" in b.proveniencia["custos_cobertos"].trecho
+    )
+    # 16/11/2026, só data: vale até 23:59:59 de Brasília
+    assert b.inscricao_fim.isoformat() == "2026-11-17T02:59:59+00:00" and b.fim_tem_horario is False
+    assert "16 novembre 2026" in b.proveniencia["inscricao_fim"].trecho
+    assert b.url_origem.startswith("https://www.cnc.fr/")
 
 
 def test_exemplo_comentado_nao_vira_oportunidade_e_nao_e_lido():
@@ -63,7 +84,10 @@ def test_exemplo_comentado_nao_vira_oportunidade_e_nao_e_lido():
 
 def test_ibermuseos_vira_edital_internacional_com_prazo_e_fonte_da_curadoria():
     res = ci.carregar(DADOS, HOJE)
-    assert [b.id_externo for b in res.editais] == ["ibermuseos-fondo-7-2026"]
+    assert [b.id_externo for b in res.editais] == [
+        "ibermuseos-fondo-7-2026",
+        "camera-libre-2026-2a-sessao",
+    ]
     b = res.editais[0]
     assert b.fonte == "curadoria-internacional" and b.via == "curadoria do portal"
     assert b.ambito == "internacional" and b.pais_destino == "Ibero-América"
@@ -202,8 +226,13 @@ async def test_coleta_diaria_publica_a_curadoria_internacional_sem_mexer_nos_bra
 
         return ResultadoV4()
 
+    # prazo em 2099: o teste não pode depender de a chamada real ainda estar aberta
+    longe = carregar_json(DADOS)["oportunidades"][0] | {"prazo_original": "2099-12-31"}
+    arquivo = tmp_path / "curadoria.json"
+    arquivo.write_text(json.dumps({"oportunidades": [longe]}), encoding="utf-8")
     monkeypatch.setattr(ClienteHttp, "__init__", init)
     monkeypatch.setattr(scraper_worker, "rodar_fontes_v4", sem_v4)
+    monkeypatch.setattr(scraper_worker, "CURADAS_INTERNACIONAL", arquivo)
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     snapshot = tmp_path / "s.json"
     assert await scraper_worker.executar(dry_run=True, snapshot=snapshot) == 0

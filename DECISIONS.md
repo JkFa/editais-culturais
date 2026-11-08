@@ -441,13 +441,20 @@ Pedido: `prompt-claude-code-internacional-fase1.md`. Documentação das fontes, 
 - **Fora do escopo, deixado pronto:** `valor_brl` e `resumo_pt` (colunas vazias), `prazo_fuso` (guardado para a conversão),
   `ambito = estrangeiro_nacional`.
 
-### Internacional: Ibermedia, Res Artis e Live Composers (08/11/2026)
+### Internacional: seis endereços avaliados (08/11/2026)
 
-- **Ibermedia (PT-PT):** nenhuma modalidade aberta (todas "convocatória fechada"; prazo de 30/03/2026 vencido), então nada vai para
-  `curadoria_internacional.json`. Virou entrada do **radar** (convocatória anual; janela "fim de janeiro a março", evidência na
-  edição de 2026), em `worker/fontes_curadas.yaml`. Sem `proponentes`: o texto fala em empresas e entidades dos países-membros, que
-  não mapeiam com segurança nos perfis do portal.
-- **Res Artis:** agregador com ~150 chamadas (título, prazo, país). Pede um coletor próprio, não curadoria manual; aguardo a decisão
-  do dono do projeto antes de ativar (termos: lista enviada por membros, sem garantia de exatidão; `robots.txt` permite a página).
-- **Live Composers:** `robots.txt` com `Disallow: /` para todos. Não coletamos nem curamos a partir dele. Foi feita uma única
-  requisição à página inicial para identificar o site; nenhuma outra.
+Detalhes e tabela em `docs/fontes-internacionais.md`. Resultado:
+
+- **Cadastrado como oportunidade:** só a **Caméra libre** (CNC + Cité internationale des arts; prazo 16/11/2026 confirmado na página do
+  CNC; "verificar", porque a regra depende da situação do cineasta). Entre as 4 chamadas abertas da Cité, as outras 3 exigem nacionalidade
+  coreana, morar na França ou ser formado na Villa Arson.
+- **No radar:** Ibermedia (anual; todas as modalidades fechadas, prazo de 30/03/2026 vencido) e **Icatu x Cité** (anual, para artistas do
+  Brasil; sem chamada nem datas na página). O radar já aceita item sem janela de meses (vai para o fim da lista).
+- **Não cadastrados:** EFFEA (Call #5 já fechou em 03/11 e é só para endereço em países europeus) e Visegrad Fund (fechada e restrita a
+  cidadãos de CZ/HU/PL/SK).
+- **Res Artis:** agregador (~150 chamadas). Pede um coletor próprio; aguardo decisão do dono do projeto (termos: lista enviada por
+  membros, sem garantia; `robots.txt` permite a página).
+- **Live Composers:** `robots.txt` com `Disallow: /` para todos. Não coletamos nem curamos a partir dele.
+- Todos entram em `fontes.yaml` como inativos, com motivo, para aparecer em `/sobre/`.
+- **Teste que quebraria sozinho:** a verificação "curadoria sem entradas vencidas" comparava com "hoje" e falharia quando a primeira
+  chamada vencesse. Passou a comparar com a data da conferência de cada entrada; o teste de integração usa prazo em 2099.
