@@ -35,9 +35,10 @@ from urllib.parse import urlparse
 import httpx
 import yaml
 
+from .coletores.curadoria import EditalCurado
 from .extrator import extrair_pagina, texto_de_pdf
-from .fila import ROTULO_CANDIDATO, FilaGitHub
-from .modelos import UFS
+from .fila import ROTULO_AUTO, ROTULO_VETO, FilaGitHub
+from .modelos import UFS, EditalBruto, Proveniencia
 from .padronizacao import (
     FUSO_PADRAO,
     extrair_proponentes,
@@ -52,7 +53,7 @@ from .web import ClienteWeb, ErroWeb
 log = logging.getLogger("worker.automatica")
 RAIZ = Path(__file__).resolve().parent
 DOMINIOS = RAIZ / "referencia" / "dominios_oficiais.json"
-ROTULO_VETO = "nao-publicar"
+FONTE_AUTOMATICA = "publicacao-automatica"
 SUFIXOS_OFICIAIS = (".gov.br", ".leg.br", ".mp.br", ".jus.br")
 TETO_POR_EXECUCAO = 15
 PRAZO_MAX_DIAS = 240  # prazo mais de 8 meses à frente costuma ser ano errado ou fluxo contínuo
@@ -480,6 +481,94 @@ def relatorio_md(decisoes: list[Decisao], hoje: datetime) -> str:
     return "\n".join(linhas) + "\n"
 
 
+# ── publicação (PR B) ────────────────────────────────────────────────────────────────────────
+
+CAMPOS_PUBLICAVEIS = (
+    "titulo", "orgao_fomento", "url_origem", "resumo_simples", "linguagens", "abrangencia", "uf",
+    "inscricao_fim", "fim_tem_horario", "valor_total", "teto_por_projeto", "proponentes",
+)  # fmt: skip
+
+
+def ligada() -> bool:
+    """Chave liga/desliga (variável do repositório `PUBLICACAO_AUTOMATICA`). Desligada por padrão."""
+    return os.environ.get("PUBLICACAO_AUTOMATICA", "").strip().lower() in ("1", "true", "sim", "on")
+
+
+def bruto_do_candidato(d: Decisao, hoje: datetime) -> EditalBruto:
+    """Decisão que publica -> EditalBruto, validado pelas MESMAS regras da curadoria.
+
+    Honestidade do selo: nada aqui afirma conferência humana. A proveniência é "regex" (lido do texto) e
+    `verificado_em` fica vazio; `verificacao = "automatica"` faz o site mostrar o selo.
+    """
+    dados = {k: d.campos[k] for k in CAMPOS_PUBLICAVEIS if k in d.campos}
+    dados.update(
+        id_externo=f"auto-{d.numero}",
+        verificado_em=hoje.date().isoformat(),
+        evidencias=d.evidencias,
+    )
+    bruto = EditalCurado.model_validate(dados).para_bruto()
+    prov = {
+        campo: Proveniencia(via="regex", trecho=p.trecho) for campo, p in bruto.proveniencia.items()
+    }
+    if d.campos.get("uf"):
+        prov["uf"] = Proveniencia(via="regex", trecho=f"domínio do site oficial: {host_de(d.link)}")
+    return bruto.model_copy(
+        update={
+            "fonte": FONTE_AUTOMATICA,
+            "verificacao": "automatica",
+            "verificado_em": None,
+            "via": None,
+            "proveniencia": prov,
+        }
+    )
+
+
+def _rotulos(issue: dict[str, Any]) -> set[str]:
+    return {(x["name"] if isinstance(x, dict) else str(x)) for x in issue.get("labels", [])}
+
+
+async def publicar_automaticos(
+    fila: FilaGitHub,
+    cliente: ClienteWeb,
+    hoje: datetime,
+    aprovados: dict[str, DominioAprovado] | None = None,
+) -> tuple[list[EditalBruto], list[Decisao]]:
+    """Candidatos abertos que passam em TODAS as regras viram editais; a Issue ganha o rótulo `auto-publicado`.
+
+    Roda a cada coleta: o que deixou de valer (prazo mudou, página saiu do ar, veto humano) some do portal no mesmo dia
+    e a Issue recebe um comentário explicando.
+    """
+    issues = await fila.candidatos()
+    decisoes = await avaliar_candidatos(
+        issues, cliente, aprovados if aprovados is not None else carregar_dominios(), hoje
+    )
+    rotulos = {int(i["number"]): _rotulos(i) for i in issues}
+    brutos: list[EditalBruto] = []
+    for d in decisoes:
+        if d.publica:
+            try:
+                brutos.append(bruto_do_candidato(d, hoje))
+            except ValueError as exc:  # a curadoria rejeitou: continua na fila humana
+                d.publica = False
+                d.motivos.append(f"não passou na validação da curadoria: {str(exc)[:120]}")
+        tinha = ROTULO_AUTO in rotulos.get(d.numero, set())
+        if d.publica and not tinha:
+            await fila.rotular(
+                d.numero,
+                ROTULO_AUTO,
+                "Publicado **automaticamente** (sem conferência humana): o prazo e o órgão foram lidos do site oficial, com o trecho "
+                "que os comprova. Para tirar do ar, feche esta Issue ou adicione o rótulo `nao-publicar`.",
+            )
+        elif tinha and not d.publica:
+            await fila.desrotular(
+                d.numero,
+                ROTULO_AUTO,
+                f"Saiu do ar automaticamente: {d.motivos[0] if d.motivos else 'não passa mais nas regras'}. "
+                "Continua na fila para conferência humana.",
+            )
+    return brutos, decisoes
+
+
 async def principal(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
         description="Modo sombra da publicação automática (não publica nada)."
@@ -496,7 +585,7 @@ async def principal(argv: list[str] | None = None) -> int:
     hoje = datetime.now(UTC)
     fila = FilaGitHub(repo, token)
     try:
-        issues = await fila._listar({"labels": ROTULO_CANDIDATO, "state": "open"})
+        issues = await fila.candidatos()
     except httpx.HTTPError as exc:
         log.error("não consegui listar os candidatos: %s", exc)
         return 1

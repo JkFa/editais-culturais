@@ -30,6 +30,8 @@ PROPONENTES = ("PF", "MEI", "PJ_COM_FINS", "PJ_SEM_FINS", "COLETIVO")
 UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split()
 
 Via = Literal["regex", "llm", "curadoria", "api"]
+# Quem conferiu o edital: uma pessoa (curadoria) ou um programa, sem conferência humana (automatica).
+Verificacao = Literal["curadoria", "automatica"]
 Abrangencia = Literal["nacional", "estadual", "municipal"]
 # Âmbito: onde está a oportunidade em relação ao Brasil. `abrangencia` (acima) continua só para
 # editais brasileiros (nacional/estadual/municipal); `ambito` separa o que é de fora.
@@ -103,6 +105,7 @@ class EditalBruto(BaseModel):
     tipo_apoio: str | None = None
     verificado_em: str | None = None
     pendencias: str | None = None
+    verificacao: Verificacao | None = None
 
     # Internacional (Fase 1). Os padrões deixam os editais brasileiros exatamente como eram.
     ambito: Ambito = "brasil"
@@ -152,6 +155,7 @@ class Edital(BaseModel):
     tipo_apoio: str | None = None
     verificado_em: str | None = None
     pendencias: str | None = None
+    verificacao: Verificacao | None = None
     inscricao_inicio: datetime | None = None
     inscricao_fim: datetime
     fim_tem_horario: bool = False
@@ -240,6 +244,10 @@ class Edital(BaseModel):
             # para a coleta de hoje não regravar nem mudar o "coletado em" dos editais existentes.
             for campo in CAMPOS_INTERNACIONAIS:
                 dados.pop(campo, None)
+        if dados.get("verificacao") is None:
+            dados.pop(
+                "verificacao", None
+            )  # editais sem selo mantêm o hash de antes do campo existir
         bruto = json.dumps(dados, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(bruto.encode()).hexdigest()
 

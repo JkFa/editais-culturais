@@ -260,3 +260,31 @@ def test_cobertura_diaria_anon_le_mas_nao_escreve_e_nota_limitada(banco):
         ).returncode
         != 0
     )
+
+
+def test_verificacao_so_aceita_curadoria_ou_automatica_e_a_view_expoe_a_coluna(banco):
+    for m in MIGRATIONS:
+        psql(banco, m.read_text(encoding="utf-8"))
+    base = "insert into editais(fonte,id_externo,url_origem,titulo,orgao_fomento,inscricao_fim,verificacao) values ('t','{i}','u','Edital Teste V','o', now() + interval '10 days',{v});"
+    for i, v in enumerate(["null", "'curadoria'", "'automatica'"]):
+        psql(banco, base.format(i=f"v{i}", v=v))
+    assert psql(banco, base.format(i="v9", v="'humano'"), check=False).returncode != 0
+    linhas = psql(
+        banco,
+        "select verificacao from editais_abertos where fonte='t' order by id_externo;",
+        papel="anon",
+    ).stdout.split()
+    assert [x for x in linhas if x != "SET"] == ["curadoria", "automatica"], (
+        "anon lê a coluna pela view (nulo some do split)"
+    )
+    # a migration é idempotente e promove a curadoria antiga
+    psql(
+        banco,
+        "insert into editais(fonte,id_externo,url_origem,titulo,orgao_fomento,inscricao_fim) values ('curadoria','antigo','u','Edital Antigo X','o', now() + interval '10 days');",
+    )
+    for m in MIGRATIONS:
+        psql(banco, m.read_text(encoding="utf-8"))
+    assert (
+        psql(banco, "select verificacao from editais where id_externo='antigo';").stdout.strip()
+        == "curadoria"
+    )

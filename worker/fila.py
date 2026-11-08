@@ -28,6 +28,10 @@ log = logging.getLogger("worker.fila")
 API = "https://api.github.com"
 ROTULO_CANDIDATO = "candidato"
 ROTULO_APROVADO = "aprovado"
+ROTULO_AUTO = (
+    "auto-publicado"  # a publicação automática publicou este candidato (worker/automatica.py)
+)
+ROTULO_VETO = "nao-publicar"  # veto humano: a publicação automática nunca publica este candidato
 PREFIXO_MARCADOR = "<!-- candidato:"
 LIMITE_CANDIDATOS_POR_EXECUCAO = 20
 _TRACKING = re.compile(r"^(utm_|gclid|gad_|fbclid|mc_|_ga|ref$)", re.I)
@@ -138,6 +142,8 @@ class FilaGitHub:
         for nome, cor, desc in (
             (ROTULO_CANDIDATO, "fbca04", "Possível edital aguardando conferência"),
             (ROTULO_APROVADO, "0e8a16", "Conferido: o próximo sync publica"),
+            (ROTULO_AUTO, "1d76db", "Publicado automaticamente (sem conferência humana)"),
+            (ROTULO_VETO, "b60205", "Veto: a publicação automática não publica este candidato"),
         ):
             r = await self._c.post(
                 f"/repos/{self.repo}/labels", json={"name": nome, "color": cor, "description": desc}
@@ -182,6 +188,24 @@ class FilaGitHub:
         )
         r.raise_for_status()
         return int(r.json()["number"])
+
+    async def candidatos(self) -> list[dict[str, Any]]:
+        return await self._listar({"labels": ROTULO_CANDIDATO, "state": "open"})
+
+    async def rotular(self, numero: int, rotulo: str, comentario: str | None = None) -> None:
+        r = await self._c.post(
+            f"/repos/{self.repo}/issues/{numero}/labels", json={"labels": [rotulo]}
+        )
+        r.raise_for_status()
+        if comentario:
+            await self.comentar(numero, comentario)
+
+    async def desrotular(self, numero: int, rotulo: str, comentario: str | None = None) -> None:
+        r = await self._c.delete(f"/repos/{self.repo}/issues/{numero}/labels/{rotulo}")
+        if r.status_code not in (200, 404):
+            r.raise_for_status()
+        if comentario:
+            await self.comentar(numero, comentario)
 
     async def aprovados(self) -> list[dict[str, Any]]:
         return await self._listar({"labels": ROTULO_APROVADO, "state": "open"})

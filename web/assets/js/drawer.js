@@ -1,6 +1,6 @@
 // Painel lateral com os detalhes do edital. Acessível: role=dialog, aria-modal,
 // foco preso, Esc fecha e o foco volta ao card que abriu.
-import { botaoFavorito, badgePrazo, pilulas, raioX } from "./cards.js";
+import { TEXTO_SELO_AUTOMATICO, botaoFavorito, badgePrazo, pilulas, raioX, seloAutomatico } from "./cards.js";
 import {
   AVISO_LEGAL,
   EXPLICACAO_ELEGIBILIDADE,
@@ -79,6 +79,30 @@ function blocoProveniencia(edital) {
         el("dd", {}, `“${p.trecho}”`),
       ]),
     ),
+  );
+}
+
+const REPO_ISSUES = "https://github.com/JkFa/editais-culturais/issues/new";
+
+/** Link para avisar um erro de dado: abre uma Issue pública já preenchida (sem dados pessoais). */
+export function urlReportarErro(edital) {
+  const p = new URLSearchParams({
+    title: `Erro de dado: ${edital.titulo}`.slice(0, 120),
+    body: `Edital: ${edital.titulo}\nPágina oficial: ${edital.url_origem}\n\nO que está errado (prazo, órgão, valor...):\n`,
+    labels: "erro-de-dado",
+  });
+  return `${REPO_ISSUES}?${p.toString()}`;
+}
+
+/** Só para editais publicados automaticamente: explica o selo e oferece o aviso de erro. */
+function blocoVerificacaoAutomatica(edital) {
+  if (edital.verificacao !== "automatica") return null;
+  return el(
+    "section",
+    { class: "verificacao-auto" },
+    el("h3", {}, "Verificado automaticamente"),
+    el("p", {}, TEXTO_SELO_AUTOMATICO),
+    el("p", {}, el("a", { href: urlReportarErro(edital), target: "_blank", rel: "noopener noreferrer" }, "Reportar erro neste edital")),
   );
 }
 
@@ -209,6 +233,7 @@ function conteudoBrasil(edital, { favorito, aoAlternarFavorito, urlPortal, aoFec
         el("h2", { id: "painel-titulo" }, edital.titulo),
         el("p", { class: "fonte" }, edital.orgao_fomento, local ? ` · ${local}` : ""),
         el("div", { class: "painel-badge" }, badgePrazo(edital)),
+        seloAutomatico(edital),
       ),
       el(
         "div",
@@ -220,6 +245,7 @@ function conteudoBrasil(edital, { favorito, aoAlternarFavorito, urlPortal, aoFec
     el(
       "div",
       { class: "painel-corpo" },
+      blocoVerificacaoAutomatica(edital),
       secao("Dinheiro", raioX(edital)),
       secao("Quem pode participar", pilulas(edital)),
       secao(

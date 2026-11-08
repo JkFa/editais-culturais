@@ -21,6 +21,7 @@ import httpx
 import yaml
 from pydantic import ValidationError
 
+from . import automatica
 from . import cobertura as placar
 from .catalogo import FonteConfig, StatusFonte, carregar_fontes_v4, classificar_falha, status_de
 from .coletores.curadoria import ErroCuradoria, carregar_curadoria
@@ -164,6 +165,23 @@ def status_das_instancias(
             estado, erro = classificar_falha(falhas.get(i.fonte, ""), anterior.get(i.fonte), agora)
             saida.append(status_de(cfg, estado, anterior.get(i.fonte), erro=erro, agora=agora))
     return saida
+
+
+def _status_publicacao_automatica(
+    ligada: bool, ok: bool, anterior: dict[str, Any] | None, editais: list[Edital], agora: datetime
+) -> StatusFonte:
+    cfg = FonteConfig(
+        id=automatica.FONTE_AUTOMATICA, nome="Publicação automática (lida do site oficial, sem conferência humana)",
+        tipo="oficial", metodo="html", ativa=ligada,
+        url="https://github.com/JkFa/editais-culturais/issues?q=label%3Aauto-publicado",
+        motivo=None if ligada else "Desligada: nenhum edital é publicado sem uma pessoa conferir.",
+    )  # fmt: skip
+    if not ligada:
+        from .catalogo import status_desativada
+
+        return status_desativada(cfg)
+    total = sum(1 for e in editais if e.fonte == automatica.FONTE_AUTOMATICA)
+    return status_de(cfg, "ok" if ok else "erro", anterior, total=total, agora=agora)
 
 
 async def executar_fonte_unica(fonte_id: str, dry_run: bool) -> int:
@@ -318,6 +336,27 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
         except httpx.HTTPError as exc:
             log.error("fila de curadoria indisponível: %s", exc)
 
+    # Publicação automática (PR B): candidatos abertos que passam em TODAS as regras de worker/automatica.py.
+    # Desligada por padrão (variável do repositório PUBLICACAO_AUTOMATICA). Desligada, o que já foi publicado sai do ar.
+    auto_ligada = automatica.ligada()
+    if fila and not auto_ligada:
+        ids_por_fonte[automatica.FONTE_AUTOMATICA] = set()
+        fontes_ok.append(automatica.FONTE_AUTOMATICA)
+    elif fila:
+        try:
+            async with ClienteWeb() as web_auto:
+                brutos_auto, _ = await automatica.publicar_automaticos(fila, web_auto, agora)
+            convertidos = padronizar_todos(brutos_auto, {}, agora, nao_mapeadas)
+            editais += convertidos
+            ids_por_fonte[automatica.FONTE_AUTOMATICA] = {e.id_externo for e in convertidos}
+            fontes_ok.append(automatica.FONTE_AUTOMATICA)
+            log.info("publicação automática: %d editais", len(convertidos))
+        except (
+            httpx.HTTPError
+        ) as exc:  # o que já estava publicado é preservado do snapshot anterior
+            log.error("publicação automática indisponível: %s", exc)
+            falhas.append({"fonte": automatica.FONTE_AUTOMATICA, "erro": str(exc)[:300]})
+
     # Fontes novas (v4): oficiais, plataformas, descoberta e vigias de página.
     resultado_v4 = None
     catalogo = carregar_fontes_v4(FONTES)
@@ -378,6 +417,8 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
     # Deduplicação entre fontes: um registro canônico, demais origens em `fontes_alternativas`.
     tipos_por_fonte = {f.id: f.tipo for f in catalogo}
     tipos_por_fonte.update({i.fonte: "plataforma" for i in instancias})
+    # Publicado sem conferência humana: perde para qualquer outra origem do mesmo edital.
+    tipos_por_fonte[automatica.FONTE_AUTOMATICA] = "descoberta"
     editais, duplicados = deduplicar(editais, tipos_por_fonte)
     if duplicados:
         log.info("deduplicação: %d registros viraram fontes alternativas", duplicados)
@@ -444,6 +485,10 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                             metodo="html", url="https://github.com/JkFa/editais-culturais/issues?q=label%3Aaprovado"),
                 "ok" if "curadoria" in fontes_ok else "erro", status_ant.get("curadoria"),
                 total=sum(1 for e in editais if e.fonte == "curadoria"), agora=agora,
+            ),
+            _status_publicacao_automatica(
+                auto_ligada, automatica.FONTE_AUTOMATICA in fontes_ok and automatica.FONTE_AUTOMATICA not in falharam,
+                status_ant.get(automatica.FONTE_AUTOMATICA), editais, agora,
             ),
             status_de(
                 FonteConfig(id=FONTE_CURADORIA_INTERNACIONAL, nome="Curadoria internacional (curadoria_internacional.json)",
