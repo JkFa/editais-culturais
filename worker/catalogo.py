@@ -48,6 +48,16 @@ class FonteConfig(BaseModel):
     motivo: str | None = None
     ignorar_hosts: list[str] = Field(default_factory=list)
     cobertura: Territorio | None = None
+    # Coletor `govbr` (órgãos federais em gov.br): ver worker/coletores/govbr.py.
+    orgao: str | None = None  # nome do órgão exibido no edital
+    formato: Literal["cards", "links", "volto"] | None = None
+    paginas: list[str] = Field(default_factory=list)  # listas além de `url`
+    padrao_links: str | None = None  # formato `links`: regex do texto do link
+    excluir_titulo: list[str] = Field(default_factory=list)  # regex extras de título a descartar
+    incluir_titulo: list[str] = Field(
+        default_factory=list
+    )  # se houver, só entra título que bata com um deles
+    max_itens: int | None = None
 
     @model_validator(mode="after")
     def _valida(self) -> FonteConfig:

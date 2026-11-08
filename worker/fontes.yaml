@@ -528,7 +528,7 @@ fontes:
   - {id: vigia-sesc-rj-pulsar, nome: "Sesc RJ: Edital de Cultura Pulsar", tipo: oficial, metodo: vigia, url: "https://www.sescrio.org.br/pulsar/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
   - {id: vigia-instituto-cultural-vale, nome: "Instituto Cultural Vale: chamada", tipo: oficial, metodo: vigia, url: "https://www.institutoculturalvale.org/editais/chamada-instituto-cultural-vale/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
   - {id: vigia-spcine-fomento, nome: "Spcine: editais de fomento", tipo: oficial, metodo: vigia, url: "https://spcine.com.br/editais-de-fomento/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true, cobertura: {ente: capital, uf: SP, municipio: São Paulo, parcial: true}}
-  - {id: vigia-funarte-editais, nome: "Funarte: editais", tipo: oficial, metodo: vigia, url: "https://www.gov.br/funarte/pt-br/editais-1", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-funarte-editais, nome: "Funarte: editais (vigia)", tipo: oficial, metodo: vigia, url: "https://www.gov.br/funarte/pt-br/editais-1", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "O endereço /funarte/pt-br/editais-1 responde 404 (a página real é /funarte/pt-br/editais/editais-abertos): o vigia dizia ok sem ler nada. Substituído pelo coletor funarte-editais."}
   - {id: vigia-riofilme-chamadas, nome: "Riofilme: chamadas", tipo: oficial, metodo: vigia, url: "https://riofilme.com.br/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true, cobertura: {ente: capital, uf: RJ, municipio: Rio de Janeiro, parcial: true}}
   - {id: vigia-rj-incentivo-cultura, nome: "Secult-RJ: Lei de Incentivo à Cultura", tipo: oficial, metodo: vigia, url: "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true, cobertura: {ente: estado, uf: RJ, parcial: true}}
   - {id: vigia-claro-patrocinios, nome: "Claro: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.claro.com.br/institucional/patrocinios", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
@@ -548,6 +548,69 @@ fontes:
   - {id: oi-futuro, nome: "Oi Futuro", tipo: oficial, metodo: vigia, url: "https://oifuturo.org.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "ConnectTimeout em 07/11/2026."}
 
   # ------------------------------------------------------------------ internacional (Fase 1)
+  # Órgãos federais em gov.br (Onda 2, PR 2a). Coletor `govbr`: só publica com prazo futuro lido do texto/PDF, com o trecho.
+  # robots.txt do gov.br permite (só bloqueia /*sendto_form, /*folder_factories e áreas de edição); como o MinC, é informação
+  # pública (Lei de Acesso à Informação). Termos e robots conferidos em 08/11/2026.
+  - id: funarte-editais
+    nome: "Funarte: editais abertos e em andamento"
+    orgao: Funarte
+    tipo: oficial
+    metodo: html
+    coletor: govbr
+    formato: cards
+    url: "https://www.gov.br/funarte/pt-br/editais/editais-abertos"
+    paginas: ["https://www.gov.br/funarte/pt-br/editais/editais-abertos", "https://www.gov.br/funarte/pt-br/editais/em-andamento"]
+    termos_url: "https://www.gov.br/funarte/pt-br/acesso-a-informacao"
+    termos_conferidos_em: "2026-11-08"
+    robots_ok: true
+    intervalo_min_entre_requisicoes_s: 3
+    ativa: true
+
+  - id: iphan-editais
+    nome: "Iphan: editais e seleções abertos"
+    orgao: Iphan
+    tipo: oficial
+    metodo: html
+    coletor: govbr
+    formato: volto
+    url: "https://www.gov.br/iphan/pt-br/acesso-a-informacao/editais-e-selecoes/abertos"
+    termos_url: "https://www.gov.br/iphan/pt-br/acesso-a-informacao"
+    termos_conferidos_em: "2026-11-08"
+    robots_ok: true
+    intervalo_min_entre_requisicoes_s: 3
+    max_itens: 40
+    ativa: true
+
+  - id: palmares-editais
+    nome: "Fundação Cultural Palmares: editais"
+    orgao: Fundação Cultural Palmares
+    tipo: oficial
+    metodo: html
+    coletor: govbr
+    formato: links
+    padrao_links: "edital|chamad|sele[cç]|pr[eê]mio|ocupa"
+    url: "https://www.gov.br/palmares/pt-br/acesso-a-informacao/editais"
+    termos_url: "https://www.gov.br/palmares/pt-br/acesso-a-informacao"
+    termos_conferidos_em: "2026-11-08"
+    robots_ok: true
+    intervalo_min_entre_requisicoes_s: 3
+    ativa: true
+
+  - id: bn-editais
+    nome: "Biblioteca Nacional: apoio à tradução, prêmios e editais"
+    orgao: Fundação Biblioteca Nacional
+    tipo: oficial
+    metodo: html
+    coletor: govbr
+    formato: cards
+    url: "https://www.gov.br/bn/pt-br/atuacao/cooperacao-e-difusao"
+    incluir_titulo: ["pr[eê]mio", "tradu", "edital", "chamada", "bolsa", "sele[cç][aã]o", "concurso", "apoio"]
+    termos_url: "https://www.gov.br/bn/pt-br/acesso-a-informacao-2"
+    termos_conferidos_em: "2026-11-08"
+    robots_ok: true
+    intervalo_min_entre_requisicoes_s: 3
+    ativa: true
+
   - id: onthemove
     nome: "On the Move: chamadas abertas (mobilidade, residências, financiamento)"
     tipo: plataforma
