@@ -64,8 +64,12 @@ Deno.test("entradas inválidas: 400", async () => {
 
 Deno.test("seção 'em breve' ou inexistente: 400", async () => {
   const t = montar();
-  assert.equal((await chamar(t.handler, { ...base, secao_id: "equipe" })).status, 400);
   assert.equal((await chamar(t.handler, { ...base, secao_id: "inexistente" })).status, 400);
+  // uma seção marcada como inativa continua bloqueada (as 12 seções estão ativas desde a Fase 2)
+  const emBreve = { ...specs, secoes: specs.secoes.map((x) => (x.id === "equipe" ? { id: "equipe", titulo: "Equipe", ordem: 9, ativo: false } : x)) };
+  const r = repoFalso();
+  const h = criarHandler({ repo: r.repo, provedor: () => llmFalso([perguntaOk]).provedor, specs: emBreve, origens: ORIGENS, limiteDiario: 60, log: () => {} });
+  assert.equal((await chamar(h, { ...base, secao_id: "equipe" })).status, 400);
 });
 
 Deno.test("limite diário: 429 amigável e a IA não é chamada", async () => {

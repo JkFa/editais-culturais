@@ -20,6 +20,13 @@ export type ContextoSecao = {
   secao: { rascunho: string; aprovado: boolean } | null;
   historico: Array<{ papel: "usuario" | "assistente"; conteudo: Record<string, unknown> }>;
 };
+export type TabelasDoProjeto = {
+  orcamento_itens: Array<Record<string, unknown>>;
+  cronograma_itens: Array<Record<string, unknown>>;
+  midia_itens: Array<Record<string, unknown>>;
+  equipe_membros: Array<Record<string, unknown>>;
+};
+export const TABELAS_ESTRUTURADAS = ["orcamento_itens", "cronograma_itens", "midia_itens", "equipe_membros"] as const;
 export type Turno = {
   userId: string;
   projetoId: string;
@@ -36,6 +43,17 @@ export interface Repositorio {
   carregarProjeto(jwt: string, projetoId: string): Promise<Projeto | null>;
   carregarSecao(jwt: string, projetoId: string, secaoId: string, dependencias: string[]): Promise<ContextoSecao>;
   carregarCriterios(jwt: string, editalId: number | null): Promise<Criterios>;
+  /** Linhas do orçamento, cronograma, mídia e equipe (lidas com o JWT do usuário: a RLS filtra). */
+  carregarTabelas(jwt: string, projetoId: string): Promise<TabelasDoProjeto>;
+  /** Tudo o que a PESSOA escreveu nas respostas do projeto (para conferir números e nomes propostos pelo LLM). */
+  carregarTextosDoUsuario(jwt: string, projetoId: string): Promise<string[]>;
+  /** Ids (dos informados) que já existem em OUTRO projeto. */
+  idsDeOutroProjeto(tabela: string, projetoId: string, ids: string[]): Promise<string[]>;
+  idsDoOrcamento(projetoId: string): Promise<string[]>;
+  /** Grava as linhas do projeto (upsert por id) e apaga as que sumiram. Linhas já trazem projeto_id? Não: é posto aqui. */
+  substituirItens(tabela: string, projetoId: string, linhas: Array<Record<string, unknown>>): Promise<void>;
+  /** Tira da equipe as ligações com itens de orçamento que não existem mais. */
+  limparReferenciasAoOrcamento(projetoId: string, idsValidos: string[]): Promise<void>;
   /** Total de usos hoje, ou -1 se o limite já foi atingido. */
   consumirUso(userId: string, limite: number): Promise<number>;
   salvarTurno(t: Turno): Promise<void>;
@@ -60,7 +78,7 @@ export function criarRepositorio(cfg: Config, fetchFn: Fetch = fetch): Repositor
     const r = await fetchFn(`${base}/rest/v1/${caminho}`, {
       method: metodo,
       headers: { ...comoServico, Prefer: "return=minimal", ...extra },
-      body: JSON.stringify(corpo),
+      body: corpo === undefined ? undefined : JSON.stringify(corpo),
     });
     if (!r.ok) throw new ErroBanco(`escrita em ${caminho.split("?")[0]} falhou (HTTP ${r.status})`);
   }
@@ -105,8 +123,57 @@ export function criarRepositorio(cfg: Config, fetchFn: Fetch = fetch): Repositor
 
     async carregarCriterios(jwt, editalId) {
       if (editalId == null) return null;
-      const l = await ler<NonNullable<Criterios>[]>(jwt, `edital_criterios?edital_id=eq.${editalId}&select=criterios,teto_orcamento,linguagens,campos_exigidos,limites_caracteres&limit=1`);
+      const colunas = "criterios,teto_orcamento,teto_por_proponente,percentuais_max,percentuais_min,rubricas_vedadas,limites_caracteres,campos_exigidos,contrapartida_exigida,prazo_execucao_meses,exige_acessibilidade,observacoes,revisado,fonte_url,linguagens";
+      const l = await ler<NonNullable<Criterios>[]>(jwt, `edital_criterios?edital_id=eq.${editalId}&select=${colunas}&limit=1`);
       return l[0] ?? null;
+    },
+
+    async carregarTabelas(jwt, projetoId) {
+      const p = `projeto_id=eq.${eq(projetoId)}&order=ordem.asc&select=*&limit=400`;
+      const [orcamento_itens, cronograma_itens, midia_itens, equipe_membros] = await Promise.all(
+        TABELAS_ESTRUTURADAS.map((t) => ler<Array<Record<string, unknown>>>(jwt, `${t}?${p}`)),
+      );
+      return { orcamento_itens, cronograma_itens, midia_itens, equipe_membros };
+    },
+
+    async carregarTextosDoUsuario(jwt, projetoId) {
+      const l = await ler<Array<{ resposta: string }>>(jwt, `respostas?projeto_id=eq.${eq(projetoId)}&select=resposta&order=created_at.asc&limit=500`);
+      return l.map((x) => x.resposta);
+    },
+
+    async idsDeOutroProjeto(tabela, projetoId, ids) {
+      if (!ids.length) return [];
+      const r = await fetchFn(`${base}/rest/v1/${tabela}?id=in.(${ids.map(eq).join(",")})&select=id,projeto_id`, { headers: comoServico });
+      if (!r.ok) throw new ErroBanco(`leitura de ${tabela} falhou (HTTP ${r.status})`);
+      return ((await r.json()) as Array<{ id: string; projeto_id: string }>).filter((x) => x.projeto_id !== projetoId).map((x) => x.id);
+    },
+
+    async idsDoOrcamento(projetoId) {
+      const r = await fetchFn(`${base}/rest/v1/orcamento_itens?projeto_id=eq.${eq(projetoId)}&select=id&limit=400`, { headers: comoServico });
+      if (!r.ok) throw new ErroBanco(`leitura de orcamento_itens falhou (HTTP ${r.status})`);
+      return ((await r.json()) as Array<{ id: string }>).map((x) => x.id);
+    },
+
+    async substituirItens(tabela, projetoId, linhas) {
+      if (linhas.length) {
+        await escrever(`${tabela}?on_conflict=id`, "POST", linhas.map((l) => ({ ...l, projeto_id: projetoId })), {
+          Prefer: "resolution=merge-duplicates,return=minimal",
+        });
+      }
+      const mantidos = linhas.map((l) => eq(String(l.id))).join(",");
+      await escrever(`${tabela}?projeto_id=eq.${eq(projetoId)}${mantidos ? `&id=not.in.(${mantidos})` : ""}`, "DELETE", undefined);
+    },
+
+    async limparReferenciasAoOrcamento(projetoId, idsValidos) {
+      const r = await fetchFn(`${base}/rest/v1/equipe_membros?projeto_id=eq.${eq(projetoId)}&select=id,orcamento_item_ids`, { headers: comoServico });
+      if (!r.ok) throw new ErroBanco(`leitura de equipe_membros falhou (HTTP ${r.status})`);
+      const validos = new Set(idsValidos);
+      for (const m of (await r.json()) as Array<{ id: string; orcamento_item_ids: string[] }>) {
+        const limpos = (m.orcamento_item_ids ?? []).filter((id) => validos.has(id));
+        if (limpos.length !== (m.orcamento_item_ids ?? []).length) {
+          await escrever(`equipe_membros?id=eq.${eq(m.id)}`, "PATCH", { orcamento_item_ids: limpos });
+        }
+      }
     },
 
     async consumirUso(userId, limite) {
