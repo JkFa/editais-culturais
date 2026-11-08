@@ -4,8 +4,11 @@ Supabase e a Edge Function são simulados em memória (o contrato é o mesmo da 
 testes Deno próprios). Aqui se prova o que a PESSOA vê e faz.
 """
 
+import os
 import re
 import uuid
+import zipfile
+from pathlib import Path
 from urllib.parse import unquote
 
 import pytest
@@ -517,4 +520,216 @@ def test_editores_sao_acessiveis_e_cabem_no_celular_nos_dois_temas(navegador, ur
         "[...document.querySelectorAll('.painel-tabela button')].map(b => b.getBoundingClientRect().height)"
     )
     assert min(alturas) >= 40
+    pg.context.close()
+
+
+# ── exportação: .xlsx, .docx com resumos e "copiar por campo" do edital ────────────────────────
+
+EXCELJS_CDN = "https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"
+
+
+def exceljs_real():
+    """O ExcelJS verdadeiro, do cache do Deno (o teste do .xlsx em Deno o baixa antes). Sem rede."""
+    base = Path(os.environ.get("DENO_DIR") or Path.home() / ".cache" / "deno")
+    achados = list(base.glob("npm/registry.npmjs.org/exceljs/4.4.0/dist/exceljs.min.js"))
+    if not achados:
+        pytest.skip("ExcelJS não está no cache do Deno (rode o teste Deno do xlsx antes)")
+    return achados[0].read_text(encoding="utf-8")
+
+
+def projeto_completo(navegador, url, criterios=None):
+    pg, be, pid = ir(
+        navegador,
+        url,
+        "orcamento",
+        criterios=criterios if criterios is not None else {"teto_orcamento": 20000},
+    )
+    oid = str(uuid.uuid4())
+    be.tabelas["orcamento_itens"] = [
+        {
+            "id": oid,
+            "projeto_id": pid,
+            "etapa": "producao",
+            "rubrica": "Equipe",
+            "item": "Cachê da direção",
+            "unidade": "mês",
+            "quantidade": 2,
+            "valor_unitario": 3000,
+            "fonte_preco": "sindicato",
+            "justificativa": "Direção",
+            "ordem": 0,
+        },
+        {
+            "id": str(uuid.uuid4()),
+            "projeto_id": pid,
+            "etapa": "divulgacao",
+            "rubrica": "Divulgação",
+            "item": "Cartazes",
+            "unidade": "unidade",
+            "quantidade": 100,
+            "valor_unitario": 5,
+            "fonte_preco": "gráfica",
+            "justificativa": "Divulgação",
+            "ordem": 1,
+        },
+    ]
+    be.tabelas["cronograma_itens"] = [
+        {
+            "id": str(uuid.uuid4()),
+            "projeto_id": pid,
+            "etapa": "producao",
+            "atividade": "Ensaios",
+            "mes_inicio": 1,
+            "mes_fim": 3,
+            "ordem": 0,
+        }
+    ]
+    be.tabelas["midia_itens"] = [
+        {
+            "id": str(uuid.uuid4()),
+            "projeto_id": pid,
+            "peca": "Cartaz",
+            "canal": "Rua",
+            "periodo": "antes",
+            "quantidade": 100,
+            "custo": None,
+            "orcamento_item_id": be.tabelas["orcamento_itens"][1]["id"],
+            "ordem": 0,
+        }
+    ]
+    be.tabelas["equipe_membros"] = [
+        {
+            "id": str(uuid.uuid4()),
+            "projeto_id": pid,
+            "funcao": "Direção",
+            "nome_artistico_ou_funcao": "Direção",
+            "mini_curriculo": "",
+            "local": "Recife",
+            "orcamento_item_ids": [oid],
+            "ordem": 0,
+        }
+    ]
+    for sid, texto in [
+        ("apresentacao", "Oficinas em Recife."),
+        ("acessibilidade", "Haverá intérprete de Libras."),
+        ("orcamento", "Orçamento por etapa."),
+    ]:
+        be.salvar_secao(pid, sid, texto)
+    for s in be.secoes:
+        s["aprovado"] = True
+    pg.reload()
+    pg.wait_for_selector(".painel-tabela")
+    return pg, be, pid
+
+
+def test_baixar_planilha_xlsx_com_formulas_reais(navegador, url, tmp_path):
+    pg, be, pid = projeto_completo(navegador, url)
+    pg.route(
+        EXCELJS_CDN,
+        lambda r: r.fulfill(
+            content_type="text/javascript",
+            body=exceljs_real(),
+            headers={"access-control-allow-origin": "*"},
+        ),
+    )
+    pg.get_by_role("button", name="Exportar e copiar").click()
+    with pg.expect_download() as dl:
+        pg.get_by_role("button", name="Baixar planilhas (.xlsx)").click()
+    assert dl.value.suggested_filename == "planilhas-oficinas-de-teatro-de-rua.xlsx"
+    arquivo = tmp_path / "p.xlsx"
+    dl.value.save_as(arquivo)
+    with zipfile.ZipFile(arquivo) as z:
+        wb = z.read("xl/workbook.xml").decode()
+        assert all(n in wb for n in ("Orçamento", "Resumo", "Cronograma", "Plano de mídia"))
+        assert 'fullCalcOnLoad="1"' in wb
+        orc = z.read("xl/worksheets/sheet1.xml").decode()
+        assert "<f>E6*F6</f>" in orc and "SUBTOTAL(9,G6:G6)" in orc
+        resumo = z.read("xl/worksheets/sheet2.xml").decode()
+        assert (
+            "SUMIF(" in resumo
+            and "&apos;Orçamento&apos;!$A:$A" in resumo
+            or "'Orçamento'!$A:$A" in resumo
+        )
+        assert "<v>20000</v>" in resumo, "teto do edital"
+        midia = z.read("xl/worksheets/sheet4.xml").decode()
+        # Produção ocupa a linha 6 e o subtotal a 7; os cartazes (Divulgação) estão na 8
+        assert re.search(r"<f>[^<]*Or[^<]*amento[^<]*!G8</f>", midia), (
+            "o custo da peça aponta para o item de orçamento"
+        )
+    assert "Os totais são fórmulas" in pg.locator("dialog").inner_text()
+    pg.context.close()
+
+
+def test_docx_inclui_secoes_novas_e_tabelas_resumo_de_orcamento_e_cronograma(navegador, url):
+    pg, be, pid = projeto_completo(navegador, url)
+    pg.get_by_role("button", name="Exportar e copiar").click()
+    assert "3 seções aprovadas" in pg.locator("dialog").inner_text()
+    with pg.expect_download():
+        pg.get_by_role("button", name="Baixar .docx").click()
+    estrutura = pg.evaluate("window.__docx")
+    for texto in (
+        "Acessibilidade",
+        "Haverá intérprete de Libras.",
+        "Orçamento por etapa (resumo)",
+        "Cronograma (resumo)",
+        "meses 1 a 3",
+        "R$ 6.000,00",
+        "R$ 500,00",
+        "R$ 6.500,00",
+        "Total geral",
+    ):
+        assert texto in estrutura, texto
+    pg.context.close()
+
+
+def test_copiar_por_campo_segue_ordem_e_nomes_do_edital_e_os_limites_dele(navegador, url):
+    campos = [
+        {"nome": "Descrição do projeto", "secao": "apresentacao"},
+        {"nome": "Plano de acessibilidade", "secao": "acessibilidade"},
+        {"nome": "Declaração de residência", "secao": None},
+    ]
+    pg, be, pid = projeto_completo(
+        navegador,
+        url,
+        criterios={"campos_exigidos": campos, "limites_caracteres": {"apresentacao": 800}},
+    )
+    pg.get_by_role("button", name="Exportar e copiar").click()
+    nomes = (
+        pg.locator("dialog .campos-copia").first.locator(".campo-copia strong").all_inner_texts()
+    )
+    assert nomes[:3] == [
+        "Descrição do projeto",
+        "Plano de acessibilidade",
+        "Declaração de residência",
+    ]
+    assert "Ficha do projeto" in nomes[3:], "as seções que o edital não cita vêm depois"
+    assert "Apresentação / Resumo" not in nomes, (
+        "a seção já usada por um campo do edital não se repete"
+    )
+    primeiro = pg.locator("dialog .campo-copia").first
+    assert "19 / 800" in primeiro.inner_text(), "limite do edital, não o padrão"
+    assert (
+        "sem seção correspondente"
+        in pg.locator("dialog .campo-copia", has_text="Declaração de residência").inner_text()
+    )
+    assert (
+        "na ordem e com os nomes dos campos do edital" in pg.locator("dialog").inner_text().lower()
+    )
+    primeiro.get_by_role("button", name="Copiar").click()
+    pg.get_by_text("Copiado.").first.wait_for()
+    assert pg.evaluate("navigator.clipboard.readText()") == "Oficinas em Recife."
+    pg.context.close()
+
+
+def test_copiar_tabelas_como_texto_com_tabulacao(navegador, url):
+    pg, be, pid = projeto_completo(navegador, url)
+    pg.get_by_role("button", name="Exportar e copiar").click()
+    pg.locator("dialog .campo-copia", has_text="Orçamento").last.get_by_role(
+        "button", name="Copiar tabela"
+    ).click()
+    pg.get_by_text("Copiado (colunas separadas por tabulação).").wait_for()
+    texto = pg.evaluate("navigator.clipboard.readText()")
+    linhas = texto.split("\n")
+    assert linhas[0].split("\t")[:3] == ["Etapa", "Rubrica", "Item"]
+    assert linhas[1].split("\t")[2] == "Cachê da direção" and linhas[1].split("\t")[6] == "6000"
     pg.context.close()

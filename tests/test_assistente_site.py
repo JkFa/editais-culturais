@@ -20,6 +20,8 @@ DOCX_FALSO = """
 class Nó { constructor(o) { this.o = o; } }
 export class Paragraph extends Nó {} export class TextRun extends Nó {}
 export class PageBreak extends Nó {} export class Document extends Nó {}
+export class Table extends Nó {} export class TableRow extends Nó {} export class TableCell extends Nó {}
+export const WidthType = { PERCENTAGE: 'PERCENTAGE' };
 export const HeadingLevel = { TITLE: 'TITLE', HEADING_1: 'H1' };
 export const AlignmentType = { CENTER: 'CENTER' };
 export const Packer = { toBlob: async (d) => { window.__docx = JSON.stringify(d);

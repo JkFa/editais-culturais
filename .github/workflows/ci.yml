@@ -32,4 +32,6 @@ jobs:
         run: |
           deno check supabase/functions/assistente/index.ts
           deno test --allow-read --allow-env supabase/functions/assistente/
+      - name: Planilha .xlsx (ExcelJS real; baixa o pacote npm, que o pytest reaproveita do cache)
+        run: deno test --allow-read --allow-env --allow-net --allow-sys --allow-write web/assets/js/projeto/xlsx.test.ts
       - run: pytest -q

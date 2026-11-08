@@ -506,7 +506,7 @@ export async function telaProjeto(ctx, id, secaoPedida) {
         el("p", { class: "fonte" }, projeto.edital_titulo ? ["Edital: ", criarLinkEdital() ?? projeto.edital_titulo] : "Projeto avulso (sem edital)")),
       el("div", { class: "acoes" },
         el("button", { type: "button", class: "btn", onclick: () => abrirProponente(ctx, estado.projeto) }, "Dados do proponente"),
-        el("button", { type: "button", class: "btn", onclick: () => abrirExportacao(ctx, { projeto: estado.projeto, secoes: ativas, linhaDe }) }, "Exportar e copiar"))),
+        el("button", { type: "button", class: "btn", onclick: () => abrirExportacao(ctx, { projeto: estado.projeto, secoes: ativas, linhaDe, criterios: estado.criterios, tabelas: () => ({ orcamento: controles.orcamento_itens.linhas, cronograma: controles.cronograma_itens.linhas, midia: controles.midia_itens.linhas, equipe: controles.equipe_membros.linhas }) }) }, "Exportar e copiar"))),
     el("p", { class: "aviso-fixo" }, AVISO_IA, " ", projeto.edital_url ? ["Regras: ", criarLinkEdital(), "."] : null),
     el("details", { class: "aviso-fixo" }, el("summary", {}, "Privacidade: o que vai para a IA"), el("p", {}, AVISO_PRIVACIDADE)),
     avisoCriterios(),
