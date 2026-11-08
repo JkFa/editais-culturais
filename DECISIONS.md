@@ -526,3 +526,10 @@ Conferência feita em 08/11/2026, uma a uma (robots.txt, `/termos-de-uso/`, home
 - **Coleta de teste:** 6 editais abertos hoje (Mauá 2, Nova Lima 1, Aquiraz 3). Os demais estão sem edital aberto: entram na cobertura (fonte monitorada) e passam a aparecer quando publicarem.
 - **Filtro novo:** `parecerista` em `excluir_titulo_regex` ("Credenciamento de pareceristas" é seleção de jurados, não fomento). "Credenciamento de artistas" continua entrando.
 - **Alcance a partir do Actions:** as 24 responderam à sondagem rodada no próprio Actions. Se alguma começar a dar `ConnectTimeout` na coleta diária (como PE, SE e Campinas), ela aparece como `erro` e não conta na cobertura.
+
+### Amostra de recall: tentativa de levantamento (08/11/2026)
+
+Com busca web e leitura das páginas oficiais, só **2 editais abertos** ficaram comprovados com prazo (Ocupa Goiás, até 14/11; Pontos de Cultura de São Carlos, até 15/11): são os itens de `worker/referencia/amostra_recall.json`.
+Os demais achados vinham de notícias ou de listagens sem prazo, ou já estavam vencidos (PR, MG/FEC, RS/SEDAC, SP/SCEIC, Cuiabá…), e não entraram. Várias páginas de secretarias estaduais não abrem para o leitor
+automático (Bahia) ou mudaram de endereço (SP). Chegar a 30 itens abertos exige conferência humana, abrindo os sites e anotando prazo e trecho (cerca de uma hora), e a amostra vence em semanas.
+Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários oficiais) é a forma de manter a amostra sem trabalho manual.
