@@ -9,10 +9,11 @@ from dataclasses import dataclass, field
 from datetime import UTC, datetime, timedelta
 from typing import Any
 
+from ..elegibilidade import analisar_elegibilidade, custos_cobertos
 from ..http import ClienteHttp, ErroColeta
 from ..modelos import EditalBruto, Proveniencia
 from ..padronizacao import FUSO_PADRAO, interpretar_fim, interpretar_inicio, limpar_texto
-from ..taxonomia import sem_acento
+from ..taxonomia import mapear_linguagens, sem_acento
 
 log = logging.getLogger("worker.mapas")
 
@@ -40,6 +41,10 @@ class Instancia:
     termos_url: str | None = None
     termos_conferidos_em: str | None = None
     descoberta: str | None = None
+    # Instâncias de fora do Brasil (ex.: IberCultura Viva): o edital vira internacional.
+    ambito: str = "brasil"
+    pais_destino: str | None = None
+    idioma_original: str | None = None
 
     @property
     def fonte(self) -> str:
@@ -136,6 +141,22 @@ def converter(
     prov: dict[str, Proveniencia] = {}
     if inst.uf:
         prov["uf"] = Proveniencia(via="api", trecho=f"Instância {inst.base_url} ({inst.uf})")
+    internacional: dict[str, Any] = {}
+    if inst.ambito != "brasil":
+        elegibilidade, frase = analisar_elegibilidade(texto)
+        if frase:
+            prov["elegibilidade_br"] = Proveniencia(via="regex", trecho=frase)
+        linguagens, _ = mapear_linguagens(list((item.get("terms") or {}).get("area") or []), titulo)
+        internacional = {
+            "ambito": inst.ambito,
+            "pais_destino": inst.pais_destino,
+            "idioma_original": inst.idioma_original,
+            "elegibilidade_br": elegibilidade,
+            "custos_cobertos": custos_cobertos(texto),
+            "linguagens": linguagens,
+            "prazo_original": inscricao_fim,
+            "titulo_original": titulo,
+        }
     bruto = EditalBruto(
         fonte=inst.fonte,
         id_externo=id_ext,
@@ -154,6 +175,7 @@ def converter(
         municipio=inst.municipio,
         proveniencia=prov,
         via=_via(inst),
+        **internacional,
     )
     return bruto, texto
 

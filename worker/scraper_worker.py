@@ -48,6 +48,7 @@ CACHE_VIGIAS = Path(__file__).resolve().parent / "cache" / "vigias.json"
 COLETORES_DE_EDITAIS = {
     "minc",
     "cultbr",
+    "onthemove",
 }  # fontes que publicam editais (as outras só abrem candidatos)
 FONTES = Path(__file__).resolve().parent / "fontes.yaml"
 CURADAS = Path(__file__).resolve().parent / "fontes_curadas.yaml"

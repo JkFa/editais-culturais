@@ -422,6 +422,8 @@ def padronizar(
     `texto_completo` é o texto sem truncar (título + descrição); o regex roda nele e
     `resumo_original` é gravado truncado em 2000 caracteres.
     """
+    if bruto.ambito != "brasil":
+        return _padronizar_internacional(bruto, agora)
     prov = dict(bruto.proveniencia)
     resumo_original = limpar_texto(bruto.resumo_original) or None
     if resumo_original:
@@ -514,6 +516,54 @@ def padronizar(
         atualizado_em=agora,
         proveniencia=prov,
         **campos,
+    )
+    return edital.model_copy(update={"hash_conteudo": edital.calcular_hash()})
+
+
+def _padronizar_internacional(bruto: EditalBruto, agora: datetime) -> Edital:
+    """Oportunidade de fora do Brasil: sem as regras em português (valores, UF, proponentes).
+
+    O que vale é o que o coletor já leu da fonte, com a proveniência dele. Nada é deduzido aqui.
+    """
+    resumo = limpar_texto(bruto.resumo_original) or None
+    edital = Edital(
+        fonte=bruto.fonte,
+        id_externo=bruto.id_externo,
+        url_origem=bruto.url_origem,
+        url_inscricao=bruto.url_inscricao,
+        url_edital_pdf=bruto.url_edital_pdf,
+        titulo=limpar_texto(bruto.titulo),
+        orgao_fomento=limpar_texto(bruto.orgao_fomento),
+        resumo_original=truncar_palavra(resumo, LIMITE_RESUMO_ORIGINAL) if resumo else None,
+        resumo_simples=bruto.resumo_simples,
+        linguagens=bruto.linguagens or ["Multiáreas"],
+        abrangencia=None,
+        inscricao_inicio=bruto.inscricao_inicio,
+        inscricao_fim=bruto.inscricao_fim,
+        fim_tem_horario=bruto.fim_tem_horario,
+        publicado_em=bruto.publicado_em,
+        coletado_em=agora,
+        atualizado_em=agora,
+        proveniencia=dict(bruto.proveniencia),
+        via=bruto.via,
+        requisitos=bruto.requisitos,
+        verificado_em=bruto.verificado_em,
+        pendencias=bruto.pendencias,
+        valor_total=bruto.valor_total,
+        teto_por_projeto=bruto.teto_por_projeto,
+        ambito=bruto.ambito,
+        pais_destino=bruto.pais_destino,
+        elegibilidade_br=bruto.elegibilidade_br,
+        tipo_oportunidade=bruto.tipo_oportunidade,
+        custos_cobertos=bruto.custos_cobertos,
+        idioma_original=bruto.idioma_original,
+        moeda=bruto.moeda,
+        valor_original=bruto.valor_original,
+        valor_brl=None,  # Fase 2
+        prazo_original=bruto.prazo_original,
+        prazo_fuso=bruto.prazo_fuso,
+        titulo_original=bruto.titulo_original,
+        resumo_pt=None,  # Fase 2
     )
     return edital.model_copy(update={"hash_conteudo": edital.calcular_hash()})
 
