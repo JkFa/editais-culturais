@@ -106,6 +106,14 @@ Testes: `tests/test_internacional_elegibilidade.py` e `tests/test_internacional_
 O prompt original chamava o terceiro programa de "Ibercena" e pedia um adaptador HTML para Ibermuseos; o nome
 oficial é **Iberescena**, e o adaptador de Ibermuseos ficou na curadoria pelo motivo da tabela.
 
+### Endereços avaliados em 08/11/2026 (Ibermedia PT-PT, Res Artis, Live Composers)
+
+| Endereço | Resultado |
+|---|---|
+| `programaibermedia.com/pt-pt/as-nossas-convocatorias/` | As 6 modalidades (distribuição, codesenvolvimento de longas e de séries, coprodução, formação, ajudas à indústria) aparecem como **"convocatória fechada"**; o único prazo da página, 30/03/2026, passou. Não há o que cadastrar em `curadoria_internacional.json`. A convocatória é anual, então entrou no **radar** ("Costuma abrir em breve") em `worker/fontes_curadas.yaml`. |
+| `resartis.org/open-calls/` | Agregador da rede Res Artis com ~150 chamadas de residência abertas, cada uma com título, **prazo** e **país**. Não dá para cadastrar à mão uma a uma, e o feed "Open Calls" do site vem vazio. `robots.txt` permite a página; o aviso legal diz que a lista é enviada por membros e que o Res Artis não garante os dados. Seria um coletor novo (HTML da listagem), tratado como o On the Move: título, prazo, país e link, com elegibilidade em "verificar". **Aguarda decisão**. |
+| `live-composers.pantheonsite.io` | Agregador de oportunidades para compositores ("The Composer's Site"), hospedado no domínio de plataforma `pantheonsite.io`. O `robots.txt` é `Disallow: /` para todos os robôs. **Não coletamos** e não dá para curar entradas a partir dele sem navegar o site por robô. Entra se vier o endereço oficial do site ou o link de uma chamada específica. |
+
 ### Curadoria manual · `worker/curadoria_internacional.json`
 
 - Validada no CI pelo schema `worker/curadoria_internacional.schema.json` (JSON Schema 2020-12) e, em produção,

@@ -440,3 +440,14 @@ Pedido: `prompt-claude-code-internacional-fase1.md`. Documentação das fontes, 
   ao Supabase (`dados.js`) e o worker as grava; sem a migration o "ao vivo" falha (cai no snapshot) e o upsert do worker erra.
 - **Fora do escopo, deixado pronto:** `valor_brl` e `resumo_pt` (colunas vazias), `prazo_fuso` (guardado para a conversão),
   `ambito = estrangeiro_nacional`.
+
+### Internacional: Ibermedia, Res Artis e Live Composers (08/11/2026)
+
+- **Ibermedia (PT-PT):** nenhuma modalidade aberta (todas "convocatória fechada"; prazo de 30/03/2026 vencido), então nada vai para
+  `curadoria_internacional.json`. Virou entrada do **radar** (convocatória anual; janela "fim de janeiro a março", evidência na
+  edição de 2026), em `worker/fontes_curadas.yaml`. Sem `proponentes`: o texto fala em empresas e entidades dos países-membros, que
+  não mapeiam com segurança nos perfis do portal.
+- **Res Artis:** agregador com ~150 chamadas (título, prazo, país). Pede um coletor próprio, não curadoria manual; aguardo a decisão
+  do dono do projeto antes de ativar (termos: lista enviada por membros, sem garantia de exatidão; `robots.txt` permite a página).
+- **Live Composers:** `robots.txt` com `Disallow: /` para todos. Não coletamos nem curamos a partir dele. Foi feita uma única
+  requisição à página inicial para identificar o site; nenhuma outra.

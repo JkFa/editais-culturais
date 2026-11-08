@@ -223,3 +223,12 @@ radar:
     janela_habitual: "a partir de agosto (formulário da categoria Destaque Nacional)"
     linguagens: ["Teatro & Dança"]
     verificado_em: "2026-11-07"
+
+  - id_externo: programa-ibermedia
+    titulo: "Programa Ibermedia: convocatória anual (cinema e audiovisual ibero-americano)"
+    orgao_fomento: "Programa Ibermedia"
+    url_referencia: "https://www.programaibermedia.com/pt-pt/as-nossas-convocatorias/"
+    ultima_edicao: "2026: propostas de 30/01 a 30/03/2026 (até 11h59 no horário da sede da produtora requerente). Modalidades: distribuição, codesenvolvimento de longas e de séries, coprodução, formação e ajudas à indústria, voltadas a empresas e entidades dos países-membros. Todas aparecem como fechadas em 08/11/2026"
+    janela_habitual: "fim de janeiro a março (edição de 2026)"
+    linguagens: ["Cinema & Audiovisual"]
+    verificado_em: "2026-11-08"
