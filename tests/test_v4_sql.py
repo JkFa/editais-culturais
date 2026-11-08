@@ -152,3 +152,54 @@ def test_payload_do_worker_cabe_nas_colunas(banco):
     )
     chaves = set().union(*[set(e) for e in snap["editais"]]) - {"chave"}
     assert chaves <= cols, chaves - cols
+
+
+def test_internacional_colunas_padroes_constraints_e_view(banco):
+    """Migration 20261109: editais antigos ficam 'brasil'/'verificar'; checks recusam lixo."""
+    psql(
+        banco,
+        "insert into editais(fonte,id_externo,url_origem,titulo,orgao_fomento,inscricao_fim) "
+        "values ('t','intl-padrao','u','Edital Padrao','o',now() + interval '10 days');",
+    )
+    assert (
+        psql(
+            banco,
+            "select ambito || '/' || elegibilidade_br from editais where id_externo='intl-padrao';",
+        ).stdout.strip()
+        == "brasil/verificar"
+    )
+    colunas = psql(
+        banco,
+        "select column_name from information_schema.columns where table_name='editais_abertos'",
+    ).stdout.split()
+    assert {"ambito", "elegibilidade_br", "custos_cobertos", "titulo_original", "resumo_pt"} <= set(
+        colunas
+    )
+    ok = (
+        "insert into editais(fonte,id_externo,url_origem,titulo,orgao_fomento,inscricao_fim,ambito,"
+        "pais_destino,elegibilidade_br,tipo_oportunidade,custos_cobertos,idioma_original,moeda,"
+        "valor_original,prazo_original,prazo_fuso,titulo_original) values ('t','{i}','u','Chamada','o',"
+        "now() + interval '10 days',{extra});"
+    )
+    bom = (
+        "'internacional','DE','aberto','residencia',array['viagem','hospedagem'],'en','EUR',"
+        "1500,now(),'Europe/Berlin','Original'"
+    )
+    psql(banco, ok.format(i="intl-ok", extra=bom))
+    for ruim in [
+        bom.replace("'internacional'", "'lua'"),
+        bom.replace("'aberto'", "'talvez'"),
+        bom.replace("'residencia'", "'sorteio'"),
+        bom.replace("'hospedagem'", "'iate'"),
+        bom.replace("1500", "-1"),
+    ]:
+        assert psql(banco, ok.format(i="intl-ruim", extra=ruim), check=False).returncode != 0
+    assert (
+        psql(
+            banco,
+            "select count(*) from editais_abertos where ambito='internacional';",
+            papel="anon",
+        )
+        .stdout.strip()
+        .endswith("1")
+    )
