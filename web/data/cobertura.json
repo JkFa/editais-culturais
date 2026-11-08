@@ -1,42 +1,43 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-08T16:09:03.532679+00:00",
+ "gerado_em": "2026-11-08T20:48:52.114212+00:00",
  "data": "2026-11-08",
- "nota": 2.56,
+ "nota": 2.97,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.2037,
-   "pontos": 0.407,
-   "atual": 5.5,
+   "fracao": 0.1296,
+   "pontos": 0.259,
+   "atual": 3.5,
    "total": 27,
-   "texto": "5.5 de 27 UFs"
+   "texto": "3.5 de 27 UFs"
   },
   {
    "id": "capitais",
    "nome": "Capitais com fonte municipal ativa",
    "peso": 1.0,
    "meta": "27 de 27",
-   "fracao": 0.1111,
-   "pontos": 0.111,
-   "atual": 3.0,
+   "fracao": 0.3333,
+   "pontos": 0.333,
+   "atual": 9.0,
    "total": 27,
-   "texto": "3 de 27 capitais"
+   "texto": "9 de 27 capitais"
   },
   {
    "id": "municipios",
    "nome": "Municípios com mais de 100 mil habitantes monitorados",
    "peso": 1.5,
    "meta": "80% ou mais",
-   "fracao": 0.0705,
-   "pontos": 0.106,
-   "atual": 18.0,
+   "fracao": 0.3076,
+   "pontos": 0.461,
+   "atual": 78.5,
    "total": 319,
-   "pct": 0.0564,
-   "texto": "18 de 319 municípios (5.6%)"
+   "pct": 0.2461,
+   "via_cultbr": 121,
+   "texto": "78.5 de 319 municípios (24.6%); 121 só pelo CultBR, a meio ponto"
   },
   {
    "id": "recall",
@@ -80,11 +81,11 @@
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9942,
-   "pontos": 0.497,
-   "atual": 51,
+   "fracao": 0.9552,
+   "pontos": 0.478,
+   "atual": 49,
    "total": 54,
-   "texto": "51 de 54 fontes ativas"
+   "texto": "49 de 54 fontes ativas"
   },
   {
    "id": "higiene",
@@ -106,7 +107,7 @@
    "capital": "Rio Branco",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -115,7 +116,7 @@
    "capital": "Maceió",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:arapiraca-al"
    ]
@@ -126,7 +127,7 @@
    "capital": "Macapá",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -144,7 +145,7 @@
    "capital": "Salvador",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -153,7 +154,7 @@
    "capital": "Fortaleza",
    "abertos": 19,
    "fonte_estadual": 1.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:aquiraz-ce",
     "mapas:caninde-ce",
@@ -185,7 +186,7 @@
    "capital": "Vitória",
    "abertos": 2,
    "fonte_estadual": 1.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:es"
    ]
@@ -214,7 +215,7 @@
    "capital": "Cuiabá",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -232,7 +233,7 @@
    "capital": "Belo Horizonte",
    "abertos": 1,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:lagoasanta-mg",
     "mapas:novalima-mg",
@@ -257,11 +258,9 @@
    "nome": "Paraíba",
    "capital": "João Pessoa",
    "abertos": 0,
-   "fonte_estadual": 1.0,
+   "fonte_estadual": 0.0,
    "capital_coberta": 0.0,
-   "fontes": [
-    "mapas:pb"
-   ]
+   "fontes": []
   },
   {
    "uf": "PR",
@@ -269,7 +268,7 @@
    "capital": "Curitiba",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -290,7 +289,7 @@
    "capital": "Teresina",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -352,7 +351,7 @@
    "capital": "Florianópolis",
    "abertos": 4,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -374,11 +373,10 @@
    "nome": "Sergipe",
    "capital": "Aracaju",
    "abertos": 8,
-   "fonte_estadual": 1.0,
+   "fonte_estadual": 0.0,
    "capital_coberta": 1.0,
    "fontes": [
-    "mapas:aracaju",
-    "mapas:se"
+    "mapas:aracaju"
    ]
   },
   {
@@ -387,7 +385,7 @@
    "capital": "Palmas",
    "abertos": 1,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   }
  ],
@@ -396,7 +394,7 @@
  "historico": [
   {
    "data": "2026-11-08",
-   "nota": 2.56
+   "nota": 2.97
   }
  ],
  "dias_seguidos_9": 0
