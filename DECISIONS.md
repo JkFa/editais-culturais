@@ -493,3 +493,21 @@ Detalhes e tabela em `docs/fontes-internacionais.md`. Resultado:
 - **Falha isolada:** o placar nunca derruba a coleta (erro vira log) e `cobertura_diaria` falhar só gera aviso. Badge via shields.io (`cobertura-badge.json` no Pages).
 - **Ordem de deploy:** aplicar `20261110000000_cobertura.sql` antes do merge para a tabela existir; sem ela o worker só avisa e o site usa o JSON.
 
+
+## Cobertura, Onda 1 / PR 1: descobridor de instâncias do Mapas Culturais (08/11/2026)
+
+- **Funil** (`scripts/descobrir_mapas.py`, workflow semanal `descobrir_mapas.yml`): candidatos por padrão de endereço (8 padrões por UF; 4 por
+  município com mais de 50 mil habitantes, `worker/referencia/municipios_50k.json`, 657 municípios) + hosts `mapa*` vistos nos links do snapshot →
+  DNS → só para quem resolve: `robots.txt` + **uma** requisição a `/api/opportunity/find?@limit=1`. User-Agent honesto, 2 s de intervalo, máximo de 60 sondas por execução.
+- **DNS com controle de wildcard.** Um domínio que resolve qualquer nome não prova nada (o `df.gov.br` e dezenas de zonas municipais fazem isso); por
+  zona com algum acerto, testa-se um nome aleatório. Timeout sob carga não vale como "não existe": só `gaierror` é definitivo (a primeira versão, com timeout
+  único, perdia instâncias reais e levava 4 vezes mais consultas). O executor padrão do asyncio é pequeno demais: pool próprio de 128 threads. Execução ~8 min, dentro do timeout de 25.
+- **Nada é ativado.** Quem responde como Mapas vira bloco em `fontes.yaml` com `ativa: false`, `motivo` e `sondagem` (data, HTTP, robots, confiança). Lista vazia = confiança
+  "baixa" (compatível com Mapas sem oportunidades; confirmar na página). `robots.txt` que proíbe `/api/`, 403, 429 e desafio anti-bot viram "bloqueado" e **não** são contornados.
+- **Cache** `worker/referencia/mapas_sondados.json`: só quem foi sondado (nao_mapas 90 dias, bloqueado 30, inalcançável 14; "proposto" nunca de novo). Quem não resolve no DNS não entra no cache.
+- **Entrega:** um PR por semana (rótulo `descoberta-mapas`), nunca dois abertos ao mesmo tempo. Se o Actions não puder abrir PR (permissão do repositório), abre uma Issue com o link da branch.
+- **Primeira sondagem real (08/11/2026, `--dry-run`, 80 hosts de 83 que resolveram no DNS):** 15 instâncias de Mapas, **todas municipais** (Mauá, Paulista, Petrolina, Gravataí,
+  Maracanaú, Santa Luzia, Nova Lima, Redenção, Campo Mourão, Aquiraz e, com lista vazia e confiança baixa, Pelotas, Itapipoca, Crateús, Icó, Russas); 12 não eram Mapas;
+  52 inalcançáveis (quase todas por certificado/SNI inválido: não contornamos); 1 bloqueada. **Os 4 candidatos estaduais que o DNS indicava (AP, RR, SC, TO) não são Mapas**
+  (timeout, erro de conexão e 404), e `mapas.fortaleza.ce.gov.br` também deu 404. Conclusão: a Onda 1 não sobe a medida de UFs; as UFs sem Mapas dependem das Ondas 2 a 4.
+- Sondas em paralelo entre hosts diferentes (8 por vez); o intervalo por domínio continua valendo.

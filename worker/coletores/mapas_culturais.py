@@ -41,6 +41,8 @@ class Instancia:
     termos_url: str | None = None
     termos_conferidos_em: str | None = None
     descoberta: str | None = None
+    # Resultado da sondagem automática (scripts/descobrir_mapas.py): só documentação, o coletor não usa.
+    sondagem: dict[str, Any] | None = None
     # Instâncias de fora do Brasil (ex.: IberCultura Viva): o edital vira internacional.
     ambito: str = "brasil"
     pais_destino: str | None = None
