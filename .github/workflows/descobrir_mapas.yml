@@ -1,0 +1,85 @@
+name: Descobrir instâncias do Mapas Culturais
+
+# Procura instâncias novas do Mapas Culturais (estados, capitais, municípios com mais de 50 mil habitantes) e
+# PROPÕE cadastrá-las em worker/fontes.yaml com `ativa: false`. Quem revisa robots.txt e termos e ativa é uma pessoa.
+# Nada é coletado aqui: é uma sondagem de existência (DNS, robots.txt e uma requisição por host).
+on:
+  schedule:
+    - cron: "0 11 * * 1" # segunda, 08h em Brasília
+  workflow_dispatch:
+    inputs:
+      max_sondas:
+        description: "Máximo de hosts sondados nesta execução"
+        required: false
+        default: "60"
+      dry_run:
+        description: "Só imprime o resultado (não altera arquivos nem abre PR)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: descobrir-mapas
+  cancel-in-progress: false
+
+jobs:
+  descobrir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: worker/requirements.txt
+
+      - run: pip install -r worker/requirements.txt
+
+      - name: Sondar
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          MAX_SONDAS: ${{ inputs.max_sondas || '60' }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args="--max-sondas $MAX_SONDAS --corpo-pr $RUNNER_TEMP/pr.md"
+          [ "$DRY_RUN" = "true" ] && args="$args --dry-run"
+          python -m scripts.descobrir_mapas $args
+
+      - name: Abrir PR com as instâncias novas (ou só guardar o cache)
+        if: ${{ inputs.dry_run != true }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet worker/fontes.yaml; then
+            git add worker/referencia/mapas_sondados.json
+            if git diff --cached --quiet; then echo "Nada novo."; else
+              git commit -m "chore(mapas): cache da sondagem de instâncias $(date +%F)"
+              git pull --rebase --autostash
+              git push
+            fi
+            exit 0
+          fi
+          if [ -n "$(gh pr list --label descoberta-mapas --state open --json number -q '.[0].number')" ]; then
+            echo "Já existe um PR de descoberta aberto: não abro outro (as mudanças desta execução são descartadas)."
+            exit 0
+          fi
+          branch="descoberta/mapas-$(date +%F)"
+          git checkout -b "$branch"
+          git add worker/fontes.yaml worker/referencia/mapas_sondados.json
+          git commit -m "feat(mapas): instâncias descobertas em $(date +%F), todas inativas"
+          git push -u origin "$branch"
+          gh label create descoberta-mapas --color 0e8a16 --description "Instâncias de Mapas Culturais descobertas" 2>/dev/null || true
+          if ! gh pr create --base main --head "$branch" --label descoberta-mapas \
+               --title "feat(mapas): instâncias descobertas em $(date +%F) (inativas)" --body-file "$RUNNER_TEMP/pr.md"; then
+            echo "::warning::Actions não pode abrir PR neste repositório; abrindo Issue com o link da branch."
+            { cat "$RUNNER_TEMP/pr.md"; echo; echo "Branch pronta: https://github.com/$GITHUB_REPOSITORY/compare/main...$branch?expand=1"; } > "$RUNNER_TEMP/issue.md"
+            gh issue create --label descoberta-mapas --title "Instâncias de Mapas descobertas em $(date +%F): abrir PR" --body-file "$RUNNER_TEMP/issue.md"
+          fi

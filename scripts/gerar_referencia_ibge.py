@@ -1,4 +1,4 @@
-"""Gera worker/referencia/{ufs_capitais,municipios_100k}.json a partir das APIs públicas do IBGE (Censo 2022).
+"""Gera worker/referencia/{ufs_capitais,municipios_100k,municipios_50k}.json a partir das APIs públicas do IBGE (Censo 2022).
 
 Uso: python -m scripts.gerar_referencia_ibge   (precisa de rede; o resultado é versionado no repositório)
 Fontes: https://servicodados.ibge.gov.br/api/v1/localidades/municipios  e  agregado 4714 (população residente, Censo 2022).
@@ -81,6 +81,14 @@ def main() -> int:
         ),
         key=lambda x: -x["populacao"],
     )
+    medios = sorted(
+        (
+            {"ibge": i, "nome": info[i][0], "uf": info[i][1], "populacao": p}
+            for i, p in populacao.items()
+            if p > 50_000 and i in info
+        ),
+        key=lambda x: -x["populacao"],
+    )
     SAIDA.mkdir(parents=True, exist_ok=True)
     meta = {
         "fonte": "IBGE, Censo 2022 (agregado 4714, variável 93) e API de localidades",
@@ -94,6 +102,12 @@ def main() -> int:
         + "\n",
         encoding="utf-8",
     )
+    (SAIDA / "municipios_50k.json").write_text(
+        json.dumps({**meta, "corte": 50_000, "municipios": medios}, ensure_ascii=False, indent=1)
+        + "\n",
+        encoding="utf-8",
+    )
+    print(f"{len(medios)} municípios com mais de 50 mil habitantes (descoberta de instâncias)")
     print(f"{len(ufs)} UFs; {len(grandes)} municípios com mais de 100 mil habitantes")
     return 0
 
