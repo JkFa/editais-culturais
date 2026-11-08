@@ -15,7 +15,7 @@ from datetime import datetime
 from typing import Any
 
 from .catalogo import FonteConfig, StatusFonte, classificar_falha, status_de, status_desativada
-from .coletores import cultbr, govbr, minc, onthemove, radar_emma, vigia
+from .coletores import cultbr, govbr, minc, onthemove, querido_diario, radar_emma, vigia
 from .coletores.base import ResultadoFonte
 from .fila import Candidato
 from .web import BloqueadoPorRobots, BloqueioDeAcesso, ClienteWeb
@@ -42,6 +42,7 @@ async def _rodar_uma(
     urls_conhecidas: set[str],
     marcadores: set[str],
     estado_vigias: dict[str, Any],
+    existentes: list[Any] | None = None,
 ) -> ResultadoFonte:
     intervalo = f.intervalo_min_entre_requisicoes_s
     if f.metodo == "vigia":
@@ -50,6 +51,17 @@ async def _rodar_uma(
         )
     if f.coletor == "minc":
         return await minc.coletar(cliente, f.url, intervalo, agora, f.id)
+    if f.coletor == "querido_diario":
+        return await querido_diario.coletar(
+            cliente,
+            f,
+            intervalo,
+            agora,
+            urls_conhecidas,
+            marcadores,
+            estado_vigias.get(f.id),
+            existentes,
+        )
     if f.coletor == "govbr":
         return await govbr.coletar(cliente, f, intervalo, agora)
     if f.coletor == "onthemove":
@@ -79,6 +91,7 @@ async def rodar_fontes_v4(
     status_anterior: dict[str, dict[str, Any]],
     apenas: str | None = None,
     cliente: ClienteWeb | None = None,
+    existentes: list[Any] | None = None,
 ) -> ResultadoV4:
     out = ResultadoV4()
     escolhidas = [f for f in fontes if apenas is None or f.id == apenas]
@@ -94,7 +107,9 @@ async def rodar_fontes_v4(
         inicio = time.monotonic()
         anterior = status_anterior.get(f.id)
         try:
-            res = await _rodar_uma(cliente, f, agora, urls_conhecidas, marcadores, estado_vigias)
+            res = await _rodar_uma(
+                cliente, f, agora, urls_conhecidas, marcadores, estado_vigias, existentes
+            )
             out.resultados[f.id] = res
             if res.estado:
                 out.estado_vigias[f.id] = res.estado

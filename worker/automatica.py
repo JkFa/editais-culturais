@@ -301,7 +301,9 @@ def avaliar(
     prazo = achar_prazo(texto)
     if not prazo:
         return d.barrar("prazo de inscrição não encontrado no texto")
-    if not trecho_no_texto(prazo.trecho, texto) or "inscri" not in sem_acento(prazo.trecho):
+    if not trecho_no_texto(prazo.trecho, texto) or not re.search(
+        r"inscri[cç](?:[aã]o|[oõ]es)|inscrev", prazo.trecho, re.I
+    ):
         return d.barrar("trecho do prazo não verificável ou não fala de inscrições")
     if prazo.fim <= hoje:
         return d.barrar(f"prazo já passou ({prazo.fim.date()})")

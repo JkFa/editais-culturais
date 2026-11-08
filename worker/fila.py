@@ -81,6 +81,7 @@ class Candidato(BaseModel):
             "resumo_simples": (self.resumo or "")[:280] or None,
             "linguagens": self.campos.get("linguagens") or ["Multiáreas"],
             "abrangencia": self.campos.get("abrangencia"),
+            **{k: self.campos[k] for k in ("uf", "municipio") if self.campos.get(k)},
             "inscricao_fim": self.campos.get("inscricao_fim"),
             "fim_tem_horario": self.campos.get("fim_tem_horario", False),
             "verificado_em": None,
