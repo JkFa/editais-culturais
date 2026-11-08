@@ -155,7 +155,7 @@ def test_perguntas_sensiveis_nao_passam_pelo_chat():
 @node
 def test_logica_compartilhada_em_node():
     r = subprocess.run(
-        ["node", "--test", str(RAIZ / "specs" / "lib" / "secoes.test.mjs")],
+        ["node", "--test", str(RAIZ / "specs" / "lib")],
         capture_output=True,
         text=True,
     )
