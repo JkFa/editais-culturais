@@ -1,6 +1,44 @@
 {
   "id": "equipe",
-  "titulo": "Equipe",
+  "titulo": "Equipe e ficha técnica",
   "ordem": 9,
-  "ativo": false
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao",
+    "metas"
+  ],
+  "perguntas": [
+    {
+      "id": "pessoas_e_funcoes",
+      "texto": "Quem são as pessoas principais do projeto e qual a função de cada uma?",
+      "obrigatoria": true,
+      "ajuda": "Você pode responder só com as funções (ex.: direção, produção) e preencher os nomes depois na ficha da equipe: os nomes ficam fora da IA."
+    },
+    {
+      "id": "minicurriculos",
+      "texto": "Para cada pessoa: 2 a 3 linhas de currículo e se mora na cidade ou na região do projeto.",
+      "obrigatoria": true
+    },
+    {
+      "id": "acumulo_de_funcoes",
+      "texto": "Alguém acumula funções? Atenção: muitos editais limitam o acúmulo de cachê.",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [],
+  "checagens": [
+    "nao_inventar_dados",
+    "funcoes_pagas_na_equipe"
+  ],
+  "limite_caracteres_padrao": 2500,
+  "saida_estruturada": {
+    "tabela": "equipe_membros",
+    "editor": "equipe"
+  },
+  "instrucoes_redacao": "Escreva a ficha técnica: uma linha por pessoa com função e 2 a 3 linhas de currículo, na ordem de importância. Use só o que o usuário contou. Proponha em itens_propostos (equipe_membros) uma linha por pessoa; deixe nome_artistico_ou_funcao com a função quando o nome não foi informado. Avise em alertas se alguém acumula funções pagas."
 }

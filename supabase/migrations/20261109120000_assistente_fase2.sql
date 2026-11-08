@@ -90,6 +90,7 @@ alter table public.edital_criterios add column if not exists fonte_url text;
 alter table public.edital_criterios add column if not exists fonte_hash text;
 alter table public.edital_criterios add column if not exists teto_por_proponente numeric(14,2);
 alter table public.edital_criterios add column if not exists percentuais_max jsonb not null default '{}'::jsonb;
+alter table public.edital_criterios add column if not exists percentuais_min jsonb not null default '{}'::jsonb;  -- ex.: {"acessibilidade": 0.02}
 alter table public.edital_criterios add column if not exists rubricas_vedadas text[] not null default '{}';
 alter table public.edital_criterios add column if not exists contrapartida_exigida text;
 alter table public.edital_criterios add column if not exists prazo_execucao_meses int;
@@ -108,6 +109,7 @@ alter table public.edital_criterios add constraint edital_criterios_valores_chec
   and (prazo_execucao_meses is null or prazo_execucao_meses between 1 and 120)
   and jsonb_typeof(criterios) = 'array'
   and jsonb_typeof(percentuais_max) = 'object'
+  and jsonb_typeof(percentuais_min) = 'object'
   and jsonb_typeof(limites_caracteres) = 'object'
 );
 
@@ -161,7 +163,7 @@ grant select on public.admins to authenticated;
 grant select, update on public.extracao_fila to authenticated;
 -- o administrador só altera o que a revisão mexe; o resto do registro é do worker
 revoke update on public.edital_criterios from authenticated;
-grant update (criterios, teto_orcamento, teto_por_proponente, percentuais_max, rubricas_vedadas,
+grant update (criterios, teto_orcamento, teto_por_proponente, percentuais_max, percentuais_min, rubricas_vedadas,
   limites_caracteres, campos_exigidos, contrapartida_exigida, prazo_execucao_meses, exige_acessibilidade,
   observacoes, revisado, revisado_em, revisado_por) on public.edital_criterios to authenticated;
 revoke update on public.extracao_fila from authenticated;

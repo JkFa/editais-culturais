@@ -1,6 +1,49 @@
 {
   "id": "comunicacao",
-  "titulo": "Plano de comunicação",
+  "titulo": "Plano de comunicação e divulgação",
   "ordem": 8,
-  "ativo": false
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao",
+    "publico"
+  ],
+  "perguntas": [
+    {
+      "id": "canais_proprios",
+      "texto": "Quais canais você já tem (Instagram, YouTube, lista de WhatsApp, imprensa local) e com quantos seguidores aproximados?",
+      "obrigatoria": true
+    },
+    {
+      "id": "pecas",
+      "texto": "Que peças vai produzir? (cartaz, vídeo, release, posts patrocinados)",
+      "obrigatoria": true
+    },
+    {
+      "id": "momentos",
+      "texto": "Em que momentos: antes, durante e depois da execução?",
+      "obrigatoria": true
+    },
+    {
+      "id": "logomarcas",
+      "texto": "Vai usar as logomarcas obrigatórias do edital? Lembre que o edital costuma ter regras para a aplicação das marcas.",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [],
+  "checagens": [
+    "nao_inventar_dados",
+    "pecas_pagas_com_custo",
+    "divulgacao_dentro_do_limite"
+  ],
+  "limite_caracteres_padrao": 2500,
+  "saida_estruturada": {
+    "tabela": "midia_itens",
+    "editor": "midia"
+  },
+  "instrucoes_redacao": "Organize em antes, durante e depois. Cite só canais e números que o usuário informou. Proponha em itens_propostos (midia_itens) uma linha por peça, com canal e período, e custo apenas quando o usuário informou o valor; peça paga sem custo informado fica com custo nulo."
 }

@@ -2,5 +2,53 @@
   "id": "cronograma",
   "titulo": "Cronograma",
   "ordem": 10,
-  "ativo": false
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao",
+    "metas",
+    "equipe"
+  ],
+  "perguntas": [
+    {
+      "id": "inicio_e_duracao",
+      "texto": "Quando começa e quanto tempo dura a execução? (em meses, a partir da assinatura ou liberação do recurso)",
+      "obrigatoria": true
+    },
+    {
+      "id": "fases",
+      "texto": "O que acontece na pré-produção, na produção/execução e na pós-produção e prestação de contas?",
+      "obrigatoria": true
+    },
+    {
+      "id": "datas_fixas",
+      "texto": "Quais são as datas fixas? (estreia, festival, calendário escolar)",
+      "obrigatoria": false
+    }
+  ],
+  "condicionais": [
+    {
+      "se": "criterios.prazo_execucao_meses != null",
+      "pergunta": {
+        "id": "prazo_do_edital_cabe",
+        "texto": "O edital limita a execução a um prazo máximo (veja o resumo do edital). O cronograma cabe nele? O que precisa mudar?",
+        "obrigatoria": true
+      }
+    }
+  ],
+  "checagens": [
+    "nao_inventar_dados",
+    "cronograma_cobre_metas",
+    "cronograma_dentro_do_prazo"
+  ],
+  "limite_caracteres_padrao": 2000,
+  "saida_estruturada": {
+    "tabela": "cronograma_itens",
+    "editor": "cronograma"
+  },
+  "instrucoes_redacao": "Descreva o cronograma por fase, com mês de início e fim. Proponha em itens_propostos (cronograma_itens) as atividades com mes_inicio e mes_fim (mês 1 = primeiro mês de execução); a prestação de contas vem por último e todas as metas aprovadas precisam aparecer em alguma atividade. Não passe do prazo do edital."
 }

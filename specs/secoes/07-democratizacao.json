@@ -1,6 +1,53 @@
 {
   "id": "democratizacao",
-  "titulo": "Democratização do acesso",
+  "titulo": "Democratização do acesso e contrapartida",
   "ordem": 7,
-  "ativo": false
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao",
+    "publico",
+    "metas"
+  ],
+  "perguntas": [
+    {
+      "id": "gratuidade_extra",
+      "texto": "Além do projeto em si, o que o público ganha de graça? (sessões extras, oficina, ensaio aberto, doação de exemplares)",
+      "obrigatoria": true
+    },
+    {
+      "id": "espacos_comunitarios",
+      "texto": "Haverá ações em escolas públicas, bibliotecas ou espaços comunitários? Quais, onde e quando?",
+      "obrigatoria": false
+    }
+  ],
+  "condicionais": [
+    {
+      "se": "criterios.contrapartida_exigida != null",
+      "pergunta": {
+        "id": "contrapartida_exigida_como_cumprir",
+        "texto": "O edital exige uma contrapartida (veja o texto dela no resumo do edital). Como você vai cumprir cada ponto, com quantidade e forma de comprovação?",
+        "obrigatoria": true
+      }
+    },
+    {
+      "se": "criterios.contrapartida_exigida == null",
+      "pergunta": {
+        "id": "contrapartida_especifica",
+        "texto": "O edital pede alguma contrapartida específica? Se sim, qual e como você vai cumprir?",
+        "obrigatoria": true
+      }
+    }
+  ],
+  "checagens": [
+    "nao_inventar_dados",
+    "contrapartida_do_edital_citada",
+    "responde_o_que_onde_quando_para_quem"
+  ],
+  "limite_caracteres_padrao": 2000,
+  "instrucoes_redacao": "Descreva o que o público recebe sem pagar e a contrapartida, com número, local e prazo sempre que o usuário informou. Se o edital exige contrapartida, cite-a e ligue-a a uma meta mensurável. Não prometa o que o usuário não disse."
 }

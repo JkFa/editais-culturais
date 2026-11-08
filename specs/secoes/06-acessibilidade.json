@@ -2,5 +2,59 @@
   "id": "acessibilidade",
   "titulo": "Acessibilidade",
   "ordem": 6,
-  "ativo": false
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "apresentacao",
+    "publico"
+  ],
+  "perguntas": [
+    {
+      "id": "acessibilidade_fisica",
+      "texto": "Acessibilidade física e arquitetônica: os locais têm rampa, banheiro acessível e espaço reservado para cadeira de rodas? O que tem e o que não tem?",
+      "obrigatoria": true
+    },
+    {
+      "id": "acessibilidade_comunicacional",
+      "texto": "Acessibilidade comunicacional: vai ter intérprete de Libras, audiodescrição, legendas, material em fonte ampliada ou em braile? O que será oferecido e em quais ações?",
+      "obrigatoria": true
+    },
+    {
+      "id": "acessibilidade_atitudinal",
+      "texto": "Acessibilidade atitudinal: a equipe terá formação ou orientação para receber pessoas com deficiência? Haverá divulgação direcionada a esse público?",
+      "obrigatoria": true
+    },
+    {
+      "id": "acessibilidade_no_orcamento",
+      "texto": "Essas medidas já estão no orçamento? Se não estiverem, posso propor as linhas na etapa Acessibilidade e você confirma cada valor.",
+      "obrigatoria": true,
+      "ajuda": "Valores só entram no orçamento depois que você confirma."
+    }
+  ],
+  "condicionais": [
+    {
+      "se": "criterios.exige_acessibilidade == true",
+      "pergunta": {
+        "id": "exigencia_do_edital_acessibilidade",
+        "texto": "O edital exige medidas de acessibilidade (veja o resumo do edital). Como o projeto cumpre cada uma delas?",
+        "obrigatoria": true
+      }
+    }
+  ],
+  "checagens": [
+    "nao_inventar_dados",
+    "medidas_de_acessibilidade_com_custo",
+    "acessibilidade_percentual_do_edital"
+  ],
+  "limite_caracteres_padrao": 2000,
+  "saida_estruturada": {
+    "tabela": "orcamento_itens",
+    "editor": "orcamento",
+    "etapa_padrao": "acessibilidade"
+  },
+  "instrucoes_redacao": "Escreva a seção em 3 blocos curtos: física, comunicacional e atitudinal. Cite só medidas que o usuário disse que existirão. Medida sem custo no orçamento vira alerta. Se o usuário aceitar, proponha em itens_propostos (orcamento_itens, etapa acessibilidade) as linhas das medidas, SEM inventar preço: deixe valor_unitario nulo quando ele não informou."
 }

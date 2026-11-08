@@ -2,5 +2,65 @@
   "id": "orcamento",
   "titulo": "Orçamento",
   "ordem": 11,
-  "ativo": false
+  "ativo": true,
+  "fluxos": [
+    "padrao",
+    "audiovisual"
+  ],
+  "depende_de": [
+    "ficha",
+    "metas",
+    "acessibilidade",
+    "comunicacao",
+    "equipe",
+    "cronograma"
+  ],
+  "perguntas": [
+    {
+      "id": "pagamentos_da_equipe",
+      "texto": "Para cada pessoa da equipe: quanto vai receber e por quê? (cachê fechado, por apresentação ou por mês)",
+      "obrigatoria": true
+    },
+    {
+      "id": "materiais_e_logistica",
+      "texto": "Que materiais, equipamentos, locações, transporte, hospedagem e alimentação serão necessários, em que quantidade?",
+      "obrigatoria": true
+    },
+    {
+      "id": "divulgacao_e_acessibilidade",
+      "texto": "Os custos de divulgação e de acessibilidade já estão definidos nas seções 6 e 8? Confirme os valores ou me diga o que mudou.",
+      "obrigatoria": true
+    },
+    {
+      "id": "taxas_e_impostos",
+      "texto": "Há taxas, impostos ou contador a pagar? Isso depende do tipo de proponente (pessoa física, MEI ou empresa).",
+      "obrigatoria": true
+    },
+    {
+      "id": "fonte_dos_precos",
+      "texto": "Qual a fonte de cada preço? (orçamento de fornecedor, tabela de sindicato, preço de mercado)",
+      "obrigatoria": true
+    }
+  ],
+  "condicionais": [
+    {
+      "se": "criterios.teto_orcamento != null",
+      "pergunta": {
+        "id": "cabe_no_teto",
+        "texto": "O edital tem um teto de orçamento (veja o valor no resumo do edital). Se o total passar, o que pode ser reduzido ou cortado?",
+        "obrigatoria": false
+      }
+    }
+  ],
+  "checagens": [
+    "nao_inventar_dados",
+    "orcamento_dentro_do_teto",
+    "orcamento_itens_com_fonte"
+  ],
+  "limite_caracteres_padrao": 2500,
+  "saida_estruturada": {
+    "tabela": "orcamento_itens",
+    "editor": "orcamento"
+  },
+  "instrucoes_redacao": "Escreva a justificativa do orçamento por etapa, citando só valores e fontes informados pelo usuário. Proponha em itens_propostos (orcamento_itens) as linhas por etapa. NUNCA invente preço: preencha valor_unitario e fonte_preco somente quando o usuário disse o número; senão deixe nulos (o item fica 'valor a confirmar'). Cada item precisa de justificativa curta ligada a uma ação do projeto."
 }

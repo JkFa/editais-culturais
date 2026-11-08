@@ -3,35 +3,152 @@
   "$id": "secao.schema.json",
   "title": "Spec de uma seção do Assistente de Projetos Culturais",
   "type": "object",
-  "required": ["id", "titulo", "ordem"],
+  "required": [
+    "id",
+    "titulo",
+    "ordem"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z_]{2,40}$" },
-    "titulo": { "type": "string", "minLength": 2, "maxLength": 80 },
-    "ordem": { "type": "integer", "minimum": 0, "maximum": 99 },
-    "ativo": { "type": "boolean", "description": "false = aparece como 'em breve' e não tem perguntas" },
-    "fluxos": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["padrao", "audiovisual"] } },
-    "depende_de": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z_]{2,40}$" } },
-    "perguntas": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/pergunta" } },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z_]{2,40}$"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 80
+    },
+    "ordem": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "ativo": {
+      "type": "boolean",
+      "description": "false = aparece como 'em breve' e não tem perguntas"
+    },
+    "fluxos": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "padrao",
+          "audiovisual"
+        ]
+      }
+    },
+    "depende_de": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]{2,40}$"
+      }
+    },
+    "perguntas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/pergunta"
+      }
+    },
     "condicionais": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["se", "pergunta"],
+        "required": [
+          "se",
+          "pergunta"
+        ],
         "additionalProperties": false,
         "properties": {
-          "se": { "type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.]*(\\s*(==|!=)\\s*(true|false|null|-?[0-9.]+|\"[^\"]*\"))?(\\s*(&&|\\|\\|)\\s*[A-Za-z_][A-Za-z0-9_.]*(\\s*(==|!=)\\s*(true|false|null|-?[0-9.]+|\"[^\"]*\"))?)*$" },
-          "pergunta": { "$ref": "#/definitions/pergunta" }
+          "se": {
+            "type": "string",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_.]*(\\s*(==|!=)\\s*(true|false|null|-?[0-9.]+|\"[^\"]*\"))?(\\s*(&&|\\|\\|)\\s*[A-Za-z_][A-Za-z0-9_.]*(\\s*(==|!=)\\s*(true|false|null|-?[0-9.]+|\"[^\"]*\"))?)*$"
+          },
+          "pergunta": {
+            "$ref": "#/definitions/pergunta"
+          }
         }
       }
     },
-    "checagens": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z_]{3,60}$" } },
-    "limite_caracteres_padrao": { "type": "integer", "minimum": 200, "maximum": 20000 },
-    "instrucoes_redacao": { "type": "string", "minLength": 20, "maxLength": 1200 }
+    "checagens": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]{3,60}$"
+      }
+    },
+    "limite_caracteres_padrao": {
+      "type": "integer",
+      "minimum": 200,
+      "maximum": 20000
+    },
+    "instrucoes_redacao": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1200
+    },
+    "saida_estruturada": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tabela",
+        "editor"
+      ],
+      "description": "Seção que também preenche uma tabela (o LLM propõe linhas; o usuário aceita, edita ou descarta).",
+      "properties": {
+        "tabela": {
+          "enum": [
+            "orcamento_itens",
+            "cronograma_itens",
+            "midia_itens",
+            "equipe_membros"
+          ]
+        },
+        "editor": {
+          "enum": [
+            "orcamento",
+            "cronograma",
+            "midia",
+            "equipe"
+          ]
+        },
+        "etapa_padrao": {
+          "enum": [
+            "pre_producao",
+            "producao",
+            "pos_producao",
+            "divulgacao",
+            "acessibilidade",
+            "administrativo"
+          ]
+        }
+      }
+    }
   },
   "additionalProperties": false,
-  "if": { "not": { "properties": { "ativo": { "const": false } } } },
+  "if": {
+    "not": {
+      "properties": {
+        "ativo": {
+          "const": false
+        }
+      }
+    }
+  },
   "then": {
-    "required": ["fluxos", "depende_de", "perguntas", "condicionais", "checagens", "limite_caracteres_padrao", "instrucoes_redacao"]
+    "required": [
+      "fluxos",
+      "depende_de",
+      "perguntas",
+      "condicionais",
+      "checagens",
+      "limite_caracteres_padrao",
+      "instrucoes_redacao"
+    ]
   },
   "else": {
     "description": "Placeholder: só id, titulo, ordem e ativo",
@@ -40,14 +157,35 @@
   "definitions": {
     "pergunta": {
       "type": "object",
-      "required": ["id", "texto"],
+      "required": [
+        "id",
+        "texto"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-z_]{2,40}$" },
-        "texto": { "type": "string", "minLength": 8, "maxLength": 400 },
-        "obrigatoria": { "type": "boolean" },
-        "canal": { "enum": ["chat", "formulario"], "description": "formulario = respondida fora do chat e nunca enviada à IA" },
-        "ajuda": { "type": "string", "maxLength": 300 }
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z_]{2,40}$"
+        },
+        "texto": {
+          "type": "string",
+          "minLength": 8,
+          "maxLength": 400
+        },
+        "obrigatoria": {
+          "type": "boolean"
+        },
+        "canal": {
+          "enum": [
+            "chat",
+            "formulario"
+          ],
+          "description": "formulario = respondida fora do chat e nunca enviada à IA"
+        },
+        "ajuda": {
+          "type": "string",
+          "maxLength": 300
+        }
       }
     }
   }
