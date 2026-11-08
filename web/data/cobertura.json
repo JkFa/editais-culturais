@@ -1,19 +1,19 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-08T20:48:52.114212+00:00",
+ "gerado_em": "2026-11-08T21:14:32.579583+00:00",
  "data": "2026-11-08",
- "nota": 2.97,
+ "nota": 3.31,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.1296,
-   "pontos": 0.259,
-   "atual": 3.5,
+   "fracao": 0.1667,
+   "pontos": 0.333,
+   "atual": 4.5,
    "total": 27,
-   "texto": "3.5 de 27 UFs"
+   "texto": "4.5 de 27 UFs"
   },
   {
    "id": "capitais",
@@ -57,35 +57,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.0893,
-   "pontos": 0.089,
-   "atual": 4,
-   "total": 64,
-   "pct": 0.0625,
-   "texto": "4 de 64 (6%)"
+   "fracao": 0.3074,
+   "pontos": 0.307,
+   "atual": 17,
+   "total": 79,
+   "pct": 0.2152,
+   "texto": "17 de 79 (22%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.6953,
-   "pontos": 0.348,
-   "prazo": 64,
-   "proponentes": 20,
-   "total": 64,
-   "texto": "prazo 64/64 (100%); proponentes 20/64 (31%)"
+   "fracao": 0.7769,
+   "pontos": 0.388,
+   "prazo": 79,
+   "proponentes": 35,
+   "total": 79,
+   "texto": "prazo 79/79 (100%); proponentes 35/79 (44%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9552,
-   "pontos": 0.478,
-   "atual": 49,
-   "total": 54,
-   "texto": "49 de 54 fontes ativas"
+   "fracao": 0.9761,
+   "pontos": 0.488,
+   "atual": 51,
+   "total": 55,
+   "texto": "51 de 55 fontes ativas"
   },
   {
    "id": "higiene",
@@ -143,7 +143,7 @@
    "uf": "BA",
    "nome": "Bahia",
    "capital": "Salvador",
-   "abertos": 0,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -258,15 +258,17 @@
    "nome": "Paraíba",
    "capital": "João Pessoa",
    "abertos": 0,
-   "fonte_estadual": 0.0,
+   "fonte_estadual": 1.0,
    "capital_coberta": 0.0,
-   "fontes": []
+   "fontes": [
+    "mapas:pb"
+   ]
   },
   {
    "uf": "PR",
    "nome": "Paraná",
    "capital": "Curitiba",
-   "abertos": 0,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -296,7 +298,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 6,
+   "abertos": 11,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -319,7 +321,7 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 3,
+   "abertos": 4,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.0,
    "fontes": [
@@ -358,7 +360,7 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 1,
+   "abertos": 6,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -383,18 +385,18 @@
    "uf": "TO",
    "nome": "Tocantins",
    "capital": "Palmas",
-   "abertos": 1,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
   }
  ],
- "editais_abertos": 64,
+ "editais_abertos": 79,
  "editais_sem_uf": 8,
  "historico": [
   {
    "data": "2026-11-08",
-   "nota": 2.97
+   "nota": 3.31
   }
  ],
  "dias_seguidos_9": 0
