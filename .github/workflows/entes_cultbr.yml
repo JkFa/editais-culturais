@@ -1,0 +1,46 @@
+name: Entes do CultBR
+
+# Semanal: lista quais municípios e estados têm edital no CultBR (worker/referencia/cultbr_entes.json), para o placar de
+# cobertura. Leitura pública, 3 s entre páginas (~30 páginas). Se alguma página falhar, o arquivo anterior é mantido.
+on:
+  schedule:
+    - cron: "0 12 * * 3" # quarta, 09h em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: entes-cultbr
+  cancel-in-progress: false
+
+jobs:
+  entes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: worker/requirements.txt
+
+      - run: pip install -r worker/requirements.txt
+
+      - name: Listar os entes
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -m scripts.entes_cultbr
+
+      - name: Commitar o registro
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add worker/referencia/cultbr_entes.json
+          if git diff --cached --quiet; then echo "Sem mudanças."; else
+            git commit -m "chore(cobertura): entes do CultBR $(date +%F)"
+            git pull --rebase --autostash
+            git push
+          fi

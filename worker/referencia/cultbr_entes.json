@@ -1,0 +1,7839 @@
+{
+"atualizado_em": "2026-11-08T19:30:26+00:00",
+"fonte": "https://back.portal.cultbr.cultura.gov.br/v1/public/par/editais",
+"total_registros": 2853,
+"entes": [
+{
+"tipo": "estado",
+"uf": "AC",
+"municipio": null,
+"editais": 19,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "AL",
+"municipio": null,
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "AP",
+"municipio": null,
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "BA",
+"municipio": null,
+"editais": 34,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "GO",
+"municipio": null,
+"editais": 22,
+"abertos": 19,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "MA",
+"municipio": null,
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "MG",
+"municipio": null,
+"editais": 14,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "MS",
+"municipio": null,
+"editais": 29,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "PA",
+"municipio": null,
+"editais": 11,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "PB",
+"municipio": null,
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "PI",
+"municipio": null,
+"editais": 6,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "PR",
+"municipio": null,
+"editais": 15,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "RJ",
+"municipio": null,
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "RN",
+"municipio": null,
+"editais": 35,
+"abertos": 7,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "RS",
+"municipio": null,
+"editais": 12,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "SC",
+"municipio": null,
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "SE",
+"municipio": null,
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "SP",
+"municipio": null,
+"editais": 25,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "estado",
+"uf": "TO",
+"municipio": null,
+"editais": 17,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AC",
+"municipio": "BUJARI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AC",
+"municipio": "CRUZEIRO DO SUL",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AC",
+"municipio": "PORTO ACRE",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AC",
+"municipio": "RIO BRANCO",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AC",
+"municipio": "SENADOR GUIOMARD",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AC",
+"municipio": "XAPURI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "BOCA DA MATA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "CAMPO ALEGRE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "CRAÍBAS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "LIMOEIRO DE ANADIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "MACEIÓ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "NOVO LINO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "PALMEIRA DOS ÍNDIOS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "PARIPUEIRA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "PIRANHAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "SÃO MIGUEL DOS CAMPOS",
+"editais": 12,
+"abertos": 10,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AL",
+"municipio": "UNIÃO DOS PALMARES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "BERURI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "CARAUARI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "CAREIRO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "GUAJARÁ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "HUMAITÁ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "IPIXUNA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "IRANDUBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "JURUÁ",
+"editais": 4,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "MANICORÉ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "NOVA OLINDA DO NORTE",
+"editais": 9,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "NOVO AIRÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AM",
+"municipio": "PARINTINS",
+"editais": 7,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AP",
+"municipio": "MACAPÁ",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AP",
+"municipio": "PORTO GRANDE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "AP",
+"municipio": "SANTANA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ALMADINA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ANAGÉ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ANGUERA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ANTAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ANTÔNIO GONÇALVES",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BANZAÊ",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BARRA DA ESTIVA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BARRA DO MENDES",
+"editais": 4,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BARRO ALTO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BARRO PRETO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BELMONTE",
+"editais": 8,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BELO CAMPO",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BOA VISTA DO TUPIM",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BOM JESUS DA SERRA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BUERAREMA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "BURITIRAMA",
+"editais": 11,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CAATIBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CABACEIRAS DO PARAGUAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CACULÉ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CAETANOS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CAFARNAUM",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CAMACAN",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CANARANA",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CANAVIEIRAS",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CARAÍBAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CARDEAL DA SILVA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CASA NOVA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CATU",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CATURAMA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CAÉM",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CIPÓ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "COARACI",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CONCEIÇÃO DO COITÉ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CONDEÚBA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CORDEIROS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CORIBE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CRUZ DAS ALMAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CÂNDIDO SALES",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "CÍCERO DANTAS",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "DIAS D'ÁVILA",
+"editais": 9,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "FORMOSA DO RIO PRETO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "GUANAMBI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "IAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ICHU",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "IGUAÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "INHAMBUPE",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "IPECAETÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITACARÉ",
+"editais": 5,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITAETÉ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITAGIMIRIM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITAPARICA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITAPITANGA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITATIM",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "ITUAÇU",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "JACARACI",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "JUSSARI",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "LICÍNIO DE ALMEIDA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MACAJUBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MACAÚBAS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MALHADA DE PEDRAS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MATA DE SÃO JOÃO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MIGUEL CALMON",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MONTE SANTO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MORTUGABA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MULUNGU DO MORRO",
+"editais": 8,
+"abertos": 6,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MUNDO NOVO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "MURITIBA",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "NOVA SOURE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "PAULO AFONSO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "PINDOBAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "PIRIPÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "POJUCA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "PONTO NOVO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "POÇÕES",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "PRESIDENTE JÂNIO QUADROS",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "QUIJINGUE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "RIBEIRA DO AMPARO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "RIO DO ANTÔNIO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "SALVADOR",
+"editais": 10,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "SANTO ANTÔNIO DE JESUS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "SAUBARA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "SERRA PRETA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "VERA CRUZ",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "VITÓRIA DA CONQUISTA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "VÁRZEA NOVA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "BA",
+"municipio": "WANDERLEY",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "ARACATI",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "ARARENDÁ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "BELA CRUZ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "CARIRIAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "CASCAVEL",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "CRATEÚS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "CROATÁ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "FARIAS BRITO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "FORQUILHA",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "FORTALEZA",
+"editais": 8,
+"abertos": 1,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "HORIZONTE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "IPU",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "IRACEMA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "JAGUARETAMA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "JAGUARIBARA",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "JAGUARIBE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "JIJOCA DE JERICOACOARA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "MORADA NOVA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "MUCAMBO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "ORÓS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "PACAJUS",
+"editais": 6,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "PENTECOSTE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "PEREIRO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "PINDORETAMA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "SALITRE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "SOBRAL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "CE",
+"municipio": "URUBURETAMA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "AFONSO CLÁUDIO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "ANCHIETA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "ARACRUZ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "BOM JESUS DO NORTE",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "CACHOEIRO DE ITAPEMIRIM",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "CASTELO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "CONCEIÇÃO DO CASTELO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "GUARAPARI",
+"editais": 5,
+"abertos": 2,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "GUAÇUÍ",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "IBITIRAMA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "ITAPEMIRIM",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "ITARANA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "JERÔNIMO MONTEIRO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "JOÃO NEIVA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "MARILÂNDIA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "MIMOSO DO SUL",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "PANCAS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "PIÚMA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "SANTA LEOPOLDINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "SANTA TERESA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "SÃO GABRIEL DA PALHA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "SÃO ROQUE DO CANAÃ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "VARGEM ALTA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "VENDA NOVA DO IMIGRANTE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "VIANA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "VILA VELHA",
+"editais": 9,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "ES",
+"municipio": "VITÓRIA",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "BELA VISTA DE GOIÁS",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "CALDAZINHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "CATALÃO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "COCALZINHO DE GOIÁS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "CRISTIANÓPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "FAINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "FORMOSA",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "MATRINCHÃ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "NOVO GAMA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "PALMEIRAS DE GOIÁS",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "PALMINÓPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "PETROLINA DE GOIÁS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "PIRENÓPOLIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "PORANGATU",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "PORTELÂNDIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "RIO VERDE",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "SENADOR CANEDO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "TRINDADE",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "VALPARAÍSO DE GOIÁS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "GO",
+"municipio": "VIANÓPOLIS",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "ALTO ALEGRE DO MARANHÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "ARARI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "BALSAS",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "BOM JARDIM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "CANTANHEDE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "CODÓ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "DAVINÓPOLIS",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "DUQUE BACELAR",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "FORTALEZA DOS NOGUEIRAS",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "GOVERNADOR EDISON LOBÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "GUIMARÃES",
+"editais": 4,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "IMPERATRIZ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "ITAPECURU MIRIM",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "JOÃO LISBOA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "LAGO DA PEDRA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "LUÍS DOMINGUES",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "MATÕES",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "MORROS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "PEDREIRAS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "PINDARÉ-MIRIM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "PRESIDENTE VARGAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "RIACHÃO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "SANTA HELENA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "SANTA LUZIA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MA",
+"municipio": "TURIAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ALPINÓPOLIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ALTO JEQUITIBÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ANTÔNIO CARLOS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ARAPONGA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ARAPUÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ARAXÁ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ARAÇAÍ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ARAÇUAÍ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BALDIM",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BARBACENA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BELO HORIZONTE",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BELO ORIENTE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BIAS FORTES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BOA ESPERANÇA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BOM JESUS DA PENHA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BOM SUCESSO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BRASÍLIA DE MINAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BRAÚNAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "BUENO BRANDÃO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAMANDUCAIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAMPANÁRIO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAMPESTRE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAMPINA VERDE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CANAÃ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CANDEIAS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CANÁPOLIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAPELINHA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAPIM BRANCO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CAPINÓPOLIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CARANAÍBA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CARANDAÍ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CARANGOLA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CARAÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CARMO DO CAJURU",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CARVALHÓPOLIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CASA GRANDE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CHÁCARA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CIPOTÂNEA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "COIMBRA",
+"editais": 6,
+"abertos": 6,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CONCEIÇÃO DA BARRA DE MINAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CONTAGEM",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CRISTIANO OTONI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CUPARAQUE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CURVELO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "CÓRREGO FUNDO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "DATAS",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "DIVINÓPOLIS",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "DIVISA ALEGRE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "DORESÓPOLIS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "DOURADOQUARA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "DURANDÉ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ELÓI MENDES",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ENTRE RIOS DE MINAS",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ESTRELA DO INDAIÁ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "EWBANK DA CÂMARA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "FORMIGA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "GOIANÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "GUARANI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "GUARARÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "GUIDOVAL",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "IGUATAMA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ILICÍNEA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ITAGUARA",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ITAMARANDIBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ITAPEVA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "ITUMIRIM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "JANUÁRIA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "JAPARAÍBA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "LAGOA SANTA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "LAMIM",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "LUISBURGO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MACHADO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MANHUAÇU",
+"editais": 8,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MANHUMIRIM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MARIANA",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MARIPÁ DE MINAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MARLIÉRIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MARTINHO CAMPOS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MATUTINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MONTE BELO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MONTE CARMELO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MONTES CLAROS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MORADA NOVA DE MINAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MURIAÉ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "MÁRIO CAMPOS",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "NAZARENO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "NINHEIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "NOVA BELÉM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "OLARIA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "OURO FINO",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PARAOPEBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PASSOS",
+"editais": 11,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PATOS DE MINAS",
+"editais": 5,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PATROCÍNIO",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PAVÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PEDRA DO ANTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PEDRO LEOPOLDO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PEDRO TEIXEIRA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PERDÕES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PIRACEMA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PIUMHI",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PLANURA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "POCRANE",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "POMPÉU",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PONTE NOVA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PONTO CHIQUE",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "POÇO FUNDO",
+"editais": 13,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PRATA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PRESIDENTE BERNARDES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "PRESIDENTE OLEGÁRIO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "RIBEIRÃO VERMELHO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "RIO DOCE",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SALINAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SANTA VITÓRIA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SANTANA DA VARGEM",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SANTANA DO JACARÉ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SANTANA DOS MONTES",
+"editais": 10,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SANTO HIPÓLITO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SANTOS DUMONT",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SENHORA DE OLIVEIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SENHORA DOS REMÉDIOS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SETE LAGOAS",
+"editais": 10,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SETUBINHA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO BENTO ABADE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO FRANCISCO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO FRANCISCO DE SALES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO GERALDO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO GONÇALO DO ABAETÉ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO GONÇALO DO RIO ABAIXO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO GONÇALO DO SAPUCAÍ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOSÉ DA LAPA",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOSÉ DA SAFIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOSÉ DO JACURI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOSÉ DO MANTIMENTO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOÃO DA PONTE",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOÃO DEL REI",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO JOÃO DO PARAÍSO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO ROQUE DE MINAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO SEBASTIÃO DO PARAÍSO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO TIAGO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "SÃO VICENTE DE MINAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "TAPARUBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "TRÊS MARIAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "TUPACIGUARA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "VARGINHA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "VEREDINHA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MG",
+"municipio": "VIRGOLÂNDIA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "ANAURILÂNDIA",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "BATAGUASSU",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "BRASILÂNDIA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "DOURADOS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "GUIA LOPES DA LAGUNA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "NOVA ANDRADINA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MS",
+"municipio": "PARANAÍBA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "ALTO BOA VISTA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "CANABRAVA DO NORTE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "COCALINHO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "COLÍDER",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "CONFRESA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "CUIABÁ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "DIAMANTINO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "IPIRANGA DO NORTE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "LUCAS DO RIO VERDE",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "NOSSA SENHORA DO LIVRAMENTO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "NOVA BRASILÂNDIA",
+"editais": 4,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "NOVA GUARITA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "NOVA SANTA HELENA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "NOVO MUNDO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "PEIXOTO DE AZEVEDO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "PONTES E LACERDA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "PORTO ALEGRE DO NORTE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "PORTO ESPERIDIÃO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "POXORÉO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "RIBEIRÃOZINHO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "SANTA RITA DO TRIVELATO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "SANTA TEREZINHA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "SAPEZAL",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "SORRISO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "SÃO FÉLIX DO ARAGUAIA",
+"editais": 7,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "TERRA NOVA DO NORTE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "MT",
+"municipio": "VILA BELA DA SANTÍSSIMA TRINDADE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "ALENQUER",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "AUGUSTO CORRÊA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "BARCARENA",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "BRASIL NOVO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "CURRALINHO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "DOM ELISEU",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "ELDORADO DOS CARAJÁS",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "GURUPÁ",
+"editais": 14,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "LIMOEIRO DO AJURU",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "NOVA ESPERANÇA DO PIRIÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "PAU D'ARCO",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "RONDON DO PARÁ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "SANTANA DO ARAGUAIA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "SÃO DOMINGOS DO CAPIM",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "SÃO GERALDO DO ARAGUAIA",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "TUCUMÃ",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PA",
+"municipio": "TUCURUÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "AGUIAR",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "ALAGOA GRANDE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "ALAGOA NOVA",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "ALCANTIL",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "APARECIDA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "ARAÇAGI",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "AREIA",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "ASSUNÇÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BANANEIRAS",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BARRA DE SANTANA",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BAYEUX",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BELÉM",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BELÉM DO BREJO DO CRUZ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BERNARDINO BATISTA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BOM JESUS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BOM SUCESSO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "BOQUEIRÃO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "CABACEIRAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "CALDAS BRANDÃO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "CATOLÉ DO ROCHA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "CATURITÉ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "COXIXOLA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "CUITÉ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "DONA INÊS",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "FREI MARTINHO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "GUARABIRA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "GURINHÉM",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "INGÁ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "ITATUBA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "JOCA CLAUDINO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "JUAREZ TÁVORA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "JUAZEIRINHO",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "JURIPIRANGA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "LAGOA DE DENTRO",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "LAGOA SECA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MALTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MANAÍRA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MARCAÇÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MARI",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MATO GROSSO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MONTADAS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "MONTEIRO",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "NAZAREZINHO",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "NOVA PALMEIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "PIANCÓ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "PILAR",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "POCINHOS",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "POÇO DE JOSÉ DE MOURA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "QUEIMADAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "RIACHO DOS CAVALOS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "RIACHÃO DO POÇO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SALGADINHO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SALGADO DE SÃO FÉLIX",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SANTA LUZIA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SANTA RITA",
+"editais": 4,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SANTO ANDRÉ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SERRA REDONDA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SOBRADO",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SOLEDADE",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SOUSA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SÃO BENTINHO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SÃO JOSÉ DOS CORDEIROS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "SÃO MIGUEL DE TAIPU",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "TAPEROÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "TENÓRIO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "UMBUZEIRO",
+"editais": 4,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PB",
+"municipio": "VÁRZEA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "ABREU E LIMA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "AGRESTINA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "ALIANÇA",
+"editais": 14,
+"abertos": 13,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "AMARAJI",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "ARAÇOIABA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "BELO JARDIM",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "BEZERROS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "CARUARU",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "CORRENTES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "EXU",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "GAMELEIRA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "GRAVATÁ",
+"editais": 5,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "ITAMBÉ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "JABOATÃO DOS GUARARAPES",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "LAGOA DO CARRO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "PASSIRA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "PETROLÂNDIA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "PRIMAVERA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "SANTA CRUZ DO CAPIBARIBE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "SANTA FILOMENA",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "SANTA TEREZINHA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "SERRA TALHADA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "SÃO BENEDITO DO SUL",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "SÃO JOSÉ DO EGITO",
+"editais": 11,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "TAQUARITINGA DO NORTE",
+"editais": 4,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PE",
+"municipio": "TIMBAÚBA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PI",
+"municipio": "DEMERVAL LOBÃO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PI",
+"municipio": "FRANCINÓPOLIS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PI",
+"municipio": "PARNAGUÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PI",
+"municipio": "REDENÇÃO DO GURGUEIA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PI",
+"municipio": "RIO GRANDE DO PIAUÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PI",
+"municipio": "TERESINA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "ARAPONGAS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "ARAUCÁRIA",
+"editais": 5,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CAFELÂNDIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CALIFÓRNIA",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CAMBÉ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CAMPO LARGO",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CAMPO MOURÃO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CIANORTE",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CRUZEIRO DO IGUAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "CURITIBA",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "FOZ DO IGUAÇU",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "GUAÍRA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "IVATUBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "JANDAIA DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "LINDOESTE",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "MARILÂNDIA DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "MARINGÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "MISSAL",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "NOVA TEBAS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "PALMEIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "PARANAVAÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "PIRAQUARA",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "QUITANDINHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "RESERVA DO IGUAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "RIBEIRÃO DO PINHAL",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "RIO BRANCO DO IVAÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "ROLÂNDIA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "SANTA LÚCIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "SANTANA DO ITARARÉ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "SÃO JORGE DO IVAÍ",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "SÃO JOÃO DO CAIUÁ",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "SÃO MATEUS DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "SÃO MIGUEL DO IGUAÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "TOLEDO",
+"editais": 11,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "PR",
+"municipio": "TOMAZINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "BOM JESUS DO ITABAPOANA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "CABO FRIO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "CAMPOS DOS GOYTACAZES",
+"editais": 6,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "CARMO",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "DUQUE DE CAXIAS",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "ITAPERUNA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "JAPERI",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "MACAÉ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "MANGARATIBA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "MARICÁ",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "NILÓPOLIS",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "NOVA FRIBURGO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "NOVA IGUAÇU",
+"editais": 21,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "PARAÍBA DO SUL",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "PATY DO ALFERES",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "PORTO REAL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "QUISSAMÃ",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "SANTO ANTÔNIO DE PÁDUA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "SÃO JOÃO DE MERITI",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "TERESÓPOLIS",
+"editais": 6,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "TRÊS RIOS",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RJ",
+"municipio": "VOLTA REDONDA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "ALMINO AFONSO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "CORONEL JOÃO PESSOA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "GALINHOS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "JANDAÍRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "JANDUÍS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "LAGOA DE PEDRAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "MACAÍBA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "PARANÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "SANTA CRUZ",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "SÃO FRANCISCO DO OESTE",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "SÃO GONÇALO DO AMARANTE",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "SÃO MIGUEL",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "SÃO VICENTE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "TABOLEIRO GRANDE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "UMARIZAL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "VENHA-VER",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RN",
+"municipio": "VIÇOSA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RO",
+"municipio": "CEREJEIRAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "RO",
+"municipio": "COLORADO DO OESTE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RO",
+"municipio": "CORUMBIARA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "RO",
+"municipio": "NOVA BRASILÂNDIA D'OESTE",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RO",
+"municipio": "PARECIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RR",
+"municipio": "CANTÁ",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RR",
+"municipio": "MUCAJAÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "AGUDO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ALECRIM",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ALMIRANTE TAMANDARÉ DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ARVOREZINHA",
+"editais": 3,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "AUGUSTO PESTANA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BALNEÁRIO PINHAL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BARÃO DO TRIUNFO",
+"editais": 5,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BENTO GONÇALVES",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BOA VISTA DO BURICÁ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BOA VISTA DO INCRA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BOA VISTA DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BOM PRINCÍPIO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "BOSSOROCA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CAMAQUÃ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CAMBARÁ DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CAMPO BOM",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CANELA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CANOAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CASCA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CAXIAS DO SUL",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CERRITO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "CERRO BRANCO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "COLINAS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "DERRUBADAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "DOIS IRMÃOS",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "DOIS IRMÃOS DAS MISSÕES",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "DOM FELICIANO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "DOM PEDRO DE ALCÂNTARA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "DOUTOR MAURÍCIO CARDOSO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ERECHIM",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ESTÂNCIA VELHA",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "EUGÊNIO DE CASTRO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "FARROUPILHA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "FAZENDA VILANOVA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "FELIZ",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "FREDERICO WESTPHALEN",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "GRAMADO",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "GRAMADO XAVIER",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "HORIZONTINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "IBIAÇÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "IBIRUBÁ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "IGREJINHA",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "IJUÍ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "IPÊ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ITATI",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "JAGUARÃO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "JAQUIRANA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "JÚLIO DE CASTILHOS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MACHADINHO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MARAU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MARCELINO RAMOS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MARQUES DE SOUZA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MATO QUEIMADO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MONTENEGRO",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MORRO REDONDO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "MOSTARDAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NICOLAU VERGUEIRO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NOVA BOA VISTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NOVA CANDELÁRIA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NOVA PETRÓPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NOVO HAMBURGO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NOVO MACHADO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "NOVO TIRADENTES",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "OSÓRIO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PALMARES DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PALMITINHO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PANAMBI",
+"editais": 5,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PARAÍSO DO SUL",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PAVERAMA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PEJUÇARA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PELOTAS",
+"editais": 11,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PINHAL",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PINHEIRINHO DO VALE",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PIRAPÓ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PLANALTO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "PORTO XAVIER",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "RIO PARDO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "RODEIO BONITO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "ROLANTE",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "RONDA ALTA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "RONDINHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SALDANHA MARINHO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SALTO DO JACUÍ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SANTA CRUZ DO SUL",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SANTA MARGARIDA DO SUL",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SANTANA DA BOA VISTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SANTO AUGUSTO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SANTO ÂNGELO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SAPIRANGA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SAPUCAIA DO SUL",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SEVERIANO DE ALMEIDA",
+"editais": 4,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SINIMBU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SÃO BORJA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SÃO FRANCISCO DE PAULA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SÃO JERÔNIMO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SÃO LEOPOLDO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "SÃO LOURENÇO DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TAPERA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TAQUARA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TAQUARI",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TAQUARUÇU DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TEUTÔNIA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TRAVESSEIRO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TRINDADE DO SUL",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TRÊS COROAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TRÊS PASSOS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TUPANCIRETÃ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "TURUÇU",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "VENÂNCIO AIRES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "RS",
+"municipio": "VERANÓPOLIS",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ALTO BELA VISTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ANCHIETA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ANITÁPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "APIÚNA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ARVOREDO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BALNEÁRIO CAMBORIÚ",
+"editais": 6,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BALNEÁRIO PIÇARRAS",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BARRA VELHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BLUMENAU",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BOM RETIRO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BOMBINHAS",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "BRUSQUE",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CAMBORIÚ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CANELINHA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CAPINZAL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CAPIVARI DE BAIXO",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CATANDUVAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CAXAMBU DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CAÇADOR",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CHAPECÓ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CONCÓRDIA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CORDILHEIRA ALTA",
+"editais": 25,
+"abertos": 25,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CORONEL FREITAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CORUPÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "CUNHATAÍ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "DIONÍSIO CERQUEIRA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ERVAL VELHO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "FLORIANÓPOLIS",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "GARUVA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "GASPAR",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "GRAVATAL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "GUABIRUBA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "GUARACIABA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "HERVAL D'OESTE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "IBIAM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "IBICARÉ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ILHOTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "IMARUÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "IPIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "IRANI",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ITAJAÍ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ITAPEMA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ITAPOÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ITUPORANGA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "JARAGUÁ DO SUL",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "JUPIÁ",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "LACERDÓPOLIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "LEBON RÉGIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "LINDÓIA DO SUL",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "LUIZ ALVES",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "LUZERNA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MACIEIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MAJOR GERCINO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MAJOR VIEIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MARAVILHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MAREMA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MATOS COSTA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MODELO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MONTE CARLO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "MONTE CASTELO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "NAVEGANTES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "NOVA TRENTO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "OURO",
+"editais": 7,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "PARAÍSO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "PENHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "PETROLÂNDIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "PORTO UNIÃO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "PRESIDENTE CASTELLO BRANCO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "RIO DO SUL",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "RIO DOS CEDROS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "RIQUEZA",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SALTO VELOSO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SANGÃO",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SANTA TEREZINHA DO PROGRESSO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SANTO AMARO DA IMPERATRIZ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SAUDADES",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SCHROEDER",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SEARA",
+"editais": 7,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SERRA ALTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SIDERÓPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SUL BRASIL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO BENTO DO SUL",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO CARLOS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO CRISTOVÃO DO SUL",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO FRANCISCO DO SUL",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO JOSÉ",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO JOSÉ DO CEDRO",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO JOÃO BATISTA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO LOURENÇO DO OESTE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO LUDGERO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "SÃO MIGUEL DO OESTE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "TAIÓ",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "TIJUCAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "TIMBÓ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "TIMBÓ GRANDE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "TUBARÃO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "TUNÁPOLIS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "URUSSANGA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "VARGEÃO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "VIDEIRA",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "WITMARSUM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ZORTÉA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SC",
+"municipio": "ÁGUA DOCE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SE",
+"municipio": "BARRA DOS COQUEIROS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SE",
+"municipio": "CARIRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SE",
+"municipio": "LARANJEIRAS",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SE",
+"municipio": "RIACHÃO DO DANTAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SE",
+"municipio": "SANTA LUZIA DO ITANHY",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SE",
+"municipio": "SIMÃO DIAS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ADAMANTINA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "AMERICANA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "AMPARO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ANDRADINA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ARARAS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ARAÇATUBA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ARAÇOIABA DA SERRA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ARCO-ÍRIS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "AREIÓPOLIS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ARIRANHA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ASSIS",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ATIBAIA",
+"editais": 6,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BARRA BONITA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BARUERI",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BENTO DE ABREU",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BILAC",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BIRIGUI",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BIRITIBA-MIRIM",
+"editais": 2,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BOCAINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BOM SUCESSO DE ITARARÉ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "BROTAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CABREÚVA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAIABU",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAIEIRAS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAJAMAR",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAJURU",
+"editais": 6,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAMPO LIMPO PAULISTA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAPÃO BONITO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CARAGUATATUBA",
+"editais": 8,
+"abertos": 2,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CASTILHO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CAÇAPAVA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CORDEIRÓPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "COROADOS",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "CRUZEIRO",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "DIVINOLÂNDIA",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "DOBRADA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "EMBU-GUAÇU",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "FARTURA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "FERRAZ DE VASCONCELOS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "FRANCISCO MORATO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "GETULINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "GUARATINGUETÁ",
+"editais": 4,
+"abertos": 4,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "GUAREÍ",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "GUARULHOS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "GÁLIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IARAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IBIÚNA",
+"editais": 11,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IGARAÇU DO TIETÊ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IGUAPE",
+"editais": 12,
+"abertos": 9,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ILHABELA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "INDAIATUBA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IPORANGA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IPUÃ",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "IRACEMÁPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITANHAÉM",
+"editais": 7,
+"abertos": 6,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITAPURA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITATIBA",
+"editais": 10,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITATINGA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITIRAPINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITUPEVA",
+"editais": 6,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ITÁPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "JACAREÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "JALES",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "JANDIRA",
+"editais": 6,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "JOANÓPOLIS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "JUQUITIBA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "LENÇÓIS PAULISTA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "LIMEIRA",
+"editais": 4,
+"abertos": 1,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "LORENA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "LUTÉCIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MACAUBAL",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MARACAÍ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MARÍLIA",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MIRASSOLÂNDIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MOCOCA",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MOGI DAS CRUZES",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MOJI MIRIM",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MONTE ALTO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "MONTE MOR",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "NAZARÉ PAULISTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "NOVA CAMPINA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "OLÍMPIA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "ORLÂNDIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PANORAMA",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PARAGUAÇU PAULISTA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PERUÍBE",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PILAR DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PINDAMONHANGABA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PINHALZINHO",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PIRACICABA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PIRASSUNUNGA",
+"editais": 4,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "PORTO FELIZ",
+"editais": 10,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "POÁ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "QUATÁ",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "RUBIÁCEA",
+"editais": 2,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SALESÓPOLIS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SALTO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTA BÁRBARA D'OESTE",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTA CRUZ DO RIO PARDO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTA FÉ DO SUL",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTA GERTRUDES",
+"editais": 19,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTA ISABEL",
+"editais": 15,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTA ROSA DE VITERBO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTANA DE PARNAÍBA",
+"editais": 6,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTO ANDRÉ",
+"editais": 13,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SANTOS",
+"editais": 5,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SERRA NEGRA",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SERRANA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SERTÃOZINHO",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SETE BARRAS",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SEVERÍNIA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SILVEIRAS",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SUMARÉ",
+"editais": 9,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO BERNARDO DO CAMPO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO CARLOS",
+"editais": 12,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO FRANCISCO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO JOSÉ DOS CAMPOS",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO JOÃO DA BOA VISTA",
+"editais": 3,
+"abertos": 3,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO PEDRO",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO ROQUE",
+"editais": 8,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "SÃO VICENTE",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "TABOÃO DA SERRA",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "TACIBA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "TAUBATÉ",
+"editais": 15,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "TIETÊ",
+"editais": 7,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "TORRE DE PEDRA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "TORRINHA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "UBARANA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "VALINHOS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "VARGEM",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "VARGEM GRANDE PAULISTA",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "VOTUPORANGA",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "SP",
+"municipio": "VÁRZEA PAULISTA",
+"editais": 5,
+"abertos": 5,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "BURITI DO TOCANTINS",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "CHAPADA DA NATIVIDADE",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "DOIS IRMÃOS DO TOCANTINS",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2026
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "DUERÉ",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "GURUPI",
+"editais": 3,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "LAJEADO",
+"editais": 1,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "MATEIROS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "MIRANORTE",
+"editais": 3,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "PALMAS",
+"editais": 4,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "PARANÃ",
+"editais": 1,
+"abertos": 1,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "PARAÍSO DO TOCANTINS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "PONTE ALTA DO BOM JESUS",
+"editais": 2,
+"abertos": 0,
+"ano_par": 2025
+},
+{
+"tipo": "municipio",
+"uf": "TO",
+"municipio": "PUGMIL",
+"editais": 5,
+"abertos": 0,
+"ano_par": 2025
+}
+]
+}

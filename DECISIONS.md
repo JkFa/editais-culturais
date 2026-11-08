@@ -544,3 +544,16 @@ Com busca web e leitura das páginas oficiais, só **2 editais abertos** ficaram
 Os demais achados vinham de notícias ou de listagens sem prazo, ou já estavam vencidos (PR, MG/FEC, RS/SEDAC, SP/SCEIC, Cuiabá…), e não entraram. Várias páginas de secretarias estaduais não abrem para o leitor
 automático (Bahia) ou mudaram de endereço (SP). Chegar a 30 itens abertos exige conferência humana, abrindo os sites e anotando prazo e trecho (cerca de uma hora), e a amostra vence em semanas.
 Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários oficiais) é a forma de manter a amostra sem trabalho manual.
+
+## Cobertura, Onda 2 / PR 1: CultBR (08/11/2026)
+
+- **O CultBR já era coletado por inteiro; a premissa "maior fonte municipal do país" não se confirmou.** A API tem 2.853 registros (todos do PAR 2025, 960 municípios e 19 estados) e `status=Aberto` retorna 52 editais: 12 estruturados
+  (os que vêm do Mapas) e 40 só com link. Outros valores de `status` dão 422; só existem `Aberto`, `Fechado` e `Não se aplica`.
+- **O "Aberto" é defasado.** Lendo as páginas/PDFs dos 40 editais sem prazo estruturado: 25 legíveis, **nenhum com prazo futuro** (os 11 com data são de março a setembro de 2026), 9 sites recusam o robô (403/429,
+  não contornamos), 2 proíbem no robots.txt e 4 não têm link. Conclusão: subir o limite de candidatos de 20 para 40 não faz sentido (cancelado); o gargalo é a fila humana.
+- **Higiene:** candidato do CultBR cujo prazo lido na página já passou não vira Issue (`encerrado_na_pagina`), como já era no Radar.
+- **Entes do CultBR contam meio ponto no placar** (decisão do dono do projeto): `scripts/entes_cultbr.py` (workflow semanal `entes_cultbr.yml`, ~30 páginas, 3 s entre elas, nova tentativa por página, e **não sobrescreve** o arquivo se a lista ficar
+  incompleta) grava `worker/referencia/cultbr_entes.json`. Município da lista de 319 com edital no CultBR e sem fonte própria vale 0,5 (fonte própria continua valendo 1); capitais incluídas. Registro com mais de 45 dias é ignorado.
+  Efeito medido: nota 2,56 → 3,13 (121 municípios a meio ponto; capitais cobertas 3 → 9). **Estados no CultBR (19 UFs) NÃO contam** para a medida de UFs: só o município foi aprovado.
+- **Limite do método:** "tem edital no CultBR" não prova que o portal enxerga tudo daquele município (ele pode publicar em outro lugar). Por isso o meio ponto e o texto em `/sobre/`.
+- **Achado fora do escopo:** há 89 Issues `candidato` abertas e **0 aprovadas** (48 com prazo futuro e evidência, 8 já vencidas, 33 sem prazo). Sem aprovação ninguém publica. A publicação automática com selo (Onda 3, item 3) é o que destrava isso.
