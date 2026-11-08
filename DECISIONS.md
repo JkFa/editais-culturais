@@ -572,3 +572,19 @@ Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários of
 - **Bug antigo corrigido (afeta Issues já abertas):** `prazo.fim.astimezone().date()` usava o fuso da MÁQUINA. No Actions (UTC) o prazo saía **um dia adiantado** (23h59 de Brasília = 02h59 UTC do dia seguinte): o edital de Gurupi, que fecha dia 11,
   aparecia como dia 12 no YAML da Issue. Agora usa o fuso de Brasília (`FUSO_PADRAO`) em `descoberta.py` e na publicação automática, com teste de regressão forçando `TZ=UTC`. As Issues `candidato` já criadas continuam com a data errada no YAML até serem recriadas.
 - **Lista de domínios aprovada (08/11/2026):** Riofilme, Spcine, Sesc RJ, Sesc PR, Sesi-SP, Instituto Cultural Vale, Petrobras, Claro, Lojas Renner (as agências municipais e as fontes oficiais já curadas).
+
+## Publicação automática com selo, PR B: publicação (08/11/2026)
+
+- **Liga e desliga:** variável do repositório `PUBLICACAO_AUTOMATICA` (`gh variable set PUBLICACAO_AUTOMATICA --body true`). **Desligada por padrão.** Desligada, nada é publicado, o que já estava no ar sai na
+  próxima coleta e `/sobre/` mostra a fonte `publicacao-automatica` como desativada. O modo sombra (relatório) continua rodando de qualquer forma.
+- **Selo honesto:** coluna nova `editais.verificacao` (`curadoria` | `automatica` | nulo; migration `20261111000000_verificacao.sql`, check constraint, view recriada, curadoria antiga promovida). O edital publicado
+  automaticamente tem `verificacao = automatica`, **`verificado_em` vazio** e proveniência **`regex`** ("Lido do texto do edital (automático)"), nunca "curadoria humana". O site só mostra o selo para `automatica`: card
+  ("⚙ Verificado automaticamente", com a explicação no `title`), bloco no painel com o texto "não foi conferido por uma pessoa" e link **"Reportar erro neste edital"** (abre Issue pública pré-preenchida, rótulo `erro-de-dado`, sem dados pessoais).
+  `/sobre/` explica as condições e só aparece enquanto a publicação estiver ligada.
+- **Mesmas regras da curadoria:** o candidato vira `EditalCurado` (validação de evidência obrigatória) antes de ser publicado; se a validação rejeitar, fica na fila humana.
+- **Autocorreção diária:** a decisão é refeita a cada coleta. Issue publicada ganha o rótulo `auto-publicado` e um comentário (uma vez). Se deixar de valer (prazo mudou, página fora do ar, veto), o edital sai do ar no mesmo dia, o rótulo
+  é removido e a Issue recebe o motivo. **Veto humano:** fechar a Issue ou o rótulo `nao-publicar`.
+- **Prioridade na deduplicação:** `publicacao-automatica` entra como a de menor prioridade ("descoberta"): se o mesmo edital existir no Mapas, CultBR ou curadoria, essas origens vencem e a automática vira fonte alternativa.
+- **Se a fila do GitHub cair,** o que estava publicado é preservado do snapshot anterior (como as outras fontes), e a falha aparece em `fontes_falharam`.
+- **Hash:** `verificacao` nulo sai do hash, então a coluna nova não regrava os editais de Mapas e CultBR; só a curadoria (que ganha `curadoria`) é regravada uma vez.
+- **Ordem de deploy:** aplicar a migration (dry-run antes) **antes** do merge. O worker passa a gravar `verificacao` em toda linha nova e o PostgREST recusa coluna desconhecida.

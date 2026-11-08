@@ -149,6 +149,7 @@ export function criarCard(edital, { favorito, aoAbrir, aoAlternarFavorito, agora
       el("h3", {}, titulo),
       el("p", { class: "orgao" }, edital.orgao_fomento, local ? ` · ${local}` : ""),
       edital.via ? el("p", { class: "via" }, `via ${edital.via}`) : null,
+      seloAutomatico(edital),
       badgePrazo(edital, agora),
       raioX(edital),
       pilulas(edital),
@@ -158,6 +159,20 @@ export function criarCard(edital, { favorito, aoAbrir, aoAlternarFavorito, agora
     ),
   );
 }
+
+/** Selo dos editais publicados por um programa, sem conferência humana. Só aparece para `verificacao === "automatica"`. */
+export function seloAutomatico(edital) {
+  if (edital.verificacao !== "automatica") return null;
+  return el(
+    "p",
+    { class: "selo-auto", title: TEXTO_SELO_AUTOMATICO },
+    el("span", { "aria-hidden": "true" }, "⚙ "),
+    "Verificado automaticamente",
+  );
+}
+
+export const TEXTO_SELO_AUTOMATICO =
+  "Lido do site oficial por um programa, com o trecho que comprova o prazo. Não foi conferido por uma pessoa: confira no edital.";
 
 /** Favorito cujo edital saiu da base: mostra o que foi salvo, sem inventar nada. */
 export function criarCardRemovido(salvo, { aoRemover }) {

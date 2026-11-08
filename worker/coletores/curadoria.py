@@ -173,6 +173,7 @@ class EditalCurado(BaseModel):
             tipo_apoio=self.tipo_apoio,
             verificado_em=self.verificado_em,
             pendencias=self.pendencias,
+            verificacao="curadoria",
         )
 
 

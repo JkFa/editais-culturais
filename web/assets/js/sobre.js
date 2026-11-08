@@ -99,6 +99,9 @@ fetch(new URL("../../data/cobertura.json", import.meta.url))
 carregarProgressivo({ ...config, supabaseUrl: "", supabaseAnonKey: "" }, (d) => {
   preencherUltimaColeta(d.geradoEm);
   renderFontes(d.fontes ?? []);
+  // O texto sobre a publicação automática só aparece enquanto ela estiver ligada.
+  const auto = (d.fontes ?? []).some((f) => f.fonte === "publicacao-automatica" && f.ativa);
+  document.querySelector("#publicacao-automatica")?.toggleAttribute("hidden", !auto);
 }).catch(() => preencherUltimaColeta(null));
 
 document.documentElement.dataset.pronto = "1"; // sinal para testes automatizados

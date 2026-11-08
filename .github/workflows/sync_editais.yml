@@ -58,6 +58,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Publicação automática de candidatos (worker/automatica.py). Desligada por padrão: só liga com a variável = true.
+          PUBLICACAO_AUTOMATICA: ${{ vars.PUBLICACAO_AUTOMATICA }}
           FONTE: ${{ inputs.fonte }}
           SEM_GRAVAR: ${{ inputs.dry_run }}
         run: |

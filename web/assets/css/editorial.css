@@ -1346,3 +1346,23 @@ body {
   background: var(--cor-destaque-fundo);
   font-size: 0.875rem;
 }
+
+/* Selo dos editais publicados por um programa, sem conferência humana. Cor só não basta: leva texto e ícone. */
+.selo-auto {
+  display: inline-block;
+  margin: 0.25rem 0 0;
+  padding: 0.15rem 0.55rem;
+  border: 1px dashed var(--cor-borda-controle);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--cor-texto);
+  background: transparent;
+}
+.verificacao-auto {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.8rem;
+  border-left: 3px solid var(--cor-borda-controle);
+  background: var(--cor-destaque-fundo, transparent);
+}
+.verificacao-auto h3 { margin: 0 0 0.3rem; font-size: 0.95rem; }
+.verificacao-auto p { margin: 0.2rem 0; font-size: 0.9rem; }

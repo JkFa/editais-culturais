@@ -322,3 +322,10 @@ grava `web/data/cobertura.json` (mostrado em `/sobre/#cobertura`) e `cobertura_d
 (`scripts/auditoria_cobertura.py`, workflow "Auditoria de cobertura") e conta zero enquanto a amostra de referência
 (`worker/referencia/amostra_recall.json`) não tiver 30 editais abertos conferidos à mão. Metodologia e decisões: `DECISIONS.md`.
 
+## Publicação automática (desligada por padrão)
+
+O portal pode publicar, sem aprovação humana, candidatos achados em sites oficiais, com o selo **"Verificado automaticamente"**
+(só se o prazo, o órgão e o trecho que os comprova forem lidos do site oficial, e relidos todo dia). Liga e desliga pela variável do
+repositório `PUBLICACAO_AUTOMATICA`; veta-se uma Issue fechando-a ou com o rótulo `nao-publicar`. Regras em `worker/automatica.py`,
+decisões em `DECISIONS.md`.
+
