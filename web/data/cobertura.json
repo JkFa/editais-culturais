@@ -1,19 +1,19 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-08T14:44:46.731237+00:00",
+ "gerado_em": "2026-11-08T16:09:03.532679+00:00",
  "data": "2026-11-08",
- "nota": 2.36,
+ "nota": 2.56,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.1667,
-   "pontos": 0.333,
-   "atual": 4.5,
+   "fracao": 0.2037,
+   "pontos": 0.407,
+   "atual": 5.5,
    "total": 27,
-   "texto": "4.5 de 27 UFs"
+   "texto": "5.5 de 27 UFs"
   },
   {
    "id": "capitais",
@@ -31,12 +31,12 @@
    "nome": "Municípios com mais de 100 mil habitantes monitorados",
    "peso": 1.5,
    "meta": "80% ou mais",
-   "fracao": 0.0157,
-   "pontos": 0.024,
-   "atual": 4.0,
+   "fracao": 0.0705,
+   "pontos": 0.106,
+   "atual": 18.0,
    "total": 319,
-   "pct": 0.0125,
-   "texto": "4 de 319 municípios (1.3%)"
+   "pct": 0.0564,
+   "texto": "18 de 319 municípios (5.6%)"
   },
   {
    "id": "recall",
@@ -56,35 +56,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.0879,
-   "pontos": 0.088,
+   "fracao": 0.0893,
+   "pontos": 0.089,
    "atual": 4,
-   "total": 65,
-   "pct": 0.0615,
-   "texto": "4 de 65 (6%)"
+   "total": 64,
+   "pct": 0.0625,
+   "texto": "4 de 64 (6%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7019,
-   "pontos": 0.351,
-   "prazo": 65,
-   "proponentes": 21,
-   "total": 65,
-   "texto": "prazo 65/65 (100%); proponentes 21/65 (32%)"
+   "fracao": 0.6953,
+   "pontos": 0.348,
+   "prazo": 64,
+   "proponentes": 20,
+   "total": 64,
+   "texto": "prazo 64/64 (100%); proponentes 20/64 (31%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9123,
-   "pontos": 0.456,
-   "atual": 26,
-   "total": 30,
-   "texto": "26 de 30 fontes ativas"
+   "fracao": 0.9942,
+   "pontos": 0.497,
+   "atual": 51,
+   "total": 54,
+   "texto": "51 de 54 fontes ativas"
   },
   {
    "id": "higiene",
@@ -116,7 +116,9 @@
    "abertos": 0,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.0,
-   "fontes": []
+   "fontes": [
+    "mapas:arapiraca-al"
+   ]
   },
   {
    "uf": "AP",
@@ -149,11 +151,23 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 20,
+   "abertos": 19,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.0,
    "fontes": [
-    "mapas:ce"
+    "mapas:aquiraz-ce",
+    "mapas:caninde-ce",
+    "mapas:ce",
+    "mapas:crateus-ce",
+    "mapas:crato-ce",
+    "mapas:ico-ce",
+    "mapas:itapipoca-ce",
+    "mapas:maracanau-ce",
+    "mapas:maranguape-ce",
+    "mapas:moradanova-ce",
+    "mapas:pacajus-ce",
+    "mapas:quixada-ce",
+    "mapas:russas-ce"
    ]
   },
   {
@@ -169,7 +183,7 @@
    "uf": "ES",
    "nome": "Espírito Santo",
    "capital": "Vitória",
-   "abertos": 3,
+   "abertos": 2,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.0,
    "fontes": [
@@ -216,10 +230,14 @@
    "uf": "MG",
    "nome": "Minas Gerais",
    "capital": "Belo Horizonte",
-   "abertos": 0,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.0,
-   "fontes": []
+   "fontes": [
+    "mapas:lagoasanta-mg",
+    "mapas:novalima-mg",
+    "mapas:santaluzia-mg"
+   ]
   },
   {
    "uf": "PA",
@@ -230,7 +248,8 @@
    "capital_coberta": 0.0,
    "fontes": [
     "mapas:pa",
-    "mapas:parauapebas"
+    "mapas:parauapebas",
+    "mapas:redencao-pa"
    ]
   },
   {
@@ -260,7 +279,10 @@
    "abertos": 9,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.0,
-   "fontes": []
+   "fontes": [
+    "mapas:paulista-pe",
+    "mapas:petrolina-pe"
+   ]
   },
   {
    "uf": "PI",
@@ -301,7 +323,10 @@
    "abertos": 3,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.0,
-   "fontes": []
+   "fontes": [
+    "mapas:gravatai-rs",
+    "mapas:pelotas-rs"
+   ]
   },
   {
    "uf": "RO",
@@ -334,10 +359,13 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 0,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
+    "mapas:itatiba-sp",
+    "mapas:maua-sp",
+    "mapas:ribeiraopires-sp",
     "vigia-spcine-fomento"
    ]
   },
@@ -345,11 +373,12 @@
    "uf": "SE",
    "nome": "Sergipe",
    "capital": "Aracaju",
-   "abertos": 9,
-   "fonte_estadual": 0.0,
+   "abertos": 8,
+   "fonte_estadual": 1.0,
    "capital_coberta": 1.0,
    "fontes": [
-    "mapas:aracaju"
+    "mapas:aracaju",
+    "mapas:se"
    ]
   },
   {
@@ -362,12 +391,12 @@
    "fontes": []
   }
  ],
- "editais_abertos": 65,
+ "editais_abertos": 64,
  "editais_sem_uf": 8,
  "historico": [
   {
    "data": "2026-11-08",
-   "nota": 2.36
+   "nota": 2.56
   }
  ],
  "dias_seguidos_9": 0
