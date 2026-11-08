@@ -5,6 +5,33 @@
     "Misturar UFs e tipos de órgão: não mais de 20% do mesmo estado; incluir municípios fora das capitais.",
     "Atualizar a amostra ao menos a cada 2 meses (os prazos vencem). O placar só usa a medida com 30 itens abertos ou mais."
   ],
-  "item_exemplo": {"titulo": "Título do edital", "url": "https://...", "orgao": "Secretaria", "uf": "BA", "prazo": "2026-12-15", "conferido_em": "2026-11-08"},
-  "itens": []
+  "item_exemplo": {
+    "titulo": "Título do edital",
+    "url": "https://...",
+    "orgao": "Secretaria",
+    "uf": "BA",
+    "prazo": "2026-12-15",
+    "conferido_em": "2026-11-08"
+  },
+  "itens": [
+    {
+      "titulo": "Edital Ocupa Goiás – MITsp 2027",
+      "url": "https://goias.gov.br/cultura/inscricoes-para-edital-ocupa-goias-mitsp-2027-comecam-nesta-quarta-feira-4-11",
+      "orgao": "Secretaria de Estado da Cultura de Goiás (Secult-GO)",
+      "uf": "GO",
+      "prazo": "2026-11-14",
+      "conferido_em": "2026-11-08",
+      "trecho": "seguem até 14 de novembro de 2026, por meio da plataforma Baru 2.0"
+    },
+    {
+      "titulo": "Chamamento Público 19/2026 – Rede Municipal de Pontos de Cultura de São Carlos",
+      "url": "https://cidadao.saocarlos.sp.gov.br/servicos/licitacao/arquivos-completos/10-15-2026-02:19:27-pm-8718-2399-2026-Completo-.pdf",
+      "orgao": "Prefeitura de São Carlos (SP)",
+      "uf": "SP",
+      "prazo": "2026-11-15",
+      "conferido_em": "2026-11-08",
+      "trecho": "As inscrições serão gratuitas e deverão ser realizadas a partir das 9h do dia 16/10/2026 até às 23h59 do dia 15/11/2026"
+    }
+  ],
+  "situacao": "Semente com 2 itens conferidos em 08/11/2026. O placar só usa a medida com 30 itens abertos ou mais; até lá o recall conta zero."
 }

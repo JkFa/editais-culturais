@@ -537,3 +537,10 @@ Conferência feita em 08/11/2026, uma a uma (robots.txt, `/termos-de-uso/`, home
 - **Ampliar `tipos_aceitos` foi descartado.** Medido em 36 instâncias ativas (`scripts/medir_tipos_mapas.py`): 47 itens abertos fora de "Edital", quase todos ruído (aulas, cadastros, formulários de
   habilitação de pagamento, consultas públicas, prestação de contas, agenda de teatro). O filtro de título de fomento aceitaria 5 e acertaria 2 (credenciamentos de artistas): precisão ~40%, amostra pequena demais
   para justificar o risco. Continua só "Edital". Reavaliar quando houver centenas de itens: rodar o script e ler a lista.
+
+### Amostra de recall: tentativa de levantamento (08/11/2026)
+
+Com busca web e leitura das páginas oficiais, só **2 editais abertos** ficaram comprovados com prazo (Ocupa Goiás, até 14/11; Pontos de Cultura de São Carlos, até 15/11): são os itens de `worker/referencia/amostra_recall.json`.
+Os demais achados vinham de notícias ou de listagens sem prazo, ou já estavam vencidos (PR, MG/FEC, RS/SEDAC, SP/SCEIC, Cuiabá…), e não entraram. Várias páginas de secretarias estaduais não abrem para o leitor
+automático (Bahia) ou mudaram de endereço (SP). Chegar a 30 itens abertos exige conferência humana, abrindo os sites e anotando prazo e trecho (cerca de uma hora), e a amostra vence em semanas.
+Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários oficiais) é a forma de manter a amostra sem trabalho manual.
