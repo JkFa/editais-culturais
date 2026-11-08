@@ -14,7 +14,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
 
-from .catalogo import FonteConfig, StatusFonte, status_de, status_desativada
+from .catalogo import FonteConfig, StatusFonte, classificar_falha, status_de, status_desativada
 from .coletores import cultbr, minc, onthemove, radar_emma, vigia
 from .coletores.base import ResultadoFonte
 from .fila import Candidato
@@ -125,8 +125,9 @@ async def rodar_fontes_v4(
             texto = f"{type(exc).__name__}: {exc}"[:300]
             log.error("fonte %s falhou: %s", f.id, texto)
             out.falhas.append({"fonte": f.id, "erro": texto})
+            estado, texto = classificar_falha(texto, anterior, agora)
             out.status.append(
-                status_de(f, "erro", anterior, erro=texto, agora=agora, duracao_ms=duracao(inicio))
+                status_de(f, estado, anterior, erro=texto, agora=agora, duracao_ms=duracao(inicio))
             )
 
     try:
