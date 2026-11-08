@@ -152,6 +152,10 @@ instancias:
 # `metodo`: api | html | vigia (hash do texto principal; mudança abre candidato).
 # Termos de uso e robots.txt conferidos em 07/11/2026 (links em termos_url; resumo no DECISIONS.md).
 # ---------------------------------------------------------------------------------------------
+# `cobertura` (opcional): de qual território a fonte é, para o placar (worker/cobertura.py).
+#   ente: estado | capital | municipio;  uf;  municipio (nome, para capital/municipio);
+#   parcial: true quando a fonte cobre só uma área (ex.: só audiovisual), e conta meio ponto.
+# As instâncias de Mapas acima já dizem o território por abrangencia/uf/municipio.
 fontes:
   - id: minc-inscricoes-abertas
     nome: "Ministério da Cultura: editais abertos"
@@ -225,10 +229,10 @@ fontes:
   - {id: vigia-sesc-pr-editais, nome: "Sesc Paraná: editais", tipo: oficial, metodo: vigia, url: "https://www.sescpr.com.br/editais/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
   - {id: vigia-sesc-rj-pulsar, nome: "Sesc RJ: Edital de Cultura Pulsar", tipo: oficial, metodo: vigia, url: "https://www.sescrio.org.br/pulsar/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
   - {id: vigia-instituto-cultural-vale, nome: "Instituto Cultural Vale: chamada", tipo: oficial, metodo: vigia, url: "https://www.institutoculturalvale.org/editais/chamada-instituto-cultural-vale/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
-  - {id: vigia-spcine-fomento, nome: "Spcine: editais de fomento", tipo: oficial, metodo: vigia, url: "https://spcine.com.br/editais-de-fomento/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-spcine-fomento, nome: "Spcine: editais de fomento", tipo: oficial, metodo: vigia, url: "https://spcine.com.br/editais-de-fomento/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true, cobertura: {ente: capital, uf: SP, municipio: São Paulo, parcial: true}}
   - {id: vigia-funarte-editais, nome: "Funarte: editais", tipo: oficial, metodo: vigia, url: "https://www.gov.br/funarte/pt-br/editais-1", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
-  - {id: vigia-riofilme-chamadas, nome: "Riofilme: chamadas", tipo: oficial, metodo: vigia, url: "https://riofilme.com.br/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
-  - {id: vigia-rj-incentivo-cultura, nome: "Secult-RJ: Lei de Incentivo à Cultura", tipo: oficial, metodo: vigia, url: "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
+  - {id: vigia-riofilme-chamadas, nome: "Riofilme: chamadas", tipo: oficial, metodo: vigia, url: "https://riofilme.com.br/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true, cobertura: {ente: capital, uf: RJ, municipio: Rio de Janeiro, parcial: true}}
+  - {id: vigia-rj-incentivo-cultura, nome: "Secult-RJ: Lei de Incentivo à Cultura", tipo: oficial, metodo: vigia, url: "https://cultura.rj.gov.br/lei-de-incentivo-a-cultura/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true, cobertura: {ente: estado, uf: RJ, parcial: true}}
   - {id: vigia-claro-patrocinios, nome: "Claro: patrocínios", tipo: oficial, metodo: vigia, url: "https://www.claro.com.br/institucional/patrocinios", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
   - {id: vigia-renner-patrocinios, nome: "Lojas Renner: patrocínios e projetos", tipo: oficial, metodo: vigia, url: "https://www.lojasrennersa.com.br/patrocinios-e-projetos/", termos_conferidos_em: "2026-11-07", robots_ok: true, intervalo_min_entre_requisicoes_s: 2, ativa: true}
 

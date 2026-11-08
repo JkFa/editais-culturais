@@ -55,6 +55,27 @@
         <p>Cada campo calculado guarda de onde veio: lido do texto do edital, informado pela plataforma de origem ou conferido por curadoria. No painel de cada edital, “Como sabemos disso” mostra o trecho exato do texto que sustenta o valor ou o proponente.</p>
         <p>Valor, proponente, contrapartida e documentos só aparecem quando o texto diz. Se o resumo não traz a informação, o campo mostra “Não informado no resumo — ver edital”. Nunca mostramos zero no lugar de “não sei”.</p>
 
+        <h2 id="cobertura">Cobertura</h2>
+        <p id="cobertura-resumo" class="suave" aria-live="polite">Carregando…</p>
+        <div id="cobertura-nota" class="cobertura-nota" hidden></div>
+        <ul id="cobertura-metricas" class="cobertura-metricas"></ul>
+        <details class="cobertura-uf" id="cobertura-uf-bloco" hidden>
+          <summary>Por estado: editais abertos e fontes</summary>
+          <div class="tabela-rolavel"><table id="cobertura-uf"><caption class="sr-only">Cobertura por unidade da federação</caption></table></div>
+        </details>
+        <details class="cobertura-metodo">
+          <summary>Como a nota é calculada</summary>
+          <p>A nota vai de 0 a 10 e é recalculada todo dia, a partir de oito medidas objetivas. Cada medida vale um peso e é proporcional à sua meta (com teto em 100%). Nenhum número é digitado à mão, e o código está em <code>worker/cobertura.py</code>.</p>
+          <ul>
+            <li><strong>UFs e capitais:</strong> contam quando existe fonte própria do estado ou da capital, ativa e funcionando na última coleta. Fontes federais (CultBR, MinC) não contam como estaduais. Uma fonte que cobre só uma área (por exemplo, só audiovisual) vale meio ponto.</li>
+            <li><strong>Municípios grandes:</strong> os 319 municípios com mais de 100 mil habitantes (Censo 2022, IBGE) que têm ao menos uma fonte própria monitorada.</li>
+            <li><strong>Recall auditado:</strong> todo mês comparamos uma amostra de editais abertos, levantada fora do portal, com o que o portal tem. Enquanto não houver auditoria com pelo menos 30 editais, esta medida conta <strong>zero</strong>: preferimos uma nota baixa e honesta a uma nota inflada.</li>
+            <li><strong>Valor, prazo e proponentes:</strong> só contam quando o campo tem evidência (o trecho do edital ou a informação estruturada da plataforma de origem).</li>
+            <li><strong>Frescor:</strong> fontes ativas cuja última coleta deu certo nas últimas 26 horas.</li>
+            <li><strong>Higiene:</strong> cada edital vencido listado como aberto e cada duplicata entre fontes tira 20% desta medida.</li>
+          </ul>
+        </details>
+
         <h2 id="fontes">Fontes</h2>
         <p id="fontes-resumo" class="suave"></p>
         <div id="fontes-lista" class="fontes-lista" aria-live="polite"></div>

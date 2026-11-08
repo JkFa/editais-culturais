@@ -2,6 +2,7 @@
 
 import json
 import re
+from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 from e2e_util import abertos, nova_pagina
@@ -106,5 +107,32 @@ def test_sobre_lista_as_fontes_por_tipo_com_saude_e_motivo(navegador, url, snaps
     )
     for link in pg.locator("#fontes-lista a").all():
         assert link.get_attribute("href").startswith("https://")
+    assert pg.erros == []
+    pg.close()
+
+
+def test_sobre_mostra_o_placar_de_cobertura_com_nota_metricas_e_tabela_por_uf(navegador, url):
+    cobertura = json.loads(
+        (Path(__file__).resolve().parent.parent / "web" / "data" / "cobertura.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    pg = nova_pagina(navegador)
+    pronta(pg, url, "sobre/")
+    pg.wait_for_selector("#cobertura-metricas li")
+    nota = pg.inner_text("#cobertura-nota .nota-grande")
+    assert nota.replace(",", ".").startswith(f"{cobertura['nota']:g}") and nota.endswith("de 10")
+    itens = pg.locator("#cobertura-metricas li")
+    assert itens.count() == 8
+    recall = itens.filter(has_text="Recall auditado")
+    assert "não medido" in recall.inner_text() and "0,0 de 2,5" in recall.inner_text()
+    assert itens.first.locator('[role="img"]').get_attribute("aria-label").endswith("% da meta")
+    pg.locator("#cobertura-uf-bloco summary").click()
+    linhas = pg.locator("#cobertura-uf tbody tr")
+    assert linhas.count() == 27
+    ce = linhas.filter(has_text="CE · Ceará")
+    assert "tem" in ce.inner_text() and "Fortaleza" in ce.inner_text()
+    assert pg.locator("#cobertura-uf caption").count() == 1
+    assert "Enquanto não houver auditoria" in pg.text_content("main")  # dentro de <details> fechado
     assert pg.erros == []
     pg.close()

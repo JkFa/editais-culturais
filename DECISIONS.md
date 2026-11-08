@@ -475,3 +475,21 @@ Detalhes e tabela em `docs/fontes-internacionais.md`. Resultado:
 - **Revisão:** `/admin/criterios/` com RLS por `admins` (`eh_admin()` security definer; UPDATE só nos campos dos critérios e da revisão). A tela é só reflexo.
 - **Fora do escopo (Fase 3):** Modo Parecerista, RAG/pgvector, fluxo audiovisual, Recurso, conversa livre, cobrança.
 
+## Cobertura, Onda 0: placar (08/11/2026)
+
+- **Objetivo:** tornar "cobertura" mensurável antes de ampliar fontes. Nota 0 a 10 = soma ponderada de 8 medidas (pesos e metas do plano:
+  UFs 2,0; capitais 1,0; municípios >100 mil 1,5; recall 2,5; valor 1,0; prazo/proponentes 0,5; frescor 0,5; higiene 1,0). Código em `worker/cobertura.py`.
+- **Nota inicial real: 2,36** (não 3): 4,5 UFs, 3 capitais, 4 de 319 municípios, valor em 4 de 65 editais, recall não medido.
+- **UF/capital coberta** = fonte própria (estadual/municipal) ativa e com status `ok` na última coleta. Federais (CultBR, MinC) não contam.
+  Fonte que cobre só uma área vale meio ponto (`cobertura.parcial: true` no `fontes.yaml`: Spcine e Riofilme para as capitais, Secult-RJ para a UF).
+  Território dos Mapas vem de `abrangencia/uf/municipio`; das demais, do bloco `cobertura` do `fontes.yaml`. PE e SE não pontuam enquanto estiverem em erro.
+- **IBGE:** `worker/referencia/{ufs_capitais,municipios_100k}.json` gerados por `scripts/gerar_referencia_ibge.py` (Censo 2022, agregado 4714): 27 UFs/capitais e 319 municípios.
+- **Recall não medido vale zero.** A amostra independente depende dos diários oficiais (Onda 3). A busca web usada nesta sessão não entregou editais abertos
+  com prazo verificável em volume (a maioria vencida ou sem data), e não preenchi a amostra com itens não conferidos. `amostra_recall.json` está vazia, com formato e regras.
+  Até haver 30 itens conferidos à mão, o teto da nota é 7,5.
+- **Evidência:** valor/proponentes só contam com `proveniencia` do campo; prazo conta se vem de API estruturada (Mapas, CultBR) ou tem proveniência.
+- **Higiene:** cada vencido listado como aberto e cada duplicata (mesma regra do `dedup`) tira 20% da medida; 5 problemas zeram.
+- **Histórico:** `cobertura.json` guarda os últimos 60 dias; "nota ≥ 9 por 14 dias" é calculado só com dias consecutivos.
+- **Falha isolada:** o placar nunca derruba a coleta (erro vira log) e `cobertura_diaria` falhar só gera aviso. Badge via shields.io (`cobertura-badge.json` no Pages).
+- **Ordem de deploy:** aplicar `20261110000000_cobertura.sql` antes do merge para a tabela existir; sem ela o worker só avisa e o site usa o JSON.
+

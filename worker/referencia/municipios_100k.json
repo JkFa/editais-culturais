@@ -1,0 +1,1921 @@
+{
+ "fonte": "IBGE, Censo 2022 (agregado 4714, variável 93) e API de localidades",
+ "gerado_por": "scripts/gerar_referencia_ibge.py",
+ "corte": 100000,
+ "municipios": [
+  {
+   "ibge": 3550308,
+   "nome": "São Paulo",
+   "uf": "SP",
+   "populacao": 11451999
+  },
+  {
+   "ibge": 3304557,
+   "nome": "Rio de Janeiro",
+   "uf": "RJ",
+   "populacao": 6211223
+  },
+  {
+   "ibge": 5300108,
+   "nome": "Brasília",
+   "uf": "DF",
+   "populacao": 2817381
+  },
+  {
+   "ibge": 2304400,
+   "nome": "Fortaleza",
+   "uf": "CE",
+   "populacao": 2428708
+  },
+  {
+   "ibge": 2927408,
+   "nome": "Salvador",
+   "uf": "BA",
+   "populacao": 2417678
+  },
+  {
+   "ibge": 3106200,
+   "nome": "Belo Horizonte",
+   "uf": "MG",
+   "populacao": 2315560
+  },
+  {
+   "ibge": 1302603,
+   "nome": "Manaus",
+   "uf": "AM",
+   "populacao": 2063689
+  },
+  {
+   "ibge": 4106902,
+   "nome": "Curitiba",
+   "uf": "PR",
+   "populacao": 1773718
+  },
+  {
+   "ibge": 2611606,
+   "nome": "Recife",
+   "uf": "PE",
+   "populacao": 1488920
+  },
+  {
+   "ibge": 5208707,
+   "nome": "Goiânia",
+   "uf": "GO",
+   "populacao": 1437366
+  },
+  {
+   "ibge": 4314902,
+   "nome": "Porto Alegre",
+   "uf": "RS",
+   "populacao": 1332845
+  },
+  {
+   "ibge": 1501402,
+   "nome": "Belém",
+   "uf": "PA",
+   "populacao": 1303403
+  },
+  {
+   "ibge": 3518800,
+   "nome": "Guarulhos",
+   "uf": "SP",
+   "populacao": 1291771
+  },
+  {
+   "ibge": 3509502,
+   "nome": "Campinas",
+   "uf": "SP",
+   "populacao": 1139047
+  },
+  {
+   "ibge": 2111300,
+   "nome": "São Luís",
+   "uf": "MA",
+   "populacao": 1037775
+  },
+  {
+   "ibge": 2704302,
+   "nome": "Maceió",
+   "uf": "AL",
+   "populacao": 957916
+  },
+  {
+   "ibge": 5002704,
+   "nome": "Campo Grande",
+   "uf": "MS",
+   "populacao": 898100
+  },
+  {
+   "ibge": 3304904,
+   "nome": "São Gonçalo",
+   "uf": "RJ",
+   "populacao": 896744
+  },
+  {
+   "ibge": 2211001,
+   "nome": "Teresina",
+   "uf": "PI",
+   "populacao": 866300
+  },
+  {
+   "ibge": 2507507,
+   "nome": "João Pessoa",
+   "uf": "PB",
+   "populacao": 833932
+  },
+  {
+   "ibge": 3548708,
+   "nome": "São Bernardo do Campo",
+   "uf": "SP",
+   "populacao": 810729
+  },
+  {
+   "ibge": 3301702,
+   "nome": "Duque de Caxias",
+   "uf": "RJ",
+   "populacao": 808161
+  },
+  {
+   "ibge": 3303500,
+   "nome": "Nova Iguaçu",
+   "uf": "RJ",
+   "populacao": 785867
+  },
+  {
+   "ibge": 2408102,
+   "nome": "Natal",
+   "uf": "RN",
+   "populacao": 751300
+  },
+  {
+   "ibge": 3547809,
+   "nome": "Santo André",
+   "uf": "SP",
+   "populacao": 748919
+  },
+  {
+   "ibge": 3534401,
+   "nome": "Osasco",
+   "uf": "SP",
+   "populacao": 728615
+  },
+  {
+   "ibge": 3552205,
+   "nome": "Sorocaba",
+   "uf": "SP",
+   "populacao": 723682
+  },
+  {
+   "ibge": 3170206,
+   "nome": "Uberlândia",
+   "uf": "MG",
+   "populacao": 713224
+  },
+  {
+   "ibge": 3543402,
+   "nome": "Ribeirão Preto",
+   "uf": "SP",
+   "populacao": 698642
+  },
+  {
+   "ibge": 3549904,
+   "nome": "São José dos Campos",
+   "uf": "SP",
+   "populacao": 697054
+  },
+  {
+   "ibge": 5103403,
+   "nome": "Cuiabá",
+   "uf": "MT",
+   "populacao": 650877
+  },
+  {
+   "ibge": 2607901,
+   "nome": "Jaboatão dos Guararapes",
+   "uf": "PE",
+   "populacao": 644037
+  },
+  {
+   "ibge": 3118601,
+   "nome": "Contagem",
+   "uf": "MG",
+   "populacao": 621863
+  },
+  {
+   "ibge": 4209102,
+   "nome": "Joinville",
+   "uf": "SC",
+   "populacao": 616317
+  },
+  {
+   "ibge": 2910800,
+   "nome": "Feira de Santana",
+   "uf": "BA",
+   "populacao": 616272
+  },
+  {
+   "ibge": 2800308,
+   "nome": "Aracaju",
+   "uf": "SE",
+   "populacao": 602757
+  },
+  {
+   "ibge": 4113700,
+   "nome": "Londrina",
+   "uf": "PR",
+   "populacao": 555965
+  },
+  {
+   "ibge": 3136702,
+   "nome": "Juiz de Fora",
+   "uf": "MG",
+   "populacao": 540756
+  },
+  {
+   "ibge": 4205407,
+   "nome": "Florianópolis",
+   "uf": "SC",
+   "populacao": 537211
+  },
+  {
+   "ibge": 5201405,
+   "nome": "Aparecida de Goiânia",
+   "uf": "GO",
+   "populacao": 527796
+  },
+  {
+   "ibge": 3205002,
+   "nome": "Serra",
+   "uf": "ES",
+   "populacao": 520653
+  },
+  {
+   "ibge": 3301009,
+   "nome": "Campos dos Goytacazes",
+   "uf": "RJ",
+   "populacao": 483540
+  },
+  {
+   "ibge": 3300456,
+   "nome": "Belford Roxo",
+   "uf": "RJ",
+   "populacao": 483087
+  },
+  {
+   "ibge": 3303302,
+   "nome": "Niterói",
+   "uf": "RJ",
+   "populacao": 481749
+  },
+  {
+   "ibge": 3549805,
+   "nome": "São José do Rio Preto",
+   "uf": "SP",
+   "populacao": 480393
+  },
+  {
+   "ibge": 1500800,
+   "nome": "Ananindeua",
+   "uf": "PA",
+   "populacao": 478778
+  },
+  {
+   "ibge": 3205200,
+   "nome": "Vila Velha",
+   "uf": "ES",
+   "populacao": 467722
+  },
+  {
+   "ibge": 4305108,
+   "nome": "Caxias do Sul",
+   "uf": "RS",
+   "populacao": 463501
+  },
+  {
+   "ibge": 1100205,
+   "nome": "Porto Velho",
+   "uf": "RO",
+   "populacao": 460434
+  },
+  {
+   "ibge": 3530607,
+   "nome": "Mogi das Cruzes",
+   "uf": "SP",
+   "populacao": 451505
+  },
+  {
+   "ibge": 3525904,
+   "nome": "Jundiaí",
+   "uf": "SP",
+   "populacao": 443221
+  },
+  {
+   "ibge": 1600303,
+   "nome": "Macapá",
+   "uf": "AP",
+   "populacao": 442933
+  },
+  {
+   "ibge": 3305109,
+   "nome": "São João de Meriti",
+   "uf": "RJ",
+   "populacao": 440962
+  },
+  {
+   "ibge": 3538709,
+   "nome": "Piracicaba",
+   "uf": "SP",
+   "populacao": 423323
+  },
+  {
+   "ibge": 2504009,
+   "nome": "Campina Grande",
+   "uf": "PB",
+   "populacao": 419379
+  },
+  {
+   "ibge": 3548500,
+   "nome": "Santos",
+   "uf": "SP",
+   "populacao": 418608
+  },
+  {
+   "ibge": 3529401,
+   "nome": "Mauá",
+   "uf": "SP",
+   "populacao": 418261
+  },
+  {
+   "ibge": 3143302,
+   "nome": "Montes Claros",
+   "uf": "MG",
+   "populacao": 414240
+  },
+  {
+   "ibge": 1400100,
+   "nome": "Boa Vista",
+   "uf": "RR",
+   "populacao": 413486
+  },
+  {
+   "ibge": 3106705,
+   "nome": "Betim",
+   "uf": "MG",
+   "populacao": 411846
+  },
+  {
+   "ibge": 4115200,
+   "nome": "Maringá",
+   "uf": "PR",
+   "populacao": 409657
+  },
+  {
+   "ibge": 5201108,
+   "nome": "Anápolis",
+   "uf": "GO",
+   "populacao": 398869
+  },
+  {
+   "ibge": 3513801,
+   "nome": "Diadema",
+   "uf": "SP",
+   "populacao": 393237
+  },
+  {
+   "ibge": 3510609,
+   "nome": "Carapicuíba",
+   "uf": "SP",
+   "populacao": 386984
+  },
+  {
+   "ibge": 2611101,
+   "nome": "Petrolina",
+   "uf": "PE",
+   "populacao": 386791
+  },
+  {
+   "ibge": 3506003,
+   "nome": "Bauru",
+   "uf": "SP",
+   "populacao": 379146
+  },
+  {
+   "ibge": 2604106,
+   "nome": "Caruaru",
+   "uf": "PE",
+   "populacao": 378048
+  },
+  {
+   "ibge": 2933307,
+   "nome": "Vitória da Conquista",
+   "uf": "BA",
+   "populacao": 370879
+  },
+  {
+   "ibge": 3523107,
+   "nome": "Itaquaquecetuba",
+   "uf": "SP",
+   "populacao": 369275
+  },
+  {
+   "ibge": 1200401,
+   "nome": "Rio Branco",
+   "uf": "AC",
+   "populacao": 364756
+  },
+  {
+   "ibge": 4202404,
+   "nome": "Blumenau",
+   "uf": "SC",
+   "populacao": 361261
+  },
+  {
+   "ibge": 4119905,
+   "nome": "Ponta Grossa",
+   "uf": "PR",
+   "populacao": 358371
+  },
+  {
+   "ibge": 2303709,
+   "nome": "Caucaia",
+   "uf": "CE",
+   "populacao": 355679
+  },
+  {
+   "ibge": 3201308,
+   "nome": "Cariacica",
+   "uf": "ES",
+   "populacao": 353491
+  },
+  {
+   "ibge": 3516200,
+   "nome": "Franca",
+   "uf": "SP",
+   "populacao": 352536
+  },
+  {
+   "ibge": 2609600,
+   "nome": "Olinda",
+   "uf": "PE",
+   "populacao": 349976
+  },
+  {
+   "ibge": 3541000,
+   "nome": "Praia Grande",
+   "uf": "SP",
+   "populacao": 349935
+  },
+  {
+   "ibge": 4104808,
+   "nome": "Cascavel",
+   "uf": "PR",
+   "populacao": 348051
+  },
+  {
+   "ibge": 4304606,
+   "nome": "Canoas",
+   "uf": "RS",
+   "populacao": 347657
+  },
+  {
+   "ibge": 2610707,
+   "nome": "Paulista",
+   "uf": "PE",
+   "populacao": 342167
+  },
+  {
+   "ibge": 3170107,
+   "nome": "Uberaba",
+   "uf": "MG",
+   "populacao": 337836
+  },
+  {
+   "ibge": 1506807,
+   "nome": "Santarém",
+   "uf": "PA",
+   "populacao": 331942
+  },
+  {
+   "ibge": 3551009,
+   "nome": "São Vicente",
+   "uf": "SP",
+   "populacao": 329911
+  },
+  {
+   "ibge": 3154606,
+   "nome": "Ribeirão das Neves",
+   "uf": "MG",
+   "populacao": 329794
+  },
+  {
+   "ibge": 4125506,
+   "nome": "São José dos Pinhais",
+   "uf": "PR",
+   "populacao": 329628
+  },
+  {
+   "ibge": 4314407,
+   "nome": "Pelotas",
+   "uf": "RS",
+   "populacao": 325685
+  },
+  {
+   "ibge": 3205309,
+   "nome": "Vitória",
+   "uf": "ES",
+   "populacao": 322869
+  },
+  {
+   "ibge": 3505708,
+   "nome": "Barueri",
+   "uf": "SP",
+   "populacao": 316473
+  },
+  {
+   "ibge": 3554102,
+   "nome": "Taubaté",
+   "uf": "SP",
+   "populacao": 310739
+  },
+  {
+   "ibge": 3552502,
+   "nome": "Suzano",
+   "uf": "SP",
+   "populacao": 307429
+  },
+  {
+   "ibge": 1721000,
+   "nome": "Palmas",
+   "uf": "TO",
+   "populacao": 302692
+  },
+  {
+   "ibge": 2905701,
+   "nome": "Camaçari",
+   "uf": "BA",
+   "populacao": 300372
+  },
+  {
+   "ibge": 5108402,
+   "nome": "Várzea Grande",
+   "uf": "MT",
+   "populacao": 300078
+  },
+  {
+   "ibge": 3526902,
+   "nome": "Limeira",
+   "uf": "SP",
+   "populacao": 291869
+  },
+  {
+   "ibge": 3518701,
+   "nome": "Guarujá",
+   "uf": "SP",
+   "populacao": 287634
+  },
+  {
+   "ibge": 2307304,
+   "nome": "Juazeiro do Norte",
+   "uf": "CE",
+   "populacao": 286120
+  },
+  {
+   "ibge": 4108304,
+   "nome": "Foz do Iguaçu",
+   "uf": "PR",
+   "populacao": 285415
+  },
+  {
+   "ibge": 3552403,
+   "nome": "Sumaré",
+   "uf": "SP",
+   "populacao": 279545
+  },
+  {
+   "ibge": 3303906,
+   "nome": "Petrópolis",
+   "uf": "RJ",
+   "populacao": 278881
+  },
+  {
+   "ibge": 3513009,
+   "nome": "Cotia",
+   "uf": "SP",
+   "populacao": 274413
+  },
+  {
+   "ibge": 3552809,
+   "nome": "Taboão da Serra",
+   "uf": "SP",
+   "populacao": 273542
+  },
+  {
+   "ibge": 2105302,
+   "nome": "Imperatriz",
+   "uf": "MA",
+   "populacao": 273110
+  },
+  {
+   "ibge": 4316907,
+   "nome": "Santa Maria",
+   "uf": "RS",
+   "populacao": 271735
+  },
+  {
+   "ibge": 4216602,
+   "nome": "São José",
+   "uf": "SC",
+   "populacao": 270299
+  },
+  {
+   "ibge": 1505536,
+   "nome": "Parauapebas",
+   "uf": "PA",
+   "populacao": 267836
+  },
+  {
+   "ibge": 1504208,
+   "nome": "Marabá",
+   "uf": "PA",
+   "populacao": 266533
+  },
+  {
+   "ibge": 4309209,
+   "nome": "Gravataí",
+   "uf": "RS",
+   "populacao": 265074
+  },
+  {
+   "ibge": 2408003,
+   "nome": "Mossoró",
+   "uf": "RN",
+   "populacao": 264577
+  },
+  {
+   "ibge": 4208203,
+   "nome": "Itajaí",
+   "uf": "SC",
+   "populacao": 264054
+  },
+  {
+   "ibge": 3306305,
+   "nome": "Volta Redonda",
+   "uf": "RJ",
+   "populacao": 261563
+  },
+  {
+   "ibge": 3127701,
+   "nome": "Governador Valadares",
+   "uf": "MG",
+   "populacao": 257171
+  },
+  {
+   "ibge": 3520509,
+   "nome": "Indaiatuba",
+   "uf": "SP",
+   "populacao": 255748
+  },
+  {
+   "ibge": 3548906,
+   "nome": "São Carlos",
+   "uf": "SP",
+   "populacao": 254857
+  },
+  {
+   "ibge": 4204202,
+   "nome": "Chapecó",
+   "uf": "SC",
+   "populacao": 254785
+  },
+  {
+   "ibge": 2403251,
+   "nome": "Parnamirim",
+   "uf": "RN",
+   "populacao": 252716
+  },
+  {
+   "ibge": 3515004,
+   "nome": "Embu das Artes",
+   "uf": "SP",
+   "populacao": 250691
+  },
+  {
+   "ibge": 3302403,
+   "nome": "Macaé",
+   "uf": "RJ",
+   "populacao": 246391
+  },
+  {
+   "ibge": 5107602,
+   "nome": "Rondonópolis",
+   "uf": "MT",
+   "populacao": 244911
+  },
+  {
+   "ibge": 2111201,
+   "nome": "São José de Ribamar",
+   "uf": "MA",
+   "populacao": 244579
+  },
+  {
+   "ibge": 5003702,
+   "nome": "Dourados",
+   "uf": "MS",
+   "populacao": 243367
+  },
+  {
+   "ibge": 3503208,
+   "nome": "Araraquara",
+   "uf": "SP",
+   "populacao": 242228
+  },
+  {
+   "ibge": 3524402,
+   "nome": "Jacareí",
+   "uf": "SP",
+   "populacao": 240275
+  },
+  {
+   "ibge": 2918407,
+   "nome": "Juazeiro",
+   "uf": "BA",
+   "populacao": 237821
+  },
+  {
+   "ibge": 3529005,
+   "nome": "Marília",
+   "uf": "SP",
+   "populacao": 237627
+  },
+  {
+   "ibge": 3501608,
+   "nome": "Americana",
+   "uf": "SP",
+   "populacao": 237240
+  },
+  {
+   "ibge": 3519071,
+   "nome": "Hortolândia",
+   "uf": "SP",
+   "populacao": 236641
+  },
+  {
+   "ibge": 2700300,
+   "nome": "Arapiraca",
+   "uf": "AL",
+   "populacao": 234696
+  },
+  {
+   "ibge": 2307650,
+   "nome": "Maracanaú",
+   "uf": "CE",
+   "populacao": 234509
+  },
+  {
+   "ibge": 3522505,
+   "nome": "Itapevi",
+   "uf": "SP",
+   "populacao": 232297
+  },
+  {
+   "ibge": 4105805,
+   "nome": "Colombo",
+   "uf": "PR",
+   "populacao": 232212
+  },
+  {
+   "ibge": 3122306,
+   "nome": "Divinópolis",
+   "uf": "MG",
+   "populacao": 231091
+  },
+  {
+   "ibge": 3302502,
+   "nome": "Magé",
+   "uf": "RJ",
+   "populacao": 228127
+  },
+  {
+   "ibge": 3131307,
+   "nome": "Ipatinga",
+   "uf": "MG",
+   "populacao": 227731
+  },
+  {
+   "ibge": 4313409,
+   "nome": "Novo Hamburgo",
+   "uf": "RS",
+   "populacao": 227646
+  },
+  {
+   "ibge": 3167202,
+   "nome": "Sete Lagoas",
+   "uf": "MG",
+   "populacao": 227397
+  },
+  {
+   "ibge": 5218805,
+   "nome": "Rio Verde",
+   "uf": "GO",
+   "populacao": 225696
+  },
+  {
+   "ibge": 5200258,
+   "nome": "Águas Lindas de Goiás",
+   "uf": "GO",
+   "populacao": 225693
+  },
+  {
+   "ibge": 3541406,
+   "nome": "Presidente Prudente",
+   "uf": "SP",
+   "populacao": 225668
+  },
+  {
+   "ibge": 3301900,
+   "nome": "Itaboraí",
+   "uf": "RJ",
+   "populacao": 224267
+  },
+  {
+   "ibge": 4323002,
+   "nome": "Viamão",
+   "uf": "RS",
+   "populacao": 224112
+  },
+  {
+   "ibge": 4211900,
+   "nome": "Palhoça",
+   "uf": "SC",
+   "populacao": 222598
+  },
+  {
+   "ibge": 3300704,
+   "nome": "Cabo Frio",
+   "uf": "RJ",
+   "populacao": 222161
+  },
+  {
+   "ibge": 3157807,
+   "nome": "Santa Luzia",
+   "uf": "MG",
+   "populacao": 219132
+  },
+  {
+   "ibge": 4318705,
+   "nome": "São Leopoldo",
+   "uf": "RS",
+   "populacao": 217409
+  },
+  {
+   "ibge": 4204608,
+   "nome": "Criciúma",
+   "uf": "SC",
+   "populacao": 214493
+  },
+  {
+   "ibge": 5212501,
+   "nome": "Luziânia",
+   "uf": "GO",
+   "populacao": 209129
+  },
+  {
+   "ibge": 4314100,
+   "nome": "Passo Fundo",
+   "uf": "RS",
+   "populacao": 206215
+  },
+  {
+   "ibge": 2602902,
+   "nome": "Cabo de Santo Agostinho",
+   "uf": "PE",
+   "populacao": 203440
+  },
+  {
+   "ibge": 2919207,
+   "nome": "Lauro de Freitas",
+   "uf": "BA",
+   "populacao": 203331
+  },
+  {
+   "ibge": 2312908,
+   "nome": "Sobral",
+   "uf": "CE",
+   "populacao": 203023
+  },
+  {
+   "ibge": 3543907,
+   "nome": "Rio Claro",
+   "uf": "SP",
+   "populacao": 201418
+  },
+  {
+   "ibge": 3502804,
+   "nome": "Araçatuba",
+   "uf": "SP",
+   "populacao": 200124
+  },
+  {
+   "ibge": 5221858,
+   "nome": "Valparaíso de Goiás",
+   "uf": "GO",
+   "populacao": 198861
+  },
+  {
+   "ibge": 3302700,
+   "nome": "Maricá",
+   "uf": "RJ",
+   "populacao": 197277
+  },
+  {
+   "ibge": 5107909,
+   "nome": "Sinop",
+   "uf": "MT",
+   "populacao": 196312
+  },
+  {
+   "ibge": 2804805,
+   "nome": "Nossa Senhora do Socorro",
+   "uf": "SE",
+   "populacao": 192330
+  },
+  {
+   "ibge": 1502400,
+   "nome": "Castanhal",
+   "uf": "PA",
+   "populacao": 192256
+  },
+  {
+   "ibge": 4315602,
+   "nome": "Rio Grande",
+   "uf": "RS",
+   "populacao": 191900
+  },
+  {
+   "ibge": 3303401,
+   "nome": "Nova Friburgo",
+   "uf": "RJ",
+   "populacao": 189939
+  },
+  {
+   "ibge": 4300604,
+   "nome": "Alvorada",
+   "uf": "RS",
+   "populacao": 187315
+  },
+  {
+   "ibge": 2914802,
+   "nome": "Itabuna",
+   "uf": "BA",
+   "populacao": 186708
+  },
+  {
+   "ibge": 3201209,
+   "nome": "Cachoeiro de Itapemirim",
+   "uf": "ES",
+   "populacao": 185786
+  },
+  {
+   "ibge": 3545803,
+   "nome": "Santa Bárbara d'Oeste",
+   "uf": "SP",
+   "populacao": 183347
+  },
+  {
+   "ibge": 4208906,
+   "nome": "Jaraguá do Sul",
+   "uf": "SC",
+   "populacao": 182660
+  },
+  {
+   "ibge": 4109401,
+   "nome": "Guarapuava",
+   "uf": "PR",
+   "populacao": 182093
+  },
+  {
+   "ibge": 3515707,
+   "nome": "Ferraz de Vasconcelos",
+   "uf": "SP",
+   "populacao": 179198
+  },
+  {
+   "ibge": 2913606,
+   "nome": "Ilhéus",
+   "uf": "BA",
+   "populacao": 178649
+  },
+  {
+   "ibge": 3507605,
+   "nome": "Bragança Paulista",
+   "uf": "SP",
+   "populacao": 176811
+  },
+  {
+   "ibge": 2112209,
+   "nome": "Timon",
+   "uf": "MA",
+   "populacao": 174465
+  },
+  {
+   "ibge": 1702109,
+   "nome": "Araguaína",
+   "uf": "TO",
+   "populacao": 171301
+  },
+  {
+   "ibge": 3129806,
+   "nome": "Ibirité",
+   "uf": "MG",
+   "populacao": 170537
+  },
+  {
+   "ibge": 3300407,
+   "nome": "Barra Mansa",
+   "uf": "RJ",
+   "populacao": 169894
+  },
+  {
+   "ibge": 2925303,
+   "nome": "Porto Seguro",
+   "uf": "BA",
+   "populacao": 168326
+  },
+  {
+   "ibge": 3523909,
+   "nome": "Itu",
+   "uf": "SP",
+   "populacao": 168240
+  },
+  {
+   "ibge": 3300100,
+   "nome": "Angra dos Reis",
+   "uf": "RJ",
+   "populacao": 167434
+  },
+  {
+   "ibge": 3302858,
+   "nome": "Mesquita",
+   "uf": "RJ",
+   "populacao": 167127
+  },
+  {
+   "ibge": 3203205,
+   "nome": "Linhares",
+   "uf": "ES",
+   "populacao": 166786
+  },
+  {
+   "ibge": 3548807,
+   "nome": "São Caetano do Sul",
+   "uf": "SP",
+   "populacao": 165655
+  },
+  {
+   "ibge": 3538006,
+   "nome": "Pindamonhangaba",
+   "uf": "SP",
+   "populacao": 165428
+  },
+  {
+   "ibge": 3516309,
+   "nome": "Francisco Morato",
+   "uf": "SP",
+   "populacao": 165139
+  },
+  {
+   "ibge": 3305802,
+   "nome": "Teresópolis",
+   "uf": "RJ",
+   "populacao": 165123
+  },
+  {
+   "ibge": 4209300,
+   "nome": "Lages",
+   "uf": "SC",
+   "populacao": 164981
+  },
+  {
+   "ibge": 3151800,
+   "nome": "Poços de Caldas",
+   "uf": "MG",
+   "populacao": 163742
+  },
+  {
+   "ibge": 2207702,
+   "nome": "Parnaíba",
+   "uf": "PI",
+   "populacao": 162159
+  },
+  {
+   "ibge": 2903201,
+   "nome": "Barreiras",
+   "uf": "BA",
+   "populacao": 159734
+  },
+  {
+   "ibge": 3148004,
+   "nome": "Patos de Minas",
+   "uf": "MG",
+   "populacao": 159235
+  },
+  {
+   "ibge": 2918001,
+   "nome": "Jequié",
+   "uf": "BA",
+   "populacao": 158813
+  },
+  {
+   "ibge": 3504107,
+   "nome": "Atibaia",
+   "uf": "SP",
+   "populacao": 158647
+  },
+  {
+   "ibge": 3522208,
+   "nome": "Itapecerica da Serra",
+   "uf": "SP",
+   "populacao": 158522
+  },
+  {
+   "ibge": 1500107,
+   "nome": "Abaetetuba",
+   "uf": "PA",
+   "populacao": 158188
+  },
+  {
+   "ibge": 3522307,
+   "nome": "Itapetininga",
+   "uf": "SP",
+   "populacao": 157790
+  },
+  {
+   "ibge": 2103000,
+   "nome": "Caxias",
+   "uf": "MA",
+   "populacao": 156973
+  },
+  {
+   "ibge": 3304524,
+   "nome": "Rio das Ostras",
+   "uf": "RJ",
+   "populacao": 156491
+  },
+  {
+   "ibge": 5220454,
+   "nome": "Senador Canedo",
+   "uf": "GO",
+   "populacao": 155635
+  },
+  {
+   "ibge": 3547304,
+   "nome": "Santana de Parnaíba",
+   "uf": "SP",
+   "populacao": 154105
+  },
+  {
+   "ibge": 3530706,
+   "nome": "Mogi Guaçu",
+   "uf": "SP",
+   "populacao": 153658
+  },
+  {
+   "ibge": 3152501,
+   "nome": "Pouso Alegre",
+   "uf": "MG",
+   "populacao": 152217
+  },
+  {
+   "ibge": 4101804,
+   "nome": "Araucária",
+   "uf": "PR",
+   "populacao": 151666
+  },
+  {
+   "ibge": 2900702,
+   "nome": "Alagoinhas",
+   "uf": "BA",
+   "populacao": 151055
+  },
+  {
+   "ibge": 4127700,
+   "nome": "Toledo",
+   "uf": "PR",
+   "populacao": 150470
+  },
+  {
+   "ibge": 2513703,
+   "nome": "Santa Rita",
+   "uf": "PB",
+   "populacao": 149910
+  },
+  {
+   "ibge": 4107652,
+   "nome": "Fazenda Rio Grande",
+   "uf": "PR",
+   "populacao": 148873
+  },
+  {
+   "ibge": 2603454,
+   "nome": "Camaragibe",
+   "uf": "PE",
+   "populacao": 147771
+  },
+  {
+   "ibge": 3303203,
+   "nome": "Nilópolis",
+   "uf": "RJ",
+   "populacao": 146774
+  },
+  {
+   "ibge": 4118204,
+   "nome": "Paranaguá",
+   "uf": "PR",
+   "populacao": 145829
+  },
+  {
+   "ibge": 2107506,
+   "nome": "Paço do Lumiar",
+   "uf": "MA",
+   "populacao": 145643
+  },
+  {
+   "ibge": 2931350,
+   "nome": "Teixeira de Freitas",
+   "uf": "BA",
+   "populacao": 145216
+  },
+  {
+   "ibge": 3507506,
+   "nome": "Botucatu",
+   "uf": "SP",
+   "populacao": 145155
+  },
+  {
+   "ibge": 3516408,
+   "nome": "Franco da Rocha",
+   "uf": "SP",
+   "populacao": 144849
+  },
+  {
+   "ibge": 2606002,
+   "nome": "Garanhuns",
+   "uf": "PE",
+   "populacao": 142506
+  },
+  {
+   "ibge": 5221403,
+   "nome": "Trindade",
+   "uf": "GO",
+   "populacao": 142431
+  },
+  {
+   "ibge": 4202909,
+   "nome": "Brusque",
+   "uf": "SC",
+   "populacao": 141385
+  },
+  {
+   "ibge": 3304144,
+   "nome": "Queimados",
+   "uf": "RJ",
+   "populacao": 140523
+  },
+  {
+   "ibge": 4202008,
+   "nome": "Balneário Camboriú",
+   "uf": "SC",
+   "populacao": 139155
+  },
+  {
+   "ibge": 3168606,
+   "nome": "Teófilo Otoni",
+   "uf": "MG",
+   "populacao": 137418
+  },
+  {
+   "ibge": 3170701,
+   "nome": "Varginha",
+   "uf": "MG",
+   "populacao": 136467
+  },
+  {
+   "ibge": 4104204,
+   "nome": "Campo Largo",
+   "uf": "PR",
+   "populacao": 136327
+  },
+  {
+   "ibge": 4303103,
+   "nome": "Cachoeirinha",
+   "uf": "RS",
+   "populacao": 136258
+  },
+  {
+   "ibge": 3510500,
+   "nome": "Caraguatatuba",
+   "uf": "SP",
+   "populacao": 134873
+  },
+  {
+   "ibge": 3545209,
+   "nome": "Salto",
+   "uf": "SP",
+   "populacao": 134319
+  },
+  {
+   "ibge": 1502103,
+   "nome": "Cametá",
+   "uf": "PA",
+   "populacao": 134184
+  },
+  {
+   "ibge": 2616407,
+   "nome": "Vitória de Santo Antão",
+   "uf": "PE",
+   "populacao": 134084
+  },
+  {
+   "ibge": 3525300,
+   "nome": "Jaú",
+   "uf": "SP",
+   "populacao": 133497
+  },
+  {
+   "ibge": 4316808,
+   "nome": "Santa Cruz do Sul",
+   "uf": "RS",
+   "populacao": 133230
+  },
+  {
+   "ibge": 5008305,
+   "nome": "Três Lagoas",
+   "uf": "MS",
+   "populacao": 132152
+  },
+  {
+   "ibge": 4320008,
+   "nome": "Sapucaia do Sul",
+   "uf": "RS",
+   "populacao": 132107
+  },
+  {
+   "ibge": 3118304,
+   "nome": "Conselheiro Lafaiete",
+   "uf": "MG",
+   "populacao": 131621
+  },
+  {
+   "ibge": 2306405,
+   "nome": "Itapipoca",
+   "uf": "CE",
+   "populacao": 131123
+  },
+  {
+   "ibge": 2304202,
+   "nome": "Crato",
+   "uf": "CE",
+   "populacao": 131050
+  },
+  {
+   "ibge": 3503307,
+   "nome": "Araras",
+   "uf": "SP",
+   "populacao": 130866
+  },
+  {
+   "ibge": 4101408,
+   "nome": "Apucarana",
+   "uf": "PR",
+   "populacao": 130134
+  },
+  {
+   "ibge": 3300209,
+   "nome": "Araruama",
+   "uf": "RJ",
+   "populacao": 129671
+  },
+  {
+   "ibge": 3304201,
+   "nome": "Resende",
+   "uf": "RJ",
+   "populacao": 129612
+  },
+  {
+   "ibge": 3156700,
+   "nome": "Sabará",
+   "uf": "MG",
+   "populacao": 129380
+  },
+  {
+   "ibge": 3171204,
+   "nome": "Vespasiano",
+   "uf": "MG",
+   "populacao": 129246
+  },
+  {
+   "ibge": 3557006,
+   "nome": "Votorantim",
+   "uf": "SP",
+   "populacao": 127923
+  },
+  {
+   "ibge": 4119152,
+   "nome": "Pinhais",
+   "uf": "PR",
+   "populacao": 127019
+  },
+  {
+   "ibge": 3551702,
+   "nome": "Sertãozinho",
+   "uf": "SP",
+   "populacao": 126887
+  },
+  {
+   "ibge": 1501303,
+   "nome": "Barcarena",
+   "uf": "PA",
+   "populacao": 126650
+  },
+  {
+   "ibge": 3556206,
+   "nome": "Valinhos",
+   "uf": "SP",
+   "populacao": 126373
+  },
+  {
+   "ibge": 1500602,
+   "nome": "Altamira",
+   "uf": "PA",
+   "populacao": 126279
+  },
+  {
+   "ibge": 3105608,
+   "nome": "Barbacena",
+   "uf": "MG",
+   "populacao": 125317
+  },
+  {
+   "ibge": 3202405,
+   "nome": "Guarapari",
+   "uf": "ES",
+   "populacao": 124656
+  },
+  {
+   "ibge": 1100122,
+   "nome": "Ji-Paraná",
+   "uf": "RO",
+   "populacao": 124333
+  },
+  {
+   "ibge": 3554003,
+   "nome": "Tatuí",
+   "uf": "SP",
+   "populacao": 123942
+  },
+  {
+   "ibge": 3204906,
+   "nome": "São Mateus",
+   "uf": "ES",
+   "populacao": 123752
+  },
+  {
+   "ibge": 1503606,
+   "nome": "Itaituba",
+   "uf": "PA",
+   "populacao": 123314
+  },
+  {
+   "ibge": 4302105,
+   "nome": "Bento Gonçalves",
+   "uf": "RS",
+   "populacao": 123151
+  },
+  {
+   "ibge": 1501709,
+   "nome": "Bragança",
+   "uf": "PA",
+   "populacao": 123082
+  },
+  {
+   "ibge": 3505500,
+   "nome": "Barretos",
+   "uf": "SP",
+   "populacao": 122485
+  },
+  {
+   "ibge": 3523404,
+   "nome": "Itatiba",
+   "uf": "SP",
+   "populacao": 121590
+  },
+  {
+   "ibge": 3201506,
+   "nome": "Colatina",
+   "uf": "ES",
+   "populacao": 120033
+  },
+  {
+   "ibge": 4100400,
+   "nome": "Almirante Tamandaré",
+   "uf": "PR",
+   "populacao": 119825
+  },
+  {
+   "ibge": 4101507,
+   "nome": "Arapongas",
+   "uf": "PR",
+   "populacao": 119138
+  },
+  {
+   "ibge": 3506508,
+   "nome": "Birigui",
+   "uf": "SP",
+   "populacao": 118979
+  },
+  {
+   "ibge": 4119509,
+   "nome": "Piraquara",
+   "uf": "PR",
+   "populacao": 118730
+  },
+  {
+   "ibge": 4126256,
+   "nome": "Sarandi",
+   "uf": "PR",
+   "populacao": 118455
+  },
+  {
+   "ibge": 3525003,
+   "nome": "Jandira",
+   "uf": "SP",
+   "populacao": 118045
+  },
+  {
+   "ibge": 3518404,
+   "nome": "Guaratinguetá",
+   "uf": "SP",
+   "populacao": 118044
+  },
+  {
+   "ibge": 4301602,
+   "nome": "Bagé",
+   "uf": "RS",
+   "populacao": 117938
+  },
+  {
+   "ibge": 3103504,
+   "nome": "Araguari",
+   "uf": "MG",
+   "populacao": 117808
+  },
+  {
+   "ibge": 4322400,
+   "nome": "Uruguaiana",
+   "uf": "RS",
+   "populacao": 117210
+  },
+  {
+   "ibge": 4128104,
+   "nome": "Umuarama",
+   "uf": "PR",
+   "populacao": 117095
+  },
+  {
+   "ibge": 3302007,
+   "nome": "Itaguaí",
+   "uf": "RJ",
+   "populacao": 116841
+  },
+  {
+   "ibge": 5208004,
+   "nome": "Formosa",
+   "uf": "GO",
+   "populacao": 115901
+  },
+  {
+   "ibge": 2412005,
+   "nome": "São Gonçalo do Amarante",
+   "uf": "RN",
+   "populacao": 115838
+  },
+  {
+   "ibge": 3511102,
+   "nome": "Catanduva",
+   "uf": "SP",
+   "populacao": 115791
+  },
+  {
+   "ibge": 3556503,
+   "nome": "Várzea Paulista",
+   "uf": "SP",
+   "populacao": 115771
+  },
+  {
+   "ibge": 3543303,
+   "nome": "Ribeirão Pires",
+   "uf": "SP",
+   "populacao": 115559
+  },
+  {
+   "ibge": 2606804,
+   "nome": "Igarassu",
+   "uf": "PE",
+   "populacao": 115196
+  },
+  {
+   "ibge": 2930709,
+   "nome": "Simões Filho",
+   "uf": "BA",
+   "populacao": 114559
+  },
+  {
+   "ibge": 5205109,
+   "nome": "Catalão",
+   "uf": "GO",
+   "populacao": 114427
+  },
+  {
+   "ibge": 2103307,
+   "nome": "Codó",
+   "uf": "MA",
+   "populacao": 114275
+  },
+  {
+   "ibge": 2910727,
+   "nome": "Eunápolis",
+   "uf": "BA",
+   "populacao": 113710
+  },
+  {
+   "ibge": 3131703,
+   "nome": "Itabira",
+   "uf": "MG",
+   "populacao": 113343
+  },
+  {
+   "ibge": 2924009,
+   "nome": "Paulo Afonso",
+   "uf": "BA",
+   "populacao": 112870
+  },
+  {
+   "ibge": 3513504,
+   "nome": "Cubatão",
+   "uf": "SP",
+   "populacao": 112476
+  },
+  {
+   "ibge": 3522109,
+   "nome": "Itanhaém",
+   "uf": "SP",
+   "populacao": 112476
+  },
+  {
+   "ibge": 3147907,
+   "nome": "Passos",
+   "uf": "MG",
+   "populacao": 111939
+  },
+  {
+   "ibge": 1504422,
+   "nome": "Marituba",
+   "uf": "PA",
+   "populacao": 111785
+  },
+  {
+   "ibge": 3144805,
+   "nome": "Nova Lima",
+   "uf": "MG",
+   "populacao": 111697
+  },
+  {
+   "ibge": 3104007,
+   "nome": "Araxá",
+   "uf": "MG",
+   "populacao": 111691
+  },
+  {
+   "ibge": 2613701,
+   "nome": "São Lourenço da Mata",
+   "uf": "PE",
+   "populacao": 111249
+  },
+  {
+   "ibge": 5107925,
+   "nome": "Sorriso",
+   "uf": "MT",
+   "populacao": 110635
+  },
+  {
+   "ibge": 3536505,
+   "nome": "Paulínia",
+   "uf": "SP",
+   "populacao": 110537
+  },
+  {
+   "ibge": 4218707,
+   "nome": "Tubarão",
+   "uf": "SC",
+   "populacao": 110088
+  },
+  {
+   "ibge": 5211503,
+   "nome": "Itumbiara",
+   "uf": "GO",
+   "populacao": 107970
+  },
+  {
+   "ibge": 2919553,
+   "nome": "Luís Eduardo Magalhães",
+   "uf": "BA",
+   "populacao": 107909
+  },
+  {
+   "ibge": 1600600,
+   "nome": "Santana",
+   "uf": "AP",
+   "populacao": 107618
+  },
+  {
+   "ibge": 4103701,
+   "nome": "Cambé",
+   "uf": "PR",
+   "populacao": 107208
+  },
+  {
+   "ibge": 1501808,
+   "nome": "Breves",
+   "uf": "PA",
+   "populacao": 106968
+  },
+  {
+   "ibge": 2100055,
+   "nome": "Açailândia",
+   "uf": "MA",
+   "populacao": 106550
+  },
+  {
+   "ibge": 5107958,
+   "nome": "Tangará da Serra",
+   "uf": "MT",
+   "populacao": 106434
+  },
+  {
+   "ibge": 5211909,
+   "nome": "Jataí",
+   "uf": "GO",
+   "populacao": 105729
+  },
+  {
+   "ibge": 4307005,
+   "nome": "Erechim",
+   "uf": "RS",
+   "populacao": 105705
+  },
+  {
+   "ibge": 3145208,
+   "nome": "Nova Serrana",
+   "uf": "MG",
+   "populacao": 105552
+  },
+  {
+   "ibge": 1505502,
+   "nome": "Paragominas",
+   "uf": "PA",
+   "populacao": 105550
+  },
+  {
+   "ibge": 2307700,
+   "nome": "Maranguape",
+   "uf": "CE",
+   "populacao": 105093
+  },
+  {
+   "ibge": 5217609,
+   "nome": "Planaltina",
+   "uf": "GO",
+   "populacao": 105031
+  },
+  {
+   "ibge": 3138203,
+   "nome": "Lavras",
+   "uf": "MG",
+   "populacao": 104761
+  },
+  {
+   "ibge": 3119401,
+   "nome": "Coronel Fabriciano",
+   "uf": "MG",
+   "populacao": 104736
+  },
+  {
+   "ibge": 3143906,
+   "nome": "Muriaé",
+   "uf": "MG",
+   "populacao": 104108
+  },
+  {
+   "ibge": 3305208,
+   "nome": "São Pedro da Aldeia",
+   "uf": "RJ",
+   "populacao": 104029
+  },
+  {
+   "ibge": 3534708,
+   "nome": "Ourinhos",
+   "uf": "SP",
+   "populacao": 103970
+  },
+  {
+   "ibge": 5215231,
+   "nome": "Novo Gama",
+   "uf": "GO",
+   "populacao": 103804
+  },
+  {
+   "ibge": 3539806,
+   "nome": "Poá",
+   "uf": "SP",
+   "populacao": 103765
+  },
+  {
+   "ibge": 2101202,
+   "nome": "Bacabal",
+   "uf": "MA",
+   "populacao": 103711
+  },
+  {
+   "ibge": 1301902,
+   "nome": "Itacoatiara",
+   "uf": "AM",
+   "populacao": 103598
+  },
+  {
+   "ibge": 2802908,
+   "nome": "Itabaiana",
+   "uf": "SE",
+   "populacao": 103440
+  },
+  {
+   "ibge": 3169901,
+   "nome": "Ubá",
+   "uf": "MG",
+   "populacao": 103365
+  },
+  {
+   "ibge": 2510808,
+   "nome": "Patos",
+   "uf": "PB",
+   "populacao": 103165
+  },
+  {
+   "ibge": 4203204,
+   "nome": "Camboriú",
+   "uf": "SC",
+   "populacao": 103074
+  },
+  {
+   "ibge": 2928703,
+   "nome": "Santo Antônio de Jesus",
+   "uf": "BA",
+   "populacao": 103055
+  },
+  {
+   "ibge": 3134202,
+   "nome": "Ituiutaba",
+   "uf": "MG",
+   "populacao": 102217
+  },
+  {
+   "ibge": 1302504,
+   "nome": "Manacapuru",
+   "uf": "AM",
+   "populacao": 101883
+  },
+  {
+   "ibge": 2101400,
+   "nome": "Balsas",
+   "uf": "MA",
+   "populacao": 101767
+  },
+  {
+   "ibge": 2803500,
+   "nome": "Lagarto",
+   "uf": "SE",
+   "populacao": 101579
+  },
+  {
+   "ibge": 3504008,
+   "nome": "Assis",
+   "uf": "SP",
+   "populacao": 101409
+  },
+  {
+   "ibge": 3302205,
+   "nome": "Itaperuna",
+   "uf": "RJ",
+   "populacao": 101041
+  }
+ ]
+}

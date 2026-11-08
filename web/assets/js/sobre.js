@@ -54,6 +54,47 @@ function renderFontes(fontes) {
   alvo.replaceChildren(...blocos);
 }
 
+// ── Cobertura ────────────────────────────────────────────────────────────────────────────────
+const fmtNota = (n) => Number(n).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+const SITUACAO_FONTE = { 1: "tem", 0.5: "parcial", 0: "não tem" };
+
+export function renderCobertura(c) {
+  const resumo = document.querySelector("#cobertura-resumo");
+  const nota = document.querySelector("#cobertura-nota");
+  if (!resumo || !nota) return;
+  if (!c) {
+    resumo.textContent = "O placar de cobertura ainda não foi calculado.";
+    return;
+  }
+  resumo.textContent = `Quanto o portal enxerga dos editais do Brasil, em medidas que se conferem. Calculado em ${formatarData(c.gerado_em)}.`;
+  nota.hidden = false;
+  nota.replaceChildren(
+    el("p", { class: "nota-grande" }, el("strong", {}, fmtNota(c.nota)), " de 10"),
+    el("p", { class: "suave" }, c.dias_seguidos_9 ? `Nota ≥ 9 há ${c.dias_seguidos_9} dia(s) seguido(s).` : "Meta: nota 9 ou mais por 14 dias seguidos e recall auditado de 90%."),
+  );
+  document.querySelector("#cobertura-metricas").replaceChildren(
+    ...c.metricas.map((m) =>
+      el("li", { class: "cobertura-item" },
+        el("div", { class: "cobertura-titulo" }, el("span", {}, m.nome), el("span", { class: "meta" }, `${fmtNota(m.pontos)} de ${fmtNota(m.peso)}`)),
+        el("div", { class: "barra", role: "img", "aria-label": `${Math.round(m.fracao * 100)}% da meta` }, el("span", { style: `width:${Math.round(m.fracao * 100)}%` })),
+        el("span", { class: "meta" }, `${m.texto}. Meta: ${m.meta}.`),
+      )),
+  );
+  const tabela = document.querySelector("#cobertura-uf");
+  const cab = el("thead", {}, el("tr", {}, ["UF", "Abertos", "Fonte do estado", "Fonte da capital", "Fontes ativas"].map((t) => el("th", { scope: "col" }, t))));
+  const corpo = el("tbody", {}, c.por_uf.map((u) =>
+    el("tr", {}, el("th", { scope: "row" }, `${u.uf} · ${u.nome}`), el("td", {}, String(u.abertos)),
+      el("td", {}, SITUACAO_FONTE[u.fonte_estadual]), el("td", {}, `${u.capital}: ${SITUACAO_FONTE[u.capital_coberta]}`),
+      el("td", {}, u.fontes.join(", ") || "—"))));
+  tabela.replaceChildren(tabela.querySelector("caption"), cab, corpo);
+  document.querySelector("#cobertura-uf-bloco").hidden = false;
+}
+
+fetch(new URL("../../data/cobertura.json", import.meta.url))
+  .then((r) => (r.ok ? r.json() : null))
+  .catch(() => null)
+  .then(renderCobertura);
+
 // O snapshot basta: ele leva o catálogo com a saúde de cada fonte (a mesma informação de `fontes_status`).
 carregarProgressivo({ ...config, supabaseUrl: "", supabaseAnonKey: "" }, (d) => {
   preencherUltimaColeta(d.geradoEm);

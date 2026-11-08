@@ -21,6 +21,7 @@ import httpx
 import yaml
 from pydantic import ValidationError
 
+from . import cobertura as placar
 from .catalogo import FonteConfig, StatusFonte, carregar_fontes_v4, status_de
 from .coletores.curadoria import ErroCuradoria, carregar_curadoria
 from .coletores.curadoria_internacional import FONTE as FONTE_CURADORIA_INTERNACIONAL
@@ -451,6 +452,15 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
             [s.model_dump(mode="json") for s in status_fontes],
         )  # fmt: skip
         imprimir_resumo(corpo, descartes, nao_mapeadas, dry_run)
+        # Placar de cobertura: nunca derruba a coleta (já escrevemos o snapshot).
+        try:
+            cob = placar.gerar(
+                corpo, instancias, catalogo, agora, saida=snapshot.parent / "cobertura.json"
+            )
+            print(f"cobertura: nota {cob['nota']:.2f} / 10")
+        except Exception:  # noqa: BLE001
+            log.exception("não consegui calcular a cobertura")
+            cob = None
 
         if supabase:
             try:
@@ -469,6 +479,11 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
                 if "curadoria" not in falharam:
                     await supabase.sincronizar_radar(radar, agora)
                 await supabase.upsert_fontes_status(status_fontes)
+                if cob:
+                    try:
+                        await supabase.upsert_cobertura(cob)
+                    except RuntimeError as exc:
+                        log.warning("cobertura_diaria não gravada: %s", exc)
                 await supabase.heartbeat(agora)
                 await supabase.limpar_antigos()
                 log.info(

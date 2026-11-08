@@ -203,3 +203,60 @@ def test_internacional_colunas_padroes_constraints_e_view(banco):
         .stdout.strip()
         .endswith("1")
     )
+
+
+def test_cobertura_diaria_anon_le_mas_nao_escreve_e_nota_limitada(banco):
+    for m in MIGRATIONS:
+        psql(banco, m.read_text(encoding="utf-8"))
+    psql(
+        banco,
+        "insert into cobertura_diaria(data, nota, metricas, por_uf) values ('2026-11-08', 2.36, '[{\"id\":\"ufs\"}]', '[]') on conflict (data) do update set nota = excluded.nota;",
+        papel="service_role",
+    )
+    psql(
+        banco,
+        "insert into cobertura_diaria(data, nota) values ('2026-11-08', 3.1) on conflict (data) do update set nota = excluded.nota;",
+        papel="service_role",
+    )
+    assert (
+        psql(banco, "select nota from cobertura_diaria;", papel="anon")
+        .stdout.strip()
+        .endswith("3.10")
+    )
+    for papel in ("anon", "authenticated"):
+        assert (
+            psql(
+                banco,
+                "insert into cobertura_diaria(data, nota) values ('2026-11-09', 5);",
+                papel=papel,
+                check=False,
+            ).returncode
+            != 0
+        )
+        assert (
+            psql(
+                banco, "update cobertura_diaria set nota = 9;", papel=papel, check=False
+            ).returncode
+            != 0
+        )
+        assert (
+            psql(banco, "delete from cobertura_diaria;", papel=papel, check=False).returncode != 0
+        )
+    assert (
+        psql(
+            banco,
+            "insert into cobertura_diaria(data, nota) values ('2026-11-10', 10.5);",
+            papel="service_role",
+            check=False,
+        ).returncode
+        != 0
+    )
+    assert (
+        psql(
+            banco,
+            "insert into cobertura_diaria(data, nota, metricas) values ('2026-11-10', 5, '{}');",
+            papel="service_role",
+            check=False,
+        ).returncode
+        != 0
+    )

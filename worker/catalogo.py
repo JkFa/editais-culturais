@@ -23,6 +23,15 @@ StatusValor = Literal[
 ]
 
 
+class Territorio(BaseModel):
+    """De que território é a fonte (usado só pelo placar de cobertura)."""
+
+    ente: Literal["estado", "capital", "municipio"]
+    uf: str
+    municipio: str | None = None
+    parcial: bool = False
+
+
 class FonteConfig(BaseModel):
     id: str
     nome: str
@@ -37,6 +46,7 @@ class FonteConfig(BaseModel):
     ativa: bool = True
     motivo: str | None = None
     ignorar_hosts: list[str] = Field(default_factory=list)
+    cobertura: Territorio | None = None
 
     @model_validator(mode="after")
     def _valida(self) -> FonteConfig:
