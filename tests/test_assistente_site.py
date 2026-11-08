@@ -133,6 +133,14 @@ class Backend:
         if tabela == "editais_abertos":
             termo = unquote(q["titulo"][6:]).strip("*").lower()
             return 200, [e for e in self.editais if termo in e["titulo"].lower()]
+        if tabela in {
+            "orcamento_itens",
+            "cronograma_itens",
+            "midia_itens",
+            "equipe_membros",
+            "edital_criterios",
+        }:  # Fase 2: tabelas vazias (a Fase 1 não as usa)
+            return 200, []
         raise KeyError(tabela)
 
     def salvar_secao(self, pid, sid, texto):
@@ -311,7 +319,7 @@ def test_lista_com_progresso_e_exclusao_em_duas_etapas(navegador, url):
     cartoes = pg.locator(".cartao-projeto")
     assert cartoes.count() == 2
     assert (
-        "1 de 6"
+        "1 de 12"
         in cartoes.filter(has=pg.get_by_role("heading", name="Projeto A", exact=True)).inner_text()
     )
     assert (
@@ -369,10 +377,10 @@ def test_fluxo_completo_conversa_rascunho_aprovacao_e_historico(navegador, url):
     be.fila = [PERGUNTA, RASCUNHO, RASCUNHO]
     abrir(pg, url, f"?id={pid}")
     pg.wait_for_selector(".item-secao")
-    # seções: 6 ativas + 6 "em breve" desativadas
+    # Fase 2: as 12 seções estão ativas; as seis novas aparecem como "não iniciada"
     assert pg.locator(".item-secao").count() == 12
-    assert pg.locator(".item-secao:disabled").count() == 6
-    assert "em breve" in pg.locator(".item-secao").nth(6).inner_text()
+    assert pg.locator(".item-secao:disabled").count() == 0
+    assert "não iniciada" in pg.locator(".item-secao").nth(6).inner_text()
     assert pg.locator(".item-secao[aria-current=step]").inner_text().startswith("00")
     assert "não garante aprovação" in pg.locator(".aviso-fixo").first.inner_text()
 
@@ -408,7 +416,7 @@ def test_fluxo_completo_conversa_rascunho_aprovacao_e_historico(navegador, url):
     assert be.secoes[0]["aprovado"] is True
     assert (
         "1 de 6 aprovadas" in pg.locator(".secoes-menu").inner_text().replace(" ", " ")
-        or "1 de 6" in pg.locator(".secoes-menu").inner_text()
+        or "1 de 12" in pg.locator(".secoes-menu").inner_text()
     )
     assert "aprovada" in pg.locator(".item-secao").first.inner_text()
 
@@ -518,7 +526,7 @@ def test_copiar_por_campo(navegador, url):
     assert pg.evaluate("navigator.clipboard.readText()") == "Texto para colar na plataforma."
     assert (
         pg.locator(".campo-copia")
-        .filter(has_text="Ficha")
+        .filter(has_text="Ficha do projeto")
         .get_by_role("button", name="Copiar")
         .is_disabled()
     )

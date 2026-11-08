@@ -177,3 +177,15 @@ test("temLigacao não afirma falta quando não há palavra de conteúdo", () => 
   assert.equal(temLigacao("oficinas de teatro", ["Oficina de teatro nas escolas"]), true);
   assert.equal(temLigacao("publicação de livro", ["oficina de teatro"]), false);
 });
+
+test("linhas recém-adicionadas, em branco, não derrubam as checagens (o editor roda a cada tecla)", () => {
+  const r = rodar({
+    orcamento: [{ id: "a", etapa: "producao" }, { id: "b" }],
+    cronograma: [{ id: "c" }],
+    midia: [{ id: "d" }],
+    equipe: [{ id: "e", orcamento_item_ids: [] }, { id: "f" }],
+    secoes: { metas: { rascunho: "Meta 1: oficinas de teatro nas escolas" } },
+  });
+  assert.ok(Array.isArray(r));
+  assert.ok(por(r, "pessoa_sem_cache").every((p) => /\(sem nome\)/.test(p.mensagem)));
+});

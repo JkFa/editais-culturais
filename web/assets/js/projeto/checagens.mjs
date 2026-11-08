@@ -8,7 +8,10 @@ import { ETAPAS, ROTULOS_ETAPA, resumoOrcamento, semAcento, totalDoItem, valorAC
 
 const brl = (n) => `R$ ${Number(n).toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 const pct = (x) => `${(x * 100).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}%`;
-const resumido = (t, n = 80) => (t.length > n ? `${t.slice(0, n - 1).trim()}…` : t);
+const resumido = (t, n = 80) => {
+  const x = String(t ?? "").trim() || "(sem nome)";
+  return x.length > n ? `${x.slice(0, n - 1).trim()}…` : x;
+};
 
 // ── texto → itens ────────────────────────────────────────────────────────────────────────────
 
