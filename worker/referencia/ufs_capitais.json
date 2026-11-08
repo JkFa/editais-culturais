@@ -1,0 +1,195 @@
+{
+ "fonte": "IBGE, Censo 2022 (agregado 4714, variável 93) e API de localidades",
+ "gerado_por": "scripts/gerar_referencia_ibge.py",
+ "ufs": [
+  {
+   "uf": "AC",
+   "nome": "Acre",
+   "capital": "Rio Branco",
+   "capital_ibge": 1200401,
+   "capital_populacao": 364756
+  },
+  {
+   "uf": "AL",
+   "nome": "Alagoas",
+   "capital": "Maceió",
+   "capital_ibge": 2704302,
+   "capital_populacao": 957916
+  },
+  {
+   "uf": "AP",
+   "nome": "Amapá",
+   "capital": "Macapá",
+   "capital_ibge": 1600303,
+   "capital_populacao": 442933
+  },
+  {
+   "uf": "AM",
+   "nome": "Amazonas",
+   "capital": "Manaus",
+   "capital_ibge": 1302603,
+   "capital_populacao": 2063689
+  },
+  {
+   "uf": "BA",
+   "nome": "Bahia",
+   "capital": "Salvador",
+   "capital_ibge": 2927408,
+   "capital_populacao": 2417678
+  },
+  {
+   "uf": "CE",
+   "nome": "Ceará",
+   "capital": "Fortaleza",
+   "capital_ibge": 2304400,
+   "capital_populacao": 2428708
+  },
+  {
+   "uf": "DF",
+   "nome": "Distrito Federal",
+   "capital": "Brasília",
+   "capital_ibge": 5300108,
+   "capital_populacao": 2817381
+  },
+  {
+   "uf": "ES",
+   "nome": "Espírito Santo",
+   "capital": "Vitória",
+   "capital_ibge": 3205309,
+   "capital_populacao": 322869
+  },
+  {
+   "uf": "GO",
+   "nome": "Goiás",
+   "capital": "Goiânia",
+   "capital_ibge": 5208707,
+   "capital_populacao": 1437366
+  },
+  {
+   "uf": "MA",
+   "nome": "Maranhão",
+   "capital": "São Luís",
+   "capital_ibge": 2111300,
+   "capital_populacao": 1037775
+  },
+  {
+   "uf": "MT",
+   "nome": "Mato Grosso",
+   "capital": "Cuiabá",
+   "capital_ibge": 5103403,
+   "capital_populacao": 650877
+  },
+  {
+   "uf": "MS",
+   "nome": "Mato Grosso do Sul",
+   "capital": "Campo Grande",
+   "capital_ibge": 5002704,
+   "capital_populacao": 898100
+  },
+  {
+   "uf": "MG",
+   "nome": "Minas Gerais",
+   "capital": "Belo Horizonte",
+   "capital_ibge": 3106200,
+   "capital_populacao": 2315560
+  },
+  {
+   "uf": "PA",
+   "nome": "Pará",
+   "capital": "Belém",
+   "capital_ibge": 1501402,
+   "capital_populacao": 1303403
+  },
+  {
+   "uf": "PB",
+   "nome": "Paraíba",
+   "capital": "João Pessoa",
+   "capital_ibge": 2507507,
+   "capital_populacao": 833932
+  },
+  {
+   "uf": "PR",
+   "nome": "Paraná",
+   "capital": "Curitiba",
+   "capital_ibge": 4106902,
+   "capital_populacao": 1773718
+  },
+  {
+   "uf": "PE",
+   "nome": "Pernambuco",
+   "capital": "Recife",
+   "capital_ibge": 2611606,
+   "capital_populacao": 1488920
+  },
+  {
+   "uf": "PI",
+   "nome": "Piauí",
+   "capital": "Teresina",
+   "capital_ibge": 2211001,
+   "capital_populacao": 866300
+  },
+  {
+   "uf": "RJ",
+   "nome": "Rio de Janeiro",
+   "capital": "Rio de Janeiro",
+   "capital_ibge": 3304557,
+   "capital_populacao": 6211223
+  },
+  {
+   "uf": "RN",
+   "nome": "Rio Grande do Norte",
+   "capital": "Natal",
+   "capital_ibge": 2408102,
+   "capital_populacao": 751300
+  },
+  {
+   "uf": "RS",
+   "nome": "Rio Grande do Sul",
+   "capital": "Porto Alegre",
+   "capital_ibge": 4314902,
+   "capital_populacao": 1332845
+  },
+  {
+   "uf": "RO",
+   "nome": "Rondônia",
+   "capital": "Porto Velho",
+   "capital_ibge": 1100205,
+   "capital_populacao": 460434
+  },
+  {
+   "uf": "RR",
+   "nome": "Roraima",
+   "capital": "Boa Vista",
+   "capital_ibge": 1400100,
+   "capital_populacao": 413486
+  },
+  {
+   "uf": "SC",
+   "nome": "Santa Catarina",
+   "capital": "Florianópolis",
+   "capital_ibge": 4205407,
+   "capital_populacao": 537211
+  },
+  {
+   "uf": "SP",
+   "nome": "São Paulo",
+   "capital": "São Paulo",
+   "capital_ibge": 3550308,
+   "capital_populacao": 11451999
+  },
+  {
+   "uf": "SE",
+   "nome": "Sergipe",
+   "capital": "Aracaju",
+   "capital_ibge": 2800308,
+   "capital_populacao": 602757
+  },
+  {
+   "uf": "TO",
+   "nome": "Tocantins",
+   "capital": "Palmas",
+   "capital_ibge": 1721000,
+   "capital_populacao": 302692
+  }
+ ]
+}

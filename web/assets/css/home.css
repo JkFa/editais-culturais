@@ -642,3 +642,17 @@
   margin: 0.75rem 0 0;
   font-size: 0.9375rem;
 }
+
+/* Cobertura (/sobre/) */
+.cobertura-nota { margin: 0.6rem 0 1rem; }
+.cobertura-nota .nota-grande { font: 1.1rem/1.2 var(--fonte-corpo, inherit); margin: 0; }
+.cobertura-nota .nota-grande strong { font-family: var(--fonte-titulo, inherit); font-size: 2.6rem; font-weight: 400; }
+.cobertura-metricas { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: 0.9rem; }
+.cobertura-titulo { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.cobertura-item .barra { height: 0.5rem; border-radius: 99px; background: var(--cor-borda-controle); margin: 0.3rem 0; overflow: hidden; }
+.cobertura-item .barra span { display: block; height: 100%; background: var(--cor-texto); }
+.cobertura-uf, .cobertura-metodo { margin: 0.8rem 0; }
+.cobertura-uf table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+.cobertura-uf th, .cobertura-uf td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--cor-borda-controle); vertical-align: top; }
+.tabela-rolavel { overflow-x: auto; }
+.cobertura-uf summary, .cobertura-metodo summary { min-height: var(--alvo-toque, 44px); display: flex; align-items: center; cursor: pointer; font-weight: 600; }

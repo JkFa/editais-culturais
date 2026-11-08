@@ -1,5 +1,7 @@
 # Editais Culturais do Brasil
 
+[![cobertura](https://img.shields.io/endpoint?url=https%3A%2F%2Fjkfa.github.io%2Feditais-culturais%2Fdata%2Fcobertura-badge.json)](https://jkfa.github.io/editais-culturais/sobre/#cobertura)
+
 Portal que reúne editais e chamamentos culturais abertos (Música, Cinema & Audiovisual, Teatro & Dança,
 Fotografia, Artes Visuais, Literatura, Patrimônio, Multiáreas) para que artistas e produtores vejam em
 segundos se podem se inscrever: prazo, valor, quem pode participar e o link oficial.
@@ -311,3 +313,12 @@ DECISIONS.md               decisões, descobertas da Fase 0 e desvios da especif
 - **Fontes tipográficas** são hospedadas no próprio site (`web/assets/fonts`, licença OFL).
 - **Contador de visitas:** depende do ipwho.is (1.000 consultas/dia por IP de origem). Passado o limite, a visita conta sem localização. O rate limit da function vale por instância, não globalmente.
 - **`robots.txt`** fica em `/editais-culturais/`, onde crawlers não o leem (só leem na raiz do host).
+
+## Cobertura (placar 0 a 10)
+
+Todo dia, ao fim da coleta, `worker/cobertura.py` calcula uma nota a partir de oito medidas objetivas (UFs e capitais com fonte
+própria, municípios com mais de 100 mil habitantes, recall auditado, valor/prazo/proponentes com evidência, frescor e higiene) e
+grava `web/data/cobertura.json` (mostrado em `/sobre/#cobertura`) e `cobertura_diaria` no Supabase. O recall vem da auditoria mensal
+(`scripts/auditoria_cobertura.py`, workflow "Auditoria de cobertura") e conta zero enquanto a amostra de referência
+(`worker/referencia/amostra_recall.json`) não tiver 30 editais abertos conferidos à mão. Metodologia e decisões: `DECISIONS.md`.
+

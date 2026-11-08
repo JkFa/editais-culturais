@@ -1,0 +1,10 @@
+{
+  "metodologia": "Editais ABERTOS levantados direto nos sites oficiais dos órgãos (não no portal, não no Radar, não no CultBR agregado), cada um com a URL oficial, o prazo lido na página e a data da conferência. Itens com prazo vencido saem da conta na auditoria mensal. Prosas não é fonte da amostra. Fontes de reposição: diários oficiais (Onda 3), listas de 'editais abertos' de órgãos ainda não monitorados e sugestões do formulário (Onda 5).",
+  "regras": [
+    "Só entra o que a pessoa abriu na página oficial e viu aberto, com o prazo; nunca de memória nem de resultado de busca.",
+    "Misturar UFs e tipos de órgão: não mais de 20% do mesmo estado; incluir municípios fora das capitais.",
+    "Atualizar a amostra ao menos a cada 2 meses (os prazos vencem). O placar só usa a medida com 30 itens abertos ou mais."
+  ],
+  "item_exemplo": {"titulo": "Título do edital", "url": "https://...", "orgao": "Secretaria", "uf": "BA", "prazo": "2026-12-15", "conferido_em": "2026-11-08"},
+  "itens": []
+}

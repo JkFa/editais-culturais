@@ -80,6 +80,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add web/data/snapshot.json
+          [ -f web/data/cobertura.json ] && git add web/data/cobertura.json || true
           [ -f worker/cache/llm_cache.json ] && git add worker/cache/llm_cache.json || true
           [ -f worker/cache/vigias.json ] && git add worker/cache/vigias.json || true
           if git diff --cached --quiet; then

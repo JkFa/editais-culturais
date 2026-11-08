@@ -241,6 +241,22 @@ class Supabase:
             content=json.dumps(linhas),
         )
 
+    async def upsert_cobertura(self, cob: dict[str, Any]) -> None:
+        """Uma linha por dia em `cobertura_diaria` (regravada se a coleta rodar de novo no mesmo dia)."""
+        linha = {
+            "data": cob["data"],
+            "nota": cob["nota"],
+            "metricas": cob["metricas"],
+            "por_uf": cob["por_uf"],
+        }
+        await self._req(
+            "POST",
+            "/cobertura_diaria",
+            params={"on_conflict": "data"},
+            headers={"Prefer": "resolution=merge-duplicates,return=minimal"},
+            content=json.dumps(linha),
+        )
+
     async def heartbeat(self, agora: datetime) -> None:
         await self._req(
             "POST",
