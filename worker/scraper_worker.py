@@ -378,7 +378,12 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
     if chave_gemini:
         gemini = ClienteGemini(chave_gemini, os.environ.get("GEMINI_MODEL") or "gemini-2.5-flash")
         try:
-            alvo = [e for e in editais if e.fonte.startswith("mapas:") and e.fonte not in falharam]
+            # O enriquecimento é em português e para editais do Brasil: o internacional não passa por ele.
+            alvo = [
+                e
+                for e in editais
+                if e.fonte.startswith("mapas:") and e.fonte not in falharam and e.ambito == "brasil"
+            ]
             outros = [e for e in editais if e not in alvo]
             maximo = int(os.environ.get("GEMINI_MAX_POR_EXECUCAO", "60"))
             editais = outros + await enriquecer_editais(alvo, textos_llm, gemini, cache, maximo)

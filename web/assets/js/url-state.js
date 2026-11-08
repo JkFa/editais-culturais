@@ -1,5 +1,6 @@
 // Estado <-> URL. Abrir um link compartilhado reproduz exatamente a mesma tela.
 import { LINGUAGENS, ORDENS, PERFIS, TIPOS_APOIO, UFS, estadoInicial } from "./filtros.js";
+import { AMBITOS } from "./internacional.js";
 
 export function lerEstado(busca = location.search) {
   const p = new URLSearchParams(busca);
@@ -13,6 +14,10 @@ export function lerEstado(busca = location.search) {
     estado.abrangencia = "";
   }
   if (TIPOS_APOIO.some((t) => t.id === p.get("apoio"))) estado.tipoApoio = p.get("apoio");
+  if (AMBITOS.some((a) => a.id === p.get("amb"))) estado.ambito = p.get("amb");
+  if (["brasileira", "outra"].includes(p.get("nac"))) estado.nacionalidade = p.get("nac");
+  if (/^([A-Z]{2}|OUTRO)$/.test(p.get("res") ?? "")) estado.residencia = p.get("res");
+  if (["sim", "nao"].includes(p.get("org"))) estado.organizacao = p.get("org");
   estado.apenasAbertas = p.get("abertas") !== "0";
   if (ORDENS.some((o) => o.id === p.get("ord"))) estado.ordem = p.get("ord");
   if (p.get("aba") === "favoritos") estado.aba = "favoritos";
@@ -27,6 +32,10 @@ export function montarBusca(estado, edital = null) {
   if (estado.abrangencia) p.set("abr", estado.abrangencia);
   if (estado.uf) p.set("uf", estado.uf);
   if (estado.tipoApoio) p.set("apoio", estado.tipoApoio);
+  if (estado.ambito !== "brasil") p.set("amb", estado.ambito);
+  if (estado.nacionalidade) p.set("nac", estado.nacionalidade);
+  if (estado.residencia) p.set("res", estado.residencia);
+  if (estado.organizacao) p.set("org", estado.organizacao);
   if (!estado.apenasAbertas) p.set("abertas", "0");
   if (estado.ordem !== "prazo") p.set("ord", estado.ordem);
   if (estado.aba === "favoritos") p.set("aba", "favoritos");

@@ -23,6 +23,7 @@ import {
   ordenar,
 } from "./filtros.js";
 import { el, formatarDataHora, formatarMoeda, formatarMoedaCompacta, plural } from "./formatos.js";
+import { AMBITOS, ehInternacional, nomeDoPais, paisesDosEditais } from "./internacional.js";
 import { renderRadar } from "./radar.js";
 import { empilharPainel, gravarEstado, lerEstado, urlDoPortal } from "./url-state.js";
 
@@ -53,7 +54,71 @@ function criarChip(rotulo, pressionado, aoClicar, extra = {}) {
   return el("button", { type: "button", class: "chip", "aria-pressed": String(pressionado), onclick: aoClicar, ...extra }, rotulo);
 }
 
+function criarPergunta(id, rotulo, opcoes, valor, aoMudar) {
+  return el(
+    "label",
+    { class: "pergunta-intl", for: id },
+    el("span", {}, rotulo),
+    el(
+      "select",
+      { class: "chip", id, onchange: (e) => aoMudar(e.target.value) },
+      opcoes.map(([v, texto]) => el("option", { value: v, selected: v === valor }, texto)),
+    ),
+  );
+}
+
+function renderAmbitoEPerguntas() {
+  $("#chips-ambito").replaceChildren(
+    ...AMBITOS.map((a) =>
+      criarChip(a.rotulo, estado.ambito === a.id, () => {
+        estado.ambito = a.id;
+        aoMudarFiltro();
+      }),
+    ),
+  );
+  const fora = estado.ambito !== "brasil";
+  const soFora = estado.ambito === "internacional";
+  $("#grupo-intl").hidden = !fora;
+  // Perfil, onde (UF/nacional) e tipo de apoio são do Brasil: somem quando só há oportunidades de fora.
+  for (const id of ["grupo-perfil", "grupo-abrangencia", "grupo-apoio"]) $(`#${id}`).hidden = soFora;
+  if (!fora) return;
+  const paises = paisesDosEditais(dados?.editais ?? []);
+  $("#perguntas-intl").replaceChildren(
+    criarPergunta(
+      "pergunta-nacionalidade",
+      "Qual sua nacionalidade?",
+      [["", "Prefiro não responder"], ["brasileira", "Brasileira"], ["outra", "Outra"]],
+      estado.nacionalidade,
+      (v) => {
+        estado.nacionalidade = v;
+        aoMudarFiltro();
+      },
+    ),
+    criarPergunta(
+      "pergunta-residencia",
+      "Em que país você mora?",
+      [["", "Prefiro não responder"], ["BR", "Brasil"], ...paises.map((c) => [c, nomeDoPais(c)]), ["OUTRO", "Outro país"]],
+      estado.residencia,
+      (v) => {
+        estado.residencia = v;
+        aoMudarFiltro();
+      },
+    ),
+    criarPergunta(
+      "pergunta-organizacao",
+      "Você tem ou representa uma organização (CNPJ ou coletivo formalizado)?",
+      [["", "Prefiro não responder"], ["sim", "Sim"], ["nao", "Não"]],
+      estado.organizacao,
+      (v) => {
+        estado.organizacao = v;
+        aoMudarFiltro();
+      },
+    ),
+  );
+}
+
 function renderFiltros() {
+  renderAmbitoEPerguntas();
   $("#chips-perfil").replaceChildren(
     ...PERFIS.map((p) =>
       criarChip(p.rotulo, estado.perfil === p.id, () => {
@@ -113,10 +178,21 @@ function renderFiltros() {
   for (const aba of document.querySelectorAll(".aba")) {
     aba.setAttribute("aria-selected", String(aba.dataset.aba === estado.aba));
   }
+  const abaLista = document.querySelector('.aba[data-aba="todos"]');
+  if (abaLista) abaLista.textContent = estado.ambito === "internacional" ? "Oportunidades" : "Editais";
+}
+
+/** O menu do topo acompanha o filtro: "Internacional" fica marcado quando só há oportunidades de fora. */
+function atualizarMenu() {
+  const fora = estado.ambito === "internacional";
+  $('nav [data-nav="editais"]')?.[fora ? "removeAttribute" : "setAttribute"]("aria-current", "page");
+  $('nav [data-nav="internacional"]')?.[fora ? "setAttribute" : "removeAttribute"]("aria-current", "page");
 }
 
 function aoMudarFiltro() {
+  atualizarMenu();
   renderFiltros();
+  if (dados) renderContadores();
   renderLista();
   gravarEstado(estado, editalAbertoChave);
 }
@@ -197,6 +273,16 @@ function aoTeclarNaFolha(evento) {
 
 function renderContadores() {
   const c = contadores(dados.editais);
+  const titulo = $("#titulo-explorador");
+  if (estado.ambito === "internacional") {
+    titulo.textContent = "Oportunidades internacionais";
+    $("#contadores").replaceChildren(
+      el("li", {}, el("span", { class: "valor" }, String(c.internacionaisAbertos)), el("span", { class: "rotulo" }, "oportunidades internacionais abertas")),
+      el("li", {}, el("span", { class: "valor" }, String(c.internacionaisEncerrandoEm7Dias)), el("span", { class: "rotulo" }, "encerrando nos próximos 7 dias")),
+    );
+    return;
+  }
+  titulo.textContent = estado.ambito === "todos" ? "Editais e oportunidades abertas" : "Editais abertos";
   $("#contadores").replaceChildren(
     el("li", {}, el("span", { class: "valor" }, String(c.abertos)), el("span", { class: "rotulo" }, "editais abertos hoje")),
     el("li", {}, el("span", { class: "valor" }, String(c.encerrandoEm7Dias)), el("span", { class: "rotulo" }, "encerrando nos próximos 7 dias")),
@@ -210,11 +296,20 @@ function renderContadores() {
       ),
       el("span", { class: "rotulo" }, `em ${plural(c.comValorInformado, "edital", "editais")} com valor informado (os demais não informam o total)`),
     ),
+    estado.ambito === "todos" || c.internacionaisAbertos
+      ? el(
+          "li",
+          {},
+          el("span", { class: "valor" }, String(c.internacionaisAbertos)),
+          el("span", { class: "rotulo" }, "oportunidades internacionais abertas (filtro Internacional)"),
+        )
+      : null,
   );
 }
 
 function cartaoPadrao(edital) {
   return criarCard(edital, {
+    respostas: estado,
     favorito: favoritos.tem(edital.chave),
     aoAbrir: abrirPainel,
     aoAlternarFavorito: alternarFavorito,
@@ -244,8 +339,8 @@ function renderEstadoVazio(lista) {
 }
 
 function limparFiltros() {
-  const aba = estado.aba;
-  estado = { ...lerEstado("").estado, aba };
+  const { aba, ambito } = estado;
+  estado = { ...lerEstado("").estado, aba, ambito };
   aoMudarFiltro();
 }
 
@@ -260,7 +355,11 @@ function renderLista() {
   atualizarBotaoFiltros();
   if (estado.aba === "favoritos") return renderFavoritos(lista, info);
   const visiveis = ordenar(filtrar(dados.editais, estado, new Date(), chavesServidor), estado.ordem);
-  info.textContent = `${plural(visiveis.length, "edital", "editais")} de ${dados.editais.length} abertos`;
+  const universo = dados.editais.filter((e) =>
+    estado.ambito === "todos" ? true : estado.ambito === "internacional" ? ehInternacional(e) : !ehInternacional(e),
+  ).length;
+  const nome = estado.ambito === "internacional" ? ["oportunidade", "oportunidades"] : ["edital", "editais"];
+  info.textContent = `${plural(visiveis.length, ...nome)} de ${universo} abertos`;
   if (!visiveis.length) return renderEstadoVazio(lista);
   lista.replaceChildren(...visiveis.map(cartaoPadrao));
 }
@@ -325,6 +424,7 @@ function alternarFavorito(edital) {
 
 function opcoesDoPainel(edital) {
   return {
+    respostas: estado,
     favorito: favoritos.tem(edital.chave),
     aoAlternarFavorito: alternarFavorito,
     urlPortal: urlDoPortal(edital.chave),
@@ -490,6 +590,7 @@ async function aplicarDados(novos) {
     chavesServidor = await dados.buscarNoServidor(estado.q).catch(() => null);
   }
   renderContadores();
+  renderAmbitoEPerguntas(); // a lista de países da pergunta "Em que país você mora?" vem dos dados
   renderRodape();
   renderRadar($("#radar"), $("#radar-lista"), dados.radar);
   preencherUltimaColeta(dados.geradoEm);
@@ -501,6 +602,7 @@ async function aplicarDados(novos) {
 
 async function iniciar() {
   iniciarPagina("editais");
+  atualizarMenu();
   renderFiltros();
   configurarFolha();
   ligarEventos();

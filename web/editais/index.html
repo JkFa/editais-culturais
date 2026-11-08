@@ -36,7 +36,8 @@
       <div class="container barra-site">
         <a class="marca" href="../">Editais culturais</a>
         <nav aria-label="Principal">
-          <a href="../editais/" aria-current="page">Editais</a>
+          <a href="../editais/" aria-current="page" data-nav="editais">Editais</a>
+          <a href="../editais/?amb=internacional" data-nav="internacional">Internacional</a>
           <a href="../projeto/">Meus projetos</a>
           <a href="../sobre/">Sobre</a>
         </nav>
@@ -64,7 +65,15 @@
               <h2 id="titulo-filtros">Posso me inscrever?</h2>
               <button class="btn folha-fechar" type="button" id="folha-fechar">Fechar</button>
             </div>
-            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-perfil">
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-ambito" id="grupo-ambito">
+              <span class="rotulo" id="rotulo-ambito">Onde fica</span>
+              <div class="chips" id="chips-ambito"></div>
+            </div>
+            <div class="grupo-filtro grupo-intl" role="group" aria-labelledby="rotulo-intl" id="grupo-intl" hidden>
+              <span class="rotulo" id="rotulo-intl">Sobre você (só para oportunidades internacionais)</span>
+              <div class="perguntas-intl" id="perguntas-intl"></div>
+            </div>
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-perfil" id="grupo-perfil">
               <span class="rotulo" id="rotulo-perfil">Meu perfil</span>
               <div class="chips rolagem" id="chips-perfil"></div>
             </div>
@@ -72,11 +81,11 @@
               <span class="rotulo" id="rotulo-linguagem">Linguagem</span>
               <div class="chips rolagem" id="chips-linguagem"></div>
             </div>
-            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-abrangencia">
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-abrangencia" id="grupo-abrangencia">
               <span class="rotulo" id="rotulo-abrangencia">Onde</span>
               <div class="chips" id="chips-abrangencia"></div>
             </div>
-            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-apoio">
+            <div class="grupo-filtro" role="group" aria-labelledby="rotulo-apoio" id="grupo-apoio">
               <span class="rotulo" id="rotulo-apoio">Tipo de apoio</span>
               <div class="chips rolagem" id="chips-apoio"></div>
             </div>

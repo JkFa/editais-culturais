@@ -50,6 +50,7 @@
         <a class="marca" href="./">Editais culturais</a>
         <nav aria-label="Principal">
           <a href="editais/">Editais</a>
+          <a href="editais/?amb=internacional">Internacional</a>
           <a href="projeto/">Meus projetos</a>
           <a href="sobre/">Sobre</a>
         </nav>
@@ -77,6 +78,7 @@
             <li><span class="valor num" data-numero="encerrando">—</span><span class="rotulo">encerram em 7 dias</span></li>
             <li><span class="valor num" data-numero="valor">—</span><span class="rotulo" data-numero-rotulo="valor">em editais com valor informado</span></li>
             <li><span class="valor num" data-numero="fontes">—</span><span class="rotulo">fontes com editais abertos</span></li>
+            <li class="numero-intl"><a class="numero-link" href="editais/?amb=internacional"><span class="valor num" data-numero="internacionais">—</span><span class="rotulo">oportunidades internacionais abertas</span></a></li>
           </ul>
         </div>
       </section>
@@ -92,6 +94,7 @@
       <section class="secao container" aria-labelledby="t-linguagem">
         <h2 class="secao-titulo" id="t-linguagem"><span class="secao-n num">03</span> Por linguagem</h2>
         <div class="secao-corpo">
+          <div class="chips escopo" id="escopo-linguagem" role="group" aria-label="Mostrar Brasil, Internacional ou Todos"></div>
           <ol class="indice" id="indice-linguagem"></ol>
         </div>
       </section>
@@ -119,6 +122,7 @@
             <li><p>Os dados vêm de duas fontes: instâncias públicas do Mapas Culturais, que órgãos e produtores usam para publicar editais, e uma curadoria manual de instituições que não usam a plataforma, como a Funarte. Cada edital mostra de onde veio.</p></li>
             <li><p>A coleta roda todo dia às 5h, horário de Brasília. O horário no topo da página é o da última coleta. Prazos são sempre de Brasília.</p></li>
             <li><p>Valor, proponente e contrapartida só aparecem quando o texto do edital diz. O portal lê o resumo publicado, não o PDF. Por isso muitos campos mostram “Não informado no resumo — ver edital”: preferimos deixar em branco a informar errado.</p></li>
+            <li><p>As oportunidades internacionais (residências, mobilidade, fomento) vêm do feed público da rede On the Move, do Mapa do IberCultura Viva e de uma curadoria manual. O selo “Aberto a brasileiros” só aparece quando a própria fonte diz isso; sem essa frase o selo é “Verificar elegibilidade”. Confira sempre a chamada original: requisitos de visto, idioma e documentação são de responsabilidade de quem se candidata.</p></li>
           </ol>
           <p><a class="link-seta" href="sobre/">Ler a metodologia, as fontes e as limitações</a></p>
         </div>

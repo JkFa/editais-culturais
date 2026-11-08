@@ -2,6 +2,21 @@
 // foco preso, Esc fecha e o foco volta ao card que abriu.
 import { botaoFavorito, badgePrazo, pilulas, raioX } from "./cards.js";
 import {
+  AVISO_LEGAL,
+  EXPLICACAO_ELEGIBILIDADE,
+  RESPOSTAS_VAZIAS,
+  ROTULOS_ELEGIBILIDADE,
+  custosCobertosEl,
+  ehInternacional,
+  elegibilidadeEfetiva,
+  linhaEmPortugues,
+  orgaoVisivel,
+  prazoDaFonte,
+  selosInternacionais,
+  textoWhatsappInternacional,
+  valorOriginalEl,
+} from "./internacional.js";
+import {
   NAO_INFORMADO,
   el,
   formatarData,
@@ -17,6 +32,9 @@ import {
 const FOCAVEIS = 'a[href], button:not([disabled]), input, select, textarea, summary, [tabindex]:not([tabindex="-1"])';
 
 const ROTULOS_CAMPO = {
+  elegibilidade_br: "Elegibilidade para brasileiros",
+  valor_original: "Valor",
+  custos_cobertos: "Custos cobertos",
   valor_total: "Valor total",
   teto_por_projeto: "Teto por projeto",
   proponentes: "Quem pode participar",
@@ -79,7 +97,87 @@ function blocoAlternativas(edital) {
   );
 }
 
-function conteudoDoPainel(edital, { favorito, aoAlternarFavorito, urlPortal, aoFechar, aoCopiar }) {
+/** Painel de uma oportunidade internacional: fonte, elegibilidade com aviso e prazo como a fonte informa. */
+function conteudoInternacional(edital, { favorito, aoAlternarFavorito, urlPortal, aoFechar, aoCopiar, respostas = RESPOSTAS_VAZIAS }) {
+  const efetiva = elegibilidadeEfetiva(edital, respostas);
+  const links = [
+    el("a", { href: edital.url_origem, target: "_blank", rel: "noopener noreferrer" }, `Chamada original (${edital.via || "fonte"})`),
+    edital.url_inscricao && edital.url_inscricao !== edital.url_origem
+      ? el("a", { href: edital.url_inscricao, target: "_blank", rel: "noopener noreferrer" }, "Como se candidatar")
+      : null,
+    edital.url_edital_pdf && edital.url_edital_pdf !== edital.url_origem
+      ? el("a", { href: edital.url_edital_pdf, target: "_blank", rel: "noopener noreferrer" }, "Bases em PDF")
+      : null,
+  ];
+  const evidencia = edital.proveniencia?.elegibilidade_br?.trecho;
+  return [
+    el(
+      "div",
+      { class: "painel-topo" },
+      el(
+        "div",
+        {},
+        el("h2", { id: "painel-titulo", lang: edital.idioma_original ?? undefined }, edital.titulo_original ?? edital.titulo),
+        orgaoVisivel(edital) ? el("p", { class: "fonte" }, orgaoVisivel(edital)) : null,
+        el("div", { class: "painel-badge" }, badgePrazo(edital)),
+      ),
+      el(
+        "div",
+        { class: "painel-acoes" },
+        botaoFavorito(edital, favorito, aoAlternarFavorito),
+        el("button", { type: "button", class: "btn", id: "painel-fechar", onclick: aoFechar }, "Fechar"),
+      ),
+    ),
+    el(
+      "div",
+      { class: "painel-corpo" },
+      el("p", { class: "linha-pt" }, linhaEmPortugues(edital)),
+      secao(
+        "Posso me candidatar?",
+        selosInternacionais(edital, respostas),
+        el("p", {}, EXPLICACAO_ELEGIBILIDADE[efetiva]),
+        evidencia ? el("p", { class: "fonte" }, `Trecho da fonte: “${evidencia}”`) : null,
+        efetiva === "verificar" ? el("p", { class: "aviso-intl" }, ROTULOS_ELEGIBILIDADE.verificar + ": " + EXPLICACAO_ELEGIBILIDADE.verificar) : null,
+      ),
+      secao(
+        "Prazo",
+        el("p", {}, "Termina em ", el("strong", { class: "num" }, prazoDaFonte(edital)), "."),
+        el("p", { class: "fonte" }, "Mostramos o prazo como a fonte informa, sem converter para o horário de Brasília."),
+      ),
+      edital.custos_cobertos?.length ? secao("Custos cobertos (segundo a fonte)", custosCobertosEl(edital)) : null,
+      edital.valor_original != null ? secao("Valor", valorOriginalEl(edital)) : null,
+      edital.resumo_original ? secao("Trecho da chamada (no idioma original)", el("p", { lang: edital.idioma_original ?? undefined }, edital.resumo_original)) : null,
+      edital.resumo_simples && edital.resumo_simples !== edital.resumo_original ? secao("Observação do portal", el("p", {}, edital.resumo_simples)) : null,
+      secao("Links", el("div", { class: "links" }, links)),
+      el("p", { class: "aviso-intl" }, AVISO_LEGAL),
+      blocoAlternativas(edital),
+      blocoProveniencia(edital),
+      el(
+        "p",
+        { class: "fonte" },
+        `Fonte: ${edital.via || nomeDaFonte(edital.fonte)} · coletado em `,
+        edital.coletado_em ? formatarDiaMes(edital.coletado_em) : "data desconhecida",
+        edital.verificado_em ? ` · conferido em ${formatarData(`${edital.verificado_em}T12:00:00-03:00`)}` : "",
+      ),
+    ),
+    el(
+      "div",
+      { class: "painel-rodape" },
+      el(
+        "button",
+        { type: "button", class: "btn btn-primario", id: "copiar-whatsapp", onclick: () => aoCopiar(textoWhatsappInternacional(edital, urlPortal)) },
+        "Copiar resumo para WhatsApp",
+      ),
+    ),
+  ];
+}
+
+function conteudoDoPainel(edital, opcoes) {
+  if (ehInternacional(edital)) return conteudoInternacional(edital, opcoes);
+  return conteudoBrasil(edital, opcoes);
+}
+
+function conteudoBrasil(edital, { favorito, aoAlternarFavorito, urlPortal, aoFechar, aoCopiar }) {
   const documentos = edital.documentos_exigidos?.length
     ? el("ul", { class: "docs" }, edital.documentos_exigidos.map((d) => el("li", {}, d)))
     : el("p", {}, NAO_INFORMADO);

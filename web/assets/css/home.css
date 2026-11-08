@@ -598,3 +598,40 @@
 .saude.inativa {
   color: var(--cor-texto-suave);
 }
+
+/* Número com link (oportunidades internacionais) e seletor Brasil/Internacional/Todos. */
+/* O contador internacional fica numa linha própria: os quatro números do Brasil não mudam de lugar. */
+.numeros li.numero-intl {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  padding: 0.9rem 0 0;
+  border-left: 0;
+  border-top: var(--regua);
+}
+
+.numeros .numero-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.9rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.numeros .numero-link .valor {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.numeros .numero-link .rotulo {
+  margin-top: 0;
+}
+
+.numeros .numero-link:hover .rotulo,
+.numeros .numero-link:focus-visible .rotulo {
+  color: var(--cor-texto);
+  text-decoration: underline;
+}
+
+.escopo {
+  margin-bottom: 0.75rem;
+}
