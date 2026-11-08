@@ -588,3 +588,18 @@ Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários of
 - **Se a fila do GitHub cair,** o que estava publicado é preservado do snapshot anterior (como as outras fontes), e a falha aparece em `fontes_falharam`.
 - **Hash:** `verificacao` nulo sai do hash, então a coluna nova não regrava os editais de Mapas e CultBR; só a curadoria (que ganha `curadoria`) é regravada uma vez.
 - **Ordem de deploy:** aplicar a migration (dry-run antes) **antes** do merge. O worker passa a gravar `verificacao` em toda linha nova e o PostgREST recusa coluna desconhecida.
+
+## Cobertura, Onda 2 / PR 2a: órgãos federais em gov.br (08/11/2026)
+
+- **Coletor `govbr` configurável** (`worker/coletores/govbr.py`): Funarte, Iphan, Fundação Cultural Palmares e Biblioteca Nacional, com `formato` por fonte: `cards` (como o MinC), `links` (Palmares) e `volto` (Iphan: o estado da página React vem embutido em
+  `window.__data`; título, link e o PDF do edital, que é um item filho do tipo "Arquivo", saem de lá). **Só publica com prazo futuro lido do texto da página ou do PDF, com o trecho que o comprova**; sem prazo legível vira candidato.
+  O PDF só é lido quando a página não basta (até 2 por edital, preferindo o "edital" ao anexo, resultado ou errata).
+- **O que não é fomento fica de fora pelo título:** consultor, processo seletivo, estágio, mestrado/iniciação científica, resultado, extrato, retificação, parecer, acordo de cooperação, consulta de mercado, conselho/eleição e os programas
+  ibero-americanos (Ibercena, Ibermúsicas, Ibermedia, Ibermuseos; ficam no pipeline internacional). `incluir_titulo` restringe listas misturadas com páginas institucionais (Biblioteca Nacional).
+- **A fonte da Funarte estava muda:** o vigia apontava `/funarte/pt-br/editais-1`, que responde **404**, e mesmo assim aparecia "ok, 0 coletados". Foi desativado com o motivo e substituído pelo coletor, que lê as listas reais
+  (`/editais/editais-abertos` e `/editais/em-andamento`).
+- **Bloqueio não é contornado:** páginas do gov.br que respondem 403 contam como `erro:BloqueioDeAcesso` e a coleta segue (testado: uma tentativa só).
+- **robots.txt e termos:** o `robots.txt` do gov.br só veda `/*sendto_form`, `/*folder_factories` e áreas de edição; mesma base do MinC (informação pública, Lei de Acesso à Informação). 3 s entre requisições.
+- **Medição real (08/11/2026):** Funarte publica 2 editais (Bolsa de Conservação Fotográfica, Seleção Marc Ferrez, prazo 18/12; 2 páginas deram 403) e leva "Programa Funarte Aberta" (fluxo contínuo) para a fila; Iphan 0 publicados (5 encerrados, 5 candidatos sem prazo legível,
+  7 não são fomento); Palmares 1 candidato (ocupação do Espaço Mário Gusmão, fluxo contínuo); Biblioteca Nacional 5 candidatos antes do filtro `incluir_titulo`. Poucos editais federais abertos de cada vez, como esperado: o ganho é de recall.
+- **Fora desta PR:** BRDE/FSA (PR 2b, PDFs por categoria) e `editais.iphan.gov.br` (página em JavaScript, Onda 4). Ancine/FSA (`fsa.ancine.gov.br`) não conecta e segue desativada.

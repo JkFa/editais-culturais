@@ -21,7 +21,9 @@ def snapshot_com_auto(snapshot, ligada=True):
         "inscricao_fim": "2099-01-01T02:59:59+00:00",
     }  # fmt: skip
     for e in corpo["editais"]:
-        e.setdefault("verificacao", None)
+        e["verificacao"] = (
+            None  # o snapshot real já traz editais automáticos de verdade: aqui só o sintético tem o selo
+        )
     corpo["editais"].append(auto)
     corpo["fontes"] = [f for f in corpo["fontes"] if f["fonte"] != "publicacao-automatica"] + [
         {"fonte": "publicacao-automatica", "nome": "Publicação automática", "tipo": "oficial", "metodo": "html", "url": "https://x", "ativa": ligada,
