@@ -129,6 +129,23 @@ instancias:
     ativa: false
     motivo: "HTTP 403 em /api/opportunity/find na sondagem de 06/11/2026 (bloqueia clientes automatizados)."
 
+  # Internacional (Fase 1). Mapas Culturais do programa IberCultura Viva (Ibero-América): a API é a
+  # mesma das instâncias brasileiras, mas os editais entram como `ambito: internacional`.
+  # Conferido em 07/11/2026: robots.txt sem regras (só avisos de "content signals", que não
+  # restringem busca/listagem); uma consulta por dia. Hoje não há edital aberto.
+  - slug: iberculturaviva
+    nome: Mapa IberCultura Viva (programa ibero-americano)
+    base_url: https://mapa.iberculturaviva.org
+    abrangencia: null
+    uf: null
+    municipio: null
+    ambito: internacional
+    pais_destino: Ibero-América
+    idioma_original: es
+    termos_url: "https://iberculturaviva.org/as-oportunidades/editais/"
+    termos_conferidos_em: "2026-11-07"
+    ativa: true
+
 # ---------------------------------------------------------------------------------------------
 # v4: novas fontes. `tipo`: oficial (publica com evidência) | plataforma (idem, com "via X") |
 # descoberta (nunca publica: só abre candidato na fila de curadoria).
@@ -227,3 +244,21 @@ fontes:
   - {id: descentra-mg, nome: "Descentra Cultura (Secult-MG)", tipo: plataforma, metodo: html, url: "https://www.secult.mg.gov.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "A plataforma exige cadastro e login para ver e enviar editais; não coletamos. A Secult-MG divulga os editais da PNAB em notícias; os que passam pelo CultBR entram por lá."}
   - {id: itau-cultural, nome: "Itaú Cultural", tipo: oficial, metodo: vigia, url: "https://www.itaucultural.org.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Não achei página estável só de editais (/chamadas dá 404); a home muda todo dia e geraria falso alarme. Segue no radar da curadoria."}
   - {id: oi-futuro, nome: "Oi Futuro", tipo: oficial, metodo: vigia, url: "https://oifuturo.org.br/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "ConnectTimeout em 07/11/2026."}
+
+  # ------------------------------------------------------------------ internacional (Fase 1)
+  - id: onthemove
+    nome: "On the Move: chamadas abertas (mobilidade, residências, financiamento)"
+    tipo: plataforma
+    metodo: rss
+    coletor: onthemove
+    url: "https://on-the-move.org"
+    termos_url: "https://on-the-move.org/privacy-policy"
+    termos_conferidos_em: "2026-11-07"
+    robots_ok: true   # só bloqueia ?f[...]; os caminhos /news/.../feed são permitidos
+    intervalo_min_entre_requisicoes_s: 3
+    ativa: true
+
+  - {id: ibermusicas, nome: "Ibermúsicas", tipo: oficial, metodo: html, url: "https://www.ibermusicas.org/", termos_conferidos_em: "2026-11-07", robots_ok: true, ativa: false, motivo: "O site serve a cadeia de certificados TLS incompleta: abre no navegador, mas o robô (e o Actions) recusa a conexão, e não desligamos a verificação. As convocatórias 2026 fecharam em 02/10/2026. Entra pela curadoria quando houver chamada aberta."}
+  - {id: ibermedia, nome: "Programa Ibermedia", tipo: oficial, metodo: html, url: "https://www.programaibermedia.com/nuestras-convocatorias/", termos_conferidos_em: "2026-11-07", robots_ok: true, ativa: false, motivo: "Convocatória anual numa página única de texto livre (a de 2026 encerrou em 30/03/2026); sem feed nem estrutura que dê prazo com segurança. Entra pela curadoria quando abrir."}
+  - {id: iberescena, nome: "Iberescena", tipo: oficial, metodo: html, url: "https://iberescena.org/", termos_conferidos_em: "2026-11-07", ativa: false, motivo: "Site montado por JavaScript; os dados vêm de um CMS cuja API responde 403 sem autenticação (não contornamos). Sem RSS. Entra pela curadoria."}
+  - {id: ibermuseos, nome: "Ibermuseos", tipo: oficial, metodo: html, url: "https://www.ibermuseos.org/convocatorias/", termos_conferidos_em: "2026-11-07", robots_ok: true, ativa: false, motivo: "O RSS é de notícias e a lista de convocatórias não traz prazo; o prazo só aparece em texto corrido na notícia. Entra pela curadoria (7º Fundo Ibermuseos já cadastrado)."}

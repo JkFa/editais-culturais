@@ -6,6 +6,7 @@ import { config, iniciarPagina, preencherUltimaColeta } from "./comum.js";
 import { carregarProgressivo, carregarVisitas } from "./dados.js";
 import { LINGUAGENS, PERFIS, contadores, filtrar } from "./filtros.js";
 import { el, formatarMoeda, formatarMoedaCompacta, localDoEdital, plural } from "./formatos.js";
+import { AMBITOS, ehInternacional } from "./internacional.js";
 import { diasRestantes, encerrado } from "./prazos.js";
 import { renderRadar } from "./radar.js";
 
@@ -29,8 +30,10 @@ function linkExplorador(parametros) {
 
 function renderNumeros(editais) {
   const c = contadores(editais);
-  const fontes = new Set(editais.map((e) => e.fonte)).size;
+  // Os números do Brasil não mudam com as oportunidades de fora; elas têm contador próprio.
+  const fontes = new Set(editais.filter((e) => !ehInternacional(e)).map((e) => e.fonte)).size;
   $('[data-numero="abertos"]').textContent = fmt.format(c.abertos);
+  $('[data-numero="internacionais"]').textContent = fmt.format(c.internacionaisAbertos);
   $('[data-numero="encerrando"]').textContent = fmt.format(c.encerrandoEm7Dias);
   const valor = $('[data-numero="valor"]');
   valor.textContent = c.comValorInformado ? formatarMoedaCompacta(c.somaValores) : "—";
@@ -46,7 +49,7 @@ function renderSemana(editais) {
   const lista = $("#semana");
   const mais = $("#semana-mais");
   const daSemana = editais
-    .filter((e) => !encerrado(e) && diasRestantes(e.inscricao_fim) <= 7)
+    .filter((e) => !ehInternacional(e) && !encerrado(e) && diasRestantes(e.inscricao_fim) <= 7)
     .sort((a, b) => new Date(a.inscricao_fim) - new Date(b.inscricao_fim));
   if (!daSemana.length) {
     lista.replaceChildren(el("li", { class: "suave" }, "Nenhum edital encerra nos próximos 7 dias"));
@@ -77,24 +80,49 @@ function renderSemana(editais) {
   }
 }
 
+let escopoLinguagem = "brasil";
+
 function renderLinguagens(editais) {
-  const abertos = editais.filter((e) => !encerrado(e));
+  const abertos = editais.filter(
+    (e) =>
+      !encerrado(e) &&
+      (escopoLinguagem === "todos" || (escopoLinguagem === "internacional") === ehInternacional(e)),
+  );
+  $("#escopo-linguagem").replaceChildren(
+    ...AMBITOS.map((a) =>
+      el(
+        "button",
+        {
+          type: "button",
+          class: "chip",
+          "aria-pressed": String(escopoLinguagem === a.id),
+          onclick: () => {
+            escopoLinguagem = a.id;
+            renderLinguagens(editais);
+          },
+        },
+        a.rotulo,
+      ),
+    ),
+  );
+  const [um, varios] = escopoLinguagem === "internacional" ? [" oportunidade aberta", " oportunidades abertas"] : [" edital aberto", " editais abertos"];
   $("#indice-linguagem").replaceChildren(
     ...LINGUAGENS.map((nome) => {
       const total = abertos.filter((e) => e.linguagens?.includes(nome)).length;
       // O texto visível já é o nome acessível ("Música 8 editais abertos"): sem aria-label divergente.
       const conteudo = [
         el("span", { class: "indice-nome" }, nome),
-        el("span", { class: "indice-n num" }, String(total), el("span", { class: "sr-only" }, total === 1 ? " edital aberto" : " editais abertos")),
+        el("span", { class: "indice-n num" }, String(total), el("span", { class: "sr-only" }, total === 1 ? um : varios)),
       ];
       if (!total) return el("li", { class: "indice-vazio" }, conteudo);
-      return el("li", {}, el("a", { href: linkExplorador({ ling: nome }) }, conteudo));
+      const params = escopoLinguagem === "brasil" ? { ling: nome } : { ling: nome, amb: escopoLinguagem };
+      return el("li", {}, el("a", { href: linkExplorador(params) }, conteudo));
     }),
   );
 }
 
 function renderPerfis(editais) {
-  const estadoBase = { q: "", perfil: "", linguagens: [], abrangencia: "", uf: "", apenasAbertas: true };
+  const estadoBase = { q: "", perfil: "", linguagens: [], abrangencia: "", uf: "", apenasAbertas: true, ambito: "brasil" };
   $("#perfis").replaceChildren(
     ...ATALHOS_PERFIL.map(({ id, rotulo }) => {
       // Conta os que aceitam o perfil e os que não informam quem pode participar.

@@ -97,6 +97,9 @@ export function listaDeProponentes(edital) {
 
 const NOMES_FONTE = {
   curadoria: "Curadoria",
+  "curadoria-internacional": "Curadoria do portal (internacional)",
+  onthemove: "On the Move",
+  iberculturaviva: "Mapa IberCultura Viva",
   "minc-inscricoes-abertas": "Ministério da Cultura",
   "cultbr-pnab": "CultBR (MinC)",
   es: "Mapa Cultural do Espírito Santo",

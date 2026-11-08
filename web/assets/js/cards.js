@@ -8,6 +8,17 @@ import {
   localDoEdital,
   urlAssistente,
 } from "./formatos.js";
+import {
+  RESPOSTAS_VAZIAS,
+  custosCobertosEl,
+  ehInternacional,
+  fonteInternacionalEl,
+  linhaEmPortugues,
+  orgaoVisivel,
+  prazoDaFonte,
+  selosInternacionais,
+  valorOriginalEl,
+} from "./internacional.js";
 import { estadoDoPrazo } from "./prazos.js";
 
 const ICONE_FAVORITO =
@@ -88,7 +99,37 @@ export function botaoFavorito(edital, favorito, aoAlternar) {
   return botao;
 }
 
-export function criarCard(edital, { favorito, aoAbrir, aoAlternarFavorito, agora = new Date() }) {
+/** Card de oportunidade internacional: título original, linha em português (sem LLM), selos e fonte. */
+function criarCardInternacional(edital, { favorito, aoAbrir, aoAlternarFavorito, agora, respostas }) {
+  const titulo = el(
+    "button",
+    { type: "button", "aria-haspopup": "dialog", onclick: (e) => aoAbrir(edital, e.currentTarget) },
+    edital.titulo_original ?? edital.titulo,
+  );
+  return el(
+    "li",
+    {},
+    el(
+      "article",
+      { class: "card card-intl", dataset: { chave: edital.chave, ambito: edital.ambito } },
+      el("h3", { lang: edital.idioma_original ?? undefined }, titulo),
+      el("p", { class: "linha-pt" }, linhaEmPortugues(edital)),
+      orgaoVisivel(edital) ? el("p", { class: "orgao" }, orgaoVisivel(edital)) : null,
+      fonteInternacionalEl(edital),
+      badgePrazo(edital, agora),
+      el("p", { class: "prazo-fonte" }, "Prazo: ", el("span", { class: "num" }, prazoDaFonte(edital))),
+      selosInternacionais(edital, respostas),
+      custosCobertosEl(edital),
+      valorOriginalEl(edital),
+      botaoFavorito(edital, favorito, aoAlternarFavorito),
+    ),
+  );
+}
+
+export function criarCard(edital, { favorito, aoAbrir, aoAlternarFavorito, agora = new Date(), respostas = RESPOSTAS_VAZIAS }) {
+  if (ehInternacional(edital)) {
+    return criarCardInternacional(edital, { favorito, aoAbrir, aoAlternarFavorito, agora, respostas });
+  }
   const titulo = el(
     "button",
     {

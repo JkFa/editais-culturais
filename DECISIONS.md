@@ -399,3 +399,44 @@ original conflitava com o repositório (aprovadas pelo usuário em 07/11/2026):
 - **E-mail do login:** o SMTP padrão do Supabase só entrega para membros do projeto. Resend foi avaliado e **não resolve sem
   domínio próprio verificado** (a conta não tem domínio; sem ele só envia para o e-mail do dono). Para o público geral entrar é
   preciso um domínio com DNS (Resend, Brevo ou outro) e configurar *Authentication → SMTP Settings*.
+
+## Internacional, Fase 1 (07/11/2026)
+
+Pedido: `prompt-claude-code-internacional-fase1.md`. Documentação das fontes, regras e como acrescentar uma fonte:
+`docs/fontes-internacionais.md`. O que o repositório e as fontes reais contradisseram do prompt, e o que decidi:
+
+- **`abrangencia` já existia** (nacional/estadual/municipal, dentro do Brasil, com a constraint "nacional não tem UF").
+  Usar `nacional_br/internacional/estrangeiro_nacional` nela quebraria os dados atuais. Criei **`ambito`** (`brasil` por
+  padrão) e deixei `abrangencia` como estava; oportunidades de fora têm `abrangencia = null`.
+- **Hash dos editais brasileiros preservado:** os campos novos só entram em `calcular_hash()` quando há dado internacional.
+  Sem isso a primeira coleta regravaria todos os editais e zeraria o "coletado em". Teste de regressão sobre o snapshot real.
+- **Nomes e endereços do prompt:** "Ibercena" é **Iberescena** (`iberescena.org`); o Ibermedia fica em
+  `programaibermedia.com` (`ibermedia.com` é um site de software); o Ibermuseos, em `ibermuseos.org`.
+- **Só On the Move e o IberCultura Viva são coletáveis de forma estável.** O RSS dos programas ibero-americanos é de
+  notícias, não de convocatórias. Ibermúsicas (certificado TLS incompleto; não desligamos a verificação), Ibermedia (página
+  única de texto livre, convocatória 2026 já encerrada), Iberescena (JavaScript + API do CMS com 403) e Ibermuseos (prazo
+  só em texto corrido numa notícia) ficam `ativa: false` com motivo em `fontes.yaml` e entram pela curadoria. **Desvio do
+  plano aprovado:** o adaptador HTML do Ibermuseos virou curadoria, porque não há campo de prazo para ler com segurança.
+- **IberCultura Viva** não tem RSS de editais: usa um Mapas Culturais próprio (`mapa.iberculturaviva.org`), então entrou
+  como instância do coletor existente (`ambito: internacional`), sem código novo de coleta. Hoje não há edital aberto.
+- **On the Move:** o feed por busca (`news/<7 facetas>/feed`) traz prazo e link, mas não tipo nem disciplina. Leio um feed
+  por tipo e um por disciplina e cruzo pelo link (~18 requisições/dia a 3 s). Não achei termos de reutilização; o site
+  oferece o feed ao público e o `robots.txt` o permite. Mostro só título, trecho de até 320 caracteres e links.
+- **Sem prazo, não publica** (a coluna é obrigatória e o portal não chuta): vira `descartes.sem_prazo`. O prompt pedia
+  "Prazo não informado — ver chamada"; a mensagem existe no front, mas hoje nenhum registro chega lá. Prazo só com data
+  vale até 23:59:59 de Brasília e o card diz "(confira o horário na chamada)".
+- **Elegibilidade conservadora** (`worker/elegibilidade.py`): `aberto` exige frase explícita e some com qualquer negação ou
+  sinal contraditório. Bug achado em fixture real: "hosted by six partner institutions" (anfitriãs) quase virou
+  `requer_parceiro`; o padrão passou a exigir exigência sobre quem se candidata. Custos: "arranged separately" também zera.
+  Das 5 chamadas reais de teste, só 1 é "aberto" (a que cita a América Latina).
+- **Curadoria:** JSON + JSON Schema validado no CI e, em produção, o equivalente em pydantic (o worker não carrega
+  `jsonschema`). Uma entrada: 7º Fundo Ibermuseos, conferida na página oficial (prazo 05/03/2027, Brasil entre os países
+  elegíveis, só para museus). Marquei `aberto` porque a regra é "inclui o Brasil"; a observação diz que não aceita pessoas físicas.
+- **LLM:** nada de LLM no internacional; o enriquecimento Gemini passa a ignorar `ambito != brasil`.
+- **Front:** o padrão continua sendo Brasil (nada muda para quem não usa o filtro); `?amb=internacional|todos`,
+  `nac`, `res`, `org` ficam na URL. Perfil, UF e tipo de apoio somem no filtro Internacional (são do Brasil). Os números
+  da home não mudam; o contador internacional ocupa uma linha própria. Sem o botão do assistente nos cards de fora.
+- **Ordem de deploy:** aplicar a migration `20261109000000_internacional.sql` **antes** do merge. O site pede as colunas novas
+  ao Supabase (`dados.js`) e o worker as grava; sem a migration o "ao vivo" falha (cai no snapshot) e o upsert do worker erra.
+- **Fora do escopo, deixado pronto:** `valor_brl` e `resumo_pt` (colunas vazias), `prazo_fuso` (guardado para a conversão),
+  `ambito = estrangeiro_nacional`.

@@ -1,0 +1,889 @@
+[
+ {
+  "id": 587,
+  "name": "Convocatoria de Movilidad IberCultura Viva 2026/Edital de Mobilidade IberCulturaViva 2026",
+  "shortDescription": "⭕ Convocatoria de Movilidad IberCultura Viva\nParticipación en el 7° Congreso Latinoamericano y Caribeño de Culturas Vivas Comunitarias 2026\n\n⭕ Edital de Mobilidade IberCultura Viva\nParticipação no 7º Congresso Latino-americano e Caribenho de Culturas Vivas Comunitárias 2026",
+  "registrationFrom": {
+   "date": "2026-01-06 16:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2026-01-23 13:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2026-01-03 18:57:57.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "La Convocatoria de Movilidad 2026 tiene como objetivo fortalecer la participación de representantes de organizaciones culturales comunitarias, pueblos indígenas y comunidades afrodescendientes en el 7° Congreso Latinoamericano y Caribeño de Culturas Vivas Comunitarias, que se realizará en Pasto, Cali y Medellín, entre el 17 y el 26 de abril de 2026.\n\n⭕ ¿Quiénes pueden participar?\nPersonas y organizaciones de los países integrantes de IberCultura Viva: Argentina, Chile, Colombia, Costa Rica, Ecuador, El Salvador, España, México, Panamá, Paraguay, Perú, República Dominicana y Uruguay.\n\nEn el caso de Brasil, su participación no se realizará a través de la inscripción a esta Convocatoria, sino que cubrirá sus cupos de acuerdo con el proceso de selección interna que se llevará a cabo en el marco de la 6° Teia Nacional de Pontos de Cultura por la Justicia Climática, entre el 24 y el 29 de marzo de 2026, en Espírito Santo.\n\n💰 La Convocatoria destina 60.000 USD* para cubrir:\n✈️ pasajes aéreos\n🛡️ seguro de viaje\n📋 inscripción al evento\n💳 costos bancarios\n*Incluye Brasil\n\n📅 Plazo para postularse:\nLas postulaciones se abrirán el 6 de enero de 2026, a las 18:00 horas, y finalizarán el 18 de enero de 2026, a las 23:59 (hora de Buenos Aires, Argentina).\n\n📌 ¿Cómo participar?\n\n- Lee detenidamente el Reglamento.\n- Reúne la documentación necesaria.\n- Envía tu solicitud y forma parte de este movimiento.\n\n¡No pierdas la oportunidad de contribuir a la construcción de una América Latina más conectada, diversa y viva! Toda la información está disponible en el Reglamento. ¡Consulta los detalles y postúlate!\n\n///\n\nO Edital de Mobilidade 2026 tem como objetivo fortalecer a participação de representantes de organizações culturais comunitárias, povos indígenas e comunidades afrodescendentes no 7º Congresso Latino-americano e Caribenho de Culturas Vivas Comunitárias, que será realizado em Pasto, Cali e Medellín, entre 17 e 26 de abril de 2026.\n\n⭕ Quem pode participar?\nPessoas e organizações dos países integrantes do IberCultura Viva: Argentina, Chile, Colômbia, Costa Rica, Equador, El Salvador, Espanha, México, Panamá, Paraguai, Peru, República Dominicana e Uruguai.\n\nNo caso do Brasil, a participação não ocorrerá por meio da inscrição nesta Convocatória. O país cobrirá suas vagas conforme o processo de seleção interna que será realizado no âmbito da 6ª Teia Nacional de Pontos de Cultura pela Justiça Climática, entre 24 e 29 de março de 2026, no Espírito Santo.\n\n💰 A Convocatória destina 60.000 USD* para cobrir:\n✈️ passagens aéreas\n🛡️ seguro viagem\n📋 inscrição no evento\n💳 custos bancários\n* O valor inclui o Brasil\n\n📅 Prazo para inscrição:\nAs inscrições estarão abertas de 6 de janeiro de 2026, às 18h, até 18 de janeiro de 2026, às 23h59 (horário de Buenos Aires, Argentina).\n\n📌 Como participar?\n\n- Leia atentamente o Regulamento.\n- Reúna a documentação necessária.\n- Envie sua candidatura e faça parte deste movimento.\n\nNão perca a oportunidade de contribuir para a construção de uma América Latina mais conectada, - diversa e viva! Todas as informações estão disponíveis no Regulamento. Consulte os detalhes e inscreva-se!",
+  "ownerEntity": {
+   "id": 434,
+   "name": "Plan Estratégico Trienal 2024-2026",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 8,
+   "name": "Programa IberCultura Viva",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Acessibilidade Cultural",
+    "Arquivos",
+    "Arte de Rua",
+    "Artes Circenses",
+    "Artes Visuais",
+    "Artesanato",
+    "Canto",
+    "Carnaval",
+    "Cinema",
+    "Centro de Memória e patrimônio",
+    "Circo",
+    "Comunicação",
+    "Cultura Digital",
+    "Cultura LGBTQIAPN+",
+    "Cultura Negra",
+    "Cultura da juventude de povos e comunidades tradicionais",
+    "Cultura e Bem Viver",
+    "Cultura e Comunicação",
+    "Cultura e Desenvolvimento Social",
+    "Cultura e Direitos Humanos",
+    "Cultura e Educação",
+    "Cultura e Esporte",
+    "Cultura e Juventudes",
+    "Cultura e Política",
+    "Cultura e Saúde",
+    "Cultura e Território",
+    "Cultura e Turismo",
+    "Cultura, Infância e Adolescência",
+    "Cultura, Meio Ambiente e Sustentabilidade",
+    "Culturas Populares",
+    "Culturas Tradicionais",
+    "Culturas dos Povos Originários",
+    "Dança",
+    "Economia Criativa e da Cultura",
+    "Gestão Cultural",
+    "Livro, Leitura e Literatura",
+    "Patrimônio Cultural Imaterial",
+    "Políticas e Gestão Culturais",
+    "Teatro"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 210407,
+    "name": "design-sem-nome-2.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/587/design-sem-nome-2.jpg",
+    "createTimestamp": {
+     "date": "2026-01-06 13:12:10.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 210408,
+      "name": "design-sem-nome-2-4661069da62af756649de08b036fffbc.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/587/file/210407/design-sem-nome-2-4661069da62af756649de08b036fffbc.jpg",
+      "createTimestamp": {
+       "date": "2026-01-06 13:12:10.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 210409,
+      "name": "design-sem-nome-2-d76350b981880148670ec7fd71b7bb6f.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/587/file/210407/design-sem-nome-2-d76350b981880148670ec7fd71b7bb6f.jpg",
+      "createTimestamp": {
+       "date": "2026-01-06 13:12:10.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 210410,
+      "name": "design-sem-nome-2-7cf3977db2d32f324515d586e0dbe42e.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/587/file/210407/design-sem-nome-2-7cf3977db2d32f324515d586e0dbe42e.jpg",
+      "createTimestamp": {
+       "date": "2026-01-06 13:12:10.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 210419,
+     "name": "anexo-i-carta-aval-occ.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/587/anexo-i-carta-aval-occ.docx",
+     "createTimestamp": {
+      "date": "2026-01-06 16:08:49.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO I_Carta Aval_OCC",
+     "transformations": null
+    },
+    {
+     "id": 210420,
+     "name": "anexo-ii-carta-aval-gi.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/587/anexo-ii-carta-aval-gi.docx",
+     "createTimestamp": {
+      "date": "2026-01-06 16:09:14.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO II_Carta Aval_GI",
+     "transformations": null
+    },
+    {
+     "id": 210421,
+     "name": "anexo-iii-carta-aval-reppis.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/587/anexo-iii-carta-aval-reppis.docx",
+     "createTimestamp": {
+      "date": "2026-01-06 16:09:32.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO III_ Carta Aval_REPPIS",
+     "transformations": null
+    },
+    {
+     "id": 210422,
+     "name": "anexo-iv-carta-aval-red.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/587/anexo-iv-carta-aval-red.docx",
+     "createTimestamp": {
+      "date": "2026-01-06 16:09:54.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO IV _ Carta Aval_RED",
+     "transformations": null
+    },
+    {
+     "id": 210428,
+     "name": "convocatoria-de-movilidad-ibercultura-viva-2026-docx-2.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/587/convocatoria-de-movilidad-ibercultura-viva-2026-docx-2.pdf",
+     "createTimestamp": {
+      "date": "2026-01-06 16:22:15.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Reglamento Español",
+     "transformations": null
+    },
+    {
+     "id": 218766,
+     "name": "oportunidad-581--inscricoes-2026-10-27 11:37:14.xlsx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/218766/",
+     "createTimestamp": {
+      "date": "2026-10-27 11:37:16.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": null,
+     "transformations": null
+    }
+   ],
+   "rules": {
+    "id": 210427,
+    "name": "convocatoria-de-movilidad-ibercultura-viva-2026-docx.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/587/convocatoria-de-movilidad-ibercultura-viva-2026-docx.pdf",
+    "createTimestamp": {
+     "date": "2026-01-06 16:21:56.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "header": {
+    "id": 210430,
+    "name": "copia-de-copia-de-copia-de-reunion-nuevos-miembros-rede-de-cidades-e-governos-locais-es-600-x-250-px-1.png",
+    "mimeType": "image/png",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/587/copia-de-copia-de-copia-de-reunion-nuevos-miembros-rede-de-cidades-e-governos-locais-es-600-x-250-px-1.png",
+    "createTimestamp": {
+     "date": "2026-01-06 16:46:19.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 210431,
+      "name": "copia-de-copia-de-copia-de-reunion-nuevos-miembros-rede-de-cidades-e-governos-locais-es-600-x-250-px-1-5471d15d7c64d04b8d1a9e9e856fbc1f.png",
+      "mimeType": "image/png",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/587/file/210430/copia-de-copia-de-copia-de-reunion-nuevos-miembros-rede-de-cidades-e-governos-locais-es-600-x-250-px-1-5471d15d7c64d04b8d1a9e9e856fbc1f.png",
+      "createTimestamp": {
+       "date": "2026-01-06 16:46:19.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "registrations-spreadsheets": {
+    "id": 219016,
+    "name": "oportunidad-587--inscricoes-2026-11-04 15:55:13.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/219016/",
+    "createTimestamp": {
+     "date": "2026-11-04 15:55:14.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "documentary-spreadsheets": {
+    "id": 214370,
+    "name": "oportunidad-587--avaliacoes-2026-02-09 10:49:46.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/214370/",
+    "createTimestamp": {
+     "date": "2026-02-09 10:49:47.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://mapa.iberculturaviva.org/oportunidade/587/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 583,
+  "name": "Convocatoria Para Coordinadores Voluntarios Festival Grito de Mujer 2026",
+  "shortDescription": "Convocamos a personas solidarias, artistas, colectivos, instituciones y gestores/as culturales de cualquier país a unirse como colaboradores voluntarios, organizando actividades culturales alineadas a nuestras bases establecidas en favor de las mujeres y niñas inmigrantes de todo el mundo.",
+  "registrationFrom": {
+   "date": "2025-11-26 06:14:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2111-01-01 00:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2025-11-26 08:13:57.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "\nBajo el lema “Grito Sin Fronteras”, el Festival Internacional Grito de Mujer lanza su edición número 16, dedicada a visibilizar y rendir homenaje a la resiliencia, lucha y aportes de mujeres y niñas migrantes en todo el mundo.\n\nConvocamos a personas solidarias, artistas, colectivos, instituciones y gestores/as culturales de cualquier país a unirse como colaboradores voluntarios, organizando actividades artísticas, culturales o educativas alineadas con la causa y en aceptación previa con las bases establecidas.\n\nEsta cadena global de eventos, celebrados durante el mes de marzo en una treintena de países, forma parte de las iniciativas de Generación Igualdad de ONU Mujeres y la Comisión Interamericana de Mujeres (CIM-OEA), busca amplificar el mensaje de resiliencia, esperanza y justicia a través del arte y la palabra contra la violencia hacia las mujeres y las niñas en sus distintas manifestaciones.\n\nDesde el año 2011, miles de personas se han sumado creando lo que hoy se conoce como una cadena poderosa de voces en favor de una causa necesaria.\n\n¿Quieres participar como coordinador/a voluntario/a en tu ciudad o país? Solicita las bases rellenando el formulario de contacto en www.gritodemujer.com.\n\nCierre de convocatoria: 15 de febrero de 2026.\n\n\nHaz que tu voz viaje sin fronteras. Únete al grito.\n",
+  "ownerEntity": {
+   "id": 23657,
+   "name": "Grito de Mujer ",
+   "@entityType": "agent"
+  },
+  "owner": {
+   "id": 23657,
+   "name": "Grito de Mujer ",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": true,
+  "terms": {
+   "tag": [
+    "feminismo comunitario",
+    "Feminismo",
+    "activismo cultural",
+    "activismo",
+    "Activistas",
+    "arte participativo",
+    "Artivismo",
+    "artivistas",
+    "poetas",
+    "Escritora",
+    "ESCRITOR",
+    "Defensa de los derechos de las mujeres",
+    "mujeres en la Cultura",
+    "FESTIVAL",
+    "FESTIVALES",
+    "voluntariado",
+    "accion colectiva",
+    "Colaboración",
+    "Causas",
+    "inmigrantes"
+   ],
+   "area": [
+    "Artes Visuales",
+    "Artes Integradas",
+    "Cultura Extranjera (inmigrantes)",
+    "Cultura y Derechos Humanos",
+    "Gestión Cultural",
+    "Gestión creativa",
+    "Performance Literaria",
+    "Periódicos y otras publicaciones",
+    "Poesía",
+    "Producción Cultural",
+    "Producción de Eventos"
+   ]
+  },
+  "files": {
+   "header": {
+    "id": 204021,
+    "name": "facebook-cover-grito-de-mujer-2026-small.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/583/facebook-cover-grito-de-mujer-2026-small.jpg",
+    "createTimestamp": {
+     "date": "2025-11-26 08:15:18.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 204022,
+      "name": "facebook-cover-grito-de-mujer-2026-small-465563fe57ddab2de3df1e955e45967b.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/583/file/204021/facebook-cover-grito-de-mujer-2026-small-465563fe57ddab2de3df1e955e45967b.jpg",
+      "createTimestamp": {
+       "date": "2025-11-26 08:15:18.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 204027,
+    "name": "fondo-background-2026-2.png",
+    "mimeType": "image/png",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/583/fondo-background-2026-2.png",
+    "createTimestamp": {
+     "date": "2025-11-26 08:15:59.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 204028,
+      "name": "fondo-background-2026-2-6c2ef35d0f7fe5d3a6eb5732b3226927.png",
+      "mimeType": "image/png",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/583/file/204027/fondo-background-2026-2-6c2ef35d0f7fe5d3a6eb5732b3226927.png",
+      "createTimestamp": {
+       "date": "2025-11-26 08:15:59.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 204029,
+      "name": "fondo-background-2026-2-a789050b6f2fd339cbe093e236df553f.png",
+      "mimeType": "image/png",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/583/file/204027/fondo-background-2026-2-a789050b6f2fd339cbe093e236df553f.png",
+      "createTimestamp": {
+       "date": "2025-11-26 08:15:59.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 204030,
+      "name": "fondo-background-2026-2-05ff54bb397b5e43c83c630f2f0b3825.png",
+      "mimeType": "image/png",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/583/file/204027/fondo-background-2026-2-05ff54bb397b5e43c83c630f2f0b3825.png",
+      "createTimestamp": {
+       "date": "2025-11-26 08:15:59.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "gallery": [
+    {
+     "id": 204031,
+     "name": "facebook-cover-2.png",
+     "mimeType": "image/png",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/583/facebook-cover-2.png",
+     "createTimestamp": {
+      "date": "2025-11-26 08:19:04.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": null,
+     "transformations": {
+      "galleryThumb": {
+       "id": 204032,
+       "name": "facebook-cover-2-f3f761cea3b353675fa7c6ed0bd81d5d.png",
+       "mimeType": "image/png",
+       "url": "https://mapa.iberculturaviva.org/files/opportunity/583/file/204031/facebook-cover-2-f3f761cea3b353675fa7c6ed0bd81d5d.png",
+       "createTimestamp": {
+        "date": "2025-11-26 08:19:04.000000",
+        "timezone_type": 3,
+        "timezone": "Etc/GMT+3"
+       }
+      },
+      "galleryFull": {
+       "id": 204033,
+       "name": "facebook-cover-2-b78546a7f01ca8bd2d77ed8c21949a4d.png",
+       "mimeType": "image/png",
+       "url": "https://mapa.iberculturaviva.org/files/opportunity/583/file/204031/facebook-cover-2-b78546a7f01ca8bd2d77ed8c21949a4d.png",
+       "createTimestamp": {
+        "date": "2025-11-26 08:19:05.000000",
+        "timezone_type": 3,
+        "timezone": "Etc/GMT+3"
+       }
+      }
+     }
+    }
+   ],
+   "downloads": [
+    {
+     "id": 204034,
+     "name": "manual-de-procedimiento-grito-de-mujer-para-coordinadores-voluntarios.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/583/manual-de-procedimiento-grito-de-mujer-para-coordinadores-voluntarios.pdf",
+     "createTimestamp": {
+      "date": "2025-11-26 08:20:12.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Bases y Manual de Procedimiento",
+     "transformations": null
+    }
+   ]
+  },
+  "singleUrl": "https://mapa.iberculturaviva.org/oportunidade/583/",
+  "type": {
+   "id": 1,
+   "name": "Festival"
+  },
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 581,
+  "name": "Convocatoria a Becas 2026 | Posgrado en Políticas Culturales de Base Comunitaria (FLACSO Argentina–IberCultura Viva)",
+  "shortDescription": "Edital de Bolsas 2026 | Pós-graduação em Políticas Culturais de Base Comunitária (FLACSO Argentina–IberCultura Viva)",
+  "registrationFrom": {
+   "date": "2025-11-21 15:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2025-12-14 23:59:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2025-11-20 14:37:20.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "Presentación\n\n📚🪁🎓 El Programa IberCultura Viva abre la convocatoria de becas para el Posgrado Internacional en Políticas Culturales de Base Comunitaria, impartido por FLACSO-Argentina, una formación virtual que fortalece la gestión cultural comunitaria y el diálogo entre territorios, saberes y políticas públicas. Pueden postular personas con experiencia en el campo cultural, residentes en los países miembros del Programa.\n\n📅 Inscripciones: hasta el 14 de diciembre de 2025\n🌎 Países participantes: Argentina, Brasil, Chile, Colombia, Costa Rica, Ecuador, El Salvador, España, México, Panamá, Paraguay, Perú, República Dominicana y Uruguay\n🗓️ Período del curso: abril a diciembre de 2026 (modalidad virtual)\n⏱️ Dedicación requerida: mínimo 10 horas semanales\n⚖️ Equidad: al menos el 50% de las becas se destinará a mujeres\n📄 Documentación específica: algunos países solicitan registros nacionales de artistas y agentes culturales (Ecuador, República Dominicana y Chile)\n📤 Postulación: exclusivamente a través del Mapa IberCultura Viva (mapa.iberculturaviva.org)\n\n⭕️ Consultas: programa@iberculturaviva.org\n\nApresentação\n\n📚🪁🎓 O Programa IberCultura Viva abre a seleção de bolsas para o Pós-graduação Internacional em Políticas Culturais de Base Comunitária, oferecido pela FLACSO-Argentina, uma formação virtual que fortalece a gestão cultural comunitária e aproxima saberes, territórios e políticas públicas. Podem se candidatar pessoas com experiência na área cultural, residentes nos países membros do Programa.\n\n📅 Inscrições: até 14 de dezembro de 2025\n🌎 Países participantes: Argentina, Brasil, Chile, Colômbia, Costa Rica, Equador, El Salvador, Espanha, México, Panamá, Paraguai, Peru, República Dominicana e Uruguai\n🗓️ Período do curso: abril a dezembro de 2026 (modalidade virtual)\n⏱️ Dedicação mínima: 10 horas semanais\n⚖️ Equidade: pelo menos 50% das bolsas será destinado a mulheres\n📄 Documentação específica: alguns países exigem registros nacionais de artistas e agentes culturais (Equador, República Dominicana e Chile)\n📤 Envio das candidaturas: exclusivamente pelo Mapa IberCultura Viva (mapa.iberculturaviva.org)\n\n⭕️  Consultas: programa@iberculturaviva.org",
+  "ownerEntity": {
+   "id": 434,
+   "name": "Plan Estratégico Trienal 2024-2026",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 8,
+   "name": "Programa IberCultura Viva",
+   "@entityType": "agent"
+  },
+  "terms": {
+   "tag": [],
+   "area": [
+    "Gestão Cultural"
+   ]
+  },
+  "files": {
+   "avatar": {
+    "id": 203373,
+    "name": "design-sem-nome-1.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/581/design-sem-nome-1.jpg",
+    "createTimestamp": {
+     "date": "2025-11-21 10:59:21.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 203374,
+      "name": "design-sem-nome-1-f642e3ca25ff627d914622e3f2bb2055.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/581/file/203373/design-sem-nome-1-f642e3ca25ff627d914622e3f2bb2055.jpg",
+      "createTimestamp": {
+       "date": "2025-11-21 10:59:21.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 203375,
+      "name": "design-sem-nome-1-49425f23c1532db55116c6e5d9fcca6e.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/581/file/203373/design-sem-nome-1-49425f23c1532db55116c6e5d9fcca6e.jpg",
+      "createTimestamp": {
+       "date": "2025-11-21 10:59:21.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 203376,
+      "name": "design-sem-nome-1-8c65105d9721333fc12c9279f05ee4da.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/581/file/203373/design-sem-nome-1-8c65105d9721333fc12c9279f05ee4da.jpg",
+      "createTimestamp": {
+       "date": "2025-11-21 10:59:21.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "rules": {
+    "id": 203377,
+    "name": "convocatoria-becas-para-el-posgrado-flacso-ibercultura-viva-2026-docx.pdf",
+    "mimeType": "application/pdf",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/581/convocatoria-becas-para-el-posgrado-flacso-ibercultura-viva-2026-docx.pdf",
+    "createTimestamp": {
+     "date": "2025-11-21 16:13:45.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "downloads": [
+    {
+     "id": 203378,
+     "name": "declaracion-jurada-de-compromiso-para-el-cursado-2026.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/581/declaracion-jurada-de-compromiso-para-el-cursado-2026.docx",
+     "createTimestamp": {
+      "date": "2025-11-21 16:14:07.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Declaración Jurada (ES/PORT)",
+     "transformations": null
+    },
+    {
+     "id": 219017,
+     "name": "oportunidad-574--inscricoes-2026-11-04 16:16:13.xlsx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/219017/",
+     "createTimestamp": {
+      "date": "2026-11-04 16:16:13.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": null,
+     "transformations": null
+    }
+   ],
+   "header": {
+    "id": 203379,
+    "name": "copia-de-becas-ultimos-dias-2560-x-1440-px-1750-x-400-px-3.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/581/copia-de-becas-ultimos-dias-2560-x-1440-px-1750-x-400-px-3.jpg",
+    "createTimestamp": {
+     "date": "2025-11-21 16:21:02.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 203380,
+      "name": "copia-de-becas-ultimos-dias-2560-x-1440-px-1750-x-400-px-3-11aff523389c8ae80077feb57654c3af.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/581/file/203379/copia-de-becas-ultimos-dias-2560-x-1440-px-1750-x-400-px-3-11aff523389c8ae80077feb57654c3af.jpg",
+      "createTimestamp": {
+       "date": "2025-11-21 16:21:02.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "registrations-spreadsheets": {
+    "id": 218766,
+    "name": "oportunidad-581--inscricoes-2026-10-27 11:37:14.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/218766/",
+    "createTimestamp": {
+     "date": "2026-10-27 11:37:16.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   },
+   "documentary-spreadsheets": {
+    "id": 214320,
+    "name": "oportunidad-581--avaliacoes-2026-01-30 10:48:32.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/214320/",
+    "createTimestamp": {
+     "date": "2026-01-30 10:48:33.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://mapa.iberculturaviva.org/oportunidade/581/",
+  "type": {
+   "id": 9,
+   "name": "Edital"
+  },
+  "isContinuousFlow": null,
+  "@entityType": "opportunity"
+ },
+ {
+  "id": 574,
+  "name": "Concurso de Cortos Audiovisuales IberCultura Viva  “Tesoros Vivos, memoria y territorios”",
+  "shortDescription": "🎥 Reconocimiento a las comunidades y a las maestras y maestros de la cultura popular que mantienen viva la memoria iberoamericana. El concurso celebra sus saberes y tradiciones.\n\n🎥 Reconhecimento às comunidades e às mestras e mestres da cultura popular que mantêm viva a memória ibero-americana. O concurso celebra seus saberes e tradições. \n",
+  "registrationFrom": {
+   "date": "2025-10-13 16:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "registrationTo": {
+   "date": "2025-10-30 18:00:00.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "createTimestamp": {
+   "date": "2025-09-23 09:44:52.000000",
+   "timezone_type": 3,
+   "timezone": "Etc/GMT+3"
+  },
+  "publishTimestamp": null,
+  "status": 1,
+  "longDescription": "🎥 El concurso de cortometrajes “Tesoros Vivos, memoria y territorios”, del Programa IberCultura Viva, reconoce y valora las acciones de maestras, maestros y comunidades de la cultura popular iberoamericana que mantienen vivos sus saberes, oficios y tradiciones. Pueden participar personas integrantes de colectivos culturales o avaladas por ellos, residentes en los países miembros del Programa.\n\n📅 Inscripciones: hasta el 30 de octubre de 2025, a las 18 h (hora de Buenos Aires)\n\n🌎 Países participantes: Argentina, Brasil, Chile, Colombia, Costa Rica, Ecuador, España, El Salvador, México, Panamá, Paraguay, Perú, República Dominicana y Uruguay\n\n🎬 Duración de los videos: de 1 a 7 minutos, con clasificación apta para todo público\n\n📱 Formato: pueden ser grabados con cualquier dispositivo (celular, cámara, etc.) y en cualquier género audiovisual\n\n🗣️ Idiomas: español, portugués o lenguas originarias (con traducción al ES o PT)\n\n🚫 No se aceptarán videos generados por inteligencia artificial\n\n💰 Premios: 5 obras seleccionadas recibirán US$ 3.000 cada una\n\n🎥 Criterios de evaluación: adecuación al tema, perspectiva de género y diversidad, vínculo comunitario, calidad técnica y producción colaborativa\n\n📤 Envío: exclusivamente a través del Mapa IberCultura Viva (mapa.iberculturaviva.org), con enlace al video y documentación requerida\n\n⭕️ Más información: iberculturaviva.org\n❓Consultas: programa@iberculturaviva.org\n\n///\n\nO concurso de curtas “Tesouros Vivos, memória e territórios”, do Programa IberCultura Viva, reconhece e valoriza as ações de mestras, mestres e comunidades da cultura popular ibero-americana que mantêm vivos seus saberes, ofícios e tradições. Podem participar pessoas integrantes de coletivos culturais ou indicadas por eles, residentes nos países membros do Programa.\n\n📅 Inscrições: até 30 de outubro de 2025, às 18h (horário de Buenos Aires)\n\n🌎 Países participantes: Argentina, Brasil, Chile, Colômbia, Costa Rica, Equador, Espanha, El Salvador, México, Panamá, Paraguai, Peru, República Dominicana e Uruguai\n\n🎬 Duração dos vídeos: de 1 a 7 minutos, com classificação indicativa livre\n\n📱 Formato: podem ser gravados em qualquer dispositivo (celular, câmera, etc.) e em qualquer gênero audiovisual\n\n🗣️ Idiomas: espanhol, português ou línguas originárias (com tradução ao PT e ES)\n\n🚫 Não serão aceitos vídeos gerados por inteligência artificial\n\n💰 Premiação: 5 obras selecionadas receberão US$ 3.000 cada\n\n🎥 Critérios de avaliação: adequação ao tema, perspectiva de gênero e diversidade, vínculo comunitário, qualidade técnica e produção colaborativa\n\n📤 Envio: exclusivamente pelo Mapa IberCultura Viva (mapa.iberculturaviva.org), com link do vídeo e documentação exigida\n\n⭕️ Saiba mais: iberculturaviva.org\n❓Consultas: programa@iberculturaviva.org\n",
+  "ownerEntity": {
+   "id": 434,
+   "name": "Plan Estratégico Trienal 2024-2026",
+   "@entityType": "project"
+  },
+  "owner": {
+   "id": 8,
+   "name": "Programa IberCultura Viva",
+   "@entityType": "agent"
+  },
+  "isContinuousFlow": false,
+  "terms": {
+   "tag": [
+    "IberCultura Viva",
+    "concurso",
+    "curta-metragem",
+    "cortometraje",
+    "tesouros vivos",
+    "mestras e mestres da cultura popular",
+    "maestras y maestros de la cultura popular"
+   ],
+   "area": [
+    "Patrimonio Cultural Inmaterial"
+   ]
+  },
+  "files": {
+   "header": {
+    "id": 201974,
+    "name": "copia-de-live-edital-de-mobilidade-convocatoria-de-movilidad-2560-x-1300-px-2560-x-1000-px-2560-x-700-px-1980-x-400-px-4.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/574/copia-de-live-edital-de-mobilidade-convocatoria-de-movilidad-2560-x-1300-px-2560-x-1000-px-2560-x-700-px-1980-x-400-px-4.jpg",
+    "createTimestamp": {
+     "date": "2025-10-10 07:47:50.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "header": {
+      "id": 201975,
+      "name": "copia-de-live-edital-de-mobilidade-convocatoria-de-movilidad-2560-x-1300-px-2560-x-1000-px-2560-x-700-px-1980-x-400-px-4-fe9487dcc846f785412b82eac9677bf2.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/574/file/201974/copia-de-live-edital-de-mobilidade-convocatoria-de-movilidad-2560-x-1300-px-2560-x-1000-px-2560-x-700-px-1980-x-400-px-4-fe9487dcc846f785412b82eac9677bf2.jpg",
+      "createTimestamp": {
+       "date": "2025-10-10 07:47:50.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "avatar": {
+    "id": 201980,
+    "name": "design-sem-nome-1.jpg",
+    "mimeType": "image/jpeg",
+    "url": "https://mapa.iberculturaviva.org/files/opportunity/574/design-sem-nome-1.jpg",
+    "createTimestamp": {
+     "date": "2025-10-10 07:51:51.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": {
+     "avatarSmall": {
+      "id": 201981,
+      "name": "design-sem-nome-1-54282395a2785e3a690ae41d976e3c5b.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/574/file/201980/design-sem-nome-1-54282395a2785e3a690ae41d976e3c5b.jpg",
+      "createTimestamp": {
+       "date": "2025-10-10 07:51:51.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarMedium": {
+      "id": 201982,
+      "name": "design-sem-nome-1-c5458b4abd6b33eaa7e75ae46945a097.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/574/file/201980/design-sem-nome-1-c5458b4abd6b33eaa7e75ae46945a097.jpg",
+      "createTimestamp": {
+       "date": "2025-10-10 07:51:51.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     },
+     "avatarBig": {
+      "id": 201983,
+      "name": "design-sem-nome-1-5c2142015507d646844b0deecfa61b70.jpg",
+      "mimeType": "image/jpeg",
+      "url": "https://mapa.iberculturaviva.org/files/opportunity/574/file/201980/design-sem-nome-1-5c2142015507d646844b0deecfa61b70.jpg",
+      "createTimestamp": {
+       "date": "2025-10-10 07:51:51.000000",
+       "timezone_type": 3,
+       "timezone": "Etc/GMT+3"
+      }
+     }
+    }
+   },
+   "downloads": [
+    {
+     "id": 201986,
+     "name": "anexo-1-termino-cesion-derechos-concurso-tesoros-vivos-2025.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/574/anexo-1-termino-cesion-derechos-concurso-tesoros-vivos-2025.docx",
+     "createTimestamp": {
+      "date": "2025-10-10 11:18:03.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO 1 - OBLIGATORIO - Español",
+     "transformations": null
+    },
+    {
+     "id": 201987,
+     "name": "anexo-2-consentimiento-concurso-tesoros-vivos-2025.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/574/anexo-2-consentimiento-concurso-tesoros-vivos-2025.docx",
+     "createTimestamp": {
+      "date": "2025-10-10 11:18:19.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO 2 - Español",
+     "transformations": null
+    },
+    {
+     "id": 201990,
+     "name": "port-anexo-1-termo-de-autoria-e-cessao-de-direitos-concurso-tesoros-vivos-2025.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/574/port-anexo-1-termo-de-autoria-e-cessao-de-direitos-concurso-tesoros-vivos-2025.docx",
+     "createTimestamp": {
+      "date": "2025-10-10 14:32:29.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO 1 - OBRIGATÓRIO - Português",
+     "transformations": null
+    },
+    {
+     "id": 201991,
+     "name": "port-anexo-2-cessao-direitos-de-imagem-concurso-tesouros-vivos-2025.docx",
+     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/574/port-anexo-2-cessao-direitos-de-imagem-concurso-tesouros-vivos-2025.docx",
+     "createTimestamp": {
+      "date": "2025-10-10 14:32:44.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "ANEXO 2 - Português",
+     "transformations": null
+    },
+    {
+     "id": 202010,
+     "name": "es-concurso-de-cortos-audiovisuales-2025-ibercultura-viva-tesoros-vivos.pdf",
+     "mimeType": "application/pdf",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/574/es-concurso-de-cortos-audiovisuales-2025-ibercultura-viva-tesoros-vivos.pdf",
+     "createTimestamp": {
+      "date": "2025-10-13 16:07:24.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     },
+     "description": "Reglamento Español",
+     "transformations": null
+    },
+    {
+     "id": 201227,
+     "name": "img-9587-c0310448e4b5ae12fed692e192274ea5.jpeg",
+     "mimeType": "image/jpeg",
+     "url": "https://mapa.iberculturaviva.org/files/opportunity/570/file/201225/img-9587-c0310448e4b5ae12fed692e192274ea5.jpeg",
+     "createTimestamp": {
+      "date": "2025-08-31 09:35:53.000000",
+      "timezone_type": 3,
+      "timezone": "Etc/GMT+3"
+     }
+    }
+   ],
+   "registrations-spreadsheets": {
+    "id": 219017,
+    "name": "oportunidad-574--inscricoes-2026-11-04 16:16:13.xlsx",
+    "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "url": "https://mapa.iberculturaviva.org/file/arquivo-privado/219017/",
+    "createTimestamp": {
+     "date": "2026-11-04 16:16:13.000000",
+     "timezone_type": 3,
+     "timezone": "Etc/GMT+3"
+    },
+    "description": null,
+    "transformations": null
+   }
+  },
+  "singleUrl": "https://mapa.iberculturaviva.org/oportunidade/574/",
+  "type": {
+   "id": 10,
+   "name": "Concurso"
+  },
+  "@entityType": "opportunity"
+ }
+]

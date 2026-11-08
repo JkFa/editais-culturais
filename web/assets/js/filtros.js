@@ -1,5 +1,6 @@
 // Estado dos filtros e funções puras de filtragem, ordenação e contagem.
 import { semAcento } from "./formatos.js";
+import { ehInternacional, nomeDoPais, nomesDoDestino, passaNasRespostas } from "./internacional.js";
 import { diasRestantes, encerrado } from "./prazos.js";
 
 export const LINGUAGENS = [
@@ -43,6 +44,10 @@ export function estadoInicial() {
     perfil: "",
     linguagens: [],
     abrangencia: "", // "" | "nacional"
+    ambito: "brasil", // "brasil" | "internacional" | "todos"
+    nacionalidade: "", // "" | "brasileira" | "outra" (só internacional)
+    residencia: "", // "" | código ISO do país | "OUTRO" (só internacional)
+    organizacao: "", // "" | "sim" | "nao" (só internacional)
     uf: "",
     tipoApoio: "",
     apenasAbertas: true,
@@ -53,7 +58,15 @@ export function estadoInicial() {
 
 export function haystack(edital) {
   return semAcento(
-    [edital.titulo, edital.orgao_fomento, edital.resumo_simples, edital.municipio, edital.uf].join(" "),
+    [
+      edital.titulo,
+      edital.titulo_original,
+      edital.orgao_fomento,
+      edital.resumo_simples,
+      edital.municipio,
+      edital.uf,
+      ...(ehInternacional(edital) ? nomesDoDestino(edital.pais_destino) : []),
+    ].join(" "),
   );
 }
 
@@ -72,6 +85,16 @@ export function filtrar(editais, estado, agora = new Date(), chavesServidor = nu
   const termos = semAcento(estado.q).split(/\s+/).filter(Boolean);
   return editais.filter((e) => {
     if (estado.apenasAbertas && encerrado(e, agora)) return false;
+    const fora = ehInternacional(e);
+    const ambito = estado.ambito ?? "brasil"; // estados antigos, sem o campo, são do Brasil
+    if (ambito === "brasil" && fora) return false;
+    if (ambito === "internacional" && !fora) return false;
+    if (fora) {
+      // Perfil, UF, abrangência e tipo de apoio são do Brasil: não valem para oportunidades de fora.
+      if (estado.linguagens.length && !estado.linguagens.some((l) => e.linguagens?.includes(l))) return false;
+      if (!passaNasRespostas(e, estado)) return false;
+      return bateComBusca(e, termos, chavesServidor);
+    }
     // Proponentes vazio = elegibilidade desconhecida: continua visível.
     if (estado.perfil && e.proponentes?.length && !e.proponentes.includes(estado.perfil)) return false;
     if (estado.linguagens.length && !estado.linguagens.some((l) => e.linguagens?.includes(l))) return false;
@@ -108,13 +131,18 @@ export function ordenar(editais, ordem) {
 
 /** Contadores do cabeçalho. O radar nunca entra aqui. */
 export function contadores(editais, agora = new Date()) {
-  const abertos = editais.filter((e) => !encerrado(e, agora));
+  const abertosTodos = editais.filter((e) => !encerrado(e, agora));
+  // Os números do Brasil não mudam com as oportunidades de fora; elas têm contador próprio.
+  const abertos = abertosTodos.filter((e) => !ehInternacional(e));
+  const internacionais = abertosTodos.filter(ehInternacional);
   const comValor = abertos.filter((e) => e.valor_total != null);
   return {
     abertos: abertos.length,
     encerrandoEm7Dias: abertos.filter((e) => diasRestantes(e.inscricao_fim, agora) <= 7).length,
     comValorInformado: comValor.length,
     somaValores: comValor.reduce((soma, e) => soma + e.valor_total, 0),
+    internacionaisAbertos: internacionais.length,
+    internacionaisEncerrandoEm7Dias: internacionais.filter((e) => diasRestantes(e.inscricao_fim, agora) <= 7).length,
   };
 }
 
@@ -123,6 +151,11 @@ export function filtrosAtivos(estado) {
   if (estado.q) ativos.push({ id: "q", rotulo: `busca "${estado.q}"` });
   if (estado.perfil) ativos.push({ id: "perfil", rotulo: PERFIS.find((p) => p.id === estado.perfil)?.rotulo ?? estado.perfil });
   for (const l of estado.linguagens) ativos.push({ id: `ling:${l}`, rotulo: l });
+  if (estado.ambito === "internacional") ativos.push({ id: "ambito", rotulo: "Internacional" });
+  if (estado.ambito === "todos") ativos.push({ id: "ambito", rotulo: "Brasil e internacional" });
+  if (estado.nacionalidade) ativos.push({ id: "nacionalidade", rotulo: estado.nacionalidade === "brasileira" ? "Nacionalidade brasileira" : "Outra nacionalidade" });
+  if (estado.residencia) ativos.push({ id: "residencia", rotulo: `Moro em ${estado.residencia === "OUTRO" ? "outro país" : nomeDoPais(estado.residencia)}` });
+  if (estado.organizacao) ativos.push({ id: "organizacao", rotulo: estado.organizacao === "sim" ? "Tenho organização" : "Sem organização" });
   if (estado.abrangencia) ativos.push({ id: "abrangencia", rotulo: "Nacional" });
   if (estado.uf) ativos.push({ id: "uf", rotulo: estado.uf });
   if (estado.tipoApoio) {

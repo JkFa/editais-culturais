@@ -12,7 +12,9 @@ const COLUNAS = [
   "exige_contrapartida", "marco_legal", "documentos_exigidos", "cronograma", "tipo_apoio",
   "verificado_em", "pendencias", "inscricao_inicio", "inscricao_fim", "fim_tem_horario",
   "publicado_em", "coletado_em", "atualizado_em", "proveniencia", "via", "fontes_alternativas",
-  "requisitos",
+  "requisitos", "ambito", "pais_destino", "elegibilidade_br", "tipo_oportunidade", "custos_cobertos",
+  "idioma_original", "moeda", "valor_original", "valor_brl", "prazo_original", "prazo_fuso",
+  "titulo_original", "resumo_pt",
 ].join(",");
 
 export function configurado(config) {

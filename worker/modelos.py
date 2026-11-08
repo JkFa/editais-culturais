@@ -12,6 +12,7 @@ import json
 from datetime import UTC, datetime
 from decimal import Decimal
 from typing import Any, Literal
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
@@ -30,6 +31,14 @@ UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC S
 
 Via = Literal["regex", "llm", "curadoria", "api"]
 Abrangencia = Literal["nacional", "estadual", "municipal"]
+# Âmbito: onde está a oportunidade em relação ao Brasil. `abrangencia` (acima) continua só para
+# editais brasileiros (nacional/estadual/municipal); `ambito` separa o que é de fora.
+Ambito = Literal["brasil", "internacional", "estrangeiro_nacional"]
+ElegibilidadeBr = Literal["aberto", "requer_residencia", "requer_parceiro", "verificar"]
+TipoOportunidade = Literal[
+    "residencia", "mobilidade", "projeto", "premio", "formacao", "apresentacao", "outro"
+]
+CUSTOS_COBERTOS = ("viagem", "hospedagem", "cache", "producao", "alimentacao", "acessibilidade")
 
 TIPOS_APOIO = (
     "fomento_em_dinheiro",
@@ -39,6 +48,12 @@ TIPOS_APOIO = (
     "credenciamento",
 )
 TIPOS_FONTE = ("oficial", "plataforma", "descoberta")
+
+CAMPOS_INTERNACIONAIS = (
+    "ambito", "pais_destino", "elegibilidade_br", "tipo_oportunidade", "custos_cobertos",
+    "idioma_original", "moeda", "valor_original", "valor_brl", "prazo_original", "prazo_fuso",
+    "titulo_original", "resumo_pt",
+)  # fmt: skip
 
 LIMITE_RESUMO_ORIGINAL = 2000
 LIMITE_RESUMO_SIMPLES = 280
@@ -89,7 +104,22 @@ class EditalBruto(BaseModel):
     verificado_em: str | None = None
     pendencias: str | None = None
 
-    @field_validator("inscricao_inicio", "inscricao_fim", "publicado_em")
+    # Internacional (Fase 1). Os padrões deixam os editais brasileiros exatamente como eram.
+    ambito: Ambito = "brasil"
+    pais_destino: str | None = None
+    elegibilidade_br: ElegibilidadeBr = "verificar"
+    tipo_oportunidade: TipoOportunidade | None = None
+    custos_cobertos: list[str] | None = None
+    idioma_original: str | None = None
+    moeda: str | None = None
+    valor_original: Decimal | None = None
+    valor_brl: Decimal | None = None  # Fase 2 (câmbio)
+    prazo_original: datetime | None = None
+    prazo_fuso: str | None = None
+    titulo_original: str | None = None
+    resumo_pt: str | None = None  # Fase 2 (tradução)
+
+    @field_validator("inscricao_inicio", "inscricao_fim", "publicado_em", "prazo_original")
     @classmethod
     def _exige_fuso(cls, v: datetime | None) -> datetime | None:
         if v is not None and v.tzinfo is None:
@@ -135,6 +165,21 @@ class Edital(BaseModel):
     fontes_alternativas: list[dict[str, str | None]] | None = None
     requisitos: list[str] | None = None
 
+    # Internacional (Fase 1). Os padrões deixam os editais brasileiros exatamente como eram.
+    ambito: Ambito = "brasil"
+    pais_destino: str | None = None
+    elegibilidade_br: ElegibilidadeBr = "verificar"
+    tipo_oportunidade: TipoOportunidade | None = None
+    custos_cobertos: list[str] | None = None
+    idioma_original: str | None = None
+    moeda: str | None = None
+    valor_original: Decimal | None = None
+    valor_brl: Decimal | None = None  # Fase 2 (câmbio)
+    prazo_original: datetime | None = None
+    prazo_fuso: str | None = None
+    titulo_original: str | None = None
+    resumo_pt: str | None = None  # Fase 2 (tradução)
+
     @model_validator(mode="after")
     def _valida(self) -> Edital:
         if self.tipo_apoio is not None and self.tipo_apoio not in TIPOS_APOIO:
@@ -149,7 +194,17 @@ class Edital(BaseModel):
             raise ValueError(f"UF inválida: {self.uf}")
         if self.abrangencia == "nacional" and self.uf is not None:
             raise ValueError("edital nacional não pode ter UF")
-        for campo in ("valor_total", "teto_por_projeto"):
+        invalidos = [x for x in (self.custos_cobertos or []) if x not in CUSTOS_COBERTOS]
+        if invalidos:
+            raise ValueError(f"custos_cobertos inválidos: {invalidos}")
+        if self.ambito != "brasil" and self.abrangencia is not None:
+            raise ValueError("`abrangencia` é só para editais do Brasil; use `ambito`")
+        if self.prazo_fuso is not None:
+            try:
+                ZoneInfo(self.prazo_fuso)
+            except (ZoneInfoNotFoundError, ValueError) as exc:
+                raise ValueError(f"prazo_fuso inválido: {self.prazo_fuso}") from exc
+        for campo in ("valor_total", "teto_por_projeto", "valor_original", "valor_brl"):
             valor = getattr(self, campo)
             if valor is not None and valor < 0:
                 raise ValueError(f"{campo} negativo")
@@ -169,6 +224,8 @@ class Edital(BaseModel):
         dados = self.model_dump(mode="json")
         dados["valor_total"] = _num(self.valor_total)
         dados["teto_por_projeto"] = _num(self.teto_por_projeto)
+        dados["valor_original"] = _num(self.valor_original)
+        dados["valor_brl"] = _num(self.valor_brl)
         return dados
 
     def calcular_hash(self) -> str:
@@ -176,6 +233,13 @@ class Edital(BaseModel):
         dados = self.para_linha()
         for campo in ("coletado_em", "atualizado_em", "hash_conteudo"):
             dados.pop(campo, None)
+        if self.ambito == "brasil" and not any(
+            dados[c] for c in CAMPOS_INTERNACIONAIS if c not in ("ambito", "elegibilidade_br")
+        ):
+            # Edital brasileiro sem nada de internacional: o hash é o de antes dos campos novos,
+            # para a coleta de hoje não regravar nem mudar o "coletado em" dos editais existentes.
+            for campo in CAMPOS_INTERNACIONAIS:
+                dados.pop(campo, None)
         bruto = json.dumps(dados, sort_keys=True, ensure_ascii=False)
         return hashlib.sha256(bruto.encode()).hexdigest()
 

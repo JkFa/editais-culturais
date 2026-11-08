@@ -868,7 +868,8 @@ select.chip {
 
 .barra-site nav {
   display: flex;
-  gap: 0.25rem;
+  flex-wrap: wrap;
+  gap: 0 0.25rem;
 }
 
 .barra-site nav a {
@@ -877,6 +878,15 @@ select.chip {
   min-height: var(--alvo-toque);
   padding-inline: 0.6rem;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 26rem) {
+  /* Quatro links numa linha só em 360 px. */
+  .barra-site nav a {
+    padding-inline: 0.35rem;
+    font-size: 0.875rem;
+  }
 }
 
 .barra-site nav a:hover,
@@ -1239,4 +1249,100 @@ body {
   color: var(--cor-texto);
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+/* ---------------------------------------------------------------- internacional (Fase 1) */
+.grupo-filtro[hidden] {
+  display: none;
+}
+
+.perguntas-intl {
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.pergunta-intl {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+}
+
+.pergunta-intl select {
+  width: 100%;
+  min-height: var(--alvo-toque);
+}
+
+.card-intl .linha-pt {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--cor-texto-suave);
+}
+
+.card-intl .via-intl {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.card-intl .via-intl a,
+.painel .links a {
+  color: var(--cor-texto);
+}
+
+.card-intl .prazo-fonte,
+.card-intl .valor-original {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.pilulas-intl .pilula.destaque {
+  border-color: var(--cor-aberto);
+  color: var(--cor-aberto);
+  font-weight: 600;
+}
+
+.pilulas-intl .pilula.selo-idioma {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.custos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+  color: var(--cor-texto-suave);
+}
+
+.custos li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.icone-custo svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.painel .linha-pt {
+  margin: 0 0 0.75rem;
+  color: var(--cor-texto-suave);
+}
+
+.aviso-intl {
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.75rem;
+  border-left: 3px solid var(--cor-texto);
+  background: var(--cor-destaque-fundo);
+  font-size: 0.875rem;
 }

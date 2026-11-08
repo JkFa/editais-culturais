@@ -140,6 +140,15 @@ Hoje são 17 fontes novas ativas além das instâncias de Mapas Culturais e da c
 saúde e motivo das desativadas, está em `/sobre/` e em `DECISIONS.md`). Tipos: **oficial**, **plataforma** (com
 "via ...") e **descoberta** (agregadores: só o link é lido; o edital passa pela fila de curadoria).
 
+### Oportunidades internacionais (Fase 1)
+
+Além dos editais do Brasil, o portal lista chamadas de fora do país abertas a brasileiros (residências,
+mobilidade, fomento) no filtro **Internacional**: feed RSS da rede **On the Move**, o mapa do **IberCultura Viva** e
+uma curadoria manual em JSON (`worker/curadoria_internacional.json`, validada por schema no CI). O selo "Aberto a
+brasileiros" só aparece quando a própria fonte diz isso; na dúvida, "Verificar elegibilidade". Fontes, regras de
+mapeamento, `robots.txt`, como acrescentar uma fonte e o roadmap: [`docs/fontes-internacionais.md`](docs/fontes-internacionais.md).
+A migration `20261109000000_internacional.sql` precisa estar aplicada **antes** do deploy do site e do worker.
+
 ### Fila de curadoria
 
 Candidatos viram Issues com a etiqueta `candidato`: fontes de descoberta, editais sem prazo legível e vigias de

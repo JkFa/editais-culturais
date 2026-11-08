@@ -15,7 +15,7 @@ from datetime import datetime
 from typing import Any
 
 from .catalogo import FonteConfig, StatusFonte, status_de, status_desativada
-from .coletores import cultbr, minc, radar_emma, vigia
+from .coletores import cultbr, minc, onthemove, radar_emma, vigia
 from .coletores.base import ResultadoFonte
 from .fila import Candidato
 from .web import BloqueadoPorRobots, BloqueioDeAcesso, ClienteWeb
@@ -50,6 +50,8 @@ async def _rodar_uma(
         )
     if f.coletor == "minc":
         return await minc.coletar(cliente, f.url, intervalo, agora, f.id)
+    if f.coletor == "onthemove":
+        return await onthemove.coletar(cliente, f.url, intervalo, agora, f.id)
     if f.coletor == "cultbr":
         return await cultbr.coletar(
             cliente, f.url, intervalo, urls_conhecidas, marcadores, agora, f.id
