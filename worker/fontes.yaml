@@ -146,6 +146,270 @@ instancias:
     termos_conferidos_em: "2026-11-07"
     ativa: true
 
+  - slug: maua-sp
+    nome: "Mapa Cultural de Mauá (SP)"
+    base_url: https://mapacultural.maua.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: "Mauá"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: paulista-pe
+    nome: "Mapa Cultural de Paulista (PE)"
+    base_url: https://mapacultural.paulista.pe.gov.br
+    abrangencia: municipal
+    uf: PE
+    municipio: "Paulista"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: pelotas-rs
+    nome: "Mapa Cultural de Pelotas (RS)"
+    base_url: https://mapacultural.pelotas.rs.gov.br
+    abrangencia: municipal
+    uf: RS
+    municipio: "Pelotas"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: petrolina-pe
+    nome: "Mapa Cultural de Petrolina (PE)"
+    base_url: https://mapacultural.petrolina.pe.gov.br
+    abrangencia: municipal
+    uf: PE
+    municipio: "Petrolina"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: arapiraca-al
+    nome: "Mapa Cultural de Arapiraca (AL)"
+    base_url: https://mapacultural.arapiraca.al.gov.br
+    abrangencia: municipal
+    uf: AL
+    municipio: "Arapiraca"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: gravatai-rs
+    nome: "Mapa Cultural de Gravataí (RS)"
+    base_url: https://mapacultural.gravatai.rs.gov.br
+    abrangencia: municipal
+    uf: RS
+    municipio: "Gravataí"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: maracanau-ce
+    nome: "Mapa Cultural de Maracanaú (CE)"
+    base_url: https://mapacultural.maracanau.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Maracanaú"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: santaluzia-mg
+    nome: "Mapa Cultural de Santa Luzia (MG)"
+    base_url: https://mapacultural.santaluzia.mg.gov.br
+    abrangencia: municipal
+    uf: MG
+    municipio: "Santa Luzia"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: crato-ce
+    nome: "Mapa Cultural de Crato (CE)"
+    base_url: https://mapacultural.crato.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Crato"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: itapipoca-ce
+    nome: "Mapa Cultural de Itapipoca (CE)"
+    base_url: https://mapacultural.itapipoca.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Itapipoca"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: itatiba-sp
+    nome: "Mapa Cultural de Itatiba (SP)"
+    base_url: https://mapacultural.itatiba.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: "Itatiba"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: maranguape-ce
+    nome: "Mapa Cultural de Maranguape (CE)"
+    base_url: https://mapacultural.maranguape.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Maranguape"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: novalima-mg
+    nome: "Mapa Cultural de Nova Lima (MG)"
+    base_url: https://mapacultural.novalima.mg.gov.br
+    abrangencia: municipal
+    uf: MG
+    municipio: "Nova Lima"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: ribeiraopires-sp
+    nome: "Mapa Cultural de Ribeirão Pires (SP)"
+    base_url: https://mapacultural.ribeiraopires.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: "Ribeirão Pires"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: quixada-ce
+    nome: "Mapa Cultural de Quixadá (CE)"
+    base_url: https://mapacultural.quixada.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Quixadá"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: redencao-pa
+    nome: "Mapa Cultural de Redenção (PA)"
+    base_url: https://mapacultural.redencao.pa.gov.br
+    abrangencia: municipal
+    uf: PA
+    municipio: "Redenção"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: aquiraz-ce
+    nome: "Mapa Cultural de Aquiraz (CE)"
+    base_url: https://mapacultural.aquiraz.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Aquiraz"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: caninde-ce
+    nome: "Mapa Cultural de Canindé (CE)"
+    base_url: https://mapacultural.caninde.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Canindé"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: crateus-ce
+    nome: "Mapa Cultural de Crateús (CE)"
+    base_url: https://mapacultural.crateus.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Crateús"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: ico-ce
+    nome: "Mapa Cultural de Icó (CE)"
+    base_url: https://mapacultural.ico.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Icó"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: lagoasanta-mg
+    nome: "Mapa Cultural de Lagoa Santa (MG)"
+    base_url: https://mapacultural.lagoasanta.mg.gov.br
+    abrangencia: municipal
+    uf: MG
+    municipio: "Lagoa Santa"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: moradanova-ce
+    nome: "Mapa Cultural de Morada Nova (CE)"
+    base_url: https://mapacultural.moradanova.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Morada Nova"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: pacajus-ce
+    nome: "Mapa Cultural de Pacajus (CE)"
+    base_url: https://mapacultural.pacajus.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Pacajus"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
+  - slug: russas-ce
+    nome: "Mapa Cultural de Russas (CE)"
+    base_url: https://mapacultural.russas.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Russas"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-08: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
 # ---------------------------------------------------------------------------------------------
 # v4: novas fontes. `tipo`: oficial (publica com evidência) | plataforma (idem, com "via X") |
 # descoberta (nunca publica: só abre candidato na fila de curadoria).
