@@ -1,0 +1,15 @@
+{
+  "descricao": "Domínios sem terminação oficial (.gov.br, .leg.br, .mp.br, .jus.br) cujos candidatos podem ser publicados automaticamente. Cada entrada foi aprovada pelo dono do projeto. `host` cobre também os subdomínios. `uf` e `abrangencia` (nacional, estadual ou municipal) vêm daqui porque o domínio não os mostra; `orgao` é o nome que o portal exibe.",
+  "aprovado_em": "2026-11-08",
+  "dominios": [
+    {"host": "riofilme.com.br", "orgao": "Riofilme", "abrangencia": "municipal", "uf": "RJ"},
+    {"host": "spcine.com.br", "orgao": "Spcine", "abrangencia": "municipal", "uf": "SP"},
+    {"host": "sescrio.org.br", "orgao": "Sesc RJ", "abrangencia": "estadual", "uf": "RJ"},
+    {"host": "sescpr.com.br", "orgao": "Sesc Paraná", "abrangencia": "estadual", "uf": "PR"},
+    {"host": "sesisp.org.br", "orgao": "Sesi-SP", "abrangencia": "estadual", "uf": "SP"},
+    {"host": "institutoculturalvale.org", "orgao": "Instituto Cultural Vale", "abrangencia": "nacional"},
+    {"host": "petrobras.com.br", "orgao": "Petrobras", "abrangencia": "nacional"},
+    {"host": "claro.com.br", "orgao": "Claro", "abrangencia": "nacional"},
+    {"host": "lojasrennersa.com.br", "orgao": "Lojas Renner", "abrangencia": "nacional"}
+  ]
+}

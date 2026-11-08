@@ -21,6 +21,10 @@ on:
         description: "Com `somente_criterios`: reprocessa só este edital (id numérico da tabela editais)"
         required: false
         default: ""
+      somente_sombra:
+        description: "Pula a coleta e a extração: roda só o relatório do modo sombra da publicação automática"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,7 +37,7 @@ concurrency:
 
 jobs:
   sync:
-    if: ${{ inputs.somente_criterios != true }}
+    if: ${{ inputs.somente_criterios != true && inputs.somente_sombra != true }}
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
@@ -96,7 +100,7 @@ jobs:
   # Sem o segredo GEMINI_API_KEY ele só atualiza a fila (extracao_fila) e termina sem erro.
   criterios:
     needs: sync
-    if: ${{ always() }}
+    if: ${{ always() && inputs.somente_sombra != true }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     continue-on-error: true
@@ -130,3 +134,28 @@ jobs:
           else
             python -m scripts.extrair_criterios
           fi
+
+  # Publicação automática, MODO SOMBRA: lê os candidatos abertos, relê as páginas oficiais e escreve no resumo do job
+  # o que o portal PODERIA publicar sem aprovação humana. Não publica nada, não usa o Supabase e não escreve no repositório.
+  publicacao_sombra:
+    needs: sync
+    if: ${{ always() && inputs.somente_criterios != true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: worker/requirements.txt
+
+      - run: pip install -r worker/requirements.txt
+
+      - name: Relatório do modo sombra
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -m worker.automatica
