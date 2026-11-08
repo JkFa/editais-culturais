@@ -78,6 +78,13 @@ def test_home_sem_parametros_nao_redireciona(navegador, url):
     pronta(pg, url)
     assert urlparse(pg.url).path == "/"
     assert "lidos para você" in pg.locator("h1").inner_text()
+    # a home fala do Brasil e do exterior, e leva para o filtro Internacional
+    assert "exterior" in pg.locator("h1").inner_text()
+    assert "internacionais" in pg.locator(".lede").inner_text()
+    assert pg.locator(".lede-intl a").get_attribute("href") == "editais/?amb=internacional"
+    assert "exterior" in pg.title() and "internacionais" in pg.locator(
+        'meta[name="description"]'
+    ).get_attribute("content")
     pg.close()
 
 

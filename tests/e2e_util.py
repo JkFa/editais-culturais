@@ -10,8 +10,21 @@ HOSTS_DE_FONTE = ("fonts.googleapis.com", "fonts.gstatic.com")
 
 
 def abertos(snapshot):
+    """Editais abertos do Brasil: o que a tela padrão mostra (as oportunidades de fora têm filtro próprio)."""
+    return [e for e in abertos_todos(snapshot) if e.get("ambito", "brasil") == "brasil"]
+
+
+def abertos_todos(snapshot):
     agora = datetime.now(UTC)
     return [e for e in snapshot["editais"] if datetime.fromisoformat(e["inscricao_fim"]) >= agora]
+
+
+def so_do_brasil(snapshot):
+    """Snapshot sem as oportunidades internacionais: base estável para testes que as acrescentam."""
+    return {
+        **snapshot,
+        "editais": [e for e in snapshot["editais"] if e.get("ambito", "brasil") == "brasil"],
+    }
 
 
 def nova_pagina(navegador, largura=1280, altura=900, permissoes=None):

@@ -56,6 +56,7 @@
 }
 
 .abertura .lede,
+.abertura .lede-intl,
 .busca-grande {
   grid-column: 1 / span 7;
 }
@@ -496,6 +497,7 @@
 @media (max-width: 48rem) {
   .abertura h1,
   .abertura .lede,
+  .abertura .lede-intl,
   .busca-grande {
     grid-column: 1 / -1;
   }
@@ -634,4 +636,9 @@
 
 .escopo {
   margin-bottom: 0.75rem;
+}
+
+.abertura .lede-intl {
+  margin: 0.75rem 0 0;
+  font-size: 0.9375rem;
 }
