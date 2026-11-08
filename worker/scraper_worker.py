@@ -22,7 +22,7 @@ import yaml
 from pydantic import ValidationError
 
 from . import cobertura as placar
-from .catalogo import FonteConfig, StatusFonte, carregar_fontes_v4, status_de
+from .catalogo import FonteConfig, StatusFonte, carregar_fontes_v4, classificar_falha, status_de
 from .coletores.curadoria import ErroCuradoria, carregar_curadoria
 from .coletores.curadoria_internacional import FONTE as FONTE_CURADORIA_INTERNACIONAL
 from .coletores.curadoria_internacional import ErroCuradoriaInternacional
@@ -161,11 +161,8 @@ def status_das_instancias(
                 )
             )
         else:
-            erro = falhas.get(i.fonte, "")
-            estado = "bloqueada_em_ci" if "403" in erro else "erro"
-            saida.append(
-                status_de(cfg, estado, anterior.get(i.fonte), erro=erro or None, agora=agora)
-            )  # type: ignore[arg-type]
+            estado, erro = classificar_falha(falhas.get(i.fonte, ""), anterior.get(i.fonte), agora)
+            saida.append(status_de(cfg, estado, anterior.get(i.fonte), erro=erro, agora=agora))
     return saida
 
 

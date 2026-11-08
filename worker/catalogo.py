@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+import re
+from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any, Literal
 
@@ -79,6 +80,51 @@ class StatusFonte(BaseModel):
 def carregar_fontes_v4(caminho: Path) -> list[FonteConfig]:
     dados: dict[str, Any] = yaml.safe_load(caminho.read_text(encoding="utf-8")) or {}
     return [FonteConfig.model_validate(f) for f in dados.get("fontes", [])]
+
+
+# Falha ao CONECTAR (nem chegou a haver resposta HTTP). Pode ser instabilidade do site ou filtro de IP
+# contra os servidores do GitHub; só a persistência distingue. Não contornamos: vira `bloqueada_em_ci`.
+FALHAS_DE_CONEXAO = (
+    "ConnectTimeout",
+)  # a assinatura observada em PE, SE e Campinas; ConnectError/SSL é problema do site
+DIAS_PARA_FALHA_PERSISTENTE = 3
+_DESDE = re.compile(r"\[desde (\d{4}-\d{2}-\d{2})\]")
+
+
+def eh_falha_de_conexao(erro: str | None) -> bool:
+    return bool(erro) and any(t in erro for t in FALHAS_DE_CONEXAO)
+
+
+def classificar_falha(
+    erro: str | None, anterior: dict[str, Any] | None, agora: datetime
+) -> tuple[StatusValor, str | None]:
+    """(status, texto do erro) de uma fonte que falhou na coleta de hoje.
+
+    - 403/429/desafio anti-bot: `bloqueada_em_ci` na hora (o site recusou o robô).
+    - Falha de conexão: `erro` até persistir por `DIAS_PARA_FALHA_PERSISTENTE` dias seguidos; depois `bloqueada_em_ci`
+      (entra na Issue semanal de conferência manual). O início da sequência vai no texto: `[desde AAAA-MM-DD]`.
+    - Qualquer outro erro (parser, HTTP 5xx, JSON inesperado): `erro`.
+    """
+    erro = erro or ""
+    if "403" in erro or "429" in erro:
+        return "bloqueada_em_ci", erro or None
+    if not eh_falha_de_conexao(erro):
+        return "erro", erro or None
+    anterior = anterior or {}
+    desde = agora.date()
+    if anterior.get("status") in ("erro", "bloqueada_em_ci") and eh_falha_de_conexao(
+        anterior.get("erro")
+    ):
+        achou = _DESDE.search(anterior.get("erro") or "")
+        if achou:
+            desde = date.fromisoformat(achou.group(1))
+        else:  # registro antigo, sem a marca: a última execução é o melhor palpite do início
+            ultima = _dt(anterior.get("ultima_execucao"))
+            desde = ultima.date() if ultima else desde
+    base = _DESDE.sub("", erro).strip()
+    texto = f"{base} [desde {desde.isoformat()}]"
+    persistente = (agora.date() - desde).days >= DIAS_PARA_FALHA_PERSISTENTE
+    return ("bloqueada_em_ci" if persistente else "erro"), texto
 
 
 def status_desativada(f: FonteConfig) -> StatusFonte:

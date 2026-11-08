@@ -527,6 +527,17 @@ Conferência feita em 08/11/2026, uma a uma (robots.txt, `/termos-de-uso/`, home
 - **Filtro novo:** `parecerista` em `excluir_titulo_regex` ("Credenciamento de pareceristas" é seleção de jurados, não fomento). "Credenciamento de artistas" continua entrando.
 - **Alcance a partir do Actions:** as 24 responderam à sondagem rodada no próprio Actions. Se alguma começar a dar `ConnectTimeout` na coleta diária (como PE, SE e Campinas), ela aparece como `erro` e não conta na cobertura.
 
+## Cobertura, Onda 1 / PR 2: falha persistente e tipos de oportunidade (08/11/2026)
+
+- **`ConnectTimeout` não é bloqueio até provar que persiste.** PE e Campinas deram timeout no Actions, mas responderam 200 de uma máquina comum e SE voltou a funcionar no dia seguinte:
+  é intermitente ou filtro de IP, e só a persistência distingue. Regra (`classificar_falha` em `worker/catalogo.py`): 403/429/desafio = `bloqueada_em_ci` na hora; `ConnectTimeout` = `erro`
+  até **3 dias seguidos** e então `bloqueada_em_ci`, com `[desde AAAA-MM-DD]` no texto do erro (sem coluna nova no banco). Um dia de sucesso zera a contagem. `ConnectError`/SSL e 5xx continuam `erro`
+  (problema do site). Vale para Mapas e para as fontes v4. A Issue semanal "Conferir manualmente" explica que pode ser filtro de IP e que o site pode estar normal no navegador.
+  Não rodamos essas fontes de outro IP (runner próprio): seria contornar o filtro.
+- **Ampliar `tipos_aceitos` foi descartado.** Medido em 36 instâncias ativas (`scripts/medir_tipos_mapas.py`): 47 itens abertos fora de "Edital", quase todos ruído (aulas, cadastros, formulários de
+  habilitação de pagamento, consultas públicas, prestação de contas, agenda de teatro). O filtro de título de fomento aceitaria 5 e acertaria 2 (credenciamentos de artistas): precisão ~40%, amostra pequena demais
+  para justificar o risco. Continua só "Edital". Reavaliar quando houver centenas de itens: rodar o script e ler a lista.
+
 ### Amostra de recall: tentativa de levantamento (08/11/2026)
 
 Com busca web e leitura das páginas oficiais, só **2 editais abertos** ficaram comprovados com prazo (Ocupa Goiás, até 14/11; Pontos de Cultura de São Carlos, até 15/11): são os itens de `worker/referencia/amostra_recall.json`.
