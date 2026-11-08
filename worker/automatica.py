@@ -260,6 +260,9 @@ class Decisao:
     link: str
     publica: bool = False
     motivos: list[str] = field(default_factory=list)  # por que NÃO publica (vazio = pode publicar)
+    # A página não pôde ser lida (bloqueio, erro de rede): NÃO é o mesmo que "deixou de valer". Se já estava publicado, fica.
+    falha_de_leitura: bool = False
+    manter: bool = False
     campos: dict[str, Any] = field(default_factory=dict)
     evidencias: dict[str, str] = field(default_factory=dict)
 
@@ -424,7 +427,7 @@ async def avaliar_candidatos(
             continue  # nem lê a página: já está barrado (poupa requisições)
         texto, falha = await ler_texto(cliente, link)
         if falha:
-            decisoes.append(Decisao(n, titulo, link, motivos=[falha]))
+            decisoes.append(Decisao(n, titulo, link, motivos=[falha], falha_de_leitura=True))
             continue
         decisoes.append(
             avaliar(
@@ -552,6 +555,9 @@ async def publicar_automaticos(
                 d.publica = False
                 d.motivos.append(f"não passou na validação da curadoria: {str(exc)[:120]}")
         tinha = ROTULO_AUTO in rotulos.get(d.numero, set())
+        if tinha and d.falha_de_leitura:
+            d.manter = True  # o site recusou o robô por instantes: o que já estava no ar continua (o scraper reaproveita o anterior)
+            continue
         if d.publica and not tinha:
             await fila.rotular(
                 d.numero,

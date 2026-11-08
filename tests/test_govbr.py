@@ -333,3 +333,35 @@ def test_robots_do_govbr_documentado_no_yaml():
         encoding="utf-8"
     )
     assert "Termos e robots conferidos em 08/11/2026" in texto and yaml.safe_load(texto)["fontes"]
+
+
+def test_titulo_da_pagina_so_com_o_comeco_do_titulo_da_lista_usa_o_da_lista():
+    """Funarte: a página se chama 'Convocatória'; o título real é o do card da lista."""
+    from worker.extrator import Pagina
+
+    longo = "Convocatória - Mostra dos Estudantes da 16ª Quadrienal de Praga – PQ 2027"
+    texto = "Inscrições abertas de 03 de novembro de 2026 a 16 de novembro de 2026."
+    b, _, _ = govbr.converter(
+        "https://x/y",
+        longo,
+        Pagina(titulo="Convocatória", texto=texto),
+        texto,
+        None,
+        AGORA,
+        fonte="f",
+        orgao="Funarte",
+        origem="o",
+    )
+    assert b.titulo == longo
+    b2, _, _ = govbr.converter(
+        "https://x/y",
+        "Convocatória X",
+        Pagina(titulo="Convocatória Mostra Y", texto=texto),
+        texto,
+        None,
+        AGORA,
+        fonte="f",
+        orgao="Funarte",
+        origem="o",
+    )
+    assert b2.titulo == "Convocatória Mostra Y", "título da página mais específico continua valendo"

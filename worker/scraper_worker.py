@@ -345,8 +345,18 @@ async def executar(dry_run: bool, snapshot: Path = SNAPSHOT) -> int:
     elif fila:
         try:
             async with ClienteWeb() as web_auto:
-                brutos_auto, _ = await automatica.publicar_automaticos(fila, web_auto, agora)
+                brutos_auto, decisoes_auto = await automatica.publicar_automaticos(
+                    fila, web_auto, agora
+                )
             convertidos = padronizar_todos(brutos_auto, {}, agora, nao_mapeadas)
+            # Página ilegível hoje (403, rede) de um edital já publicado: continua no ar com o que tinha, enquanto o prazo valer.
+            mantidos = {f"auto-{d.numero}" for d in decisoes_auto if d.manter} - {
+                e.id_externo for e in convertidos
+            }
+            convertidos += [
+                e for e in editais_do_snapshot(anterior_snapshot)
+                if e.fonte == automatica.FONTE_AUTOMATICA and e.id_externo in mantidos and e.inscricao_fim > agora
+            ]  # fmt: skip
             editais += convertidos
             ids_por_fonte[automatica.FONTE_AUTOMATICA] = {e.id_externo for e in convertidos}
             fontes_ok.append(automatica.FONTE_AUTOMATICA)

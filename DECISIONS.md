@@ -603,3 +603,11 @@ Até lá o recall continua "não medido" (zero no placar). A Onda 3 (diários of
 - **Medição real (08/11/2026):** Funarte publica 2 editais (Bolsa de Conservação Fotográfica, Seleção Marc Ferrez, prazo 18/12; 2 páginas deram 403) e leva "Programa Funarte Aberta" (fluxo contínuo) para a fila; Iphan 0 publicados (5 encerrados, 5 candidatos sem prazo legível,
   7 não são fomento); Palmares 1 candidato (ocupação do Espaço Mário Gusmão, fluxo contínuo); Biblioteca Nacional 5 candidatos antes do filtro `incluir_titulo`. Poucos editais federais abertos de cada vez, como esperado: o ganho é de recall.
 - **Fora desta PR:** BRDE/FSA (PR 2b, PDFs por categoria) e `editais.iphan.gov.br` (página em JavaScript, Onda 4). Ancine/FSA (`fsa.ancine.gov.br`) não conecta e segue desativada.
+
+### Publicação automática: bloqueio momentâneo não tira o edital do ar (08/11/2026)
+
+A primeira coleta com a publicação ligada mostrou o defeito: depois de várias coletas manuais no mesmo dia, `riofilme.com.br`, `spcine.com.br` e `on-the-move.org` passaram a responder **403** ao Actions, e 3 dos 15 editais automáticos
+sumiram do portal (a leitura diária falhou, e falha de leitura era tratada como "deixou de valer"). Agora **página ilegível (403, rede) não é o mesmo que regra deixando de valer**: se o candidato já estava com o rótulo `auto-publicado`, o edital
+é reaproveitado do snapshot anterior enquanto o prazo valer, o rótulo fica e a Issue não recebe comentário. Só prazo mudado, trecho que sumiu, veto humano ou validação rejeitada tiram do ar. Lição operacional: **disparar a coleta várias vezes por dia aumenta
+a chance de bloqueio** (403/429 viram `bloqueada_em_ci` e não são contornados); a coleta diária às 5h é suficiente.
+Também: o título da página da Funarte ("Convocatória") era só o começo do título real do card; passa a valer o da lista quando o da página é parcial.

@@ -378,3 +378,99 @@ def test_migration_cria_coluna_com_check_e_recria_a_view():
     assert sql.strip() in (RAIZ / "supabase" / "schema.sql").read_text(encoding="utf-8"), (
         "schema.sql tem que acompanhar a migration"
     )
+
+
+# ── página ilegível hoje não tira do ar o que já estava publicado ────────────────────────────
+
+
+def web_que_bloqueia():
+    def tratar(req: httpx.Request) -> httpx.Response:
+        return httpx.Response(404) if req.url.path.endswith("/robots.txt") else httpx.Response(403)
+
+    async def sem_espera(_):
+        return None
+
+    return ClienteWeb(transporte=httpx.MockTransport(tratar), dormir=sem_espera)
+
+
+def test_site_que_recusa_o_robo_nao_derruba_o_edital_ja_publicado_nem_comenta_na_issue():
+    fila, chamadas = fila_falsa([issue(80, LINK_OK, ("candidato", ROTULO_AUTO))])
+
+    async def corrida():
+        async with web_que_bloqueia() as web:
+            try:
+                return await a.publicar_automaticos(fila, web, HOJE)
+            finally:
+                await fila.fechar()
+
+    brutos, ds = asyncio.run(corrida())
+    assert brutos == [] and ds[0].falha_de_leitura and ds[0].manter and not ds[0].publica
+    assert not [c for c in chamadas if c[0] in ("POST", "DELETE")], (
+        "bloqueio momentâneo: nada de remover rótulo nem comentar"
+    )
+
+
+def test_leitura_que_falha_num_candidato_novo_so_nao_publica_e_nao_marca_manter():
+    fila, _ = fila_falsa([issue(81, LINK_OK)])
+
+    async def corrida():
+        async with web_que_bloqueia() as web:
+            try:
+                return await a.publicar_automaticos(fila, web, HOJE)
+            finally:
+                await fila.fechar()
+
+    brutos, ds = asyncio.run(corrida())
+    assert brutos == [] and ds[0].falha_de_leitura and not ds[0].manter
+
+
+def test_coleta_reaproveita_do_snapshot_anterior_o_edital_cuja_pagina_estava_ilegivel(
+    tmp_path, monkeypatch, coleta_isolada
+):
+    monkeypatch.setenv("PUBLICACAO_AUTOMATICA", "true")
+    bruto = a.bruto_do_candidato(decisao("gurupi"), datetime.now(UTC)).model_copy(
+        update={"inscricao_fim": datetime(2099, 1, 1, tzinfo=UTC)}
+    )
+
+    async def publica(fila, web, hoje, aprovados=None):
+        return [bruto], []
+
+    monkeypatch.setattr(a, "publicar_automaticos", publica)
+    snap = tmp_path / "s.json"
+    assert asyncio.run(scraper_worker.executar(dry_run=True, snapshot=snap)) == 0
+    assert [
+        e["id_externo"]
+        for e in json.loads(snap.read_text(encoding="utf-8"))["editais"]
+        if e["fonte"] == "publicacao-automatica"
+    ] == ["auto-80"]
+
+    async def ilegivel(fila, web, hoje, aprovados=None):
+        return [], [
+            a.Decisao(80, "t", "https://x", falha_de_leitura=True, manter=True),
+            a.Decisao(99, "t2", "https://y", falha_de_leitura=True),
+        ]
+
+    monkeypatch.setattr(a, "publicar_automaticos", ilegivel)
+    assert asyncio.run(scraper_worker.executar(dry_run=True, snapshot=snap)) == 0
+    corpo = json.loads(snap.read_text(encoding="utf-8"))
+    auto = [e for e in corpo["editais"] if e["fonte"] == "publicacao-automatica"]
+    assert [e["id_externo"] for e in auto] == ["auto-80"] and auto[0][
+        "verificacao"
+    ] == "automatica", "continua no ar"
+    assert (
+        next(f for f in corpo["fontes"] if f["fonte"] == "publicacao-automatica")["total_coletado"]
+        == 1
+    )
+
+    async def deixou_de_valer(fila, web, hoje, aprovados=None):
+        return [], [
+            a.Decisao(80, "t", "https://x", motivos=["prazo já passou"])
+        ]  # sem `manter`: sai do ar
+
+    monkeypatch.setattr(a, "publicar_automaticos", deixou_de_valer)
+    assert asyncio.run(scraper_worker.executar(dry_run=True, snapshot=snap)) == 0
+    assert not [
+        e
+        for e in json.loads(snap.read_text(encoding="utf-8"))["editais"]
+        if e["fonte"] == "publicacao-automatica"
+    ]

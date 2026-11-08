@@ -200,7 +200,10 @@ def converter(
     *, fonte: str, orgao: str, origem: str,
 ) -> tuple[EditalBruto | None, Candidato | None, str]:  # fmt: skip
     titulo = limpar_texto(pagina.titulo or titulo_lista)
-    if len(titulo) < 8 or sem_acento(titulo) in ("abertos", "editais", "editais abertos"):
+    generico = len(titulo) < 8 or sem_acento(titulo) in ("abertos", "editais", "editais abertos")
+    # "Convocatória" (título da página) é só o começo de "Convocatória - Mostra dos Estudantes da 16ª Quadrienal...": vale o da lista
+    parcial = len(titulo_lista) > len(titulo) and sem_acento(titulo) in sem_acento(titulo_lista)
+    if generico or parcial:
         titulo = titulo_lista
     prazo = achar_prazo(texto)
     if prazo is None:
