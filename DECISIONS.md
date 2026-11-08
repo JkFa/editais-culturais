@@ -511,3 +511,18 @@ Detalhes e tabela em `docs/fontes-internacionais.md`. Resultado:
   52 inalcançáveis (quase todas por certificado/SNI inválido: não contornamos); 1 bloqueada. **Os 4 candidatos estaduais que o DNS indicava (AP, RR, SC, TO) não são Mapas**
   (timeout, erro de conexão e 404), e `mapas.fortaleza.ce.gov.br` também deu 404. Conclusão: a Onda 1 não sobe a medida de UFs; as UFs sem Mapas dependem das Ondas 2 a 4.
 - Sondas em paralelo entre hosts diferentes (8 por vez); o intervalo por domínio continua valendo.
+
+### Mapas: 24 instâncias municipais conferidas e ativadas (08/11/2026)
+
+Conferência feita em 08/11/2026, uma a uma (robots.txt, `/termos-de-uso/`, home e coleta de teste com o coletor real):
+
+- **robots.txt:** 22 sem robots (404 = sem regras) e 2 (Gravataí, Lagoa Santa) com o bloco padrão de *content signals* do Cloudflare. Em todas a API é permitida para o nosso User-Agent.
+  Lagoa Santa declara `Content-Signal: search=yes,ai-train=no` e bloqueia crawlers de IA por nome: o nosso não é um deles, mas **os editais dela nunca vão ao LLM de enriquecimento**
+  (`sem_llm: true`; o plano gratuito do Gemini pode usar prompts para melhorar produtos). Só regras determinísticas.
+- **Termos de uso:** 18 sites publicam `/termos-de-uso/` (modelo padrão do Mapas Culturais, 12 a 18 mil caracteres); nenhum proíbe leitura automatizada, raspagem ou uso dos dados
+  (busca por termos proibitivos; leitura de uma amostra). 6 sites não publicam termos (Mauá, Pelotas, Arapiraca, Gravataí, Itatiba, Ribeirão Pires): ativados com `termos_obs` dizendo isso.
+  Se algum passar a publicar restrição, desative.
+- **Confirmação de que são Mapas:** a home das 24 cita a plataforma; as 8 que responderam lista vazia na sondagem (Pelotas, Crato, Itapipoca, Ribeirão Pires, Crateús, Icó, Morada Nova, Russas) foram confirmadas assim.
+- **Coleta de teste:** 6 editais abertos hoje (Mauá 2, Nova Lima 1, Aquiraz 3). Os demais estão sem edital aberto: entram na cobertura (fonte monitorada) e passam a aparecer quando publicarem.
+- **Filtro novo:** `parecerista` em `excluir_titulo_regex` ("Credenciamento de pareceristas" é seleção de jurados, não fomento). "Credenciamento de artistas" continua entrando.
+- **Alcance a partir do Actions:** as 24 responderam à sondagem rodada no próprio Actions. Se alguma começar a dar `ConnectTimeout` na coleta diária (como PE, SE e Campinas), ela aparece como `erro` e não conta na cobertura.

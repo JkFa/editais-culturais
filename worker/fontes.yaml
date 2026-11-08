@@ -11,6 +11,8 @@ parametros:
   excluir_titulo_regex:
     - '\bteste\b'
     - 'conselho (municipal|estadual|nacional|distrital) de politica cultural'
+    # Seleção de pareceristas (jurados) não é fomento para artistas.
+    - 'parecerista'
   # Fluxo contínuo costuma vir com fim em 2100/2111 (sem prazo real).
   ano_sem_prazo_a_partir_de: 2090
 
@@ -145,6 +147,302 @@ instancias:
     termos_url: "https://iberculturaviva.org/as-oportunidades/editais/"
     termos_conferidos_em: "2026-11-07"
     ativa: true
+
+  - slug: maua-sp
+    nome: "Mapa Cultural de Mauá (SP)"
+    base_url: https://mapacultural.maua.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: "Mauá"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.maua.sp.gov.br/
+    termos_obs: "o site não publica termos de uso (não há /termos-de-uso/ nem link na página inicial); robots.txt permite a API"
+
+  - slug: paulista-pe
+    nome: "Mapa Cultural de Paulista (PE)"
+    base_url: https://mapacultural.paulista.pe.gov.br
+    abrangencia: municipal
+    uf: PE
+    municipio: "Paulista"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.paulista.pe.gov.br/termos-de-uso/
+
+  - slug: pelotas-rs
+    nome: "Mapa Cultural de Pelotas (RS)"
+    base_url: https://mapacultural.pelotas.rs.gov.br
+    abrangencia: municipal
+    uf: RS
+    municipio: "Pelotas"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.pelotas.rs.gov.br/
+    termos_obs: "o site não publica termos de uso (não há /termos-de-uso/ nem link na página inicial); robots.txt permite a API"
+
+  - slug: petrolina-pe
+    nome: "Mapa Cultural de Petrolina (PE)"
+    base_url: https://mapacultural.petrolina.pe.gov.br
+    abrangencia: municipal
+    uf: PE
+    municipio: "Petrolina"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.petrolina.pe.gov.br/termos-de-uso/
+
+  - slug: arapiraca-al
+    nome: "Mapa Cultural de Arapiraca (AL)"
+    base_url: https://mapacultural.arapiraca.al.gov.br
+    abrangencia: municipal
+    uf: AL
+    municipio: "Arapiraca"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.arapiraca.al.gov.br/
+    termos_obs: "o site não publica termos de uso (não há /termos-de-uso/ nem link na página inicial); robots.txt permite a API"
+
+  - slug: gravatai-rs
+    nome: "Mapa Cultural de Gravataí (RS)"
+    base_url: https://mapacultural.gravatai.rs.gov.br
+    abrangencia: municipal
+    uf: RS
+    municipio: "Gravataí"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.gravatai.rs.gov.br/
+    termos_obs: "o site não publica termos de uso (não há /termos-de-uso/ nem link na página inicial); robots.txt permite a API"
+
+  - slug: maracanau-ce
+    nome: "Mapa Cultural de Maracanaú (CE)"
+    base_url: https://mapacultural.maracanau.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Maracanaú"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.maracanau.ce.gov.br/termos-de-uso/
+
+  - slug: santaluzia-mg
+    nome: "Mapa Cultural de Santa Luzia (MG)"
+    base_url: https://mapacultural.santaluzia.mg.gov.br
+    abrangencia: municipal
+    uf: MG
+    municipio: "Santa Luzia"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.santaluzia.mg.gov.br/termos-de-uso/
+
+  - slug: crato-ce
+    nome: "Mapa Cultural de Crato (CE)"
+    base_url: https://mapacultural.crato.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Crato"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.crato.ce.gov.br/termos-de-uso/
+
+  - slug: itapipoca-ce
+    nome: "Mapa Cultural de Itapipoca (CE)"
+    base_url: https://mapacultural.itapipoca.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Itapipoca"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.itapipoca.ce.gov.br/termos-de-uso/
+
+  - slug: itatiba-sp
+    nome: "Mapa Cultural de Itatiba (SP)"
+    base_url: https://mapacultural.itatiba.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: "Itatiba"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.itatiba.sp.gov.br/
+    termos_obs: "o site não publica termos de uso (não há /termos-de-uso/ nem link na página inicial); robots.txt permite a API"
+
+  - slug: maranguape-ce
+    nome: "Mapa Cultural de Maranguape (CE)"
+    base_url: https://mapacultural.maranguape.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Maranguape"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.maranguape.ce.gov.br/termos-de-uso/
+
+  - slug: novalima-mg
+    nome: "Mapa Cultural de Nova Lima (MG)"
+    base_url: https://mapacultural.novalima.mg.gov.br
+    abrangencia: municipal
+    uf: MG
+    municipio: "Nova Lima"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.novalima.mg.gov.br/termos-de-uso/
+
+  - slug: ribeiraopires-sp
+    nome: "Mapa Cultural de Ribeirão Pires (SP)"
+    base_url: https://mapacultural.ribeiraopires.sp.gov.br
+    abrangencia: municipal
+    uf: SP
+    municipio: "Ribeirão Pires"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.ribeiraopires.sp.gov.br/
+    termos_obs: "o site não publica termos de uso (não há /termos-de-uso/ nem link na página inicial); robots.txt permite a API"
+
+  - slug: quixada-ce
+    nome: "Mapa Cultural de Quixadá (CE)"
+    base_url: https://mapacultural.quixada.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Quixadá"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.quixada.ce.gov.br/termos-de-uso/
+
+  - slug: redencao-pa
+    nome: "Mapa Cultural de Redenção (PA)"
+    base_url: https://mapacultural.redencao.pa.gov.br
+    abrangencia: municipal
+    uf: PA
+    municipio: "Redenção"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.redencao.pa.gov.br/termos-de-uso/
+
+  - slug: aquiraz-ce
+    nome: "Mapa Cultural de Aquiraz (CE)"
+    base_url: https://mapacultural.aquiraz.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Aquiraz"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.aquiraz.ce.gov.br/termos-de-uso/
+
+  - slug: caninde-ce
+    nome: "Mapa Cultural de Canindé (CE)"
+    base_url: https://mapacultural.caninde.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Canindé"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.caninde.ce.gov.br/termos-de-uso/
+
+  - slug: crateus-ce
+    nome: "Mapa Cultural de Crateús (CE)"
+    base_url: https://mapacultural.crateus.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Crateús"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.crateus.ce.gov.br/termos-de-uso/
+
+  - slug: ico-ce
+    nome: "Mapa Cultural de Icó (CE)"
+    base_url: https://mapacultural.ico.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Icó"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.ico.ce.gov.br/termos-de-uso/
+
+  - slug: lagoasanta-mg
+    nome: "Mapa Cultural de Lagoa Santa (MG)"
+    base_url: https://mapacultural.lagoasanta.mg.gov.br
+    abrangencia: municipal
+    uf: MG
+    municipio: "Lagoa Santa"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.lagoasanta.mg.gov.br/termos-de-uso/
+    sem_llm: true
+    termos_obs: "robots.txt declara Content-Signal ai-train=no: nenhum texto deste site vai para o LLM de enriquecimento"
+
+  - slug: moradanova-ce
+    nome: "Mapa Cultural de Morada Nova (CE)"
+    base_url: https://mapacultural.moradanova.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Morada Nova"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.moradanova.ce.gov.br/termos-de-uso/
+
+  - slug: pacajus-ce
+    nome: "Mapa Cultural de Pacajus (CE)"
+    base_url: https://mapacultural.pacajus.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Pacajus"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.pacajus.ce.gov.br/termos-de-uso/
+
+  - slug: russas-ce
+    nome: "Mapa Cultural de Russas (CE)"
+    base_url: https://mapacultural.russas.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "Russas"
+    ativa: true
+    descoberta: "sondagem de 2026-11-08: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-08", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+    termos_conferidos_em: "2026-11-08"
+    termos_url: https://mapacultural.russas.ce.gov.br/termos-de-uso/
 
 # ---------------------------------------------------------------------------------------------
 # v4: novas fontes. `tipo`: oficial (publica com evidência) | plataforma (idem, com "via X") |
