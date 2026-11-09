@@ -77,6 +77,9 @@ class Referencias:
     municipios: list[dict[str, Any]]
     auditoria: dict[str, Any] | None = None
     cultbr: dict[str, Any] | None = None  # entes com edital no CultBR (scripts/entes_cultbr.py)
+    diarios: dict[str, Any] | None = (
+        None  # municípios com diário oficial no Querido Diário (scripts/municipios_querido_diario.py)
+    )
 
     @classmethod
     def carregar(cls, pasta: Path = REFERENCIA) -> Referencias:
@@ -85,6 +88,7 @@ class Referencias:
             municipios=_ler(pasta / "municipios_100k.json", {}).get("municipios", []),
             auditoria=_ler(pasta / "auditoria.json", None),
             cultbr=_ler(pasta / "cultbr_entes.json", None),
+            diarios=_ler(pasta / "querido_diario_municipios.json", None),
         )
 
 
@@ -114,6 +118,39 @@ def territorios_declarados(instancias: list[Any], fontes: list[Any]) -> list[Ter
         if c:
             saida.append(Territorio(f.id, c.ente, c.uf, c.municipio, c.parcial, ativa=f.ativa))
     return saida
+
+
+def _cobertos_via_diarios(
+    diarios: dict[str, Any] | None,
+    cobertos: dict[int, float],
+    conhecidos: set[int],
+    agora: datetime,
+) -> int:
+    """Meio ponto para o município cujo diário oficial o portal lê todo dia (Querido Diário, texto completo).
+
+    Só os municípios do placar (capitais e mais de 100 mil habitantes). Fonte própria ou CultBR já valendo meio ponto ou mais não mudam.
+    Devolve quantos municípios ganharam ponto só por isso.
+    """
+    if not diarios:
+        return 0
+    try:
+        gerado = datetime.fromisoformat(str(diarios["atualizado_em"]).replace("Z", "+00:00"))
+    except (KeyError, ValueError):
+        return 0
+    if gerado.tzinfo is None:
+        gerado = gerado.replace(tzinfo=UTC)
+    if agora - gerado > timedelta(days=CULTBR_VALIDADE_DIAS):
+        log.warning(
+            "querido_diario_municipios.json está velho (%s): ignorado no placar", gerado.date()
+        )
+        return 0
+    novos = 0
+    for m in diarios.get("municipios", []):
+        ibge = int(m.get("ibge") or 0)
+        if ibge in conhecidos and cobertos.get(ibge, 0.0) < PESO_CULTBR:
+            novos += 0 if ibge in cobertos else 1
+            cobertos[ibge] = PESO_CULTBR
+    return novos
 
 
 def _cobertos_via_cultbr(
@@ -218,6 +255,7 @@ def calcular(
             if ibge:
                 cobertos[ibge] = max(cobertos.get(ibge, 0.0), _peso_fonte(t))
     via_cultbr = _cobertos_via_cultbr(refs.cultbr, por_nome, cobertos, agora)
+    via_diarios = _cobertos_via_diarios(refs.diarios, cobertos, set(por_nome.values()), agora)
     cap_pts = sum(cobertos.get(i, 0.0) for i in cap_ibge)
     grandes = [m["ibge"] for m in refs.municipios]
     mun_pts = sum(cobertos.get(i, 0.0) for i in grandes)
@@ -281,12 +319,16 @@ def calcular(
         "ufs": {"atual": ufs_pts, "total": n_ufs, "texto": f"{ufs_pts:g} de {n_ufs} UFs"},
         "capitais": {"atual": cap_pts, "total": 27, "texto": f"{cap_pts:g} de 27 capitais"},
         "municipios": {"atual": mun_pts, "total": len(grandes), "pct": round(_pct(mun_pts, len(grandes)), 4),
-                       "via_cultbr": via_cultbr,
+                       "via_cultbr": via_cultbr, "via_diarios": via_diarios,
                        "texto": f"{mun_pts:g} de {len(grandes)} municípios ({_pct(mun_pts, len(grandes)):.1%})"
-                       + (f"; {via_cultbr} só pelo CultBR, a meio ponto" if via_cultbr else "")},
+                       + (f"; {via_cultbr} só pelo CultBR e {via_diarios} só pelo diário oficial, a meio ponto" if (via_cultbr or via_diarios) else "")},
         "recall": {"medido": medido, "recall": recall, "amostra": aud.get("amostra"), "data": aud.get("data"),
-                   "texto": f"{recall:.0%} em {aud.get('amostra')} editais (auditoria de {aud.get('data')})" if medido
-                   else "não medido (conta zero até a primeira auditoria com 30 ou mais editais)"},
+                   "texto": f"{recall:.0%} em {aud.get('amostra')} editais abertos (auditoria de {aud.get('data')}), sobre os " + (aud.get("universo") or "editais da amostra de referência") if medido
+                   else (
+                       f"não medido: a amostra tem {aud.get('amostra')} editais abertos (mínimo {AMOSTRA_MINIMA_RECALL}); conta zero até lá"
+                       if aud.get("amostra") is not None
+                       else "não medido (conta zero até a primeira auditoria com 30 ou mais editais)"
+                   )},
         "valor": {"atual": n_valor, "total": n, "pct": round(_pct(n_valor, n), 4), "texto": f"{n_valor} de {n} ({_pct(n_valor, n):.0%})"},
         "prazo_proponentes": {"prazo": n_prazo, "proponentes": n_prop, "total": n,
                               "texto": f"prazo {n_prazo}/{n} ({_pct(n_prazo, n):.0%}); proponentes {n_prop}/{n} ({_pct(n_prop, n):.0%})"},

@@ -16,7 +16,7 @@ concurrency:
 jobs:
   auditar:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,6 +25,9 @@ jobs:
           cache: pip
           cache-dependency-path: worker/requirements.txt
       - run: pip install -r worker/requirements.txt
+      - name: Levantar a amostra nos diários oficiais (termos diferentes dos da coleta)
+        run: python -m scripts.amostra_recall_qd
+
       - name: Comparar a amostra de referência com o portal
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,7 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add worker/referencia/auditoria.json
+          git add worker/referencia/auditoria.json worker/referencia/amostra_recall.json
           if git diff --cached --quiet; then echo "Sem mudanças."; else
             git commit -m "chore(cobertura): auditoria de recall $(date +%F)"
             git pull --rebase --autostash

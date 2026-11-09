@@ -14,6 +14,7 @@ import argparse
 import json
 import logging
 import os
+import re
 import sys
 from datetime import UTC, date, datetime
 from pathlib import Path
@@ -24,6 +25,8 @@ import httpx
 
 from worker.dedup import similaridade_titulos
 from worker.fila import normalizar_url
+from worker.padronizacao import FUSO_PADRAO
+from worker.taxonomia import sem_acento
 
 log = logging.getLogger("auditoria_cobertura")
 RAIZ = Path(__file__).resolve().parent.parent
@@ -51,13 +54,37 @@ def _host(url: str) -> str:
     return urlparse(url).netloc.lower().removeprefix("www.")
 
 
+def _dia_brt(v: Any) -> date | None:
+    """Dia do prazo em Brasília (o prazo vem em UTC: 23h59 de Brasília já é o dia seguinte em UTC)."""
+    try:
+        d = datetime.fromisoformat(str(v).replace("Z", "+00:00")) if v else None
+    except ValueError:
+        return None
+    return d.astimezone(FUSO_PADRAO).date() if d and d.tzinfo else (d.date() if d else None)
+
+
+def _sem(texto: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", sem_acento(texto or ""))
+
+
 def encontrado(item: dict[str, Any], editais: list[dict[str, Any]]) -> dict[str, Any] | None:
-    """Mesma regra de deduplicação do pipeline: URL canônica igual, ou título parecido com o mesmo prazo."""
+    """Mesma regra de deduplicação do pipeline: URL canônica igual, ou título parecido com o mesmo prazo.
+
+    Itens dos diários oficiais (título genérico, link do espelho) também casam por UF + dia do prazo + município no título/órgão."""
     alvo = normalizar_url(item["url"])
     prazo = _data(item.get("prazo"))
     for e in editais:
         if alvo in _urls(e):
             return e
+    cidade = _sem(item.get("municipio") or "")
+    if item.get("uf") and prazo and len(cidade) >= 4:
+        for e in editais:
+            if e.get("uf") != item["uf"] or _dia_brt(e.get("inscricao_fim")) not in (prazo, None):
+                continue
+            if cidade in _sem(
+                f"{e.get('titulo')} {e.get('orgao_fomento')} {e.get('municipio') or ''}"
+            ):
+                return e
     for e in editais:
         if prazo and _data(e.get("inscricao_fim")) not in (None, prazo):
             continue
@@ -69,6 +96,11 @@ def encontrado(item: dict[str, Any], editais: list[dict[str, Any]]) -> dict[str,
 def causa_provavel(item: dict[str, Any], snapshot: dict[str, Any]) -> str:
     """Heurística para orientar a correção; a pessoa confirma ao abrir a Issue."""
     fontes = snapshot.get("fontes", [])
+    if item.get("origem") == "querido-diario":
+        return (
+            "edital do diário oficial que o portal ainda não publica: está na fila de candidatos, "
+            "sem link oficial legível ou sem passar nas regras"
+        )
     host = _host(item["url"])
     do_mesmo_site = [f for f in fontes if _host(f.get("url") or "") == host]
     if any(f.get("ativa") and f.get("status") == "ok" for f in do_mesmo_site):
@@ -112,7 +144,8 @@ def auditar(amostra: dict[str, Any], snapshot: dict[str, Any], hoje: date) -> di
     return {
         "data": hoje.isoformat(), "amostra": n, "encontrados": achados, "recall": round(achados / n, 4) if n else None,
         "descartados_por_prazo": len(amostra.get("itens", [])) - n, "faltantes": faltam,
-        "metodologia": amostra.get("metodologia"),
+        "metodologia": amostra.get("metodologia"), "universo": amostra.get("universo"),
+        "origens": {o: sum(1 for i in abertos if (i.get("origem") or "manual") == o) for o in {(i.get("origem") or "manual") for i in abertos}},
     }  # fmt: skip
 
 

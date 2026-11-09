@@ -627,3 +627,15 @@ Também: o título da página da Funarte ("Convocatória") era só o começo do 
 - **Primeira rodada real (08/11/2026):** 248 diários nos últimos 3 dias; 60 com sinal de abertura; 5 candidatos (Guaraçaí e São Bernardo do Campo, SP; Rondonópolis, MT; mais dois que a revisão mostrou serem ruído: "inscritos no cadastro" em Salvador e um edital de educação em São José do Vale do Rio Preto).
   Os dois erros viraram regra (prazo só com "inscrição/inscrições"; exigir cultura no texto) e o `automatica.py` ganhou a mesma regra do trecho.
 - **Fora desta PR:** classificar prorrogação/retificação de edital existente (PR 3b), recall auditado e peso do Querido Diário na nota (PR 3c).
+
+## Cobertura, Onda 3 / PR 3c: recall auditado nos diários e Querido Diário na nota (08/11/2026)
+
+- **Município coberto pelo Querido Diário vale meio ponto** (como o CultBR; decisão do dono do projeto): `scripts/municipios_querido_diario.py` (workflow semanal, uma consulta a `/cities`, nível 3 = texto completo, 510 municípios, 23 das 27 capitais,
+  101 dos 319 maiores) grava `worker/referencia/querido_diario_municipios.json`; só conta quem está no placar (capitais e mais de 100 mil), nunca rebaixa quem já tem mais, registro com mais de 45 dias é ignorado, resposta implausível (menos de 100 municípios) ou API fora **não sobrescreve** o arquivo.
+  Efeito medido: nota 3,22 → 3,59 (capitais 9 → 13,5; municípios 18 → 105,5 pontos). A estimativa de +0,5 a +0,6 do plano era otimista: sai +0,37.
+- **O serviço mudou de endereço:** o canônico é `api.queridodiario.org.br` (a documentação ainda cita `api.queridodiario.ok.org.br`, com SSL quebrado; o `.ok.org.br/api` só redireciona). O coletor usa o novo primeiro e mantém os antigos como reserva.
+- **Recall auditado agora tem de onde vir:** `scripts/amostra_recall_qd.py` (roda antes da auditoria mensal) refaz a amostra a partir dos diários oficiais com **termos diferentes dos da coleta** (`TERMOS_AUDITORIA`, disjuntos de `qd.TERMOS`; um teste confere), com as mesmas regras de leitura
+  (pedido de inscrição, cultura, prazo futuro com trecho literal). Itens manuais são preservados. A auditoria casa item do diário com o portal por **UF + dia do prazo (Brasília) + município no título/órgão** (títulos de prefeitura são genéricos).
+- **Limite assumido e publicado em /sobre/:** o recall vale para o universo dos diários dos municípios cobertos (~510), não para o Brasil inteiro.
+- **Medição real do levantamento (08/11/2026):** janela de 14 dias = 356 diários; lendo 120, só **10 editais abertos**: abaixo dos 30 exigidos, então o recall continuaria "não medido". Em vez de baixar a exigência, a janela subiu para 21 dias e o limite de leitura para 400 diários (workflow com 45 min).
+  O placar agora mostra o tamanho da amostra ("não medido: a amostra tem N editais abertos, mínimo 30"). Se mesmo assim ficar abaixo de 30, continua zero, de forma visível.

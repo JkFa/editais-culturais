@@ -1,0 +1,3067 @@
+{
+"atualizado_em": "2026-11-08T23:50:04+00:00",
+"fonte": "https://queridodiario.ok.org.br/api/cities (nível 3: texto completo)",
+"total_na_api": 5570,
+"municipios": [
+{
+"ibge": 1100114,
+"nome": "Jaru",
+"uf": "RO",
+"desde": "2024-03-28"
+},
+{
+"ibge": 1302603,
+"nome": "Manaus",
+"uf": "AM",
+"desde": "2021-03-02"
+},
+{
+"ibge": 1400100,
+"nome": "Boa Vista",
+"uf": "RR",
+"desde": "2021-01-05"
+},
+{
+"ibge": 1501402,
+"nome": "Belém",
+"uf": "PA",
+"desde": "2021-09-17"
+},
+{
+"ibge": 1503077,
+"nome": "Garrafão do Norte",
+"uf": "PA",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1506708,
+"nome": "Santana do Araguaia",
+"uf": "PA",
+"desde": "2023-08-16"
+},
+{
+"ibge": 1600303,
+"nome": "Macapá",
+"uf": "AP",
+"desde": "2022-11-30"
+},
+{
+"ibge": 1600600,
+"nome": "Santana",
+"uf": "AP",
+"desde": "2022-10-28"
+},
+{
+"ibge": 1600709,
+"nome": "Tartarugalzinho",
+"uf": "AP",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1700301,
+"nome": "Aguiarnópolis",
+"uf": "TO",
+"desde": "2024-03-27"
+},
+{
+"ibge": 1701101,
+"nome": "Aparecida do Rio Negro",
+"uf": "TO",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1702109,
+"nome": "Araguaína",
+"uf": "TO",
+"desde": "2021-01-05"
+},
+{
+"ibge": 1702901,
+"nome": "Axixá do Tocantins",
+"uf": "TO",
+"desde": "2024-10-25"
+},
+{
+"ibge": 1703842,
+"nome": "Campos Lindos",
+"uf": "TO",
+"desde": "2024-03-27"
+},
+{
+"ibge": 1703909,
+"nome": "Caseara",
+"uf": "TO",
+"desde": "2024-10-30"
+},
+{
+"ibge": 1704105,
+"nome": "Centenário",
+"uf": "TO",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1707108,
+"nome": "Divinópolis do Tocantins",
+"uf": "TO",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1709005,
+"nome": "Goiatins",
+"uf": "TO",
+"desde": "2024-03-27"
+},
+{
+"ibge": 1709500,
+"nome": "Gurupi",
+"uf": "TO",
+"desde": "2023-08-16"
+},
+{
+"ibge": 1711902,
+"nome": "Lagoa da Confusão",
+"uf": "TO",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1711951,
+"nome": "Lagoa do Tocantins",
+"uf": "TO",
+"desde": "2024-08-07"
+},
+{
+"ibge": 1713205,
+"nome": "Miracema do Tocantins",
+"uf": "TO",
+"desde": "2024-10-30"
+},
+{
+"ibge": 1713957,
+"nome": "Muricilândia",
+"uf": "TO",
+"desde": "2024-10-30"
+},
+{
+"ibge": 1714302,
+"nome": "Nazaré",
+"uf": "TO",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1716604,
+"nome": "Peixe",
+"uf": "TO",
+"desde": "2024-03-27"
+},
+{
+"ibge": 1717909,
+"nome": "Ponte Alta do Tocantins",
+"uf": "TO",
+"desde": "2024-12-18"
+},
+{
+"ibge": 1718451,
+"nome": "Pugmil",
+"uf": "TO",
+"desde": "2024-12-19"
+},
+{
+"ibge": 1718501,
+"nome": "Recursolândia",
+"uf": "TO",
+"desde": "2024-08-07"
+},
+{
+"ibge": 1718808,
+"nome": "Sampaio",
+"uf": "TO",
+"desde": "2024-01-22"
+},
+{
+"ibge": 1718865,
+"nome": "Santa Fé do Araguaia",
+"uf": "TO",
+"desde": "2024-10-30"
+},
+{
+"ibge": 1720978,
+"nome": "Talismã",
+"uf": "TO",
+"desde": "2024-10-30"
+},
+{
+"ibge": 1721000,
+"nome": "Palmas",
+"uf": "TO",
+"desde": "2020-10-30"
+},
+{
+"ibge": 1721109,
+"nome": "Tocantínia",
+"uf": "TO",
+"desde": "2024-03-27"
+},
+{
+"ibge": 1721208,
+"nome": "Tocantinópolis",
+"uf": "TO",
+"desde": "2024-10-28"
+},
+{
+"ibge": 1721257,
+"nome": "Tupirama",
+"uf": "TO",
+"desde": "2024-10-25"
+},
+{
+"ibge": 2100105,
+"nome": "Afonso Cunha",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2100303,
+"nome": "Aldeias Altas",
+"uf": "MA",
+"desde": "2023-02-16"
+},
+{
+"ibge": 2100709,
+"nome": "Anajatuba",
+"uf": "MA",
+"desde": "2024-12-19"
+},
+{
+"ibge": 2101103,
+"nome": "Axixá",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2101202,
+"nome": "Bacabal",
+"uf": "MA",
+"desde": "2022-11-30"
+},
+{
+"ibge": 2101301,
+"nome": "Bacuri",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2101970,
+"nome": "Boa Vista do Gurupi",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2102002,
+"nome": "Bom Jardim",
+"uf": "MA",
+"desde": "2024-12-19"
+},
+{
+"ibge": 2102077,
+"nome": "Bom Lugar",
+"uf": "MA",
+"desde": "2024-12-19"
+},
+{
+"ibge": 2102325,
+"nome": "Buriticupu",
+"uf": "MA",
+"desde": "2024-06-04"
+},
+{
+"ibge": 2103000,
+"nome": "Caxias",
+"uf": "MA",
+"desde": "2022-03-23"
+},
+{
+"ibge": 2103158,
+"nome": "Centro do Guilherme",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2103307,
+"nome": "Codó",
+"uf": "MA",
+"desde": "2022-11-30"
+},
+{
+"ibge": 2103604,
+"nome": "Coroatá",
+"uf": "MA",
+"desde": "2023-06-16"
+},
+{
+"ibge": 2103901,
+"nome": "Duque Bacelar",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2105401,
+"nome": "Itapecuru Mirim",
+"uf": "MA",
+"desde": "2024-06-04"
+},
+{
+"ibge": 2106326,
+"nome": "Maracaçumé",
+"uf": "MA",
+"desde": "2024-10-30"
+},
+{
+"ibge": 2106375,
+"nome": "Maranhãozinho",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2107209,
+"nome": "Nina Rodrigues",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2107308,
+"nome": "Nova Iorque",
+"uf": "MA",
+"desde": "2025-01-22"
+},
+{
+"ibge": 2108454,
+"nome": "Peritoró",
+"uf": "MA",
+"desde": "2022-11-30"
+},
+{
+"ibge": 2110302,
+"nome": "Santo Antônio Dos Lopes",
+"uf": "MA",
+"desde": "2022-11-30"
+},
+{
+"ibge": 2111250,
+"nome": "São José Dos Basílios",
+"uf": "MA",
+"desde": "2023-06-16"
+},
+{
+"ibge": 2111300,
+"nome": "São Luís",
+"uf": "MA",
+"desde": "2025-01-13"
+},
+{
+"ibge": 2111706,
+"nome": "São Vicente Ferrer",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2112456,
+"nome": "Turilândia",
+"uf": "MA",
+"desde": "2025-01-22"
+},
+{
+"ibge": 2112803,
+"nome": "Viana",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2114007,
+"nome": "Zé Doca",
+"uf": "MA",
+"desde": "2023-06-22"
+},
+{
+"ibge": 2211001,
+"nome": "Teresina",
+"uf": "PI",
+"desde": "2021-01-05"
+},
+{
+"ibge": 2301703,
+"nome": "Aurora",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2302800,
+"nome": "Canindé",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2303204,
+"nome": "Caririaçu",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2303709,
+"nome": "Caucaia",
+"uf": "CE",
+"desde": "2024-06-04"
+},
+{
+"ibge": 2303808,
+"nome": "Cedro",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2304103,
+"nome": "Crateús",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2304608,
+"nome": "General Sampaio",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2305209,
+"nome": "Hidrolândia",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2305233,
+"nome": "Horizonte",
+"uf": "CE",
+"desde": "2023-10-06"
+},
+{
+"ibge": 2306256,
+"nome": "Itaitinga",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2306900,
+"nome": "Jaguaribe",
+"uf": "CE",
+"desde": "2024-07-04"
+},
+{
+"ibge": 2307304,
+"nome": "Juazeiro do Norte",
+"uf": "CE",
+"desde": "2024-06-04"
+},
+{
+"ibge": 2312908,
+"nome": "Sobral",
+"uf": "CE",
+"desde": "2022-07-04"
+},
+{
+"ibge": 2408003,
+"nome": "Mossoró",
+"uf": "RN",
+"desde": "2022-05-09"
+},
+{
+"ibge": 2408102,
+"nome": "Natal",
+"uf": "RN",
+"desde": "2020-10-30"
+},
+{
+"ibge": 2409407,
+"nome": "Pau Dos Ferros",
+"uf": "RN",
+"desde": "2024-06-12"
+},
+{
+"ibge": 2411205,
+"nome": "Santa Cruz",
+"uf": "RN",
+"desde": "2024-12-18"
+},
+{
+"ibge": 2411908,
+"nome": "São Francisco do Oeste",
+"uf": "RN",
+"desde": "2024-12-18"
+},
+{
+"ibge": 2413805,
+"nome": "Taboleiro Grande",
+"uf": "RN",
+"desde": "2024-12-18"
+},
+{
+"ibge": 2507309,
+"nome": "Jacaraú",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2507408,
+"nome": "Jericó",
+"uf": "PB",
+"desde": "2024-07-17"
+},
+{
+"ibge": 2507507,
+"nome": "João Pessoa",
+"uf": "PB",
+"desde": "2021-01-05"
+},
+{
+"ibge": 2509156,
+"nome": "Marizópolis",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2511707,
+"nome": "Pilõezinhos",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2512747,
+"nome": "Riachão",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2514453,
+"nome": "São José Dos Ramos",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2515906,
+"nome": "Serraria",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2515930,
+"nome": "Sertãozinho",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2516409,
+"nome": "Tacima",
+"uf": "PB",
+"desde": "2024-07-16"
+},
+{
+"ibge": 2603009,
+"nome": "Cabrobó",
+"uf": "PE",
+"desde": "2023-10-03"
+},
+{
+"ibge": 2607901,
+"nome": "Jaboatão Dos Guararapes",
+"uf": "PE",
+"desde": "2022-03-23"
+},
+{
+"ibge": 2611101,
+"nome": "Petrolina",
+"uf": "PE",
+"desde": "2022-05-09"
+},
+{
+"ibge": 2611606,
+"nome": "Recife",
+"uf": "PE",
+"desde": "2022-03-24"
+},
+{
+"ibge": 2614303,
+"nome": "Moreilândia",
+"uf": "PE",
+"desde": "2024-12-18"
+},
+{
+"ibge": 2700102,
+"nome": "Água Branca",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700201,
+"nome": "Anadia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700300,
+"nome": "Arapiraca",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700409,
+"nome": "Atalaia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700508,
+"nome": "Barra de Santo Antônio",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700607,
+"nome": "Barra de São Miguel",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700706,
+"nome": "Batalha",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700805,
+"nome": "Belém",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2700904,
+"nome": "Belo Monte",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701100,
+"nome": "Branquinha",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701209,
+"nome": "Cacimbinhas",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701308,
+"nome": "Cajueiro",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701357,
+"nome": "Campestre",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701407,
+"nome": "Campo Alegre",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701506,
+"nome": "Campo Grande",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701605,
+"nome": "Canapi",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701704,
+"nome": "Capela",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701803,
+"nome": "Carneiros",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2701902,
+"nome": "Chã Preta",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702009,
+"nome": "Coité do Nóia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702108,
+"nome": "Colônia Leopoldina",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702207,
+"nome": "Coqueiro Seco",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702306,
+"nome": "Coruripe",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702355,
+"nome": "Craíbas",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702405,
+"nome": "Delmiro Gouveia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702504,
+"nome": "Dois Riachos",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702553,
+"nome": "Estrela de Alagoas",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702603,
+"nome": "Feira Grande",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702702,
+"nome": "Feliz Deserto",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702801,
+"nome": "Flexeiras",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2702900,
+"nome": "Girau do Ponciano",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703007,
+"nome": "Ibateguara",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703106,
+"nome": "Igaci",
+"uf": "AL",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2703205,
+"nome": "Igreja Nova",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703304,
+"nome": "Inhapi",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703403,
+"nome": "Jacaré Dos Homens",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703502,
+"nome": "Jacuípe",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703601,
+"nome": "Japaratinga",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703700,
+"nome": "Jaramataia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703759,
+"nome": "Jequiá da Praia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703809,
+"nome": "Joaquim Gomes",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2703908,
+"nome": "Jundiá",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704005,
+"nome": "Junqueiro",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704104,
+"nome": "Lagoa da Canoa",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704203,
+"nome": "Limoeiro de Anadia",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704302,
+"nome": "Maceió",
+"uf": "AL",
+"desde": "2021-01-05"
+},
+{
+"ibge": 2704401,
+"nome": "Major Isidoro",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704500,
+"nome": "Maragogi",
+"uf": "AL",
+"desde": "2024-10-16"
+},
+{
+"ibge": 2704609,
+"nome": "Maravilha",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704708,
+"nome": "Marechal Deodoro",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704807,
+"nome": "Maribondo",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2704906,
+"nome": "Mar Vermelho",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705002,
+"nome": "Mata Grande",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705101,
+"nome": "Matriz de Camaragibe",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705200,
+"nome": "Messias",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705309,
+"nome": "Minador do Negrão",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705408,
+"nome": "Monteirópolis",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705606,
+"nome": "Novo Lino",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705705,
+"nome": "Olho D'água Das Flores",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705804,
+"nome": "Olho D'água do Casado",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2705903,
+"nome": "Olho D'água Grande",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706000,
+"nome": "Olivença",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706109,
+"nome": "Ouro Branco",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706208,
+"nome": "Palestina",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706406,
+"nome": "Pão de Açúcar",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706422,
+"nome": "Pariconha",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706505,
+"nome": "Passo de Camaragibe",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706604,
+"nome": "Paulo Jacinto",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706802,
+"nome": "Piaçabuçu",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2706901,
+"nome": "Pilar",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707008,
+"nome": "Pindoba",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707107,
+"nome": "Piranhas",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707206,
+"nome": "Poço Das Trincheiras",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707305,
+"nome": "Porto Calvo",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707404,
+"nome": "Porto de Pedras",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707503,
+"nome": "Porto Real do Colégio",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707602,
+"nome": "Quebrangulo",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707701,
+"nome": "Rio Largo",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707800,
+"nome": "Roteiro",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2707909,
+"nome": "Santa Luzia do Norte",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708006,
+"nome": "Santana do Ipanema",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708105,
+"nome": "Santana do Mundaú",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708303,
+"nome": "São José da Laje",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708402,
+"nome": "São José da Tapera",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708501,
+"nome": "São Luís do Quitunde",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708709,
+"nome": "São Miguel Dos Milagres",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708808,
+"nome": "São Sebastião",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708907,
+"nome": "Satuba",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2708956,
+"nome": "Senador Rui Palmeira",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2709004,
+"nome": "Tanque D'arca",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2709103,
+"nome": "Taquarana",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2709152,
+"nome": "Teotônio Vilela",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2709202,
+"nome": "Traipu",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2709400,
+"nome": "Viçosa",
+"uf": "AL",
+"desde": "2023-12-14"
+},
+{
+"ibge": 2800209,
+"nome": "Aquidabã",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2800308,
+"nome": "Aracaju",
+"uf": "SE",
+"desde": "2025-01-20"
+},
+{
+"ibge": 2800506,
+"nome": "Areia Branca",
+"uf": "SE",
+"desde": "2023-11-29"
+},
+{
+"ibge": 2800605,
+"nome": "Barra Dos Coqueiros",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2801009,
+"nome": "Campo do Brito",
+"uf": "SE",
+"desde": "2023-11-29"
+},
+{
+"ibge": 2801108,
+"nome": "Canhoba",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2801207,
+"nome": "Canindé de São Francisco",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2801306,
+"nome": "Capela",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2802007,
+"nome": "Divina Pastora",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2802106,
+"nome": "Estância",
+"uf": "SE",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2802304,
+"nome": "Frei Paulo",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2802700,
+"nome": "Ilha Das Flores",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2802908,
+"nome": "Itabaiana",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2803005,
+"nome": "Itabaianinha",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2803302,
+"nome": "Japaratuba",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2804102,
+"nome": "Moita Bonita",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2804300,
+"nome": "Muribeca",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2804607,
+"nome": "Nossa Senhora Das Dores",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2804706,
+"nome": "Nossa Senhora de Lourdes",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2804805,
+"nome": "Nossa Senhora do Socorro",
+"uf": "SE",
+"desde": "2023-08-10"
+},
+{
+"ibge": 2805000,
+"nome": "Pedra Mole",
+"uf": "SE",
+"desde": "2023-11-29"
+},
+{
+"ibge": 2805307,
+"nome": "Pirambu",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2805505,
+"nome": "Poço Verde",
+"uf": "SE",
+"desde": "2023-11-30"
+},
+{
+"ibge": 2805802,
+"nome": "Riachão do Dantas",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2806107,
+"nome": "Rosário do Catete",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2806800,
+"nome": "São Domingos",
+"uf": "SE",
+"desde": "2023-12-02"
+},
+{
+"ibge": 2807105,
+"nome": "Simão Dias",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2807204,
+"nome": "Siriri",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2807303,
+"nome": "Telha",
+"uf": "SE",
+"desde": "2023-12-01"
+},
+{
+"ibge": 2900207,
+"nome": "Abaré",
+"uf": "BA",
+"desde": "2024-06-12"
+},
+{
+"ibge": 2900306,
+"nome": "Acajutiba",
+"uf": "BA",
+"desde": "2022-10-19"
+},
+{
+"ibge": 2900355,
+"nome": "Adustina",
+"uf": "BA",
+"desde": "2024-06-12"
+},
+{
+"ibge": 2900702,
+"nome": "Alagoinhas",
+"uf": "BA",
+"desde": "2022-12-22"
+},
+{
+"ibge": 2900801,
+"nome": "Alcobaça",
+"uf": "BA",
+"desde": "2023-10-17"
+},
+{
+"ibge": 2900900,
+"nome": "Almadina",
+"uf": "BA",
+"desde": "2024-06-12"
+},
+{
+"ibge": 2901205,
+"nome": "Anagé",
+"uf": "BA",
+"desde": "2024-06-12"
+},
+{
+"ibge": 2901353,
+"nome": "Andorinha",
+"uf": "BA",
+"desde": "2024-06-12"
+},
+{
+"ibge": 2901403,
+"nome": "Angical",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2901601,
+"nome": "Antas",
+"uf": "BA",
+"desde": "2024-10-25"
+},
+{
+"ibge": 2901957,
+"nome": "Apuarema",
+"uf": "BA",
+"desde": "2024-10-25"
+},
+{
+"ibge": 2902054,
+"nome": "Araças",
+"uf": "BA",
+"desde": "2024-10-25"
+},
+{
+"ibge": 2902203,
+"nome": "Aramari",
+"uf": "BA",
+"desde": "2024-10-25"
+},
+{
+"ibge": 2902252,
+"nome": "Arataca",
+"uf": "BA",
+"desde": "2024-10-25"
+},
+{
+"ibge": 2902658,
+"nome": "Banzaê",
+"uf": "BA",
+"desde": "2023-10-17"
+},
+{
+"ibge": 2903201,
+"nome": "Barreiras",
+"uf": "BA",
+"desde": "2023-07-14"
+},
+{
+"ibge": 2904506,
+"nome": "Brotas de Macaúbas",
+"uf": "BA",
+"desde": "2023-10-18"
+},
+{
+"ibge": 2905206,
+"nome": "Caetité",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2905909,
+"nome": "Campo Alegre de Lourdes",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2906006,
+"nome": "Campo Formoso",
+"uf": "BA",
+"desde": "2022-12-22"
+},
+{
+"ibge": 2906824,
+"nome": "Canudos",
+"uf": "BA",
+"desde": "2023-08-18"
+},
+{
+"ibge": 2907806,
+"nome": "Cícero Dantas",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2907905,
+"nome": "Cipó",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2909307,
+"nome": "Correntina",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2909406,
+"nome": "Cotegipe",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2909703,
+"nome": "Cristópolis",
+"uf": "BA",
+"desde": "2023-10-24"
+},
+{
+"ibge": 2909802,
+"nome": "Cruz Das Almas",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2910602,
+"nome": "Esplanada",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2910800,
+"nome": "Feira de Santana",
+"uf": "BA",
+"desde": "2021-10-17"
+},
+{
+"ibge": 2911105,
+"nome": "Formosa do Rio Preto",
+"uf": "BA",
+"desde": "2023-11-18"
+},
+{
+"ibge": 2913705,
+"nome": "Inhambupe",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2913903,
+"nome": "Ipiaú",
+"uf": "BA",
+"desde": "2023-11-17"
+},
+{
+"ibge": 2914505,
+"nome": "Irará",
+"uf": "BA",
+"desde": "2023-10-16"
+},
+{
+"ibge": 2914703,
+"nome": "Itaberaba",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2915601,
+"nome": "Itamaraju",
+"uf": "BA",
+"desde": "2023-10-24"
+},
+{
+"ibge": 2916401,
+"nome": "Itapetinga",
+"uf": "BA",
+"desde": "2023-08-31"
+},
+{
+"ibge": 2916500,
+"nome": "Itapicuru",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2916856,
+"nome": "Itatim",
+"uf": "BA",
+"desde": "2024-09-18"
+},
+{
+"ibge": 2917201,
+"nome": "Ituaçu",
+"uf": "BA",
+"desde": "2023-10-16"
+},
+{
+"ibge": 2917359,
+"nome": "Jaborandi",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2917607,
+"nome": "Jaguaquara",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2918100,
+"nome": "Jeremoabo",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2918407,
+"nome": "Juazeiro",
+"uf": "BA",
+"desde": "2022-12-22"
+},
+{
+"ibge": 2918803,
+"nome": "Laje",
+"uf": "BA",
+"desde": "2023-10-16"
+},
+{
+"ibge": 2918902,
+"nome": "Lajedão",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2919207,
+"nome": "Lauro de Freitas",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2919553,
+"nome": "Luís Eduardo Magalhães",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2919603,
+"nome": "Macajuba",
+"uf": "BA",
+"desde": "2023-10-16"
+},
+{
+"ibge": 2920601,
+"nome": "Maragogipe",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2920908,
+"nome": "Mascote",
+"uf": "BA",
+"desde": "2023-08-18"
+},
+{
+"ibge": 2921500,
+"nome": "Monte Santo",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2921708,
+"nome": "Morro do Chapéu",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2922003,
+"nome": "Mucuri",
+"uf": "BA",
+"desde": "2023-10-16"
+},
+{
+"ibge": 2925501,
+"nome": "Prado",
+"uf": "BA",
+"desde": "2023-09-18"
+},
+{
+"ibge": 2926202,
+"nome": "Riachão Das Neves",
+"uf": "BA",
+"desde": "2024-03-22"
+},
+{
+"ibge": 2927408,
+"nome": "Salvador",
+"uf": "BA",
+"desde": "2020-11-24"
+},
+{
+"ibge": 2927705,
+"nome": "Santa Cruz Cabrália",
+"uf": "BA",
+"desde": "2023-10-18"
+},
+{
+"ibge": 2928059,
+"nome": "Santa Luzia",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2928406,
+"nome": "Santa Rita de Cássia",
+"uf": "BA",
+"desde": "2023-10-28"
+},
+{
+"ibge": 2928802,
+"nome": "Santo Estêvão",
+"uf": "BA",
+"desde": "2023-08-31"
+},
+{
+"ibge": 2929701,
+"nome": "Sátiro Dias",
+"uf": "BA",
+"desde": "2023-10-25"
+},
+{
+"ibge": 2930105,
+"nome": "Senhor do Bonfim",
+"uf": "BA",
+"desde": "2022-12-22"
+},
+{
+"ibge": 2930204,
+"nome": "Sento Sé",
+"uf": "BA",
+"desde": "2023-10-18"
+},
+{
+"ibge": 2931301,
+"nome": "Tapiramutá",
+"uf": "BA",
+"desde": "2023-10-25"
+},
+{
+"ibge": 2931608,
+"nome": "Teolândia",
+"uf": "BA",
+"desde": "2023-09-18"
+},
+{
+"ibge": 2931905,
+"nome": "Tucano",
+"uf": "BA",
+"desde": "2023-09-18"
+},
+{
+"ibge": 3106200,
+"nome": "Belo Horizonte",
+"uf": "MG",
+"desde": "2021-10-08"
+},
+{
+"ibge": 3106705,
+"nome": "Betim",
+"uf": "MG",
+"desde": "2023-08-18"
+},
+{
+"ibge": 3111200,
+"nome": "Campo Belo",
+"uf": "MG",
+"desde": "2022-12-22"
+},
+{
+"ibge": 3112000,
+"nome": "Candeias",
+"uf": "MG",
+"desde": "2023-08-31"
+},
+{
+"ibge": 3113909,
+"nome": "Carmo da Cachoeira",
+"uf": "MG",
+"desde": "2023-08-31"
+},
+{
+"ibge": 3114402,
+"nome": "Carmo do Rio Claro",
+"uf": "MG",
+"desde": "2024-06-12"
+},
+{
+"ibge": 3118601,
+"nome": "Contagem",
+"uf": "MG",
+"desde": "2022-10-04"
+},
+{
+"ibge": 3120607,
+"nome": "Crucilândia",
+"uf": "MG",
+"desde": "2023-09-18"
+},
+{
+"ibge": 3132404,
+"nome": "Itajubá",
+"uf": "MG",
+"desde": "2023-10-05"
+},
+{
+"ibge": 3133808,
+"nome": "Itaúna",
+"uf": "MG",
+"desde": "2022-12-22"
+},
+{
+"ibge": 3135209,
+"nome": "Januária",
+"uf": "MG",
+"desde": "2023-10-24"
+},
+{
+"ibge": 3136652,
+"nome": "Juatuba",
+"uf": "MG",
+"desde": "2024-06-12"
+},
+{
+"ibge": 3145208,
+"nome": "Nova Serrana",
+"uf": "MG",
+"desde": "2022-12-22"
+},
+{
+"ibge": 3145802,
+"nome": "Onça de Pitangui",
+"uf": "MG",
+"desde": "2024-06-12"
+},
+{
+"ibge": 3151008,
+"nome": "Piranguinho",
+"uf": "MG",
+"desde": "2023-09-18"
+},
+{
+"ibge": 3157005,
+"nome": "Salinas",
+"uf": "MG",
+"desde": "2023-08-18"
+},
+{
+"ibge": 3168002,
+"nome": "Taiobeiras",
+"uf": "MG",
+"desde": "2023-06-06"
+},
+{
+"ibge": 3170107,
+"nome": "Uberaba",
+"uf": "MG",
+"desde": "2022-07-18"
+},
+{
+"ibge": 3170206,
+"nome": "Uberlândia",
+"uf": "MG",
+"desde": "2024-04-18"
+},
+{
+"ibge": 3170800,
+"nome": "Várzea da Palma",
+"uf": "MG",
+"desde": "2023-06-05"
+},
+{
+"ibge": 3205002,
+"nome": "Serra",
+"uf": "ES",
+"desde": "2022-10-03"
+},
+{
+"ibge": 3205200,
+"nome": "Vila Velha",
+"uf": "ES",
+"desde": "2022-07-19"
+},
+{
+"ibge": 3205309,
+"nome": "Vitória",
+"uf": "ES",
+"desde": "2025-01-13"
+},
+{
+"ibge": 3300100,
+"nome": "Angra Dos Reis",
+"uf": "RJ",
+"desde": "2024-09-05"
+},
+{
+"ibge": 3300233,
+"nome": "Armação Dos Búzios",
+"uf": "RJ",
+"desde": "2024-07-31"
+},
+{
+"ibge": 3300258,
+"nome": "Arraial do Cabo",
+"uf": "RJ",
+"desde": "2022-12-22"
+},
+{
+"ibge": 3300456,
+"nome": "Belford Roxo",
+"uf": "RJ",
+"desde": "2022-10-19"
+},
+{
+"ibge": 3300704,
+"nome": "Cabo Frio",
+"uf": "RJ",
+"desde": "2024-09-18"
+},
+{
+"ibge": 3301306,
+"nome": "Casimiro de Abreu",
+"uf": "RJ",
+"desde": "2024-06-04"
+},
+{
+"ibge": 3301504,
+"nome": "Cordeiro",
+"uf": "RJ",
+"desde": "2024-06-04"
+},
+{
+"ibge": 3301876,
+"nome": "Iguaba Grande",
+"uf": "RJ",
+"desde": "2024-07-31"
+},
+{
+"ibge": 3302403,
+"nome": "Macaé",
+"uf": "RJ",
+"desde": "2024-09-25"
+},
+{
+"ibge": 3302700,
+"nome": "Maricá",
+"uf": "RJ",
+"desde": "2024-10-02"
+},
+{
+"ibge": 3302858,
+"nome": "Mesquita",
+"uf": "RJ",
+"desde": "2024-08-05"
+},
+{
+"ibge": 3302908,
+"nome": "Miguel Pereira",
+"uf": "RJ",
+"desde": "2024-08-05"
+},
+{
+"ibge": 3303302,
+"nome": "Niterói",
+"uf": "RJ",
+"desde": "2024-01-16"
+},
+{
+"ibge": 3303401,
+"nome": "Nova Friburgo",
+"uf": "RJ",
+"desde": "2024-09-05"
+},
+{
+"ibge": 3303500,
+"nome": "Nova Iguaçu",
+"uf": "RJ",
+"desde": "2022-07-05"
+},
+{
+"ibge": 3304128,
+"nome": "Quatis",
+"uf": "RJ",
+"desde": "2024-08-05"
+},
+{
+"ibge": 3304144,
+"nome": "Queimados",
+"uf": "RJ",
+"desde": "2024-08-05"
+},
+{
+"ibge": 3304151,
+"nome": "Quissamã",
+"uf": "RJ",
+"desde": "2024-07-31"
+},
+{
+"ibge": 3304557,
+"nome": "Rio de Janeiro",
+"uf": "RJ",
+"desde": "2020-10-29"
+},
+{
+"ibge": 3305000,
+"nome": "São João da Barra",
+"uf": "RJ",
+"desde": "2024-09-06"
+},
+{
+"ibge": 3305109,
+"nome": "São João de Meriti",
+"uf": "RJ",
+"desde": "2024-01-22"
+},
+{
+"ibge": 3305158,
+"nome": "São José do Vale do Rio Preto",
+"uf": "RJ",
+"desde": "2024-07-31"
+},
+{
+"ibge": 3305208,
+"nome": "São Pedro da Aldeia",
+"uf": "RJ",
+"desde": "2024-08-05"
+},
+{
+"ibge": 3305505,
+"nome": "Saquarema",
+"uf": "RJ",
+"desde": "2024-08-28"
+},
+{
+"ibge": 3305703,
+"nome": "Sumidouro",
+"uf": "RJ",
+"desde": "2024-09-05"
+},
+{
+"ibge": 3306156,
+"nome": "Varre-sai",
+"uf": "RJ",
+"desde": "2024-09-06"
+},
+{
+"ibge": 3500204,
+"nome": "Adolfo",
+"uf": "SP",
+"desde": "2023-08-18"
+},
+{
+"ibge": 3500600,
+"nome": "Águas de São Pedro",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3501103,
+"nome": "Alto Alegre",
+"uf": "SP",
+"desde": "2023-10-05"
+},
+{
+"ibge": 3501202,
+"nome": "Álvares Florence",
+"uf": "SP",
+"desde": "2024-09-04"
+},
+{
+"ibge": 3502101,
+"nome": "Andradina",
+"uf": "SP",
+"desde": "2023-10-23"
+},
+{
+"ibge": 3502507,
+"nome": "Aparecida",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3502754,
+"nome": "Araçariguama",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3502804,
+"nome": "Araçatuba",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3503158,
+"nome": "Arapeí",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3504404,
+"nome": "Avanhandava",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3504503,
+"nome": "Avaré",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3505005,
+"nome": "Barão de Antonina",
+"uf": "SP",
+"desde": "2023-09-18"
+},
+{
+"ibge": 3505104,
+"nome": "Barbosa",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3506508,
+"nome": "Birigui",
+"uf": "SP",
+"desde": "2023-10-04"
+},
+{
+"ibge": 3507506,
+"nome": "Botucatu",
+"uf": "SP",
+"desde": "2023-10-25"
+},
+{
+"ibge": 3507605,
+"nome": "Bragança Paulista",
+"uf": "SP",
+"desde": "2023-10-03"
+},
+{
+"ibge": 3507753,
+"nome": "Brejo Alegre",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3509502,
+"nome": "Campinas",
+"uf": "SP",
+"desde": "2022-10-19"
+},
+{
+"ibge": 3509601,
+"nome": "Campo Limpo Paulista",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3511102,
+"nome": "Catanduva",
+"uf": "SP",
+"desde": "2023-10-04"
+},
+{
+"ibge": 3511706,
+"nome": "Charqueada",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3512605,
+"nome": "Coronel Macedo",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3513603,
+"nome": "Cunha",
+"uf": "SP",
+"desde": "2024-03-22"
+},
+{
+"ibge": 3513850,
+"nome": "Dirce Reis",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3514403,
+"nome": "Dracena",
+"uf": "SP",
+"desde": "2023-10-23"
+},
+{
+"ibge": 3514809,
+"nome": "Eldorado",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3515905,
+"nome": "Floreal",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3516903,
+"nome": "General Salgado",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3517109,
+"nome": "Glicério",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3517802,
+"nome": "Guaraçaí",
+"uf": "SP",
+"desde": "2023-08-18"
+},
+{
+"ibge": 3518800,
+"nome": "Guarulhos",
+"uf": "SP",
+"desde": "2022-07-09"
+},
+{
+"ibge": 3519600,
+"nome": "Ibitinga",
+"uf": "SP",
+"desde": "2022-12-22"
+},
+{
+"ibge": 3519907,
+"nome": "Iepê",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3520004,
+"nome": "Igaraçu do Tietê",
+"uf": "SP",
+"desde": "2023-11-17"
+},
+{
+"ibge": 3521408,
+"nome": "Iracemápolis",
+"uf": "SP",
+"desde": "2024-10-04"
+},
+{
+"ibge": 3521606,
+"nome": "Irapuru",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3522406,
+"nome": "Itapeva",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3522505,
+"nome": "Itapevi",
+"uf": "SP",
+"desde": "2023-10-03"
+},
+{
+"ibge": 3522653,
+"nome": "Itapirapuã Paulista",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3522703,
+"nome": "Itápolis",
+"uf": "SP",
+"desde": "2023-10-23"
+},
+{
+"ibge": 3522802,
+"nome": "Itaporanga",
+"uf": "SP",
+"desde": "2024-10-04"
+},
+{
+"ibge": 3522901,
+"nome": "Itapuí",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3523305,
+"nome": "Itariri",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3523800,
+"nome": "Itobi",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3523909,
+"nome": "Itu",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3524303,
+"nome": "Jaboticabal",
+"uf": "SP",
+"desde": "2022-12-22"
+},
+{
+"ibge": 3525003,
+"nome": "Jandira",
+"uf": "SP",
+"desde": "2023-10-05"
+},
+{
+"ibge": 3525300,
+"nome": "Jaú",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3525508,
+"nome": "Joanópolis",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3525607,
+"nome": "João Ramalho",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3525904,
+"nome": "Jundiaí",
+"uf": "SP",
+"desde": "2021-09-17"
+},
+{
+"ibge": 3526001,
+"nome": "Junqueirópolis",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3526308,
+"nome": "Lagoinha",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3526506,
+"nome": "Lavínia",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3527702,
+"nome": "Luiziânia",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3528007,
+"nome": "Macatuba",
+"uf": "SP",
+"desde": "2024-03-21"
+},
+{
+"ibge": 3528106,
+"nome": "Macaubal",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3529005,
+"nome": "Marília",
+"uf": "SP",
+"desde": "2022-10-10"
+},
+{
+"ibge": 3530003,
+"nome": "Mira Estrela",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3530201,
+"nome": "Mirante do Paranapanema",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3530706,
+"nome": "Mogi Guaçu",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3531308,
+"nome": "Monte Alto",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3531704,
+"nome": "Monteiro Lobato",
+"uf": "SP",
+"desde": "2024-03-17"
+},
+{
+"ibge": 3531803,
+"nome": "Monte Mor",
+"uf": "SP",
+"desde": "2023-10-24"
+},
+{
+"ibge": 3532603,
+"nome": "Nhandeara",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3532868,
+"nome": "Nova Castilho",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3533304,
+"nome": "Nova Luzitânia",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3534401,
+"nome": "Osasco",
+"uf": "SP",
+"desde": "2023-08-03"
+},
+{
+"ibge": 3534708,
+"nome": "Ourinhos",
+"uf": "SP",
+"desde": "2023-10-25"
+},
+{
+"ibge": 3535309,
+"nome": "Palmital",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3536257,
+"nome": "Parisi",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3536307,
+"nome": "Patrocínio Paulista",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3536505,
+"nome": "Paulínia",
+"uf": "SP",
+"desde": "2023-07-27"
+},
+{
+"ibge": 3537305,
+"nome": "Penápolis",
+"uf": "SP",
+"desde": "2023-09-18"
+},
+{
+"ibge": 3537800,
+"nome": "Piedade",
+"uf": "SP",
+"desde": "2023-08-18"
+},
+{
+"ibge": 3538105,
+"nome": "Pindorama",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3539608,
+"nome": "Planalto",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3539905,
+"nome": "Poloni",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3540309,
+"nome": "Pontes Gestal",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3540507,
+"nome": "Porangaba",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3540804,
+"nome": "Potirendaba",
+"uf": "SP",
+"desde": "2024-10-04"
+},
+{
+"ibge": 3541059,
+"nome": "Pratânia",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3541307,
+"nome": "Presidente Epitácio",
+"uf": "SP",
+"desde": "2023-10-23"
+},
+{
+"ibge": 3543907,
+"nome": "Rio Claro",
+"uf": "SP",
+"desde": "2023-10-03"
+},
+{
+"ibge": 3545209,
+"nome": "Salto",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3546504,
+"nome": "Santa Ernestina",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3547007,
+"nome": "Santa Maria da Serra",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3547809,
+"nome": "Santo André",
+"uf": "SP",
+"desde": "2022-10-10"
+},
+{
+"ibge": 3548500,
+"nome": "Santos",
+"uf": "SP",
+"desde": "2023-05-16"
+},
+{
+"ibge": 3548708,
+"nome": "São Bernardo do Campo",
+"uf": "SP",
+"desde": "2023-10-03"
+},
+{
+"ibge": 3549904,
+"nome": "São José Dos Campos",
+"uf": "SP",
+"desde": "2024-03-27"
+},
+{
+"ibge": 3550100,
+"nome": "São Manuel",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3550407,
+"nome": "São Pedro",
+"uf": "SP",
+"desde": "2023-10-23"
+},
+{
+"ibge": 3550605,
+"nome": "São Roque",
+"uf": "SP",
+"desde": "2023-09-01"
+},
+{
+"ibge": 3551207,
+"nome": "Sarutaiá",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3551306,
+"nome": "Sebastianópolis do Sul",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3551702,
+"nome": "Sertãozinho",
+"uf": "SP",
+"desde": "2023-10-06"
+},
+{
+"ibge": 3552403,
+"nome": "Sumaré",
+"uf": "SP",
+"desde": "2022-03-24"
+},
+{
+"ibge": 3552502,
+"nome": "Suzano",
+"uf": "SP",
+"desde": "2023-11-21"
+},
+{
+"ibge": 3553500,
+"nome": "Tapiraí",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3553658,
+"nome": "Taquaral",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3554102,
+"nome": "Taubaté",
+"uf": "SP",
+"desde": "2024-09-05"
+},
+{
+"ibge": 3554409,
+"nome": "Terra Roxa",
+"uf": "SP",
+"desde": "2023-10-31"
+},
+{
+"ibge": 3554805,
+"nome": "Tremembé",
+"uf": "SP",
+"desde": "2024-03-17"
+},
+{
+"ibge": 3555208,
+"nome": "Turiúba",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3555703,
+"nome": "União Paulista",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3556206,
+"nome": "Valinhos",
+"uf": "SP",
+"desde": "2022-08-29"
+},
+{
+"ibge": 3556305,
+"nome": "Valparaíso",
+"uf": "SP",
+"desde": "2023-10-28"
+},
+{
+"ibge": 3556602,
+"nome": "Vera Cruz",
+"uf": "SP",
+"desde": "2023-09-01"
+},
+{
+"ibge": 3556701,
+"nome": "Vinhedo",
+"uf": "SP",
+"desde": "2022-08-29"
+},
+{
+"ibge": 3557006,
+"nome": "Votorantim",
+"uf": "SP",
+"desde": "2023-08-18"
+},
+{
+"ibge": 3557105,
+"nome": "Votuporanga",
+"uf": "SP",
+"desde": "2023-10-05"
+},
+{
+"ibge": 4101309,
+"nome": "Antônio Olinto",
+"uf": "PR",
+"desde": "2023-10-28"
+},
+{
+"ibge": 4101408,
+"nome": "Apucarana",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4103453,
+"nome": "Cafelândia",
+"uf": "PR",
+"desde": "2023-06-22"
+},
+{
+"ibge": 4103479,
+"nome": "Cafezal do Sul",
+"uf": "PR",
+"desde": "2024-12-18"
+},
+{
+"ibge": 4104204,
+"nome": "Campo Largo",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4104303,
+"nome": "Campo Mourão",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4104659,
+"nome": "Carambeí",
+"uf": "PR",
+"desde": "2024-12-18"
+},
+{
+"ibge": 4104907,
+"nome": "Castro",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4106308,
+"nome": "Corbélia",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4106902,
+"nome": "Curitiba",
+"uf": "PR",
+"desde": "2022-05-09"
+},
+{
+"ibge": 4109302,
+"nome": "Guaraniaçu",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4110508,
+"nome": "Ipiranga",
+"uf": "PR",
+"desde": "2024-06-02"
+},
+{
+"ibge": 4111704,
+"nome": "Jaboti",
+"uf": "PR",
+"desde": "2023-08-31"
+},
+{
+"ibge": 4113700,
+"nome": "Londrina",
+"uf": "PR",
+"desde": "2022-07-12"
+},
+{
+"ibge": 4114005,
+"nome": "Mamborê",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4114906,
+"nome": "Marilândia do Sul",
+"uf": "PR",
+"desde": "2024-09-05"
+},
+{
+"ibge": 4115200,
+"nome": "Maringá",
+"uf": "PR",
+"desde": "2023-05-20"
+},
+{
+"ibge": 4117453,
+"nome": "Ouro Verde do Oeste",
+"uf": "PR",
+"desde": "2024-09-19"
+},
+{
+"ibge": 4120507,
+"nome": "Primeiro de Maio",
+"uf": "PR",
+"desde": "2023-10-28"
+},
+{
+"ibge": 4124301,
+"nome": "Santo Antônio do Paraíso",
+"uf": "PR",
+"desde": "2024-10-04"
+},
+{
+"ibge": 4125100,
+"nome": "São João do Triunfo",
+"uf": "PR",
+"desde": "2024-12-11"
+},
+{
+"ibge": 4125605,
+"nome": "São Mateus do Sul",
+"uf": "PR",
+"desde": "2022-12-22"
+},
+{
+"ibge": 4126702,
+"nome": "Tamboara",
+"uf": "PR",
+"desde": "2023-10-25"
+},
+{
+"ibge": 4205407,
+"nome": "Florianópolis",
+"uf": "SC",
+"desde": "2020-10-30"
+},
+{
+"ibge": 4209102,
+"nome": "Joinville",
+"uf": "SC",
+"desde": "2022-10-12"
+},
+{
+"ibge": 4302105,
+"nome": "Bento Gonçalves",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4303004,
+"nome": "Cachoeira do Sul",
+"uf": "RS",
+"desde": "2023-10-24"
+},
+{
+"ibge": 4303509,
+"nome": "Camaquã",
+"uf": "RS",
+"desde": "2022-12-22"
+},
+{
+"ibge": 4304200,
+"nome": "Candelária",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4305108,
+"nome": "Caxias do Sul",
+"uf": "RS",
+"desde": "2022-11-22"
+},
+{
+"ibge": 4305124,
+"nome": "Cerrito",
+"uf": "RS",
+"desde": "2023-09-18"
+},
+{
+"ibge": 4306403,
+"nome": "Dois Irmãos",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4307807,
+"nome": "Estrela",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4309209,
+"nome": "Gravataí",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4309605,
+"nome": "Horizontina",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4311809,
+"nome": "Marau",
+"uf": "RS",
+"desde": "2024-05-09"
+},
+{
+"ibge": 4313904,
+"nome": "Panambi",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4314902,
+"nome": "Porto Alegre",
+"uf": "RS",
+"desde": "2022-05-09"
+},
+{
+"ibge": 4315313,
+"nome": "Quatro Irmãos",
+"uf": "RS",
+"desde": "2024-12-18"
+},
+{
+"ibge": 4316758,
+"nome": "Santa Clara do Sul",
+"uf": "RS",
+"desde": "2024-05-09"
+},
+{
+"ibge": 4317202,
+"nome": "Santa Rosa",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4318200,
+"nome": "São Francisco de Paula",
+"uf": "RS",
+"desde": "2024-05-08"
+},
+{
+"ibge": 4318432,
+"nome": "São João do Polêsine",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4320701,
+"nome": "Sobradinho",
+"uf": "RS",
+"desde": "2024-05-16"
+},
+{
+"ibge": 4321634,
+"nome": "Três Arroios",
+"uf": "RS",
+"desde": "2024-05-09"
+},
+{
+"ibge": 4322707,
+"nome": "Vera Cruz",
+"uf": "RS",
+"desde": "2023-08-31"
+},
+{
+"ibge": 5002100,
+"nome": "Bela Vista",
+"uf": "MS",
+"desde": "2023-10-28"
+},
+{
+"ibge": 5002704,
+"nome": "Campo Grande",
+"uf": "MS",
+"desde": "2020-10-30"
+},
+{
+"ibge": 5003207,
+"nome": "Corumbá",
+"uf": "MS",
+"desde": "2024-03-27"
+},
+{
+"ibge": 5003256,
+"nome": "Costa Rica",
+"uf": "MS",
+"desde": "2023-10-28"
+},
+{
+"ibge": 5003454,
+"nome": "Deodápolis",
+"uf": "MS",
+"desde": "2024-12-18"
+},
+{
+"ibge": 5004007,
+"nome": "Glória de Dourados",
+"uf": "MS",
+"desde": "2024-12-18"
+},
+{
+"ibge": 5004403,
+"nome": "Inocência",
+"uf": "MS",
+"desde": "2022-12-22"
+},
+{
+"ibge": 5005400,
+"nome": "Maracaju",
+"uf": "MS",
+"desde": "2022-12-22"
+},
+{
+"ibge": 5006358,
+"nome": "Paranhos",
+"uf": "MS",
+"desde": "2024-12-18"
+},
+{
+"ibge": 5007208,
+"nome": "Rio Brilhante",
+"uf": "MS",
+"desde": "2024-12-18"
+},
+{
+"ibge": 5103379,
+"nome": "Cotriguaçu",
+"uf": "MT",
+"desde": "2024-10-04"
+},
+{
+"ibge": 5103403,
+"nome": "Cuiabá",
+"uf": "MT",
+"desde": "2021-10-14"
+},
+{
+"ibge": 5107602,
+"nome": "Rondonópolis",
+"uf": "MT",
+"desde": "2022-10-19"
+},
+{
+"ibge": 5201405,
+"nome": "Aparecida de Goiânia",
+"uf": "GO",
+"desde": "2022-10-04"
+},
+{
+"ibge": 5208707,
+"nome": "Goiânia",
+"uf": "GO",
+"desde": "2020-11-24"
+},
+{
+"ibge": 5300108,
+"nome": "Brasília",
+"uf": "DF",
+"desde": "2021-12-16"
+}
+]
+}
