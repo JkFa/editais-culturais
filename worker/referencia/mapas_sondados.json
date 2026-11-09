@@ -1,5 +1,5 @@
 {
-"atualizado_em": "2026-11-08",
+"atualizado_em": "2026-11-09",
 "hosts": {
 "mapa.cultura.aracaju.se.gov.br": {
 "data": "2026-11-08",
@@ -48,6 +48,12 @@
 "resultado": "proposto",
 "detalhe": "",
 "http": 200
+},
+"mapacultural.arapongas.pr.gov.br": {
+"data": "2026-11-09",
+"resultado": "inalcancavel",
+"detalhe": "TimeoutError",
+"http": null
 },
 "mapacultural.barbalha.ce.gov.br": {
 "data": "2026-11-08",
