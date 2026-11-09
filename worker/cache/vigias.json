@@ -1,6 +1,51 @@
 {
+ "querido-diario": {
+  "gazetas": {
+   "https://data.queridodiario.ok.org.br/2702405/2026-11-06/d2e0dd27132bd44ca3dca14561cb129e.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2708006/2026-11-06/f80a8a6f0015204d04ea5614a48ac319.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2806800/2026-11-06/1bfb210e4bbb46fb8e5e7e12480dc4af206e9e06.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2900306/2026-11-06/bb1fe0d122abde2e35d00e634f40869a41e67d79.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2902658/2026-11-06/97208029f31b879c4252312e636183b1bce4fb45.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2910800/2026-11-07/e7de608d1e50adf80393ca4f2e5c4cb35bca5c26.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/2913705/2026-11-06/371eb66f649a8b7530440415611d323a52b1980f.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2920908/2026-11-06/38dff06cebdaf6b7134a54041732f22aaad144b8.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2927408/2026-11-06/297caa89c04ab1fc07a1c00c5dbfdd7dfc602ee8.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2928406/2026-11-06/334f7efba0ec4718a72fb911ed8be94a60a17962.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3112000/2026-11-06/5ccdd11f4676244f10eeee63f38f14b105af9fd5.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3118601/2026-11-06/9cb4f525094721fd516077c94dbb58258e8b5ca6.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3145208/2026-11-06/7a60789bac992f20c63732e3842538cec7d10a22.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3302007/2026-11-06/b02d720907c5a31d49155231fc9d7cab8d4872de.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3302403/2026-11-07/e536e9c14da237405ffb17977504e2f3e722fb89.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3305158/2026-11-06/f2825ad9a83f9b0ae40a4d85b71917e1a69f28a9.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3509502/2026-11-06/dbd851dba21e2d6fcbffe1e0dbd27560a229326e.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3509502/2026-11-09/6051c2c6cb8706f7225c18b604a7b6d5530f1438.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/3513603/2026-11-06/8467f3107f0d5328241e6c93956c90dd6168b8e8.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3517802/2026-11-06/36061fe37b6f48c1ebc044392fbc4f30394177bf.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3522802/2026-11-06/c633dc5e12b623ee0127a6a4342ebd09668b3f38.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3525904/2026-11-06/2ec9766ba22873f94cb47fd76fbe0ebb332af047.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3526506/2026-11-06/f2b637b5ba964a4922f10ac536db297f31a72f37.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3530706/2026-11-06/74fdbc13d6e4b76839c3568ed64ad557c8f1b8d3.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3530706/2026-11-07/1403a876d420112276fe60f2ac2ae418a8bd7a4b.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3531308/2026-11-07/ece32acd7ce03701aa7a46ad67c3725c1f04599c.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3545209/2026-11-07/fca4effabdd40ad213f769c3d636de3e9c68c7ca.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3548500/2026-11-09/20b270f8cc59f2158f47f3a8f9cf65d3fd7de885.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/3548708/2026-11-06/baf05cb031c8f17add4035a0b66f4dfaa7a2372c.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3548708/2026-11-07/4de34881ee338ea40f8eb06e4433231865e321f5.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3556602/2026-11-06/bf40f8c156abaa8434c0f8021c51bb19a0e723bc.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3557006/2026-11-06/26dd6c104d7b7a195bda615083eb821c9877df12.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3557105/2026-11-06/7333facf52397b56fa5852a5843c35d4d1b473c6.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4101507/2026-11-06/5302de3cbadd4c151fac3394f90ecd953c3d85dd.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4104907/2026-11-06/10d5988bbe0106e2212c71e21830f7182ffe47e5.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4112959/2026-11-06/52ec4c47a068936ad9de905a988a89c6a7eb3c9e.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4117453/2026-11-06/86387cbe422de1d09e869b0e19bbcdb7fecf4154.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4125605/2026-11-06/7bdb70fe9bcf3d90ff76980d8fb5cc010a12a0bf.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/5007208/2026-11-06/f1a34f3d99cdc8c2b4b9736c5f456e4a15d05588.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/5107602/2026-11-06/2a374ccd2081816a693fd79b04e782db7ac4234f.txt": "2026-11-06"
+  },
+  "total_links": 171
+ },
  "radar-clube-emma": {
-  "total_links": 209
+  "total_links": 190
  },
  "vigia-claro-patrocinios": {
   "hash": "f465bdc87eeb1f4668e02868def88c5e83307ab547474fc9d7df56e371f4174f",
@@ -50,7 +95,7 @@
    "Planos de internet móvel",
    "Perguntas Frequentes"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-funarte-editais": {
   "hash": "8caa5145ec09bf30366f8543cb96e5f4e3c6a68280fd193def7196f16786ac82",
@@ -134,7 +179,7 @@
    "As datas podem ser alteradas conforme avaliação do Instituto Cultural Vale a qualquer tempo, caso seja necessário.",
    "Carregar mais perguntas frequentes"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-petrobras-cultural": {
   "hash": "9a4a176ec7ab510cf3908a8d0a04c5b399eb59bcdb075471ce5b232516ee0e8a",
@@ -290,7 +335,7 @@
    "Quem já possui projeto patrocinado pela Petrobras pode inscrever outra proposta nesta Seleção Pública?",
    "É permitida a inscrição de proponentes que possuam contrato de patrocínio com a Petrobras. Porém, caso a proposta tenha escopo semelhante ao patrocínio em andam"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-renner-patrocinios": {
   "hash": "7a3da2c1a6f8271d9605dfb70f9978f724a597fd0894afcbcfaed7981bff160e",
@@ -382,7 +427,7 @@
    "Tenho dúvidas se o meu projeto se enquadra no que as Lojas Renner S.A. buscam em cultura. Como posso saber?",
    "Acesse a nossa Política de Patrocínios Incentivados Lojas Renner S.A. que lá você encontrará todas as informações."
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-riofilme-chamadas": {
   "hash": "d359bf287f33ea1780dded0cb9d4cd2b9095ecb1186c355fcf3e048d0b307f51",
@@ -417,7 +462,7 @@
    "Prefeitura do Rio de Janeiro",
    "Acessar site ›"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-rj-incentivo-cultura": {
   "hash": "ce9089a34c2e7867a303ece91a466794f49450d56d3b8c3b51df430d9182a731",
@@ -536,7 +581,7 @@
    "8 - Como a empresa aporta recursos para patrocínio de projetos culturais?",
    "O aporte é composto do valor destinado para o projeto (LEI ESTADUAL Nº 8.266/2018) mais 1/5 para o Fundo Estadual de Cultura – FEC (LEI ESTADUAL Nº 7.035/2015)."
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-sesc-pr-editais": {
   "hash": "e764c759944dc5779cfb1715cb25ab15d540a60b03a8102c9ca2678a41a11645",
@@ -577,7 +622,7 @@
    "Investimento de R$ 36 milhões",
    "O Edital e as Convocatórias Estratégicas (O Corpo Negro-Indígena, Baixada em Foco, Nova Música Convida e Palavra Líquida) contam com um investimento total de at"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-sesi-sp-editais": {
   "hash": "2cd5472a9dce781bba18c1646923b3ac5eaf94e8551bfec4db2c3b25d4382776",
@@ -622,7 +667,7 @@
    "Centro Cultural Fiesp",
    "Confira outras atrações na página de eventos"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  },
  "vigia-spcine-fomento": {
   "hash": "3c421f0171f08d9642744a2a6aeaac26e4ab9548d073b69ea908554c3b938663",
@@ -643,6 +688,6 @@
    "Iniciativa contínua de fomento que estrutura a cultura em todo o país. Na capital paulista, viabiliza editais estratégicos geridos pela Spcine em parceria com a",
    "CONFIRA OS EDITAIS"
   ],
-  "verificado_em": "2026-11-08"
+  "verificado_em": "2026-11-09"
  }
 }

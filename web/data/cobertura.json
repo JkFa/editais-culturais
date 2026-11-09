@@ -1,43 +1,44 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-08T22:13:01.961371+00:00",
- "data": "2026-11-08",
- "nota": 3.22,
+ "gerado_em": "2026-11-09T18:17:10.574707+00:00",
+ "data": "2026-11-09",
+ "nota": 3.74,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.1667,
-   "pontos": 0.333,
-   "atual": 4.5,
+   "fracao": 0.2037,
+   "pontos": 0.407,
+   "atual": 5.5,
    "total": 27,
-   "texto": "4.5 de 27 UFs"
+   "texto": "5.5 de 27 UFs"
   },
   {
    "id": "capitais",
    "nome": "Capitais com fonte municipal ativa",
    "peso": 1.0,
    "meta": "27 de 27",
-   "fracao": 0.2963,
-   "pontos": 0.296,
-   "atual": 8.0,
+   "fracao": 0.5185,
+   "pontos": 0.519,
+   "atual": 14.0,
    "total": 27,
-   "texto": "8 de 27 capitais"
+   "texto": "14 de 27 capitais"
   },
   {
    "id": "municipios",
    "nome": "Municípios com mais de 100 mil habitantes monitorados",
    "peso": 1.5,
    "meta": "80% ou mais",
-   "fracao": 0.3037,
-   "pontos": 0.456,
-   "atual": 77.5,
+   "fracao": 0.4154,
+   "pontos": 0.623,
+   "atual": 106.0,
    "total": 319,
-   "pct": 0.2429,
+   "pct": 0.3323,
    "via_cultbr": 121,
-   "texto": "77.5 de 319 municípios (24.3%); 121 só pelo CultBR, a meio ponto"
+   "via_diarios": 55,
+   "texto": "106 de 319 municípios (33.2%); 121 só pelo CultBR e 55 só pelo diário oficial, a meio ponto"
   },
   {
    "id": "recall",
@@ -48,44 +49,44 @@
    "pontos": 0.0,
    "medido": false,
    "recall": null,
-   "amostra": null,
-   "data": null,
-   "texto": "não medido (conta zero até a primeira auditoria com 30 ou mais editais)"
+   "amostra": 19,
+   "data": "2026-11-09",
+   "texto": "não medido: a amostra tem 19 editais abertos (mínimo 30); conta zero até lá"
   },
   {
    "id": "valor",
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.2893,
-   "pontos": 0.289,
-   "atual": 16,
-   "total": 79,
-   "pct": 0.2025,
-   "texto": "16 de 79 (20%)"
+   "fracao": 0.3098,
+   "pontos": 0.31,
+   "atual": 18,
+   "total": 83,
+   "pct": 0.2169,
+   "texto": "18 de 83 (22%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.769,
-   "pontos": 0.384,
-   "prazo": 79,
-   "proponentes": 34,
-   "total": 79,
-   "texto": "prazo 79/79 (100%); proponentes 34/79 (43%)"
+   "fracao": 0.7636,
+   "pontos": 0.382,
+   "prazo": 83,
+   "proponentes": 35,
+   "total": 83,
+   "texto": "prazo 83/83 (100%); proponentes 35/83 (42%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9256,
-   "pontos": 0.463,
-   "atual": 51,
-   "total": 58,
-   "texto": "51 de 58 fontes ativas"
+   "fracao": 0.9991,
+   "pontos": 0.5,
+   "atual": 56,
+   "total": 59,
+   "texto": "56 de 59 fontes ativas"
   },
   {
    "id": "higiene",
@@ -136,7 +137,7 @@
    "capital": "Manaus",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -152,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 19,
+   "abertos": 20,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -177,7 +178,7 @@
    "capital": "Brasília",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -197,7 +198,7 @@
    "capital": "Goiânia",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -206,7 +207,7 @@
    "capital": "São Luís",
    "abertos": 1,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -224,7 +225,7 @@
    "capital": "Campo Grande",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -246,7 +247,7 @@
    "capital": "Belém",
    "abertos": 0,
    "fonte_estadual": 1.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:pa",
     "mapas:parauapebas",
@@ -259,7 +260,7 @@
    "capital": "João Pessoa",
    "abertos": 0,
    "fonte_estadual": 1.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:pb"
    ]
@@ -279,7 +280,7 @@
    "capital": "Recife",
    "abertos": 9,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:paulista-pe",
     "mapas:petrolina-pe"
@@ -298,10 +299,11 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 9,
+   "abertos": 11,
    "fonte_estadual": 0.5,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
+    "vigia-riofilme-chamadas",
     "vigia-rj-incentivo-cultura"
    ]
   },
@@ -320,9 +322,9 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 4,
+   "abertos": 5,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:gravatai-rs",
     "mapas:pelotas-rs"
@@ -343,7 +345,7 @@
    "capital": "Boa Vista",
    "abertos": 0,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": []
   },
   {
@@ -359,13 +361,14 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 5,
+   "abertos": 6,
    "fonte_estadual": 0.0,
-   "capital_coberta": 0.0,
+   "capital_coberta": 0.5,
    "fontes": [
     "mapas:itatiba-sp",
     "mapas:maua-sp",
-    "mapas:ribeiraopires-sp"
+    "mapas:ribeiraopires-sp",
+    "vigia-spcine-fomento"
    ]
   },
   {
@@ -373,10 +376,11 @@
    "nome": "Sergipe",
    "capital": "Aracaju",
    "abertos": 8,
-   "fonte_estadual": 0.0,
+   "fonte_estadual": 1.0,
    "capital_coberta": 1.0,
    "fontes": [
-    "mapas:aracaju"
+    "mapas:aracaju",
+    "mapas:se"
    ]
   },
   {
@@ -389,12 +393,16 @@
    "fontes": []
   }
  ],
- "editais_abertos": 79,
- "editais_sem_uf": 11,
+ "editais_abertos": 83,
+ "editais_sem_uf": 10,
  "historico": [
   {
    "data": "2026-11-08",
    "nota": 3.22
+  },
+  {
+   "data": "2026-11-09",
+   "nota": 3.74
   }
  ],
  "dias_seguidos_9": 0
