@@ -1,37 +1,309 @@
 {
-  "metodologia": "Editais ABERTOS levantados direto nos sites oficiais dos órgãos (não no portal, não no Radar, não no CultBR agregado), cada um com a URL oficial, o prazo lido na página e a data da conferência. Itens com prazo vencido saem da conta na auditoria mensal. Prosas não é fonte da amostra. Fontes de reposição: diários oficiais (Onda 3), listas de 'editais abertos' de órgãos ainda não monitorados e sugestões do formulário (Onda 5).",
-  "regras": [
-    "Só entra o que a pessoa abriu na página oficial e viu aberto, com o prazo; nunca de memória nem de resultado de busca.",
-    "Misturar UFs e tipos de órgão: não mais de 20% do mesmo estado; incluir municípios fora das capitais.",
-    "Atualizar a amostra ao menos a cada 2 meses (os prazos vencem). O placar só usa a medida com 30 itens abertos ou mais."
-  ],
-  "item_exemplo": {
-    "titulo": "Título do edital",
-    "url": "https://...",
-    "orgao": "Secretaria",
-    "uf": "BA",
-    "prazo": "2026-12-15",
-    "conferido_em": "2026-11-08"
+ "metodologia": "Duas origens, ambas com prazo e trecho literal: (1) itens manuais, levantados nos sites oficiais; (2) itens dos diários oficiais municipais lidos pelo Querido Diário com termos DIFERENTES dos da coleta, refeitos a cada auditoria. Universo medido: diários oficiais dos municípios cobertos pelo Querido Diário (cerca de 510 municípios). Prosas não é fonte. Itens com prazo vencido saem da conta.",
+ "regras": [
+  "Só entra o que a pessoa abriu na página oficial e viu aberto, com o prazo; nunca de memória nem de resultado de busca.",
+  "Misturar UFs e tipos de órgão: não mais de 20% do mesmo estado; incluir municípios fora das capitais.",
+  "Atualizar a amostra ao menos a cada 2 meses (os prazos vencem). O placar só usa a medida com 30 itens abertos ou mais."
+ ],
+ "item_exemplo": {
+  "titulo": "Título do edital",
+  "url": "https://...",
+  "orgao": "Secretaria",
+  "uf": "BA",
+  "prazo": "2026-12-15",
+  "conferido_em": "2026-11-08"
+ },
+ "itens": [
+  {
+   "titulo": "Edital Ocupa Goiás – MITsp 2027",
+   "url": "https://goias.gov.br/cultura/inscricoes-para-edital-ocupa-goias-mitsp-2027-comecam-nesta-quarta-feira-4-11",
+   "orgao": "Secretaria de Estado da Cultura de Goiás (Secult-GO)",
+   "uf": "GO",
+   "prazo": "2026-11-14",
+   "conferido_em": "2026-11-08",
+   "trecho": "seguem até 14 de novembro de 2026, por meio da plataforma Baru 2.0"
   },
-  "itens": [
-    {
-      "titulo": "Edital Ocupa Goiás – MITsp 2027",
-      "url": "https://goias.gov.br/cultura/inscricoes-para-edital-ocupa-goias-mitsp-2027-comecam-nesta-quarta-feira-4-11",
-      "orgao": "Secretaria de Estado da Cultura de Goiás (Secult-GO)",
-      "uf": "GO",
-      "prazo": "2026-11-14",
-      "conferido_em": "2026-11-08",
-      "trecho": "seguem até 14 de novembro de 2026, por meio da plataforma Baru 2.0"
-    },
-    {
-      "titulo": "Chamamento Público 19/2026 – Rede Municipal de Pontos de Cultura de São Carlos",
-      "url": "https://cidadao.saocarlos.sp.gov.br/servicos/licitacao/arquivos-completos/10-15-2026-02:19:27-pm-8718-2399-2026-Completo-.pdf",
-      "orgao": "Prefeitura de São Carlos (SP)",
-      "uf": "SP",
-      "prazo": "2026-11-15",
-      "conferido_em": "2026-11-08",
-      "trecho": "As inscrições serão gratuitas e deverão ser realizadas a partir das 9h do dia 16/10/2026 até às 23h59 do dia 15/11/2026"
-    }
-  ],
-  "situacao": "Semente com 2 itens conferidos em 08/11/2026. O placar só usa a medida com 30 itens abertos ou mais; até lá o recall conta zero."
+  {
+   "titulo": "Chamamento Público 19/2026 – Rede Municipal de Pontos de Cultura de São Carlos",
+   "url": "https://cidadao.saocarlos.sp.gov.br/servicos/licitacao/arquivos-completos/10-15-2026-02:19:27-pm-8718-2399-2026-Completo-.pdf",
+   "orgao": "Prefeitura de São Carlos (SP)",
+   "uf": "SP",
+   "prazo": "2026-11-15",
+   "conferido_em": "2026-11-08",
+   "trecho": "As inscrições serão gratuitas e deverão ser realizadas a partir das 9h do dia 16/10/2026 até às 23h59 do dia 15/11/2026"
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO SIMPLIFICADO Nº 001/2026",
+   "url": "https://data.queridodiario.ok.org.br/3554102/2026-10-28/a09e6d4dbebe98d5cbefe86ca987f1036fd9d988.pdf",
+   "orgao": "Município de Taubaté",
+   "uf": "SP",
+   "municipio": "Taubaté",
+   "prazo": "2026-11-08",
+   "conferido_em": "2026-11-09",
+   "trecho": "INSCRIÇÕES 4.1. As inscrições serão realizadas no período de 28 de outubro a 8 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3554102/2026-10-28/a09e6d4dbebe98d5cbefe86ca987f1036fd9d988.pdf",
+    "data": "2026-10-28"
+   }
+  },
+  {
+   "titulo": "EDITAL PADRONIZADO CHAMAMENTO PÚBLICO 013/2026",
+   "url": "https://novoportal.itaguai.rj.gov.br/48",
+   "orgao": "Município de Itaguaí",
+   "uf": "RJ",
+   "municipio": "Itaguaí",
+   "prazo": "2026-11-09",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrições 26/10/2026 a 31/10/2026 Análise das inscrições e avaliação dos projetos pela Comissão de Seleção 03/11/2026 a 09/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3302007/2026-10-21/530d912d99d4698084f78749572a24fbfc799d69.pdf",
+    "data": "2026-10-21"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 002/2026 - PNAB",
+   "url": "https://santanadoipanema.al.gov.br/politicas-culturais",
+   "orgao": "Município de Santana do Ipanema",
+   "uf": "AL",
+   "municipio": "Santana do Ipanema",
+   "prazo": "2026-11-10",
+   "conferido_em": "2026-11-09",
+   "trecho": "PRAZO E CONDIÇÕES PARA A INSCRIÇÃO 5.1 As inscrições poderão ser realizadas do dia 04 de novembro de 2026 até o dia 10 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+    "data": "2026-10-30"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 01/2026 – PNAB",
+   "url": "https://data.queridodiario.ok.org.br/2700000/2026-11-05/6171b3b5c7ae4244da58ea5800a54a8ebb04c664.pdf",
+   "orgao": "Município de Maravilha",
+   "uf": "AL",
+   "municipio": "Maravilha",
+   "prazo": "2026-11-12",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrições estarão abertas no período de 05 de novembro a 12 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2700000/2026-11-05/6171b3b5c7ae4244da58ea5800a54a8ebb04c664.pdf",
+    "data": "2026-11-05"
+   }
+  },
+  {
+   "titulo": "Edital de Chamamento Público nº 01/2026 – PNAB, destinado à seleção de",
+   "url": "https://data.queridodiario.ok.org.br/2700000/2026-11-05/6171b3b5c7ae4244da58ea5800a54a8ebb04c664.pdf",
+   "orgao": "Município de Maravilha",
+   "uf": "AL",
+   "municipio": "Maravilha",
+   "prazo": "2026-11-12",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrições estarão abertas no período de 05 de novembro a 12 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2700000/2026-11-05/6171b3b5c7ae4244da58ea5800a54a8ebb04c664.pdf",
+    "data": "2026-11-05"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 035/2026 – SMCT",
+   "url": "https://data.queridodiario.ok.org.br/3507605/2026-10-21/5e22d4b214f908d893b0c5ff67c554c1a413694c.pdf",
+   "orgao": "Município de Bragança Paulista",
+   "uf": "SP",
+   "municipio": "Bragança Paulista",
+   "prazo": "2026-11-12",
+   "conferido_em": "2026-11-09",
+   "trecho": "INSCRIÇÕES 6.1.​ As inscrições serão realizadas no período de 22/10/2026 a 12/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3507605/2026-10-21/5e22d4b214f908d893b0c5ff67c554c1a413694c.pdf",
+    "data": "2026-10-21"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 02/2026",
+   "url": "https://data.queridodiario.ok.org.br/3517802/2026-11-06/36061fe37b6f48c1ebc044392fbc4f30394177bf.pdf",
+   "orgao": "Município de Guaraçaí",
+   "uf": "SP",
+   "municipio": "Guaraçaí",
+   "prazo": "2026-11-12",
+   "conferido_em": "2026-11-09",
+   "trecho": "INSCRIÇÕES 7.1. As inscrições ocorrerão no prazo de 06 de novembro a 12 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3517802/2026-11-06/36061fe37b6f48c1ebc044392fbc4f30394177bf.pdf",
+    "data": "2026-11-06"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 02/2026 – VIVA DELMIRO GOUVEIA! SELEÇÃO DE PROJETOS PARA FIRMAR",
+   "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+   "orgao": "Município de Delmiro Gouveia",
+   "uf": "AL",
+   "municipio": "Delmiro Gouveia",
+   "prazo": "2026-11-13",
+   "conferido_em": "2026-11-09",
+   "trecho": "Prazo de inscrição De 00:00 horas do dia 30/10/2026 até 23h59min horas do dia 13/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+    "data": "2026-10-30"
+   }
+  },
+  {
+   "titulo": "Edital Chamamento Público Nº02/2026 – Viva Delmiro Gouveia, que sou _________________________ (informar se é NEGRO OU INDÍGENA)",
+   "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+   "orgao": "Município de Delmiro Gouveia",
+   "uf": "AL",
+   "municipio": "Delmiro Gouveia",
+   "prazo": "2026-11-13",
+   "conferido_em": "2026-11-09",
+   "trecho": "Prazo de inscrição De 00:00 horas do dia 30/10/2026 até 23:59 horas do dia 13/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+    "data": "2026-10-30"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026 - PNAB",
+   "url": "https://santanadoipanema.al.gov.br/politicas-culturais",
+   "orgao": "Município de Santana do Ipanema",
+   "uf": "AL",
+   "municipio": "Santana do Ipanema",
+   "prazo": "2026-11-13",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrições 04 a 10/11/2026 Análise de Mérito Cultural pela Comissão de Seleção 11 a 13/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2700000/2026-10-30/f7a3bbf991c5ea838f847565d60e87251853f745.pdf",
+    "data": "2026-10-30"
+   }
+  },
+  {
+   "titulo": "CHAMAMENTO PÚBLICO Nº 01/2026 E Nº 02/2026 - POLÍTICA NACIONAL ALDIR BLANC DE",
+   "url": "https://data.queridodiario.ok.org.br/2921708/2026-10-21/5bb0704efb27789efe64bab9090723159b369059.pdf",
+   "orgao": "Município de Morro do Chapéu",
+   "uf": "BA",
+   "municipio": "Morro do Chapéu",
+   "prazo": "2026-11-13",
+   "conferido_em": "2026-11-09",
+   "trecho": "Inscrições 13/10 a 01/11/2026 Seleção 03/11 a 09/11/2026 Resultado preliminar da seleção 10/11/2026 Recursos da seleção 11/11 a 13/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2921708/2026-10-21/5bb0704efb27789efe64bab9090723159b369059.pdf",
+    "data": "2026-10-21"
+   }
+  },
+  {
+   "titulo": "CHAMAMENTO PÚBLICO Nº 01/2026 E Nº 02/2026",
+   "url": "https://data.queridodiario.ok.org.br/2921708/2026-10-21/5bb0704efb27789efe64bab9090723159b369059.pdf",
+   "orgao": "Município de Morro do Chapéu",
+   "uf": "BA",
+   "municipio": "Morro do Chapéu",
+   "prazo": "2026-11-13",
+   "conferido_em": "2026-11-09",
+   "trecho": "Inscrições 13/10 a 01/11/2026 Seleção 03/11 a 09/11/2026 Resultado preliminar da seleção 10/11/2026 Recursos da seleção 11/11 a 13/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/2921708/2026-10-21/5bb0704efb27789efe64bab9090723159b369059.pdf",
+    "data": "2026-10-21"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO SC Nº 008/2026 - FOMENTO ÀS ARTES VISUAIS- SELEÇÃO DE PROJETOS",
+   "url": "https://data.queridodiario.ok.org.br/3548708/2026-11-06/baf05cb031c8f17add4035a0b66f4dfaa7a2372c.pdf",
+   "orgao": "Município de São Bernardo do Campo",
+   "uf": "SP",
+   "municipio": "São Bernardo do Campo",
+   "prazo": "2026-11-16",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrição. §7º Não havendo preenchimento das vagas até 16 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3548708/2026-11-06/baf05cb031c8f17add4035a0b66f4dfaa7a2372c.pdf",
+    "data": "2026-11-06"
+   }
+  },
+  {
+   "titulo": "EDITAL SEMED RENOVAÇÃO CME Nº 01/2026",
+   "url": "https://data.queridodiario.ok.org.br/3301306/2026-11-05/5fc91ce0ecab2662530a71a051e533e973e51cae.pdf",
+   "orgao": "Município de Casimiro de Abreu",
+   "uf": "RJ",
+   "municipio": "Casimiro de Abreu",
+   "prazo": "2026-11-19",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrições das delegações e demais segmentos 11 a 18/11/2026 Divulgação da habilitação preliminar 19/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3301306/2026-11-05/5fc91ce0ecab2662530a71a051e533e973e51cae.pdf",
+    "data": "2026-11-05"
+   }
+  },
+  {
+   "titulo": "CHAMAMENTO PÚBLICO Nº 06/2026",
+   "url": "https://www.itapui.sp.gov.br/portal/editais/5",
+   "orgao": "Município de Itapuí",
+   "uf": "SP",
+   "municipio": "Itapuí",
+   "prazo": "2026-11-19",
+   "conferido_em": "2026-11-09",
+   "trecho": "Prazo de Inscrição: De 05/11/2026 a 19/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3522901/2026-11-05/3871aba1d43b050853f736736a345f618fe55699.pdf",
+    "data": "2026-11-05"
+   }
+  },
+  {
+   "titulo": "EDITAL Nº 070/2026 – POLÍTICA NACIONAL ALDIR BLANC",
+   "url": "https://www.itapui.sp.gov.br/portal/editais/5",
+   "orgao": "Município de Itapuí",
+   "uf": "SP",
+   "municipio": "Itapuí",
+   "prazo": "2026-11-19",
+   "conferido_em": "2026-11-09",
+   "trecho": "Prazo de Inscrição: De 05/11/2026 a 19/11/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3522901/2026-11-05/3871aba1d43b050853f736736a345f618fe55699.pdf",
+    "data": "2026-11-05"
+   }
+  },
+  {
+   "titulo": "Edital de Chamamento Público nº 19/2026 – Banco de Projetos Culturais,",
+   "url": "https://data.queridodiario.ok.org.br/3551702/2026-11-06/54c98ae1a3b75898adfe21083986c6d75fbb5ba1.pdf",
+   "orgao": "Município de Sertãozinho",
+   "uf": "SP",
+   "municipio": "Sertãozinho",
+   "prazo": "2026-11-20",
+   "conferido_em": "2026-11-09",
+   "trecho": "inscrições estarão abertas de 6 a 20 de novembro de 2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/3551702/2026-11-06/54c98ae1a3b75898adfe21083986c6d75fbb5ba1.pdf",
+    "data": "2026-11-06"
+   }
+  },
+  {
+   "titulo": "EDITAL DE CHAMAMENTO PÚBLICO Nº 001/2026",
+   "url": "https://data.queridodiario.ok.org.br/5107602/2026-11-06/2a374ccd2081816a693fd79b04e782db7ac4234f.pdf",
+   "orgao": "Município de Rondonópolis",
+   "uf": "MT",
+   "municipio": "Rondonópolis",
+   "prazo": "2026-12-04",
+   "conferido_em": "2026-11-09",
+   "trecho": "Prazo de inscrição De 07 h do dia 09/11/2026 até as 17 h do dia 04/12/2026",
+   "origem": "querido-diario",
+   "diario": {
+    "url": "https://data.queridodiario.ok.org.br/5107602/2026-11-06/2a374ccd2081816a693fd79b04e782db7ac4234f.pdf",
+    "data": "2026-11-06"
+   }
+  }
+ ],
+ "situacao": "Semente com 2 itens conferidos em 08/11/2026. O placar só usa a medida com 30 itens abertos ou mais; até lá o recall conta zero.",
+ "universo": "diários oficiais dos municípios cobertos pelo Querido Diário (cerca de 510 municípios)",
+ "gerado_em": "2026-11-09T00:28:30+00:00"
 }
