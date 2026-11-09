@@ -120,6 +120,51 @@ class Passagem:
     janela: str
     prazo: Prazo
     link: str | None
+    tipo: str = "abertura"  # abertura | prorrogacao
+    corpo: str = ""  # o texto do edital a partir do título (sem o que veio antes)
+
+
+# Órgãos e assuntos que não são cultura: "EDITAL SEMED RENOVAÇÃO CME" (conselho de educação) entrou numa amostra real.
+_NAO_CULTURAL = re.compile(
+    r"\b(educa[cç][aã]o|semed|sme|sa[uú]de|assist[eê]ncia social|cmdca|cme|cmas|conselho (?:municipal|tutelar)|fundeb|merenda|escolar|"
+    r"habita[cç][aã]o|saneamento|licita[cç][aã]o|preg[aã]o|concurso p[uú]blico|processo seletivo|renova[cç][aã]o d[eo]s? conselh\w+)\b",
+    re.I,
+)
+_CULTURA_FORTE = re.compile(
+    r"aldir blanc|\bpnab\b|paulo gustavo|fomento [àa] cultura|secretaria (?:municipal )?de cultura|artistas?|fazedores|agentes culturais|premia[cç][aã]o cultural",
+    re.I,
+)
+_PRORROGACAO = re.compile(r"\b(prorroga\w+|adiament\w+|nova data|reabertura)\b", re.I)
+_RETIFICACAO = re.compile(r"\b(leia-se|onde se l[eê]|retifica[cç][aã]o|errata)\b", re.I)
+_NUMERO = re.compile(
+    r"(?<!\d)(\d{1,4})\s*/\s*(20\d{2})\b"
+)  # "Nº002/2026": o º conta como letra, então \b não serve
+
+
+def numeros_do_edital(titulo: str) -> set[str]:
+    """{"2/2026"}: o número do edital, sem zeros à esquerda, para reconhecer o mesmo edital citado de jeitos diferentes."""
+    return {f"{int(n)}/{a}" for n, a in _NUMERO.findall(titulo or "")}
+
+
+def tipo_do_ato(contexto: str) -> str:
+    """'abertura' | 'prorrogacao' | 'retificacao'. Contexto = um pouco antes do título + o título + o começo da passagem.
+
+    Edital RETIFICADO que traz o texto inteiro continua sendo abertura (ex.: Niterói); só o ato curto ("leia-se", errata) é descartado."""
+    c = limpar_texto(contexto)
+    if _PRORROGACAO.search(c[:400]):
+        return "prorrogacao"
+    if _RETIFICACAO.search(c[:600]) and not _PEDIDO_DE_INSCRICAO.search(c):
+        return "retificacao"
+    return "abertura"
+
+
+def eh_cultural(titulo: str, trecho: str) -> bool:
+    """Fala de cultura e não é de outra área (educação, saúde, conselho...), a menos que o sinal de cultura seja inequívoco."""
+    if not _CULTURA.search(titulo + " " + trecho):
+        return False
+    if _NAO_CULTURAL.search(titulo) or _NAO_CULTURAL.search(trecho[:800]):
+        return bool(_CULTURA_FORTE.search(titulo + " " + trecho[:1500]))
+    return True
 
 
 def link_oficial(janela: str) -> str | None:
@@ -135,26 +180,44 @@ def link_oficial(janela: str) -> str | None:
 
 
 def achar_passagens(texto: str, agora: datetime) -> list[Passagem]:
-    """Passagens do diário que abrem inscrições de um edital: título, prazo futuro com trecho que fala de "inscri"."""
+    """Passagens do diário que abrem (ou prorrogam) inscrições de um edital cultural: título, prazo futuro com trecho de "inscrição".
+
+    Descarta resultado, errata/retificação curta, convocação, feira, curso, órgão que não é de cultura. A mesma edital citada duas vezes
+    (pelo número) vale uma vez só.
+    """
     saida: list[Passagem] = []
     vistos: set[str] = set()
     for m in _TITULO.finditer(texto):
         titulo = re.sub(r"\s+", " ", m.group(1) + m.group(0)[len(m.group(1)) :]).strip()
         titulo = re.sub(r"\s+(?:Errata|ERRATA|Anexo|ANEXO).*$", "", titulo)[:140].strip()
-        chave = re.sub(r"[^a-z0-9]+", "", sem_acento(titulo))[:60]
-        if not chave or chave in vistos or _RUIDO_TITULO.search(sem_acento(titulo)):
+        numeros = numeros_do_edital(titulo)
+        chave = "|".join(sorted(numeros)) or re.sub(r"[^a-z0-9]+", "", sem_acento(titulo))[:60]
+        if not chave or chave in vistos:
+            continue
+        antes = re.split(r"[.\n]", texto[max(0, m.start() - 160) : m.start()])[
+            -1
+        ]  # só a frase colada ao título
+        tipo = tipo_do_ato(antes + " " + titulo + " " + texto[m.end() : m.end() + 500])
+        ruido = _RUIDO_TITULO.search(sem_acento(titulo))
+        if (
+            tipo == "retificacao"
+            or (ruido and tipo != "prorrogacao")
+            or (ruido and not _PRORROGACAO.search(titulo + " " + antes))
+        ):
             continue
         janela = limpar_texto(texto[max(0, m.start() - 200) : m.start() + 9000])
-        depois = janela[200:]
-        if not _PEDIDO_DE_INSCRICAO.search(depois[:4000]) or not _APOIO.search(depois[:6000]):
+        depois = limpar_texto(texto[m.start() : m.start() + 9000])
+        if not _PEDIDO_DE_INSCRICAO.search(depois[:4000]) and tipo == "abertura":
             continue
-        if not _CULTURA.search(titulo + " " + depois[:3000]):
+        if tipo == "abertura" and not _APOIO.search(depois[:6000]):
+            continue
+        if not eh_cultural(titulo, depois[:3000]):
             continue
         prazo = achar_prazo(depois)
         if not prazo or not _INSCRICAO.search(prazo.trecho) or prazo.fim <= agora:
             continue
         vistos.add(chave)
-        saida.append(Passagem(titulo, janela, prazo, link_oficial(depois[:6000])))
+        saida.append(Passagem(titulo, janela, prazo, link_oficial(depois[:6000]), tipo, depois))
         if len(saida) >= MAX_PASSAGENS_POR_GAZETA:
             break
     return saida
@@ -232,6 +295,45 @@ def ja_no_portal(
     return False
 
 
+def edital_do_portal(
+    existentes: list[Any] | None, uf: str | None, municipio: str, titulo: str
+) -> Any | None:
+    """O edital do portal a que esta passagem se refere: mesma UF, município no título/órgão e mesmo número (ou título parecido)."""
+    cidade = re.sub(r"[^a-z0-9]+", "", sem_acento(municipio))
+    numeros = numeros_do_edital(titulo)
+    for e in existentes or []:
+        if e.uf != uf or len(cidade) < 4:
+            continue
+        alvo = re.sub(
+            r"[^a-z0-9]+", "", sem_acento(f"{e.titulo} {e.orgao_fomento} {e.municipio or ''}")
+        )
+        if cidade not in alvo:
+            continue
+        if (numeros and numeros & numeros_do_edital(e.titulo)) or similaridade_titulos(
+            titulo, e.titulo
+        ) >= LIMIAR_TITULO:
+            return e
+    return None
+
+
+def candidato_de_aviso(g: dict[str, Any], p: Passagem, edital: Any) -> Candidato:
+    """Aviso (não é edital novo): o diário prorrogou as inscrições de um edital que o portal já tem com outro prazo."""
+    cand = candidato_da_passagem(g, p)
+    novo = p.prazo.fim.astimezone(FUSO_PADRAO).date()
+    antigo = edital.inscricao_fim.astimezone(FUSO_PADRAO).date()
+    cand.chave = "qd-prorrogacao:" + cand.chave.removeprefix("qd:")
+    cand.titulo = (
+        f"Aviso de prorrogação: {p.titulo} ({cand.campos['municipio']}/{cand.campos['uf']})"[:200]
+    )
+    cand.link_oficial = edital.url_origem
+    cand.motivo = (
+        f"O diário oficial de {g['date']} prorrogou as inscrições deste edital, que o portal já tem ({edital.fonte}) com prazo até "
+        f"{antigo:%d/%m/%Y}. Novo prazo: {novo:%d/%m/%Y}. Confira no diário e atualize a fonte do edital."
+    )
+    cand.campos["aviso"] = True
+    return cand
+
+
 def candidato_da_passagem(g: dict[str, Any], p: Passagem) -> Candidato:
     uf, municipio = _uf_e_municipio(g)
     evidencias = {"inscricao_fim": p.prazo.trecho}
@@ -244,7 +346,7 @@ def candidato_da_passagem(g: dict[str, Any], p: Passagem) -> Candidato:
         campos_do_texto,
     )  # valor, proponentes e marco legal com trecho, pelas mesmas regras do resto
 
-    extra = campos_do_texto(p.janela[200:])
+    extra = campos_do_texto(p.corpo or p.janela[200:])
     for k in ("valor_total", "teto_por_projeto", "proponentes", "marco_legal"):
         if k in extra:
             campos[k] = extra[k]
@@ -265,7 +367,7 @@ def candidato_da_passagem(g: dict[str, Any], p: Passagem) -> Candidato:
             if p.link
             else "o edital foi lido no diário oficial do município; o link é a cópia do diário (Querido Diário). Procure o edital no site da prefeitura"
         ),
-        resumo=truncar_palavra(p.janela[200:], 600),
+        resumo=truncar_palavra(p.corpo or p.janela[200:], 600),
         campos=campos,
     )
 
@@ -353,7 +455,28 @@ async def coletar(
         if not municipio:
             res.descartes["sem_municipio"] += 1
             continue
-        cand = candidato_da_passagem(g, p)
+        achado = (
+            edital_do_portal(
+                existentes, g.get("state_code", "").upper() or None, municipio, p.titulo
+            )
+            if p.tipo == "prorrogacao"
+            else None
+        )
+        if achado is not None:
+            if achado.fonte == "publicacao-automatica":
+                res.descartes["prorrogacao_de_automatico"] += (
+                    1  # a releitura diária da página oficial já atualiza o prazo
+                )
+                continue
+            if (
+                achado.inscricao_fim.astimezone(FUSO_PADRAO).date()
+                >= p.prazo.fim.astimezone(FUSO_PADRAO).date()
+            ):
+                res.descartes["prorrogacao_ja_refletida"] += 1
+                continue
+            cand = candidato_de_aviso(g, p, achado)
+        else:
+            cand = candidato_da_passagem(g, p)
         if marcador(cand.chave) in marcadores:
             res.descartes["ja_na_fila"] += 1
         elif ja_no_portal(

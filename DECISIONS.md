@@ -639,3 +639,18 @@ Também: o título da página da Funarte ("Convocatória") era só o começo do 
 - **Limite assumido e publicado em /sobre/:** o recall vale para o universo dos diários dos municípios cobertos (~510), não para o Brasil inteiro.
 - **Medição real do levantamento (08/11/2026):** janela de 14 dias = 356 diários; lendo 120, só **10 editais abertos**: abaixo dos 30 exigidos, então o recall continuaria "não medido". Em vez de baixar a exigência, a janela subiu para 21 dias e o limite de leitura para 400 diários (workflow com 45 min).
   O placar agora mostra o tamanho da amostra ("não medido: a amostra tem N editais abertos, mínimo 30"). Se mesmo assim ficar abaixo de 30, continua zero, de forma visível.
+
+## Cobertura, Onda 3 / PR 3b: abertura, prorrogação e ato posterior; cultura x outras áreas (09/11/2026)
+
+A revisão da primeira amostra real (19 itens) achou ruído que derrubava o recall: conselho municipal de educação (`EDITAL SEMED RENOVAÇÃO CME`), o mesmo edital contado duas ou três vezes (Maravilha, Delmiro Gouveia, Morro do Chapéu) e um prazo errado.
+
+- **Bug de prazo, no núcleo (`achar_prazo`):** a regra pegava a **última** data com ano dentro da janela depois de "inscrições". Em quadros de cronograma ("Inscrições 26/10 a 31/10 | Análise das inscrições e avaliação 03/11 a 09/11") o prazo virava o da análise:
+  um edital já encerrado (Itaguaí, RJ) entrava como aberto, e **o mesmo risco existia na publicação automática**. Agora a janela para na próxima fase do cronograma (análise, avaliação, resultado, homologação, recurso, divulgação, habilitação, classificação, "seleção dd/mm"...) e "análise/recurso das inscrições"
+  não conta como pedido de inscrição. Continua valendo a última data do MESMO pedido de inscrição (Niterói, prorrogado dentro do quadro). Testes com os trechos reais.
+- **Tipo do ato** (`tipo_do_ato`): abertura, **prorrogação** (aviso curto: "prorrogado", "adiamento", "nova data") ou retificação/errata curta ("leia-se", "onde se lê"). Edital RETIFICADO que traz o texto inteiro continua abertura (Niterói). Resultado, convocação, errata e retificação curta são descartados;
+  só a frase colada ao título conta (um "prorrogado" do bloco anterior não contamina o seguinte).
+- **Prorrogação de edital que o portal já tem:** se é uma automática, não faz nada (a releitura diária da página oficial já atualiza); se o prazo já está refletido, nada; senão vira **aviso** (Issue "Aviso de prorrogação: ...", com os dois prazos e o link do edital do portal, texto
+  que manda **fechar a Issue e não usar `aprovado`**: não é edital novo). Prorrogação de edital que o portal NÃO tem vira candidato normal com o prazo novo. Não alteramos dado de outra fonte sozinhos.
+- **Cultura x outras áreas** (`eh_cultural`): educação, saúde, assistência social, conselhos (CME, CMDCA, CMAS), Fundeb, saneamento, licitação, concurso público e processo seletivo ficam de fora, a menos que o sinal de cultura seja inequívoco (Aldir Blanc, PNAB, Paulo Gustavo, fomento à cultura, artistas, fazedores).
+- **Um edital, uma vez:** o número do edital normalizado ("Nº002/2026" = "2/2026") identifica o mesmo edital citado de jeitos diferentes; vale na passagem, na amostra (município + número; prazo mais novo vence) e no casamento com o portal. Itapuí, com dois números diferentes, continua sendo dois editais.
+- **Efeito esperado:** amostra menor e mais limpa (os 19 itens caem para menos de 15, mais longe dos 30), então o recall continua "não medido" por enquanto; é o preço de medir só editais de verdade.

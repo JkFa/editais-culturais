@@ -21,6 +21,12 @@ _NUM = r"(\d{1,2})\s*/\s*(\d{1,2})\s*/\s*(\d{4})"
 _EXTENSO = r"(\d{1,2})\s*(?:º|o|°)?\s+de\s+([a-zç]+)\s+de\s+(\d{4})"
 _HORA = r"(?:\s*,?\s*(?:[aà]s|a partir das|ate as)?\s*(\d{1,2})\s*(?:h|:)\s*(\d{2})?)?"
 _JANELA = 140
+# Fases do cronograma que vêm DEPOIS das inscrições. A janela de busca para ali, senão a última data de uma tabela
+# ("Inscrições 26/10 a 31/10 | Análise das inscrições e avaliação 03/11 a 09/11") viraria o prazo.
+_FASE = re.compile(
+    r"\b(analise|avaliacao|resultado|homologacao|recurso|recursos|divulgacao|habilitacao|classificacao|assinatura|contratacao|"
+    r"pagamento|execucao|prestacao|julgamento|selecao dos|selecao (?=\d)|comissao)\b"
+)
 
 
 @dataclass(frozen=True)
@@ -86,7 +92,12 @@ def achar_prazo(texto: str) -> Prazo | None:
             )
     # 2) "inscrições ... de X a Y" / "até Y"
     for m in re.finditer(r"inscri\w+|prazo", norm):
+        if _FASE.search(norm[max(0, m.start() - 30) : m.start()]):
+            continue  # "análise das inscrições", "recurso das inscrições": não é o pedido de inscrição
         trecho, trecho_norm = janela(m.end())
+        corte = _FASE.search(trecho_norm)
+        if corte:
+            trecho, trecho_norm = trecho[: corte.start()], trecho_norm[: corte.start()]
         ate = re.search(r"\b(?:ate|a|ao|e)\b|—|-|–", trecho_norm)
         if not ate:
             continue
