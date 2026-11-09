@@ -107,6 +107,14 @@ class Candidato(BaseModel):
                 "**O que mudou na página:**\n\n"
                 + "\n".join(f"- {linha}" for linha in self.diff[:20])
             )
+        if self.campos.get("aviso"):
+            partes.append(
+                "### O que fazer com este aviso\n"
+                "1. Abra o diário e confira o novo prazo.\n"
+                "2. Atualize a fonte do edital que já está no portal (curadoria ou a página de origem).\n"
+                "3. **Feche esta Issue. Não use a etiqueta `aprovado`:** ela só avisa, não é um edital novo e publicaria uma duplicata."
+            )
+            return "\n\n".join(partes)
         partes.append(
             "### Como aprovar\n"
             "1. Abra o link oficial e confira o edital.\n"

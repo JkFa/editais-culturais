@@ -44,7 +44,12 @@ UNIVERSO = "diários oficiais dos municípios cobertos pelo Querido Diário (cer
 
 
 def _chave(item: dict[str, Any]) -> str:
-    return f"{item.get('uf')}|{sem_acento(item.get('municipio') or '')}|{item.get('prazo')}|{re.sub(r'[^a-z0-9]+', '', sem_acento(item['titulo']))[:50]}"
+    """Mesmo município + mesmo número de edital = o mesmo edital (citado duas vezes, ou prorrogado). Sem número, o título."""
+    numeros = (
+        "|".join(sorted(qd.numeros_do_edital(item["titulo"])))
+        or re.sub(r"[^a-z0-9]+", "", sem_acento(item["titulo"]))[:50]
+    )
+    return f"{item.get('uf')}|{sem_acento(item.get('municipio') or '')}|{numeros}"
 
 
 def item_do_diario(g: dict[str, Any], p: qd.Passagem, hoje: datetime) -> dict[str, Any] | None:
@@ -107,7 +112,11 @@ async def levantar(
         for p in qd.achar_passagens(r.texto, hoje):
             item = item_do_diario(g, p, hoje)
             if item:
-                itens.setdefault(_chave(item), item)
+                antigo = itens.get(_chave(item))
+                if (
+                    antigo is None or item["prazo"] > antigo["prazo"]
+                ):  # prorrogado: vale o prazo mais novo
+                    itens[_chave(item)] = item
     log.info(
         "%d diários na janela, %d lidos, %d editais abertos na amostra",
         len(achadas),

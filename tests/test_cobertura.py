@@ -459,8 +459,12 @@ def test_amostra_versionada_tem_a_forma_certa():
         pytest.skip("amostra ainda não levantada")
     dados = json.loads(caminho.read_text(encoding="utf-8"))
     assert dados["metodologia"]
-    urls = [i["url"] for i in dados["itens"]]
-    assert len(urls) == len(set(urls)), "itens repetidos inflariam o recall"
+    # itens manuais: uma URL por edital. Itens dos diários: a URL é a do diário (vários editais no mesmo diário), então vale (URL, título).
+    chaves = [
+        (i["url"], i["titulo"]) if i.get("origem") == "querido-diario" else (i["url"], "")
+        for i in dados["itens"]
+    ]
+    assert len(chaves) == len(set(chaves)), "itens repetidos inflariam o recall"
     for i in dados["itens"]:
         assert {"titulo", "url", "orgao", "uf", "prazo", "conferido_em"} <= set(i), i
         assert i["url"].startswith("https://") and "prosas.com.br" not in i["url"]
