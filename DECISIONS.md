@@ -654,3 +654,9 @@ A revisão da primeira amostra real (19 itens) achou ruído que derrubava o reca
 - **Cultura x outras áreas** (`eh_cultural`): educação, saúde, assistência social, conselhos (CME, CMDCA, CMAS), Fundeb, saneamento, licitação, concurso público e processo seletivo ficam de fora, a menos que o sinal de cultura seja inequívoco (Aldir Blanc, PNAB, Paulo Gustavo, fomento à cultura, artistas, fazedores).
 - **Um edital, uma vez:** o número do edital normalizado ("Nº002/2026" = "2/2026") identifica o mesmo edital citado de jeitos diferentes; vale na passagem, na amostra (município + número; prazo mais novo vence) e no casamento com o portal. Itapuí, com dois números diferentes, continua sendo dois editais.
 - **Efeito esperado:** amostra menor e mais limpa (os 19 itens caem para menos de 15, mais longe dos 30), então o recall continua "não medido" por enquanto; é o preço de medir só editais de verdade.
+
+## Limpeza semanal de candidatos vencidos (09/11/2026)
+
+`scripts/limpar_candidatos_vencidos.py` + workflow `limpar_candidatos.yml` (segunda, 09h de Brasília; permissão só `issues: write`) fecham as Issues `candidato` cujo prazo de inscrição (do YAML) já passou, com um comentário e como **"não planejada"** (não conta como aprovada).
+Segurança: nunca toca em `aprovado`; só com prazo legível; só vencidas há **2 dias ou mais** (as Issues antigas criadas no Actions têm o prazo um dia adiantado, bug já corrigido); no máximo 100 por vez; erro numa Issue não impede as outras; `--dry-run` só lista.
+`FilaGitHub.fechar_issue` ganhou o parâmetro `motivo` (padrão `completed`, o fluxo das aprovadas não muda) e devolve a resposta HTTP. Primeira limpeza manual (08/11/2026): #6, #7, #9, #14, #16, #18, #54 e #76; os candidatos abertos caíram de 99 para 93.
