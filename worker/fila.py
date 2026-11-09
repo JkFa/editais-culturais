@@ -222,11 +222,17 @@ class FilaGitHub:
     async def comentar(self, numero: int, texto: str) -> None:
         await self._c.post(f"/repos/{self.repo}/issues/{numero}/comments", json={"body": texto})
 
-    async def fechar_issue(self, numero: int, texto: str) -> None:
+    async def fechar_issue(
+        self, numero: int, texto: str, motivo: str = "completed"
+    ) -> httpx.Response:
+        """`motivo`: "completed" (feito) ou "not_planned" (descartado: não conta como aprovada)."""
         await self.comentar(numero, texto)
-        await self._c.patch(
+        r = await self._c.patch(
             f"/repos/{self.repo}/issues/{numero}",
-            json={"state": "closed", "state_reason": "completed"},
+            json={"state": "closed", "state_reason": motivo},
+        )
+        return (
+            r  # quem precisa saber se fechou olha o status; o fluxo de aprovadas segue como antes
         )
 
 
