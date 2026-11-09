@@ -613,13 +613,13 @@ fontes:
 
   # Diários oficiais municipais (Onda 3). SÓ DESCOBRE: cada edital achado vira candidato com o trecho do diário; nunca publica direto.
   # Sem LLM (robots.txt do serviço declara ai-train=no). A API é pública, sem termos de uso, e pede ritmo baixo (referência de 60/min).
-  # Endereço da documentação (api.queridodiario...) dá erro de SSL em alguns ambientes: o coletor cai para queridodiario.ok.org.br/api.
+  # O serviço mudou para api.queridodiario.org.br (a documentação ainda cita .ok.org.br, com SSL quebrado): o coletor tem reservas.
   - id: querido-diario
     nome: "Diários oficiais municipais (Querido Diário)"
     tipo: descoberta
     metodo: api
     coletor: querido_diario
-    url: "https://api.queridodiario.ok.org.br"
+    url: "https://api.queridodiario.org.br"
     termos_url: "https://docs.queridodiario.ok.org.br/en/latest/using/public-api.html"
     termos_conferidos_em: "2026-11-08"
     robots_ok: true

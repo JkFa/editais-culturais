@@ -37,7 +37,12 @@ from .base import ResultadoFonte
 
 log = logging.getLogger("worker.querido_diario")
 
-API_BASES = ("https://api.queridodiario.ok.org.br", "https://queridodiario.ok.org.br/api")
+# O serviço mudou de domínio: o endereço novo é o principal; os outros (a documentação ainda cita api.queridodiario.ok.org.br, com SSL quebrado) são reserva.
+API_BASES = (
+    "https://api.queridodiario.org.br",
+    "https://queridodiario.ok.org.br/api",
+    "https://api.queridodiario.ok.org.br",
+)
 TERMOS = [
     '"Aldir Blanc"', "PNAB", '"chamamento público" cultura', '"edital de fomento" cultural',
     '"prêmio" cultural', '"Lei Paulo Gustavo"',

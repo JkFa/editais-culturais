@@ -133,6 +133,8 @@ def test_sobre_mostra_o_placar_de_cobertura_com_nota_metricas_e_tabela_por_uf(na
     ce = linhas.filter(has_text="CE · Ceará")
     assert "tem" in ce.inner_text() and "Fortaleza" in ce.inner_text()
     assert pg.locator("#cobertura-uf caption").count() == 1
-    assert "Enquanto não houver auditoria" in pg.text_content("main")  # dentro de <details> fechado
+    assert "Enquanto a amostra tiver menos de 30 editais abertos" in pg.text_content(
+        "main"
+    )  # dentro de <details> fechado
     assert pg.erros == []
     pg.close()

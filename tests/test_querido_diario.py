@@ -149,7 +149,7 @@ def fonte(**kw):
                 tipo="descoberta",
                 metodo="api",
                 coletor="querido_diario",
-                url="https://api.queridodiario.ok.org.br",
+                url="https://api.queridodiario.org.br",
             ),
             **kw,
         }
@@ -300,14 +300,12 @@ def test_erro_passageiro_da_api_tem_nova_tentativa_e_erro_de_ssl_troca_de_endere
     r = coletar(
         todos_os_diarios(),
         falhar={
-            "api.queridodiario.ok.org.br": httpx.ConnectError(
-                "[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE]"
-            )
+            "api.queridodiario.org.br": httpx.ConnectError("[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE]")
         },
         pedidos=pedidos,
     )
     assert len(r.candidatos) == 2 and r.descartes["erro_consulta"] == 0
-    assert len([p for p in pedidos if "api.queridodiario.ok.org.br" in p]) <= 2, (
+    assert len([p for p in pedidos if "api.queridodiario.org.br" in p]) <= 2, (
         "o endereço com SSL quebrado é abandonado, sem insistir seis vezes"
     )
     assert any("queridodiario.ok.org.br/api/gazettes" in p for p in pedidos)
@@ -317,7 +315,11 @@ def test_api_fora_do_ar_levanta_erro_em_vez_de_dizer_que_nao_ha_editais():
     with pytest.raises(qd.ErroApi, match="fora do ar"):
         coletar(
             todos_os_diarios(),
-            falhar={"api.queridodiario.ok.org.br": 520, "queridodiario.ok.org.br": 520},
+            falhar={
+                "api.queridodiario.org.br": 520,
+                "queridodiario.ok.org.br": 520,
+                "api.queridodiario.ok.org.br": 520,
+            },
         )
 
 
