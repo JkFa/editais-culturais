@@ -14,6 +14,7 @@
    "https://data.queridodiario.ok.org.br/3112000/2026-11-06/5ccdd11f4676244f10eeee63f38f14b105af9fd5.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3118601/2026-11-06/9cb4f525094721fd516077c94dbb58258e8b5ca6.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3145208/2026-11-06/7a60789bac992f20c63732e3842538cec7d10a22.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3168002/2026-11-07/c8910678f0bdfa3cb4a1344ad9d1ca5fa4b01e07.txt": "2026-11-07",
    "https://data.queridodiario.ok.org.br/3302007/2026-11-06/b02d720907c5a31d49155231fc9d7cab8d4872de.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3302403/2026-11-07/e536e9c14da237405ffb17977504e2f3e722fb89.txt": "2026-11-07",
    "https://data.queridodiario.ok.org.br/3305158/2026-11-06/f2825ad9a83f9b0ae40a4d85b71917e1a69f28a9.txt": "2026-11-06",
@@ -24,6 +25,7 @@
    "https://data.queridodiario.ok.org.br/3522802/2026-11-06/c633dc5e12b623ee0127a6a4342ebd09668b3f38.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3525904/2026-11-06/2ec9766ba22873f94cb47fd76fbe0ebb332af047.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3526506/2026-11-06/f2b637b5ba964a4922f10ac536db297f31a72f37.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3529005/2026-11-07/74784a9a0f5d65f406c3958a18671e08fff3204a.txt": "2026-11-07",
    "https://data.queridodiario.ok.org.br/3530706/2026-11-06/74fdbc13d6e4b76839c3568ed64ad557c8f1b8d3.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3530706/2026-11-07/1403a876d420112276fe60f2ac2ae418a8bd7a4b.txt": "2026-11-07",
    "https://data.queridodiario.ok.org.br/3531308/2026-11-07/ece32acd7ce03701aa7a46ad67c3725c1f04599c.txt": "2026-11-07",
@@ -42,10 +44,10 @@
    "https://data.queridodiario.ok.org.br/5007208/2026-11-06/f1a34f3d99cdc8c2b4b9736c5f456e4a15d05588.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/5107602/2026-11-06/2a374ccd2081816a693fd79b04e782db7ac4234f.txt": "2026-11-06"
   },
-  "total_links": 171
+  "total_links": 14
  },
  "radar-clube-emma": {
-  "total_links": 190
+  "total_links": 249
  },
  "vigia-claro-patrocinios": {
   "hash": "f465bdc87eeb1f4668e02868def88c5e83307ab547474fc9d7df56e371f4174f",
@@ -95,7 +97,7 @@
    "Planos de internet móvel",
    "Perguntas Frequentes"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-funarte-editais": {
   "hash": "8caa5145ec09bf30366f8543cb96e5f4e3c6a68280fd193def7196f16786ac82",
@@ -179,7 +181,7 @@
    "As datas podem ser alteradas conforme avaliação do Instituto Cultural Vale a qualquer tempo, caso seja necessário.",
    "Carregar mais perguntas frequentes"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-petrobras-cultural": {
   "hash": "9a4a176ec7ab510cf3908a8d0a04c5b399eb59bcdb075471ce5b232516ee0e8a",
@@ -335,7 +337,7 @@
    "Quem já possui projeto patrocinado pela Petrobras pode inscrever outra proposta nesta Seleção Pública?",
    "É permitida a inscrição de proponentes que possuam contrato de patrocínio com a Petrobras. Porém, caso a proposta tenha escopo semelhante ao patrocínio em andam"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-renner-patrocinios": {
   "hash": "7a3da2c1a6f8271d9605dfb70f9978f724a597fd0894afcbcfaed7981bff160e",
@@ -427,7 +429,7 @@
    "Tenho dúvidas se o meu projeto se enquadra no que as Lojas Renner S.A. buscam em cultura. Como posso saber?",
    "Acesse a nossa Política de Patrocínios Incentivados Lojas Renner S.A. que lá você encontrará todas as informações."
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-riofilme-chamadas": {
   "hash": "d359bf287f33ea1780dded0cb9d4cd2b9095ecb1186c355fcf3e048d0b307f51",
@@ -462,7 +464,7 @@
    "Prefeitura do Rio de Janeiro",
    "Acessar site ›"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-rj-incentivo-cultura": {
   "hash": "ce9089a34c2e7867a303ece91a466794f49450d56d3b8c3b51df430d9182a731",
@@ -581,7 +583,7 @@
    "8 - Como a empresa aporta recursos para patrocínio de projetos culturais?",
    "O aporte é composto do valor destinado para o projeto (LEI ESTADUAL Nº 8.266/2018) mais 1/5 para o Fundo Estadual de Cultura – FEC (LEI ESTADUAL Nº 7.035/2015)."
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-sesc-pr-editais": {
   "hash": "e764c759944dc5779cfb1715cb25ab15d540a60b03a8102c9ca2678a41a11645",
@@ -622,7 +624,7 @@
    "Investimento de R$ 36 milhões",
    "O Edital e as Convocatórias Estratégicas (O Corpo Negro-Indígena, Baixada em Foco, Nova Música Convida e Palavra Líquida) contam com um investimento total de at"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-sesi-sp-editais": {
   "hash": "2cd5472a9dce781bba18c1646923b3ac5eaf94e8551bfec4db2c3b25d4382776",
@@ -667,7 +669,7 @@
    "Centro Cultural Fiesp",
    "Confira outras atrações na página de eventos"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  },
  "vigia-spcine-fomento": {
   "hash": "3c421f0171f08d9642744a2a6aeaac26e4ab9548d073b69ea908554c3b938663",
@@ -688,6 +690,6 @@
    "Iniciativa contínua de fomento que estrutura a cultura em todo o país. Na capital paulista, viabiliza editais estratégicos geridos pela Spcine em parceria com a",
    "CONFIRA OS EDITAIS"
   ],
-  "verificado_em": "2026-11-09"
+  "verificado_em": "2026-11-10"
  }
 }

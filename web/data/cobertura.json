@@ -1,19 +1,19 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-09T18:17:10.574707+00:00",
- "data": "2026-11-09",
- "nota": 3.74,
+ "gerado_em": "2026-11-10T16:04:56.706417+00:00",
+ "data": "2026-11-10",
+ "nota": 3.67,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.2037,
-   "pontos": 0.407,
-   "atual": 5.5,
+   "fracao": 0.1667,
+   "pontos": 0.333,
+   "atual": 4.5,
    "total": 27,
-   "texto": "5.5 de 27 UFs"
+   "texto": "4.5 de 27 UFs"
   },
   {
    "id": "capitais",
@@ -58,35 +58,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.3098,
-   "pontos": 0.31,
-   "atual": 18,
-   "total": 83,
-   "pct": 0.2169,
-   "texto": "18 de 83 (22%)"
+   "fracao": 0.3195,
+   "pontos": 0.32,
+   "atual": 17,
+   "total": 76,
+   "pct": 0.2237,
+   "texto": "17 de 76 (22%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7636,
-   "pontos": 0.382,
-   "prazo": 83,
-   "proponentes": 35,
-   "total": 83,
-   "texto": "prazo 83/83 (100%); proponentes 35/83 (42%)"
+   "fracao": 0.7714,
+   "pontos": 0.386,
+   "prazo": 76,
+   "proponentes": 33,
+   "total": 76,
+   "texto": "prazo 76/76 (100%); proponentes 33/76 (43%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9991,
-   "pontos": 0.5,
-   "atual": 56,
+   "fracao": 0.9813,
+   "pontos": 0.491,
+   "atual": 55,
    "total": 59,
-   "texto": "56 de 59 fontes ativas"
+   "texto": "55 de 59 fontes ativas"
   },
   {
    "id": "higiene",
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 20,
+   "abertos": 17,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -232,7 +232,7 @@
    "uf": "MG",
    "nome": "Minas Gerais",
    "capital": "Belo Horizonte",
-   "abertos": 1,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -245,7 +245,7 @@
    "uf": "PA",
    "nome": "Pará",
    "capital": "Belém",
-   "abertos": 0,
+   "abertos": 1,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -259,11 +259,9 @@
    "nome": "Paraíba",
    "capital": "João Pessoa",
    "abertos": 0,
-   "fonte_estadual": 1.0,
+   "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
-   "fontes": [
-    "mapas:pb"
-   ]
+   "fontes": []
   },
   {
    "uf": "PR",
@@ -299,7 +297,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 11,
+   "abertos": 7,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -343,7 +341,7 @@
    "uf": "RR",
    "nome": "Roraima",
    "capital": "Boa Vista",
-   "abertos": 0,
+   "abertos": 3,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -375,7 +373,7 @@
    "uf": "SE",
    "nome": "Sergipe",
    "capital": "Aracaju",
-   "abertos": 8,
+   "abertos": 2,
    "fonte_estadual": 1.0,
    "capital_coberta": 1.0,
    "fontes": [
@@ -393,8 +391,8 @@
    "fontes": []
   }
  ],
- "editais_abertos": 83,
- "editais_sem_uf": 10,
+ "editais_abertos": 76,
+ "editais_sem_uf": 11,
  "historico": [
   {
    "data": "2026-11-08",
@@ -403,6 +401,10 @@
   {
    "data": "2026-11-09",
    "nota": 3.74
+  },
+  {
+   "data": "2026-11-10",
+   "nota": 3.67
   }
  ],
  "dias_seguidos_9": 0
