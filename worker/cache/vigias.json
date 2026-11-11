@@ -1,25 +1,56 @@
 {
  "querido-diario": {
   "gazetas": {
+   "https://data.queridodiario.ok.org.br/2101202/2026-11-10/9b59b243d31d561dbfae5df79c433403d98915ed.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/2110302/2026-11-09/e73ad41e70844512b17fba520cd8eece329cf253.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/2701704/2026-11-09/fe1acfa01efbb7d516256ad5a48b1291.txt": "2026-11-09",
    "https://data.queridodiario.ok.org.br/2702405/2026-11-06/d2e0dd27132bd44ca3dca14561cb129e.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2707305/2026-11-10/3994b9b4262b4a48dafeb313d8cd72c9.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/2708006/2026-11-06/f80a8a6f0015204d04ea5614a48ac319.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2708402/2026-11-10/d5b103c51185f796082575b4f0e0640e.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/2709400/2026-11-10/02581dff1105a09e904c0372e2d82b4e.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/2806800/2026-11-06/1bfb210e4bbb46fb8e5e7e12480dc4af206e9e06.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/2900306/2026-11-06/bb1fe0d122abde2e35d00e634f40869a41e67d79.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2900306/2026-11-10/d1e629c86ad8477972011b0305f90afc890856a2.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/2900355/2026-11-09/465c525ce4b9ae0c805ee2dca290e21b420edd03.txt": "2026-11-09",
    "https://data.queridodiario.ok.org.br/2902658/2026-11-06/97208029f31b879c4252312e636183b1bce4fb45.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2904506/2026-11-10/d30778026caefeb85cdf78dd4f8ca09624b6115a.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/2909307/2026-11-10/d854443550b00830bafab4bbfc6e64278803ceff.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/2910800/2026-11-07/e7de608d1e50adf80393ca4f2e5c4cb35bca5c26.txt": "2026-11-07",
    "https://data.queridodiario.ok.org.br/2913705/2026-11-06/371eb66f649a8b7530440415611d323a52b1980f.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2913705/2026-11-10/0543e12cfab8f6cbb1263386f690914bdf80d0b9.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/2920908/2026-11-06/38dff06cebdaf6b7134a54041732f22aaad144b8.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/2921708/2026-11-10/0a8d2c576a651617cf1d79eb8a3bfe8fdd9fb377.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/2927408/2026-11-06/297caa89c04ab1fc07a1c00c5dbfdd7dfc602ee8.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/2928406/2026-11-06/334f7efba0ec4718a72fb911ed8be94a60a17962.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3112000/2026-11-06/5ccdd11f4676244f10eeee63f38f14b105af9fd5.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3118601/2026-11-06/9cb4f525094721fd516077c94dbb58258e8b5ca6.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3118601/2026-11-10/febddec928f124af5a69b9d464204d0d3bf36d72.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3120607/2026-11-09/d8b420c402aeefd872898f7d967270990d1def7e.txt": "2026-11-09",
    "https://data.queridodiario.ok.org.br/3145208/2026-11-06/7a60789bac992f20c63732e3842538cec7d10a22.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3157005/2026-11-09/717ed022043e38cbe5235a978df4f542f31a289b.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/3157005/2026-11-10/49ced1979dd4ce767615b9992a434942e8479d6d.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/3168002/2026-11-07/c8910678f0bdfa3cb4a1344ad9d1ca5fa4b01e07.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3168002/2026-11-11/8bb26cc82a1d26959507c900348e8d7e0294e31c.txt": "2026-11-11",
    "https://data.queridodiario.ok.org.br/3302007/2026-11-06/b02d720907c5a31d49155231fc9d7cab8d4872de.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3302403/2026-11-07/e536e9c14da237405ffb17977504e2f3e722fb89.txt": "2026-11-07",
+   "https://data.queridodiario.ok.org.br/3302403/2026-11-10/10d5e8b7d55d8bffbdd0e22e244831bd94cceaad.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3302403/2026-11-11/82251918e676874367520d195bf4b2c862ccb2a4.txt": "2026-11-11",
+   "https://data.queridodiario.ok.org.br/3304557/2026-11-11/9b3f82d4cd033f235ad3affd49c7b305068946e3.txt": "2026-11-11",
    "https://data.queridodiario.ok.org.br/3305158/2026-11-06/f2825ad9a83f9b0ae40a4d85b71917e1a69f28a9.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/3305158/2026-11-10/98a8a8d7abb3f301c62a614cb3c45e3e86d58ffd.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3500204/2026-11-09/17fa54003ece1b7f7b5f28f56b188af010767d89.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/3500600/2026-11-11/798fe0853ec240ecae4c24d9589e9639df0d70e7.txt": "2026-11-11",
+   "https://data.queridodiario.ok.org.br/3502507/2026-11-11/283d159ba9535f2853ad8d3ea6cce987f173039f.txt": "2026-11-11",
+   "https://data.queridodiario.ok.org.br/3502754/2026-11-10/bb7c271db035b14d891de95649013e2bd95f73c7.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3502804/2026-11-11/f9c925e4cda8493485e745df08bc678f4f54fc0e.txt": "2026-11-11",
+   "https://data.queridodiario.ok.org.br/3506508/2026-11-10/fbe86ab7db4881730214e7f2f36939d322451f2c.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3507506/2026-11-10/9944a6585a3eac3c4d55b8734ace708f9db36531.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3507605/2026-11-10/5380127e8cc836170a3eb91718102675a8f83919.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/3507753/2026-11-09/fb72028f442b56bccc28f42ade9a081555c0689e.txt": "2026-11-09",
    "https://data.queridodiario.ok.org.br/3509502/2026-11-06/dbd851dba21e2d6fcbffe1e0dbd27560a229326e.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3509502/2026-11-09/6051c2c6cb8706f7225c18b604a7b6d5530f1438.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/3509502/2026-11-11/bf2008c08fce4922a3b46754671fa0b9c77be52f.txt": "2026-11-11",
    "https://data.queridodiario.ok.org.br/3513603/2026-11-06/8467f3107f0d5328241e6c93956c90dd6168b8e8.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3517802/2026-11-06/36061fe37b6f48c1ebc044392fbc4f30394177bf.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3522802/2026-11-06/c633dc5e12b623ee0127a6a4342ebd09668b3f38.txt": "2026-11-06",
@@ -37,17 +68,26 @@
    "https://data.queridodiario.ok.org.br/3557006/2026-11-06/26dd6c104d7b7a195bda615083eb821c9877df12.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/3557105/2026-11-06/7333facf52397b56fa5852a5843c35d4d1b473c6.txt": "2026-11-06",
    "https://data.queridodiario.ok.org.br/4101507/2026-11-06/5302de3cbadd4c151fac3394f90ecd953c3d85dd.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4104303/2026-11-10/0e4cc2e6a15cf00167c999798db292be0567628a.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/4104907/2026-11-06/10d5988bbe0106e2212c71e21830f7182ffe47e5.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4104907/2026-11-11/3fe8ddaed35766fc006b0242401eb6fcbb7a8544.txt": "2026-11-11",
    "https://data.queridodiario.ok.org.br/4112959/2026-11-06/52ec4c47a068936ad9de905a988a89c6a7eb3c9e.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4113700/2026-11-10/1184b93dc3cd9bb1f9dfe6d873cdf74f0a73cc25.txt": "2026-11-10",
+   "https://data.queridodiario.ok.org.br/4114005/2026-11-10/db1b8b50c0619ec1d00b11e8cd47789a449dd7f3.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/4117453/2026-11-06/86387cbe422de1d09e869b0e19bbcdb7fecf4154.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4117453/2026-11-09/d9391d5fd95722ab4e971968071777223d6dc668.txt": "2026-11-09",
+   "https://data.queridodiario.ok.org.br/4117453/2026-11-10/68f4c429f055bbbca28dba69bd9ec61ee4567878.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/4125605/2026-11-06/7bdb70fe9bcf3d90ff76980d8fb5cc010a12a0bf.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/4309605/2026-11-10/83818435efc7f2dca5fe8403f6355d8325ccdfd1.txt": "2026-11-10",
    "https://data.queridodiario.ok.org.br/5007208/2026-11-06/f1a34f3d99cdc8c2b4b9736c5f456e4a15d05588.txt": "2026-11-06",
-   "https://data.queridodiario.ok.org.br/5107602/2026-11-06/2a374ccd2081816a693fd79b04e782db7ac4234f.txt": "2026-11-06"
+   "https://data.queridodiario.ok.org.br/5007208/2026-11-11/5dd19c92a5944a1fa5aed455a1c5f2c950a7c93e.txt": "2026-11-11",
+   "https://data.queridodiario.ok.org.br/5107602/2026-11-06/2a374ccd2081816a693fd79b04e782db7ac4234f.txt": "2026-11-06",
+   "https://data.queridodiario.ok.org.br/5201405/2026-11-10/0623573c0e21b2cb65b7c7ee58675a4cf6e4d184.txt": "2026-11-10"
   },
-  "total_links": 14
+  "total_links": 211
  },
  "radar-clube-emma": {
-  "total_links": 249
+  "total_links": 232
  },
  "vigia-claro-patrocinios": {
   "hash": "f465bdc87eeb1f4668e02868def88c5e83307ab547474fc9d7df56e371f4174f",
@@ -97,7 +137,7 @@
    "Planos de internet móvel",
    "Perguntas Frequentes"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-funarte-editais": {
   "hash": "8caa5145ec09bf30366f8543cb96e5f4e3c6a68280fd193def7196f16786ac82",
@@ -181,7 +221,7 @@
    "As datas podem ser alteradas conforme avaliação do Instituto Cultural Vale a qualquer tempo, caso seja necessário.",
    "Carregar mais perguntas frequentes"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-petrobras-cultural": {
   "hash": "9a4a176ec7ab510cf3908a8d0a04c5b399eb59bcdb075471ce5b232516ee0e8a",
@@ -337,7 +377,7 @@
    "Quem já possui projeto patrocinado pela Petrobras pode inscrever outra proposta nesta Seleção Pública?",
    "É permitida a inscrição de proponentes que possuam contrato de patrocínio com a Petrobras. Porém, caso a proposta tenha escopo semelhante ao patrocínio em andam"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-renner-patrocinios": {
   "hash": "7a3da2c1a6f8271d9605dfb70f9978f724a597fd0894afcbcfaed7981bff160e",
@@ -429,7 +469,7 @@
    "Tenho dúvidas se o meu projeto se enquadra no que as Lojas Renner S.A. buscam em cultura. Como posso saber?",
    "Acesse a nossa Política de Patrocínios Incentivados Lojas Renner S.A. que lá você encontrará todas as informações."
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-riofilme-chamadas": {
   "hash": "d359bf287f33ea1780dded0cb9d4cd2b9095ecb1186c355fcf3e048d0b307f51",
@@ -464,7 +504,7 @@
    "Prefeitura do Rio de Janeiro",
    "Acessar site ›"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-rj-incentivo-cultura": {
   "hash": "ce9089a34c2e7867a303ece91a466794f49450d56d3b8c3b51df430d9182a731",
@@ -583,7 +623,7 @@
    "8 - Como a empresa aporta recursos para patrocínio de projetos culturais?",
    "O aporte é composto do valor destinado para o projeto (LEI ESTADUAL Nº 8.266/2018) mais 1/5 para o Fundo Estadual de Cultura – FEC (LEI ESTADUAL Nº 7.035/2015)."
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-sesc-pr-editais": {
   "hash": "e764c759944dc5779cfb1715cb25ab15d540a60b03a8102c9ca2678a41a11645",
@@ -624,7 +664,7 @@
    "Investimento de R$ 36 milhões",
    "O Edital e as Convocatórias Estratégicas (O Corpo Negro-Indígena, Baixada em Foco, Nova Música Convida e Palavra Líquida) contam com um investimento total de at"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-sesi-sp-editais": {
   "hash": "2cd5472a9dce781bba18c1646923b3ac5eaf94e8551bfec4db2c3b25d4382776",
@@ -669,7 +709,7 @@
    "Centro Cultural Fiesp",
    "Confira outras atrações na página de eventos"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  },
  "vigia-spcine-fomento": {
   "hash": "3c421f0171f08d9642744a2a6aeaac26e4ab9548d073b69ea908554c3b938663",
@@ -690,6 +730,6 @@
    "Iniciativa contínua de fomento que estrutura a cultura em todo o país. Na capital paulista, viabiliza editais estratégicos geridos pela Spcine em parceria com a",
    "CONFIRA OS EDITAIS"
   ],
-  "verificado_em": "2026-11-10"
+  "verificado_em": "2026-11-11"
  }
 }
