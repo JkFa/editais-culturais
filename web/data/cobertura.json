@@ -1,8 +1,8 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-11T15:50:17.323687+00:00",
- "data": "2026-11-11",
- "nota": 3.71,
+ "gerado_em": "2026-11-12T16:33:19.904233+00:00",
+ "data": "2026-11-12",
+ "nota": 3.7,
  "metricas": [
   {
    "id": "ufs",
@@ -31,14 +31,14 @@
    "nome": "Municípios com mais de 100 mil habitantes monitorados",
    "peso": 1.5,
    "meta": "80% ou mais",
-   "fracao": 0.4134,
-   "pontos": 0.62,
-   "atual": 105.5,
+   "fracao": 0.4154,
+   "pontos": 0.623,
+   "atual": 106.0,
    "total": 319,
-   "pct": 0.3307,
-   "via_cultbr": 122,
+   "pct": 0.3323,
+   "via_cultbr": 121,
    "via_diarios": 55,
-   "texto": "105.5 de 319 municípios (33.1%); 122 só pelo CultBR e 55 só pelo diário oficial, a meio ponto"
+   "texto": "106 de 319 municípios (33.2%); 121 só pelo CultBR e 55 só pelo diário oficial, a meio ponto"
   },
   {
    "id": "recall",
@@ -58,24 +58,24 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.293,
-   "pontos": 0.293,
+   "fracao": 0.2787,
+   "pontos": 0.279,
    "atual": 16,
-   "total": 78,
-   "pct": 0.2051,
-   "texto": "16 de 78 (21%)"
+   "total": 82,
+   "pct": 0.1951,
+   "texto": "16 de 82 (20%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7644,
-   "pontos": 0.382,
-   "prazo": 78,
-   "proponentes": 33,
-   "total": 78,
-   "texto": "prazo 78/78 (100%); proponentes 33/78 (42%)"
+   "fracao": 0.7668,
+   "pontos": 0.383,
+   "prazo": 82,
+   "proponentes": 35,
+   "total": 82,
+   "texto": "prazo 82/82 (100%); proponentes 35/82 (43%)"
   },
   {
    "id": "frescor",
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 21,
+   "abertos": 24,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -232,7 +232,7 @@
    "uf": "MG",
    "nome": "Minas Gerais",
    "capital": "Belo Horizonte",
-   "abertos": 2,
+   "abertos": 3,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -299,7 +299,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 7,
+   "abertos": 10,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -322,7 +322,7 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 4,
+   "abertos": 3,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -365,6 +365,7 @@
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
+    "mapas:itatiba-sp",
     "mapas:maua-sp",
     "mapas:ribeiraopires-sp",
     "vigia-spcine-fomento"
@@ -386,14 +387,14 @@
    "uf": "TO",
    "nome": "Tocantins",
    "capital": "Palmas",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
   }
  ],
- "editais_abertos": 78,
- "editais_sem_uf": 11,
+ "editais_abertos": 82,
+ "editais_sem_uf": 10,
  "historico": [
   {
    "data": "2026-11-08",
@@ -410,6 +411,10 @@
   {
    "data": "2026-11-11",
    "nota": 3.71
+  },
+  {
+   "data": "2026-11-12",
+   "nota": 3.7
   }
  ],
  "dias_seguidos_9": 0
