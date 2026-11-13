@@ -1,8 +1,8 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-12T16:33:19.904233+00:00",
- "data": "2026-11-12",
- "nota": 3.7,
+ "gerado_em": "2026-11-13T15:54:01.429502+00:00",
+ "data": "2026-11-13",
+ "nota": 3.73,
  "metricas": [
   {
    "id": "ufs",
@@ -58,35 +58,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.2787,
-   "pontos": 0.279,
-   "atual": 16,
-   "total": 82,
-   "pct": 0.1951,
-   "texto": "16 de 82 (20%)"
+   "fracao": 0.2956,
+   "pontos": 0.296,
+   "atual": 18,
+   "total": 87,
+   "pct": 0.2069,
+   "texto": "18 de 87 (21%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7668,
-   "pontos": 0.383,
-   "prazo": 82,
-   "proponentes": 35,
-   "total": 82,
-   "texto": "prazo 82/82 (100%); proponentes 35/82 (43%)"
+   "fracao": 0.773,
+   "pontos": 0.386,
+   "prazo": 87,
+   "proponentes": 38,
+   "total": 87,
+   "texto": "prazo 87/87 (100%); proponentes 38/87 (44%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9813,
-   "pontos": 0.491,
-   "atual": 55,
+   "fracao": 0.9991,
+   "pontos": 0.5,
+   "atual": 56,
    "total": 59,
-   "texto": "55 de 59 fontes ativas"
+   "texto": "56 de 59 fontes ativas"
   },
   {
    "id": "higiene",
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 24,
+   "abertos": 26,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -185,7 +185,7 @@
    "uf": "ES",
    "nome": "Espírito Santo",
    "capital": "Vitória",
-   "abertos": 2,
+   "abertos": 3,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -205,7 +205,7 @@
    "uf": "MA",
    "nome": "Maranhão",
    "capital": "São Luís",
-   "abertos": 1,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -232,7 +232,7 @@
    "uf": "MG",
    "nome": "Minas Gerais",
    "capital": "Belo Horizonte",
-   "abertos": 3,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -258,7 +258,7 @@
    "uf": "PB",
    "nome": "Paraíba",
    "capital": "João Pessoa",
-   "abertos": 0,
+   "abertos": 1,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -278,7 +278,7 @@
    "uf": "PE",
    "nome": "Pernambuco",
    "capital": "Recife",
-   "abertos": 8,
+   "abertos": 6,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -299,7 +299,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 10,
+   "abertos": 7,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -311,7 +311,7 @@
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "capital": "Natal",
-   "abertos": 1,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 1.0,
    "fontes": [
@@ -322,7 +322,7 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 3,
+   "abertos": 5,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -343,7 +343,7 @@
    "uf": "RR",
    "nome": "Roraima",
    "capital": "Boa Vista",
-   "abertos": 3,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -352,7 +352,7 @@
    "uf": "SC",
    "nome": "Santa Catarina",
    "capital": "Florianópolis",
-   "abertos": 4,
+   "abertos": 3,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -361,7 +361,7 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 6,
+   "abertos": 7,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -375,7 +375,7 @@
    "uf": "SE",
    "nome": "Sergipe",
    "capital": "Aracaju",
-   "abertos": 2,
+   "abertos": 7,
    "fonte_estadual": 1.0,
    "capital_coberta": 1.0,
    "fontes": [
@@ -393,7 +393,7 @@
    "fontes": []
   }
  ],
- "editais_abertos": 82,
+ "editais_abertos": 87,
  "editais_sem_uf": 10,
  "historico": [
   {
@@ -415,6 +415,10 @@
   {
    "data": "2026-11-12",
    "nota": 3.7
+  },
+  {
+   "data": "2026-11-13",
+   "nota": 3.73
   }
  ],
  "dias_seguidos_9": 0
