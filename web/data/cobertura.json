@@ -1,19 +1,19 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-13T15:54:01.429502+00:00",
- "data": "2026-11-13",
- "nota": 3.73,
+ "gerado_em": "2026-11-14T14:44:27.408419+00:00",
+ "data": "2026-11-14",
+ "nota": 3.7,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.2037,
-   "pontos": 0.407,
-   "atual": 5.5,
+   "fracao": 0.1667,
+   "pontos": 0.333,
+   "atual": 4.5,
    "total": 27,
-   "texto": "5.5 de 27 UFs"
+   "texto": "4.5 de 27 UFs"
   },
   {
    "id": "capitais",
@@ -58,35 +58,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.2956,
-   "pontos": 0.296,
-   "atual": 18,
-   "total": 87,
-   "pct": 0.2069,
-   "texto": "18 de 87 (21%)"
+   "fracao": 0.331,
+   "pontos": 0.331,
+   "atual": 19,
+   "total": 82,
+   "pct": 0.2317,
+   "texto": "19 de 82 (23%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.773,
-   "pontos": 0.386,
-   "prazo": 87,
-   "proponentes": 38,
-   "total": 87,
-   "texto": "prazo 87/87 (100%); proponentes 38/87 (44%)"
+   "fracao": 0.7973,
+   "pontos": 0.399,
+   "prazo": 82,
+   "proponentes": 39,
+   "total": 82,
+   "texto": "prazo 82/82 (100%); proponentes 39/82 (48%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9991,
-   "pontos": 0.5,
-   "atual": 56,
+   "fracao": 0.9813,
+   "pontos": 0.491,
+   "atual": 55,
    "total": 59,
-   "texto": "56 de 59 fontes ativas"
+   "texto": "55 de 59 fontes ativas"
   },
   {
    "id": "higiene",
@@ -115,7 +115,7 @@
    "uf": "AL",
    "nome": "Alagoas",
    "capital": "Maceió",
-   "abertos": 0,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 26,
+   "abertos": 21,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -278,7 +278,7 @@
    "uf": "PE",
    "nome": "Pernambuco",
    "capital": "Recife",
-   "abertos": 6,
+   "abertos": 5,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -290,7 +290,7 @@
    "uf": "PI",
    "nome": "Piauí",
    "capital": "Teresina",
-   "abertos": 1,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -299,7 +299,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 7,
+   "abertos": 8,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -322,7 +322,7 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 5,
+   "abertos": 4,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -343,7 +343,7 @@
    "uf": "RR",
    "nome": "Roraima",
    "capital": "Boa Vista",
-   "abertos": 1,
+   "abertos": 0,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -376,11 +376,10 @@
    "nome": "Sergipe",
    "capital": "Aracaju",
    "abertos": 7,
-   "fonte_estadual": 1.0,
+   "fonte_estadual": 0.0,
    "capital_coberta": 1.0,
    "fontes": [
-    "mapas:aracaju",
-    "mapas:se"
+    "mapas:aracaju"
    ]
   },
   {
@@ -393,7 +392,7 @@
    "fontes": []
   }
  ],
- "editais_abertos": 87,
+ "editais_abertos": 82,
  "editais_sem_uf": 10,
  "historico": [
   {
@@ -419,6 +418,10 @@
   {
    "data": "2026-11-13",
    "nota": 3.73
+  },
+  {
+   "data": "2026-11-14",
+   "nota": 3.7
   }
  ],
  "dias_seguidos_9": 0
