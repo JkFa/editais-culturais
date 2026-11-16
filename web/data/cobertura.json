@@ -1,8 +1,8 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-14T14:44:27.408419+00:00",
- "data": "2026-11-14",
- "nota": 3.7,
+ "gerado_em": "2026-11-16T17:54:41.704818+00:00",
+ "data": "2026-11-16",
+ "nota": 3.77,
  "metricas": [
   {
    "id": "ufs",
@@ -58,24 +58,24 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.331,
-   "pontos": 0.331,
-   "atual": 19,
-   "total": 82,
-   "pct": 0.2317,
-   "texto": "19 de 82 (23%)"
+   "fracao": 0.4127,
+   "pontos": 0.413,
+   "atual": 26,
+   "total": 90,
+   "pct": 0.2889,
+   "texto": "26 de 90 (29%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7973,
-   "pontos": 0.399,
-   "prazo": 82,
-   "proponentes": 39,
-   "total": 82,
-   "texto": "prazo 82/82 (100%); proponentes 39/82 (48%)"
+   "fracao": 0.7917,
+   "pontos": 0.396,
+   "prazo": 90,
+   "proponentes": 42,
+   "total": 90,
+   "texto": "prazo 90/90 (100%); proponentes 42/90 (47%)"
   },
   {
    "id": "frescor",
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 21,
+   "abertos": 22,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -185,7 +185,7 @@
    "uf": "ES",
    "nome": "Espírito Santo",
    "capital": "Vitória",
-   "abertos": 3,
+   "abertos": 8,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -245,7 +245,7 @@
    "uf": "PA",
    "nome": "Pará",
    "capital": "Belém",
-   "abertos": 1,
+   "abertos": 3,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -290,7 +290,7 @@
    "uf": "PI",
    "nome": "Piauí",
    "capital": "Teresina",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -299,7 +299,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 8,
+   "abertos": 12,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -361,7 +361,7 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 7,
+   "abertos": 6,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -392,8 +392,8 @@
    "fontes": []
   }
  ],
- "editais_abertos": 82,
- "editais_sem_uf": 10,
+ "editais_abertos": 90,
+ "editais_sem_uf": 8,
  "historico": [
   {
    "data": "2026-11-08",
@@ -422,6 +422,10 @@
   {
    "data": "2026-11-14",
    "nota": 3.7
+  },
+  {
+   "data": "2026-11-16",
+   "nota": 3.77
   }
  ],
  "dias_seguidos_9": 0
