@@ -13,3 +13,5 @@ supabase/.temp/
 supabase/.branches/
 supabase/functions/.env
 supabase/functions/*.env
+PROMPT_*.md
+prompt-claude-code-*.md
