@@ -1,8 +1,8 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-18T16:55:42.661325+00:00",
- "data": "2026-11-18",
- "nota": 3.83,
+ "gerado_em": "2026-11-21T15:54:15.288230+00:00",
+ "data": "2026-11-21",
+ "nota": 3.84,
  "metricas": [
   {
    "id": "ufs",
@@ -58,24 +58,24 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.4013,
-   "pontos": 0.401,
-   "atual": 25,
-   "total": 89,
-   "pct": 0.2809,
-   "texto": "25 de 89 (28%)"
+   "fracao": 0.4107,
+   "pontos": 0.411,
+   "atual": 23,
+   "total": 80,
+   "pct": 0.2875,
+   "texto": "23 de 80 (29%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7879,
-   "pontos": 0.394,
-   "prazo": 89,
-   "proponentes": 41,
-   "total": 89,
-   "texto": "prazo 89/89 (100%); proponentes 41/89 (46%)"
+   "fracao": 0.7734,
+   "pontos": 0.387,
+   "prazo": 80,
+   "proponentes": 35,
+   "total": 80,
+   "texto": "prazo 80/80 (100%); proponentes 35/80 (44%)"
   },
   {
    "id": "frescor",
@@ -115,7 +115,7 @@
    "uf": "AL",
    "nome": "Alagoas",
    "capital": "Maceió",
-   "abertos": 1,
+   "abertos": 0,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -144,7 +144,7 @@
    "uf": "BA",
    "nome": "Bahia",
    "capital": "Salvador",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 20,
+   "abertos": 24,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -196,7 +196,7 @@
    "uf": "GO",
    "nome": "Goiás",
    "capital": "Goiânia",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -205,7 +205,7 @@
    "uf": "MA",
    "nome": "Maranhão",
    "capital": "São Luís",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -245,20 +245,19 @@
    "uf": "PA",
    "nome": "Pará",
    "capital": "Belém",
-   "abertos": 3,
+   "abertos": 1,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
     "mapas:pa",
-    "mapas:parauapebas",
-    "mapas:redencao-pa"
+    "mapas:parauapebas"
    ]
   },
   {
    "uf": "PB",
    "nome": "Paraíba",
    "capital": "João Pessoa",
-   "abertos": 1,
+   "abertos": 0,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -299,7 +298,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 13,
+   "abertos": 11,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -311,7 +310,7 @@
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "capital": "Natal",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 1.0,
    "fontes": [
@@ -322,7 +321,7 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 4,
+   "abertos": 2,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -361,7 +360,7 @@
    "uf": "SP",
    "nome": "São Paulo",
    "capital": "São Paulo",
-   "abertos": 6,
+   "abertos": 5,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -393,7 +392,7 @@
    "fontes": []
   }
  ],
- "editais_abertos": 89,
+ "editais_abertos": 80,
  "editais_sem_uf": 9,
  "historico": [
   {
@@ -435,6 +434,10 @@
   {
    "data": "2026-11-18",
    "nota": 3.83
+  },
+  {
+   "data": "2026-11-21",
+   "nota": 3.84
   }
  ],
  "dias_seguidos_9": 0
