@@ -444,6 +444,28 @@ instancias:
     termos_conferidos_em: "2026-11-08"
     termos_url: https://mapacultural.russas.ce.gov.br/termos-de-uso/
 
+  - slug: arapongas-pr
+    nome: "Mapa Cultural de Arapongas (PR)"
+    base_url: https://mapacultural.arapongas.pr.gov.br
+    abrangencia: municipal
+    uf: PR
+    municipio: "Arapongas"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-23: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-23: /api/opportunity/find respondeu como Mapas Culturais (confiança baixa)"
+    sondagem: {"data": "2026-11-23", "http": 200, "robots": "permitido", "confianca": "baixa", "origem": "padrao-municipio"}
+
+  - slug: saogoncalodoamarante-ce
+    nome: "Mapa Cultural de São Gonçalo do Amarante (CE)"
+    base_url: https://mapacultural.saogoncalodoamarante.ce.gov.br
+    abrangencia: municipal
+    uf: CE
+    municipio: "São Gonçalo do Amarante"
+    ativa: false
+    motivo: "Descoberta automática em 2026-11-23: aguarda conferência do robots.txt e dos termos de uso por uma pessoa."
+    descoberta: "sondagem de 2026-11-23: /api/opportunity/find respondeu como Mapas Culturais (confiança alta)"
+    sondagem: {"data": "2026-11-23", "http": 200, "robots": "permitido", "confianca": "alta", "origem": "padrao-municipio"}
+
 # ---------------------------------------------------------------------------------------------
 # v4: novas fontes. `tipo`: oficial (publica com evidência) | plataforma (idem, com "via X") |
 # descoberta (nunca publica: só abre candidato na fila de curadoria).
