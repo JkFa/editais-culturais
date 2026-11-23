@@ -1,8 +1,8 @@
 {
-"atualizado_em": "2026-11-16",
+"atualizado_em": "2026-11-23",
 "hosts": {
 "mapa.cultura.aracaju.se.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -20,13 +20,13 @@
 "http": null
 },
 "mapa.cultural.to.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapacultural.ap.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -38,7 +38,7 @@
 "http": 200
 },
 "mapacultural.aracati.ce.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)",
 "http": null
@@ -50,25 +50,25 @@
 "http": 200
 },
 "mapacultural.arapongas.pr.gov.br": {
-"data": "2026-11-09",
-"resultado": "inalcancavel",
-"detalhe": "TimeoutError",
-"http": null
+"data": "2026-11-23",
+"resultado": "proposto",
+"detalhe": "lista vazia (compatível com Mapas sem oportunidades; confirmar na página)",
+"http": 200
 },
 "mapacultural.barbalha.ce.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1011)",
 "http": null
 },
 "mapacultural.bentogoncalves.rs.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapacultural.camacari.ba.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -92,7 +92,7 @@
 "http": null
 },
 "mapacultural.concordia.sc.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
 "http": null
@@ -110,19 +110,19 @@
 "http": 200
 },
 "mapacultural.diadema.sp.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapacultural.divinopolis.mg.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError All connection attempts failed",
 "http": null
 },
 "mapacultural.franca.sp.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -146,19 +146,19 @@
 "http": null
 },
 "mapacultural.iguatu.ce.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapacultural.ipatinga.mg.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
 "http": null
 },
 "mapacultural.itapetininga.sp.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
 "http": null
@@ -218,7 +218,7 @@
 "http": 200
 },
 "mapacultural.novohamburgo.rs.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -230,7 +230,7 @@
 "http": 200
 },
 "mapacultural.paranavai.pr.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -266,7 +266,7 @@
 "http": 200
 },
 "mapacultural.registro.sp.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
 "http": null
@@ -278,7 +278,7 @@
 "http": 200
 },
 "mapacultural.riogrande.rs.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "HTTP 503 em https://mapacultural.riogrande.rs.gov.br/api/opportunity/find?@limit=1&@select=id,name",
 "http": null
@@ -290,7 +290,7 @@
 "http": 200
 },
 "mapacultural.sabara.mg.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -314,19 +314,19 @@
 "http": null
 },
 "mapacultural.saogoncalodoamarante.ce.gov.br": {
-"data": "2026-11-08",
-"resultado": "inalcancavel",
-"detalhe": "TimeoutError",
-"http": null
+"data": "2026-11-23",
+"resultado": "proposto",
+"detalhe": "",
+"http": 200
 },
 "mapacultural.sc.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapacultural.secult.rr.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -344,7 +344,7 @@
 "http": null
 },
 "mapacultural.uberlandia.mg.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "ConnectError [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1011)",
 "http": null
@@ -356,7 +356,7 @@
 "http": null
 },
 "mapas.campomourao.pr.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -374,7 +374,7 @@
 "http": null
 },
 "mapas.curvelo.mg.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -386,13 +386,13 @@
 "http": null
 },
 "mapas.montesclaros.mg.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "HTTP 502 em https://mapas.montesclaros.mg.gov.br/api/opportunity/find?@limit=1&@select=id,name",
 "http": null
 },
 "mapas.portonacional.to.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -404,13 +404,13 @@
 "http": 200
 },
 "mapas.sorocaba.sp.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapas.sorriso.mt.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
@@ -422,13 +422,13 @@
 "http": null
 },
 "mapasculturais.go.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
 },
 "mapasculturais.rn.gov.br": {
-"data": "2026-11-08",
+"data": "2026-11-23",
 "resultado": "inalcancavel",
 "detalhe": "TimeoutError",
 "http": null
