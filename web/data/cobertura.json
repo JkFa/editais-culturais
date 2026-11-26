@@ -1,19 +1,19 @@
 {
  "versao": 1,
- "gerado_em": "2026-11-21T15:54:15.288230+00:00",
- "data": "2026-11-21",
- "nota": 3.84,
+ "gerado_em": "2026-11-26T18:06:29.432858+00:00",
+ "data": "2026-11-26",
+ "nota": 3.63,
  "metricas": [
   {
    "id": "ufs",
    "nome": "UFs com fonte estadual oficial saudável",
    "peso": 2.0,
    "meta": "27 de 27",
-   "fracao": 0.2037,
-   "pontos": 0.407,
-   "atual": 5.5,
+   "fracao": 0.1667,
+   "pontos": 0.333,
+   "atual": 4.5,
    "total": 27,
-   "texto": "5.5 de 27 UFs"
+   "texto": "4.5 de 27 UFs"
   },
   {
    "id": "capitais",
@@ -31,14 +31,14 @@
    "nome": "Municípios com mais de 100 mil habitantes monitorados",
    "peso": 1.5,
    "meta": "80% ou mais",
-   "fracao": 0.4154,
-   "pontos": 0.623,
-   "atual": 106.0,
+   "fracao": 0.4134,
+   "pontos": 0.62,
+   "atual": 105.5,
    "total": 319,
-   "pct": 0.3323,
-   "via_cultbr": 121,
+   "pct": 0.3307,
+   "via_cultbr": 122,
    "via_diarios": 55,
-   "texto": "106 de 319 municípios (33.2%); 121 só pelo CultBR e 55 só pelo diário oficial, a meio ponto"
+   "texto": "105.5 de 319 municípios (33.1%); 122 só pelo CultBR e 55 só pelo diário oficial, a meio ponto"
   },
   {
    "id": "recall",
@@ -58,35 +58,35 @@
    "nome": "Editais abertos com valor e evidência",
    "peso": 1.0,
    "meta": "70% ou mais",
-   "fracao": 0.4107,
-   "pontos": 0.411,
-   "atual": 23,
-   "total": 80,
-   "pct": 0.2875,
-   "texto": "23 de 80 (29%)"
+   "fracao": 0.3247,
+   "pontos": 0.325,
+   "atual": 15,
+   "total": 66,
+   "pct": 0.2273,
+   "texto": "15 de 66 (23%)"
   },
   {
    "id": "prazo_proponentes",
    "nome": "Prazo (95%) e tipo de proponente (80%) com evidência",
    "peso": 0.5,
    "meta": "95% e 80%",
-   "fracao": 0.7734,
-   "pontos": 0.387,
-   "prazo": 80,
-   "proponentes": 35,
-   "total": 80,
-   "texto": "prazo 80/80 (100%); proponentes 35/80 (44%)"
+   "fracao": 0.7936,
+   "pontos": 0.397,
+   "prazo": 66,
+   "proponentes": 31,
+   "total": 66,
+   "texto": "prazo 66/66 (100%); proponentes 31/66 (47%)"
   },
   {
    "id": "frescor",
    "nome": "Fontes ativas com coleta ok nas últimas 26 h",
    "peso": 0.5,
    "meta": "95% ou mais",
-   "fracao": 0.9813,
-   "pontos": 0.491,
-   "atual": 55,
+   "fracao": 0.8742,
+   "pontos": 0.437,
+   "atual": 49,
    "total": 59,
-   "texto": "55 de 59 fontes ativas"
+   "texto": "49 de 59 fontes ativas"
   },
   {
    "id": "higiene",
@@ -144,7 +144,7 @@
    "uf": "BA",
    "nome": "Bahia",
    "capital": "Salvador",
-   "abertos": 1,
+   "abertos": 0,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -153,7 +153,7 @@
    "uf": "CE",
    "nome": "Ceará",
    "capital": "Fortaleza",
-   "abertos": 24,
+   "abertos": 22,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -185,7 +185,7 @@
    "uf": "ES",
    "nome": "Espírito Santo",
    "capital": "Vitória",
-   "abertos": 7,
+   "abertos": 0,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -196,7 +196,7 @@
    "uf": "GO",
    "nome": "Goiás",
    "capital": "Goiânia",
-   "abertos": 1,
+   "abertos": 0,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": []
@@ -245,12 +245,13 @@
    "uf": "PA",
    "nome": "Pará",
    "capital": "Belém",
-   "abertos": 1,
+   "abertos": 5,
    "fonte_estadual": 1.0,
    "capital_coberta": 0.5,
    "fontes": [
     "mapas:pa",
-    "mapas:parauapebas"
+    "mapas:parauapebas",
+    "mapas:redencao-pa"
    ]
   },
   {
@@ -298,7 +299,7 @@
    "uf": "RJ",
    "nome": "Rio de Janeiro",
    "capital": "Rio de Janeiro",
-   "abertos": 11,
+   "abertos": 6,
    "fonte_estadual": 0.5,
    "capital_coberta": 0.5,
    "fontes": [
@@ -310,7 +311,7 @@
    "uf": "RN",
    "nome": "Rio Grande do Norte",
    "capital": "Natal",
-   "abertos": 1,
+   "abertos": 0,
    "fonte_estadual": 0.0,
    "capital_coberta": 1.0,
    "fontes": [
@@ -321,7 +322,7 @@
    "uf": "RS",
    "nome": "Rio Grande do Sul",
    "capital": "Porto Alegre",
-   "abertos": 2,
+   "abertos": 1,
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
@@ -364,7 +365,6 @@
    "fonte_estadual": 0.0,
    "capital_coberta": 0.5,
    "fontes": [
-    "mapas:itatiba-sp",
     "mapas:maua-sp",
     "mapas:ribeiraopires-sp",
     "vigia-spcine-fomento"
@@ -375,11 +375,10 @@
    "nome": "Sergipe",
    "capital": "Aracaju",
    "abertos": 7,
-   "fonte_estadual": 1.0,
+   "fonte_estadual": 0.0,
    "capital_coberta": 1.0,
    "fontes": [
-    "mapas:aracaju",
-    "mapas:se"
+    "mapas:aracaju"
    ]
   },
   {
@@ -392,7 +391,7 @@
    "fontes": []
   }
  ],
- "editais_abertos": 80,
+ "editais_abertos": 66,
  "editais_sem_uf": 9,
  "historico": [
   {
@@ -438,6 +437,10 @@
   {
    "data": "2026-11-21",
    "nota": 3.84
+  },
+  {
+   "data": "2026-11-26",
+   "nota": 3.63
   }
  ],
  "dias_seguidos_9": 0
